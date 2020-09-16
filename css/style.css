@@ -3,7 +3,7 @@
  margin: 0;
  padding: 0;
  scroll-behavior: smooth;
- font-family: 'Itim', cursive; 'Times New Roman', sans-serif; 
+ font-family: 'Itim', cursive, 'Times New Roman', sans-serif; 
 }
 
 body {
@@ -28,6 +28,11 @@ body {
  background: #3E3E3E;
  z-index: 1;
  bottom: 0px; 
+}
+
+.social-media-list {
+ list-style: none;
+ display: flex;
 }
 
 .banner-logo {
