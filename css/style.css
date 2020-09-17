@@ -106,3 +106,19 @@ body {
   left: -10%;
  }
 }
+
+@media screen and (max-width: 823px) {
+ .support-btn {
+  width: 60px;
+  height: 60px;
+ }
+
+.support-btn i {
+  line-height: 60px;
+  font-size: 40px;
+ }
+ 
+ .banner-logo {
+  display: none;
+ }
+}
