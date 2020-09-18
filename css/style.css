@@ -107,6 +107,14 @@ body {
  }
 }
 
+.wrapper {
+
+}
+
+.main-nav {
+
+}
+
 @media screen and (max-width: 823px) {
  .support-btn {
   width: 60px;
