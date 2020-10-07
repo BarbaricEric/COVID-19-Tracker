@@ -59,6 +59,21 @@ img {
  grid-template-columns: repeat(4, 1fr);
 }
 
+.main-nav a {
+ backgorund: var(--primary);
+ display: block;
+ text-decoration: none;
+ padding: 0.8rem;
+ text-align: center;
+ color: var(--dark);
+ text-transform: uppercase;
+ font-size; 1.1rem;
+ box-shadow: var(--shadow);
+}
+
+
+
+
 /* Supported Browser Banner */
 .banner-support {
  position: fixed;
