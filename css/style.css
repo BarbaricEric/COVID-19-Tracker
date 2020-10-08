@@ -56,22 +56,30 @@ img {
  grid-gap: 20px;
  padding: 0;
  list-style: none;
- grid-template-columns: repeat(4, 1fr);
+ grid-template-columns: repeat(2, 1fr);
 }
 
 .main-nav a {
- backgorund: var(--primary);
- display: block;
+ background: var(--primary);
+ display: flex;
  text-decoration: none;
  padding: 0.8rem;
  text-align: center;
  color: var(--dark);
  text-transform: uppercase;
- font-size; 1.1rem;
+ font-size: 1.1rem;
  box-shadow: var(--shadow);
+ align-items: center;
+ justify-content: center;
 }
 
+.main-nav a:hover {
+ backround: var(--dark);
+ color: var(--light);
+}
 
+/* Top Container */
+.top-container {
 
 
 /* Supported Browser Banner */
