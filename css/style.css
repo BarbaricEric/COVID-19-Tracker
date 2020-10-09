@@ -80,8 +80,15 @@ img {
 
 /* Top Container */
 .top-container {
-
+ display: grid;
+ grid-gap: 20px;
+ gird-template-areas:
+  'showcase showcase top-box-a'
+  'showcase showcase top-box-b';
 }
+
+/* Showcase */
+
 
 /* Supported Browser Banner */
 .banner-support {
