@@ -90,6 +90,12 @@ img {
 /* Showcase */
 grid-area: showcase;
 
+.showcase h1 {
+ font-size: 4rem;
+ margin-bottom: 0;
+ color: (--light);
+}
+
 /* Top Box */
 .top-box {
  background: var(--primary);
