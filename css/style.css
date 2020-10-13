@@ -96,6 +96,12 @@ grid-area: showcase;
  color: (--light);
 }
 
+.showcase p {
+ font-size: 1.1rem;
+ margin-top: 0;
+ color: (--light);
+}
+
 /* Top Box */
 .top-box {
  background: var(--primary);
