@@ -93,13 +93,13 @@ grid-area: showcase;
 .showcase h1 {
  font-size: 4rem;
  margin-bottom: 0;
- color: (--light);
+ color: var(--light);
 }
 
 .showcase p {
  font-size: 1.1rem;
  margin-top: 0;
- color: (--light);
+ color: var(--light);
 }
 
 /* Top Box */
@@ -128,7 +128,14 @@ grid-area: showcase;
 .boxes {
  display: grid;
  grid-gap: 20px;
- grid-template-colums: repeat(auto-fit, minmax(200px, 1fr)); 
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+}
+
+.box {
+ background: var(--primary);
+ text-align; center;
+ padding: 1.5rem 2rem;
+ box-shadow: var(--shadow);
 }
 
 /* Supported Browser Banner */
