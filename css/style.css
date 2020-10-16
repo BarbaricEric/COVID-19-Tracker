@@ -133,9 +133,19 @@ grid-area: showcase;
 
 .box {
  background: var(--primary);
- text-align; center;
+ text-align: center;
  padding: 1.5rem 2rem;
  box-shadow: var(--shadow);
+}
+
+/* Info */
+.info {
+ background: var(--primary);
+ box-shadow: var(--shadow);
+ display: grid;
+ grid-gap: 30px;
+ grid-template-columns: repeat(2, 1fr);
+ padding: 3rem;
 }
 
 /* Supported Browser Banner */
