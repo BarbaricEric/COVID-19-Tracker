@@ -148,6 +148,13 @@ grid-area: showcase;
  padding: 3rem;
 }
 
+/* Portfolio */
+.portfolio {
+ display: grid;
+ grid-gap: 20px;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr);
+}
+
 /* Supported Browser Banner */
 .banner-support {
  position: fixed;
