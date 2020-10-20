@@ -71,7 +71,7 @@ img {
  box-shadow: var(--shadow);
  align-items: center;
  justify-content: center;
- width: 600px;
+ /*width: 600px;*/
 }
 
 .main-nav a:hover {
