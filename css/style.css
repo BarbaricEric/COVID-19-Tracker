@@ -155,7 +155,23 @@ grid-area: showcase;
  display: grid;
  grid-gap: 20px;
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-} */
+} 
+
+.portfolio img{
+ width: 100%;
+ box-shadow: var(--shadow);
+}
+
+*/
+
+/* Footer */
+.footer {
+ margin-top: 2rem;
+ background: var(--dark);
+ color: var(--light);
+ text-align: center;
+ padding: 1rem;
+}
 
 /* Supported Browser Banner */
 .banner-support {
@@ -271,4 +287,8 @@ grid-area: showcase;
  .banner-logo {
   display: none;
  }
+}
+
+@media screen and (max-width: 500px) {
+
 }
