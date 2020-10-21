@@ -155,14 +155,12 @@ grid-area: showcase;
  display: grid;
  grid-gap: 20px;
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-} 
+} */
 
 .portfolio img{
  width: 100%;
  box-shadow: var(--shadow);
 }
-
-*/
 
 /* Footer */
 .footer {
@@ -287,8 +285,20 @@ grid-area: showcase;
  .banner-logo {
   display: none;
  }
+ 
+ .top-container {
+  grid-template-areas:
+   'showcase showcase'
+   'top-box-a top-box-b';
+ }
+ 
 }
 
 @media screen and (max-width: 500px) {
-
+ .top-container {
+  grid-template-areas:
+   'showcase'
+   'box-top-a'
+   'box-top-b';
+ }
 }
