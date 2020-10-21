@@ -162,6 +162,14 @@ grid-area: showcase;
  box-shadow: var(--shadow);
 }
 
+.info-title  {
+ margin-top: 2rem;
+ background: var(--primary);
+ color: var(--dark);
+ text-align: center;
+ padding: 1rem;
+}
+
 /* Footer */
 .footer {
  margin-top: 2rem;
