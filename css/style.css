@@ -129,8 +129,8 @@ grid-area: showcase;
 .boxes {
  display: grid;
  grid-gap: 20px;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- /*grid-template-columns: repeat(4, 1fr);*/ 
+ /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/ 
+ grid-template-columns: repeat(4, 1fr);
 }
 
 .box {
@@ -163,7 +163,7 @@ grid-area: showcase;
 }
 
 .info-title  {
- margin-top: 2rem;
+ /*margin-top: 2rem;*/
  background: var(--primary);
  color: var(--dark);
  text-align: center;
@@ -300,5 +300,9 @@ grid-area: showcase;
    'showcase'
    'top-box-a'
    'top-box-b';
+ }
+ 
+ .boxes {
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
  }
 }
