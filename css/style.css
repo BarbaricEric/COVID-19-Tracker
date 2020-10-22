@@ -168,6 +168,7 @@ grid-area: showcase;
  color: var(--dark);
  text-align: center;
  padding: 1rem;
+ box-shadow: var(--shadow);
 }
 
 /* Footer */
