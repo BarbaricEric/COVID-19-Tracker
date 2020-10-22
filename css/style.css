@@ -271,15 +271,6 @@ grid-area: showcase;
  }
 }
 
-.wrapper {
- display: grid;
- grid-gap: 20px;
-}
-
-.main-nav {
-
-}
-
 @media screen and (max-width: 823px) {
  .support-btn {
   width: 60px;
