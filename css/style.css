@@ -307,7 +307,7 @@ grid-area: showcase;
  .top-container {
   grid-template-areas:
    'showcase'
-   'box-top-a'
-   'box-top-b';
+   'top-box-a'
+   'top-box-b';
  }
 }
