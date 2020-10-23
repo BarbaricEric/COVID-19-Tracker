@@ -292,6 +292,9 @@ grid-area: showcase;
    'top-box-a top-box-b';
  }
  
+  .showcase h1 {
+  font-size: 2.5rem;
+ }
 }
 
 @media screen and (max-width: 500px) {
@@ -304,5 +307,9 @@ grid-area: showcase;
  
  .boxes {
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ }
+ 
+  .info {
+  grid-template-columns: 1fr;
  }
 }
