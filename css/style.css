@@ -171,6 +171,11 @@ grid-area: showcase;
  box-shadow: var(--shadow);
 }
 
+.info .price {
+ font-size: 1.5rem;
+ padding-bottom: 13px;
+}
+
 /* Footer */
 .footer {
  margin-top: 2rem;
