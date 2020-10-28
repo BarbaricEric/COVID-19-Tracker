@@ -91,6 +91,13 @@ img {
 /* Showcase */
 .showcase {
  grid-area: showcase;
+ min-height: 400px;
+ padding: 3rem;
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+ justify-content: center;
+ box-shadow: var(--shadow);
 }
 
 .showcase h1 {
