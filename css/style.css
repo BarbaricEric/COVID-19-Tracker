@@ -109,6 +109,7 @@ img {
 .showcase p {
  font-size: 1.1rem;
  margin-top: 0;
+ margin-bottom: 15px;
  color: var(--light);
 }
 
