@@ -186,6 +186,29 @@ img {
  padding-bottom: 13px;
 }
 
+/* Articles */
+.article-container {
+ display: grid;
+ grid-gap: 20px;
+ grid-template-areas:
+  "news-box-a news-box-b";
+}
+
+.news-box {
+ background: var(--primary);
+ display: grid;
+ box-shadow: var(--shadow);
+ padding: 1.5rem;
+}
+
+.news-box-a {
+ grid-area: news-box-a
+}
+
+.news-box-b {
+ grid-area: news-box-b
+}
+
 /* Footer */
 .footer {
  margin-top: 2rem;
