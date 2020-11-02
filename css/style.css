@@ -53,7 +53,7 @@ img {
 /* Navigation */
 .main-nav ul {
  display: grid;
- grid-gap: 20px;
+ grid-gap: 10px;
  padding: 0;
  list-style: none;
  grid-template-columns: repeat(2, 1fr);
@@ -189,9 +189,9 @@ img {
 /* Articles */
 .article-container {
  display: grid;
- grid-gap: 20px;
  grid-template-areas:
-  "news-box-a news-box-b";
+  "news-box-b news-box-a";
+ margin-top: 10px;
 }
 
 .news-box {
@@ -211,7 +211,6 @@ img {
 
 /* Footer */
 .footer {
- margin-top: 2rem;
  background: var(--dark);
  color: var(--light);
  text-align: center;
