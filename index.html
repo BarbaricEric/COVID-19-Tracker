@@ -17,6 +17,8 @@
   <link rel="dns-prefetch" href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' as="style">
   <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css'>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>COVID-19 Analytics</title>
 </head>
 <body>
@@ -101,6 +103,44 @@
     
 <!-- Portfolio Section -->
  <section class="portfolio">
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+        <img data-src="CDC Poster_stop-the-spread-of-germs_English-page-001.jpg" alt="COVID Spreading Germs English Infographic" class="swiper-lazy">
+        <!-- Preloader image -->
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="https://source.unsplash.com/random/200x200" alt="Picture 1" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="https://source.unsplash.com/random/201x200" alt="Picture 2" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="https://source.unsplash.com/random/202x200" alt="Picture 3" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="https://source.unsplash.com/random/203x200" alt="Picture 4" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="https://source.unsplash.com/random/204x200" alt="Picture 5" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- Navigation -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div> 
+  <img src="CDC Poster_stop-the-spread-of-germs_English-page-001.jpg" alt="COVID Spreading Germs English Infographic"> 
   <img src="https://source.unsplash.com/random/200x200" alt="Picture 1">
   <img src="https://source.unsplash.com/random/201x200" alt="Picture 2">
   <img src="https://source.unsplash.com/random/202x200" alt="Picture 3">
@@ -155,8 +195,10 @@
  <footer class="footer">
   <p>ENDesign &copy; 2020</p>
 </footer>
-                       
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
 <script defer src="js/main.js"></script>
-<script async src="js/dataviz.js"></script>    
+<script async src="js/dataviz.js"></script>
+<script async src="js/swiperaction.js"></script>    
 </body>
 </html>
