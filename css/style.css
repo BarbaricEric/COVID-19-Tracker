@@ -170,12 +170,16 @@ img {
  background: var(--primary);
  box-shadow: var(--shadow);
  padding: 3rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
 }
 
 /* Swiper CSS */
 .swiper-container {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
