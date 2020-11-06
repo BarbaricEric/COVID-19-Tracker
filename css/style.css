@@ -205,17 +205,17 @@ img {
 
 .swiper-button-next.swiper-button-white, 
 .swiper-button-prev.swiper-button-white {
-    --swiper-navigation-color: #000000;
+    --swiper-navigation-color: #000000 !important;
 }
 
 .swiper-pagination-bullet-active {
-    background: #000000;
+    background: #000000 !important;
 }
 
 .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    background: #000000;
+    width: 20px !important;
+    height: 20px !important;
+    background: #000000 !important;
 }
 
 .portfolio img{
