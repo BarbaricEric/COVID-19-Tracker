@@ -2,7 +2,7 @@
       // Enable lazy loading
       lazy: true,
       autoplay: {
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
       },  
       pagination: {
@@ -13,5 +13,6 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-
+      mousewheel: true,
+      keyboard: true,
     });
