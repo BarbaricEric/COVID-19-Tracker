@@ -169,11 +169,13 @@ img {
 .portfolio {
  background: var(--primary);
  box-shadow: var(--shadow);
- padding: 3rem;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
  display: flex;
  justify-content: center;
  align-items: center;
  min-height: 100vh;
+ overflow: hidden;
 }
 
 /* Swiper CSS */
@@ -185,7 +187,6 @@ img {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #000; 
 }
 
 .swiper-slide img {
@@ -202,8 +203,22 @@ img {
   top: 50%;
 }
 
+.swiper-button-next.swiper-button-white, 
+.swiper-button-prev.swiper-button-white {
+    --swiper-navigation-color: #000000;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000000;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: #000000;
+}
+
 .portfolio img{
- width: 100%;
  box-shadow: var(--shadow);
 }
 
