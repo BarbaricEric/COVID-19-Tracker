@@ -16,3 +16,13 @@
       mousewheel: true,
       keyboard: true,
     });
+
+    var swiper2 = new Swiper('.news-wrapper', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      mousewheel: true,
+    });
