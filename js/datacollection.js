@@ -1,4 +1,4 @@
-   const api = https://corona-api.com/;
+   const api = 'https://corona-api.com/';
 
    fetch(api)
   .then(response => {
