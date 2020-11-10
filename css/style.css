@@ -227,13 +227,17 @@ img {
 }
 
 .swiper-pagination-bullet-active {
+    width: 20px !important;
+    height: 20px !important;
     background: #000000 !important;
+    opacity: none;
 }
 
 .swiper-pagination-bullet {
     width: 20px !important;
     height: 20px !important;
     background: #000000 !important;
+    opacity: .2;
 }
 
 .portfolio img{
