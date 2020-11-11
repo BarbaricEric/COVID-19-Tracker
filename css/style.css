@@ -78,7 +78,11 @@ img {
  grid-template-columns: repeat(2, 1fr);
 }
 
-.single-block {
+.main-nav .single-block {
+ display: grid;
+ grid-gap: 10px;
+ padding: 0;
+ list-style: none;
  grid-template-columns: repeat(1, 1fr);
 }
 
@@ -307,7 +311,7 @@ img {
  justify-content: center;
  align-items: center;
  background: #3E3E3E;
- z-index: 1;
+ z-index: 3;
  bottom: 0px; 
 }
 
@@ -435,4 +439,10 @@ img {
   .info {
   grid-template-columns: 1fr;
  }
+ 
+ .article-container {
+  grid-template-areas:
+  "news-box-b" 
+  "news-box-a";
+ } 
 }
