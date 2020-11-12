@@ -15,8 +15,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    return response.json();
   })
   .then(data => {
-   console.log(data1);
-   const { name, population, updated_at, deaths, confirmed, cases_per_million_population } = data1;
+   console.log(data);
+   const { name, population, updated_at, deaths, confirmed, cases_per_million_population } = data;
    //Set DOM element from API
    usCaseDeath.textContent = deaths;
    usCaseConfirm.textContent = confirmed;
@@ -28,5 +28,5 @@ const localapi2 = 'https://corona-api.com/countries/US';
    return response.json();
   })
   .then(data => {
-   console.log(data2);
+   console.log(data);
    });      
