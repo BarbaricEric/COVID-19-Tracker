@@ -18,8 +18,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    const { name, population, updated_at, deaths, confirmed, cases_per_million_population } = data;
    //Set DOM element from API
-   usCaseDeath.textContent = deaths;
-   usCaseConfirm.textContent = confirmed;
+   usCaseDeath.textContent = data.deaths;
+   usCaseConfirm.textContent = data.confirmed;
    });      
      
 //Global Count from covid19api      
@@ -30,3 +30,22 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    });      
+
+/*        fetch('.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(data) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
+                mainContainer.appendChild(div);
+            }
+        }*/
