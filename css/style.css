@@ -13,7 +13,7 @@ html {
 }
 
 body {
- background: #CCCCCC;
+ /*background: #CCCCCC;*/
  margin: 30px 50px;
  line-height: 1.4; 
   /* height: 100vh; */
@@ -21,8 +21,7 @@ body {
  justify-content: center;
  flex-direction: column;
  align-items: center;
- /* background: linear-gradient(rgb(47,150,160), rgb(40,62,143)); 
- color: #000000; */
+ /* background: linear-gradient(rgb(47,150,160), rgb(40,62,143));*/ 
 }
 
 * {
