@@ -15,11 +15,11 @@ const localapi2 = 'https://corona-api.com/countries/US';
    return response.json();
   })
   .then(data => {
-   console.log(data);
    const { deaths, confirmed } = data.latest_data;
    //Set DOM element from API
    usCaseDeath.textContent = deaths;
    usCaseConfirm.textContent = confirmed;
+   console.log(data);   
    });      
      
 //Global Count from covid19api      
