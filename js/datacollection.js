@@ -39,6 +39,7 @@ const localapi3 = 'https://api.covidtracking.com';
   })
   .then(data => {
    console.log(data);
+   });   
 
 /*        fetch('.json')
             .then(function (response) {
