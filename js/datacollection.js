@@ -7,6 +7,7 @@ const globalapi1 = 'https://corona-api.com/countries';
 const globalapi2 = 'https://api.covid19api.com/summary';
 const localapi1 = 'https://api.covidtracking.com/v1/us/current.json';
 const localapi2 = 'https://corona-api.com/countries/US';
+const localapi3 = 'https://api.covidtracking.com';
 
 
 //US Count from about-corona
@@ -29,7 +30,15 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   });      
+   });
+
+//US Count from COVID Trackign Project
+   fetch(localapi3)
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
 
 /*        fetch('.json')
             .then(function (response) {
