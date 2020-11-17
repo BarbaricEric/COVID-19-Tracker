@@ -70,10 +70,16 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   const { death, lastModified, positive } = data;
-   usCaseDeath.textContent = death;
-   usCaseConfirm.textContent = positive;   
+   usCaseDeath.textContent = getArrayFields(data, "death");
+   usCaseConfirm.textContent = getArrayFields(data, "positive");  
    });  
+
+function getArrayFields(input, field) {
+    const output = [];
+    for (var i=0; i < input.length ; ++i)
+        output.push(input[i][field]);
+    return output;
+}
 
 /*        fetch('.json')
             .then(function (response) {
@@ -93,3 +99,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
                 mainContainer.appendChild(div);
             }
         }*/
+
+/*
+objArray = [ { foo: 1, bar: 2}, { foo: 3, bar: 4}, { foo: 5, bar: 6} ];
+I want to extract a field from each object, and get an array containing the values, for example field foo would give array [ 1, 3, 5 ].
+
+function getFields(input, field) {
+    var output = [];
+    for (var i=0; i < input.length ; ++i)
+        output.push(input[i][field]);
+    return output;
+}
+
+var result = getFields(objArray, "foo"); // returns [ 1, 3, 5 ]
+
+*/
