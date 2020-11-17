@@ -18,9 +18,9 @@ const localapi3 = 'https://api.covidtracking.com/v1/states/ca/current.json';
   .then(data => {
    console.log(data);   
    const { deaths, confirmed } = data.data.latest_data;
-   //Set DOM element from API
+   /*Set DOM element from API
    usCaseDeath.textContent = deaths;
-   usCaseConfirm.textContent = confirmed;
+   usCaseConfirm.textContent = confirmed;*/
    });      
      
 //Global Count from covid19api      
@@ -32,7 +32,7 @@ const localapi3 = 'https://api.covidtracking.com/v1/states/ca/current.json';
    console.log(data);
    });
 
-//US Count from COVID Trackign Project
+//CA Count from COVID Tracking Project
    fetch(localapi3)
   .then(response => {
    return response.json();
@@ -41,13 +41,16 @@ const localapi3 = 'https://api.covidtracking.com/v1/states/ca/current.json';
    console.log(data);
    });
 
-//US Count from COVID Trackign Project Test
+//US Count from COVID Tracking Project 
    fetch(localapi1)
   .then(response => {
    return response.json();
   })
   .then(data => {
    console.log(data);
+   const { death, lastModified, positive } = data.[0]
+   usCaseDeath.textContent = death;
+   usCaseConfirm.textContent = positive;   
    });  
 
 /*        fetch('.json')
