@@ -1,14 +1,18 @@
 //DOM Elements
 const usCaseDeath = document.querySelector(".us-case-death");
 const usCaseConfirm = document.querySelector(".us-case-confirmed");
+const caCaseConfirm = document.querySelector(".ca-case-confirmed");
+const caCaseDeath = document.querySelector(".ca-case-confirmed");
+const waCaseConfirm = document.querySelector(".wa-case-confirmed");
+const waCaseDeath = document.querySelector(".wa-case-confirmed");
+const nyCaseDeath = document.querySelector(".ny-case-confirmed");
+const nyCaseConfirm = document.querySelector(".ny-case-confirmed");
 
 //Define API
 const globalapi1 = 'https://corona-api.com/countries';
 const globalapi2 = 'https://api.covid19api.com/summary';
 const localapi1 = 'https://api.covidtracking.com/v1/us/current.json';
 const localapi2 = 'https://corona-api.com/countries/US';
-const localapi3 = 'https://api.covidtracking.com/v1/states/ca/current.json';
-
 
 //US Count from about-corona
    fetch(localapi2)
@@ -33,7 +37,25 @@ const localapi3 = 'https://api.covidtracking.com/v1/states/ca/current.json';
    });
 
 //CA Count from COVID Tracking Project
-   fetch(localapi3)
+   fetch('https://api.covidtracking.com/v1/states/ca/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//WA Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/wa/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//NY Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ny/current.json')
   .then(response => {
    return response.json();
   })
