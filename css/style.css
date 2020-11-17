@@ -42,6 +42,24 @@ body {
  margin: 10px 0px;
 }
 
+.alert-btn {
+ background: var(--dark);
+ display: flex;
+ text-decoration: none;
+ padding: 0.8rem;
+ text-align: center;
+ color: var(--primary);
+ text-transform: uppercase;
+ font-size: 1.1rem;
+ box-shadow: var(--shadow);
+ align-items: center;
+ justify-content: center;
+}
+
+.alert-btn i {
+ color: #ffff00;
+}
+
 img {
   max-width: 100%;
 }
