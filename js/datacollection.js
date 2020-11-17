@@ -70,7 +70,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   const { death, lastModified, positive } = data.[0]
+   const { death, lastModified, positive } = data.0
    usCaseDeath.textContent = death;
    usCaseConfirm.textContent = positive;   
    });  
