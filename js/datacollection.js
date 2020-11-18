@@ -1,7 +1,7 @@
 //DOM Elements
 const usCaseDeath = document.querySelector(".us-case-death");
 const usCaseConfirm = document.querySelector(".us-case-confirmed");
-const usCaseDate = document.querySelector(".us-case-date");
+const usCaseDate = document.querySelectorAll(".us-case-date");
 const caCaseConfirm = document.querySelector(".ca-case-confirmed");
 const caCaseDeath = document.querySelector(".ca-case-confirmed");
 const waCaseConfirm = document.querySelector(".wa-case-confirmed");
