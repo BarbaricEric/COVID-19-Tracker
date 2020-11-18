@@ -1,7 +1,8 @@
 //DOM Elements
 const usCaseDeath = document.querySelector(".us-case-death");
 const usCaseConfirm = document.querySelector(".us-case-confirmed");
-const usCaseDate = document.querySelectorAll(".us-case-date");
+const usCaseDateTop = document.querySelector(".us-case-date-top");
+const usCaseDateBot = document.querySelector(".us-case-date-bot");
 const caCaseConfirm = document.querySelector(".ca-case-confirmed");
 const caCaseDeath = document.querySelector(".ca-case-confirmed");
 const waCaseConfirm = document.querySelector(".wa-case-confirmed");
@@ -244,7 +245,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    usCaseDeath.textContent = getArrayFields(data, "death");
    usCaseConfirm.textContent = getArrayFields(data, "positive");
-   usCaseDate.textContent = getArrayFields(data, "lastModified");     
+   usCaseDateTop.textContent = getArrayFields(data, "lastModified");
+   usCaseDateBot.textContent = getArrayFields(data, "lastModified");    
    });  
 
 function getArrayFields(input, field) {
