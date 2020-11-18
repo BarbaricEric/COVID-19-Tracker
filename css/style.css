@@ -43,21 +43,13 @@ body {
 }
 
 .alert-btn {
- background: var(--dark);
- display: flex;
- text-decoration: none;
- padding: 0.8rem;
- text-align: center;
- color: var(--primary);
- text-transform: uppercase;
- font-size: 1.1rem;
- box-shadow: var(--shadow);
- align-items: center;
- justify-content: center;
+ background: var(--dark) !important;
+ color: var(--primary) !important;
 }
 
 .alert-btn i {
  color: #ffff00;
+ margin: 0px 15px;
 }
 
 img {
