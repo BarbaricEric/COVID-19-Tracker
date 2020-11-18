@@ -1,6 +1,7 @@
 //DOM Elements
 const usCaseDeath = document.querySelector(".us-case-death");
 const usCaseConfirm = document.querySelector(".us-case-confirmed");
+const usCaseDate = document.querySelector(".us-case-date");
 const caCaseConfirm = document.querySelector(".ca-case-confirmed");
 const caCaseDeath = document.querySelector(".ca-case-confirmed");
 const waCaseConfirm = document.querySelector(".wa-case-confirmed");
@@ -36,8 +37,179 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    });
 
+//AL Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/al/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//Ak Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ak/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//AS Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/as/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//AZ Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/az/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//AR Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ar/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
 //CA Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/ca/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//CO Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/co/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//CT Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ct/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//DE Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/de/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//DC Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/dc/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//FL Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/fl/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//GA Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ga/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//GU Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/gu/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//HI Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/hi/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//ID Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/id/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//IL Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/il/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//IN Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/in/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//IA Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ia/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//KS Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ks/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
+
+//KY Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ky/current.json')
   .then(response => {
    return response.json();
   })
@@ -71,7 +243,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    usCaseDeath.textContent = getArrayFields(data, "death");
-   usCaseConfirm.textContent = getArrayFields(data, "positive");  
+   usCaseConfirm.textContent = getArrayFields(data, "positive");
+   usCaseDate.textContent = getArrayFields(data, "lastModified");     
    });  
 
 function getArrayFields(input, field) {
@@ -79,6 +252,10 @@ function getArrayFields(input, field) {
     for (var i=0; i < input.length ; ++i)
         output.push(input[i][field]);
     return output;
+}
+
+function getCommas() {
+
 }
 
 /*        fetch('.json')
