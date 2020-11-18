@@ -1,7 +1,94 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+  <meta http-equi="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="COVID19 Analytics">
+  <meta name="author" content="ENDesign – COVID19 Analytics">
+  <meta name="keywords" content="endesign, covid19, data, covid19 data, covid19 visualization">
+  <script rel="preload" src="https://kit.fontawesome.com/a58fdcacc2.js" crossorigin="anonymous" as="script"></script>
+  <script rel="dns-prefetch" src="https://kit.fontawesome.com/a58fdcacc2.js" as="script"></script>
+  <script rel="preconnect" src="https://d3js.org/d3.v6.min.js" as="script" crossorigin></script>
+  <script rel="dns-prefetch" src="https://d3js.org/d3.v6.min.js" as="script"></script>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Itim&display=swap" as="style" />
+  <!-- <link rel="dns-prefetch" href="https://fonts.googleapis.com/css2?family=Itim&display=swap" as="style" /> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap" />
+  <link rel="dns-prefetch" href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' as="style" />
+  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="prefetch" href="https://barbariceric.github.io/COVID-19-Analytics/">
+  <title>Global COVID-19 Analytics</title>
 </head>
-
+ <body>
+    <!-- Browser Support Banner -->
+   <div class="banner-support">
+    <a href="https://barbariceric.github.io/COVID-19-Analytics/">
+     <img src="img/banner-logo.png" alt="logo" class="banner-logo"/>
+    </a>
+    <div class="browser-support-icon">
+     <h1>Supported Browsers</h1>
+      <ul class="social-media-list"> 
+       <li><a href="#" title="Supported Broswers: Chrome" class="support-btn"><i class="fa fa-chrome fa-fw" aria-hidden="true"></i></a></li>
+       <li><a href="#" title="Supported Broswers: FireFox" class="support-btn"><i class="fa fa-firefox fa-fw" aria-hidden="true"></i></a></li>
+       <li><a href="#" title="Supported Broswers: Edge" class="support-btn"><i class="fa fa-edge fa-fw aria-hidden="true"></i></a></li>
+       <li><a href="#" title="Supported Broswers: Safari" class="support-btn"><i class="fa fa-safari fa-fw aria-hidden="true"></i></a></li>
+      </ul>  
+    </div>
+  </div>
+  
+  <!-- Navigation Bar -->
+  <div class="wrapper">
+  <nav class="main-nav">
+   <ul>
+    <li><a href="https://barbariceric.github.io/COVID-19-Analytics/">USA DATA</a></li>
+    <li><a href="globalcases.html">GLOBAL DATA</a></li>
+   </ul>
+  </nav>
+    
+  <!-- Top Container -->
+ <section class="top-container">
+  <header class="showcase">
+   <h1>COVID-19 Analytics </h1>
+   <p>Welcome</p>
+   <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" class="btn">See More about COVID-19</a>
+  </header>
+  <div class="top-box top-box-a">
+   <h3>USA Cases</h4>
+   <p class="price us-case-confirmed">Number of Cases</p>
+   <p class="price us-case-date-top"></p> 
+   <a href="https://coronavirus.jhu.edu/" class="btn">See More</a>
+   <a href="https://github.com/CSSEGISandData/COVID-19" class="btn">Data Source</a> 
+  </div>
+  <div class="top-box top-box-b">
+   <h3>USA Deaths</h4>
+   <p class="price us-case-death">Number of Death</p>
+   <p class="price us-case-date-bot"></p> 
+   <a href="https://coronavirus.jhu.edu/" class="btn">See More</a>
+   <a href="https://github.com/CSSEGISandData/COVID-19" class="btn">Data Source</a> 
+  </div>
+ </section>
+    
+<!-- Box Section -->
+ <section class="boxes">
+  <div class="box">
+   <i class="fas fa-users fa-4x"></i>
+   <h3>Tabular Data</h3>
+   <p>Raw Data</p>
+  </div>
+  <div class="box">
+   <i class="fas fa-chart-pie fa-4x"></i>
+   <h3>Tables and Charts</h3>
+   <p>Data Visualization</p>
+  </div>
+ </section>
+    
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+<script defer src="js/main.js"></script>
+<script async src="js/dataviz.js"></script>
+<script defer src="js/swiperaction.js"></script>
+<script async src="js/datacollection.js"></script>    
+</body>
 </html>
