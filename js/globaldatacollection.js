@@ -1,6 +1,6 @@
 //DOM Elements
-const usCaseDeath = document.querySelector(".us-case-death");
-const usCaseConfirm = document.querySelector(".us-case-confirmed");
+const usCaseDeath = document.querySelector(".us-testing");
+const usCaseConfirm = document.querySelector(".us-testing-two");
 
 //Define API
 const globalapi1 = 'https://corona-api.com/countries';
