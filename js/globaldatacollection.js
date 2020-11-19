@@ -14,7 +14,7 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   .then(data => {
    console.log(data);
    usCaseDeath = getArrayFields(data.Countries[181], "TotalDeaths");
-   usCaseConfirm = getArrayFields(data.181, "TotalConfirmed");
+   usCaseConfirm = getArrayFields(data.Countries[181], "TotalConfirmed");
    });
    
 //Global Count from corona-api      
