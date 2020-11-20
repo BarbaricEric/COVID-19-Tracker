@@ -13,7 +13,7 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   })
   .then(data => {
    console.log(data);
-   usCaseDeathJh.textContent = getArrayFields(data.Countries[181], "TotalDeaths");
+   usCaseDeathJh.textContent = data.Countries[181].TotalDeaths;
    usCaseConfirmJh.textContent = getArrayFields(data.Countries[181], "TotalConfirmed");
    });
    
