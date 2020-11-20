@@ -3,8 +3,6 @@ const usCaseDeath = document.querySelector(".us-case-death");
 const usCaseConfirm = document.querySelector(".us-case-confirmed");
 const usCaseDateTop = document.querySelector(".us-case-date-top");
 const usCaseDateBot = document.querySelector(".us-case-date-bot");
-const caCaseConfirm = document.querySelector(".ca-case-confirmed");
-const caCaseDeath = document.querySelector(".ca-case-confirmed");
 const waCaseConfirm = document.querySelector(".wa-case-confirmed");
 const waCaseDeath = document.querySelector(".wa-case-confirmed");
 const nyCaseDeath = document.querySelector(".ny-case-confirmed");
@@ -90,6 +88,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   let caCaseDeath = document.querySelector(".us-covidtrack-ca-death");
+   let caCaseConfirm = document.querySelector(".us-covidtrack-ca-confirm");   
+   caCaseDeath.textContent = getArrayFields(data, "death");
+   caCaseConfirm.textContent = getArrayFields(data, "positive");   
    });
 
 //CO Count from COVID Tracking Project
@@ -172,7 +174,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
-   const idCaseConfirm = document.querySelector("us-covidtrack-id-confirm");   
+   const idCaseConfirm = document.querySelector(".us-covidtrack-id-confirm");   
    idCaseDeath.textContent = getArrayFields(data, "death");
    idCaseConfirm.textContent = getArrayFields(data, "positive");
    });
