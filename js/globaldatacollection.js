@@ -1,6 +1,6 @@
 //DOM Elements
-const usCaseDeathJh = document.querySelector(".us-testing");
-const usCaseConfirmJh = document.querySelector(".us-testing-two");
+const usCaseDeathJh = document.querySelector(".us-testing-two");
+const usCaseConfirmJh = document.querySelector(".us-testing");
 
 //Define API
 const globalapi1 = 'https://corona-api.com/countries';
@@ -14,7 +14,7 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   .then(data => {
    console.log(data);
    usCaseDeathJh.textContent = data.Countries[181].TotalDeaths;
-   usCaseConfirmJh.textContent = getArrayFields(data.Countries[181], "TotalConfirmed");
+   usCaseConfirmJh.textContent = data.Global.TotalConfirmed;
    });
    
 //Global Count from corona-api      
