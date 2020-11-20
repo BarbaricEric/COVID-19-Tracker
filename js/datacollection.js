@@ -171,6 +171,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
+   const idCaseConfirm = document.querySelector("us-covidtrack-id-confirm");   
+   idCaseDeath.textContent = getArrayFields(data, "death");
+   idCaseConfirm.textContent = getArrayFields(data, "positive");
    });
 
 //IL Count from COVID Tracking Project
