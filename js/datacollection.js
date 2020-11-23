@@ -90,8 +90,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    let caCaseDeath = document.querySelector(".us-covidtrack-ca-death");
    let caCaseConfirm = document.querySelector(".us-covidtrack-ca-confirm");   
-   caCaseDeath.textContent = getArrayFields(data, "death");
-   caCaseConfirm.textContent = getArrayFields(data, "positive");   
+   caCaseDeath.innerText = getArrayFields(data, "death");
+   caCaseConfirm.innerText = getArrayFields(data, "positive");   
    });
 
 //CO Count from COVID Tracking Project
@@ -175,8 +175,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
    const idCaseConfirm = document.querySelector(".us-covidtrack-id-confirm");   
-   idCaseDeath.textContent = getArrayFields(data, "death");
-   idCaseConfirm.textContent = getArrayFields(data, "positive");
+   idCaseDeath.innerHTML = getArrayFields(data, "death");
+   idCaseConfirm.innerHTML = getArrayFields(data, "positive");
    });
 
 //IL Count from COVID Tracking Project
