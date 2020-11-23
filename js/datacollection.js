@@ -91,7 +91,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);  
    caCaseDeath.textContent = getArrayFields(data, "death");
-   caCaseConfirm.textContent = getArrayFields(data, "positive");   
+   caCaseConfirm.textContent = data.positive;   
    });
 
 //CO Count from COVID Tracking Project
