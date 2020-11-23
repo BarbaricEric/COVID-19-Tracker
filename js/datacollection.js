@@ -1,14 +1,12 @@
 //DOM Elements
 const usCaseDeath = document.querySelector(".us-case-death");
 const usCaseConfirm = document.querySelector(".us-case-confirmed");
-const usCaseDateTop = document.querySelector(".us-case-date-top");
-const usCaseDateBot = document.querySelector(".us-case-date-bot");
 const waCaseConfirm = document.querySelector(".wa-case-confirmed");
 const waCaseDeath = document.querySelector(".wa-case-confirmed");
 const nyCaseDeath = document.querySelector(".ny-case-confirmed");
 const nyCaseConfirm = document.querySelector(".ny-case-confirmed");
-const caCaseDeath = document.querySelector(".us-covidtrack-ca-death");
-const caCaseConfirm = document.querySelector(".us-covidtrack-ca-confirm");
+const caCaseDeath = document.querySelector("#us-covidtrack-ca-death");
+const caCaseConfirm = document.querySelector("#us-covidtrack-ca-confirm");
 const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
 const idCaseConfirm = document.querySelector(".us-covidtrack-id-confirm");  
 
@@ -92,8 +90,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);  
-   caCaseDeath.innerText = getArrayFields(data, "death");
-   caCaseConfirm.innerText = getArrayFields(data, "positive");   
+   caCaseDeath.textContent = getArrayFields(data, "death");
+   caCaseConfirm.textContent = getArrayFields(data, "positive");   
    });
 
 //CO Count from COVID Tracking Project
@@ -175,8 +173,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);  
-   idCaseDeath.textContent = getArrayFields(data, "death");
-   idCaseConfirm.textContent = getArrayFields(data, "positive");
+   idCaseDeath.innerHTML = getArrayFields(data, "death");
+   idCaseConfirm.innerHTML = getArrayFields(data, "positive");
    });
 
 //IL Count from COVID Tracking Project
@@ -250,9 +248,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    usCaseDeath.textContent = getArrayFields(data, "death") + ' as of ' + getArrayFields(data, "lastModified");
-   usCaseConfirm.textContent = getArrayFields(data, "positive");
-   usCaseDateTop.textContent = getArrayFields(data, "lastModified");
-   usCaseDateBot.textContent = getArrayFields(data, "lastModified");    
+   usCaseConfirm.textContent = getArrayFields(data, "positive") + ' as of ' + getArrayFields(data, "lastModified");   
    });  
 
 function getArrayFields(input, field) {
