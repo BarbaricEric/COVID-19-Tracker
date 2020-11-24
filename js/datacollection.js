@@ -6,9 +6,7 @@ const waCaseDeath = document.querySelector(".wa-case-confirmed");
 const nyCaseDeath = document.querySelector(".ny-case-confirmed");
 const nyCaseConfirm = document.querySelector(".ny-case-confirmed");
 const caCaseDeath = document.querySelector("#us-covidtrack-ca-death");
-const caCaseConfirm = document.querySelector("#us-covidtrack-ca-confirm");
-const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
-const idCaseConfirm = document.querySelector(".us-covidtrack-id-confirm");  
+const caCaseConfirm = document.querySelector("#us-covidtrack-ca-confirm");  
 
 //Define API
 const globalapi1 = 'https://corona-api.com/countries';
@@ -90,7 +88,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);  
-   caCaseDeath.textContent = getArrayFields(data, "death");
+   caCaseDeath.textContent = data.death;
    caCaseConfirm.textContent = data.positive;   
    });
 
@@ -172,9 +170,11 @@ const localapi2 = 'https://corona-api.com/countries/US';
    return response.json();
   })
   .then(data => {
-   console.log(data);  
-   idCaseDeath.innerHTML = getArrayFields(data, "death");
-   idCaseConfirm.innerHTML = getArrayFields(data, "positive");
+   console.log(data);
+   const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
+   const idCaseConfirm = document.querySelector(".us-covidtrack-id-confirm");    
+   idCaseDeath.textContent = data.death;
+   idCaseConfirm.textContent = data.positive;
    });
 
 //IL Count from COVID Tracking Project
