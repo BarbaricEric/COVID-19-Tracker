@@ -252,7 +252,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    const usCaseDeathCTP = document.querySelector(".us-covidtrack-death");
    const usCaseConfirmCTP = document.querySelector(".us-covidtrack-confirm");   
-   usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + getArrayFields(data, "lastModified").slice(0, 11);
+   usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + getArrayFields(data, "lastModified").substring(0, 11);
    usCaseConfirmCTP.textContent = getArrayFields(data, "positive") + ' as of ' + getArrayFields(data, "lastModified");   
    });  
 
