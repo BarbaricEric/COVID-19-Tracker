@@ -34,6 +34,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   usCaseDeath.textContent = data.Countries[181].TotalDeaths;
+   usCaseConfirm.textContent = data.Countries[181].TotalConfirmed;   
+   ;   
    });
 
 //AL Count from COVID Tracking Project
@@ -247,8 +250,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   usCaseDeath.textContent = getArrayFields(data, "death") + ' as of ' + getArrayFields(data, "lastModified");
-   usCaseConfirm.textContent = getArrayFields(data, "positive") + ' as of ' + getArrayFields(data, "lastModified");   
+   const usCaseDeathCTP = document.querySelector(".us-covidtrack-confirm");
+   const usCaseConfirmCTP = document.querySelector(".us-covidtrack-confirm");   
+   usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + getArrayFields(data, "lastModified");
+   usCaseConfirmCTP.textContent = getArrayFields(data, "positive") + ' as of ' + getArrayFields(data, "lastModified");   
    });  
 
 function getArrayFields(input, field) {
