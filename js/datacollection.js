@@ -46,6 +46,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const alCaseDeath = document.querySelector(".us-covidtrack-al-death");
+   const alCaseConfirm = document.querySelector(".us-covidtrack-al-confirm");    
+   alCaseDeath.textContent = data.death;
+   alCaseConfirm.textContent = data.positive;   
    });
 
 //Ak Count from COVID Tracking Project
@@ -225,6 +229,32 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    });
 
+//MD Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/md/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const mdCaseDeath = document.querySelector(".us-covidtrack-md-death");
+   const mdCaseConfirm = document.querySelector(".us-covidtrack-md-confirm");    
+   mdCaseDeath.textContent = data.death;
+   mdCaseConfirm.textContent = data.positive;   
+   });
+
+//TX Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/tx/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const txCaseDeath = document.querySelector(".us-covidtrack-tx-death");
+   const txCaseConfirm = document.querySelector(".us-covidtrack-tx-confirm");    
+   txCaseDeath.textContent = data.death;
+   txCaseConfirm.textContent = data.positive;   
+   });
+
 //WA Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/wa/current.json')
   .then(response => {
@@ -232,6 +262,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   waCaseDeath.textContent = data.death;
+   waCaseConfirm.textContent = data.positive;     
    });
 
 //NY Count from COVID Tracking Project
@@ -241,6 +273,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   nyCaseDeath.textContent = data.death;
+   nyCaseConfirm.textContent = data.positive;     
    });
 
 //US Count from COVID Tracking Project 
@@ -251,8 +285,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    const usCaseDeathCTP = document.querySelector(".us-covidtrack-death");
-   const usCaseConfirmCTP = document.querySelector(".us-covidtrack-confirm");   
-   usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + getArrayFields(data, "lastModified").substring(0, 11);
+   const usCaseConfirmCTP = document.querySelector(".us-covidtrack-confirm");
+   const updateDate = getArrayFields(data, "lastModified")    
+   usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + updateDate.substring(0, 11);
    usCaseConfirmCTP.textContent = getArrayFields(data, "positive") + ' as of ' + getArrayFields(data, "lastModified");   
    });  
 
