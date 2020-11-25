@@ -262,8 +262,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const waCaseDeath = document.querySelector(".us-covidtrack-wa-death");
+   const waCaseConfirm = document.querySelector(".us-covidtrack-wa-confirm");    
    waCaseDeath.textContent = data.death;
-   waCaseConfirm.textContent = data.positive;     
+   waCaseConfirm.textContent = data.positive;    
    });
 
 //NY Count from COVID Tracking Project
@@ -273,8 +275,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const nyCaseDeath = document.querySelector(".us-covidtrack-ny-death");
+   const nyCaseConfirm = document.querySelector(".us-covidtrack-ny-confirm");    
    nyCaseDeath.textContent = data.death;
-   nyCaseConfirm.textContent = data.positive;     
+   nyCaseConfirm.textContent = data.positive;    
    });
 
 //US Count from COVID Tracking Project 
@@ -286,7 +290,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    const usCaseDeathCTP = document.querySelector(".us-covidtrack-death");
    const usCaseConfirmCTP = document.querySelector(".us-covidtrack-confirm");
-   const updateDate = getArrayFields(data, "lastModified")    
+   const updateDate = getArrayFields(data, "lastModified").toString();    
    usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + updateDate.substring(0, 11);
    usCaseConfirmCTP.textContent = getArrayFields(data, "positive") + ' as of ' + getArrayFields(data, "lastModified");   
    });  
