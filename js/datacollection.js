@@ -52,13 +52,17 @@ const localapi2 = 'https://corona-api.com/countries/US';
    alCaseConfirm.textContent = data.positive;   
    });
 
-//Ak Count from COVID Tracking Project
+//AK Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/ak/current.json')
   .then(response => {
    return response.json();
   })
   .then(data => {
    console.log(data);
+   const akCaseDeath = document.querySelector(".us-covidtrack-ak-death");
+   const akCaseConfirm = document.querySelector(".us-covidtrack-ak-confirm");    
+   akCaseDeath.textContent = data.death;
+   akCaseConfirm.textContent = data.positive;   
    });
 
 //AS Count from COVID Tracking Project
@@ -68,6 +72,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const asCaseDeath = document.querySelector(".us-covidtrack-as-death");
+   const asCaseConfirm = document.querySelector(".us-covidtrack-as-confirm");    
+   asCaseDeath.textContent = data.death;
+   asCaseConfirm.textContent = data.positive;   
    });
 
 //AZ Count from COVID Tracking Project
@@ -77,6 +85,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const azCaseDeath = document.querySelector(".us-covidtrack-az-death");
+   const azCaseConfirm = document.querySelector(".us-covidtrack-az-confirm");    
+   azCaseDeath.textContent = data.death;
+   azCaseConfirm.textContent = data.positive;   
    });
 
 //AR Count from COVID Tracking Project
@@ -86,6 +98,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const arCaseDeath = document.querySelector(".us-covidtrack-ar-death");
+   const arCaseConfirm = document.querySelector(".us-covidtrack-ar-confirm");    
+   arCaseDeath.textContent = data.death;
+   arCaseConfirm.textContent = data.positive;   
    });
 
 //CA Count from COVID Tracking Project
@@ -291,8 +307,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const usCaseDeathCTP = document.querySelector(".us-covidtrack-death");
    const usCaseConfirmCTP = document.querySelector(".us-covidtrack-confirm");
    const updateDate = getArrayFields(data, "lastModified").toString();    
-   usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + updateDate.substring(0, 11);
-   usCaseConfirmCTP.textContent = getArrayFields(data, "positive") + ' as of ' + getArrayFields(data, "lastModified");   
+   usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + updateDate.substring(0, 10);
+   usCaseConfirmCTP.textContent = getArrayFields(data, "positive") + ' as of ' + updateDate.substring(0, 10);  
    });  
 
 function getArrayFields(input, field) {
