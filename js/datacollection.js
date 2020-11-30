@@ -47,9 +47,17 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    const alCaseDeath = document.querySelector(".us-covidtrack-al-death");
-   const alCaseConfirm = document.querySelector(".us-covidtrack-al-confirm");    
+   const alCaseConfirm = document.querySelector(".us-covidtrack-al-confirm");
+   const alTotHos = document.querySelector(".us-covidtrack-al-tothos");
+   const alCurHos = document.querySelector(".us-covidtrack-al-curhos");
+   const alCurIcu = document.querySelector(".us-covidtrack-al-curicu");
+   const alRecent = document.querySelector(".us-covidtrack-al-recent");   
    alCaseDeath.textContent = data.death;
-   alCaseConfirm.textContent = data.positive;   
+   alCaseConfirm.textContent = data.positive;
+   alTotHos.textContent = data.hospitalizedCumulative;
+   alCurHos.textContent = data.hospitalizedCurrently;
+   alCurIcu.textContent = data.inIcuCurrently;
+   alRecent.textContent = data.dateModified.toString().substring(0, 10);
    });
 
 //AK Count from COVID Tracking Project
@@ -306,11 +314,20 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);
    const usCaseDeathCTP = document.querySelector(".us-covidtrack-death");
    const usCaseConfirmCTP = document.querySelector(".us-covidtrack-confirm");
+   const usTotHos = document.querySelector(".us-covidtrack-tothos");
+   const usCurHos = document.querySelector(".us-covidtrack-curhos");
+   const usCurIcu = document.querySelector(".us-covidtrack-curicu");
+   const usRecent = document.querySelector(".us-covidtrack-recent");   
    const updateDate = getArrayFields(data, "lastModified").toString();    
-   usCaseDeathCTP.textContent = getArrayFields(data, "death") + ' as of ' + updateDate.substring(0, 10);
-   usCaseConfirmCTP.textContent = getArrayFields(data, "positive") + ' as of ' + updateDate.substring(0, 10);  
+   usCaseDeathCTP.textContent = getArrayFields(data, "death");
+   usCaseConfirmCTP.textContent = getArrayFields(data, "positive");
+   usTotHos.textContent = getArrayFields(data, "hospitalizedCumulative");
+   usCurHos.textContent = getArrayFields(data, "hospitalizedCurrently");
+   usCurIcu.textContent = getArrayFields(data, "inIcuCurrently");
+   usRecent.textContent = updateDate.substring(0, 10);
    });  
 
+//Functions
 function getArrayFields(input, field) {
     const output = [];
     for (var i=0; i < input.length ; ++i)
