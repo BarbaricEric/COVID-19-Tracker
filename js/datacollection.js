@@ -217,6 +217,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const deCaseDeath = document.querySelector(".us-covidtrack-de-death");
+   const deCaseConfirm = document.querySelector(".us-covidtrack-de-confirm");
+   const deTotHos = document.querySelector(".us-covidtrack-de-tothos");
+   const deCurHos = document.querySelector(".us-covidtrack-de-curhos");
+   const deCurIcu = document.querySelector(".us-covidtrack-de-curicu");
+   const deRecent = document.querySelector(".us-covidtrack-de-recent");      
+   deCaseDeath.textContent = data.death;
+   deCaseConfirm.textContent = data.positive;
+   deTotHos.textContent = data.hospitalizedCumulative;
+   deCurHos.textContent = data.hospitalizedCurrently;
+   deCurIcu.textContent = determineNull(data.inIcuCurrently);
+   deRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //DC Count from COVID Tracking Project
@@ -226,6 +238,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const dcCaseDeath = document.querySelector(".us-covidtrack-dc-death");
+   const dcCaseConfirm = document.querySelector(".us-covidtrack-dc-confirm");
+   const dcTotHos = document.querySelector(".us-covidtrack-dc-tothos");
+   const dcCurHos = document.querySelector(".us-covidtrack-dc-curhos");
+   const dcCurIcu = document.querySelector(".us-covidtrack-dc-curicu");
+   const dcRecent = document.querySelector(".us-covidtrack-dc-recent");      
+   dcCaseDeath.textContent = data.death;
+   dcCaseConfirm.textContent = data.positive;
+   dcTotHos.textContent = data.hospitalizedCumulative;
+   dcCurHos.textContent = data.hospitalizedCurrently;
+   dcCurIcu.textContent = determineNull(data.inIcuCurrently);
+   dcRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //FL Count from COVID Tracking Project
@@ -410,7 +434,7 @@ function getCommas() {
 
 function determineNull(input) {
    if (input === "null") {
-     const input = "0";
+     const input = 0;
    } else {
      return input
    }   
