@@ -259,6 +259,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const flCaseDeath = document.querySelector(".us-covidtrack-fl-death");
+   const flCaseConfirm = document.querySelector(".us-covidtrack-fl-confirm");
+   const flTotHos = document.querySelector(".us-covidtrack-fl-tothos");
+   const flCurHos = document.querySelector(".us-covidtrack-fl-curhos");
+   const flCurIcu = document.querySelector(".us-covidtrack-fl-curicu");
+   const flRecent = document.querySelector(".us-covidtrack-fl-recent");      
+   flCaseDeath.textContent = data.death;
+   flCaseConfirm.textContent = data.positive;
+   flTotHos.textContent = data.hospitalizedCumulative;
+   flCurHos.textContent = data.hospitalizedCurrently;
+   flCurIcu.textContent = determineNull(data.inIcuCurrently);
+   flRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //GA Count from COVID Tracking Project
@@ -434,7 +446,7 @@ function getCommas() {
 
 function determineNull(input) {
    if (input === "null") {
-     const input = 0;
+     const input = "Unavailble";
    } else {
      return input
    }   
