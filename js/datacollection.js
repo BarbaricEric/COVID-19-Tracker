@@ -155,9 +155,17 @@ const localapi2 = 'https://corona-api.com/countries/US';
    return response.json();
   })
   .then(data => {
-   console.log(data);  
+   console.log(data);
+   const caTotHos = document.querySelector(".us-covidtrack-ca-tothos");
+   const caCurHos = document.querySelector(".us-covidtrack-ca-curhos");
+   const caCurIcu = document.querySelector(".us-covidtrack-ca-curicu");
+   const caRecent = document.querySelector(".us-covidtrack-ca-recent");       
    caCaseDeath.textContent = data.death;
-   caCaseConfirm.textContent = data.positive;   
+   caCaseConfirm.textContent = data.positive;
+   caTotHos.textContent = data.hospitalizedCumulative;
+   caCurHos.textContent = data.hospitalizedCurrently;
+   caCurIcu.textContent = determineNull(data.inIcuCurrently);
+   caRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //CO Count from COVID Tracking Project
@@ -167,6 +175,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const coCaseDeath = document.querySelector(".us-covidtrack-co-death");
+   const coCaseConfirm = document.querySelector(".us-covidtrack-co-confirm");
+   const coTotHos = document.querySelector(".us-covidtrack-co-tothos");
+   const coCurHos = document.querySelector(".us-covidtrack-co-curhos");
+   const coCurIcu = document.querySelector(".us-covidtrack-co-curicu");
+   const coRecent = document.querySelector(".us-covidtrack-co-recent");      
+   coCaseDeath.textContent = data.death;
+   coCaseConfirm.textContent = data.positive;
+   coTotHos.textContent = data.hospitalizedCumulative;
+   coCurHos.textContent = data.hospitalizedCurrently;
+   coCurIcu.textContent = determineNull(data.inIcuCurrently);
+   coRecent.textContent = data.dateModified.toString().substring(0, 10);      
    });
 
 //CT Count from COVID Tracking Project
@@ -176,6 +196,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const ctCaseDeath = document.querySelector(".us-covidtrack-ct-death");
+   const ctCaseConfirm = document.querySelector(".us-covidtrack-ct-confirm");
+   const ctTotHos = document.querySelector(".us-covidtrack-ct-tothos");
+   const ctCurHos = document.querySelector(".us-covidtrack-ct-curhos");
+   const ctCurIcu = document.querySelector(".us-covidtrack-ct-curicu");
+   const ctRecent = document.querySelector(".us-covidtrack-ct-recent");      
+   ctCaseDeath.textContent = data.death;
+   ctCaseConfirm.textContent = data.positive;
+   ctTotHos.textContent = data.hospitalizedCumulative;
+   ctCurHos.textContent = data.hospitalizedCurrently;
+   ctCurIcu.textContent = determineNull(data.inIcuCurrently);
+   ctRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //DE Count from COVID Tracking Project
@@ -378,7 +410,7 @@ function getCommas() {
 
 function determineNull(input) {
    if (input === "null") {
-     const input = 0;
+     const input = "0";
    } else {
      return input
    }   
