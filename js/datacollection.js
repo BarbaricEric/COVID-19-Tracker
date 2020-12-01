@@ -349,7 +349,7 @@ function getCommas() {
 
 function determineNull(input) {
    if (input === "null") {
-     return 0;
+     const input = 0;
    } else {
      return input
    }   
