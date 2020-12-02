@@ -43,7 +43,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   d3.csv("us-states.csv").then(function(data) {
    console.log(data);
    const nyCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
-   nyCaseConfirm.textContent = data.[15007].cases;  
+   nyCaseConfirm.textContent = getArrayFields(data.[15007], "cases");  
   });
 
 //AL Count from COVID Tracking Project
@@ -539,7 +539,7 @@ function getCommas() {
 }
 
 function determineNull(input) {
-   if (input === 'null') {
+   if (input === null) {
      let input = "Unavailble";
    } else {
      return input
