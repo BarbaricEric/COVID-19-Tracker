@@ -41,7 +41,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
 
 //AL Count from New York Times
   d3.csv("us-states.csv").then(function(data) {
-   console.log(data); // [{"Hello": "world"}, …]
+   console.log(data);
+   const nyCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
+   nyCaseConfirm.textContent = [15007].cases;  
   });
 
 //AL Count from COVID Tracking Project
@@ -406,6 +408,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const iaCaseDeath = document.querySelector(".us-covidtrack-ia-death");
+   const iaCaseConfirm = document.querySelector(".us-covidtrack-ia-confirm");
+   const iaTotHos = document.querySelector(".us-covidtrack-ia-tothos");
+   const iaCurHos = document.querySelector(".us-covidtrack-ia-curhos");
+   const iaCurIcu = document.querySelector(".us-covidtrack-ia-curicu");
+   const iaRecent = document.querySelector(".us-covidtrack-ia-recent");       
+   iaCaseDeath.textContent = data.death;
+   iaCaseConfirm.textContent = data.positive;
+   iaTotHos.textContent = data.hospitalizedCumulative;
+   iaCurHos.textContent = data.hospitalizedCurrently;
+   iaCurIcu.textContent = determineNull(data.inIcuCurrently);
+   iaRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //KS Count from COVID Tracking Project
@@ -513,8 +527,8 @@ function getCommas() {
 }
 
 function determineNull(input) {
-   if (input === 'null') {
-     let input.value = "Unavailble";
+   if (input.value() === 'null') {
+     let input = "Unavailble";
    } else {
      return input
    }   
