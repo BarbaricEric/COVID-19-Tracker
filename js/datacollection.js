@@ -35,7 +35,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    usCaseDeath.textContent = data.Countries[181].TotalDeaths + ' as of ' + data.Countries[181].Date.toString().substring(0, 10) + ' 12:00 AM ';
-   usCaseConfirm.textContent = data.Countries[181].TotalConfirmed + ' as of ' + data.Countries[181].Date.toString().substring(0, 10) ' 12:00 AM ';   
+   usCaseConfirm.textContent = data.Countries[181].TotalConfirmed + ' as of ' + data.Countries[181].Date.toString().substring(0, 10) + ' 12:00 AM ';   
    ;   
    });
 
@@ -322,6 +322,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const hiCaseDeath = document.querySelector(".us-covidtrack-hi-death");
+   const hiCaseConfirm = document.querySelector(".us-covidtrack-hi-confirm");
+   const hiTotHos = document.querySelector(".us-covidtrack-hi-tothos");
+   const hiCurHos = document.querySelector(".us-covidtrack-hi-curhos");
+   const hiCurIcu = document.querySelector(".us-covidtrack-hi-curicu");
+   const hiRecent = document.querySelector(".us-covidtrack-hi-recent");      
+   hiCaseDeath.textContent = data.death;
+   hiCaseConfirm.textContent = data.positive;
+   hiTotHos.textContent = data.hospitalizedCumulative;
+   hiCurHos.textContent = data.hospitalizedCurrently;
+   hiCurIcu.textContent = determineNull(data.inIcuCurrently);
+   hiRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //ID Count from COVID Tracking Project
