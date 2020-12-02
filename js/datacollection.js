@@ -344,9 +344,17 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
-   const idCaseConfirm = document.querySelector(".us-covidtrack-id-confirm");    
+   const idCaseConfirm = document.querySelector(".us-covidtrack-id-confirm");
+   const idTotHos = document.querySelector(".us-covidtrack-id-tothos");
+   const idCurHos = document.querySelector(".us-covidtrack-id-curhos");
+   const idCurIcu = document.querySelector(".us-covidtrack-id-curicu");
+   const idRecent = document.querySelector(".us-covidtrack-id-recent");       
    idCaseDeath.textContent = data.death;
    idCaseConfirm.textContent = data.positive;
+   idTotHos.textContent = data.hospitalizedCumulative;
+   idCurHos.textContent = data.hospitalizedCurrently;
+   idCurIcu.textContent = determineNull(data.inIcuCurrently);
+   idRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //IL Count from COVID Tracking Project
@@ -356,6 +364,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const ilCaseDeath = document.querySelector(".us-covidtrack-il-death");
+   const ilCaseConfirm = document.querySelector(".us-covidtrack-il-confirm");
+   const ilTotHos = document.querySelector(".us-covidtrack-il-tothos");
+   const ilCurHos = document.querySelector(".us-covidtrack-il-curhos");
+   const ilCurIcu = document.querySelector(".us-covidtrack-il-curicu");
+   const ilRecent = document.querySelector(".us-covidtrack-il-recent");       
+   ilCaseDeath.textContent = data.death;
+   ilCaseConfirm.textContent = data.positive;
+   ilTotHos.textContent = data.hospitalizedCumulative;
+   ilCurHos.textContent = data.hospitalizedCurrently;
+   ilCurIcu.textContent = determineNull(data.inIcuCurrently);
+   ilRecent.textContent = data.dateModified.toString().substring(0, 10);         
    });
 
 //IN Count from COVID Tracking Project
@@ -365,6 +385,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const inCaseDeath = document.querySelector(".us-covidtrack-in-death");
+   const inCaseConfirm = document.querySelector(".us-covidtrack-in-confirm");
+   const inTotHos = document.querySelector(".us-covidtrack-in-tothos");
+   const inCurHos = document.querySelector(".us-covidtrack-in-curhos");
+   const inCurIcu = document.querySelector(".us-covidtrack-in-curicu");
+   const inRecent = document.querySelector(".us-covidtrack-in-recent");       
+   inCaseDeath.textContent = data.death;
+   inCaseConfirm.textContent = data.positive;
+   inTotHos.textContent = data.hospitalizedCumulative;
+   inCurHos.textContent = data.hospitalizedCurrently;
+   inCurIcu.textContent = determineNull(data.inIcuCurrently);
+   inRecent.textContent = data.dateModified.toString().substring(0, 10);         
    });
 
 //IA Count from COVID Tracking Project
@@ -482,7 +514,7 @@ function getCommas() {
 
 function determineNull(input) {
    if (input === 'null') {
-     const input.value = "Unavailble";
+     let input.value = "Unavailble";
    } else {
      return input
    }   
