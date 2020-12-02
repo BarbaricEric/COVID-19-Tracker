@@ -42,8 +42,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
 //AL Count from New York Times
   d3.csv("us-states.csv").then(function(data) {
    console.log(data);
-   const nyCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
-   nyCaseConfirm.textContent = getArrayFields(data.15007, "cases");  
+   const nyCaseConfirm = document.querySelector(".us-newyorktimes-confirm");  
   });
 
 //AL Count from COVID Tracking Project
