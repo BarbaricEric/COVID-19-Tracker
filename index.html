@@ -98,10 +98,10 @@
     
 <!-- Info Section -->
  <section class="info">
-  <div class="Tabular-data"> 
+  <div class="Tabular-data">
   <div class="info-title">
-   <h2>United States</h2>
-   <p class="price">I know</p>
+   <h2>John Hopkins University</h2>
+   <p class="price">***Note: Empty fields indicate unavailable data</p>
    <a href="#" class="btn">Learn More</a>
   </div>
   <div class="FilterRow">
@@ -111,7 +111,40 @@
       <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
       <option value="New York Times Data">New York Times Data</option>
      </select>
-   </div> 
+   </div>
+  <div class="data-table-john-hopkins"> 
+   <table class="john-hopkins-table">
+    <thead>
+     <tr>
+      <th>States</th> 
+      <th>Total Cases</th>
+      <th>Total Deaths</th>
+      <th>Last Updated</th> 
+     </tr> 
+    </thead>
+    <tbody>
+     <tr>
+      <td class="">United States</td>
+      <td class="us-johnhopkins-confirm"></td>
+      <td class="us-johnhopkins-death"></td>
+      <td class="us-johnhopkins-recent"></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>  
+  <div class="info-title">
+   <h2>New York Times</h2>
+   <p class="price">***Note: Empty fields indicate unavailable data</p>
+   <a href="#" class="btn">Learn More</a>
+  </div>
+  <div class="FilterRow">
+    <input id="searchBar" placeholder="Search By States" class="searchBar">
+    <select id="sourceSel" class="sourceSel">
+      <option value="John Hopkins University Data" selected="selected">John Hopkins University Data</option>
+      <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
+      <option value="New York Times Data">New York Times Data</option>
+     </select>
+   </div>
   <div class="data-table-new-york-times"> 
    <table class="new-york-times-table">
     <thead>
@@ -449,8 +482,21 @@
     </tbody>
    </table>  
   </div>
+  <div class="info-title">
+   <h2>COVID Tracking Project</h2>
+   <p class="price">***Note: Empty fields indicate unavailable data</p>
+   <a href="#" class="btn">Learn More</a>
+  </div>
+  <div class="FilterRow">
+    <input id="searchBar" placeholder="Search By States" class="searchBar">
+    <select id="sourceSel" class="sourceSel">
+      <option value="John Hopkins University Data" selected="selected">John Hopkins University Data</option>
+      <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
+      <option value="New York Times Data">New York Times Data</option>
+     </select>
+   </div>
   <div class="data-table-covid-track"> 
-   <table class="table">
+   <table class="covid-track-table">
     <thead>
      <tr>
       <th>States</th> 
@@ -1953,7 +1999,7 @@
 <!-- Footer -->
  <footer class="footer">
   <p>ENDesign &copy; 2020</p>
-  <img src="img/hamburguesa.svg" class="hamburger" alt="news-menuicon"/> 
+  <!-- <img src="img/hamburguesa.svg" class="hamburger" alt="news-menuicon"/> -->
 </footer>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
