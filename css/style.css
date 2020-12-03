@@ -52,6 +52,13 @@ body {
  margin: 0px 15px;
 }
 
+.FilterRow {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 10px;
+}
+
 img {
   max-width: 100%;
 }
@@ -213,7 +220,7 @@ img {
  box-shadow: var(--shadow);
  display: grid;
  grid-gap: 30px;
- grid-template-columns: repeat(2, 1fr);
+ /*grid-template-columns: repeat(2, 1fr);*/
  padding: 3rem;
 }
 
