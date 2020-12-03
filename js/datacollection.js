@@ -43,16 +43,22 @@ const localapi2 = 'https://corona-api.com/countries/US';
   d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv").then(function(data) {
    console.log(data);  
    const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
-   const usCaseDeath = document.querySelector(".us-newyorktimes-death");     
+   const usCaseDeath = document.querySelector(".us-newyorktimes-death");
+   const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
+   usCaseConfirm.textContent = data[316].cases;
+   usCaseDeath.textContent = data[316].deaths; 
+   usCaseRecent.textContent = data[316].date;
   });
 
 //AL Count from New York Times
   d3.csv("us-states.csv").then(function(data) {
    console.log(data);  
    const nyCaseConfirm = document.querySelector(".us-newyorktimes-ny-confirm");
-   const nyCaseDeath = document.querySelector(".us-newyorktimes-ny-death");   
+   const nyCaseDeath = document.querySelector(".us-newyorktimes-ny-death");
+   const nyCaseRecent = document.querySelector(".us-newyorktimes-ny-recent");  
    nyCaseConfirm.textContent = data[15062].cases;
-   nyCaseDeath.textContent = data[15062].deaths;  
+   nyCaseDeath.textContent = data[15062].deaths;
+   nyCaseRecent.textContent = data[15062].date;  
   });
 
 //AL Count from COVID Tracking Project
