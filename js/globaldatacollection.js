@@ -25,6 +25,15 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   .then(data => {
    console.log(data);
    });
+
+//Global Count from covid19-api.org      
+   fetch('https://https://covid19-api.org/api/status')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   });
     
    function getArrayFields(input, field) {
     const output = [];
