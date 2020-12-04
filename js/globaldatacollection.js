@@ -27,7 +27,7 @@ const globalapi2 = 'https://api.covid19api.com/summary';
    });
 
 //Global Count from covid19-api.org      
-   fetch('https://https://covid19-api.org/api/status')
+   fetch('https://covid19-api.org/api/status')
   .then(response => {
    return response.json();
   })
