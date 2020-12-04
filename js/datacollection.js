@@ -34,10 +34,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   usCaseDeath.textContent = data.Countries[181].TotalDeaths + ' as of ' + data.Countries[181].Date.toString().substring(0, 10) + ' 12:00 AM ';
-   usCaseConfirm.textContent = data.Countries[181].TotalConfirmed + ' as of ' + data.Countries[181].Date.toString().substring(0, 10) + ' 12:00 AM ';   
-   ;   
+   usCaseDeath.textContent = data.Countries[181].TotalDeaths + ' as of ' + data.Countries[181].Date.toString().substring(0, 10) + ' 12:00 AM PST ';
+   usCaseConfirm.textContent = data.Countries[181].TotalConfirmed + ' as of ' + data.Countries[181].Date.toString().substring(0, 10) + ' 12:00 AM PST ';      
    });
+
+//US Count from covid-api.com      
+   fetch('https://covid-api.com/api/reports?date=2020-12-03&iso=USA')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+  });   
 
 //US Count from New York Times
   d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv").then(function(data) {
@@ -465,6 +473,18 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
+   const kyCaseDeath = document.querySelector(".us-covidtrack-ky-death");
+   const kyCaseConfirm = document.querySelector(".us-covidtrack-ky-confirm");
+   const kyTotHos = document.querySelector(".us-covidtrack-ky-tothos");
+   const kyCurHos = document.querySelector(".us-covidtrack-ky-curhos");
+   const kyCurIcu = document.querySelector(".us-covidtrack-ky-curicu");
+   const kyRecent = document.querySelector(".us-covidtrack-ky-recent");       
+   kyCaseDeath.textContent = data.death;
+   kyCaseConfirm.textContent = data.positive;
+   kyTotHos.textContent = data.hospitalizedCumulative;
+   kyCurHos.textContent = data.hospitalizedCurrently;
+   kyCurIcu.textContent = determineNull(data.inIcuCurrently);
+   kyRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //MD Count from COVID Tracking Project
