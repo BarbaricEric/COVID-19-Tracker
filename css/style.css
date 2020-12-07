@@ -220,8 +220,17 @@ img {
  box-shadow: var(--shadow);
  display: grid;
  grid-gap: 30px;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
  /*grid-template-columns: repeat(2, 1fr);*/
  padding: 3rem;
+}
+
+.covid-track-head-titles {
+ grid-template-columns: repeat(7,1fr);
+ padding-bottom: 1.5px;
+ padding: 0px 5px;
 }
 
 /* Portfolio */ 
@@ -472,11 +481,13 @@ img {
  }
  
  .boxes {
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ grid-template-columns: repeat(1, 1fr)
+ /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
  }
  
   .info {
   grid-template-columns: 1fr;
+  padding: 0rem; 
  }
  
  .article-container {
