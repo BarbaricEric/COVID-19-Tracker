@@ -487,6 +487,49 @@ const localapi2 = 'https://corona-api.com/countries/US';
    kyRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
+//LA Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/la/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const laCaseDeath = document.querySelector(".us-covidtrack-la-death");
+   const laCaseConfirm = document.querySelector(".us-covidtrack-la-confirm");
+   const laTotHos = document.querySelector(".us-covidtrack-la-tothos");
+   const laCurHos = document.querySelector(".us-covidtrack-la-curhos");
+   const laCurIcu = document.querySelector(".us-covidtrack-la-curicu");
+   const laRecent = document.querySelector(".us-covidtrack-la-recent");       
+   laCaseDeath.textContent = data.death;
+   laCaseConfirm.textContent = data.positive;
+   laTotHos.textContent = data.hospitalizedCumulative;
+   laCurHos.textContent = data.hospitalizedCurrently;
+   laCurIcu.textContent = determineNull(data.inIcuCurrently);
+   laRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
+
+//ME Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/me/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const meCaseDeath = document.querySelector(".us-covidtrack-me-death");
+   const meCaseConfirm = document.querySelector(".us-covidtrack-me-confirm");
+   const meTotHos = document.querySelector(".us-covidtrack-me-tothos");
+   const meCurHos = document.querySelector(".us-covidtrack-me-curhos");
+   const meCurIcu = document.querySelector(".us-covidtrack-me-curicu");
+   const meRecent = document.querySelector(".us-covidtrack-me-recent");      
+   meCaseDeath.textContent = data.death;
+   meCaseConfirm.textContent = data.positive;
+   meTotHos.textContent = data.hospitalizedCumulative;
+   meCurHos.textContent = data.hospitalizedCurrently;
+   meCurIcu.textContent = determineNull(data.inIcuCurrently);
+   meRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
+
+
 //MD Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/md/current.json')
   .then(response => {
@@ -495,36 +538,154 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    const mdCaseDeath = document.querySelector(".us-covidtrack-md-death");
-   const mdCaseConfirm = document.querySelector(".us-covidtrack-md-confirm");    
+   const mdCaseConfirm = document.querySelector(".us-covidtrack-md-confirm");
+   const mdTotHos = document.querySelector(".us-covidtrack-md-tothos");
+   const mdCurHos = document.querySelector(".us-covidtrack-md-curhos");
+   const mdCurIcu = document.querySelector(".us-covidtrack-md-curicu");
+   const mdRecent = document.querySelector(".us-covidtrack-md-recent");      
    mdCaseDeath.textContent = data.death;
-   mdCaseConfirm.textContent = data.positive;   
+   mdCaseConfirm.textContent = data.positive;
+   mdTotHos.textContent = data.hospitalizedCumulative;
+   mdCurHos.textContent = data.hospitalizedCurrently;
+   mdCurIcu.textContent = determineNull(data.inIcuCurrently);
+   mdRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
-//TX Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/tx/current.json')
+//MA Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ma/current.json')
   .then(response => {
    return response.json();
   })
   .then(data => {
    console.log(data);
-   const txCaseDeath = document.querySelector(".us-covidtrack-tx-death");
-   const txCaseConfirm = document.querySelector(".us-covidtrack-tx-confirm");    
-   txCaseDeath.textContent = data.death;
-   txCaseConfirm.textContent = data.positive;   
+   const maCaseDeath = document.querySelector(".us-covidtrack-ma-death");
+   const maCaseConfirm = document.querySelector(".us-covidtrack-ma-confirm");
+   const maTotHos = document.querySelector(".us-covidtrack-ma-tothos");
+   const maCurHos = document.querySelector(".us-covidtrack-ma-curhos");
+   const maCurIcu = document.querySelector(".us-covidtrack-ma-curicu");
+   const maRecent = document.querySelector(".us-covidtrack-ma-recent");      
+   maCaseDeath.textContent = data.death;
+   maCaseConfirm.textContent = data.positive;
+   maTotHos.textContent = data.hospitalizedCumulative;
+   maCurHos.textContent = data.hospitalizedCurrently;
+   maCurIcu.textContent = determineNull(data.inIcuCurrently);
+   maRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
-//WA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/wa/current.json')
+//MI Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/mi/current.json')
   .then(response => {
    return response.json();
   })
   .then(data => {
    console.log(data);
-   const waCaseDeath = document.querySelector(".us-covidtrack-wa-death");
-   const waCaseConfirm = document.querySelector(".us-covidtrack-wa-confirm");    
-   waCaseDeath.textContent = data.death;
-   waCaseConfirm.textContent = data.positive;    
+   const miCaseDeath = document.querySelector(".us-covidtrack-mi-death");
+   const miCaseConfirm = document.querySelector(".us-covidtrack-mi-confirm");
+   const miTotHos = document.querySelector(".us-covidtrack-mi-tothos");
+   const miCurHos = document.querySelector(".us-covidtrack-mi-curhos");
+   const miCurIcu = document.querySelector(".us-covidtrack-mi-curicu");
+   const miRecent = document.querySelector(".us-covidtrack-mi-recent");      
+   miCaseDeath.textContent = data.death;
+   miCaseConfirm.textContent = data.positive;
+   miTotHos.textContent = data.hospitalizedCumulative;
+   miCurHos.textContent = data.hospitalizedCurrently;
+   miCurIcu.textContent = determineNull(data.inIcuCurrently);
+   miRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
+
+//MN Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/mn/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const mnCaseDeath = document.querySelector(".us-covidtrack-mn-death");
+   const mnCaseConfirm = document.querySelector(".us-covidtrack-mn-confirm");
+   const mnTotHos = document.querySelector(".us-covidtrack-mn-tothos");
+   const mnCurHos = document.querySelector(".us-covidtrack-mn-curhos");
+   const mnCurIcu = document.querySelector(".us-covidtrack-mn-curicu");
+   const mnRecent = document.querySelector(".us-covidtrack-mn-recent");      
+   mnCaseDeath.textContent = data.death;
+   mnCaseConfirm.textContent = data.positive;
+   mnTotHos.textContent = data.hospitalizedCumulative;
+   mnCurHos.textContent = data.hospitalizedCurrently;
+   mnCurIcu.textContent = determineNull(data.inIcuCurrently);
+   mnRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
+
+//MS Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ms/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const msCaseDeath = document.querySelector(".us-covidtrack-ms-death");
+   const msCaseConfirm = document.querySelector(".us-covidtrack-ms-confirm");
+   const msTotHos = document.querySelector(".us-covidtrack-ms-tothos");
+   const msCurHos = document.querySelector(".us-covidtrack-ms-curhos");
+   const msCurIcu = document.querySelector(".us-covidtrack-ms-curicu");
+   const msRecent = document.querySelector(".us-covidtrack-ms-recent");      
+   msCaseDeath.textContent = data.death;
+   msCaseConfirm.textContent = data.positive;
+   msTotHos.textContent = data.hospitalizedCumulative;
+   msCurHos.textContent = data.hospitalizedCurrently;
+   msCurIcu.textContent = determineNull(data.inIcuCurrently);
+   msRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
+
+//MO Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/mo/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const moCaseDeath = document.querySelector(".us-covidtrack-mo-death");
+   const moCaseConfirm = document.querySelector(".us-covidtrack-mo-confirm");
+   const moTotHos = document.querySelector(".us-covidtrack-mo-tothos");
+   const moCurHos = document.querySelector(".us-covidtrack-mo-curhos");
+   const moCurIcu = document.querySelector(".us-covidtrack-mo-curicu");
+   const moRecent = document.querySelector(".us-covidtrack-mo-recent");      
+   moCaseDeath.textContent = data.death;
+   moCaseConfirm.textContent = data.positive;
+   moTotHos.textContent = data.hospitalizedCumulative;
+   moCurHos.textContent = data.hospitalizedCurrently;
+   moCurIcu.textContent = determineNull(data.inIcuCurrently);
+   moRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
+
+//MT Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/mt/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const mtCaseDeath = document.querySelector(".us-covidtrack-mt-death");
+   const mtCaseConfirm = document.querySelector(".us-covidtrack-mt-confirm");
+   const mtTotHos = document.querySelector(".us-covidtrack-mt-tothos");
+   const mtCurHos = document.querySelector(".us-covidtrack-mt-curhos");
+   const mtCurIcu = document.querySelector(".us-covidtrack-mt-curicu");
+   const mtRecent = document.querySelector(".us-covidtrack-mt-recent");      
+   mtCaseDeath.textContent = data.death;
+   mtCaseConfirm.textContent = data.positive;
+   mtTotHos.textContent = data.hospitalizedCumulative;
+   mtCurHos.textContent = data.hospitalizedCurrently;
+   mtCurIcu.textContent = determineNull(data.inIcuCurrently);
+   mtRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
+
+//NE Count from COVID Tracking Project
+
+//NV Count from COVID Tracking Project
+
+//NH Count from COVID Tracking Project
+
+//NJ Count from COVID Tracking Project
+
+//NM Count from COVID Tracking Project
 
 //NY Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/ny/current.json')
@@ -534,9 +695,116 @@ const localapi2 = 'https://corona-api.com/countries/US';
   .then(data => {
    console.log(data);
    const nyCaseDeath = document.querySelector(".us-covidtrack-ny-death");
-   const nyCaseConfirm = document.querySelector(".us-covidtrack-ny-confirm");    
+   const nyCaseConfirm = document.querySelector(".us-covidtrack-ny-confirm");
+   const nyTotHos = document.querySelector(".us-covidtrack-ny-tothos");
+   const nyCurHos = document.querySelector(".us-covidtrack-ny-curhos");
+   const nyCurIcu = document.querySelector(".us-covidtrack-ny-curicu");
+   const nyRecent = document.querySelector(".us-covidtrack-ny-recent");       
    nyCaseDeath.textContent = data.death;
-   nyCaseConfirm.textContent = data.positive;    
+   nyCaseConfirm.textContent = data.positive;
+   nyTotHos.textContent = data.hospitalizedCumulative;
+   nyCurHos.textContent = data.hospitalizedCurrently;
+   nyCurIcu.textContent = determineNull(data.inIcuCurrently);
+   nyRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   });
+
+//NC Count from COVID Tracking Project
+
+//ND Count from COVID Tracking Project
+
+//MP Count from COVID Tracking Project
+
+//OH Count from COVID Tracking Project
+
+//OK Count from COVID Tracking Project
+
+//OR Count from COVID Tracking Project
+
+//PA Count from COVID Tracking Project
+
+//PR Count from COVID Tracking Project
+
+//RI Count from COVID Tracking Project
+
+//SC Count from COVID Tracking Project
+
+//SD Count from COVID Tracking Project
+
+//TN Count from COVID Tracking Project
+
+//TX Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/tx/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const txCaseDeath = document.querySelector(".us-covidtrack-tx-death");
+   const txCaseConfirm = document.querySelector(".us-covidtrack-tx-confirm");
+   const txTotHos = document.querySelector(".us-covidtrack-tx-tothos");
+   const txCurHos = document.querySelector(".us-covidtrack-tx-curhos");
+   const txCurIcu = document.querySelector(".us-covidtrack-tx-curicu");
+   const txRecent = document.querySelector(".us-covidtrack-tx-recent");       
+   txCaseDeath.textContent = data.death;
+   txCaseConfirm.textContent = data.positive;
+   txTotHos.textContent = data.hospitalizedCumulative;
+   txCurHos.textContent = data.hospitalizedCurrently;
+   txCurIcu.textContent = determineNull(data.inIcuCurrently);
+   txRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   });
+
+//VI Count from COVID Tracking Project
+
+//UT Count from COVID Tracking Project
+
+//VT Count from COVID Tracking Project
+
+//VA Count from COVID Tracking Project
+
+//WA Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/wa/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const waCaseDeath = document.querySelector(".us-covidtrack-wa-death");
+   const waCaseConfirm = document.querySelector(".us-covidtrack-wa-confirm");
+   const waTotHos = document.querySelector(".us-covidtrack-wa-tothos");
+   const waCurHos = document.querySelector(".us-covidtrack-wa-curhos");
+   const waCurIcu = document.querySelector(".us-covidtrack-wa-curicu");
+   const waRecent = document.querySelector(".us-covidtrack-wa-recent");       
+   waCaseDeath.textContent = data.death;
+   waCaseConfirm.textContent = data.positive;
+   waTotHos.textContent = data.hospitalizedCumulative;
+   waCurHos.textContent = data.hospitalizedCurrently;
+   waCurIcu.textContent = determineNull(data.inIcuCurrently);
+   waRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   });
+
+//WV Count from COVID Tracking Project
+
+//WI Count from COVID Tracking Project
+
+//WY Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/wy/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const wyCaseDeath = document.querySelector(".us-covidtrack-wy-death");
+   const wyCaseConfirm = document.querySelector(".us-covidtrack-wy-confirm");
+   const wyTotHos = document.querySelector(".us-covidtrack-wy-tothos");
+   const wyCurHos = document.querySelector(".us-covidtrack-wy-curhos");
+   const wyCurIcu = document.querySelector(".us-covidtrack-wy-curicu");
+   const wyRecent = document.querySelector(".us-covidtrack-wy-recent");      
+   wyCaseDeath.textContent = data.death;
+   wyCaseConfirm.textContent = data.positive;
+   wyTotHos.textContent = data.hospitalizedCumulative;
+   wyCurHos.textContent = data.hospitalizedCurrently;
+   wyCurIcu.textContent = determineNull(data.inIcuCurrently);
+   wyRecent.textContent = data.dateModified.toString().substring(0, 10);       
    });
 
 //US Count from COVID Tracking Project 
