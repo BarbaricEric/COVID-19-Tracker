@@ -228,6 +228,10 @@ img {
 }
 
 .covid-track-head-titles {
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
  grid-template-columns: repeat(7,1fr);
  padding-bottom: 1.5px;
  padding: 0px 5px;
