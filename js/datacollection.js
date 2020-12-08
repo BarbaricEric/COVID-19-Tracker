@@ -58,7 +58,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    usCaseRecent.textContent = data[316].date;
   });
 
-//AL Count from New York Times
+//NY Count from New York Times
   d3.csv("us-states.csv").then(function(data) {
    console.log(data);  
    const nyCaseConfirm = document.querySelector(".us-newyorktimes-ny-confirm");
@@ -678,14 +678,109 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //NE Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ne/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const neCaseDeath = document.querySelector(".us-covidtrack-ne-death");
+   const neCaseConfirm = document.querySelector(".us-covidtrack-ne-confirm");
+   const neTotHos = document.querySelector(".us-covidtrack-ne-tothos");
+   const neCurHos = document.querySelector(".us-covidtrack-ne-curhos");
+   const neCurIcu = document.querySelector(".us-covidtrack-ne-curicu");
+   const neRecent = document.querySelector(".us-covidtrack-ne-recent");      
+   neCaseDeath.textContent = data.death;
+   neCaseConfirm.textContent = data.positive;
+   neTotHos.textContent = data.hospitalizedCumulative;
+   neCurHos.textContent = data.hospitalizedCurrently;
+   neCurIcu.textContent = determineNull(data.inIcuCurrently);
+   neRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //NV Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/nv/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const nvCaseDeath = document.querySelector(".us-covidtrack-nv-death");
+   const nvCaseConfirm = document.querySelector(".us-covidtrack-nv-confirm");
+   const nvTotHos = document.querySelector(".us-covidtrack-nv-tothos");
+   const nvCurHos = document.querySelector(".us-covidtrack-nv-curhos");
+   const nvCurIcu = document.querySelector(".us-covidtrack-nv-curicu");
+   const nvRecent = document.querySelector(".us-covidtrack-nv-recent");      
+   nvCaseDeath.textContent = data.death;
+   nvCaseConfirm.textContent = data.positive;
+   nvTotHos.textContent = data.hospitalizedCumulative;
+   nvCurHos.textContent = data.hospitalizedCurrently;
+   nvCurIcu.textContent = determineNull(data.inIcuCurrently);
+   nvRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //NH Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/nh/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const nhCaseDeath = document.querySelector(".us-covidtrack-nh-death");
+   const nhCaseConfirm = document.querySelector(".us-covidtrack-nh-confirm");
+   const nhTotHos = document.querySelector(".us-covidtrack-nh-tothos");
+   const nhCurHos = document.querySelector(".us-covidtrack-nh-curhos");
+   const nhCurIcu = document.querySelector(".us-covidtrack-nh-curicu");
+   const nhRecent = document.querySelector(".us-covidtrack-nh-recent");      
+   nhCaseDeath.textContent = data.death;
+   nhCaseConfirm.textContent = data.positive;
+   nhTotHos.textContent = data.hospitalizedCumulative;
+   nhCurHos.textContent = data.hospitalizedCurrently;
+   nhCurIcu.textContent = determineNull(data.inIcuCurrently);
+   nhRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //NJ Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/nj/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const njCaseDeath = document.querySelector(".us-covidtrack-nj-death");
+   const njCaseConfirm = document.querySelector(".us-covidtrack-nj-confirm");
+   const njTotHos = document.querySelector(".us-covidtrack-nj-tothos");
+   const njCurHos = document.querySelector(".us-covidtrack-nj-curhos");
+   const njCurIcu = document.querySelector(".us-covidtrack-nj-curicu");
+   const njRecent = document.querySelector(".us-covidtrack-nj-recent");      
+   njCaseDeath.textContent = data.death;
+   njCaseConfirm.textContent = data.positive;
+   njTotHos.textContent = data.hospitalizedCumulative;
+   njCurHos.textContent = data.hospitalizedCurrently;
+   njCurIcu.textContent = determineNull(data.inIcuCurrently);
+   njRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //NM Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/nm/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const nmCaseDeath = document.querySelector(".us-covidtrack-nm-death");
+   const nmCaseConfirm = document.querySelector(".us-covidtrack-nm-confirm");
+   const nmTotHos = document.querySelector(".us-covidtrack-nm-tothos");
+   const nmCurHos = document.querySelector(".us-covidtrack-nm-curhos");
+   const nmCurIcu = document.querySelector(".us-covidtrack-nm-curicu");
+   const nmRecent = document.querySelector(".us-covidtrack-nm-recent");      
+   nmCaseDeath.textContent = data.death;
+   nmCaseConfirm.textContent = data.positive;
+   nmTotHos.textContent = data.hospitalizedCumulative;
+   nmCurHos.textContent = data.hospitalizedCurrently;
+   nmCurIcu.textContent = determineNull(data.inIcuCurrently);
+   nmRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //NY Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/ny/current.json')
@@ -709,28 +804,256 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //NC Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/nc/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const ncCaseDeath = document.querySelector(".us-covidtrack-nc-death");
+   const ncCaseConfirm = document.querySelector(".us-covidtrack-nc-confirm");
+   const ncTotHos = document.querySelector(".us-covidtrack-nc-tothos");
+   const ncCurHos = document.querySelector(".us-covidtrack-nc-curhos");
+   const ncCurIcu = document.querySelector(".us-covidtrack-nc-curicu");
+   const ncRecent = document.querySelector(".us-covidtrack-nc-recent");      
+   ncCaseDeath.textContent = data.death;
+   ncCaseConfirm.textContent = data.positive;
+   ncTotHos.textContent = data.hospitalizedCumulative;
+   ncCurHos.textContent = data.hospitalizedCurrently;
+   ncCurIcu.textContent = determineNull(data.inIcuCurrently);
+   ncRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //ND Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/nd/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const ndCaseDeath = document.querySelector(".us-covidtrack-nd-death");
+   const ndCaseConfirm = document.querySelector(".us-covidtrack-nd-confirm");
+   const ndTotHos = document.querySelector(".us-covidtrack-nd-tothos");
+   const ndCurHos = document.querySelector(".us-covidtrack-nd-curhos");
+   const ndCurIcu = document.querySelector(".us-covidtrack-nd-curicu");
+   const ndRecent = document.querySelector(".us-covidtrack-nd-recent");      
+   ndCaseDeath.textContent = data.death;
+   ndCaseConfirm.textContent = data.positive;
+   ndTotHos.textContent = data.hospitalizedCumulative;
+   ndCurHos.textContent = data.hospitalizedCurrently;
+   ndCurIcu.textContent = determineNull(data.inIcuCurrently);
+   ndRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //MP Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/mp/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const mpCaseDeath = document.querySelector(".us-covidtrack-mp-death");
+   const mpCaseConfirm = document.querySelector(".us-covidtrack-mp-confirm");
+   const mpTotHos = document.querySelector(".us-covidtrack-mp-tothos");
+   const mpCurHos = document.querySelector(".us-covidtrack-mp-curhos");
+   const mpCurIcu = document.querySelector(".us-covidtrack-mp-curicu");
+   const mpRecent = document.querySelector(".us-covidtrack-mp-recent");      
+   mpCaseDeath.textContent = data.death;
+   mpCaseConfirm.textContent = data.positive;
+   mpTotHos.textContent = data.hospitalizedCumulative;
+   mpCurHos.textContent = data.hospitalizedCurrently;
+   mpCurIcu.textContent = determineNull(data.inIcuCurrently);
+   mpRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //OH Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/oh/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const ohCaseDeath = document.querySelector(".us-covidtrack-oh-death");
+   const ohCaseConfirm = document.querySelector(".us-covidtrack-oh-confirm");
+   const ohTotHos = document.querySelector(".us-covidtrack-oh-tothos");
+   const ohCurHos = document.querySelector(".us-covidtrack-oh-curhos");
+   const ohCurIcu = document.querySelector(".us-covidtrack-oh-curicu");
+   const ohRecent = document.querySelector(".us-covidtrack-oh-recent");      
+   ohCaseDeath.textContent = data.death;
+   ohCaseConfirm.textContent = data.positive;
+   ohTotHos.textContent = data.hospitalizedCumulative;
+   ohCurHos.textContent = data.hospitalizedCurrently;
+   ohCurIcu.textContent = determineNull(data.inIcuCurrently);
+   ohRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //OK Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ok/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const okCaseDeath = document.querySelector(".us-covidtrack-ok-death");
+   const okCaseConfirm = document.querySelector(".us-covidtrack-ok-confirm");
+   const okTotHos = document.querySelector(".us-covidtrack-ok-tothos");
+   const okCurHos = document.querySelector(".us-covidtrack-ok-curhos");
+   const okCurIcu = document.querySelector(".us-covidtrack-ok-curicu");
+   const okRecent = document.querySelector(".us-covidtrack-ok-recent");      
+   okCaseDeath.textContent = data.death;
+   okCaseConfirm.textContent = data.positive;
+   okTotHos.textContent = data.hospitalizedCumulative;
+   okCurHos.textContent = data.hospitalizedCurrently;
+   okCurIcu.textContent = determineNull(data.inIcuCurrently);
+   okRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //OR Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/or/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const orCaseDeath = document.querySelector(".us-covidtrack-or-death");
+   const orCaseConfirm = document.querySelector(".us-covidtrack-or-confirm");
+   const orTotHos = document.querySelector(".us-covidtrack-or-tothos");
+   const orCurHos = document.querySelector(".us-covidtrack-or-curhos");
+   const orCurIcu = document.querySelector(".us-covidtrack-or-curicu");
+   const orRecent = document.querySelector(".us-covidtrack-or-recent");      
+   orCaseDeath.textContent = data.death;
+   orCaseConfirm.textContent = data.positive;
+   orTotHos.textContent = data.hospitalizedCumulative;
+   orCurHos.textContent = data.hospitalizedCurrently;
+   orCurIcu.textContent = determineNull(data.inIcuCurrently);
+   orRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //PA Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/pa/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const paCaseDeath = document.querySelector(".us-covidtrack-pa-death");
+   const paCaseConfirm = document.querySelector(".us-covidtrack-pa-confirm");
+   const paTotHos = document.querySelector(".us-covidtrack-pa-tothos");
+   const paCurHos = document.querySelector(".us-covidtrack-pa-curhos");
+   const paCurIcu = document.querySelector(".us-covidtrack-pa-curicu");
+   const paRecent = document.querySelector(".us-covidtrack-pa-recent");      
+   paCaseDeath.textContent = data.death;
+   paCaseConfirm.textContent = data.positive;
+   paTotHos.textContent = data.hospitalizedCumulative;
+   paCurHos.textContent = data.hospitalizedCurrently;
+   paCurIcu.textContent = determineNull(data.inIcuCurrently);
+   paRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //PR Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/pr/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const prCaseDeath = document.querySelector(".us-covidtrack-pr-death");
+   const prCaseConfirm = document.querySelector(".us-covidtrack-pr-confirm");
+   const prTotHos = document.querySelector(".us-covidtrack-pr-tothos");
+   const prCurHos = document.querySelector(".us-covidtrack-pr-curhos");
+   const prCurIcu = document.querySelector(".us-covidtrack-pr-curicu");
+   const prRecent = document.querySelector(".us-covidtrack-pr-recent");      
+   prCaseDeath.textContent = data.death;
+   prCaseConfirm.textContent = data.positive;
+   prTotHos.textContent = data.hospitalizedCumulative;
+   prCurHos.textContent = data.hospitalizedCurrently;
+   prCurIcu.textContent = determineNull(data.inIcuCurrently);
+   prRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //RI Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ri/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const riCaseDeath = document.querySelector(".us-covidtrack-ri-death");
+   const riCaseConfirm = document.querySelector(".us-covidtrack-ri-confirm");
+   const riTotHos = document.querySelector(".us-covidtrack-ri-tothos");
+   const riCurHos = document.querySelector(".us-covidtrack-ri-curhos");
+   const riCurIcu = document.querySelector(".us-covidtrack-ri-curicu");
+   const riRecent = document.querySelector(".us-covidtrack-ri-recent");      
+   riCaseDeath.textContent = data.death;
+   riCaseConfirm.textContent = data.positive;
+   riTotHos.textContent = data.hospitalizedCumulative;
+   riCurHos.textContent = data.hospitalizedCurrently;
+   riCurIcu.textContent = determineNull(data.inIcuCurrently);
+   riRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //SC Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/sc/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const scCaseDeath = document.querySelector(".us-covidtrack-sc-death");
+   const scCaseConfirm = document.querySelector(".us-covidtrack-sc-confirm");
+   const scTotHos = document.querySelector(".us-covidtrack-sc-tothos");
+   const scCurHos = document.querySelector(".us-covidtrack-sc-curhos");
+   const scCurIcu = document.querySelector(".us-covidtrack-sc-curicu");
+   const scRecent = document.querySelector(".us-covidtrack-sc-recent");      
+   scCaseDeath.textContent = data.death;
+   scCaseConfirm.textContent = data.positive;
+   scTotHos.textContent = data.hospitalizedCumulative;
+   scCurHos.textContent = data.hospitalizedCurrently;
+   scCurIcu.textContent = determineNull(data.inIcuCurrently);
+   scRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //SD Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/sd/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const sdCaseDeath = document.querySelector(".us-covidtrack-sd-death");
+   const sdCaseConfirm = document.querySelector(".us-covidtrack-sd-confirm");
+   const sdTotHos = document.querySelector(".us-covidtrack-sd-tothos");
+   const sdCurHos = document.querySelector(".us-covidtrack-sd-curhos");
+   const sdCurIcu = document.querySelector(".us-covidtrack-sd-curicu");
+   const sdRecent = document.querySelector(".us-covidtrack-sd-recent");      
+   sdCaseDeath.textContent = data.death;
+   sdCaseConfirm.textContent = data.positive;
+   sdTotHos.textContent = data.hospitalizedCumulative;
+   sdCurHos.textContent = data.hospitalizedCurrently;
+   sdCurIcu.textContent = determineNull(data.inIcuCurrently);
+   sdRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //TN Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/tn/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const tnCaseDeath = document.querySelector(".us-covidtrack-tn-death");
+   const tnCaseConfirm = document.querySelector(".us-covidtrack-tn-confirm");
+   const tnTotHos = document.querySelector(".us-covidtrack-tn-tothos");
+   const tnCurHos = document.querySelector(".us-covidtrack-tn-curhos");
+   const tnCurIcu = document.querySelector(".us-covidtrack-tn-curicu");
+   const tnRecent = document.querySelector(".us-covidtrack-tn-recent");      
+   tnCaseDeath.textContent = data.death;
+   tnCaseConfirm.textContent = data.positive;
+   tnTotHos.textContent = data.hospitalizedCumulative;
+   tnCurHos.textContent = data.hospitalizedCurrently;
+   tnCurIcu.textContent = determineNull(data.inIcuCurrently);
+   tnRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //TX Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/tx/current.json')
@@ -754,12 +1077,88 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //VI Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/vi/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const viCaseDeath = document.querySelector(".us-covidtrack-vi-death");
+   const viCaseConfirm = document.querySelector(".us-covidtrack-vi-confirm");
+   const viTotHos = document.querySelector(".us-covidtrack-vi-tothos");
+   const viCurHos = document.querySelector(".us-covidtrack-vi-curhos");
+   const viCurIcu = document.querySelector(".us-covidtrack-vi-curicu");
+   const viRecent = document.querySelector(".us-covidtrack-vi-recent");      
+   viCaseDeath.textContent = data.death;
+   viCaseConfirm.textContent = data.positive;
+   viTotHos.textContent = data.hospitalizedCumulative;
+   viCurHos.textContent = data.hospitalizedCurrently;
+   viCurIcu.textContent = determineNull(data.inIcuCurrently);
+   viRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //UT Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/ut/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const utCaseDeath = document.querySelector(".us-covidtrack-ut-death");
+   const utCaseConfirm = document.querySelector(".us-covidtrack-ut-confirm");
+   const utTotHos = document.querySelector(".us-covidtrack-ut-tothos");
+   const utCurHos = document.querySelector(".us-covidtrack-ut-curhos");
+   const utCurIcu = document.querySelector(".us-covidtrack-ut-curicu");
+   const utRecent = document.querySelector(".us-covidtrack-ut-recent");      
+   utCaseDeath.textContent = data.death;
+   utCaseConfirm.textContent = data.positive;
+   utTotHos.textContent = data.hospitalizedCumulative;
+   utCurHos.textContent = data.hospitalizedCurrently;
+   utCurIcu.textContent = determineNull(data.inIcuCurrently);
+   utRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //VT Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/vt/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const vtCaseDeath = document.querySelector(".us-covidtrack-vt-death");
+   const vtCaseConfirm = document.querySelector(".us-covidtrack-vt-confirm");
+   const vtTotHos = document.querySelector(".us-covidtrack-vt-tothos");
+   const vtCurHos = document.querySelector(".us-covidtrack-vt-curhos");
+   const vtCurIcu = document.querySelector(".us-covidtrack-vt-curicu");
+   const vtRecent = document.querySelector(".us-covidtrack-vt-recent");      
+   vtCaseDeath.textContent = data.death;
+   vtCaseConfirm.textContent = data.positive;
+   vtTotHos.textContent = data.hospitalizedCumulative;
+   vtCurHos.textContent = data.hospitalizedCurrently;
+   vtCurIcu.textContent = determineNull(data.inIcuCurrently);
+   vtRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //VA Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/va/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const vaCaseDeath = document.querySelector(".us-covidtrack-va-death");
+   const vaCaseConfirm = document.querySelector(".us-covidtrack-va-confirm");
+   const vaTotHos = document.querySelector(".us-covidtrack-va-tothos");
+   const vaCurHos = document.querySelector(".us-covidtrack-va-curhos");
+   const vaCurIcu = document.querySelector(".us-covidtrack-va-curicu");
+   const vaRecent = document.querySelector(".us-covidtrack-va-recent");      
+   vaCaseDeath.textContent = data.death;
+   vaCaseConfirm.textContent = data.positive;
+   vaTotHos.textContent = data.hospitalizedCumulative;
+   vaCurHos.textContent = data.hospitalizedCurrently;
+   vaCurIcu.textContent = determineNull(data.inIcuCurrently);
+   vaRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   });
 
 //WA Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/wa/current.json')
@@ -783,8 +1182,46 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //WV Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/wv/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const wvCaseDeath = document.querySelector(".us-covidtrack-wv-death");
+   const wvCaseConfirm = document.querySelector(".us-covidtrack-wv-confirm");
+   const wvTotHos = document.querySelector(".us-covidtrack-wv-tothos");
+   const wvCurHos = document.querySelector(".us-covidtrack-wv-curhos");
+   const wvCurIcu = document.querySelector(".us-covidtrack-wv-curicu");
+   const wvRecent = document.querySelector(".us-covidtrack-wv-recent");       
+   wvCaseDeath.textContent = data.death;
+   wvCaseConfirm.textContent = data.positive;
+   wvTotHos.textContent = data.hospitalizedCumulative;
+   wvCurHos.textContent = data.hospitalizedCurrently;
+   wvCurIcu.textContent = determineNull(data.inIcuCurrently);
+   wvRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   });
 
 //WI Count from COVID Tracking Project
+   fetch('https://api.covidtracking.com/v1/states/wi/current.json')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   const wiCaseDeath = document.querySelector(".us-covidtrack-wi-death");
+   const wiCaseConfirm = document.querySelector(".us-covidtrack-wi-confirm");
+   const wiTotHos = document.querySelector(".us-covidtrack-wi-tothos");
+   const wiCurHos = document.querySelector(".us-covidtrack-wi-curhos");
+   const wiCurIcu = document.querySelector(".us-covidtrack-wi-curicu");
+   const wiRecent = document.querySelector(".us-covidtrack-wi-recent");       
+   wiCaseDeath.textContent = data.death;
+   wiCaseConfirm.textContent = data.positive;
+   wiTotHos.textContent = data.hospitalizedCumulative;
+   wiCurHos.textContent = data.hospitalizedCurrently;
+   wiCurIcu.textContent = determineNull(data.inIcuCurrently);
+   wiRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   });
 
 //WY Count from COVID Tracking Project
    fetch('https://api.covidtracking.com/v1/states/wy/current.json')
