@@ -39,12 +39,22 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2020-12-03&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2020-12-07&iso=USA')
   .then(response => {
    return response.json();
   })
   .then(data => {
    console.log(data);
+   const usCaseConfirm = document.querySelector(".us-johnhopkins-confirm");
+   const usCaseDeath = document.querySelector(".us-johnhopkins-death");
+   const usCaseRecent = document.querySelector(".us-johnhopkins-recent");
+   const alCaseConfirm = document.querySelector(".us-johnhopkins-al-confirm");
+   const alCaseDeath = document.querySelector(".us-johnhopkins-al-death");
+   const alCaseRecent = document.querySelector(".us-johnhopkins-al-recent");   
+   alCaseConfirm.textContent = data.data[0].confirmed;
+   alCaseDeath.textContent = data.data[0].deaths; 
+   alCaseRecent.textContent = data.data[0].date;   
+      
   });   
 
 //US Count from New York Times
@@ -1279,8 +1289,8 @@ function getCommas() {
 }
 
 function determineNull(input) {
-   if (input === null) {
-     let input = "Unavailble";
+   if (input == undefined) {
+     return input = "Unavailble";
    } else {
      return input
    }   
