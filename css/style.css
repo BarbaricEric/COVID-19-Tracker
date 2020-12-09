@@ -476,6 +476,10 @@ img {
   text-align: center;
   margin: auto;
  }
+ 
+ .covid-track-head-titles {
+ font-size: 9px;
+} 
 }
 
 @media screen and (max-width: 500px) {
@@ -490,10 +494,6 @@ img {
  grid-template-columns: repeat(1, 1fr)
  /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
  }
- 
- .covid-track-head-titles {
- font-size: 8px;
-}
  
   .info {
   grid-template-columns: 1fr;
