@@ -87,6 +87,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    document.querySelector(".us-johnhopkins-ga-confirm") = data.data[11].confirmed;
    document.querySelector(".us-johnhopkins-ga-death") = data.data[11].deaths;
    document.querySelector(".us-johnhopkins-ga-recent") = data.data[11].date;
+   document.querySelector(".us-johnhopkins-gu-confirm") = data.data[13].confirmed;
+   document.querySelector(".us-johnhopkins-gu-death") = data.data[13].deaths;
+   document.querySelector(".us-johnhopkins-gu-recent") = data.data[13].date;
+   document.querySelector(".us-johnhopkins-hi-confirm") = data.data[14].confirmed;
+   document.querySelector(".us-johnhopkins-hi-death") = data.data[14].deaths;
+   document.querySelector(".us-johnhopkins-hi-recent") = data.data[14].date;      
   });   
 
 //US Count from New York Times
@@ -671,7 +677,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const msRecent = document.querySelector(".us-covidtrack-ms-recent");      
    msCaseDeath.textContent = data.death;
    msCaseConfirm.textContent = data.positive;
-   msTotHos.textContent = determineNull(data.hospitalizedCumulative0;
+   msTotHos.textContent = determineNull(data.hospitalizedCumulative);
    msCurHos.textContent = determineNull(data.hospitalizedCurrently);
    msCurIcu.textContent = determineNull(data.inIcuCurrently);
    msRecent.textContent = data.dateModified.toString().substring(0, 10);       
