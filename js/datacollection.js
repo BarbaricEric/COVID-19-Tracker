@@ -39,7 +39,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2020-12-07&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2020-12-08&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -80,19 +80,71 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const dcCaseRecent = document.querySelector(".us-johnhopkins-dc-recent");
    const flCaseConfirm = document.querySelector(".us-johnhopkins-fl-confirm");
    const flCaseDeath = document.querySelector(".us-johnhopkins-fl-death");
-   const flCaseRecent = document.querySelector(".us-johnhopkins-fl-recent");      
+   const flCaseRecent = document.querySelector(".us-johnhopkins-fl-recent");
+   const gaCaseConfirm = document.querySelector(".us-johnhopkins-ga-confirm");
+   const gaCaseDeath = document.querySelector(".us-johnhopkins-ga-death");
+   const gaCaseRecent = document.querySelector(".us-johnhopkins-ga-recent");
+   const guCaseConfirm = document.querySelector(".us-johnhopkins-gu-confirm");
+   const guCaseDeath = document.querySelector(".us-johnhopkins-gu-death");
+   const guCaseRecent = document.querySelector(".us-johnhopkins-gu-recent");
+   const hiCaseConfirm = document.querySelector(".us-johnhopkins-hi-confirm");
+   const hiCaseDeath = document.querySelector(".us-johnhopkins-hi-death");
+   const hiCaseRecent = document.querySelector(".us-johnhopkins-hi-recent");
+   const idCaseConfirm = document.querySelector(".us-johnhopkins-id-confirm");
+   const idCaseDeath = document.querySelector(".us-johnhopkins-id-death");
+   const idCaseRecent = document.querySelector(".us-johnhopkins-id-recent");
+   const ilCaseConfirm = document.querySelector(".us-johnhopkins-il-confirm");
+   const ilCaseDeath = document.querySelector(".us-johnhopkins-il-death");
+   const ilCaseRecent = document.querySelector(".us-johnhopkins-il-recent");
+   const inCaseConfirm = document.querySelector(".us-johnhopkins-in-confirm");
+   const inCaseDeath = document.querySelector(".us-johnhopkins-in-death");
+   const inCaseRecent = document.querySelector(".us-johnhopkins-in-recent");
+   const iaCaseConfirm = document.querySelector(".us-johnhopkins-ia-confirm");
+   const iaCaseDeath = document.querySelector(".us-johnhopkins-ia-death");
+   const iaCaseRecent = document.querySelector(".us-johnhopkins-ia-recent");
+   const ksCaseConfirm = document.querySelector(".us-johnhopkins-ks-confirm");
+   const ksCaseDeath = document.querySelector(".us-johnhopkins-ks-death");
+   const ksCaseRecent = document.querySelector(".us-johnhopkins-ks-recent");
+   const kyCaseConfirm = document.querySelector(".us-johnhopkins-ky-confirm");
+   const kyCaseDeath = document.querySelector(".us-johnhopkins-ky-death");
+   const kyCaseRecent = document.querySelector(".us-johnhopkins-ky-recent");
+   const laCaseConfirm = document.querySelector(".us-johnhopkins-la-confirm");
+   const laCaseDeath = document.querySelector(".us-johnhopkins-la-death");
+   const laCaseRecent = document.querySelector(".us-johnhopkins-la-recent");
+   const meCaseConfirm = document.querySelector(".us-johnhopkins-me-confirm");
+   const meCaseDeath = document.querySelector(".us-johnhopkins-me-death");
+   const meCaseRecent = document.querySelector(".us-johnhopkins-me-recent");
+   const mdCaseConfirm = document.querySelector(".us-johnhopkins-md-confirm");
+   const mdCaseDeath = document.querySelector(".us-johnhopkins-md-death");
+   const mdCaseRecent = document.querySelector(".us-johnhopkins-md-recent");
+   const maCaseConfirm = document.querySelector(".us-johnhopkins-ma-confirm");
+   const maCaseDeath = document.querySelector(".us-johnhopkins-ma-death");
+   const maCaseRecent = document.querySelector(".us-johnhopkins-ma-recent");
+   const miCaseConfirm = document.querySelector(".us-johnhopkins-mi-confirm");
+   const miCaseDeath = document.querySelector(".us-johnhopkins-mi-death");
+   const miCaseRecent = document.querySelector(".us-johnhopkins-mi-recent");
+   const mnCaseConfirm = document.querySelector(".us-johnhopkins-mn-confirm");
+   const mnCaseDeath = document.querySelector(".us-johnhopkins-mn-death");
+   const mnCaseRecent = document.querySelector(".us-johnhopkins-mn-recent");
+   const msCaseConfirm = document.querySelector(".us-johnhopkins-ms-confirm");
+   const msCaseDeath = document.querySelector(".us-johnhopkins-ms-death");
+   const msCaseRecent = document.querySelector(".us-johnhopkins-ms-recent");
+   const moCaseConfirm = document.querySelector(".us-johnhopkins-mo-confirm");
+   const moCaseDeath = document.querySelector(".us-johnhopkins-mo-death");
+   const moCaseRecent = document.querySelector(".us-johnhopkins-mo-recent");
+   const mtCaseConfirm = document.querySelector(".us-johnhopkins-mt-confirm");
+   const mtCaseDeath = document.querySelector(".us-johnhopkins-mt-death");
+   const mtCaseRecent = document.querySelector(".us-johnhopkins-mt-recent");       
+   usCaseConfirm.textContent = data.data[0].confirmed + data.data[1].confirmed + data.data[2].confirmed + data.data[3].confirmed + data.data[4].confirmed 
+   + data.data[5].confirmed + data.data[6].confirmed + data.data[7].confirmed + + data.data[9].confirmed + data.data[10].confirmed + data.data[11].confirmed
+   + data.data[13].confirmed + data.data[14].confirmed;
+   usCaseRecent.textContent = data.data[0].date;      
    alCaseConfirm.textContent = data.data[0].confirmed;
    alCaseDeath.textContent = data.data[0].deaths; 
    alCaseRecent.textContent = data.data[0].date;
-   document.querySelector(".us-johnhopkins-ga-confirm") = data.data[11].confirmed;
-   document.querySelector(".us-johnhopkins-ga-death") = data.data[11].deaths;
-   document.querySelector(".us-johnhopkins-ga-recent") = data.data[11].date;
-   document.querySelector(".us-johnhopkins-gu-confirm") = data.data[13].confirmed;
-   document.querySelector(".us-johnhopkins-gu-death") = data.data[13].deaths;
-   document.querySelector(".us-johnhopkins-gu-recent") = data.data[13].date;
-   document.querySelector(".us-johnhopkins-hi-confirm") = data.data[14].confirmed;
-   document.querySelector(".us-johnhopkins-hi-death") = data.data[14].deaths;
-   document.querySelector(".us-johnhopkins-hi-recent") = data.data[14].date;      
+   akCaseConfirm.textContent = data.data[1].confirmed;
+   akCaseDeath.textContent = data.data[1].deaths; 
+   akCaseRecent.textContent = data.data[1].date;      
   });   
 
 //US Count from New York Times
