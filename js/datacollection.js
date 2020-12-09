@@ -134,17 +134,120 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const moCaseRecent = document.querySelector(".us-johnhopkins-mo-recent");
    const mtCaseConfirm = document.querySelector(".us-johnhopkins-mt-confirm");
    const mtCaseDeath = document.querySelector(".us-johnhopkins-mt-death");
-   const mtCaseRecent = document.querySelector(".us-johnhopkins-mt-recent");       
+   const mtCaseRecent = document.querySelector(".us-johnhopkins-mt-recent");
+   const neCaseConfirm = document.querySelector(".us-johnhopkins-ne-confirm");
+   const neCaseDeath = document.querySelector(".us-johnhopkins-ne-death");
+   const neCaseRecent = document.querySelector(".us-johnhopkins-ne-recent");
+   const nvCaseConfirm = document.querySelector(".us-johnhopkins-nv-confirm");
+   const nvCaseDeath = document.querySelector(".us-johnhopkins-nv-death");
+   const nvCaseRecent = document.querySelector(".us-johnhopkins-nv-recent");
+   const nhCaseConfirm = document.querySelector(".us-johnhopkins-nh-confirm");
+   const nhCaseDeath = document.querySelector(".us-johnhopkins-nh-death");
+   const nhCaseRecent = document.querySelector(".us-johnhopkins-nh-recent");
+   const njCaseConfirm = document.querySelector(".us-johnhopkins-nj-confirm");
+   const njCaseDeath = document.querySelector(".us-johnhopkins-nj-death");
+   const njCaseRecent = document.querySelector(".us-johnhopkins-nj-recent");
+   const nmCaseConfirm = document.querySelector(".us-johnhopkins-nm-confirm");
+   const nmCaseDeath = document.querySelector(".us-johnhopkins-nm-death");
+   const nmCaseRecent = document.querySelector(".us-johnhopkins-nm-recent");
+   const nyCaseConfirm = document.querySelector(".us-johnhopkins-ny-confirm");
+   const nyCaseDeath = document.querySelector(".us-johnhopkins-ny-death");
+   const nyCaseRecent = document.querySelector(".us-johnhopkins-ny-recent");
+   const ncCaseConfirm = document.querySelector(".us-johnhopkins-nc-confirm");
+   const ncCaseDeath = document.querySelector(".us-johnhopkins-nc-death");
+   const ncCaseRecent = document.querySelector(".us-johnhopkins-nc-recent");
+   const ndCaseConfirm = document.querySelector(".us-johnhopkins-nd-confirm");
+   const ndCaseDeath = document.querySelector(".us-johnhopkins-nd-death");
+   const ndCaseRecent = document.querySelector(".us-johnhopkins-nd-recent");
+   const mpCaseConfirm = document.querySelector(".us-johnhopkins-mp-confirm");
+   const mpCaseDeath = document.querySelector(".us-johnhopkins-mp-death");
+   const mpCaseRecent = document.querySelector(".us-johnhopkins-mp-recent");
+   const ohCaseConfirm = document.querySelector(".us-johnhopkins-oh-confirm");
+   const ohCaseDeath = document.querySelector(".us-johnhopkins-oh-death");
+   const ohCaseRecent = document.querySelector(".us-johnhopkins-oh-recent");
+   const okCaseConfirm = document.querySelector(".us-johnhopkins-ok-confirm");
+   const okCaseDeath = document.querySelector(".us-johnhopkins-ok-death");
+   const okCaseRecent = document.querySelector(".us-johnhopkins-ok-recent");
+   const orCaseConfirm = document.querySelector(".us-johnhopkins-or-confirm");
+   const orCaseDeath = document.querySelector(".us-johnhopkins-or-death");
+   const orCaseRecent = document.querySelector(".us-johnhopkins-or-recent");
+   const paCaseConfirm = document.querySelector(".us-johnhopkins-pa-confirm");
+   const paCaseDeath = document.querySelector(".us-johnhopkins-pa-death");
+   const paCaseRecent = document.querySelector(".us-johnhopkins-pa-recent");
+   const prCaseConfirm = document.querySelector(".us-johnhopkins-pr-confirm");
+   const prCaseDeath = document.querySelector(".us-johnhopkins-pr-death");
+   const prCaseRecent = document.querySelector(".us-johnhopkins-pr-recent");
+   const riCaseConfirm = document.querySelector(".us-johnhopkins-ri-confirm");
+   const riCaseDeath = document.querySelector(".us-johnhopkins-ri-death");
+   const riCaseRecent = document.querySelector(".us-johnhopkins-ri-recent");
+   const scCaseConfirm = document.querySelector(".us-johnhopkins-sc-confirm");
+   const scCaseDeath = document.querySelector(".us-johnhopkins-sc-death");
+   const scCaseRecent = document.querySelector(".us-johnhopkins-sc-recent");
+   const sdCaseConfirm = document.querySelector(".us-johnhopkins-sd-confirm");
+   const sdCaseDeath = document.querySelector(".us-johnhopkins-sd-death");
+   const sdCaseRecent = document.querySelector(".us-johnhopkins-sd-recent");
+   const tnCaseConfirm = document.querySelector(".us-johnhopkins-tn-confirm");
+   const tnCaseDeath = document.querySelector(".us-johnhopkins-tn-death");
+   const tnCaseRecent = document.querySelector(".us-johnhopkins-tn-recent");
+   const scCaseConfirm = document.querySelector(".us-johnhopkins-sc-confirm");
+   const scCaseDeath = document.querySelector(".us-johnhopkins-sc-death");
+   const scCaseRecent = document.querySelector(".us-johnhopkins-sc-recent");
+   const txCaseConfirm = document.querySelector(".us-johnhopkins-tx-confirm");
+   const txCaseDeath = document.querySelector(".us-johnhopkins-tx-death");
+   const txCaseRecent = document.querySelector(".us-johnhopkins-tx-recent");
+   const viCaseConfirm = document.querySelector(".us-johnhopkins-vi-confirm");
+   const viCaseDeath = document.querySelector(".us-johnhopkins-vi-death");
+   const viCaseRecent = document.querySelector(".us-johnhopkins-vi-recent");
+   const utCaseConfirm = document.querySelector(".us-johnhopkins-ut-confirm");
+   const utCaseDeath = document.querySelector(".us-johnhopkins-ut-death");
+   const utCaseRecent = document.querySelector(".us-johnhopkins-ut-recent");
+   const vtCaseConfirm = document.querySelector(".us-johnhopkins-vt-confirm");
+   const vtCaseDeath = document.querySelector(".us-johnhopkins-vt-death");
+   const vtCaseRecent = document.querySelector(".us-johnhopkins-vt-recent");
+   const scCaseConfirm = document.querySelector(".us-johnhopkins-sc-confirm");
+   const scCaseDeath = document.querySelector(".us-johnhopkins-sc-death");
+   const scCaseRecent = document.querySelector(".us-johnhopkins-sc-recent");
+   const vaCaseConfirm = document.querySelector(".us-johnhopkins-va-confirm");
+   const vaCaseDeath = document.querySelector(".us-johnhopkins-va-death");
+   const vaCaseRecent = document.querySelector(".us-johnhopkins-va-recent");
+   const waCaseConfirm = document.querySelector(".us-johnhopkins-wa-confirm");
+   const waCaseDeath = document.querySelector(".us-johnhopkins-wa-death");
+   const waCaseRecent = document.querySelector(".us-johnhopkins-wa-recent");
+   const wvCaseConfirm = document.querySelector(".us-johnhopkins-wv-confirm");
+   const wvCaseDeath = document.querySelector(".us-johnhopkins-wv-death");
+   const wvCaseRecent = document.querySelector(".us-johnhopkins-wv-recent");
+   const wiCaseConfirm = document.querySelector(".us-johnhopkins-wi-confirm");
+   const wiCaseDeath = document.querySelector(".us-johnhopkins-wi-death");
+   const wiCaseRecent = document.querySelector(".us-johnhopkins-wi-recent");
+   const wyCaseConfirm = document.querySelector(".us-johnhopkins-wy-confirm");
+   const wyCaseDeath = document.querySelector(".us-johnhopkins-wy-death");
+   const wyCaseRecent = document.querySelector(".us-johnhopkins-wy-recent");  
    usCaseConfirm.textContent = data.data[0].confirmed + data.data[1].confirmed + data.data[2].confirmed + data.data[3].confirmed + data.data[4].confirmed 
-   + data.data[5].confirmed + data.data[6].confirmed + data.data[7].confirmed + + data.data[9].confirmed + data.data[10].confirmed + data.data[11].confirmed
-   + data.data[13].confirmed + data.data[14].confirmed;
+   + data.data[5].confirmed + data.data[6].confirmed + data.data[7].confirmed + data.data[9].confirmed + data.data[10].confirmed + data.data[11].confirmed
+   + data.data[13].confirmed + data.data[14].confirmed + data.data[15].confirmed + data.data[16].confirmed + data.data[17].confirmed + data.data[18].confirmed
+   + data.data[19].confirmed + data.data[20].confirmed + data.data[21].confirmed + data.data[22].confirmed + data.data[23].confirmed + data.data[24].confirmed
+   + data.data[25].confirmed + data.data[26].confirmed + data.data[27].confirmed + data.data[28].confirmed + data.data[29].confirmed + data.data[30].confirmed
+   + data.data[31].confirmed + data.data[32].confirmed + data.data[33].confirmed + data.data[34].confirmed + data.data[35].confirmed + data.data[36].confirmed
+   + data.data[37].confirmed + data.data[38].confirmed + data.data[39].confirmed + data.data[40].confirmed + data.data[41].confirmed + data.data[42].confirmed
+   + data.data[43].confirmed + data.data[44].confirmed + data.data[45].confirmed + data.data[46].confirmed + data.data[47].confirmed + data.data[48].confirmed
+   + data.data[49].confirmed + data.data[50].confirmed + data.data[51].confirmed + data.data[52].confirmed + data.data[53].confirmed + data.data[54].confirmed
+   + data.data[55].confirmed + data.data[56].confirmed + data.data[57].confirmed;
    usCaseRecent.textContent = data.data[0].date;      
    alCaseConfirm.textContent = data.data[0].confirmed;
    alCaseDeath.textContent = data.data[0].deaths; 
    alCaseRecent.textContent = data.data[0].date;
    akCaseConfirm.textContent = data.data[1].confirmed;
    akCaseDeath.textContent = data.data[1].deaths; 
-   akCaseRecent.textContent = data.data[1].date;      
+   akCaseRecent.textContent = data.data[1].date;
+   asCaseConfirm.textContent = data.data[2].confirmed;
+   asCaseDeath.textContent = data.data[2].deaths; 
+   asCaseRecent.textContent = data.data[2].date;
+   azCaseConfirm.textContent = data.data[3].confirmed;
+   azCaseDeath.textContent = data.data[3].deaths; 
+   azCaseRecent.textContent = data.data[3].date;
+   arCaseConfirm.textContent = data.data[4].confirmed;
+   arCaseDeath.textContent = data.data[4].deaths; 
+   arCaseRecent.textContent = data.data[4].date;      
   });   
 
 //US Count from New York Times
