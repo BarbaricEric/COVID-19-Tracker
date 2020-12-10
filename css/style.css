@@ -14,7 +14,6 @@ html {
 
 body {
  /*background: #CCCCCC;*/
- margin: 30px 30px;
  line-height: 1.4; 
   /* height: 100vh; 
  flex-direction: column;
@@ -79,6 +78,7 @@ img {
 .wrapper {
  display: grid;
  grid-gap: 20px;
+ margin: 30px 30px;
 }
 
 #news {
