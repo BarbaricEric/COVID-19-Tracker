@@ -370,6 +370,7 @@ img {
  color: var(--light);
  text-align: center;
  padding: 1rem;
+ margin: 30px 30px;
 }
 
 /* Supported Browser Banner */
