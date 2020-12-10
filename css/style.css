@@ -14,12 +14,12 @@ html {
 
 body {
  /*background: #CCCCCC;*/
- margin: 30px 50px;
+ margin: 30px 30px;
  line-height: 1.4; 
-  /* height: 100vh; */
- display: flex;
- justify-content: center;
+  /* height: 100vh; 
  flex-direction: column;
+ display: flex;*/
+ justify-content: center;
  align-items: center;
  /* background: linear-gradient(rgb(47,150,160), rgb(40,62,143));*/ 
 }
@@ -227,6 +227,17 @@ img {
  padding: 3rem;*/
 }
 
+.johnhopkins-head-titles,
+.nytimes-head-titles {
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ grid-template-columns: repeat(4,1fr);
+ padding: 5px 11px;
+ margin: 0px 20px;
+}
+
 .covid-track-head-titles {
  display: grid;
  justify-content: center;
@@ -237,8 +248,18 @@ img {
  margin: 0px 20px;
 }
 
+.info-table-title  {
+ margin-top: 2rem;
+ background: var(--primary);
+ color: var(--dark);
+ text-align: center;
+ padding: 1rem 2rem;
+ box-shadow: var(--shadow);
+ align-items: center;
+ justify-content: center;
+}
+
 .info-title  {
- /*margin-top: 2rem;*/
  background: var(--primary);
  color: var(--dark);
  text-align: center;
