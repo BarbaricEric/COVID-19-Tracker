@@ -223,8 +223,8 @@ img {
  justify-content: center;
  align-items: center;
  text-align: center;
- /*grid-template-columns: repeat(2, 1fr);*/
- padding: 3rem;
+ /*grid-template-columns: repeat(2, 1fr);
+ padding: 3rem;*/
 }
 
 .covid-track-head-titles {
@@ -238,7 +238,7 @@ img {
 }
 
 .info-title  {
- margin-top: 2rem;
+ /*margin-top: 2rem;*/
  background: var(--primary);
  color: var(--dark);
  text-align: center;
