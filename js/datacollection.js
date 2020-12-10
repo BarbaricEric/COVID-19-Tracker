@@ -34,8 +34,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   usCaseDeath.textContent = data.Countries[182].TotalDeaths + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + ' 12:00 AM PST ';
-   usCaseConfirm.textContent = data.Countries[182].TotalConfirmed + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + ' 12:00 AM PST ';      
+   usCaseDeath.textContent = data.Countries[182].TotalDeaths + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + '<br/> at 12:00 AM PST';
+   usCaseConfirm.textContent = data.Countries[182].TotalConfirmed + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + '<br/>  at 12:00 AM PST';      
    });
 
 //US Count from covid-api.com      
@@ -243,9 +243,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
    akCaseConfirm.textContent = data.data[1].confirmed;
    akCaseDeath.textContent = data.data[1].deaths; 
    akCaseRecent.textContent = data.data[1].date;
-   asCaseConfirm.textContent = data.data[2].confirmed;
+   asCaseConfirm.textContent = 0
    asCaseDeath.textContent = 0 
-   asCaseRecent.textContent = 0
+   asCaseRecent.textContent = data.data[1].date;
    azCaseConfirm.textContent = data.data[2].confirmed;
    azCaseDeath.textContent = data.data[2].deaths; 
    azCaseRecent.textContent = data.data[2].date;
