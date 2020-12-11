@@ -39,7 +39,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2020-12-09&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2020-12-10&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -327,7 +327,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    neCaseConfirm.textContent = data.data[30].confirmed;
    neCaseDeath.textContent = data.data[30].deaths;
    neCaseRecent.textContent = data.data[30].date;
-   /*nvCaseConfirm.textContent = data.data[31].confirmed;
+   nvCaseConfirm.textContent = data.data[31].confirmed;
    nvCaseDeath.textContent = data.data[31].deaths;
    nvCaseRecent.textContent = data.data[31].date;
    nhCaseConfirm.textContent = data.data[32].confirmed;
@@ -358,53 +358,53 @@ const localapi2 = 'https://corona-api.com/countries/US';
    okCaseDeath.textContent = data.data[40].deaths;
    okCaseRecent.textContent = data.data[40].date;
    orCaseConfirm.textContent = data.data[41].confirmed;
-   orCaseDeath.textContent = document.querySelector(".us-johnhopkins-or-death");
+   orCaseDeath.textContent = data.data[41].deaths;
    orCaseRecent.textContent = data.data[41].date;
    paCaseConfirm.textContent = data.data[42].confirmed;
-   paCaseDeath.textContent = document.querySelector(".us-johnhopkins-pa-death");
+   paCaseDeath.textContent = data.data[42].deaths;
    paCaseRecent.textContent = data.data[42].date;
    prCaseConfirm.textContent = data.data[43].confirmed;
-   prCaseDeath.textContent = document.querySelector(".us-johnhopkins-pr-death");
+   prCaseDeath.textContent = data.data[43].deaths;
    prCaseRecent.textContent = data.data[43].date;
    riCaseConfirm.textContent = data.data[45].confirmed;
-   riCaseDeath.textContent = document.querySelector(".us-johnhopkins-ri-death");
+   riCaseDeath.textContent = data.data[45].deaths;
    riCaseRecent.textContent = data.data[45].date;
    scCaseConfirm.textContent = data.data[46].confirmed;
-   scCaseDeath.textContent = document.querySelector(".us-johnhopkins-sc-death");
+   scCaseDeath.textContent = data.data[46].deaths;
    scCaseRecent.textContent = data.data[46].date;
    sdCaseConfirm.textContent = data.data[47].confirmed;
-   sdCaseDeath.textContent = document.querySelector(".us-johnhopkins-sd-death");
+   sdCaseDeath.textContent = data.data[47].deaths;
    sdCaseRecent.textContent = data.data[47].date;
    tnCaseConfirm.textContent = data.data[48].confirmed;
-   tnCaseDeath.textContent = document.querySelector(".us-johnhopkins-tn-death");
+   tnCaseDeath.textContent = data.data[48].deaths;
    tnCaseRecent.textContent = data.data[48].date;
    txCaseConfirm.textContent = data.data[49].confirmed;
-   txCaseDeath.textContent = document.querySelector(".us-johnhopkins-tx-death");
+   txCaseDeath.textContent = data.data[49].deaths;
    txCaseRecent.textContent = data.data[49].date;
    viCaseConfirm.textContent = data.data[50].confirmed;
-   viCaseDeath.textContent = document.querySelector(".us-johnhopkins-vi-death");
+   viCaseDeath.textContent = data.data[50].deaths;
    viCaseRecent.textContent = data.data[50].date;
    utCaseConfirm.textContent = data.data[51].confirmed;
-   utCaseDeath.textContent = document.querySelector(".us-johnhopkins-ut-death");
+   utCaseDeath.textContent = data.data[51].deaths;
    utCaseRecent.textContent = data.data[51].date;
    vtCaseConfirm.textContent = data.data[52].confirmed;
-   vtCaseDeath.textContent = document.querySelector(".us-johnhopkins-vt-death");
+   vtCaseDeath.textContent = data.data[52].deaths;
    vtCaseRecent.textContent = data.data[52].date;
    vaCaseConfirm.textContent = data.data[53].confirmed;
-   vaCaseDeath.textContent = document.querySelector(".us-johnhopkins-va-death");
+   vaCaseDeath.textContent = data.data[53].deaths;
    vaCaseRecent.textContent = data.data[53].date;
    waCaseConfirm.textContent = data.data[54].confirmed;
-   waCaseDeath.textContent = document.querySelector(".us-johnhopkins-wa-death");
+   waCaseDeath.textContent = data.data[54].deaths;
    waCaseRecent.textContent = data.data[54].date;
    wvCaseConfirm.textContent = data.data[55].confirmed;
-   wvCaseDeath.textContent = document.querySelector(".us-johnhopkins-wv-death");
+   wvCaseDeath.textContent = data.data[55].deaths;
    wvCaseRecent.textContent = data.data[55].date;
    wiCaseConfirm.textContent = data.data[56].confirmed;
-   wiCaseDeath.textContent = document.querySelector(".us-johnhopkins-wi-death");
+   wiCaseDeath.textContent = data.data[56].deaths;
    wiCaseRecent.textContent = data.data[56].date;
    wyCaseConfirm.textContent = data.data[57].confirmed;
-   wyCaseDeath.textContent = document.querySelector(".us-johnhopkins-wy-death");
-   wyCaseRecent.textContent = data.data[57].date;*/      
+   wyCaseDeath.textContent = data.data[57].deaths;
+   wyCaseRecent.textContent = data.data[57].date;     
   });   
 
 //US Count from New York Times
@@ -1656,13 +1656,13 @@ function getCommas() {
 
 }
 
-function determineNull(input) {
-   if (input == undefined) {
+var determineNull = input => input == undefined ? input = "NA" : input;/*{
+    if (input == undefined) {
      return input = "NA";
    } else {
      return input
    }   
-}
+}*/
 
 /*        fetch('.json')
             .then(function (response) {
