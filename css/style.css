@@ -78,7 +78,7 @@ img {
 .wrapper {
  display: grid;
  grid-gap: 20px;
- margin: 20px 20px;
+ margin: 20px 30px;
 }
 
 #news {
@@ -370,7 +370,7 @@ img {
  color: var(--light);
  text-align: center;
  padding: 1rem;
- margin: 20px 20px;
+ margin: 20px 30px;
 }
 
 /* Supported Browser Banner */
