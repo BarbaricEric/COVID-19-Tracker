@@ -227,6 +227,12 @@ img {
  padding: 3rem;*/
 }
 
+.data-table-john-hopkins,
+.data-table-new-york-times,
+.data-table-covid-track {
+ display: grid;
+}
+
 .johnhopkins-head-titles,
 .nytimes-head-titles {
  display: grid;
@@ -305,10 +311,12 @@ caption {
 
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
+    border: 3px solid rgb(200, 200, 200);
     letter-spacing: 1px;
     font-family: sans-serif;
     font-size: .8rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Portfolio */ 
