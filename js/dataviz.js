@@ -66,7 +66,8 @@ async function getUsCountFromCovidApi() {
  
   await fetch('https://covid-api.com/api/reports?date=2020-03-02&iso=USA').then(response => response.json())
   .then(data => {
-   console.log(data.length)
+   ustimeline.push(data)
+   console.log(ustimeline)
   });
 }
 
