@@ -59,26 +59,12 @@ let wytimeline = []
 
 async function getUsCountFromCovidApi() {
  const fish = await fetch('https://covid-api.com/api/reports?date=2020-03-01&iso=USA').then(response => response.json());
- console.log(fish);
+ let test1 = ustimeline.push(fish)
+ console.log(test1);
  const fish2 = await fetch('https://covid-api.com/api/reports?date=2020-03-02&iso=USA').then(response => response.json());
- console.log(fish2);
+ let test2 = test1.push(fish2)
+ console.log(test2);
 }
 
 getUsCountFromCovidApi();
 
-//US Count from covid-api.com    
-fetch('https://covid-api.com/api/reports?date=2020-03-01&iso=USA')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
-  });
-
-fetch('https://covid-api.com/api/reports?date=2020-03-02&iso=USA')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
-  });
