@@ -60,15 +60,13 @@ let wytimeline = []
 async function getUsCountFromCovidApi() {
  const fish = await fetch('https://covid-api.com/api/reports?date=2020-03-01&iso=USA').then(response => response.json())
   .then(data => {
-   for (let i = 0; i < data.length; i++) {
-   ustimeline.push(data[i])
-   }
+   ustimeline.push(data)
    console.log(ustimeline)
   });
  
   await fetch('https://covid-api.com/api/reports?date=2020-03-02&iso=USA').then(response => response.json())
   .then(data => {
-   console.log(data)
+   console.log(data.length)
   });
 }
 
