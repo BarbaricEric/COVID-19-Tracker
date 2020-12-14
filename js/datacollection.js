@@ -39,7 +39,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2020-12-10&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2020-12-13&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -1644,7 +1644,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);   
    }); 
 
-//Functions
+//Global Functions
 function getArrayFields(input, field) {
     const output = [];
     for (var i=0; i < input.length ; ++i)
