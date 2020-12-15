@@ -28,7 +28,7 @@ body {
  margin: 0;
  padding: 0;
  scroll-behavior: smooth;
- font-family: 'Itim'; 
+ font-family: 'Itim', Arial; 
 }
 
 .btn {
@@ -308,7 +308,7 @@ th[scope="col"] {
     color: #fff;
 }
 
-th[scope="row"] {
+td[scope="row"] {
     background-color: #d7d9f2;
 }
 
