@@ -14,6 +14,17 @@ const globalapi2 = 'https://api.covid19api.com/summary';
 const localapi1 = 'https://api.covidtracking.com/v1/us/current.json';
 const localapi2 = 'https://corona-api.com/countries/US';
 
+//US Count from covid19-api.org      
+   fetch('https://covid19-api.org/api/status/US')
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(0, 10) + '\n at 12:00 AM PST';
+   usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(0, 10) + '\n at 12:00 AM PST';
+  });     
+
 //US Count from about-corona
    fetch(localapi2)
   .then(response => {
@@ -27,15 +38,15 @@ const localapi2 = 'https://corona-api.com/countries/US';
    usCaseConfirm.textContent = confirmed;*/
    });      
      
-//Global Count from covid19api      
+//US and Global Count from covid19api      
    fetch(globalapi2)
   .then(response => {
    return response.json();
   })
   .then(data => {
    console.log(data);
-   usCaseDeath.textContent = data.Countries[182].TotalDeaths + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + '\n at 12:00 AM PST';
-   usCaseConfirm.textContent = data.Countries[182].TotalConfirmed + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + '\n  at 12:00 AM PST';      
+   /*usCaseDeath.textContent = data.Countries[182].TotalDeaths + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + '\n at 12:00 AM PST';
+   usCaseConfirm.textContent = data.Countries[182].TotalConfirmed + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + '\n  at 12:00 AM PST';*/      
    });
 
 //US Count from covid-api.com      
