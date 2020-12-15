@@ -1,5 +1,7 @@
 //covid-api.com api
 let ustimeline = []
+let usTimelineDeath = []
+let usTimelineConfirm = []
 let altimeline = []
 let aktimeline = []
 let astimeline = []
@@ -58,16 +60,17 @@ let witimeline = []
 let wytimeline = []
 
 async function getUsCountFromCovidApi() {
- const fish = await fetch('https://covid-api.com/api/reports?date=2020-03-01&iso=USA').then(response => response.json())
+ const fish = await fetch('https://covid19-api.org/api/timeline/US').then(response => response.json())
   .then(data => {
-   ustimeline.push(data)
-   console.log(ustimeline)
+   usTimelineDeath.push(data)
+   usTimelineConfirm.push(data)
+   console.log(usTimelinDeath)
   });
  
-  await fetch('https://covid-api.com/api/reports?date=2020-03-02&iso=USA').then(response => response.json())
+  await fetch('https://covid-api.com/api/reports?date=2020-03-13&q=US%20Alabama&iso=USA&region_name=US&region_province=Alabama').then(response => response.json())
   .then(data => {
-   ustimeline.push(data)
-   console.log(ustimeline)
+   altimeline.push(data)
+   console.log(altimeline)
   });
 }
 
