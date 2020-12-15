@@ -64,7 +64,7 @@ async function getUsCountFromCovidApi() {
   .then(data => {
    usTimelineDeath.push(data)
    usTimelineConfirm.push(data)
-   console.log(usTimelinDeath)
+   console.log(usTimelineDeath)
   });
  
   await fetch('https://covid-api.com/api/reports?date=2020-03-13&q=US%20Alabama&iso=USA&region_name=US&region_province=Alabama').then(response => response.json())
