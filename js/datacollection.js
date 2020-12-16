@@ -50,7 +50,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2020-12-14&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2020-12-15&iso=USA')
   .then(response => {
    return response.json();
   })
