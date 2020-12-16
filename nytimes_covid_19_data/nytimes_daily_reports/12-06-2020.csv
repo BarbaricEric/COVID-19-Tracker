@@ -45,7 +45,7 @@ date,state,fips,cases,deaths
 2020-12-06,South Carolina,45,232099,4566
 2020-12-06,South Dakota,46,85991,1110
 2020-12-06,Tennessee,47,391393,4888
-2020-12-06,Texas,48,1344195,23187
+2020-12-06,Texas,48,1346699,23187
 2020-12-06,Utah,49,215407,939
 2020-12-06,Vermont,50,5015,79
 2020-12-06,Virgin Islands,78,1613,23
@@ -54,4 +54,3 @@ date,state,fips,cases,deaths
 2020-12-06,West Virginia,54,54997,838
 2020-12-06,Wisconsin,55,441067,3956
 2020-12-06,Wyoming,56,36317,257
-
