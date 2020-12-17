@@ -424,9 +424,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
-   usCaseConfirm.textContent = data[329].cases;
-   usCaseDeath.textContent = data[329].deaths; 
-   usCaseRecent.textContent = data[329].date;
+   usCaseConfirm.textContent = data[330].cases;
+   usCaseDeath.textContent = data[330].deaths; 
+   usCaseRecent.textContent = data[330].date;
   });
 
 //NY Count from New York Times
