@@ -231,6 +231,7 @@ img {
  justify-content: center;
  align-items: center;
  text-align: center;
+ margin: 0px 30px;
  /*grid-template-columns: repeat(2, 1fr);
  padding: 3rem;*/
 }
@@ -239,6 +240,8 @@ img {
 .data-table-new-york-times,
 .data-table-covid-track {
  display: grid;
+ justify-content: center;
+ align-items: center;
 }
 
 .Tabular-data {
@@ -271,7 +274,7 @@ img {
 
 .info-table-title  {
  margin-top: 2rem;
- background: var(--primary);
+ background: var(--light);
  color: var(--dark);
  text-align: center;
  padding: 1rem 2rem;
@@ -311,6 +314,10 @@ tr:nth-child(even) {
     background-color: #eee;
 }
 
+tr:nth-child(odd) {
+    background-color: var(--light);
+}
+
 th[scope="col"] {
     background-color: #696969;
     color: #fff;
@@ -346,6 +353,7 @@ table {
  align-items: center;
  /* min-height: 100vh; */
  overflow: hidden;
+ margin: 0px 30px;
 }
 
 /* Swiper CSS */
@@ -558,6 +566,10 @@ table {
   display: block;
   text-align: center;
   margin: auto;
+ }
+ 
+ .top-box .price {
+    font-size: 1.5rem;
  }
  
  .covid-track-head-titles {
