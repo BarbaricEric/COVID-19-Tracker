@@ -79,6 +79,10 @@ img {
 }
 
 /* Navigation */
+.main-nav {
+ margin: 0px 20px;
+}
+
 .main-nav ul {
  display: grid;
  grid-gap: 10px;
@@ -119,6 +123,7 @@ img {
 .top-container {
  display: grid;
  grid-gap: 20px;
+ margin: 0px 20px;
  grid-template-areas:
   "showcase showcase top-box-a"
   "showcase showcase top-box-b";
@@ -179,6 +184,7 @@ img {
 .boxes {
  display: grid;
  grid-gap: 20px;
+ margin: 0px 20px;
  /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/ 
  grid-template-columns: repeat(2, 1fr);
 }
