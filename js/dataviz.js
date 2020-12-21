@@ -59,9 +59,8 @@ let wvtimeline = []
 let witimeline = []
 let wytimeline = []
 
-const data = Object.assign(d3.csvParse(await FileAttachment("./nytimes_covid_19_data/nytimes_us_total.csv").text(), 
-  d3.autoType).map(({date, cases}) => ({date, cases: cases})), {y: "# of Cases"})
-  console.log(data);
+const data1 = Object.assign(d3.csvParse(await FileAttachment("./nytimes_covid_19_data/nytimes_us_total.csv").text(), d3.autoType), {y: "# of Cases"})
+  console.log(data1);
 
 const line = d3.line()
     .defined(d => !isNaN(d.cases))
@@ -69,11 +68,11 @@ const line = d3.line()
     .y(d => y(d.cases));
 
 const x = d3.scaleUtc()
-    .domain(d3.extent(data, d => d.date))
+    .domain(d3.extent(data1, d => d.date))
     .range([margin.left, width - margin.right]);
 
 const y = d3.scaleLinear()
-    .domain([0, d3.max(data, d => d.value)]).nice()
+    .domain([0, d3.max(data1, d => d.cases)]).nice()
     .range([height - margin.bottom, margin.top]);
 
 const xAxis = g => g
@@ -88,7 +87,7 @@ const yAxis = g => g
         .attr("x", 3)
         .attr("text-anchor", "start")
         .attr("font-weight", "bold")
-        .text(data.y));
+        .text(data1.y));
 
 async function getUsCountFromCovidApi() {
  const fish = await fetch('https://covid19-api.org/api/timeline/US').then(response => response.json())
