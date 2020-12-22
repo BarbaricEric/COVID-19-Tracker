@@ -59,8 +59,8 @@ let wvtimeline = []
 let witimeline = []
 let wytimeline = []
 
-const data1 = d3.csv('./nytimes_covid_19_data/nytimes_us_total.csv'), d3.autoType), {y: "# of Cases"}); /*Object.assign(d3.csvParse(await FileAttachment("./nytimes_covid_19_data/nytimes_us_total.csv").text(), d3.autoType), {y: "# of Cases"})*/
-console.log(data1);
+const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv").text(), d3.autoType), {y: "# of Cases"});
+
 
 const line = d3.line()
     .defined(d => !isNaN(d.cases))
