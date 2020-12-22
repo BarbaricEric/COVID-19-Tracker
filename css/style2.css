@@ -80,7 +80,7 @@ img {
 
 /* Navigation */
 .main-nav {
- margin: 0px 20px;
+ margin: 0px 30px;
 }
 
 .main-nav ul {
@@ -117,6 +117,7 @@ img {
 .main-nav a:hover {
  background: var(--dark);
  color: var(--light);
+ cursor: pointer;
 }
 
 /* Top Container */
