@@ -50,7 +50,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2020-12-20&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2020-12-21&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -424,13 +424,13 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
-   usCaseConfirm.textContent = data[334].cases;
-   usCaseDeath.textContent = data[334].deaths; 
-   usCaseRecent.textContent = data[334].date;
+   usCaseConfirm.textContent = data[335].cases;
+   usCaseDeath.textContent = data[335].deaths; 
+   usCaseRecent.textContent = data[335].date;
   });
 
 //NY Count from New York Times
-  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/12-20-2020.csv").then(function(data) {
+  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/12-21-2020.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
@@ -1417,7 +1417,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nvTotHos.textContent = determineNull(data.hospitalizedCumulative);
    nvCurHos.textContent = determineNull(data.hospitalizedCurrently);
    nvCurIcu.textContent = determineNull(data.inIcuCurrently);
-   nvRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   nvRecent.textContent = determineNull(data.dateModified.toString().substring(0, 10));       
    });
 
 //NH Count from COVID Tracking Project
