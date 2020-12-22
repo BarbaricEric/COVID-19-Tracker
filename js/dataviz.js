@@ -59,7 +59,7 @@ let wvtimeline = []
 let witimeline = []
 let wytimeline = []
 
-const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv").text(), d3.autoType), {y: "# of Cases"});
+const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv"), d3.autoType), {y: "# of Cases"});
 
 
 const line = d3.line()
