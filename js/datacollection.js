@@ -1417,7 +1417,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nvTotHos.textContent = determineNull(data.hospitalizedCumulative);
    nvCurHos.textContent = determineNull(data.hospitalizedCurrently);
    nvCurIcu.textContent = determineNull(data.inIcuCurrently);
-   nvRecent.textContent = determineNull(data.dateModified.toString().substring(0, 10));       
+   nvRecent.textContent = new Date(addDateComma(data.date)).toString().substring(4,15); /*determineNull(data.dateModified.toString().substring(0, 10));*/       
    });
 
 //NH Count from COVID Tracking Project
@@ -1942,7 +1942,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    wyTotHos.textContent = determineNull(data.hospitalizedCumulative);
    wyCurHos.textContent = determineNull(data.hospitalizedCurrently);
    wyCurIcu.textContent = determineNull(data.inIcuCurrently);
-   wyRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   wyRecent.textContent = new Date(data.dateModified).toString().substring(4,15);       
    });
 
 //US Count from COVID Tracking Project 
@@ -1993,11 +1993,21 @@ function getArrayFields(input, field) {
     return output;
 }
 
-function getCommas() {
+function getCommasBigNum() {
 
 }
 
-var determineNull = input => input == undefined ? input = "NA" : input;/*{
+function addDateComma(dateinput) {
+ let p = dateinput.toString()
+ let d = p.substring(0,4) + ',' + p.substring(4,6) + ',' + p.substring(6,8)
+ return d
+}
+/* example: 
+let test = new Date(addDateComma(20201221)).toString().substring(4,15)
+console.log(test); --> "Dec 21 2020" */
+
+
+const determineNull = input => input == undefined ? input = "NA" : input;/*{
     if (input == undefined) {
      return input = "NA";
    } else {
