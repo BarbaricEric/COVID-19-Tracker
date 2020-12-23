@@ -113,7 +113,7 @@ callout = (g,value) => {
         .data(cases + "").split(/\n/)
           .join("tspan")
            .attr("x", 0)
-           .attr("y", (d,i) => `${i * 1.1em}`
+           .attr("y", (d,i) => `${i * 1.1}em`)
            .style("font-weight"), (_, i) => i ? null : "bold")
            .text(d => d));
     
