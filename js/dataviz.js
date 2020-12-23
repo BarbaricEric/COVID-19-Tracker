@@ -110,7 +110,7 @@ callout = (g,value) => {
     .join("text")
     .call(text => text
         .selectAll("tspan")
-        .data(cases + "").split(/\n/)
+        .data((cases + "").split(/\n/))
           .join("tspan")
            .attr("x", 0)
            .attr("y", (d,i) => `${i * 1.1}em`)
