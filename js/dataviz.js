@@ -61,9 +61,9 @@ let wytimeline = []
 
 const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv"), d3.autoType), {y: "# of Cases"});
 
-const height = 500px
+const height = 500
 
-const margin = ({top: 20px, right: 30px, bottom: 30px, left: 40px})
+const margin = ({top: 20, right: 30, bottom: 30, left: 40})
 
 const line = d3.line()
     .defined(d => !isNaN(d.cases))
