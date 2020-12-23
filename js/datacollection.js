@@ -21,8 +21,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(0, 10).replace(/-{1,}/g, '/');
-   usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(0, 10).replace(/-{1,}/g, '/');
+   usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(5,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4); 
+   usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(5,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4);
+   /*data.last_update.toString().substring(0, 10).replace(/-{1,}/g, '/') => year/month/day*/;   
   });     
 
 //US Count from about-corona
