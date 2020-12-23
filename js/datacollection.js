@@ -21,8 +21,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(0, 10);
-   usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(0, 10);
+   usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(0, 10).replace('-','/');
+   usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(0, 10).replace('-','/');
   });     
 
 //US Count from about-corona
@@ -50,7 +50,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2020-12-21&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2020-12-22&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -424,13 +424,13 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
-   usCaseConfirm.textContent = data[335].cases;
-   usCaseDeath.textContent = data[335].deaths; 
-   usCaseRecent.textContent = data[335].date;
+   usCaseConfirm.textContent = data[336].cases;
+   usCaseDeath.textContent = data[336].deaths; 
+   usCaseRecent.textContent = data[336].date;
   });
 
 //NY Count from New York Times
-  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/12-21-2020.csv").then(function(data) {
+  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/12-22-2020.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
@@ -788,7 +788,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    alTotHos.textContent = determineNull(data.hospitalizedCumulative);
    alCurHos.textContent = determineNull(data.hospitalizedCurrently);
    alCurIcu.textContent = determineNull(data.inIcuCurrently);
-   alRecent.textContent = data.dateModified.toString().substring(0, 10);
+   alRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/
    });
 
 //AK Count from COVID Tracking Project
@@ -809,7 +809,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    akTotHos.textContent = determineNull(data.hospitalizedCumulative);
    akCurHos.textContent = determineNull(data.hospitalizedCurrently);
    akCurIcu.textContent = determineNull(data.inIcuCurrently);
-   akRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   akRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //AS Count from COVID Tracking Project
@@ -830,7 +830,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    asTotHos.textContent = determineNull(data.hospitalizedCumulative);
    asCurHos.textContent = determineNull(data.hospitalizedCurrently);
    asCurIcu.textContent = determineNull(data.inIcuCurrently);
-   asRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   asRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //AZ Count from COVID Tracking Project
@@ -851,7 +851,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    azTotHos.textContent = determineNull(data.hospitalizedCumulative);
    azCurHos.textContent = determineNull(data.hospitalizedCurrently);
    azCurIcu.textContent = determineNull(data.inIcuCurrently);
-   azRecent.textContent = data.dateModified.toString().substring(0, 10);    
+   azRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/    
    });
 
 //AR Count from COVID Tracking Project
@@ -872,7 +872,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    arTotHos.textContent = determineNull(data.hospitalizedCumulative);
    arCurHos.textContent = determineNull(data.hospitalizedCurrently);
    arCurIcu.textContent = determineNull(data.inIcuCurrently);
-   arRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   arRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //CA Count from COVID Tracking Project
@@ -891,7 +891,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    caTotHos.textContent = determineNull(data.hospitalizedCumulative);
    caCurHos.textContent = determineNull(data.hospitalizedCurrently);
    caCurIcu.textContent = determineNull(data.inIcuCurrently);
-   caRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   caRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //CO Count from COVID Tracking Project
@@ -912,7 +912,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    coTotHos.textContent = determineNull(data.hospitalizedCumulative);
    coCurHos.textContent = determineNull(data.hospitalizedCurrently);
    coCurIcu.textContent = determineNull(data.inIcuCurrently);
-   coRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   coRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
    });
 
 //CT Count from COVID Tracking Project
@@ -933,7 +933,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ctTotHos.textContent = determineNull(data.hospitalizedCumulative);
    ctCurHos.textContent = determineNull(data.hospitalizedCurrently);
    ctCurIcu.textContent = determineNull(data.inIcuCurrently);
-   ctRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   ctRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //DE Count from COVID Tracking Project
@@ -954,7 +954,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    deTotHos.textContent = determineNull(data.hospitalizedCumulative);
    deCurHos.textContent = determineNull(data.hospitalizedCurrently);
    deCurIcu.textContent = determineNull(data.inIcuCurrently);
-   deRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   deRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //DC Count from COVID Tracking Project
@@ -975,7 +975,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    dcTotHos.textContent = determineNull(data.hospitalizedCumulative);
    dcCurHos.textContent = determineNull(data.hospitalizedCurrently);
    dcCurIcu.textContent = determineNull(data.inIcuCurrently);
-   dcRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   dcRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //FL Count from COVID Tracking Project
@@ -996,7 +996,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    flTotHos.textContent = determineNull(data.hospitalizedCumulative);
    flCurHos.textContent = determineNull(data.hospitalizedCurrently);
    flCurIcu.textContent = determineNull(data.inIcuCurrently);
-   flRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   flRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //GA Count from COVID Tracking Project
@@ -1017,7 +1017,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    gaTotHos.textContent = determineNull(data.hospitalizedCumulative);
    gaCurHos.textContent = determineNull(data.hospitalizedCurrently);
    gaCurIcu.textContent = determineNull(data.inIcuCurrently);
-   gaRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   gaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
    });
 
 //GU Count from COVID Tracking Project
@@ -1038,7 +1038,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    guTotHos.textContent = determineNull(data.hospitalizedCumulative);
    guCurHos.textContent = determineNull(data.hospitalizedCurrently);
    guCurIcu.textContent = determineNull(data.inIcuCurrently);
-   guRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   guRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //HI Count from COVID Tracking Project
@@ -1059,7 +1059,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    hiTotHos.textContent = determineNull(data.hospitalizedCumulative);
    hiCurHos.textContent = determineNull(data.hospitalizedCurrently);
    hiCurIcu.textContent = determineNull(data.inIcuCurrently);
-   hiRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   hiRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //ID Count from COVID Tracking Project
@@ -1080,7 +1080,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    idTotHos.textContent = determineNull(data.hospitalizedCumulative);
    idCurHos.textContent = determineNull(data.hospitalizedCurrently);
    idCurIcu.textContent = determineNull(data.inIcuCurrently);
-   idRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   idRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //IL Count from COVID Tracking Project
@@ -1101,7 +1101,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ilTotHos.textContent = determineNull(data.hospitalizedCumulative);
    ilCurHos.textContent = determineNull(data.hospitalizedCurrently);
    ilCurIcu.textContent = determineNull(data.inIcuCurrently);
-   ilRecent.textContent = data.dateModified.toString().substring(0, 10);         
+   ilRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/         
    });
 
 //IN Count from COVID Tracking Project
@@ -1122,7 +1122,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    inTotHos.textContent = determineNull(data.hospitalizedCumulative);
    inCurHos.textContent = determineNull(data.hospitalizedCurrently);
    inCurIcu.textContent = determineNull(data.inIcuCurrently);
-   inRecent.textContent = data.dateModified.toString().substring(0, 10);         
+   inRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/        
    });
 
 //IA Count from COVID Tracking Project
@@ -1143,7 +1143,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    iaTotHos.textContent = determineNull(data.hospitalizedCumulative);
    iaCurHos.textContent = determineNull(data.hospitalizedCurrently);
    iaCurIcu.textContent = determineNull(data.inIcuCurrently);
-   iaRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   iaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //KS Count from COVID Tracking Project
@@ -1164,7 +1164,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ksTotHos.textContent = determineNull(data.hospitalizedCumulative);
    ksCurHos.textContent = determineNull(data.hospitalizedCurrently);
    ksCurIcu.textContent = determineNull(data.inIcuCurrently);
-   ksRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   ksRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //KY Count from COVID Tracking Project
@@ -1185,7 +1185,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    kyTotHos.textContent = determineNull(data.hospitalizedCumulative);
    kyCurHos.textContent = determineNull(data.hospitalizedCurrently);
    kyCurIcu.textContent = determineNull(data.inIcuCurrently);
-   kyRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   kyRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //LA Count from COVID Tracking Project
@@ -1206,7 +1206,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    laTotHos.textContent = determineNull(data.hospitalizedCumulative);
    laCurHos.textContent = determineNull(data.hospitalizedCurrently);
    laCurIcu.textContent = determineNull(data.inIcuCurrently);
-   laRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   laRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //ME Count from COVID Tracking Project
@@ -1227,7 +1227,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    meTotHos.textContent = determineNull(data.hospitalizedCumulative);
    meCurHos.textContent = determineNull(data.hospitalizedCurrently);
    meCurIcu.textContent = determineNull(data.inIcuCurrently);
-   meRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   meRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 
@@ -1249,7 +1249,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    mdTotHos.textContent = determineNull(data.hospitalizedCumulative);
    mdCurHos.textContent = determineNull(data.hospitalizedCurrently);
    mdCurIcu.textContent = determineNull(data.inIcuCurrently);
-   mdRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   mdRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //MA Count from COVID Tracking Project
@@ -1270,7 +1270,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    maTotHos.textContent = determineNull(data.hospitalizedCumulative);
    maCurHos.textContent = determineNull(data.hospitalizedCurrently);
    maCurIcu.textContent = determineNull(data.inIcuCurrently);
-   maRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   maRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //MI Count from COVID Tracking Project
@@ -1291,7 +1291,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    miTotHos.textContent = determineNull(data.hospitalizedCumulative);
    miCurHos.textContent = determineNull(data.hospitalizedCurrently);
    miCurIcu.textContent = determineNull(data.inIcuCurrently);
-   miRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   miRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //MN Count from COVID Tracking Project
@@ -1312,7 +1312,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    mnTotHos.textContent = determineNull(data.hospitalizedCumulative);
    mnCurHos.textContent = determineNull(data.hospitalizedCurrently);
    mnCurIcu.textContent = determineNull(data.inIcuCurrently);
-   mnRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   mnRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //MS Count from COVID Tracking Project
@@ -1333,7 +1333,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    msTotHos.textContent = determineNull(data.hospitalizedCumulative);
    msCurHos.textContent = determineNull(data.hospitalizedCurrently);
    msCurIcu.textContent = determineNull(data.inIcuCurrently);
-   msRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   msRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //MO Count from COVID Tracking Project
@@ -1354,7 +1354,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    moTotHos.textContent = determineNull(data.hospitalizedCumulative);
    moCurHos.textContent = determineNull(data.hospitalizedCurrently);
    moCurIcu.textContent = determineNull(data.inIcuCurrently);
-   moRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   moRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //MT Count from COVID Tracking Project
@@ -1375,7 +1375,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    mtTotHos.textContent = determineNull(data.hospitalizedCumulative);
    mtCurHos.textContent = determineNull(data.hospitalizedCurrently);
    mtCurIcu.textContent = determineNull(data.inIcuCurrently);
-   mtRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   mtRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //NE Count from COVID Tracking Project
@@ -1396,7 +1396,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    neTotHos.textContent = determineNull(data.hospitalizedCumulative);
    neCurHos.textContent = determineNull(data.hospitalizedCurrently);
    neCurIcu.textContent = determineNull(data.inIcuCurrently);
-   neRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   neRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //NV Count from COVID Tracking Project
@@ -1438,7 +1438,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nhTotHos.textContent = determineNull(data.hospitalizedCumulative);
    nhCurHos.textContent = determineNull(data.hospitalizedCurrently);
    nhCurIcu.textContent = determineNull(data.inIcuCurrently);
-   nhRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   nhRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //NJ Count from COVID Tracking Project
@@ -1459,7 +1459,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    njTotHos.textContent = determineNull(data.hospitalizedCumulative);
    njCurHos.textContent = determineNull(data.hospitalizedCurrently);
    njCurIcu.textContent = determineNull(data.inIcuCurrently);
-   njRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   njRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //NM Count from COVID Tracking Project
@@ -1480,7 +1480,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nmTotHos.textContent = determineNull(data.hospitalizedCumulative);
    nmCurHos.textContent = determineNull(data.hospitalizedCurrently);
    nmCurIcu.textContent = determineNull(data.inIcuCurrently);
-   nmRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   nmRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //NY Count from COVID Tracking Project
@@ -1501,7 +1501,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nyTotHos.textContent = determineNull(data.hospitalizedCumulative);
    nyCurHos.textContent = determineNull(data.hospitalizedCurrently);
    nyCurIcu.textContent = determineNull(data.inIcuCurrently);
-   nyRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   nyRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
    });
 
 //NC Count from COVID Tracking Project
@@ -1522,7 +1522,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ncTotHos.textContent = determineNull(data.hospitalizedCumulative);
    ncCurHos.textContent = determineNull(data.hospitalizedCurrently);
    ncCurIcu.textContent = determineNull(data.inIcuCurrently);
-   ncRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   ncRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //ND Count from COVID Tracking Project
@@ -1543,7 +1543,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ndTotHos.textContent = determineNull(data.hospitalizedCumulative);
    ndCurHos.textContent = determineNull(data.hospitalizedCurrently);
    ndCurIcu.textContent = determineNull(data.inIcuCurrently);
-   ndRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   ndRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //MP Count from COVID Tracking Project
@@ -1564,7 +1564,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    mpTotHos.textContent = determineNull(data.hospitalizedCumulative);
    mpCurHos.textContent = determineNull(data.hospitalizedCurrently);
    mpCurIcu.textContent = determineNull(data.inIcuCurrently);
-   mpRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   mpRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //OH Count from COVID Tracking Project
@@ -1585,7 +1585,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ohTotHos.textContent = determineNull(data.hospitalizedCumulative);
    ohCurHos.textContent = determineNull(data.hospitalizedCurrently);
    ohCurIcu.textContent = determineNull(data.inIcuCurrently);
-   ohRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   ohRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //OK Count from COVID Tracking Project
@@ -1606,7 +1606,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    okTotHos.textContent = determineNull(data.hospitalizedCumulative);
    okCurHos.textContent = determineNull(data.hospitalizedCurrently);
    okCurIcu.textContent = determineNull(data.inIcuCurrently);
-   okRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   okRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //OR Count from COVID Tracking Project
@@ -1627,7 +1627,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    orTotHos.textContent = determineNull(data.hospitalizedCumulative);
    orCurHos.textContent = determineNull(data.hospitalizedCurrently);
    orCurIcu.textContent = determineNull(data.inIcuCurrently);
-   orRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   orRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //PA Count from COVID Tracking Project
@@ -1648,7 +1648,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    paTotHos.textContent = determineNull(data.hospitalizedCumulative);
    paCurHos.textContent = determineNull(data.hospitalizedCurrently);
    paCurIcu.textContent = determineNull(data.inIcuCurrently);
-   paRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   paRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //PR Count from COVID Tracking Project
@@ -1669,7 +1669,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    prTotHos.textContent = determineNull(data.hospitalizedCumulative);
    prCurHos.textContent = determineNull(data.hospitalizedCurrently);
    prCurIcu.textContent = determineNull(data.inIcuCurrently);
-   prRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   prRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //RI Count from COVID Tracking Project
@@ -1690,7 +1690,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    riTotHos.textContent = determineNull(data.hospitalizedCumulative);
    riCurHos.textContent = determineNull(data.hospitalizedCurrently);
    riCurIcu.textContent = determineNull(data.inIcuCurrently);
-   riRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   riRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //SC Count from COVID Tracking Project
@@ -1711,7 +1711,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    scTotHos.textContent = determineNull(data.hospitalizedCumulative);
    scCurHos.textContent = determineNull(data.hospitalizedCurrently);
    scCurIcu.textContent = determineNull(data.inIcuCurrently);
-   scRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   scRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //SD Count from COVID Tracking Project
@@ -1732,7 +1732,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    sdTotHos.textContent = determineNull(data.hospitalizedCumulative);
    sdCurHos.textContent = determineNull(data.hospitalizedCurrently);
    sdCurIcu.textContent = determineNull(data.inIcuCurrently);
-   sdRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   sdRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //TN Count from COVID Tracking Project
@@ -1753,7 +1753,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    tnTotHos.textContent = determineNull(data.hospitalizedCumulative);
    tnCurHos.textContent = determineNull(data.hospitalizedCurrently);
    tnCurIcu.textContent = determineNull(data.inIcuCurrently);
-   tnRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   tnRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //TX Count from COVID Tracking Project
@@ -1774,7 +1774,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    txTotHos.textContent = determineNull(data.hospitalizedCumulative);
    txCurHos.textContent = determineNull(data.hospitalizedCurrently);
    txCurIcu.textContent = determineNull(data.inIcuCurrently);
-   txRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   txRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //VI Count from COVID Tracking Project
@@ -1795,7 +1795,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    viTotHos.textContent = determineNull(data.hospitalizedCumulative);
    viCurHos.textContent = determineNull(data.hospitalizedCurrently);
    viCurIcu.textContent = determineNull(data.inIcuCurrently);
-   viRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   viRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //UT Count from COVID Tracking Project
@@ -1816,7 +1816,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    utTotHos.textContent = determineNull(data.hospitalizedCumulative);
    utCurHos.textContent = determineNull(data.hospitalizedCurrently);
    utCurIcu.textContent = determineNull(data.inIcuCurrently);
-   utRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   utRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //VT Count from COVID Tracking Project
@@ -1837,7 +1837,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    vtTotHos.textContent = determineNull(data.hospitalizedCumulative);
    vtCurHos.textContent = determineNull(data.hospitalizedCurrently);
    vtCurIcu.textContent = determineNull(data.inIcuCurrently);
-   vtRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   vtRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
    });
 
 //VA Count from COVID Tracking Project
@@ -1858,7 +1858,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    vaTotHos.textContent = determineNull(data.hospitalizedCumulative);
    vaCurHos.textContent = determineNull(data.hospitalizedCurrently);
    vaCurIcu.textContent = determineNull(data.inIcuCurrently);
-   vaRecent.textContent = data.dateModified.toString().substring(0, 10);       
+   vaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //WA Count from COVID Tracking Project
@@ -1879,7 +1879,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    waTotHos.textContent = determineNull(data.hospitalizedCumulative);
    waCurHos.textContent = determineNull(data.hospitalizedCurrently);
    waCurIcu.textContent = determineNull(data.inIcuCurrently);
-   waRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   waRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //WV Count from COVID Tracking Project
@@ -1900,7 +1900,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    wvTotHos.textContent = determineNull(data.hospitalizedCumulative);
    wvCurHos.textContent = determineNull(data.hospitalizedCurrently);
    wvCurIcu.textContent = determineNull(data.inIcuCurrently);
-   wvRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   wvRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //WI Count from COVID Tracking Project
@@ -1921,7 +1921,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    wiTotHos.textContent = determineNull(data.hospitalizedCumulative);
    wiCurHos.textContent = determineNull(data.hospitalizedCurrently);
    wiCurIcu.textContent = determineNull(data.inIcuCurrently);
-   wiRecent.textContent = data.dateModified.toString().substring(0, 10);      
+   wiRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
    });
 
 //WY Count from COVID Tracking Project
