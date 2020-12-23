@@ -61,6 +61,9 @@ let wytimeline = []
 
 const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv"), d3.autoType), {y: "# of Cases"});
 
+const height = 500px
+
+const margin = ({top: 20px, right: 30px, bottom: 30px, left: 40px})
 
 const line = d3.line()
     .defined(d => !isNaN(d.cases))
@@ -88,6 +91,48 @@ const yAxis = g => g
         .attr("text-anchor", "start")
         .attr("font-weight", "bold")
         .text(data1.y));
+
+callout = (g,value) => {
+ if (!cases) return 
+    g.style("display", "none");
+    g.style("display", "null");
+    g.style("pointer-events", "none");
+    g.style("font", "10px sans-serif");
+ 
+ const path = g.selectAll("path")
+    .data([null])
+    .join("path")
+        .attr("fill", "white")
+        .attr("stroke", "black")
+ 
+ const text = g.selectAll("text")
+    .data([null])
+    .join("text")
+    .call(text => text
+        .selectAll("tspan")
+        .data(cases + "").split(/\n/)
+          .join("tspan")
+           .attr("x", 0)
+           .attr("y", (d,i) => `${i * 1.1em}`
+           .style("font-weight"), (_, i) => i ? null : "bold")
+           .text(d => d));
+    
+ const {x, y, width: w, height: h} = text.node().getBBox();
+    
+ text.attr("transform", `translate(${-w / 2}, ${15 - y})`);
+ path.attr("d", `M${-w / 2 - 10},5H-515,-515,5H${w / 2 + 10}v${h + 20}h-${w + 20}z`);
+}
+
+bisect {
+ const bisect = d3.bisector(d => d.date).left;
+ return mx => {
+  const date = x.invert(mx);
+  const index = bisect(data, date, 1);
+  const a = data[index - 1];
+  const b = data[index];
+  return b && (date - a.date > b.date - date) ? b : a; 
+ };
+}
 
 async function getUsCountFromCovidApi() {
  const fish = await fetch('https://covid19-api.org/api/timeline/US').then(response => response.json())
