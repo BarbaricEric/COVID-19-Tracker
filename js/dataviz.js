@@ -115,7 +115,8 @@ callout = (g,value) => {
            .attr("x", 0)
            .attr("y", (d,i) => `${i * 1.1}em`)
            .style("font-weight"), (_, i) => i ? null : "bold")
-           .text(d => d));
+           .text(d => d)
+      );
     
  const {x, y, width: w, height: h} = text.node().getBBox();
     
