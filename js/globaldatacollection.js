@@ -13,8 +13,8 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   })
   .then(data => {
    console.log(data);
-   usCaseDeathJh.textContent = data.Global.TotalDeaths + ' as of ' + data.Date.toString().substring(0, 10);
-   usCaseConfirmJh.textContent = data.Global.TotalConfirmed + ' as of ' + data.Date.toString().substring(0, 10);
+   //usCaseDeathJh.textContent = data.Global.TotalDeaths + ' as of ' + data.Date.toString().substring(0, 10);
+   //usCaseConfirmJh.textContent = data.Global.TotalConfirmed + ' as of ' + data.Date.toString().substring(0, 10);
    });
    
 //Global Count from corona-api      
@@ -33,8 +33,8 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   })
   .then(data => {
    console.log(data);
-   //usCaseConfirmJh.textContent = data.
-   //usCaseDeathJh.textContent = data.   
+   usCaseConfirmJh.textContent = data[0].total_cases + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(9,10) + '/' + data.last_update.toString().substring(0,4); 
+   usCaseDeathJh.textContent = data[0].total_deaths + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(9,10) + '/' + data.last_update.toString().substring(0,4);   
    });
 
 //Country Counts from covid19-api.org      
@@ -106,7 +106,69 @@ const globalapi2 = 'https://api.covid19api.com/summary';
    const seCaseDeath
    const chCaseConfirm
    const chCaseDeath
-   
+   const ilCaseConfirm
+   const ilCaseDeath
+   const maCaseConfirm
+   const maCaseDeath
+   const ptCaseConfirm
+   const ptCaseDeath
+   const atCaseConfirm
+   const atCaseDeath
+   const saCaseConfirm
+   const saCaseDeath
+   const rsCaseConfirm
+   const rsCaseDeath
+   const huCaseConfirm
+   const huCaseDeath
+   const joCaseConfirm
+   const joCaseDeath
+   const npCaseConfirm
+   const npCaseDeath
+   const paCaseConfirm
+   const paCaseDeath
+   const jpCaseConfirm
+   const jpCaseDeath
+   const geCaseConfirm
+   const geCaseDeath
+   const azCaseConfirm
+   const azCaseDeath
+   const ecCaseConfirm
+   const ecCaseDeath
+   const aeCaseConfirm
+   const aeCaseDeath
+   const hrCaseConfirm
+   const hrCaseDeath
+   const kzCaseConfirm
+   const kzCaseDeath
+   const bgCaseConfirm
+   const bgCaseDeath
+   const byCaseConfirm
+   const byCaseDeath
+   const lbCaseConfirm
+   const lbCaseDeath
+   const skCaseConfirm
+   const skCaseDeath
+   const doCaseConfirm
+   const doCaseDeath
+   const dkCaseConfirm
+   const dkCaseDeath
+   const crCaseConfirm
+   const crCaseDeath
+   const boCaseConfirm
+   const boCaseDeath
+   const amCaseConfirm
+   const amCaseDeath
+   const kwCaseConfirm
+   const kwCaseDeath
+   const ltCaseConfirm
+   const ltCaseDeath
+   const mdCaseConfirm
+   const mdCaseDeath
+   const qaCaseConfirm
+   const qaCaseDeath
+   const tnCaseConfirm
+   const tnCaseDeath
+   62
    
    const afCaseConfirm
    const afCaseDeath
