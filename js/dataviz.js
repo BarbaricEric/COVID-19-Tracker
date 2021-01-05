@@ -123,7 +123,7 @@ callout = (g,value) => {
  path.attr("d", `M${-w / 2 - 10},5H-515,-515,5H${w / 2 + 10}v${h + 20}h-${w + 20}z`);
 }
 
-bisect {
+bisect = (mx) => {
  const bisect = d3.bisector(d => d.date).left;
  return mx => {
   const date = x.invert(mx);
