@@ -61,9 +61,9 @@ let wytimeline = []
 
 const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv"), d3.autoType), {y: "# of Cases"});
 
-const height = 500
-
 const margin = ({top: 20, right: 30, bottom: 30, left: 40})
+const height = 500
+const width = 500
 
 const line = d3.line()
     .defined(d => !isNaN(d.cases))
@@ -123,7 +123,7 @@ callout = (g,value) => {
  path.attr("d", `M${-w / 2 - 10},5H-515,-515,5H${w / 2 + 10}v${h + 20}h-${w + 20}z`);
 }
 
-bisect = (mx) => {
+bisect = () => {
  const bisect = d3.bisector(d => d.date).left;
  return mx => {
   const date = x.invert(mx);
