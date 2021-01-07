@@ -169,16 +169,16 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
     cellValues[i] = cellValue;
   }
 
-  // clean date
+  /* clean date
   for (i = 0; i < cellValues[0].length; i++) {
   var dateValue = cellValues[0][i].split(' ')[0]
   cellValues[0][i] = dateValue
-  }
+  }*/
 
   // create table
   var table = {
     type: 'table',
-    columnwidth: [200,200,200,200],
+    columnwidth: [300,300,300,300],
     columnorder: [0,1,2,3],
     header: {
       values: headerValues,
