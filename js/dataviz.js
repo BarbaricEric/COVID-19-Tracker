@@ -267,3 +267,6 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   Plotly.newPlot('us-nytimes-chart', data, layout, {displayModeBar: false});
 
 });
+
+//https://plotly.com/javascript/time-series/
+//https://plotly.com/javascript/plotly-fundamentals/
