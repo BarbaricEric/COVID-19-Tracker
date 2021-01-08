@@ -212,7 +212,7 @@ img {
 .box:hover {
  background: var(--dark);
  color: var(--light);
- cursor: pointer;
+ /*cursor: pointer;*/
 } 
 
 .box {
