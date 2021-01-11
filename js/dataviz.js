@@ -178,7 +178,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   // create table
   var table = {
     type: 'table',
-    columnwidth: [500,500,500,500],
+    columnwidth: [800,800,800,800],
     columnorder: [0,1,2,3],
     header: {
       values: headerValues,
@@ -240,7 +240,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
     showgrid: true,
     mirror:true,
     ticklen: 4,
-    gridcolor: '#ffffff',
+    gridcolor: '#000000',
     tickfont: {size: 10},
   }
 
