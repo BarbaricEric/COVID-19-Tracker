@@ -196,7 +196,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
     },
     xaxis: 'x',
     yaxis: 'y',
-    domain: {x: [0,0.3], y: [0,1]}
+    domain: {x: [0,0.2], y: [0,1]}
   }
 
   // create 1st plot
@@ -237,7 +237,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   var axis = {
     showline: true,
     zeroline: false,
-    showgrid: false,
+    showgrid: true,
     mirror:true,
     ticklen: 4,
     gridcolor: '#ffffff',
