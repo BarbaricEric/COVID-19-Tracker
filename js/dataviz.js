@@ -65,6 +65,42 @@ const margin = ({top: 20, right: 30, bottom: 30, left: 40})
 const height = 500
 const width = 500
 
+chart = {
+  const svg = d3.select(".us-johnhopkins-chart")
+      .style("-webkit-tap-highlight-color", "transparent")
+      .style("overflow", "visible");
+
+  svg.append("g")
+      .call(xAxis);
+
+  svg.append("g")
+      .call(yAxis);
+  
+  svg.append("path")
+      .datum(data)
+      .attr("fill", "none")
+      .attr("stroke", "steelblue")
+      .attr("stroke-width", 1.5)
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("d", line);
+
+  const tooltip = svg.append("g");
+
+  svg.on("touchmove mousemove", function(event) {
+    const {date, value} = bisect(d3.pointer(event, this)[0]);
+
+    tooltip
+        .attr("transform", `translate(${x(date)},${y(value)})`)
+        .call(callout, `${cases}
+${date}`);
+  });
+
+  svg.on("touchend mouseleave", () => tooltip.call(callout, null));
+
+  return svg.node();
+}
+
 const line = d3.line()
     .defined(d => !isNaN(d.cases))
     .x(d => x(d.date))
@@ -237,9 +273,9 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   var axis = {
     showline: true,
     zeroline: false,
-    showgrid: true,
+    showgrid: false,
     mirror:true,
-    ticklen: 4,
+    ticklen: 8,
     gridcolor: '#000000',
     tickfont: {size: 10},
   }
