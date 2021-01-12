@@ -65,7 +65,7 @@ const margin = ({top: 20, right: 30, bottom: 30, left: 40})
 const height = 500
 const width = 500
 
-chart = {
+/*chart = {
   const svg = d3.select(DOM.svg(width, height))
       .style("-webkit-tap-highlight-color", "transparent")
       .style("overflow", "visible");
@@ -99,7 +99,7 @@ ${date}`);
   svg.on("touchend mouseleave", () => tooltip.call(callout, null));
 
   return svg.node();
-}
+}*/
 
 const line = d3.line()
     .defined(d => !isNaN(d.cases))
