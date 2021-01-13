@@ -309,13 +309,13 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
 
 Highcharts.chart('us-covidtrack-chart', {
     data: {
-        table: 'datatable'
+        csvURL: 'https://github.com/BarbaricEric/COVID-19-Tracker/blob/master/covidtrack_covid_19_data/us.csv',
     },
     chart: {
-        type: 'column'
+        type: 'Line'
     },
     title: {
-        text: 'Data extracted from a HTML table in the page'
+        text: 'Total US COVID-19 Cases and Deaths'
     },
     yAxis: {
         allowDecimals: false,
