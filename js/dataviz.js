@@ -214,7 +214,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   // create table
   var table = {
     type: 'table',
-    columnwidth: [800,800,800,800],
+    columnwidth: [600,600,600,600],
     columnorder: [0,1,2,3],
     header: {
       values: headerValues,
@@ -232,7 +232,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
     },
     xaxis: 'x',
     yaxis: 'y',
-    domain: {x: [0,0.2], y: [0,1]}
+    domain: {x: [0,0.4], y: [0,1]}
   }
 
   // create 1st plot
@@ -275,7 +275,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
     zeroline: false,
     showgrid: false,
     mirror:true,
-    ticklen: 8,
+    ticklen: 4,
     gridcolor: '#000000',
     tickfont: {size: 10},
   }
@@ -283,9 +283,9 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   var axis1 = {domain: [0.35, 1], anchor: 'y1'}
   var axis2 = {domain: [0.35, 1], anchor: 'y2', showticklabels: false}
   var axis3 = {domain: [0.35, 1], anchor: 'y3'}
-  var axis4 = {domain: [0.52, 1], anchor: 'x1', hoverformat: '.2f'}
+  var axis4 = {domain: [0.42, 1], anchor: 'x1', hoverformat: '.2f'}
   var axis5 = {domain: [0.34, 0.64], anchor: 'x2', hoverformat: '.2f'}
-  var axis6 = {domain: [0.0, 0.42], anchor: 'x3', hoverformat: '.2f'}
+  var axis6 = {domain: [0.0, 0.32], anchor: 'x3', hoverformat: '.2f'}
 
   // define layout
   var layout = {
