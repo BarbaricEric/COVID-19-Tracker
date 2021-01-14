@@ -309,7 +309,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
 
 Highcharts.chart('us-covidtrack-chart', {
     data: {
-        csvURL: 'https://github.com/BarbaricEric/COVID-19-Tracker/blob/master/covidtrack_covid_19_data/us.csv',
+        csvURL: 'https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/covidtrack_covid_19_data/us.csv',
     },
     chart: {
         type: 'Line'
@@ -322,6 +322,9 @@ Highcharts.chart('us-covidtrack-chart', {
         title: {
             text: 'Units'
         }
+    },
+    credits: {
+        enabled: false
     },
     tooltip: {
         formatter: function () {
