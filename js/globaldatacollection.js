@@ -33,8 +33,8 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   })
   .then(data => {
    console.log(data);
-   usCaseConfirmJh.textContent = data[0].total_cases + ' as of ' + data[0].last_update.toString().substring(6,7) + '/' + data[0].last_update.toString().substring(9,10) + '/' + data[0].last_update.toString().substring(0,4); 
-   usCaseDeathJh.textContent = data[0].total_deaths + ' as of ' + data[0].last_update.toString().substring(6,7) + '/' + data[0].last_update.toString().substring(9,10) + '/' + data[0].last_update.toString().substring(0,4);   
+   usCaseConfirmJh.textContent = data[0].total_cases + ' as of ' + data[0].last_update.toString().substring(6,7) + '/' + data[0].last_update.toString().substring(8,10) + '/' + data[0].last_update.toString().substring(0,4); 
+   usCaseDeathJh.textContent = data[0].total_deaths + ' as of ' + data[0].last_update.toString().substring(6,7) + '/' + data[0].last_update.toString().substring(8,10) + '/' + data[0].last_update.toString().substring(0,4);   
    });
 
 //Country Counts from covid19-api.org      
