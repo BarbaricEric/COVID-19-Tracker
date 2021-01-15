@@ -59,6 +59,19 @@ let wvtimeline = []
 let witimeline = []
 let wytimeline = []
 
+//Covid Tracking HighChart Date Value
+  fetch('https://api.covidtracking.com/v1/us/daily.json')
+    .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    let dateValue = [];
+    for (let i = 0; i < data.date.length; i++) {
+      dateValue.push = data.date[i];
+    }
+    console.log(dataValue);   
+   });
+
 const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv"), d3.autoType), {y: "# of Cases"});
 
 const margin = ({top: 20, right: 30, bottom: 30, left: 40})
@@ -336,18 +349,6 @@ Highcharts.chart('us-covidtrack-chart', {
 });
 
 Highcharts.chart('us-covidtrack-average-chart', {
-  fetch('https://api.covidtracking.com/v1/us/daily.json')
-    .then(response => {
-    return response.json();
-  })
-  .then(data => {
-    let dateValue = [];
-    for (let i = 0; i < data.date.length; i++) {
-      dateValue.push = data.date[i];
-    }
-    console.log(dataValue);   
-   });
-
     title: {
         text: 'COVID-19 Cases and Death, 2019-2021'
     },
