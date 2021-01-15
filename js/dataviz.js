@@ -69,7 +69,7 @@ let wytimeline = []
     for (let i = 0; i < data.length; i++) {
       dateValue.push(data[i].date[i]);
     }
-    console.log(dataValue);   
+    console.log(dateValue);   
    });
 
 const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv"), d3.autoType), {y: "# of Cases"});
