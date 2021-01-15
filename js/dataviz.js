@@ -67,7 +67,7 @@ let wytimeline = []
   .then(data => {
     let dateValue = [];
     for (let i = 0; i < data.length; i++) {
-      dateValue.push = data[i].date[i];
+      dateValue.push(data[i].date[i]);
     }
     console.log(dataValue);   
    });
