@@ -307,6 +307,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
 //https://plotly.com/javascript/time-series/
 //https://plotly.com/javascript/plotly-fundamentals/
 
+//Covid Tracking Project High Chart
 Highcharts.chart('us-covidtrack-chart', {
     data: {
         csvURL: 'https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/covidtrack_covid_19_data/us.csv',
@@ -332,4 +333,50 @@ Highcharts.chart('us-covidtrack-chart', {
                 this.point.y + ' ' + this.point.name.toLowerCase();
         }
     }
+});
+
+Highcharts.chart('us-covidtrack-average-chart', {
+  fetch('https://api.covidtracking.com/v1/us/daily.json')
+    .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    let dateValue = [];
+    for (let i = 0; i < data.date.length; i++) {
+      dateValue.push = data.date[i];
+    }
+    console.log(dataValue);   
+   });
+
+    title: {
+        text: 'COVID-19 Cases and Death, 2019-2021'
+    },
+
+    subtitle: {
+        text: 'Source: covidtrackingproject.com'
+    },
+    yAxis: {
+        title: {
+            text: 'Values'
+        }
+       },
+    xAxis: {
+        title: {
+            text: 'Date'
+        },
+        categories: ['Jan 2019', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan 2020', '1/15/2021']
+    },
+    
+    credits: {
+        enabled: false
+    },
+
+    series: [{
+        name: "Cases",
+        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4,500.0,200.1]
+    }, {
+        data: [216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5,500.4,2000.1],
+        name: "Deaths",
+        lineWidth: 5
+    }]
 });
