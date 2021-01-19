@@ -67,9 +67,37 @@ let wytimeline = []
   .then(data => {
     let dateValue = [];
     for (let i = 0; i < data.length; i++) {
-      dateValue.push(data[i].date);
+      dateValue.push(data[i].lastModified);
     }
     console.log(dateValue);   
+   });
+
+
+//Covid Tracking HighChart Death Value
+  fetch('https://api.covidtracking.com/v1/us/daily.json')
+    .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    let deathValue = [];
+    for (let i = 0; i < data.length; i++) {
+      deathValue.push(data[i].death);
+    }
+    console.log(deathValue);   
+   });
+
+
+//Covid Tracking HighChart Case Positive Value
+  fetch('https://api.covidtracking.com/v1/us/daily.json')
+    .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    let posValue = [];
+    for (let i = 0; i < data.length; i++) {
+      posValue.push(data[i].positive);
+    }
+    console.log(posValue);   
    });
 
 const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv"), d3.autoType), {y: "# of Cases"});
