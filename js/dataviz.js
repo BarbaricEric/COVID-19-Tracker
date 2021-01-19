@@ -67,7 +67,7 @@ let wytimeline = []
   .then(data => {
     let dateValue = [];
     for (let i = 0; i < data.length; i++) {
-      dateValue.push(data[i].date[i]);
+      dateValue.push(data[i].date);
     }
     console.log(dateValue);   
    });
@@ -200,7 +200,7 @@ async function getUsCountFromCovidApi() {
 
 getUsCountFromCovidApi();
 
-//New York Times Total Chart
+//New York Times Total Chart, Plotly
 Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows){
 
   function unpack(rows, key) {
@@ -302,6 +302,9 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
 
   // define layout
   var layout = {
+    autosize: false,
+    width: 600,
+    height: 600,
     title: "Total US COVID-19 Cases and Deaths",
     plot_bgcolor: 'rgba(255, 255, 255, 1)',
     showlegend: false,
@@ -320,7 +323,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
 //https://plotly.com/javascript/time-series/
 //https://plotly.com/javascript/plotly-fundamentals/
 
-//Covid Tracking Project High Chart
+//Covid Tracking Project, High Chart
 Highcharts.chart('us-covidtrack-chart', {
     data: {
         csvURL: 'https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/covidtrack_covid_19_data/us.csv',
