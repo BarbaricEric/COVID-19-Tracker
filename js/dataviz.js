@@ -67,7 +67,7 @@ let wytimeline = []
   .then(data => {
     let dateValue = [];
     for (let i = 0; i < data.length; i++) {
-      dateValue.push(new Date(data[i].lastModified));
+      dateValue.push(new Date(data[i].lastModified).toString().substring(0,15));
     }
     console.log(dateValue);   
    });
@@ -314,7 +314,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   var axis = {
     showline: true,
     zeroline: false,
-    showgrid: false,
+    showgrid: true,
     mirror:true,
     ticklen: 4,
     gridcolor: '#000000',
@@ -332,7 +332,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   var layout = {
     autosize: false,
     width: 500,
-    height: 800,
+    height: 600,
     title: "Total US COVID-19 Cases and Deaths",
     plot_bgcolor: 'rgba(255, 255, 255, 1)',
     showlegend: false,
@@ -389,14 +389,14 @@ Highcharts.chart('us-covidtrack-average-chart', {
     },
     yAxis: {
         title: {
-            text: 'Values'
+            text: 'Values/Number'
         }
        },
     xAxis: {
         title: {
             text: 'Date'
         },
-        categories: ['Jan 2019', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan 2020', '1/15/2021']
+        data: dateValue//categories: ['Jan 2019', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan 2020', '1/15/2021']
     },
     
     credits: {
@@ -405,9 +405,9 @@ Highcharts.chart('us-covidtrack-average-chart', {
 
     series: [{
         name: "Cases",
-        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4,500.0,200.1]
+        data: posValue/*[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4,500.0,200.1]*/
     }, {
-        data: [216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5,500.4,2000.1],
+        data: deathValue/*[216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5,500.4,2000.1]*/,
         name: "Deaths",
         lineWidth: 5
     }]
