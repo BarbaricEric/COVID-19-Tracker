@@ -67,7 +67,7 @@ let wytimeline = []
   .then(data => {
     let dateValue = [];
     for (let i = 0; i < data.length; i++) {
-      dateValue.push(data[i].lastModified);
+      dateValue.push(new Date(data[i].lastModified));
     }
     console.log(dateValue);   
    });
@@ -331,8 +331,8 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   // define layout
   var layout = {
     autosize: false,
-    width: 600,
-    height: 600,
+    width: 500,
+    height: 800,
     title: "Total US COVID-19 Cases and Deaths",
     plot_bgcolor: 'rgba(255, 255, 255, 1)',
     showlegend: false,
