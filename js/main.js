@@ -1,4 +1,5 @@
-const BROSWERSUPPORT = document.querySelector('.banner-support');
+const browserSupport = document.querySelector('.banner-support');
+const bannerLogo = document.querySelector('.banner-logo');
 
 //Browser Support Banner
-setTimeout(() => {BROSWERSUPPORT.style.bottom = '-200px';}, 10.0*1000);
+setTimeout(() => {browserSupport.style.bottom = '-200px'; bannerLogo.style.bottom = '-200px';}, 8.0*1000);
