@@ -58,6 +58,9 @@ let watimeline = []
 let wvtimeline = []
 let witimeline = []
 let wytimeline = []
+let dateValue = []
+let deathValue = []
+let posValue = []
 
 //Covid Tracking HighChart Date Value
   fetch('https://api.covidtracking.com/v1/us/daily.json')
@@ -65,7 +68,6 @@ let wytimeline = []
     return response.json();
   })
   .then(data => {
-    let dateValue = [];
     for (let i = 0; i < data.length; i++) {
       dateValue.push(new Date(data[i].lastModified).toString().substring(0,15));
     }
@@ -79,7 +81,6 @@ let wytimeline = []
     return response.json();
   })
   .then(data => {
-    let deathValue = [];
     for (let i = 0; i < data.length; i++) {
       deathValue.push(data[i].death);
     }
@@ -93,7 +94,6 @@ let wytimeline = []
     return response.json();
   })
   .then(data => {
-    let posValue = [];
     for (let i = 0; i < data.length; i++) {
       posValue.push(data[i].positive);
     }
@@ -314,7 +314,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   var axis = {
     showline: true,
     zeroline: false,
-    showgrid: true,
+    showgrid: false,
     mirror:true,
     ticklen: 4,
     gridcolor: '#000000',
@@ -396,7 +396,7 @@ Highcharts.chart('us-covidtrack-average-chart', {
         title: {
             text: 'Date'
         },
-        data: dateValue//categories: ['Jan 2019', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan 2020', '1/15/2021']
+        categories: dateValue//categories: ['Jan 2019', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan 2020', '1/15/2021']
     },
     
     credits: {
