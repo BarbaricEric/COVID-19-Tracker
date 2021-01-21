@@ -212,6 +212,55 @@ img {
  padding: 3rem;
 }
 
+/* Data Tables */
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+    transition: background-color .5s;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--light);
+    transition: background-color .5s;
+}
+
+tr:hover, tr:active {
+  background-color: #FFD700;
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+}
+
+td[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+caption {
+    padding: 10px;
+    caption-side: top;
+}
+
+table {
+    border-collapse: collapse;
+    border: 3px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Portfolio */ 
 .portfolio {
  background: var(--primary);
