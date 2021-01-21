@@ -69,7 +69,7 @@ let posValue = []
   })
   .then(data => {
     for (let i = 0; i < data.length; i++) {
-      dateValue.push(new Date(data[i].lastModified).toString().substring(0,15));
+      dateValue.push(new Date(data[i].lastModified));
     }
     console.log(dateValue);   
    });
