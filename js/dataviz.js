@@ -393,10 +393,7 @@ Highcharts.chart('us-covidtrack-average-chart', {
         }
        },
     xAxis: {
-        type: 'datetime',
-        labels: {
-          format: '{value:%Y-%b-%e}'
-        },
+        //type: 'datetime',
         title: {
             text: 'Date'
         },
