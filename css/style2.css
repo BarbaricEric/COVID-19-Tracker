@@ -208,8 +208,11 @@ img {
  box-shadow: var(--shadow);
  display: grid;
  grid-gap: 30px;
- grid-template-columns: repeat(2, 1fr);
+ margin: 0px 20px;
  padding: 3rem;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
 }
 
 /* Data Tables */
@@ -369,6 +372,7 @@ table {
  color: var(--light);
  text-align: center;
  padding: 1rem;
+ margin: 0px 20px;
 }
 
 /* Supported Browser Banner */
