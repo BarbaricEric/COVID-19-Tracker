@@ -414,10 +414,10 @@ Highcharts.chart('us-covidtrack-average-chart', {
 
     series: [{
         name: "Cases",
-        data: [parseInt(posValue[375]), parseInt(posValue[374]), parseInt(posValue[373]), parseInt(posValue[372]), parseInt(posValue[371])
+        data: [parseInt(posValue[375]), parseInt(posValue[374]), parseInt(posValue[373]), parseInt(posValue[372]), parseInt(posValue[371]),
               parseInt(posValue[370]), parseInt(posValue[369]), parseInt(posValue[368]), parseInt(posValue[367]), parseInt(posValue[329])]/*[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4,500.0,200.1]*/
     }, {
-        data: [parseInt(deathValue[375]), parseInt(deathValue[374]), parseInt(deathValue[373]), parseInt(deathValue[372]), parseInt(deathValue[371])
+        data: [parseInt(deathValue[375]), parseInt(deathValue[374]), parseInt(deathValue[373]), parseInt(deathValue[372]), parseInt(deathValue[371]),
               parseInt(deathValue[370]), parseInt(deathValue[369]), parseInt(deathValue[368]), parseInt(deathValue[367]), parseInt(deathValue[329])],/*[216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5,500.4,2000.1]*/,
         name: "Deaths",
         lineWidth: 5
