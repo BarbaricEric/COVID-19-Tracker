@@ -58,9 +58,9 @@ let watimeline = []
 let wvtimeline = []
 let witimeline = []
 let wytimeline = []
-let dateValue = []
-let deathValue = []
-let posValue = []
+let dateValue = [];
+let deathValue = [];
+let posValue = [];
 
 //Covid Tracking HighChart Date Value
   fetch('https://api.covidtracking.com/v1/us/daily.json')
@@ -81,7 +81,7 @@ let posValue = []
     return response.json();
   })
   .then(data => {
-    for (let i = 0; i < data.length; i++) {
+    for (let i = data.length - 1; i >= 0; i--) {
       deathValue.push(data[i].death);
     }
     console.log(deathValue);   
@@ -94,12 +94,13 @@ let posValue = []
     return response.json();
   })
   .then(data => {
-    for (let i = 0; i < data.length; i++) {
+    for (let i = data.length - 1; i >= 0; i--) {
       posValue.push(data[i].positive);
     }
     console.log(posValue);   
    });
 
+//John Hopkins D3 Charts
 const data1 = Object.assign(d3.csvParse(("./nytimes_covid_19_data/nytimes_us_total.csv"), d3.autoType), {y: "# of Cases"});
 
 const margin = ({top: 20, right: 30, bottom: 30, left: 40})
@@ -415,10 +416,10 @@ Highcharts.chart('us-covidtrack-average-chart', {
     series: [{
         name: "Cases",
         data: [parseInt(posValue[375]), parseInt(posValue[374]), parseInt(posValue[373]), parseInt(posValue[372]), parseInt(posValue[371]),
-              parseInt(posValue[370]), parseInt(posValue[369]), parseInt(posValue[368]), parseInt(posValue[367]), parseInt(posValue[329])]/*[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4,500.0,200.1]*/
+              parseInt(posValue[370]), parseInt(posValue[369]), parseInt(posValue[368]), parseInt(posValue[367]), parseInt(posValue[329]), parseInt(posValue[328])]/*[29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4,500.0,200.1]*/
     }, {
         data: [parseInt(deathValue[375]), parseInt(deathValue[374]), parseInt(deathValue[373]), parseInt(deathValue[372]), parseInt(deathValue[371]),
-              parseInt(deathValue[370]), parseInt(deathValue[369]), parseInt(deathValue[368]), parseInt(deathValue[367]), parseInt(deathValue[329])],/*[216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5,500.4,2000.1]*/
+              parseInt(deathValue[370]), parseInt(deathValue[369]), parseInt(deathValue[368]), parseInt(deathValue[367]), parseInt(deathValue[329]), parseInt(deathValue[328])],/*[216.4, 194.1, 95.6, 54.4, 29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5,500.4,2000.1]*/
         name: "Deaths",
         lineWidth: 5
     }]
