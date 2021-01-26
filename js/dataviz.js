@@ -423,96 +423,6 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
 //https://plotly.com/javascript/plotly-fundamentals/
 
 //Covid Tracking Project, High Chart
-Highcharts.chart('us-covidtrack-newdeaths-chart', {
-          chart: {
-            events: {
-                load: function () {
-                    if (!window.TestController) {
-                        this.setTitle(null, {
-                            text: 'Built chart in ' + (new Date() - start) + 'ms'
-                        });
-                    }
-                }
-            },
-            zoomType: 'x'
-        },
-        rangeSelector: {
-
-            buttons: [{
-                type: 'week',
-                count: 1,
-                text: '1 Week'
-            }, {
-                type: 'month',
-                count: 1,
-                text: '1 Month'
-            }, {
-                type: 'month',
-                count: 6,
-                text: '6 Month'
-            }, {
-                type: 'year',
-                count: 1,
-                text: '1 Year'
-            }, {
-                type: 'all',
-                text: 'All'
-            }],
-            buttonTheme: {
-                width: 60
-            },
-            selected: 1
-        },
-
-        yAxis: {
-            title: {
-                text: 'Values'
-            }
-        },
-
-        title: {
-            text: 'New COVID-19 Deaths, 2020-2021'
-        },
-
-        subtitle: {
-            text: 'Built chart in ...' // dummy text to reserve space for dynamic subtitle
-        },
-        xAxis: {
-        type: 'datetime',
-        title: {
-            text: 'Date'
-        },
-    },
-  
-    plotOptions: {
-        series: {
-            pointStart: Date.UTC(2020, 0, 13),
-            pointInterval: 24 * 3600 * 1000 // one day
-        }
-    },  
-        
-
-        series: [{
-            name: 'New Deaths',
-            data: covidtrackNewDeaths,
-            marker: {
-               enabled: null, // auto
-               radius: 3,
-               lineWidth: 1,
-               lineColor: '#FFFFFF'
-            }
-        }, {            
-            name: 'New Cases',
-            data: covidtrackNewCases,
-            marker: {
-               enabled: null, // auto
-               radius: 3,
-               lineWidth: 1,
-               lineColor: '#FFFFFF'
-            }
-        }]
-});
-
     // Create a timer
     var start = +new Date();
 
@@ -585,18 +495,12 @@ Highcharts.chart('us-covidtrack-newdeaths-chart', {
             pointInterval: 24 * 3600 * 1000 // one day
         }
     },  
-        
+      
+    credits: {
+        enabled: false
+    },        
 
-        series: [{
-            name: 'New Deaths',
-            data: covidtrackNewDeaths,
-            marker: {
-               enabled: null, // auto
-               radius: 3,
-               lineWidth: 1,
-               lineColor: '#FFFFFF'
-            }
-        }, {            
+        series: [{            
             name: 'New Cases',
             data: covidtrackNewCases,
             marker: {
@@ -608,9 +512,98 @@ Highcharts.chart('us-covidtrack-newdeaths-chart', {
         }]
 });
 
-Highcharts.chart('us-covidtrack-total-chart', {
+    // Create a timer
+    const start2 = +new Date();
+
+    // Create the chart
+    Highcharts.stockChart('us-covidtrack-newdeaths-chart', {
+        chart: {
+            events: {
+                load: function () {
+                    if (!window.TestController) {
+                        this.setTitle(null, {
+                            text: 'Built chart in ' + (new Date() - start2) + 'ms'
+                        });
+                    }
+                }
+            },
+            zoomType: 'x'
+        },
+
+        rangeSelector: {
+
+            buttons: [{
+                type: 'week',
+                count: 1,
+                text: '1 Week'
+            }, {
+                type: 'month',
+                count: 1,
+                text: '1 Month'
+            }, {
+                type: 'month',
+                count: 6,
+                text: '6 Month'
+            }, {
+                type: 'year',
+                count: 1,
+                text: '1 Year'
+            }, {
+                type: 'all',
+                text: 'All'
+            }],
+            buttonTheme: {
+                width: 60
+            },
+            selected: 1
+        },
+
+        yAxis: {
+            title: {
+                text: 'Values'
+            }
+        },
+
+        title: {
+            text: 'New COVID-19 Deaths, 2020-2021'
+        },
+
+        subtitle: {
+            text: 'Built chart in ...' // dummy text to reserve space for dynamic subtitle
+        },
+        xAxis: {
+        type: 'datetime',
+        title: {
+            text: 'Date'
+        },
+    },
+  
+    plotOptions: {
+        series: {
+            pointStart: Date.UTC(2020, 0, 13),
+            pointInterval: 24 * 3600 * 1000 // one day
+        }
+    },  
+      
+    credits: {
+        enabled: false
+    },        
+
+        series: [{
+            name: 'New Deaths',
+            data: covidtrackNewDeaths,
+            marker: {
+               enabled: null, // auto
+               radius: 3,
+               lineWidth: 1,
+               lineColor: '#FFFFFF'
+            }
+        }]
+});
+
+Highcharts.chart('us-covidtrack-totalcases-chart', {
     title: {
-        text: 'Total COVID-19 Cases and Death 2020-2021'
+        text: 'Total COVID-19 Cases, 2020-2021'
     },
 
     subtitle: {
@@ -644,9 +637,46 @@ Highcharts.chart('us-covidtrack-total-chart', {
     series: [{
         name: "Cases",
         data: posValue
-    }, {
+    }]
+});
+
+Highcharts.chart('us-covidtrack-totaldeaths-chart', {
+    title: {
+        text: 'Total COVID-19 Deaths, 2020-2021'
+    },
+
+    subtitle: {
+        text: 'Source: covidtrackingproject.com'
+    },
+    yAxis: {
+        title: {
+            text: 'Values'
+        }
+       },
+    xAxis: {
+        type: 'datetime',
+        title: {
+            text: 'Date'
+        },
+        
+        //categories: [dateValue] categories: ['Jan 2019', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan 2020', '1/15/2021']
+    },
+  
+    plotOptions: {
+        series: {
+            pointStart: Date.UTC(2020, 0, 13),
+            pointInterval: 24 * 3600 * 1000 // one day
+        }
+    },  
+    
+    credits: {
+        enabled: false
+    },
+
+    series: [{
         data: deathValue,
         name: "Deaths",
         lineWidth: 5
     }]
 });
+
