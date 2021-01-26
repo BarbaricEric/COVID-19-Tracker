@@ -318,6 +318,10 @@ tr:nth-child(odd) {
     background-color: var(--light);
 }
 
+tr:hover, tr:active {
+  background-color: #FFD700;
+}
+
 th[scope="col"] {
     background-color: #696969;
     color: #fff;
