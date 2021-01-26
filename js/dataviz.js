@@ -509,7 +509,8 @@ Highcharts.chart('us-covidtrack-newdeaths-chart', {
                radius: 3,
                lineWidth: 1,
                lineColor: '#FFFFFF'
-            }]
+            }
+        }]
 });
 
     // Create a timer
@@ -603,7 +604,8 @@ Highcharts.chart('us-covidtrack-newdeaths-chart', {
                radius: 3,
                lineWidth: 1,
                lineColor: '#FFFFFF'
-            }]
+            }
+        }]
 });
 
 Highcharts.chart('us-covidtrack-total-chart', {
