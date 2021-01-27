@@ -555,7 +555,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
             }
         }]
 });
-
+/*
 Highcharts.chart('us-covidtrack-totalcases-chart', {
     title: {
         text: 'Total COVID-19 Cases, 2020-2021'
@@ -594,7 +594,7 @@ Highcharts.chart('us-covidtrack-totalcases-chart', {
         data: posValue
     }]
 });
-/*
+
 Highcharts.chart('us-covidtrack-totaldeaths-chart', {
     title: {
         text: 'Total COVID-19 Deaths, 2020-2021'
