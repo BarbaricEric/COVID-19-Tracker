@@ -768,7 +768,5 @@ Highcharts.chart('us-covidtrack-state-chart', {
                     visible: false
                 }]
             }
-        }]
-    }
 });
 
