@@ -656,13 +656,13 @@ Highcharts.chart('us-covidtrack-state-chart', {
     subtitle: {
         text: 'Source: covidtrackingproject.com'
     },
-    xAxis: [{
+    xAxis: {
         type: 'datetime',
         title: {
             text: 'Date'
         },
         crosshair: true
-    }],
+    },
   
     plotOptions: {
         series: {
