@@ -677,26 +677,26 @@ Highcharts.chart('us-covidtrack-state-chart', {
     
     yAxis: [{ // Primary yAxis
         labels: {
-            format: '{value} Deaths',
+            format: '{value} Cases',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
         },
         title: {
-            text: 'Deaths',
+            text: 'Cases',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
         }
     }, { // Secondary yAxis
         title: {
-            text: 'Cases',
+            text: 'Deaths',
             style: {
                 color: Highcharts.getOptions().colors[0]
             }
         },
         labels: {
-            format: '{value} Cases',
+            format: '{value} Deaths',
             style: {
                 color: Highcharts.getOptions().colors[0]
             }
@@ -731,7 +731,7 @@ Highcharts.chart('us-covidtrack-state-chart', {
         type: 'spline',
         data: posValue,
         tooltip: {
-            valueSuffix: 'Cases'
+            valueSuffix: ' Cases'
         }
     }]
 });
