@@ -651,57 +651,54 @@ Highcharts.chart('us-covidtrack-state-chart', {
         height: 600
     },
     title: {
-        text: 'Total COVID-19 Cases and Deaths, 2020 - 2021'
+        text: 'Total COVID-19 Cases and Deaths, 2020-2021'
     },
     subtitle: {
         text: 'Source: covidtrackingproject.com'
     },
-    xAxis: {
+    xAxis: [{
         type: 'datetime',
         title: {
             text: 'Date'
         },
         crosshair: true
-    },
+    }],
   
     plotOptions: {
         series: {
             pointStart: Date.UTC(2020, 0, 13),
             pointInterval: 24 * 3600 * 1000 // one day
         }
-    },  
+    },
     
     credits: {
         enabled: false
     },
-  
+    
     yAxis: [{ // Primary yAxis
-        labels: {
-            format: '{value} Cases',
-            style: {
-                color: Highcharts.getOptions().colors[2]
-            }
-        },
-        title: {
-            text: 'Total COVID-19 Cases',
-            style: {
-                color: Highcharts.getOptions().colors[2]
-            }
-        },
-        opposite: true
-
-    },{ // Secondary yAxis
-        gridLineWidth: 0,
-        title: {
-            text: 'Total COVID-19 Deaths',
-            style: {
-                color: Highcharts.getOptions().colors[1]
-            }
-        },
         labels: {
             format: '{value} Deaths',
             style: {
                 color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+            text: 'Deaths',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: 'Cases',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: '{value} Cases',
+            style: {
+                color: Highcharts.getOptions().colors[0]
             }
         },
         opposite: true
@@ -712,61 +709,29 @@ Highcharts.chart('us-covidtrack-state-chart', {
     legend: {
         layout: 'vertical',
         align: 'left',
-        x: 80,
+        x: 120,
         verticalAlign: 'top',
-        y: 55,
+        y: 100,
         floating: true,
         backgroundColor:
             Highcharts.defaultOptions.legend.backgroundColor || // theme
             'rgba(255,255,255,0.25)'
     },
     series: [{
-        name: 'Total COVID-19 Deaths',
+        name: 'Deaths',
         type: 'spline',
-        yAxis: 2,
+        yAxis: 1,
         data: deathValue,
-        marker: {
-            enabled: false
-        },
-        dashStyle: 'shortdot',
         tooltip: {
             valueSuffix: ' Deaths'
         }
 
     }, {
-        name: 'Total COVID-19 Cases',
+        name: 'Cases',
         type: 'spline',
         data: posValue,
         tooltip: {
-            valueSuffix: ' Cases'
+            valueSuffix: 'Cases'
         }
-    }],
-            chartOptions: {
-                legend: {
-                    floating: false,
-                    layout: 'horizontal',
-                    align: 'center',
-                    verticalAlign: 'bottom',
-                    x: 0,
-                    y: 0
-                },
-                yAxis: [{
-                    labels: {
-                        align: 'right',
-                        x: 0,
-                        y: -6
-                    },
-                    showLastLabel: false
-                }, {
-                    labels: {
-                        align: 'left',
-                        x: 0,
-                        y: -6
-                    },
-                    showLastLabel: false
-                }, {
-                    visible: false
-                }]
-            }
+    }]
 });
-
