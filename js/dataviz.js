@@ -309,7 +309,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
     xaxis: 'x1',
     yaxis: 'y1',
     mode: 'lines',
-    line: {width: 2, color: '#9748a1'},
+    line: {width: 2, color: '#fb0000'},
     name: 'Cases'
   }
   // create 2nd plot
@@ -330,7 +330,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
     xaxis: 'x3',
     yaxis: 'y3',
     mode: 'lines',
-    line: {width: 2, color: '#af7bbd'},
+    line: {width: 2, color: '#000000'},
     name: 'Deaths'
   }
 
@@ -350,9 +350,9 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   var axis1 = {domain: [0.60, 1], anchor: 'y1'}
   var axis2 = {domain: [0.35, 1], anchor: 'y2', showticklabels: false}
   var axis3 = {domain: [0.60, 1], anchor: 'y3'}
-  var axis4 = {domain: [0.52, 1], anchor: 'x1', hoverformat: '.2f'}
+  var axis4 = {domain: [0.52, 1], anchor: 'x1'/*, hoverformat: '.2f'*/}
   var axis5 = {domain: [0.34, 0.64], anchor: 'x2', hoverformat: '.2f'}
-  var axis6 = {domain: [0.0, 0.42], anchor: 'x3', hoverformat: '.2f'}
+  var axis6 = {domain: [0.0, 0.42], anchor: 'x3'/*, hoverformat: '.2f'*/}
 
   // define layout
   var layout = {
@@ -645,11 +645,11 @@ Highcharts.chart('us-covidtrack-totaldeaths-chart', {
                 event;
 
             for (i = 0; i < Highcharts.charts.length; i = i + 1) {
-                chart = Highcharts.charts[i];
+                const chart = Highcharts.charts[i];
                 // Find coordinates within the chart
-                event = chart.pointer.normalize(e);
+                const event = chart.pointer.normalize(e);
                 // Get the hovered point
-                point = chart.series[0].searchPoint(event, true);
+                const point = chart.series[0].searchPoint(event, true);
 
                 if (point) {
                     point.highlight(e);
@@ -671,7 +671,7 @@ Highcharts.Pointer.prototype.reset = function () {
  * Highlight a point by showing tooltip, setting hover state and draw crosshair
  */
 Highcharts.Point.prototype.highlight = function (event) {
-    event = this.series.chart.pointer.normalize(event);
+    const event1 = this.series.chart.pointer.normalize(event);
     this.onMouseOver(); // Show the hover marker
     this.series.chart.tooltip.refresh(this); // Show the tooltip
     this.series.chart.xAxis[0].drawCrosshair(event, this); // Show the crosshair
