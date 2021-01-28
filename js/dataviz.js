@@ -360,7 +360,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   // define layout
   var layout = {
     autosize: false,
-    width: 500,
+    width: 600,
     height: 600,
     title: "Total US COVID-19 Cases and Deaths",
     plot_bgcolor: 'rgba(255, 255, 255, 1)',
@@ -376,6 +376,84 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   Plotly.newPlot('us-nytimes-chart', data, layout, {displayModeBar: false});
 
 });
+
+//New York Times State Chart, Plotly
+/*Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv', function(err, rows){
+
+    function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+    }
+
+var allCountryNames = unpack(rows, 'country'),
+    allYear = unpack(rows, 'year'),
+    allGdp = unpack(rows, 'gdpPercap'),
+    listofCountries = [],
+    currentCountry,
+    currentGdp = [],
+    currentYear = [];
+
+  for (var i = 0; i < allCountryNames.length; i++ ){
+    if (listofCountries.indexOf(allCountryNames[i]) === -1 ){
+      listofCountries.push(allCountryNames[i]);
+    }
+  }
+  
+  function getCountryData(chosenCountry) {
+    currentGdp = [];
+    currentYear = [];
+    for (var i = 0 ; i < allCountryNames.length ; i++){
+      if ( allCountryNames[i] === chosenCountry ) {
+        currentGdp.push(allGdp[i]);
+        currentYear.push(allYear[i]);
+      } 
+    }
+  };
+
+// Default Country Data
+setBubblePlot('Afghanistan');
+  
+function setBubblePlot(chosenCountry) {
+    getCountryData(chosenCountry);  
+
+    var trace1 = {
+      x: currentYear,
+      y: currentGdp,
+      mode: 'lines+markers',
+      marker: {
+        size: 12, 
+        opacity: 0.5
+      }
+    };
+
+    var data = [trace1];
+
+    var layout = {
+      title: 'COVID-19 Cases and Deaths according to States in United States<br>'+ chosenCountry + ' Cases and Deaths'
+    };
+
+    Plotly.newPlot('us-nytimes-state-chart', data, layout, {showSendToCloud: true});
+};
+  
+var innerContainer = document.querySelector('[data-num="0"'),
+    plotEl = innerContainer.querySelector('.plot'),
+    countrySelector = innerContainer.querySelector('.countrydata');
+
+function assignOptions(textArray, selector) {
+  for (var i = 0; i < textArray.length;  i++) {
+      var currentOption = document.createElement('option');
+      currentOption.text = textArray[i];
+      selector.appendChild(currentOption);
+  }
+}
+
+  assignOptions(listofCountries, countrySelector);
+
+  function updateCountry(){
+    setBubblePlot(countrySelector.value);
+  }
+  
+  countrySelector.addEventListener('change', updateCountry, false);
+});*/
 
 //https://plotly.com/javascript/time-series/
 //https://plotly.com/javascript/plotly-fundamentals/
