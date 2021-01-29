@@ -507,8 +507,6 @@ getCountryCountFromCovidApi();
    prCaseConfirm
    prCaseDeath
    */
-   });
-
 
 //Global Functions    
    function getArrayFields(input, field) {
