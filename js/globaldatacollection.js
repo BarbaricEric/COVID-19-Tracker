@@ -65,22 +65,22 @@ const globalapi2 = 'https://api.covid19api.com/summary';
 async function getCountryCountFromCovidApi() {
  await fetch('https://covid19-api.org/api/status/us').then(response => response.json())
   .then(data => {
-   const usCaseConfirm = document.querySelctor(".usCaseConfirm");
-   const usCaseDeath = document.querySelctor(".usCaseDeath");
-   const usDate = document.querySelctor(".usDate");
+   const usCaseConfirm = document.querySelector('.usCaseConfirm');
+   const usCaseDeath = document.querySelector('.usCaseDeath');
+   const usDate = document.querySelector('.usDate');
    usCaseConfirm.textContent = data.cases;
    usCaseDeath.textContent = data.deaths;
-   usDate = new Date(data.last_update).toString().substring(0,10); 
+   usDate.textContent = new Date(data.last_update).toString().substring(0,10); 
   });
  
   await fetch('https://covid19-api.org/api/status/us').then(response => response.json())
   .then(data => {
-   const inCaseConfirm = document.querySelctor(".inCaseConfirm");
-   const inCaseDeath = document.querySelctor(".inCaseDeath");
+   const inCaseConfirm = document.querySelector('.inCaseConfirm');
+   const inCaseDeath = document.querySelector('.inCaseDeath');
    const inDate = document.querySelctor(".inDate");
    inCaseConfirm.textContent = data.cases;
    inCaseDeath.textContent = data.deaths;
-   inDate = new Date(data.last_update).toString().substring(0,10);
+   inDate.textContent = new Date(data.last_update).toString().substring(0,10);
   });
 }
 
