@@ -21,9 +21,19 @@ const localapi2 = 'https://corona-api.com/countries/US';
   })
   .then(data => {
    console.log(data);
-   usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4); 
+   options = {
+      year: 'numeric', month: 'numeric', day: 'numeric',
+      hour: 'numeric', minute: 'numeric', second: 'numeric', 
+      dayPeriod: 'short',
+      timeZone: 'America/Los_Angeles'
+   };
+   const date = new Date();
+   const datea = new Intl.DateTimeFormat('default', options).format(date)   
+   usCaseDeath.textContent = data.deaths + ' as of ' + datea;   
+   usCaseConfirm.textContent = data.cases + ' as of ' + datea;   
+   /*usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4); 
    usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4);
-   /*data.last_update.toString().substring(0, 10).replace(/-{1,}/g, '/') => year/month/day*/;   
+   data.last_update.toString().substring(0, 10).replace(/-{1,}/g, '/') => year/month/day*/;   
   });     
 
 //US Count from about-corona
@@ -51,7 +61,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-01-27&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2021-01-28&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -425,13 +435,13 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
-   usCaseConfirm.textContent = data[372].cases;
-   usCaseDeath.textContent = data[372].deaths; 
-   usCaseRecent.textContent = data[372].date;
+   usCaseConfirm.textContent = data[373].cases;
+   usCaseDeath.textContent = data[373].deaths; 
+   usCaseRecent.textContent = data[373].date;
   });
 
 //NY Count from New York Times
-  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/01-27-2021.csv").then(function(data) {
+  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/01-28-2021.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
