@@ -88,7 +88,7 @@ const covidtrackNewDeaths = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
                             397,922,1047,1060,947,958,410,475,1517,1131,1154,1185,1125,513,577,1358,1577,1112,1301,1353,712,607,1553,1885,2010,1910,1551,923,853,2091,
                             2281,1392,1404,1243,825,1037,2489,2811,2822,2563,2486,1163,1291,2680,3169,3132,2747,2497,1501,1357,2924,3453,3465,2866,2708,1668,1480,3137,
                             3393,2958,1553,1426,1397,1490,3289,3900,3297,2406,1455,1547,3484,3902,4079,3780,3537,2068,1733,4064,4087,3915,3679,3709,2053,1395,2141,4409,
-                            3878,3980,3591,1944,1593,3734,4077,4,011]
+                            3878,3980,3591,1944,1593,3734,4077,4011]
 
 /*Covid Tracking HighChart Date Value
   fetch('https://api.covidtracking.com/v1/us/daily.json')
@@ -287,7 +287,7 @@ var data = [trace1,trace2];
 var layout = {
   title: 'Time Series with Rangeslider',
   autosize: false,
-  width: 600,
+  width: 500,
   height: 600,
   xaxis: {
     autorange: true,
@@ -431,7 +431,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
   // define layout
   var layout = {
     autosize: false,
-    width: 600,
+    width: 500,
     height: 600,
     title: "Total US COVID-19 Cases and Deaths",
     plot_bgcolor: 'rgba(255, 255, 255, 1)',
