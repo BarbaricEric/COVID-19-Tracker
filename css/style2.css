@@ -32,6 +32,13 @@ body {
  font-family: Itim; 
 }
 
+.FilterRow {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 10px;
+}
+
 .btn {
  background: var(--dark);
  color: var(--light);
