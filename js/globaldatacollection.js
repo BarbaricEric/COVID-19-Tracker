@@ -33,8 +33,24 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   })
   .then(data => {
    console.log(data);
+   options = {
+      year: 'numeric', month: 'numeric', day: 'numeric',
+      hour: 'numeric', minute: 'numeric', second: 'numeric', 
+      dayPeriod: 'short',
+      timeZone: 'America/Los_Angeles'
+   };
+   const date = new Date();
+   const datea = new Intl.DateTimeFormat('default', options).format(date);    
+   usCaseConfirmJh.textContent = data[0].total_cases + ' as of ' + datea;
+   usCaseDeathJh.textContent = data[0].total_deaths + ' as of ' + datea;   
+   /*
+   const birthday = new Date();
+   const date1 = birthday.getDate();
+   const date2 = birthday.getFullYear();
+   const date3 = birthday.getMonth() + 1;
+   const date4 = date3 + "/" + date1 + "/" + date2;
    usCaseConfirmJh.textContent = data[0].total_cases + ' as of ' + data[0].last_update.toString().substring(6,7) + '/' + data[0].last_update.toString().substring(8,10) + '/' + data[0].last_update.toString().substring(0,4); 
-   usCaseDeathJh.textContent = data[0].total_deaths + ' as of ' + data[0].last_update.toString().substring(6,7) + '/' + data[0].last_update.toString().substring(8,10) + '/' + data[0].last_update.toString().substring(0,4);   
+   usCaseDeathJh.textContent = data[0].total_deaths + ' as of ' + data[0].last_update.toString().substring(6,7) + '/' + data[0].last_update.toString().substring(8,10) + '/' + data[0].last_update.toString().substring(0,4);*/   
    });
 
 //Country Counts from covid19-api.org      
@@ -44,8 +60,32 @@ const globalapi2 = 'https://api.covid19api.com/summary';
   })
   .then(data => {
    console.log(data);
-   /* const usCaseConfirm
-   const usCaseDeath
+   });
+
+async function getCountryCountFromCovidApi() {
+ await fetch('https://covid19-api.org/api/status/us').then(response => response.json())
+  .then(data => {
+   const usCaseConfirm = document.querySelctor(".usCaseConfirm");
+   const usCaseDeath = document.querySelctor(".usCaseDeath");
+   const usDate = document.querySelctor(".usDate");
+   usCaseConfirm.textContent = data.cases;
+   usCaseDeath.textContent = data.deaths;
+   usDate = new Date(data.last_update).toString().substring(4,15); 
+  });
+ 
+  await fetch('https://covid19-api.org/api/status/us').then(response => response.json())
+  .then(data => {
+   const inCaseConfirm = document.querySelctor(".inCaseConfirm");
+   const inCaseDeath = document.querySelctor(".inCaseDeath");
+   const inDate = document.querySelctor(".inDate");
+   inCaseConfirm.textContent = data.cases;
+   inCaseDeath.textContent = data.deaths;
+   inDate = new Date(data.last_update).toString().substring(4,15);
+  });
+}
+
+getCountryCountFromCovidApi();
+   /* 
    const inCaseConfirm
    const inCaseDeath
    const brCaseConfirm
@@ -94,86 +134,378 @@ const globalapi2 = 'https://api.covid19api.com/summary';
    const clCaseDeath
    const caCaseConfirm
    const caCaseDeath
-   const iqCaseConfirm
-   const iqCaseDeath
-   const bdCaseConfirm
-   const bdCaseDeath
-   const pkCaseConfirm
-   const pkCaseDeath
-   const phCaseConfirm
-   const phCaseDeath
-   const seCaseConfirm
-   const seCaseDeath
-   const chCaseConfirm
-   const chCaseDeath
-   const ilCaseConfirm
-   const ilCaseDeath
-   const maCaseConfirm
-   const maCaseDeath
-   const ptCaseConfirm
-   const ptCaseDeath
-   const atCaseConfirm
-   const atCaseDeath
-   const saCaseConfirm
-   const saCaseDeath
-   const rsCaseConfirm
-   const rsCaseDeath
-   const huCaseConfirm
-   const huCaseDeath
-   const joCaseConfirm
-   const joCaseDeath
-   const npCaseConfirm
-   const npCaseDeath
-   const paCaseConfirm
-   const paCaseDeath
-   const jpCaseConfirm
-   const jpCaseDeath
-   const geCaseConfirm
-   const geCaseDeath
-   const azCaseConfirm
-   const azCaseDeath
-   const ecCaseConfirm
-   const ecCaseDeath
-   const aeCaseConfirm
-   const aeCaseDeath
-   const hrCaseConfirm
-   const hrCaseDeath
-   const kzCaseConfirm
-   const kzCaseDeath
-   const bgCaseConfirm
-   const bgCaseDeath
-   const byCaseConfirm
-   const byCaseDeath
-   const lbCaseConfirm
-   const lbCaseDeath
-   const skCaseConfirm
-   const skCaseDeath
-   const doCaseConfirm
-   const doCaseDeath
-   const dkCaseConfirm
-   const dkCaseDeath
-   const crCaseConfirm
-   const crCaseDeath
-   const boCaseConfirm
-   const boCaseDeath
-   const amCaseConfirm
-   const amCaseDeath
-   const kwCaseConfirm
-   const kwCaseDeath
-   const ltCaseConfirm
-   const ltCaseDeath
-   const mdCaseConfirm
-   const mdCaseDeath
-   const qaCaseConfirm
-   const qaCaseDeath
-   const tnCaseConfirm
-   const tnCaseDeath
-   62
-   
-   const afCaseConfirm
-   const afCaseDeath
-   const alCaseConfirm
-   const alfCaseDeath
+   beCaseConfirm
+   beCaseDeath
+   ptCaseConfirm
+   ptCaseDeath
+   ilCaseConfirm
+   ilCaseDeath
+   iqCaseConfirm
+   iqCaseDeath
+   seCaseConfirm
+   seCaseDeath
+   pkCaseConfirm
+   pkCaseDeath
+   bdCaseConfirm
+   bdCaseDeath
+   phCaseConfirm
+   phCaseDeath
+   chCaseConfirm
+   chCaseDeath
+   maCaseConfirm
+   maCaseDeath
+   atCaseConfirm
+   atCaseDeath
+   rsCaseConfirm
+   rsCaseDeath
+   jpCaseConfirm
+   jpCaseDeath
+   saCaseConfirm
+   saCaseDeath
+   huCaseConfirm
+   huCaseDeath
+   joCaseConfirm
+   joCaseDeath
+   paCaseConfirm
+   paCaseDeath
+   aeCaseConfirm
+   aeCaseDeath
+   lbCaseConfirm
+   lbCaseDeath
+   npCaseConfirm
+   npCaseDeath
+   geCaseConfirm
+   geCaseDeath
+   skCaseConfirm
+   skCaseDeath
+   ecCaseConfirm
+   ecCaseDeath
+   byCaseConfirm
+   byCaseDeath
+   kzCaseConfirm
+   kzCaseDeath
+   hrCaseConfirm
+   hrCaseDeath
+   azCaseConfirm
+   azCaseDeath
+   bgCaseConfirm
+   bgCaseDeath
+   boCaseConfirm
+   boCaseDeath
+   doCaseConfirm
+   doCaseDeath
+   tnCaseConfirm
+   tnCaseDeath
+   myCaseConfirm
+   myCaseDeath
+   dkCaseConfirm
+   dkCaseDeath
+   ieCaseConfirm
+   ieCaseDeath
+   crCaseConfirm
+   crCaseDeath
+   ltCaseConfirm
+   ltCaseDeath
+   amCaseConfirm
+   amCaseDeath
+   siCaseConfirm
+   siCaseDeath
+   egCaseConfirm
+   egCaseDeath
+   kwCaseConfirm
+   kwCaseDeath
+   mdCaseConfirm
+   mdCaseDeath
+   gtCaseConfirm
+   gtCaseDeath
+   psCaseConfirm
+   psCaseDeath
+   grCaseConfirm
+   grCaseDeath
+   qaCaseConfirm
+   qaCaseDeath
+   hnCaseConfirm
+   hnCaseDeath
+   mmCaseConfirm
+   mmCaseDeath
+   etCaseConfirm
+   etCaseDeath
+   omCaseConfirm
+   omCaseDeath
+   pyCaseConfirm
+   pyCaseDeath
+   ngCaseConfirm
+   ngCaseDeath
+   veCaseConfirm
+   veCaseDeath
+   baCaseConfirm
+   baCaseDeath
+   lyCaseConfirm
+   lyCaseDeath
+   dzCaseConfirm
+   dzCaseDeath
+   bhCaseConfirm
+   bhCaseDeath
+   keCaseConfirm
+   keCaseDeath
+   cnCaseConfirm
+   cnCaseDeath
+   mkCaseConfirm
+   mkCaseDeath
+   kgCaseConfirm
+   kgCaseDeath
+   uzCaseConfirm
+   uzCaseDeath
+   krCaseConfirm
+   krCaseDeath
+   alCaseConfirm
+   alCaseDeath
+   lvCaseConfirm
+   lvCaseDeath
+   ghCaseConfirm
+   ghCaseDeath
+   noCaseConfirm
+   noCaseDeath
+   lkCaseConfirm
+   lkCaseDeath
+   meCaseConfirm
+   meCaseDeath
+   sgCaseConfirm
+   sgCaseDeath
+   xkCaseConfirm
+   xkCaseDeath
+   afCaseConfirm
+   afCaseDeath
+   svCaseConfirm
+   svCaseDeath
+   zmCaseConfirm
+   zmCaseDeath
+   luCaseConfirm
+   luCaseDeath
+   fiCaseConfirm
+   fiCaseDeath
+   eeCaseConfirm
+   eeCaseDeath
+   uyCaseConfirm
+   uyCaseDeath
+   ugCaseConfirm
+   ugCaseDeath
+   mzCaseConfirm
+   mzCaseDeath
+   naCaseConfirm
+   naCaseDeath
+   zwCaseConfirm
+   zeCaseDeath
+   cyCaseConfirm
+   cyCaseDeath
+   cmCaseConfirm
+   cmCaseDeath
+   sdCaseConfirm
+   sdCaseDeath
+   auCaseConfirm
+   auCaseDeath
+   ciCaseConfirm
+   ciCaseDeath
+   snCaseConfirm
+   snCaseDeath
+   cuCaseConfirm
+   cuCaseDeath
+   cdCaseConfirm
+   cdCaseDeath
+   mwCaseConfirm
+   mwCaseDeath
+   bwCaseConfirm
+   bwCaseDeath
+   aoCaseConfirm
+   aoCaseDeath
+   mgCaseConfirm
+   mgCaseDeath
+   mtCaseConfirm
+   mtCaseDeath
+   thCaseConfirm
+   thCaseDeath
+   mrCaseConfirm
+   mrCaseDeath
+   mvCaseConfirm
+   mvCaseDeath
+   jmCaseConfirm
+   jmCaseDeath
+   szCaseConfirm
+   szCaseDeath
+   rwCaseConfirm
+   rwCaseDeath
+   gnCaseConfirm
+   gnCaseDeath
+   syCaseConfirm
+   syCaseDeath
+   cvCaseConfirm
+   cvCaseDeath
+   tjCaseConfirm
+   tjCaseDeath
+   bzCaseConfirm
+   bzCaseDeath
+   htCaseConfirm
+   htCaseDeath
+   kpCaseConfirm
+   kpCaseDeath
+   gaCaseConfirm
+   gaCaseDeath
+   bfCaseConfirm
+   bfCaseDeath
+   adCaseConfirm
+   adCaseDeath
+   srCaseConfirm
+   srCaseDeath
+   lsCaseConfirm
+   lsCaseDeath
+   bsCaseConfirm
+   bsCaseDeath
+   mlCaseConfirm
+   mlCaseDeath
+   cgCaseConfirm
+   cgCaseDeath
+   ttCaseConfirm
+   ttCaseDeath
+   gyCaseConfirm
+   gyCaseDeath
+   niCaseConfirm
+   niCaseDeath
+   isCaseConfirm
+   isCaseDeath
+   djCaseConfirm
+   djCaseDeath
+   gqCaseConfirm
+   gqCaseDeath
+   cfCaseConfirm
+   cfCaseDeath
+   tgCaseConfirm
+   tgCaseDeath
+   soCaseConfirm
+   soCaseDeath
+   neCaseConfirm
+   neCaseDeath
+   gmCaseConfirm
+   gmCaseDeath
+   ssCaseConfirm
+   ssCaseDeath
+   bjCaseConfirm
+   bjCaseDeath
+   tdCaseConfirm
+   tdCaseDeath
+   slCaseConfirm
+   slCaseDeath
+   smCaseConfirm
+   smCaseDeath
+   kmCaseConfirm
+   kmCaseDeath
+   gwCaseConfirm
+   gwCaseDeath
+   liCaseConfirm
+   liCaseDeath
+   nzCaseConfirm
+   nzCaseDeath
+   yeCaseConfirm
+   yeCaseDeath
+   erCaseConfirm
+   erCaseDeath
+   lrCaseConfirm
+   lrCaseDeath
+   mnCaseConfirm
+   mnCaseDeath
+   vnCaseConfirm
+   vnCaseDeath
+   biCaseConfirm
+   biCaseDeath
+   bbCaseConfirm
+   bbCaseDeath
+   mcCaseConfirm
+   mcCaseDeath
+   stCaseConfirm
+   stCaseDeath
+   scCaseConfirm
+   scCaseDeath
+   lcCaseConfirm
+   lcCaseDeath
+   twCaseConfirm
+   twCaseDeath
+   btCaseConfirm
+   btCaseDeath
+   pgCaseConfirm
+   pgCaseDeath
+   vcCaseConfirm
+   vcCaseDeath
+   muCaseConfirm
+   muCaseDeath
+   tzCaseConfirm
+   tzCaseDeath
+   khCaseConfirm
+   khCaseDeath
+   agCaseConfirm
+   agCaseDeath
+   bnCaseConfirm
+   bnCaseDeath
+   gdCaseConfirm
+   gdCaseDeath
+   hkCaseConfirm
+   hkCaseDeath
+   dmCaseConfirm
+   dmCaseDeath
+   tlCaseConfirm
+   tlCaseDeath
+   fjCaseConfirm
+   fjCaseDeath
+   gpCaseConfirm
+   gpCaseDeath
+   reCaseConfirm
+   reCaseDeath
+   laCaseConfirm
+   laCaseDeath
+   knCaseConfirm
+   knCaseDeath
+   mqCaseConfirm
+   mqCaseDeath
+   vaCaseConfirm
+   vaCaseDeath
+   gfCaseConfirm
+   gfCaseDeath
+   sbCaseConfirm
+   sbCaseDeath
+   ehCaseConfirm
+   ehCaseDeath
+   moCaseConfirm
+   moCaseDeath
+   ytCaseConfirm
+   ytCaseDeath
+   awCaseConfirm
+   awCaseDeath
+   mhCaseConfirm
+   nhCaseDeath
+   foCaseConfirm
+   foCaseDeath
+   mfCaseConfirm
+   mfCaseDeath
+   wsCaseConfirm
+   wsCaseDeath
+   blCaseConfirm
+   blCaseDeath
+   cwCaseConfirm
+   cwCaseDeath
+   giCaseConfirm
+   giCaseDeath
+   kyCaseConfirm
+   kyCaseDeath
+   vuCaseConfirm
+   vuCaseDeath
+   ggCaseConfirm
+   ggCaseDeath
+   glCaseConfirm
+   glCaseDeath
+   guCaseConfirm
+   guCaseDeath
+   jeCaseConfirm
+   jeCaseDeath
+   prCaseConfirm
+   prCaseDeath
    */
    });
 
