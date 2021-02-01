@@ -73,11 +73,11 @@ async function getCountryCountFromCovidApi() {
    usDate.textContent = new Date(data.last_update).toString().substring(0,10); 
   });
  
-  await fetch('https://covid19-api.org/api/status/us').then(response => response.json())
+  await fetch('https://covid19-api.org/api/status/in').then(response => response.json())
   .then(data => {
    const inCaseConfirm = document.querySelector('.inCaseConfirm');
    const inCaseDeath = document.querySelector('.inCaseDeath');
-   const inDate = document.querySelctor(".inDate");
+   const inDate = document.querySelector(".inDate");
    inCaseConfirm.textContent = data.cases;
    inCaseDeath.textContent = data.deaths;
    inDate.textContent = new Date(data.last_update).toString().substring(0,10);
