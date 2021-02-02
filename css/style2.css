@@ -32,11 +32,16 @@ body {
  font-family: Itim; 
 }
 
+h3 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
 .FilterRow {
  display: flex;
  align-items: center;
  justify-content: center;
- padding: 10px;
+ padding: 15px;
 }
 
 .btn {
@@ -173,7 +178,8 @@ img {
 }
 
 .top-box .price {
- font-size: 2.5rem;
+ font-size: 1.8rem;
+ text-align: center;
 }
 
 .top-box h3+p {
@@ -520,6 +526,10 @@ table {
  .boxes {
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
  }
+ 
+ .top-box .price {
+ font-size: 1rem;
+}
  
   .info {
   grid-template-columns: 1fr;
