@@ -323,7 +323,7 @@ var data = [trace1,trace2];
 var layout = {
   title: 'Time Series with Rangeslider',
   autosize: false,
-  width: 600,
+  width: 400,
   height: 600,
   xaxis: {
     autorange: true,
