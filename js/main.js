@@ -5,7 +5,7 @@ const covidtrackinfo = document.querySelector('.covidtrackupdate');
 setTimeout(() => {browserSupport.style.display = 'none';}, 8.0*1000);
 
 //Covid Tracking Project Info
-p.onmouseover = logMouseOver;
+covidtrackinfo.onmouseover = logMouseOver;
 
 function logMouseOver() {
   covidtrackinfo.style.color = '#1500ff';
