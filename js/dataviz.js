@@ -310,7 +310,7 @@ var data = [trace1,trace2];
 var layout = {
   title: 'Time Series with Rangeslider',
   autosize: false,
-  width: 400,
+  width: 500,
   height: 600,
   xaxis: {
     autorange: true,
@@ -472,7 +472,7 @@ Plotly.d3.csv("./nytimes_covid_19_data/nytimes_us_total.csv", function(err, rows
 });
 
 //New York Times State Chart, Plotly
-/*Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv', function(err, rows){
+/* Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv', function(err, rows){
 
     function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -547,7 +547,7 @@ function assignOptions(textArray, selector) {
   }
   
   countrySelector.addEventListener('change', updateCountry, false);
-});*/
+}); */
 
 //https://plotly.com/javascript/time-series/
 //https://plotly.com/javascript/plotly-fundamentals/
