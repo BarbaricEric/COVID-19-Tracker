@@ -1,5 +1,4 @@
-chart = {
-  const svg = d3.select(DOM.svg(width, height))
+const svg = d3.select(DOM.svg(width, height))
       .style("-webkit-tap-highlight-color", "transparent")
       .style("overflow", "visible");
 
@@ -32,4 +31,3 @@ ${formatDate(date)}`);
   svg.on("touchend mouseleave", () => tooltip.call(callout, null));
 
   return svg.node();
-}
