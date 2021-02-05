@@ -6,10 +6,16 @@ setTimeout(() => {browserSupport.style.display = 'none';}, 8.0*1000);
 
 //Covid Tracking Project Info
 covidtrackinfo.onmouseover = logMouseOver;
+covidtrackinfo.onmouseout = logMouseOut;
 
 function logMouseOver() {
   covidtrackinfo.style.color = '#1500ff';
   covidtrackinfo.style.background = '#ffff00';
+}
+
+function logMouseOut() {
+  covidtrackinfo.style.color = '#000000';
+  covidtrackinfo.style.background = 'none';
 }  
 
 covidtrackinfo.addEventListener('click', ()=>{
