@@ -11,6 +11,7 @@ covidtrackinfo.onmouseout = logMouseOut;
 function logMouseOver() {
   covidtrackinfo.style.color = '#1500ff';
   covidtrackinfo.style.background = '#ffff00';
+  covidtrackinfo.style.cursor = 'pointer';	
 }
 
 function logMouseOut() {
