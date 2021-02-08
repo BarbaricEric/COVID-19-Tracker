@@ -61,7 +61,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-02-04&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2021-02-07&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -435,13 +435,13 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
-   usCaseConfirm.textContent = data[380].cases;
-   usCaseDeath.textContent = data[380].deaths; 
-   usCaseRecent.textContent = data[380].date;
+   usCaseConfirm.textContent = data[383].cases;
+   usCaseDeath.textContent = data[383].deaths; 
+   usCaseRecent.textContent = data[383].date;
   });
 
 //NY Count from New York Times
-  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/02-04-2021.csv").then(function(data) {
+  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/02-07-2021.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
