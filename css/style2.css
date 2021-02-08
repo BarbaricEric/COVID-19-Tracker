@@ -54,10 +54,6 @@ h3 {
  margin: 10px 0px;
 }
 
-.covidtrackupdate {
- cursor: pointer;
-}
-
 .alert-btn {
  background: var(--dark) !important;
  color: var(--primary) !important;
