@@ -547,7 +547,7 @@ function assignOptions(textArray, selector) {
   }
   
   countrySelector.addEventListener('change', updateCountry, false);
-}); */
+});
 
 //https://plotly.com/javascript/time-series/
 //https://plotly.com/javascript/plotly-fundamentals/
