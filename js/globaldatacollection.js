@@ -302,432 +302,120 @@ async function getCountryCountFromCovidApi() {
    btCaseDeath.textContent = data.deaths;
    btDate.textContent = new Date(data.last_update).toString().substring(0,15); 
   });
+
+ await fetch('https://covid19-api.org/api/status/ve').then(response => response.json())
+  .then(data => {
+   const veCaseConfirm = document.querySelector('.veCaseConfirm');
+   const veCaseDeath = document.querySelector('.veCaseDeath');
+   const veDate = document.querySelector('.veDate');
+   veCaseConfirm.textContent = data.cases;
+   veCaseDeath.textContent = data.deaths;
+   veDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });  
+   
+ await fetch('https://covid19-api.org/api/status/ba').then(response => response.json())
+  .then(data => {
+   const baCaseConfirm = document.querySelector('.baCaseConfirm');
+   const baCaseDeath = document.querySelector('.baCaseDeath');
+   const baDate = document.querySelector('.baDate');
+   baCaseConfirm.textContent = data.cases;
+   baCaseDeath.textContent = data.deaths;
+   baDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });   
+   
+ await fetch('https://covid19-api.org/api/status/bw').then(response => response.json())
+  .then(data => {
+   const bwCaseConfirm = document.querySelector('.bwCaseConfirm');
+   const bwCaseDeath = document.querySelector('.bwCaseDeath');
+   const bwDate = document.querySelector('.bwDate');
+   bwCaseConfirm.textContent = data.cases;
+   bwCaseDeath.textContent = data.deaths;
+   bwDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+   
+ await fetch('https://covid19-api.org/api/status/br').then(response => response.json())
+  .then(data => {
+   const brCaseConfirm = document.querySelector('.brCaseConfirm');
+   const brCaseDeath = document.querySelector('.brCaseDeath');
+   const brDate = document.querySelector('.brDate');
+   brCaseConfirm.textContent = data.cases;
+   brCaseDeath.textContent = data.deaths;
+   brDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+   
+ await fetch('https://covid19-api.org/api/status/bn').then(response => response.json())
+  .then(data => {
+   const bnCaseConfirm = document.querySelector('.bnCaseConfirm');
+   const bnCaseDeath = document.querySelector('.bnCaseDeath');
+   const bnDate = document.querySelector('.bnDate');
+   bnCaseConfirm.textContent = data.cases;
+   bnCaseDeath.textContent = data.deaths;
+   bnDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });   
+      
+ await fetch('https://covid19-api.org/api/status/bg').then(response => response.json())
+  .then(data => {
+   const bgCaseConfirm = document.querySelector('.bgCaseConfirm');
+   const bgCaseDeath = document.querySelector('.bgCaseDeath');
+   const bgDate = document.querySelector('.bgDate');
+   bgCaseConfirm.textContent = data.cases;
+   bgCaseDeath.textContent = data.deaths;
+   bgDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  }); 
+      
+ await fetch('https://covid19-api.org/api/status/bf').then(response => response.json())
+  .then(data => {
+   const bfCaseConfirm = document.querySelector('.bfCaseConfirm');
+   const bfCaseDeath = document.querySelector('.bfCaseDeath');
+   const bfDate = document.querySelector('.bfDate');
+   bfCaseConfirm.textContent = data.cases;
+   bfCaseDeath.textContent = data.deaths;
+   bfDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  }); 
+      
+ await fetch('https://covid19-api.org/api/status/bi').then(response => response.json())
+  .then(data => {
+   const biCaseConfirm = document.querySelector('.biCaseConfirm');
+   const biCaseDeath = document.querySelector('.biCaseDeath');
+   const biDate = document.querySelector('.biDate');
+   biCaseConfirm.textContent = data.cases;
+   biCaseDeath.textContent = data.deaths;
+   biDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  }); 
+      
+ await fetch('https://covid19-api.org/api/status/cv').then(response => response.json())
+  .then(data => {
+   const cvCaseConfirm = document.querySelector('.cvCaseConfirm');
+   const cvCaseDeath = document.querySelector('.cvCaseDeath');
+   const cvDate = document.querySelector('.cvDate');
+   cvCaseConfirm.textContent = data.cases;
+   cvCaseDeath.textContent = data.deaths;
+   cvDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  }); 
+      
+ await fetch('https://covid19-api.org/api/status/kh').then(response => response.json())
+  .then(data => {
+   const khCaseConfirm = document.querySelector('.khCaseConfirm');
+   const khCaseDeath = document.querySelector('.khCaseDeath');
+   const khDate = document.querySelector('.khDate');
+   khCaseConfirm.textContent = data.cases;
+   khCaseDeath.textContent = data.deaths;
+   khDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  }); 
+      
+ await fetch('https://covid19-api.org/api/status/cm').then(response => response.json())
+  .then(data => {
+   const cmCaseConfirm = document.querySelector('.cmCaseConfirm');
+   const cmCaseDeath = document.querySelector('.cmCaseDeath');
+   const cmDate = document.querySelector('.cmDate');
+   cmCaseConfirm.textContent = data.cases;
+   cmCaseDeath.textContent = data.deaths;
+   cmDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  }); 
    
 }
 
 getCountryCountFromCovidApi();
-   /* 
-   const inCaseConfirm
-   const inCaseDeath
-   const brCaseConfirm
-   const brCaseDeath
-   const ruCaseConfirm
-   const ruCaseDeath
-   const gbCaseConfirm
-   const gbCaseDeath
-   const frCaseConfirm
-   const frCaseDeath
-   const trCaseConfirm
-   const trCaseDeath
-   const itCaseConfirm
-   const itCaseDeath
-   const esCaseConfirm
-   const esCaseDeath
-   const deCaseConfirm
-   const deCaseDeath
-   const coCaseConfirm
-   const coCaseDeath
-   const arCaseConfirm
-   const arCaseDeath
-   const mxCaseConfirm
-   const mxCaseDeath
-   const plCaseConfirm
-   const plCaseDeath
-   const irCaseConfirm
-   const irCaseDeath
-   const uaCaseConfirm
-   const uaCaseDeath
-   const zaCaseConfirm
-   const zaCaseDeath
-   const peCaseConfirm
-   const peCaseDeath
-   const nlCaseConfirm
-   const nlCaseDeath
-   const idCaseConfirm
-   const idCaseDeath
-   const czCaseConfirm
-   const czCaseDeath
-   const beCaseConfirm
-   const beCaseDeath
-   const roCaseConfirm
-   const roCaseDeath
-   const clCaseConfirm
-   const clCaseDeath
-   const caCaseConfirm
-   const caCaseDeath
-   beCaseConfirm
-   beCaseDeath
-   ptCaseConfirm
-   ptCaseDeath
-   ilCaseConfirm
-   ilCaseDeath
-   iqCaseConfirm
-   iqCaseDeath
-   seCaseConfirm
-   seCaseDeath
-   pkCaseConfirm
-   pkCaseDeath
-   bdCaseConfirm
-   bdCaseDeath
-   phCaseConfirm
-   phCaseDeath
-   chCaseConfirm
-   chCaseDeath
-   maCaseConfirm
-   maCaseDeath
-   atCaseConfirm
-   atCaseDeath
-   rsCaseConfirm
-   rsCaseDeath
-   jpCaseConfirm
-   jpCaseDeath
-   saCaseConfirm
-   saCaseDeath
-   huCaseConfirm
-   huCaseDeath
-   joCaseConfirm
-   joCaseDeath
-   paCaseConfirm
-   paCaseDeath
-   aeCaseConfirm
-   aeCaseDeath
-   lbCaseConfirm
-   lbCaseDeath
-   npCaseConfirm
-   npCaseDeath
-   geCaseConfirm
-   geCaseDeath
-   skCaseConfirm
-   skCaseDeath
-   ecCaseConfirm
-   ecCaseDeath
-   byCaseConfirm
-   byCaseDeath
-   kzCaseConfirm
-   kzCaseDeath
-   hrCaseConfirm
-   hrCaseDeath
-   azCaseConfirm
-   azCaseDeath
-   bgCaseConfirm
-   bgCaseDeath
-   boCaseConfirm
-   boCaseDeath
-   doCaseConfirm
-   doCaseDeath
-   tnCaseConfirm
-   tnCaseDeath
-   myCaseConfirm
-   myCaseDeath
-   dkCaseConfirm
-   dkCaseDeath
-   ieCaseConfirm
-   ieCaseDeath
-   crCaseConfirm
-   crCaseDeath
-   ltCaseConfirm
-   ltCaseDeath
-   amCaseConfirm
-   amCaseDeath
-   siCaseConfirm
-   siCaseDeath
-   egCaseConfirm
-   egCaseDeath
-   kwCaseConfirm
-   kwCaseDeath
-   mdCaseConfirm
-   mdCaseDeath
-   gtCaseConfirm
-   gtCaseDeath
-   psCaseConfirm
-   psCaseDeath
-   grCaseConfirm
-   grCaseDeath
-   qaCaseConfirm
-   qaCaseDeath
-   hnCaseConfirm
-   hnCaseDeath
-   mmCaseConfirm
-   mmCaseDeath
-   etCaseConfirm
-   etCaseDeath
-   omCaseConfirm
-   omCaseDeath
-   pyCaseConfirm
-   pyCaseDeath
-   ngCaseConfirm
-   ngCaseDeath
-   veCaseConfirm
-   veCaseDeath
-   baCaseConfirm
-   baCaseDeath
-   lyCaseConfirm
-   lyCaseDeath
-   dzCaseConfirm
-   dzCaseDeath
-   bhCaseConfirm
-   bhCaseDeath
-   keCaseConfirm
-   keCaseDeath
-   cnCaseConfirm
-   cnCaseDeath
-   mkCaseConfirm
-   mkCaseDeath
-   kgCaseConfirm
-   kgCaseDeath
-   uzCaseConfirm
-   uzCaseDeath
-   krCaseConfirm
-   krCaseDeath
-   alCaseConfirm
-   alCaseDeath
-   lvCaseConfirm
-   lvCaseDeath
-   ghCaseConfirm
-   ghCaseDeath
-   noCaseConfirm
-   noCaseDeath
-   lkCaseConfirm
-   lkCaseDeath
-   meCaseConfirm
-   meCaseDeath
-   sgCaseConfirm
-   sgCaseDeath
-   xkCaseConfirm
-   xkCaseDeath
-   afCaseConfirm
-   afCaseDeath
-   svCaseConfirm
-   svCaseDeath
-   zmCaseConfirm
-   zmCaseDeath
-   luCaseConfirm
-   luCaseDeath
-   fiCaseConfirm
-   fiCaseDeath
-   eeCaseConfirm
-   eeCaseDeath
-   uyCaseConfirm
-   uyCaseDeath
-   ugCaseConfirm
-   ugCaseDeath
-   mzCaseConfirm
-   mzCaseDeath
-   naCaseConfirm
-   naCaseDeath
-   zwCaseConfirm
-   zeCaseDeath
-   cyCaseConfirm
-   cyCaseDeath
-   cmCaseConfirm
-   cmCaseDeath
-   sdCaseConfirm
-   sdCaseDeath
-   auCaseConfirm
-   auCaseDeath
-   ciCaseConfirm
-   ciCaseDeath
-   snCaseConfirm
-   snCaseDeath
-   cuCaseConfirm
-   cuCaseDeath
-   cdCaseConfirm
-   cdCaseDeath
-   mwCaseConfirm
-   mwCaseDeath
-   bwCaseConfirm
-   bwCaseDeath
-   aoCaseConfirm
-   aoCaseDeath
-   mgCaseConfirm
-   mgCaseDeath
-   mtCaseConfirm
-   mtCaseDeath
-   thCaseConfirm
-   thCaseDeath
-   mrCaseConfirm
-   mrCaseDeath
-   mvCaseConfirm
-   mvCaseDeath
-   jmCaseConfirm
-   jmCaseDeath
-   szCaseConfirm
-   szCaseDeath
-   rwCaseConfirm
-   rwCaseDeath
-   gnCaseConfirm
-   gnCaseDeath
-   syCaseConfirm
-   syCaseDeath
-   cvCaseConfirm
-   cvCaseDeath
-   tjCaseConfirm
-   tjCaseDeath
-   bzCaseConfirm
-   bzCaseDeath
-   htCaseConfirm
-   htCaseDeath
-   kpCaseConfirm
-   kpCaseDeath
-   gaCaseConfirm
-   gaCaseDeath
-   bfCaseConfirm
-   bfCaseDeath
-   adCaseConfirm
-   adCaseDeath
-   srCaseConfirm
-   srCaseDeath
-   lsCaseConfirm
-   lsCaseDeath
-   bsCaseConfirm
-   bsCaseDeath
-   mlCaseConfirm
-   mlCaseDeath
-   cgCaseConfirm
-   cgCaseDeath
-   ttCaseConfirm
-   ttCaseDeath
-   gyCaseConfirm
-   gyCaseDeath
-   niCaseConfirm
-   niCaseDeath
-   isCaseConfirm
-   isCaseDeath
-   djCaseConfirm
-   djCaseDeath
-   gqCaseConfirm
-   gqCaseDeath
-   cfCaseConfirm
-   cfCaseDeath
-   tgCaseConfirm
-   tgCaseDeath
-   soCaseConfirm
-   soCaseDeath
-   neCaseConfirm
-   neCaseDeath
-   gmCaseConfirm
-   gmCaseDeath
-   ssCaseConfirm
-   ssCaseDeath
-   bjCaseConfirm
-   bjCaseDeath
-   tdCaseConfirm
-   tdCaseDeath
-   slCaseConfirm
-   slCaseDeath
-   smCaseConfirm
-   smCaseDeath
-   kmCaseConfirm
-   kmCaseDeath
-   gwCaseConfirm
-   gwCaseDeath
-   liCaseConfirm
-   liCaseDeath
-   nzCaseConfirm
-   nzCaseDeath
-   yeCaseConfirm
-   yeCaseDeath
-   erCaseConfirm
-   erCaseDeath
-   lrCaseConfirm
-   lrCaseDeath
-   mnCaseConfirm
-   mnCaseDeath
-   vnCaseConfirm
-   vnCaseDeath
-   biCaseConfirm
-   biCaseDeath
-   bbCaseConfirm
-   bbCaseDeath
-   mcCaseConfirm
-   mcCaseDeath
-   stCaseConfirm
-   stCaseDeath
-   scCaseConfirm
-   scCaseDeath
-   lcCaseConfirm
-   lcCaseDeath
-   twCaseConfirm
-   twCaseDeath
-   btCaseConfirm
-   btCaseDeath
-   pgCaseConfirm
-   pgCaseDeath
-   vcCaseConfirm
-   vcCaseDeath
-   muCaseConfirm
-   muCaseDeath
-   tzCaseConfirm
-   tzCaseDeath
-   khCaseConfirm
-   khCaseDeath
-   agCaseConfirm
-   agCaseDeath
-   bnCaseConfirm
-   bnCaseDeath
-   gdCaseConfirm
-   gdCaseDeath
-   hkCaseConfirm
-   hkCaseDeath
-   dmCaseConfirm
-   dmCaseDeath
-   tlCaseConfirm
-   tlCaseDeath
-   fjCaseConfirm
-   fjCaseDeath
-   gpCaseConfirm
-   gpCaseDeath
-   reCaseConfirm
-   reCaseDeath
-   laCaseConfirm
-   laCaseDeath
-   knCaseConfirm
-   knCaseDeath
-   mqCaseConfirm
-   mqCaseDeath
-   vaCaseConfirm
-   vaCaseDeath
-   gfCaseConfirm
-   gfCaseDeath
-   sbCaseConfirm
-   sbCaseDeath
-   ehCaseConfirm
-   ehCaseDeath
-   moCaseConfirm
-   moCaseDeath
-   ytCaseConfirm
-   ytCaseDeath
-   awCaseConfirm
-   awCaseDeath
-   mhCaseConfirm
-   nhCaseDeath
-   foCaseConfirm
-   foCaseDeath
-   mfCaseConfirm
-   mfCaseDeath
-   wsCaseConfirm
-   wsCaseDeath
-   blCaseConfirm
-   blCaseDeath
-   cwCaseConfirm
-   cwCaseDeath
-   giCaseConfirm
-   giCaseDeath
-   kyCaseConfirm
-   kyCaseDeath
-   vuCaseConfirm
-   vuCaseDeath
-   ggCaseConfirm
-   ggCaseDeath
-   glCaseConfirm
-   glCaseDeath
-   guCaseConfirm
-   guCaseDeath
-   jeCaseConfirm
-   jeCaseDeath
-   prCaseConfirm
-   prCaseDeath
-   */
 
 //Global Functions    
    function getArrayFields(input, field) {
