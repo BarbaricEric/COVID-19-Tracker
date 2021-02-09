@@ -185,7 +185,7 @@ async function getCountryCountFromCovidApi() {
       
  await fetch('https://covid19-api.org/api/status/au').then(response => response.json())
   .then(data => {
-   const auCaseConfirm = document.querySelector('.aCuaseConfirm');
+   const auCaseConfirm = document.querySelector('.auCaseConfirm');
    const auCaseDeath = document.querySelector('.auCaseDeath');
    const auDate = document.querySelector('.auDate');
    auCaseConfirm.textContent = data.cases;
