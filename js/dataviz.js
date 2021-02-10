@@ -516,6 +516,11 @@ function setBubblePlot(chosenCountry) {
       marker: {
         size: 12, 
         opacity: 0.5
+      },
+      name: 'Cases',
+      line: {
+        //color: 'rgb(219, 64, 82)',
+        width: 3
       }
     };
 
