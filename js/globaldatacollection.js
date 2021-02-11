@@ -972,6 +972,1016 @@ await fetch('https://covid19-api.org/api/status/hu').then(response => response.j
    caseDeath.textContent = data.deaths;
    curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
   });
+         
+await fetch('https://covid19-api.org/api/status/is').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.isCaseConfirm');
+   const caseDeath = document.querySelector('.isCaseDeath');
+   const curDate = document.querySelector('.isDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+            
+await fetch('https://covid19-api.org/api/status/id').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.idCaseConfirm');
+   const caseDeath = document.querySelector('.idCaseDeath');
+   const curDate = document.querySelector('.idDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+            
+await fetch('https://covid19-api.org/api/status/iq').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.iqCaseConfirm');
+   const caseDeath = document.querySelector('.iqCaseDeath');
+   const curDate = document.querySelector('.iqDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+            
+await fetch('https://covid19-api.org/api/status/ie').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.ieCaseConfirm');
+   const caseDeath = document.querySelector('.ieCaseDeath');
+   const curDate = document.querySelector('.ieDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+            
+await fetch('https://covid19-api.org/api/status/ir').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.irCaseConfirm');
+   const caseDeath = document.querySelector('.irCaseDeath');
+   const curDate = document.querySelector('.irDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+            
+await fetch('https://covid19-api.org/api/status/il').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.ilCaseConfirm');
+   const caseDeath = document.querySelector('.ilCaseDeath');
+   const curDate = document.querySelector('.ilDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+            
+await fetch('https://covid19-api.org/api/status/it').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.itCaseConfirm');
+   const caseDeath = document.querySelector('.itCaseDeath');
+   const curDate = document.querySelector('.itDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+            
+await fetch('https://covid19-api.org/api/status/jm').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.jmCaseConfirm');
+   const caseDeath = document.querySelector('.jmCaseDeath');
+   const curDate = document.querySelector('.jmDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+               
+await fetch('https://covid19-api.org/api/status/jp').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.jpCaseConfirm');
+   const caseDeath = document.querySelector('.jpCaseDeath');
+   const curDate = document.querySelector('.jpDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+               
+await fetch('https://covid19-api.org/api/status/je').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.jeCaseConfirm');
+   const caseDeath = document.querySelector('.jeCaseDeath');
+   const curDate = document.querySelector('.jeDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+               
+await fetch('https://covid19-api.org/api/status/jo').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.joCaseConfirm');
+   const caseDeath = document.querySelector('.joCaseDeath');
+   const curDate = document.querySelector('.joDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+               
+await fetch('https://covid19-api.org/api/status/kz').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.kzCaseConfirm');
+   const caseDeath = document.querySelector('.kzCaseDeath');
+   const curDate = document.querySelector('.kzDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                  
+await fetch('https://covid19-api.org/api/status/ke').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.keCaseConfirm');
+   const caseDeath = document.querySelector('.keCaseDeath');
+   const curDate = document.querySelector('.keDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                  
+await fetch('https://covid19-api.org/api/status/kw').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.kwCaseConfirm');
+   const caseDeath = document.querySelector('.kwCaseDeath');
+   const curDate = document.querySelector('.kwDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                  
+await fetch('https://covid19-api.org/api/status/kg').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.kgCaseConfirm');
+   const caseDeath = document.querySelector('.kgCaseDeath');
+   const curDate = document.querySelector('.kgDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                  
+await fetch('https://covid19-api.org/api/status/la').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.laCaseConfirm');
+   const caseDeath = document.querySelector('.laCaseDeath');
+   const curDate = document.querySelector('.laDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/lv').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.lvCaseConfirm');
+   const caseDeath = document.querySelector('.lvCaseDeath');
+   const curDate = document.querySelector('.lvDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/lb').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.lbCaseConfirm');
+   const caseDeath = document.querySelector('.lbCaseDeath');
+   const curDate = document.querySelector('.lbDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/ls').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.lsCaseConfirm');
+   const caseDeath = document.querySelector('.lsCaseDeath');
+   const curDate = document.querySelector('.lsDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/lr').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.lrCaseConfirm');
+   const caseDeath = document.querySelector('.lrCaseDeath');
+   const curDate = document.querySelector('.lrDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/ly').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.lyCaseConfirm');
+   const caseDeath = document.querySelector('.lyCaseDeath');
+   const curDate = document.querySelector('.lyDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/li').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.liCaseConfirm');
+   const caseDeath = document.querySelector('.liCaseDeath');
+   const curDate = document.querySelector('.liDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/lt').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.ltCaseConfirm');
+   const caseDeath = document.querySelector('.ltCaseDeath');
+   const curDate = document.querySelector('.ltDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/lu').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.luCaseConfirm');
+   const caseDeath = document.querySelector('.luCaseDeath');
+   const curDate = document.querySelector('.luDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                     
+await fetch('https://covid19-api.org/api/status/mo').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.moCaseConfirm');
+   const caseDeath = document.querySelector('.moCaseDeath');
+   const curDate = document.querySelector('.moDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mg').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mgCaseConfirm');
+   const caseDeath = document.querySelector('.mgCaseDeath');
+   const curDate = document.querySelector('.mgDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mw').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mwCaseConfirm');
+   const caseDeath = document.querySelector('.mwCaseDeath');
+   const curDate = document.querySelector('.mwDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/my').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.myCaseConfirm');
+   const caseDeath = document.querySelector('.myCaseDeath');
+   const curDate = document.querySelector('.myDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mv').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mvCaseConfirm');
+   const caseDeath = document.querySelector('.mvCaseDeath');
+   const curDate = document.querySelector('.mvDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/ml').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mlCaseConfirm');
+   const caseDeath = document.querySelector('.mlCaseDeath');
+   const curDate = document.querySelector('.mlDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mt').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mtCaseConfirm');
+   const caseDeath = document.querySelector('.mtCaseDeath');
+   const curDate = document.querySelector('.mtDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mh').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mhCaseConfirm');
+   const caseDeath = document.querySelector('.mhCaseDeath');
+   const curDate = document.querySelector('.mhDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mq').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mqCaseConfirm');
+   const caseDeath = document.querySelector('.mqCaseDeath');
+   const curDate = document.querySelector('.mqDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mr').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mrCaseConfirm');
+   const caseDeath = document.querySelector('.mrCaseDeath');
+   const curDate = document.querySelector('.mrDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mu').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.muCaseConfirm');
+   const caseDeath = document.querySelector('.muCaseDeath');
+   const curDate = document.querySelector('.muDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/yt').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.ytCaseConfirm');
+   const caseDeath = document.querySelector('.ytCaseDeath');
+   const curDate = document.querySelector('.ytDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mx').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mxCaseConfirm');
+   const caseDeath = document.querySelector('.mxCaseDeath');
+   const curDate = document.querySelector('.mxDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mc').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mcCaseConfirm');
+   const caseDeath = document.querySelector('.mcCaseDeath');
+   const curDate = document.querySelector('.mcDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mn').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mnCaseConfirm');
+   const caseDeath = document.querySelector('.mnCaseDeath');
+   const curDate = document.querySelector('.mnDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/me').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.meCaseConfirm');
+   const caseDeath = document.querySelector('.meCaseDeath');
+   const curDate = document.querySelector('.meDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/ma').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.maCaseConfirm');
+   const caseDeath = document.querySelector('.maCaseDeath');
+   const curDate = document.querySelector('.maDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mz').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mzCaseConfirm');
+   const caseDeath = document.querySelector('.mzCaseDeath');
+   const curDate = document.querySelector('.mzDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/mm').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mmCaseConfirm');
+   const caseDeath = document.querySelector('.mmCaseDeath');
+   const curDate = document.querySelector('.mmDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/na').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.naCaseConfirm');
+   const caseDeath = document.querySelector('.naCaseDeath');
+   const curDate = document.querySelector('.naDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                        
+await fetch('https://covid19-api.org/api/status/np').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.npCaseConfirm');
+   const caseDeath = document.querySelector('.npCaseDeath');
+   const curDate = document.querySelector('.npDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                           
+await fetch('https://covid19-api.org/api/status/nl').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.nlCaseConfirm');
+   const caseDeath = document.querySelector('.nlCaseDeath');
+   const curDate = document.querySelector('.nlDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                           
+await fetch('https://covid19-api.org/api/status/nz').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.nzCaseConfirm');
+   const caseDeath = document.querySelector('.nzCaseDeath');
+   const curDate = document.querySelector('.nzDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                           
+await fetch('https://covid19-api.org/api/status/ni').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.niCaseConfirm');
+   const caseDeath = document.querySelector('.niCaseDeath');
+   const curDate = document.querySelector('.niDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                           
+await fetch('https://covid19-api.org/api/status/ne').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.neCaseConfirm');
+   const caseDeath = document.querySelector('.neCaseDeath');
+   const curDate = document.querySelector('.neDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                           
+await fetch('https://covid19-api.org/api/status/ng').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.ngCaseConfirm');
+   const caseDeath = document.querySelector('.ngCaseDeath');
+   const curDate = document.querySelector('.ngDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                           
+await fetch('https://covid19-api.org/api/status/no').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.noCaseConfirm');
+   const caseDeath = document.querySelector('.noCaseDeath');
+   const curDate = document.querySelector('.noDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                           
+await fetch('https://covid19-api.org/api/status/om').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.omCaseConfirm');
+   const caseDeath = document.querySelector('.omCaseDeath');
+   const curDate = document.querySelector('.omDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                              
+await fetch('https://covid19-api.org/api/status/pk').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.pkCaseConfirm');
+   const caseDeath = document.querySelector('.pkCaseDeath');
+   const curDate = document.querySelector('.pkDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                              
+await fetch('https://covid19-api.org/api/status/pa').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.paCaseConfirm');
+   const caseDeath = document.querySelector('.paCaseDeath');
+   const curDate = document.querySelector('.paDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/pg').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.pgCaseConfirm');
+   const caseDeath = document.querySelector('.pgCaseDeath');
+   const curDate = document.querySelector('.pgDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/py').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.pyCaseConfirm');
+   const caseDeath = document.querySelector('.pyCaseDeath');
+   const curDate = document.querySelector('.pyDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/pe').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.peCaseConfirm');
+   const caseDeath = document.querySelector('.peCaseDeath');
+   const curDate = document.querySelector('.peDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/ph').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.phCaseConfirm');
+   const caseDeath = document.querySelector('.phCaseDeath');
+   const curDate = document.querySelector('.phDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/bo').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.boCaseConfirm');
+   const caseDeath = document.querySelector('.boCaseDeath');
+   const curDate = document.querySelector('.boDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/pl').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.plCaseConfirm');
+   const caseDeath = document.querySelector('.plCaseDeath');
+   const curDate = document.querySelector('.plDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/pt').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.ptCaseConfirm');
+   const caseDeath = document.querySelector('.ptCaseDeath');
+   const curDate = document.querySelector('.ptDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/pr').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.prCaseConfirm');
+   const caseDeath = document.querySelector('.prCaseDeath');
+   const curDate = document.querySelector('.prDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                 
+await fetch('https://covid19-api.org/api/status/qa').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.qaCaseConfirm');
+   const caseDeath = document.querySelector('.qaCaseDeath');
+   const curDate = document.querySelector('.qaDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                    
+await fetch('https://covid19-api.org/api/status/kr').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.krCaseConfirm');
+   const caseDeath = document.querySelector('.krCaseDeath');
+   const curDate = document.querySelector('.krDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                    
+await fetch('https://covid19-api.org/api/status/xk').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.xkCaseConfirm');
+   const caseDeath = document.querySelector('.xkCaseDeath');
+   const curDate = document.querySelector('.xkDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                    
+await fetch('https://covid19-api.org/api/status/md').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mdCaseConfirm');
+   const caseDeath = document.querySelector('.mdCaseDeath');
+   const curDate = document.querySelector('.mdDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                    
+await fetch('https://covid19-api.org/api/status/mk').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mkCaseConfirm');
+   const caseDeath = document.querySelector('.mkCaseDeath');
+   const curDate = document.querySelector('.mkDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                       
+await fetch('https://covid19-api.org/api/status/re').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.reCaseConfirm');
+   const caseDeath = document.querySelector('.reCaseDeath');
+   const curDate = document.querySelector('.reDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/ro').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.roCaseConfirm');
+   const caseDeath = document.querySelector('.roCaseDeath');
+   const curDate = document.querySelector('.roDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/ru').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.ruCaseConfirm');
+   const caseDeath = document.querySelector('.ruCaseDeath');
+   const curDate = document.querySelector('.ruDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/rw').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.rwCaseConfirm');
+   const caseDeath = document.querySelector('.rwCaseDeath');
+   const curDate = document.querySelector('.rwDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/bl').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.blCaseConfirm');
+   const caseDeath = document.querySelector('.blCaseDeath');
+   const curDate = document.querySelector('.blDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/kn').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.knCaseConfirm');
+   const caseDeath = document.querySelector('.knCaseDeath');
+   const curDate = document.querySelector('.knDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/lc').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.lcCaseConfirm');
+   const caseDeath = document.querySelector('.lcCaseDeath');
+   const curDate = document.querySelector('.lcDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/mf').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.mfCaseConfirm');
+   const caseDeath = document.querySelector('.mfCaseDeath');
+   const curDate = document.querySelector('.mfDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/vc').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.vcCaseConfirm');
+   const caseDeath = document.querySelector('.vcCaseDeath');
+   const curDate = document.querySelector('.vcDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/ws').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.wsCaseConfirm');
+   const caseDeath = document.querySelector('.wsCaseDeath');
+   const curDate = document.querySelector('.wsDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                          
+await fetch('https://covid19-api.org/api/status/sm').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.smCaseConfirm');
+   const caseDeath = document.querySelector('.smCaseDeath');
+   const curDate = document.querySelector('.smDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/st').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.stCaseConfirm');
+   const caseDeath = document.querySelector('.stCaseDeath');
+   const curDate = document.querySelector('.stDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sa').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.saCaseConfirm');
+   const caseDeath = document.querySelector('.saCaseDeath');
+   const curDate = document.querySelector('.saDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sn').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.snCaseConfirm');
+   const caseDeath = document.querySelector('.snCaseDeath');
+   const curDate = document.querySelector('.snDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/rs').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.rsCaseConfirm');
+   const caseDeath = document.querySelector('.rsCaseDeath');
+   const curDate = document.querySelector('.rsDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sc').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.scCaseConfirm');
+   const caseDeath = document.querySelector('.scCaseDeath');
+   const curDate = document.querySelector('.scDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sl').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.slCaseConfirm');
+   const caseDeath = document.querySelector('.slCaseDeath');
+   const curDate = document.querySelector('.slDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sg').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.sgCaseConfirm');
+   const caseDeath = document.querySelector('.sgCaseDeath');
+   const curDate = document.querySelector('.sgDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sk').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.skCaseConfirm');
+   const caseDeath = document.querySelector('.skCaseDeath');
+   const curDate = document.querySelector('.skDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/si').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.siCaseConfirm');
+   const caseDeath = document.querySelector('.siCaseDeath');
+   const curDate = document.querySelector('.siDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sb').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.sbCaseConfirm');
+   const caseDeath = document.querySelector('.sbCaseDeath');
+   const curDate = document.querySelector('.sbDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/so').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.soCaseConfirm');
+   const caseDeath = document.querySelector('.soCaseDeath');
+   const curDate = document.querySelector('.soDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/za').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.zaCaseConfirm');
+   const caseDeath = document.querySelector('.zaCaseDeath');
+   const curDate = document.querySelector('.zaDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/ss').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.ssCaseConfirm');
+   const caseDeath = document.querySelector('.ssCaseDeath');
+   const curDate = document.querySelector('.ssDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/es').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.esCaseConfirm');
+   const caseDeath = document.querySelector('.esCaseDeath');
+   const curDate = document.querySelector('.esDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/lk').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.lkCaseConfirm');
+   const caseDeath = document.querySelector('.lkCaseDeath');
+   const curDate = document.querySelector('.lkDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/ps').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.psCaseConfirm');
+   const caseDeath = document.querySelector('.psCaseDeath');
+   const curDate = document.querySelector('.psDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sd').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.sdCaseConfirm');
+   const caseDeath = document.querySelector('.sdCaseDeath');
+   const curDate = document.querySelector('.sdDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sr').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.srCaseConfirm');
+   const caseDeath = document.querySelector('.srCaseDeath');
+   const curDate = document.querySelector('.srDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sz').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.szCaseConfirm');
+   const caseDeath = document.querySelector('.szCaseDeath');
+   const curDate = document.querySelector('.szDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/se').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.seCaseConfirm');
+   const caseDeath = document.querySelector('.seCaseDeath');
+   const curDate = document.querySelector('.seDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/ch').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.chCaseConfirm');
+   const caseDeath = document.querySelector('.chCaseDeath');
+   const curDate = document.querySelector('.chDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/sy').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.syCaseConfirm');
+   const caseDeath = document.querySelector('.syCaseDeath');
+   const curDate = document.querySelector('.syDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
+                                             
+await fetch('https://covid19-api.org/api/status/tw').then(response => response.json())
+  .then(data => {
+   const caseConfirm = document.querySelector('.twCaseConfirm');
+   const caseDeath = document.querySelector('.twCaseDeath');
+   const curDate = document.querySelector('.twDate');
+   caseConfirm.textContent = data.cases;
+   caseDeath.textContent = data.deaths;
+   curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+  });
 }
 
 getCountryCountFromCovidApi();
