@@ -2,7 +2,21 @@ const browserSupport = document.querySelector('.banner-support');
 const covidtrackinfo = document.querySelector('.covidtrackupdate');
 
 //Browser Support Banner
-setTimeout(() => {browserSupport.style.display = 'none';}, 8.0*1000);
+let start;
+
+function step(timestamp) {
+  if (start === undefined)
+    start = timestamp;
+  const elapsed = timestamp - start;
+
+  browserSupport.style.display = 'none';
+
+  if (elapsed < 8000) { // Stop the animation after 2 seconds
+    window.requestAnimationFrame(step);
+  }
+}
+
+window.requestAnimationFrame(step);
 
 //Covid Tracking Project Info
 covidtrackinfo.onmouseover = logMouseOver;
