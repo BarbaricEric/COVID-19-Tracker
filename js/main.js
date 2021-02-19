@@ -2,12 +2,12 @@ const browserSupport = document.querySelector('.banner-support');
 const covidtrackinfo = document.querySelector('.covidtrackupdate');
 
 //Browser Support Banner
-let start;
+let starto;
 
 function step(timestamp) {
-  if (start === undefined)
-    start = timestamp;
-  const elapsed = timestamp - start;
+  if (starto === undefined)
+    starto = timestamp;
+  const elapsed = timestamp - starto;
 
   browserSupport.style.display = 'none';
 
