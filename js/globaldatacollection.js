@@ -2173,7 +2173,7 @@ await fetch('https://covid19-api.org/api/status/zm').then(response => response.j
    curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
   });
                                                       
-await fetch('https://covid19-api.org/api/status/zy').then(response => response.json())
+await fetch('https://covid19-api.org/api/status/zw').then(response => response.json())
   .then(data => {
    const caseConfirm = document.querySelector('.zyCaseConfirm');
    const caseDeath = document.querySelector('.zyCaseDeath');
