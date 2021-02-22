@@ -6,12 +6,12 @@ let starto;
 
 function step(timestamp) {
   if (starto === undefined)
-    starto = timestamp;
+  starto = timestamp;
   const elapsed = timestamp - starto;
 
   browserSupport.style.display = 'none';
 
-  if (elapsed < 8000) { // Stop the animation after 2 seconds
+  if (elapsed < 12000) { // Stop the animation after 2 seconds
     window.requestAnimationFrame(step);
   }
 }
