@@ -10,7 +10,7 @@ window.requestAnimFrame = function(){
         window.oRequestAnimationFrame      || 
         window.msRequestAnimationFrame     || 
         function(/* function */ step){
-            window.setTimeout(step, 1000 / 60);
+            window.setTimeout(step1, 1000 / 60);
         }
     );
 }();
@@ -18,7 +18,7 @@ window.requestAnimFrame = function(){
 })();
 
 
-function step() {
+function step1() {
   browserSupport.style.display = 'none';
 }
 
