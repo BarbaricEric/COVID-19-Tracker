@@ -2,21 +2,25 @@ const browserSupport = document.querySelector('.banner-support');
 const covidtrackinfo = document.querySelector('.covidtrackupdate');
 
 //Browser Support Banner
-let starto;
+window.requestAnimFrame = function(){
+    return (
+        window.requestAnimationFrame       || 
+        window.webkitRequestAnimationFrame || 
+        window.mozRequestAnimationFrame    || 
+        window.oRequestAnimationFrame      || 
+        window.msRequestAnimationFrame     || 
+        function(/* function */ step){
+            window.setTimeout(step, 1000 / 60);
+        }
+    );
+}();
+   window.requestAnimFrame(step);
+})();
 
-function step(timestamp) {
-  if (starto === undefined)
-  starto = timestamp;
-  const elapsed = timestamp - starto;
 
+function step() {
   browserSupport.style.display = 'none';
-
-  if (elapsed < 12000) { // Stop the animation after 2 seconds
-    window.requestAnimationFrame(step);
-  }
 }
-
-window.requestAnimationFrame(step);
 
 //Covid Tracking Project Info
 covidtrackinfo.onmouseover = logMouseOver;
