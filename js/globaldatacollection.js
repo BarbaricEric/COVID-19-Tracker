@@ -359,7 +359,7 @@ async function getCountryCountFromCovidApi() {
    const bgCaseDeath = document.querySelector('.bgCaseDeath');
    const bgDate = document.querySelector('.bgDate');
    bgCaseConfirm.textContent = addCommaDecimal(data.cases);
-   bgCaseDeath.textContent = addCommaDecimal(vdata.deaths);
+   bgCaseDeath.textContent = addCommaDecimal(data.deaths);
    bgDate.textContent = new Date(data.last_update).toString().substring(0,15); 
   }); 
       
