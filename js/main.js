@@ -2,24 +2,10 @@ const browserSupport = document.querySelector('.banner-support');
 const covidtrackinfo = document.querySelector('.covidtrackupdate');
 
 //Browser Support Banner
-window.requestAnimFrame = function(){
-    return (
-        window.requestAnimationFrame       || 
-        window.webkitRequestAnimationFrame || 
-        window.mozRequestAnimationFrame    || 
-        window.oRequestAnimationFrame      || 
-        window.msRequestAnimationFrame     || 
-        function(/* function */ step){
-            window.setTimeout(step1, 1000 / 60);
-        }
-    );
-}();
-   window.requestAnimFrame(step);
-})();
-
+window.requestAnimationFrame(step1);
 
 function step1() {
-  browserSupport.style.display = 'none';
+	setTimeout(() => {browserSupport.style.display = 'none';}, 12.0*1000);
 }
 
 //Covid Tracking Project Info
