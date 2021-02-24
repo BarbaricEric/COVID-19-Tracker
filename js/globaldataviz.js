@@ -31,3 +31,49 @@ ${formatDate(date)}`);
   svg.on("touchend mouseleave", () => tooltip.call(callout, null));
 
   return svg.node();
+
+/*
+// Chart
+var options = {
+  chart: {
+    type: 'spline',
+    events: {
+    	load: getData
+    }
+  },
+  title: {
+    text: 'Live Bitcoin Price'
+  },
+  xAxis: {
+    type: 'datetime',
+  },
+  yAxis: {
+    title: {
+      text: 'Price (USD)'
+    }
+  },
+  legend: {
+    enabled: false
+  },
+  exporting: {
+    enabled: false
+  },
+  series: [{
+    name: 'Live Bitcoint Price [USD]',
+    data: []
+  }]
+};
+var chart = Highcharts.chart('container', options)
+
+// Data
+function getData() {
+  setInterval(function() {
+    fetch('https://api.cryptonator.com/api/ticker/btc-usd').then(function(response) {
+      return response.json()
+    }).then(function(data) {
+      chart.series[0].addPoint({ x: data.timestamp * 1000, y: Number(data.ticker.price) })
+    })
+  }, 3000)
+}
+
+*/
