@@ -2004,7 +2004,7 @@ function getArrayFields(input, field) {
     return output;
 }
 
-function addCommas() {
+function addCommas(x) {
    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }
 
