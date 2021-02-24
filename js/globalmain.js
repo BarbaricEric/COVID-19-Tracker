@@ -1,7 +1,16 @@
 const browserSupport = document.querySelector('.banner-support');
 
 //Browser Support Banner
-setTimeout(() => {browserSupport.style.display = 'none';}, 8.0*1000);
+//setTimeout(() => {browserSupport.style.display = 'none';}, 8.0*1000);
+anime({
+  targets: browserSupport,
+  translateY: -200,
+  direction: 'alternate',
+  loop: false,
+  easing: 'spring(1, 80, 10, 0)',
+  delay: 3000,  
+  duration: 8000  
+});
 
 if (document.documentElement.clientWidth < 900) { 
     const viewport = document.querySelector("meta[name=viewport]");
