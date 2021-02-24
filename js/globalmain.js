@@ -10,9 +10,9 @@ anime({
   ],
   direction: 'alternate',
   loop: false,
-  easing: 'linear',//'spring(1, 80, 10, 0)',
+  easing: 'spring(1, 80, 10, 0)', //'linear',
   delay: 3000,  
-  duration: 10000  
+  duration: 8000  
 });
 
 if (document.documentElement.clientWidth < 900) { 
