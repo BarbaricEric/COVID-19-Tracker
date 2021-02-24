@@ -4,7 +4,10 @@ const browserSupport = document.querySelector('.banner-support');
 //setTimeout(() => {browserSupport.style.display = 'none';}, 8.0*1000);
 anime({
   targets: browserSupport,
-  translateY: -200,
+    keyframes: [
+    {translateY: -180},
+    {translateY: 180}
+  ],
   direction: 'alternate',
   loop: false,
   easing: 'spring(1, 80, 10, 0)',
