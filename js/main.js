@@ -5,7 +5,19 @@ const covidtrackinfo = document.querySelector('.covidtrackupdate');
 window.requestAnimationFrame(step1);
 
 function step1() {
-	setTimeout(() => {browserSupport.style.display = 'none';}, 12.0*1000);
+	//setTimeout(() => {browserSupport.style.display = 'none';}, 12.0*1000);
+	anime({
+  targets: browserSupport,
+    keyframes: [
+    {translateY: -180},
+    {translateY: 180}
+  ],
+  direction: 'alternate',
+  loop: false,
+  easing: 'spring(1, 80, 10, 0)', //'linear',
+  delay: 3000,  
+  duration: 8000  
+});
 }
 
 //Covid Tracking Project Info
