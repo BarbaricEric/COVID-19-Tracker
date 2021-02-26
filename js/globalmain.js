@@ -5,8 +5,8 @@ const browserSupport = document.querySelector('.banner-support');
 anime({
   targets: browserSupport,
     keyframes: [
-    {translateY: -180},
-    {translateY: 180}
+    {translateY: -190},
+    {translateY: 190}
   ],
   direction: 'alternate',
   loop: false,
