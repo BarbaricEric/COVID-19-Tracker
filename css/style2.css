@@ -37,6 +37,32 @@ h3 {
   font-size: 1.8rem;
 }
 
+/* Select Options*/
+.select:focus {
+  border-color: blue;
+}
+
+.select .header select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  border-width: 0;
+  width: 100%;
+  flex: 1;
+  display: none;
+}
+
+.select .header select optgroup {
+  display: none;
+}
+
+.select select div.option {
+  display: none;
+}
+
 .FilterRow {
  display: flex;
  align-items: center;
