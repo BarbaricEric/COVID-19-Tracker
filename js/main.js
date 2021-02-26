@@ -9,8 +9,8 @@ function step1() {
 	anime({
   targets: browserSupport,
     keyframes: [
-    {translateY: -180},
-    {translateY: 180}
+    {translateY: -200},
+    {translateY: 200}
   ],
   direction: 'alternate',
   loop: false,
