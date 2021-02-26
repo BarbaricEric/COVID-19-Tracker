@@ -61,7 +61,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-02-24&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2021-02-25&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -259,11 +259,11 @@ const localapi2 = 'https://corona-api.com/countries/US';
    + data.data[49].deaths + data.data[50].deaths + data.data[51].deaths + data.data[52].deaths + data.data[53].deaths + data.data[54].deaths
    + data.data[55].deaths + data.data[56].deaths + data.data[57].deaths);   
    usCaseRecent.textContent = data.data[0].date;      
-   alCaseConfirm.textContent = data.data[0].confirmed;
-   alCaseDeath.textContent = data.data[0].deaths; 
+   alCaseConfirm.textContent = addCommas(data.data[0].confirmed);
+   alCaseDeath.textContent = addCommas(data.data[0].deaths); 
    alCaseRecent.textContent = data.data[0].date;
-   akCaseConfirm.textContent = data.data[1].confirmed;
-   akCaseDeath.textContent = data.data[1].deaths; 
+   akCaseConfirm.textContent = addCommas(data.data[1].confirmed);
+   akCaseDeath.textContent = addCommas(data.data[1].deaths); 
    akCaseRecent.textContent = data.data[1].date;
    asCaseConfirm.textContent = 0
    asCaseDeath.textContent = 0 
@@ -424,8 +424,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    wiCaseConfirm.textContent = data.data[56].confirmed;
    wiCaseDeath.textContent = data.data[56].deaths;
    wiCaseRecent.textContent = data.data[56].date;
-   wyCaseConfirm.textContent = data.data[57].confirmed;
-   wyCaseDeath.textContent = data.data[57].deaths;
+   wyCaseConfirm.textContent = addCommas(data.data[57].confirmed);
+   wyCaseDeath.textContent = addCommas(data.data[57].deaths);
    wyCaseRecent.textContent = data.data[57].date;     
   });   
 
@@ -435,13 +435,13 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
-   usCaseConfirm.textContent = addCommas(data[400].cases);
-   usCaseDeath.textContent = addCommas(data[400].deaths); 
-   usCaseRecent.textContent = data[400].date;
+   usCaseConfirm.textContent = addCommas(data[401].cases);
+   usCaseDeath.textContent = addCommas(data[401].deaths); 
+   usCaseRecent.textContent = data[401].date;
   });
 
 //NY Count from New York Times
-  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/02-24-2021.csv").then(function(data) {
+  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/02-25-2021.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
@@ -614,11 +614,11 @@ const localapi2 = 'https://corona-api.com/countries/US';
    alCaseConfirm.textContent = addCommas(data[0].cases);
    alCaseDeath.textContent = addCommas(data[0].deaths);
    alCaseRecent.textContent = data[0].date;  
-   akCaseConfirm.textContent = data[1].cases;
-   akCaseDeath.textContent = data[1].deaths;
+   akCaseConfirm.textContent = addCommas(data[1].cases);
+   akCaseDeath.textContent = addCommas(data[1].deaths);
    akCaseRecent.textContent = data[1].date;   
-   azCaseConfirm.textContent = data[2].cases;
-   azCaseDeath.textContent = data[2].deaths;
+   azCaseConfirm.textContent = addCommas(data[2].cases);
+   azCaseDeath.textContent = addCommas(data[2].deaths);
    azCaseRecent.textContent = data[2].date;   
    asCaseConfirm.textContent = 0;
    asCaseDeath.textContent = 0;
