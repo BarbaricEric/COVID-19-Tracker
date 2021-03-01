@@ -15,7 +15,7 @@ function step1() {
   direction: 'alternate',
   loop: false,
   easing: 'spring(1, 80, 10, 0)', //'linear',
-  delay: 3000,  
+  delay: 5000,  
   duration: 8000  
 });
 }
