@@ -70,6 +70,11 @@ h3 {
  padding: 15px;
 }
 
+#searchBarJh {
+ width: 100%;
+ text-align: center;
+}
+
 .btn {
  background: var(--dark);
  color: var(--light);
