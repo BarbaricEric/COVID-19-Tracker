@@ -10,7 +10,7 @@ anime({
   ],
   direction: 'alternate',
   loop: false,
-  easing: 'spring(1, 80, 0, 0)', //'linear',
+  easing: 'spring(0, 80, 0, 0)', //'linear',
   delay: 5000,  
   duration: 8000  
 });
