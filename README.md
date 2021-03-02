@@ -1,5 +1,5 @@
 # COVID-19-Tracker
-# COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
+# COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (https://github.com/CSSEGISandData/COVID-19)
 DATA SOURCES: This list includes a complete list of all sources ever used in the data set, since January 21, 2010. Some sources listed here (e.g., WHO, ECDC, US CDC, BNO News) are not currently relied upon as a source of data.
 
 Aggregated data sources:
