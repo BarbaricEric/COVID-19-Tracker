@@ -106,8 +106,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     function update(selectedGroup) {
 
       // Create new data with the selection
-      var dataFilter = ({time, value}) => ({time: time, d[selectedGroup]: +value}))
-          //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+      var dataFilter = //({time, value}) => ({time: time, d[selectedGroup]: +value}))
+          data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
 
       // Give these new data to update line
       line
@@ -115,10 +115,10 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
           .transition()
           .duration(1000)
           .attr("d", d3.line()
-            .x(function(d) { return x(+time) })
-            .y(function(d) { return y(+value) })    
-            //.x(function(d) { return x(+d.time) })
-            //.y(function(d) { return y(+d.value) })
+            //.x(function(d) { return x(+time) })
+            //.y(function(d) { return y(+value) })    
+            .x(function(d) { return x(+d.time) })
+            .y(function(d) { return y(+d.value) })
           )
           .attr("stroke", function(d){ return myColor(selectedGroup) })
     }
