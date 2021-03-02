@@ -1,5 +1,7 @@
 # COVID-19-Tracker
-# New York Times Methodology and Definitions
+# John Hopkins University Covid Methodology
+# Covid Tracking Project Methodology
+# New York Times Methodology and Definitions (https://github.com/nytimes/covid-19-data)
 The data is the product of dozens of journalists working across several time zones to monitor news conferences, analyze data releases and seek clarification from public officials on how they categorize cases.
 
 It is also a response to a fragmented American public health system in which overwhelmed public servants at the state, county and territorial level have sometimes struggled to report information accurately, consistently and speedily. On several occasions, officials have corrected information hours or days after first reporting it. At times, cases have disappeared from a local government database, or officials have moved a patient first identified in one state or county to another, often with no explanation. In those instances, which have become more common as the number of cases has grown, our team has made every effort to update the data to reflect the most current, accurate information while ensuring that every known case is counted.
