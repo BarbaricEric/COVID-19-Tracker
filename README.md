@@ -1,7 +1,26 @@
 # COVID-19-Tracker
 # John Hopkins University Covid Methodology
-# Covid Tracking Project Methodology
-# New York Times Methodology and Definitions (https://github.com/nytimes/covid-19-data)
+# Covid Tracking Project Data Methodology (https://covidtracking.com/about-data/sources)
+Almost all of the data we compile is taken directly from the websites of state/territory public health authorities. When data is missing from these websites, we sometimes supplement available numbers with information from official state social media accounts or from press conferences with governors or other state authorities.
+
+Individual state/territory data pages such as Wyoming’s, all of which are accessible from our main data page, include a link at the top of the page to the “Data sources and screenshots” for that state as well as a link to the “Notes, data anomalies, and official cautions” page for that state.
+
+Wyoming overview links
+
+On the state’s sources and screenshots page, the “Primary” data source link is usually the state or territory’s public health department’s coronavirus-specific response page, and additional data sources are usually coronavirus-specific data dashboards or public health department web pages. We are careful to make sure that we collect data from official state/territory sources. We began capturing timestamped images of our data source pages on March 14, 2020, and these screenshots are also available on each state’s sources and screenshots page.
+
+Wyoming sources and screenshots
+
+We discuss anomalies, ambiguities, warnings, and methodological changes for each state’s data on each state’s notes page. If you notice anything odd about a state’s data, this is the first place to look for an explanation.
+
+Wyoming notes page
+
+As we note in our FAQ, there are several reasons why The COVID Tracking Project data might not match the visible data on a state’s dashboard, including the presence of hidden data that we retrieve with a machine query, different data definitions, and time lag.
+
+To find the precise source of a particular data point, please refer to our public spreadsheet of source notes.
+Read our article ”How We Source Our Data and Why It Matters” for more information.
+
+# New York Times Data Methodology and Definitions (https://github.com/nytimes/covid-19-data)
 The data is the product of dozens of journalists working across several time zones to monitor news conferences, analyze data releases and seek clarification from public officials on how they categorize cases.
 
 It is also a response to a fragmented American public health system in which overwhelmed public servants at the state, county and territorial level have sometimes struggled to report information accurately, consistently and speedily. On several occasions, officials have corrected information hours or days after first reporting it. At times, cases have disappeared from a local government database, or officials have moved a patient first identified in one state or county to another, often with no explanation. In those instances, which have become more common as the number of cases has grown, our team has made every effort to update the data to reflect the most current, accurate information while ensuring that every known case is counted.
