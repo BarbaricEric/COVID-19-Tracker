@@ -1,7 +1,7 @@
 const browserSupport = document.querySelector('.banner-support');
 
 //Browser Support Banner
-//setTimeout(() => {browserSupport.style.display = 'none';}, 8.0*1000);
+/*setTimeout(() => {browserSupport.style.display = 'none';}, 8.0*1000);
 anime({
   targets: browserSupport,
     keyframes: [
@@ -13,7 +13,28 @@ anime({
   easing: 'cubicBezier(.5, .05, .1, .3)',//'spring(1, 80, 10, 0)', //'linear',
   delay: 5000,  
   duration: 8000  
+}); */
+
+function logFinished() {
+  anime.set(browserSupport, {display: 'none'});
+}
+
+var animation = anime.timeline({
+  targets: browserSupport,
+  delay: 4000,
+  duration: 5000,
+  endDelay: 4000,
+  easing: 'easeInOutSine',
+  update: function(anim) {
+    console.log("Test");
+  }
+}).add({
+  translateY: -200
+}).add({
+  translateY: 200
 });
+
+animation.finished.then(logFinished);
 
 if (document.documentElement.clientWidth < 900) { 
     const viewport = document.querySelector("meta[name=viewport]");
