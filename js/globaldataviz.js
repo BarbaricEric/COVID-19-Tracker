@@ -1,4 +1,4 @@
-const svg = d3.select(DOM.svg(width, height))
+/* const svg = d3.select(DOM.svg(width, height))
       .style("-webkit-tap-highlight-color", "transparent")
       .style("overflow", "visible");
 
@@ -28,7 +28,7 @@ const svg = d3.select(DOM.svg(width, height))
 ${formatDate(date)}`);
   });
 
-  svg.on("touchend mouseleave", () => tooltip.call(callout, null));
+  svg.on("touchend mouseleave", () => tooltip.call(callout, null)); */
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 100, bottom: 30, left: 30},
