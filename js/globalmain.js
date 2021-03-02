@@ -22,7 +22,7 @@ function logFinished() {
 var animation = anime.timeline({
   targets: browserSupport,
   delay: 4000,
-  duration: 5000,
+  duration: 3000,
   endDelay: 4000,
   easing: 'easeInOutSine',
   update: function(anim) {
