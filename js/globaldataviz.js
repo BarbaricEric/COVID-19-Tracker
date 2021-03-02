@@ -85,9 +85,9 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
       .attr("x", (width / 2))             
       .attr("y", 0 - (margin.top / 2))
       .attr("text-anchor", "middle")  
-      .style("font-size", "0px") 
+      .style("font-size", "30px") 
       .style("text-decoration", "underline")  
-      .text("Test");
+      .text("D3 Test");
 
     // Initialize line with group a
     var line = svg
@@ -105,8 +105,9 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     // A function that update the chart
     function update(selectedGroup) {
 
-      // Create new data with the selection?
-      var dataFilter = data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+      // Create new data with the selection
+      var dataFilter = ({time, value}) => ({time: time, d[selectedGroup]: +value}))
+          //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
 
       // Give these new data to update line
       line
@@ -114,8 +115,10 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
           .transition()
           .duration(1000)
           .attr("d", d3.line()
-            .x(function(d) { return x(+d.time) })
-            .y(function(d) { return y(+d.value) })
+            .x(function(d) { return x(+time) })
+            .y(function(d) { return y(+value) })    
+            //.x(function(d) { return x(+d.time) })
+            //.y(function(d) { return y(+d.value) })
           )
           .attr("stroke", function(d){ return myColor(selectedGroup) })
     }
