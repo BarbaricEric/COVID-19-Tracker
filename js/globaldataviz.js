@@ -32,8 +32,8 @@ ${formatDate(date)}`);
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 100, bottom: 30, left: 30},
-    width = 460 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    width = 660 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#test")
@@ -83,7 +83,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     var title = svg
       .append("text")
       .attr("x", (width / 2))   
-      .attr("y", margin.top)
+      .attr("y", 0)
       //.attr("y", 0 - (margin.top / 2))
       .attr("text-anchor", "middle")  
       .style("font-size", "30px") 
