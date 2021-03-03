@@ -38,8 +38,22 @@ h3 {
 }
 
 /* Select Options*/
-.select:focus {
+select:focus {
   border-color: blue;
+}
+
+fieldset {
+  padding: 10px;
+  border-color: #0303ff;
+}
+
+.autocompare {
+  width: 40%
+}
+
+#selectButton {
+  width: 57%;
+  text-align: center;
 }
 
 .select .header select {
