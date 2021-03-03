@@ -82,8 +82,9 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     //Add Title
     var title = svg
       .append("text")
-      .attr("x", (width / 2))             
-      .attr("y", 0 - (margin.top / 2))
+      .attr("x", (width / 2))   
+      .attr("y", margin.top)
+      //.attr("y", 0 - (margin.top / 2))
       .attr("text-anchor", "middle")  
       .style("font-size", "30px") 
       .style("text-decoration", "underline")  
