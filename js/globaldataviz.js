@@ -30,7 +30,7 @@ ${formatDate(date)}`);
 
   svg.on("touchend mouseleave", () => tooltip.call(callout, null)); */
 
-// set the dimensions and margins of the graph
+// set the dimensions and margins of the first graph
 var margin = {top: 10, right: 100, bottom: 30, left: 30},
     width = 660 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
@@ -96,8 +96,10 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
       .append("path")
         .datum(data)
         .attr("d", d3.line()
-          .x(function(d) { return x(+d.time) })
-          .y(function(d) { return y(+d.valueA) })
+          //.x(function(d) { return x(+d.time) })
+          //.y(function(d) { return y(+d.valueA) })
+          .x(d => x(+d.time))
+          .y(d => y(+d.valueA))    
         )
         .attr("stroke", function(d){ return myColor("valueA") })
         .style("stroke-width", 4)
@@ -107,8 +109,9 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     function update(selectedGroup) {
 
       // Create new data with the selection
-      var dataFilter = //({time, value}) => ({time: time, d[selectedGroup]: +value}))
-          data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+      var dataFilter = 
+          //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+          data.map(d => ({time: d.time, value: d[selectedGroup]}))
 
       // Give these new data to update line
       line
@@ -131,6 +134,93 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
         // run the updateChart function with this selected option
         update(selectedOption)
     })
+
+})
+
+// set the dimensions and margins of the second graph
+var margin2 = {top: 10, right: 100, bottom: 30, left: 30},
+    width2 = 660 - margin2.left - margin2.right,
+    height2 = 600 - margin2.top - margin2.bottom;
+
+// append the svg object to the body of the page
+var svg2 = d3.select("#test2")
+  .append("svg")
+    .attr("width", width2 + margin2.left + margin2.right)
+    .attr("height", height2 + margin2.top + margin2.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin2.left + "," + margin2.top + ")");
+
+//Read the data
+d3.csvParse("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/alphabet.csv", 
+       ({letter, frequency}) => ({name: letter, value: +frequency}), function(data) {
+
+    // Add X axis 
+    const x = d3.scaleBand()
+    .domain(data.map(d => d.name))
+    .range([margin2.left, width2 - margin2.right])
+    .padding(0.1)
+
+    // Add Y axis
+    const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.value)]).nice()
+    .range([height2 - margin2.bottom, margin2.top])
+    
+    const xAxis = g => g
+    .attr("transform", `translate(0,${height2 - margin2.bottom})`)
+    .call(d3.axisBottom(x).tickSizeOuter(0))
+    
+    const yAxis = g => g
+    .attr("transform", `translate(${margin2.left},0)`)
+    .call(d3.axisLeft(y))
+    .call(g => g.select(".domain").remove())
+      
+    //Add Title
+    var title = svg2
+      .append("text")
+      .attr("x", (width2 / 2))   
+      .attr("y", margin2.top)
+      //.attr("y", 0 - (margin.top / 2))
+      .attr("text-anchor", "middle")  
+      .style("font-size", "30px") 
+      .style("text-decoration", "underline")  
+      .text("D3 Test2");
+      
+      const gx = svg2.append("g")
+      .call(xAxis);
+  
+      const gy = svg2.append("g")
+      .call(yAxis);
+
+    // Initialize Second Graph
+      const bar = svg2.append("g")
+            .attr("fill", "steelblue")
+      .selectAll("rect")
+      .data(data)
+      .join("rect")
+            .style("mix-blend-mode", "multiply")
+            .attr("x", d => x(d.name))
+            .attr("y", d => y(d.value))
+            .attr("height", d => y(0) - y(d.value))
+            .attr("width", x.bandwidth());
+      
+    function update(order) {
+      x.domain(data.sort(order).map(d => d.name));
+
+      const t = svg2.transition()
+          .duration(750);
+
+      bar.data(data, d => d.name)
+          .order()
+        .transition(t)
+          .delay((d, i) => i * 20)
+          .attr("x", d => x(d.name));
+
+      gx.transition(t)
+          .call(xAxis)
+        .selectAll(".tick")
+          .delay((d, i) => i * 20);
+    }
 
 })
 
