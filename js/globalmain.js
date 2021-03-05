@@ -24,10 +24,7 @@ var animation = anime.timeline({
   delay: 4000,
   duration: 3000,
   endDelay: 4000,
-  easing: 'easeInOutSine',
-  update: function(anim) {
-    console.log("Test");
-  }
+  easing: 'easeInOutSine'
 }).add({
   translateY: -200
 }).add({
