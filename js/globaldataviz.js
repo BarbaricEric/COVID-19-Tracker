@@ -89,6 +89,39 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
       .style("font-size", "30px") 
       .style("text-decoration", "underline")  
       .text("D3 Test");
+      
+      // create a tooltip
+  var Tooltip = d3.select("#test")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "2px")
+    .style("border-radius", "5px")
+    .style("padding", "5px")
+
+  // Three function that change the tooltip when user hover / move / leave 
+  var mouseover = function(d) {
+    Tooltip
+      .style("opacity", 1)
+    d3.select(this)
+      .style("stroke", "black")
+      .style("opacity", 1)
+  }
+  var mousemove = function(d) {
+    Tooltip
+      .html("The exact value of<br>this point is: " + d.value + "<br>" + d.time)
+      .style("left", (d3.mouse(this)[0]+70) + "px")
+      .style("top", (d3.mouse(this)[1]) + "px")
+  }
+  var mouseleave = function(d) {
+    Tooltip
+      .style("opacity", 0)
+    d3.select(this)
+      .style("stroke", "none")
+      .style("opacity", 0.8)
+  }
 
     // Initialize line with group a
     var line = svg
@@ -119,13 +152,17 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
           .datum(dataFilter)
           .transition()
           .duration(1000)
-          .attr("d", d3.line()
-            //.x(function(d) { return x(+time) })
-            //.y(function(d) { return y(+value) })    
-            .x(function(d) { return x(+d.time) })
-            .y(function(d) { return y(+d.value) })
+          .attr("d", d3.line()    
+            //.x(function(d) { return x(+d.time) })
+            //.y(function(d) { return y(+d.value) })
+            .x(d => x(+d.time))
+            .y(d => y(+d.value))
+            .curve(d3.curveMonotoneX)    
           )
           .attr("stroke", function(d){ return myColor(selectedGroup) })
+          .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave)
     }
 
     // When the button is changed, run the updateChart function
@@ -137,7 +174,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     })
 
 })
-
+/*
 // set the dimensions and margins of the second graph
 var margin2 = {top: 10, right: 100, bottom: 30, left: 30},
     width2 = 660 - margin2.left - margin2.right,
