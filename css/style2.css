@@ -39,7 +39,7 @@ h3 {
 
 /* Select Options*/
 select:focus {
-  border-color: blue;
+  border-color: #969696;
 }
 
 fieldset {
