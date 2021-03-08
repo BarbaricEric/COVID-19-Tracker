@@ -34,14 +34,21 @@ var animation = anime.timeline({
 animation.finished.then(logFinished);
 
 if (document.documentElement.clientWidth < 900) { 
-    const viewport = document.querySelector("meta[name=viewport]");
-    viewport.setAttribute('content', 'width=device-width, height=device-height, initial-scale=0.46, user-scalable=no');
- } else {
+    let viewport = document.querySelector("meta[name=viewport]");
+    let allowScale = true;
+    const content = allowScale?
+        'width=device-width, height=device-height, initial-scale=0.46, user-scalable=no':'width=device-width, height=device-height, user-scalable=yes';
+    viewport.setAttribute('content', content);
+ } else {    
   console.log('Error');
+  let viewport = document.querySelector("meta[name=viewport]"); 
+  let allowScale = false;
+  const content = allowScale?
+        'width=device-width, height=device-height, initial-scale=0.46, user-scalable=no':'width=device-width, height=device-height, user-scalable=yes';
+    viewport.setAttribute('content', content); 
  }
 
 
-//document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
 
 //https://stackoverflow.com/questions/21419404/setting-the-viewport-to-scale-to-fit-both-width-and-height
 //https://stackoverflow.com/questions/1248081/how-to-get-the-browser-viewport-dimensions
