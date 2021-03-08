@@ -35,7 +35,7 @@ animation.finished.then(logFinished);
 
 if (document.documentElement.clientWidth < 900) { 
     const viewport = document.querySelector("meta[name=viewport]");
-    viewport.setAttribute('content', 'width=device-width, height=device-height, initial-scale=0.50, user-scalable=no');
+    viewport.setAttribute('content', 'width=device-width, height=device-height, initial-scale=0.46, user-scalable=no');
  } else {
   console.log('Error');
  }
