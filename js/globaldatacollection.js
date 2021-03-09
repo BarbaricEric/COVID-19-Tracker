@@ -2216,7 +2216,11 @@ getCountryCountFromCovidApi();
     }
 
 function addCommaDecimal(x) {
-    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    if x == undefined || x == null {
+       let x = "Error";
+    } else {
+      return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    }   
 }
 
    const determineNull = input => input == undefined ? input = "NA" : input;
