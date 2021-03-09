@@ -111,7 +111,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   }
   var mousemove = function(d) {
     Tooltip
-      .html("The exact value of<br>this point is: " + d.value + "<br>" + d.time)
+      .html("The exact value of this point is:<br> " + d.value + "<br>" + d.time)
       .style("left", (d3.mouse(this)[0]+70) + "px")
       .style("top", (d3.mouse(this)[1]) + "px")
   }
@@ -152,15 +152,16 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
           .datum(dataFilter)
           .transition()
           .duration(1000)
+          .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave) 
           .attr("d", d3.line()    
             //.x(function(d) { return x(+d.time) })
             //.y(function(d) { return y(+d.value) })
             .x(d => x(+d.time))
             .y(d => y(+d.value))
             .curve(d3.curveMonotoneX)
-            .on("mouseover", mouseover)
-            .on("mousemove", mousemove)
-            .on("mouseleave", mouseleave)    
+   
           )
           .attr("stroke", function(d){ return myColor(selectedGroup) })
     }
