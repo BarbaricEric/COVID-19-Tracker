@@ -157,12 +157,12 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
             //.y(function(d) { return y(+d.value) })
             .x(d => x(+d.time))
             .y(d => y(+d.value))
-            .curve(d3.curveMonotoneX)    
+            .curve(d3.curveMonotoneX)
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)    
           )
           .attr("stroke", function(d){ return myColor(selectedGroup) })
-          .on("mouseover", mouseover)
-          .on("mousemove", mousemove)
-          .on("mouseleave", mouseleave)
     }
 
     // When the button is changed, run the updateChart function
