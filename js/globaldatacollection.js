@@ -2217,7 +2217,7 @@ getCountryCountFromCovidApi();
 
 function addCommaDecimal(x) {
     if (x == undefined || x == null) {
-       let x = "Error";
+      return x = "Error";
     } else {
       return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
     }   
