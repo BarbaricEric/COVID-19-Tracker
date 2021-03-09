@@ -31,7 +31,25 @@ body {
  font-family: 'Itim', Arial; 
 }
 
-/* Select Options */
+/* Select Options*/
+select:focus {
+  border-color: #969696;
+}
+
+fieldset {
+  padding: 10px;
+  border-color: #0303ff;
+}
+
+.autocompare {
+  width: 40%
+}
+
+#selectButton {
+  width: 57%;
+  text-align: center;
+}
+
 .select:focus {
   border-color: blue;
 }
