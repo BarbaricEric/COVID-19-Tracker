@@ -193,7 +193,7 @@ var svg2 = d3.select("#test2")
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
 
     // List of groups (here I have one group per column)
-    var allGroup = ["valueA", "valueB", "valueC"]
+    const allGroup = ["valueA", "valueB", "valueC"]
 
     // add the options to the button
     d3.select("#selectButton2")
@@ -205,12 +205,12 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
       .attr("value", function (d) { return d; }) // corresponding value returned by the button
 
     // A color scale: one color for each group
-    var myColor2 = d3.scaleOrdinal()
+    const myColor = d3.scaleOrdinal()
       .domain(allGroup)
       .range(d3.schemeSet2);
 
     // Add X axis --> it is a date format
-    var x2 = d3.scaleLinear()
+    const x = d3.scaleLinear()
       .domain([0,10])
       .range([ 0, width2 ]);
     svg2.append("g")
@@ -218,14 +218,14 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
       .call(d3.axisBottom(x));
 
     // Add Y axis
-    var y2 = d3.scaleLinear()
+    const y = d3.scaleLinear()
       .domain( [0,20])
       .range([ height2, 0 ]);
     svg2.append("g")
       .call(d3.axisLeft(y));
       
     //Add Title
-    var title2 = svg2
+    const title = svg2
       .append("text")
       .attr("x", (width2 / 2))   
       .attr("y", margin2.top)
@@ -236,7 +236,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
       .text("D3 Test2");
       
     // Initialize line with group a
-    var line2 = svg2
+    const line = svg2
       .append('g')
       .append("path")
         .datum(data)
@@ -255,12 +255,12 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     function update(selectedGroup) {
 
       // Create new data with the selection
-      var dataFilter = 
+      const dataFilter = 
           //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
           data.map(d => ({time: d.time, value: d[selectedGroup]}))
 
       // Give these new data to update line
-      line2
+      line
           .datum(dataFilter)
           .transition()
           .duration(1000)
@@ -277,7 +277,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     // When the button is changed, run the updateChart function
     d3.select("#selectButton2").on("change", function(d) {
         // recover the option that has been chosen
-        var selectedOption = d3.select(this).property("value")
+        const selectedOption = d3.select(this).property("value")
         // run the updateChart function with this selected option
         update(selectedOption)
     })
