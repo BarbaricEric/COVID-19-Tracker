@@ -15,7 +15,7 @@ const localapi1 = 'https://api.covidtracking.com/v1/us/current.json';
 const localapi2 = 'https://corona-api.com/countries/US';
 
 //US Count from covid19-api.org      
-   fetch('https://covid19-api.org/api/status/US')
+   fetch(globalapi2)
   .then(response => {
    return response.json();
   })
@@ -29,39 +29,15 @@ const localapi2 = 'https://corona-api.com/countries/US';
    };
    const date = new Date();
    const datea = new Intl.DateTimeFormat('default', options).format(date)   
-   usCaseDeath.textContent = addCommas(data.deaths) + ' as of ' + datea;   
-   usCaseConfirm.textContent = addCommas(data.cases) + ' as of ' + datea;   
+   usCaseDeath.textContent = addCommas(data.Countries[181].TotalDeaths) + ' as of ' + datea;   
+   usCaseConfirm.textContent = addCommas(data.Countries[181].TotalConfirmed) + ' as of ' + datea;   
    /*usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4); 
    usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4);
    data.last_update.toString().substring(0, 10).replace(/-{1,}/g, '/') => year/month/day*/;   
   });     
-
-//US Count from about-corona
-   fetch(localapi2)
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);   
-   const { deaths, confirmed } = data.data.latest_data;
-   /*Set DOM element from API
-   usCaseDeath.textContent = deaths;
-   usCaseConfirm.textContent = confirmed;*/
-   });      
-     
-//US and Global Count from covid19api      
-   fetch(globalapi2)
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
-   /*usCaseDeath.textContent = data.Countries[182].TotalDeaths + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + '\n at 12:00 AM PST';
-   usCaseConfirm.textContent = data.Countries[182].TotalConfirmed + ' as of ' + data.Countries[182].Date.toString().substring(0, 10) + '\n  at 12:00 AM PST';*/      
-   });
-
+         
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-03-09&iso=USA')
+   fetch('https://covid-api.com/api/reports?date=2021-03-10&iso=USA')
   .then(response => {
    return response.json();
   })
@@ -435,13 +411,13 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
-   usCaseConfirm.textContent = addCommas(data[413].cases);
-   usCaseDeath.textContent = addCommas(data[413].deaths); 
-   usCaseRecent.textContent = data[413].date;
+   usCaseConfirm.textContent = addCommas(data[414].cases);
+   usCaseDeath.textContent = addCommas(data[414].deaths); 
+   usCaseRecent.textContent = data[414].date;
   });
 
 //NY Count from New York Times
-  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/03-09-2021.csv").then(function(data) {
+  d3.csv("./nytimes_covid_19_data/nytimes_daily_reports/03-10-2021.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
