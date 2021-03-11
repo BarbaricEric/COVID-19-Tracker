@@ -283,6 +283,103 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     })
 
 })
+
+// set the dimensions and margins of the third graph
+var margin3 = {top: 20, right: 20, bottom: 30, left: 50},
+    width3 = 960 - margin3.left - margin3.right,
+    height3 = 500 - margin3.top - margin3.bottom;
+
+// parse the date / time
+var parseTime = d3.timeParse("%d-%b-%y");
+var formatTime = d3.timeFormat("%e %B");
+
+// set the ranges
+var x3 = d3.scaleTime().range([0, width3]);
+var y3 = d3.scaleLinear().range([height3, 0]);
+
+// define the line
+var valueline = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.close); });
+    .attr("stroke", "red")
+    .style("stroke-width", 4)
+    .style("fill", "none")  
+
+var div3 = d3.select("#test3").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+// append the svg obgect to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg3 = d3.select("#test3").append("svg")
+    .attr("width", width3 + margin3.left + margin3.right)
+    .attr("height", height3 + margin3.top + margin3.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin3.left + "," + margin3.top + ")");
+
+// Get the data
+d3.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data.csv").then(function(data) {
+
+  // format the data
+  data.forEach(function(d) {
+      d.date = parseTime(d.date);
+      d.close = +d.close;
+  });
+
+  // scale the range of the data
+  x3.domain(d3.extent(data, function(d) { return d.date; }));
+  y3.domain([0, d3.max(data, function(d) { return d.close; })]);
+      
+  //Add Title
+    const title = svg3
+      .append("text")
+      .attr("x", (width3 / 2))   
+      .attr("y", margin3.top)
+      .attr("text-anchor", "middle")  
+      .style("font-size", "30px") 
+      .style("text-decoration", "underline")  
+      .text("D3 Test3");    
+
+  // add the valueline path.
+  svg3.append("path")
+     .data([data])
+     .attr("class", "line")
+     .attr("d", valueline);
+
+  // add the dots with tooltips
+  svg3.selectAll("dot")
+     .data(data)
+   .enter().append("circle")
+     .attr("r", 5)
+     .attr("cx", function(d) { return x(d.date); })
+     .attr("cy", function(d) { return y(d.close); })
+     .on("mouseover", function(event,d) {
+       div3.transition()
+         .duration(200)
+         .style("opacity", .9);
+       div3.html(formatTime(d.date) + "<br/>" + d.close)
+         .style("left", (event.pageX) + "px")
+         .style("top", (event.pageY - 28) + "px");
+       })
+     .on("mouseout", function(d) {
+       div3.transition()
+         .duration(500)
+         .style("opacity", 0);
+       });
+
+  // add the X Axis
+  svg3.append("g")
+      .attr("transform", "translate(0," + height3 + ")")
+      .call(d3.axisBottom(x));
+
+  // add the Y Axis
+  svg3.append("g")
+      .call(d3.axisLeft(y));
+
+});
+
 /*
 // set the dimensions and margins of the example graph
 var margin2 = {top: 10, right: 100, bottom: 30, left: 30},
