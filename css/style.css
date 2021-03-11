@@ -36,6 +36,10 @@ select:focus {
   border-color: #969696;
 }
 
+.searchBar {
+ width: 100%;
+}
+
 fieldset {
   padding: 10px;
   border-color: #0303ff;
@@ -45,7 +49,7 @@ fieldset {
   width: 40%
 }
 
-#selectButton {
+select {
   width: 57%;
   text-align: center;
 }
