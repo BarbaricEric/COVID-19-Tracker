@@ -301,10 +301,7 @@ var y3 = d3.scaleLinear().range([height3, 0]);
 var valueline = d3.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.close); });
-    .attr("stroke", "red")
-    .style("stroke-width", 4)
-    .style("fill", "none")  
-
+ 
 var div3 = d3.select("#test3").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
@@ -346,7 +343,10 @@ d3.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/j
   svg3.append("path")
      .data([data])
      .attr("class", "line")
-     .attr("d", valueline);
+     .attr("d", valueline)
+     .attr("stroke", "red")
+     .style("stroke-width", 4)
+     .style("fill", "none");
 
   // add the dots with tooltips
   svg3.selectAll("dot")
