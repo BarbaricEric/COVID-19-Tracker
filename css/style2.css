@@ -51,7 +51,7 @@ fieldset {
   width: 40%
 }
 
-#selectButton {
+#selectButton, #selectButton2 {
   width: 57%;
   text-align: center;
 }
