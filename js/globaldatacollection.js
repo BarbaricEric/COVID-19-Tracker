@@ -26,8 +26,8 @@ const globalapi2 = 'https://api.covid19api.com/summary';
    console.log(data);
    });
 
-//Global Count from covid19-api.org      
-   fetch('https://covid19-api.org/api/timeline')
+//Global Count from covid19-api.org ('https://covid19-api.org/api/timeline')
+   fetch(globalapi2)
   .then(response => {
    return response.json();
   })
@@ -41,8 +41,8 @@ const globalapi2 = 'https://api.covid19api.com/summary';
    };
    const date = new Date();
    const datea = new Intl.DateTimeFormat('default', options).format(date);    
-   usCaseConfirmJh.textContent = addCommaDecimal(data[0].total_cases) + ' as of ' + datea;
-   usCaseDeathJh.textContent = addCommaDecimal(data[0].total_deaths) + ' as of ' + datea;   
+   usCaseConfirmJh.textContent = addCommaDecimal(data.Global.TotalConfirmed) + ' as of ' + datea;
+   usCaseDeathJh.textContent = addCommaDecimal(data.Global.TotalDeaths) + ' as of ' + datea;   
    /*
    const birthday = new Date();
    const date1 = birthday.getDate();
@@ -63,14 +63,14 @@ const globalapi2 = 'https://api.covid19api.com/summary';
    });
 
 async function getCountryCountFromCovidApi() {
- await fetch('https://covid19-api.org/api/status/us').then(response => response.json())
+ await fetch(globalapi2).then(response => response.json())
   .then(data => {
    const usCaseConfirm = document.querySelector('.usCaseConfirm');
    const usCaseDeath = document.querySelector('.usCaseDeath');
    const usDate = document.querySelector('.usDate');
-   usCaseConfirm.textContent = addComma(data.cases);
-   usCaseDeath.textContent = addComma(data.deaths);
-   usDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+   usCaseConfirm.textContent = addComma(data.Countries[181].TotalConfirmed);
+   usCaseDeath.textContent = addComma(data.Countries[181].TotalDeaths);
+   usDate.textContent = new Date(data.Countries[181].Date).toString().substring(0,15); 
   });
  
   await fetch('https://covid19-api.org/api/status/in').then(response => response.json())
