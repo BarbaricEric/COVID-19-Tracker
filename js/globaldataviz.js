@@ -317,7 +317,7 @@ var svg3 = d3.select("#test3").append("svg")
           "translate(" + margin3.left + "," + margin3.top + ")");
 
 // Get the data
-d3.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data.csv").then(function(data) {
+d3.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data.csv", function(data) {
 
   // format the data
   data.forEach(function(d) {
