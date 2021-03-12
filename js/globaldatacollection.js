@@ -70,69 +70,45 @@ async function getCountryCountFromCovidApi() {
    const usDate = document.querySelector('.usDate');
    usCaseConfirm.textContent = addComma(data.Countries[181].TotalConfirmed);
    usCaseDeath.textContent = addComma(data.Countries[181].TotalDeaths);
-   usDate.textContent = new Date(data.Countries[181].Date).toString().substring(0,15); 
-  });
- 
-  await fetch('https://covid19-api.org/api/status/in').then(response => response.json())
-  .then(data => {
+   usDate.textContent = new Date(data.Countries[181].Date).toString().substring(0,15);
    const inCaseConfirm = document.querySelector('.inCaseConfirm');
    const inCaseDeath = document.querySelector('.inCaseDeath');
    const inDate = document.querySelector(".inDate");
-   inCaseConfirm.textContent = addCommaDecimal(data.cases);
-   inCaseDeath.textContent = addCommaDecimal(data.deaths);
-   inDate.textContent = new Date(data.last_update).toString().substring(0,15);
-  });
-   
- await fetch('https://covid19-api.org/api/status/af').then(response => response.json())
-  .then(data => {
+   inCaseConfirm.textContent = addCommaDecimal(data.Countries[76].TotalConfirmed);
+   inCaseDeath.textContent = addCommaDecimal(data.Countries[76].TotalDeaths);
+   inDate.textContent = new Date(data.Countries[76].Date).toString().substring(0,15);
    const afCaseConfirm = document.querySelector('.afCaseConfirm');
    const afCaseDeath = document.querySelector('.afCaseDeath');
    const afDate = document.querySelector('.afDate');
-   afCaseConfirm.textContent = addCommaDecimal(data.cases);
-   afCaseDeath.textContent = addCommaDecimal(data.deaths);
-   afDate.textContent = new Date(data.last_update).toString().substring(0,15); 
-  });
-   
- await fetch('https://covid19-api.org/api/status/al').then(response => response.json())
-  .then(data => {
+   afCaseConfirm.textContent = addCommaDecimal(data.Countries[0].TotalConfirmed);
+   afCaseDeath.textContent = addCommaDecimal(data.Countries[0].TotalDeaths);
+   afDate.textContent = new Date(data.Countries[0].Date).toString().substring(0,15);  
    const alCaseConfirm = document.querySelector('.alCaseConfirm');
    const alCaseDeath = document.querySelector('.alCaseDeath');
    const alDate = document.querySelector('.alDate');
-   alCaseConfirm.textContent = addCommaDecimal(data.cases);
-   alCaseDeath.textContent = addCommaDecimal(data.deaths);
-   alDate.textContent = new Date(data.last_update).toString().substring(0,15); 
-  });
-      
- await fetch('https://covid19-api.org/api/status/dz').then(response => response.json())
-  .then(data => {
+   alCaseConfirm.textContent = addCommaDecimal(data.Countries[1].TotalConfirmed);
+   alCaseDeath.textContent = addCommaDecimal(data.Countries[1].TotalDeaths);
+   alDate.textContent = new Date(data.Countries[1].Date).toString().substring(0,15);
    const dzCaseConfirm = document.querySelector('.dzCaseConfirm');
    const dzCaseDeath = document.querySelector('.dzCaseDeath');
    const dzDate = document.querySelector('.dzDate');
-   dzCaseConfirm.textContent = addCommaDecimal(data.cases);
-   dzCaseDeath.textContent = addCommaDecimal(data.deaths);
-   dzDate.textContent = new Date(data.last_update).toString().substring(0,15); 
-  });
-      
- await fetch('https://covid19-api.org/api/status/ad').then(response => response.json())
-  .then(data => {
+   dzCaseConfirm.textContent = addCommaDecimal(data.Countries[2].TotalConfirmed);
+   dzCaseDeath.textContent = addCommaDecimal(data.Countries[2].TotalDeaths);
+   dzDate.textContent = new Date(data.Countries[2].Date).toString().substring(0,15);
    const adCaseConfirm = document.querySelector('.adCaseConfirm');
    const adCaseDeath = document.querySelector('.adCaseDeath');
    const adDate = document.querySelector('.adDate');
-   adCaseConfirm.textContent = addCommaDecimal(data.cases);
-   adCaseDeath.textContent = addCommaDecimal(data.deaths);
-   adDate.textContent = new Date(data.last_update).toString().substring(0,15); 
-  });
-      
- await fetch('https://covid19-api.org/api/status/ao').then(response => response.json())
-  .then(data => {
+   adCaseConfirm.textContent = addCommaDecimal(data.Countries[3].TotalConfirmed);
+   adCaseDeath.textContent = addCommaDecimal(data.Countries[3].TotalDeaths);
+   adDate.textContent = new Date(data.Countries[3].Date).toString().substring(0,15);
    const aoCaseConfirm = document.querySelector('.aoCaseConfirm');
    const aoCaseDeath = document.querySelector('.aoCaseDeath');
    const aoDate = document.querySelector('.aoDate');
-   aoCaseConfirm.textContent = addCommaDecimal(data.cases);
-   aoCaseDeath.textContent = addCommaDecimal(data.deaths);
-   aoDate.textContent = new Date(data.last_update).toString().substring(0,15); 
+   aoCaseConfirm.textContent = addCommaDecimal(data.Countries[4].TotalConfirmed);
+   aoCaseDeath.textContent = addCommaDecimal(data.Countries[4].TotalDeaths);
+   aoDate.textContent = new Date(data.Countries[4].Date).toString().substring(0,15);  
   });
-      
+            
  await fetch('https://covid19-api.org/api/status/ag').then(response => response.json())
   .then(data => {
    const agCaseConfirm = document.querySelector('.agCaseConfirm');
