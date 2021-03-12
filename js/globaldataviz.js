@@ -299,8 +299,8 @@ var y3 = d3.scaleLinear().range([height3, 0]);
 
 // define the line
 var valueline = d3.line()
-    .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.close); });
+    .x(function(d) { return x3(d.date); })
+    .y(function(d) { return y3(d.close); });
  
 var div3 = d3.select("#test3").append("div")
     .attr("class", "tooltip")
@@ -353,8 +353,8 @@ d3.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/j
      .data(data)
    .enter().append("circle")
      .attr("r", 5)
-     .attr("cx", function(d) { return x(d.date); })
-     .attr("cy", function(d) { return y(d.close); })
+     .attr("cx", function(d) { return x3(d.date); })
+     .attr("cy", function(d) { return y3(d.close); })
      .on("mouseover", function(event,d) {
        div3.transition()
          .duration(200)
@@ -372,11 +372,11 @@ d3.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/j
   // add the X Axis
   svg3.append("g")
       .attr("transform", "translate(0," + height3 + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x3));
 
   // add the Y Axis
   svg3.append("g")
-      .call(d3.axisLeft(y));
+      .call(d3.axisLeft(y3));
 
 });
 
