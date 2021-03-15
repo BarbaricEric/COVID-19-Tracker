@@ -7117,7 +7117,7 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
 <script defer src="js/swiperaction.js"></script>
-<script defer src="js/main.js"></script>
+<script defer src="js/newsmain.js"></script>
 <script src="js/anime.min.js"></script>
 <script>
   //DOM Elements
@@ -7125,13 +7125,13 @@ const usCaseDeath = document.querySelector(".us-case-death");
 const usCaseConfirm = document.querySelector(".us-case-confirmed"); 
 
 //Define API
-const globalapi1 = 'https://corona-api.com/countries';
 const globalapi2 = 'https://api.covid19api.com/summary';
-const localapi1 = 'https://api.covidtracking.com/v1/us/current.json';
-const localapi2 = 'https://corona-api.com/countries/US';
 
 //US Count from covid19-api.org      
-   fetch(globalapi2)
+  fetch(globalapi2, {
+  method: 'GET',
+  credentials: 'include'
+})
   .then(response => {
    return response.json();
   })
