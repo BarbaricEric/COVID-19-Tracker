@@ -27,7 +27,10 @@ const globalapi2 = 'https://api.covid19api.com/summary';
    });
 
 //Global Count from covid19-api.org ('https://covid19-api.org/api/timeline')
-   fetch(globalapi2)
+  fetch(globalapi2, {
+  method: 'GET',
+  credentials: 'include'
+})
   .then(response => {
    return response.json();
   })
@@ -63,7 +66,10 @@ const globalapi2 = 'https://api.covid19api.com/summary';
    });
 
 async function getCountryCountFromCovidApi() {
- await fetch(globalapi2).then(response => response.json())
+ await fetch(globalapi2, {
+  method: 'GET',
+  credentials: 'include'
+}).then(response => response.json())
   .then(data => {
    const usCaseConfirm = document.querySelector('.usCaseConfirm');
    const usCaseDeath = document.querySelector('.usCaseDeath');
