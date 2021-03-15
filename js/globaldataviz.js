@@ -291,7 +291,7 @@ var margin3 = {top: 20, right: 20, bottom: 30, left: 50},
 
 // parse the date / time
 var parseTime = d3v6.timeParse("%d-%b-%y");
-var formatTime = d3v6.timeFormat("%B %d, %Y");
+var formatTime = d3v6.timeFormat("%B %e, %Y");
 
 // set the ranges
 var x3 = d3v6.scaleTime().range([0, width3]);
@@ -363,7 +363,7 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
          .style("opacity", .9);
        div3.html(formatTime(d.date) + "<br/>" + d.close)
          .style("left", (event.pageX) + "px")
-         .style("top", (event.pageY - 28) + "px");
+         .style("top", (event.pageY - 58) + "px");
        })
      .on("mouseout", function(d) {
        div3.transition()
