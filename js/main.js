@@ -26,7 +26,7 @@ function step1() {
 		var openMenu = function () {
 			swiper.slidePrev();
 		};
-		var swiper = new Swiper('.swiper-container', {
+		var swiper = new Swiper('.swiper-container-news', {
 			slidesPerView: 'auto',
 			initialSlide: 1,
 			resistanceRatio: 0,
