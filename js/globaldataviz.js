@@ -291,7 +291,7 @@ var margin3 = {top: 20, right: 20, bottom: 30, left: 50},
 
 // parse the date / time
 var parseTime = d3v6.timeParse("%d-%b-%y");
-var formatTime = d3v6.timeFormat("%e %B");
+var formatTime = d3v6.timeFormat("%B %d, %Y");
 
 // set the ranges
 var x3 = d3v6.scaleTime().range([0, width3]);
@@ -305,6 +305,8 @@ var valueline = d3v6.line()
 var div3 = d3v6.select("#test3").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
+
+const titleDiv = d3v6.select("#test3").append("div")
 
 // append the svg obgect to the body of the page
 // appends a 'group' element to 'svg'
@@ -330,7 +332,7 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
   y3.domain([0, d3v6.max(data, function(d) { return d.close; })]);
       
   //Add Title
-    const title = svg3
+    const title = titleDiv
       .append("text")
       .attr("x", (width3 / 2))   
       .attr("y", margin3.top)
@@ -344,7 +346,7 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
      .data([data])
      .attr("class", "line")
      .attr("d", valueline)
-     .attr("stroke", "red")
+     .attr("stroke", "steelblue")
      .style("stroke-width", 4)
      .style("fill", "none");
 
