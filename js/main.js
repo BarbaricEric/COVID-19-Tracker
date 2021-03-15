@@ -1,5 +1,6 @@
 const browserSupport = document.querySelector('.banner-support');
 const covidtrackinfo = document.querySelector('.covidtrackupdate');
+const covidnews = document.querySelector('.covidnews');
 
 //Browser Support Banner
 window.requestAnimationFrame(step1);
@@ -68,5 +69,10 @@ function logMouseOut() {
 
 covidtrackinfo.addEventListener('click', ()=>{
 	    const url = 'https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7';
+      const win = window.open(url, '_blank');
+})
+
+covidnews.addEventListener('click', ()=>{
+	    const url = 'https://barbariceric.github.io/COVID-19-Tracker/covidnews';
       const win = window.open(url, '_blank');
 })
