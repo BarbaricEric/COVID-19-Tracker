@@ -1,5 +1,9 @@
+//DOM Elements
+const usCaseDeathJh = document.querySelector(".us-testing-two");
+const usCaseConfirmJh = document.querySelector(".us-testing");
 const browserSupport = document.querySelector('.banner-support');
 const covidnews = document.querySelector('.covidnews');
+const globalapi2 = 'https://api.covid19api.com/summary';
 
 //Browser Support Banner
 window.requestAnimationFrame(step1);
@@ -63,3 +67,23 @@ function addCommas(x) {
       return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
     }   
 }
+
+//Global Count from covid19-api.org ('https://covid19-api.org/api/timeline')
+  fetch(globalapi2, {
+  method: 'GET',
+  credentials: 'include'
+})
+  .then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   options = {
+      year: 'numeric', month: 'numeric', day: 'numeric',
+      dayPeriod: 'short',
+      timeZone: 'America/Los_Angeles'
+   };
+   const date = new Date();
+   const datea = new Intl.DateTimeFormat('default', options).format(date);    
+   usCaseConfirmJh.textContent = addCommaDecimal(data.Global.TotalConfirmed) + ' as of ' + datea;
+   usCaseDeathJh.textContent = addCommaDecimal(data.Global.TotalDeaths) + ' as of ' + datea;
