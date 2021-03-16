@@ -2,7 +2,7 @@
 const usCaseDeathJh = document.querySelector(".us-testing-two");
 const usCaseConfirmJh = document.querySelector(".us-testing");
 
-//Define API
+//Define API (https://about-corona.net/documentation, https://covid19api.com/)
 const globalapi1 = 'https://corona-api.com/countries';
 const globalapi2 = 'https://api.covid19api.com/summary';
 
