@@ -38,6 +38,7 @@ select:focus {
 
 .searchBar {
  width: 100%;
+ text-align: center;
 }
 
 fieldset {
