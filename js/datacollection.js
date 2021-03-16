@@ -15,8 +15,16 @@ const localapi1 = 'https://api.covidtracking.com/v1/us/current.json';
 const localapi2 = 'https://corona-api.com/countries/US';
 
 //US Count from covid19-api.org      
-   fetch(globalapi2)
-  .then(response => {
+ fetch(globalapi2, {
+  method: 'GET',
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },   
+}).then(response => {
    return response.json();
   })
   .then(data => {
