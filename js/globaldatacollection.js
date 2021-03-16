@@ -29,7 +29,13 @@ const globalapi2 = 'https://api.covid19api.com/summary';
 //Global Count from covid19-api.org ('https://covid19-api.org/api/timeline')
   fetch(globalapi2, {
   method: 'GET',
-  credentials: 'include'
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },   
 })
   .then(response => {
    return response.json();
@@ -68,7 +74,13 @@ const globalapi2 = 'https://api.covid19api.com/summary';
 async function getCountryCountFromCovidApi() {
  await fetch(globalapi2, {
   method: 'GET',
-  credentials: 'include'
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },   
 }).then(response => response.json())
   .then(data => {
    const usCaseConfirm = document.querySelector('.usCaseConfirm');
