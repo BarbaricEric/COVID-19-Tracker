@@ -7138,11 +7138,16 @@ const usCaseConfirm = document.querySelector(".us-case-confirmed");
 const globalapi2 = 'https://api.covid19api.com/summary';
 
 //US Count from covid19-api.org      
-  fetch(globalapi2, {
+ fetch(globalapi2, {
   method: 'GET',
-  credentials: 'include'
-})
-  .then(response => {
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },   
+}).then(response => {
    return response.json();
   })
   .then(data => {
