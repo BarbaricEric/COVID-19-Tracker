@@ -413,6 +413,7 @@ updateBut.addEventListener('click', ()=>{
             .duration(750)
             .call(d3v6.axisLeft(y3));
 })
+})	
 
 
 /*
