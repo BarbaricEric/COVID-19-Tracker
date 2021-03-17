@@ -3,6 +3,8 @@ const usCaseDeathJh = document.querySelector(".us-testing-two");
 const usCaseConfirmJh = document.querySelector(".us-testing");
 const browserSupport = document.querySelector('.banner-support');
 const covidnews = document.querySelector('.covidnews');
+const usCaseDeath = document.querySelector(".us-case-death");
+const usCaseConfirm = document.querySelector(".us-case-confirmed"); 
 const globalapi2 = 'https://api.covid19api.com/summary';
 
 //Browser Support Banner
@@ -94,3 +96,30 @@ function addCommas(x) {
    usCaseConfirmJh.textContent = addCommas(data.Global.TotalConfirmed) + ' as of ' + datea;
    usCaseDeathJh.textContent = addCommas(data.Global.TotalDeaths) + ' as of ' + datea;
  });
+
+//US Count from covid19-api.org      
+ fetch(globalapi2, {
+  method: 'GET',
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },   
+}).then(response => {
+   return response.json();
+  })
+  .then(data => {
+   console.log(data);
+   options = {
+      year: 'numeric', month: 'numeric', day: 'numeric',
+      hour: 'numeric', minute: 'numeric', second: 'numeric', 
+      dayPeriod: 'short',
+      timeZone: 'America/Los_Angeles'
+   };
+   const date = new Date();
+   const datea = new Intl.DateTimeFormat('default', options).format(date)   
+   usCaseDeath.textContent = addCommas(data.Countries[181].TotalDeaths) + ' as of ' + datea;   
+   usCaseConfirm.textContent = addCommas(data.Countries[181].TotalConfirmed) + ' as of ' + datea;    
+  });
