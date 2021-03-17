@@ -91,5 +91,6 @@ function addCommas(x) {
    };
    const date = new Date();
    const datea = new Intl.DateTimeFormat('default', options).format(date);    
-   usCaseConfirmJh.textContent = addCommaDecimal(data.Global.TotalConfirmed) + ' as of ' + datea;
-   usCaseDeathJh.textContent = addCommaDecimal(data.Global.TotalDeaths) + ' as of ' + datea;
+   usCaseConfirmJh.textContent = addCommas(data.Global.TotalConfirmed) + ' as of ' + datea;
+   usCaseDeathJh.textContent = addCommas(data.Global.TotalDeaths) + ' as of ' + datea;
+ });
