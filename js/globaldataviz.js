@@ -373,14 +373,47 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
 
   // add the X Axis
   svg3.append("g")
+      .attr("class", "x axis")
       .attr("transform", "translate(0," + height3 + ")")
-      .call(d3.axisBottom(x3));
+      .call(d3v6.axisBottom(x3));
+      
 
   // add the Y Axis
   svg3.append("g")
-      .call(d3.axisLeft(y3));
+      .attr("class", "y axis")
+      .call(d3v6.axisLeft(y3));
 
 });
+
+//Update Data
+const updateBut = document.querySelector('#3button4');
+updateBut.addEventListener('click', ()=>{
+      // Get the data again
+    d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data-alt.csv", function(error, data) {
+       	data.forEach(function(d) {
+	    	d.date = parseDate(d.date);
+	    	d.close = +d.close;
+	    });
+
+    	// Scale the range of the data again 
+    	x3.domain(d3v6.extent(data, function(d) { return d.date; }));
+	    y3.domain([0, d3v6.max(data, function(d) { return d.close; })]);
+
+    // Select the section we want to apply our changes to
+    svg3.transition();
+
+    // Make the changes
+        svg3.select(".line")   // change the line
+            .duration(750)
+            .attr("d", valueline(data));
+        svg3.select(".x.axis") // change the x axis
+            .duration(750)
+            .call(d3v6.axisBottom(x3));
+        svg3.select(".y.axis") // change the y axis
+            .duration(750)
+            .call(d3v6.axisLeft(y3));
+})
+
 
 /*
 // set the dimensions and margins of the example graph
