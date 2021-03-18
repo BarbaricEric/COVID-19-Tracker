@@ -386,7 +386,7 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
 });
 
 //Update Data
-const updateBut = document.querySelector('#3button4');
+const updateBut = document.querySelector('.3button4');
 updateBut.addEventListener('click', ()=>{
       // Get the data again
     d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data-alt.csv", function(error, data) {
