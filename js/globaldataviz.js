@@ -386,8 +386,9 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
 });
 
 //Update Data
-const updateBut = document.querySelector('.3button4');
-updateBut.addEventListener('click', ()=>{
+    d3v6.select("#selectButton3").on("change", function(d) {
+        // recover the option that has been chosen
+        const selectedOption = d3.select(this).property("value")
       // Get the data again
     d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data-alt.csv", function(error, data) {
        	data.forEach(function(d) {
@@ -397,7 +398,7 @@ updateBut.addEventListener('click', ()=>{
 
     	// Scale the range of the data again 
     	x3.domain(d3v6.extent(data, function(d) { return d.date; }));
-	    y3.domain([0, d3v6.max(data, function(d) { return d.close; })]);
+	y3.domain([0, d3v6.max(data, function(d) { return d.close; })]);
 
     // Select the section we want to apply our changes to
     svg3.transition();
