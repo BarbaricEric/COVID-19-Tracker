@@ -322,7 +322,6 @@ var svg3 = d3v6.select("#test3").append("svg")
 d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data.csv").then(function(data) {
 
   // format the data
-  console.log(data)
   data.forEach(function(d) {
       d.date = parseTime(d.date);
       d.close = +d.close;
@@ -391,7 +390,7 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
         // recover the option that has been chosen
         const selectedOption = d3.select(this).property("value")
       // Get the data again
-    d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data-alt.csv", function(error, data) {
+    d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data-alt.csv").then(function(data) {
        	data.forEach(function(d) {
 	    	d.date = parseDate(d.date);
 	    	d.close = +d.close;
@@ -414,7 +413,7 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
         svg3.select(".y.axis") // change the y axis
             .duration(750)
             .call(d3v6.axisLeft(y3));
-})
+}
 })	
 
 
