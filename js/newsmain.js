@@ -2,7 +2,6 @@
 const usCaseDeathJh = document.querySelector(".us-testing-two");
 const usCaseConfirmJh = document.querySelector(".us-testing");
 const browserSupport = document.querySelector('.banner-support');
-const covidnews = document.querySelector('.covidnews');
 const usCaseDeath = document.querySelector(".us-case-death");
 const usCaseConfirm = document.querySelector(".us-case-confirmed"); 
 const globalapi2 = 'https://api.covid19api.com/summary';
@@ -56,11 +55,6 @@ function step1() {
 				},
 			}
 		});
-
-covidnews.addEventListener('click', ()=>{
-	    const url = 'https://barbariceric.github.io/COVID-19-Tracker/covidnews';
-      const win = window.open(url, '_blank');
-})
 
 function addCommas(x) {
     if (x == undefined || x == null) {
