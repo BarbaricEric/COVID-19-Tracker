@@ -322,6 +322,7 @@ var svg3 = d3v6.select("#test3").append("svg")
 d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data.csv").then(function(data) {
 
   // format the data
+  console.log(data)
   data.forEach(function(d) {
       d.date = parseTime(d.date);
       d.close = +d.close;
