@@ -93,6 +93,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
       // create a tooltip
   var Tooltip = d3.select("#test")
     .append("div")
+  d3.tip()
+    .offset([-10, 0])	
     .style("opacity", 0)
     .attr("class", "tooltip")
     .style("background-color", "white")
@@ -111,7 +113,9 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   }
   var mousemove = function(d) {
     Tooltip
-      .html("The exact value of this point is:<br> " + d.value + "<br>" + d.time)
+      .html(function(d) {
+    return "<strong>The exact value of this point is:</strong> <span style='color:red'>" + d.value + "</span>" + "<br>" + d.time;
+  })  
       .style("left", (d3.mouse(this)[0]+70) + "px")
       .style("top", (d3.mouse(this)[1]) + "px")
   }
