@@ -321,6 +321,17 @@ var svg3 = d3v6.select("#test3").append("svg")
 // Get the data
 d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data.csv").then(function(data) {
 
+const allGroup = ["valueA", "valueB", "valueC"]
+
+    // add the options to the button
+    d3v6.select("#selectButton3")
+      .selectAll('myOptions')
+     	.data(allGroup)
+      .enter()
+    	.append('option')
+      .text(function (d) { return d; }) // text showed in the menu
+      .attr("value", function (d) { return d; }) // corresponding value returned by the button
+	
   // format the data
   data.forEach(function(d) {
       d.date = parseTime(d.date);
@@ -413,7 +424,7 @@ d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master
         svg3.select(".y.axis") // change the y axis
             .duration(750)
             .call(d3v6.axisLeft(y3));
-}
+})
 })	
 
 
