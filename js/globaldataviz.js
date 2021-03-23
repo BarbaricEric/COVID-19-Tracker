@@ -93,7 +93,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
       // create a tooltip
   var Tooltip = d3.select("#test")
     .append("div")
-  d3.tip()
+  //d3.tip()
     .offset([-10, 0])	
     .style("opacity", 0)
     .attr("class", "tooltip")
@@ -407,7 +407,7 @@ const allGroup = ["valueA", "valueB", "valueC"]
       // Get the data again
     d3v6.csv("https://raw.githubusercontent.com/BarbaricEric/COVID-19-Tracker/master/jhcsse_covid_19_data/data-alt.csv").then(function(data) {
        	data.forEach(function(d) {
-	    	d.date = parseDate(d.date);
+	    	d.date = parseTime(d.date);
 	    	d.close = +d.close;
 	    });
 
