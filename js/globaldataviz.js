@@ -94,7 +94,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   var Tooltip = d3.select("#test")
     .append("div")
   //d3.tip()
-    .offset([-10, 0])	
+  //.offset([-10, 0])	
     .style("opacity", 0)
     .attr("class", "tooltip")
     .style("background-color", "white")
@@ -420,13 +420,13 @@ const allGroup = ["valueA", "valueB", "valueC"]
 
     // Make the changes
         svg3.select(".line")   // change the line
-            .duration(750)
-            .attr("d", valueline(data));
+            .attr("d", valueline(data))
+	    .transition().duration(750);
         svg3.select(".x.axis") // change the x axis
-            .duration(750)
+            .transition().duration(750)
             .call(d3v6.axisBottom(x3));
         svg3.select(".y.axis") // change the y axis
-            .duration(750)
+            .transition().duration(750)
             .call(d3v6.axisLeft(y3));
 })
 })	
