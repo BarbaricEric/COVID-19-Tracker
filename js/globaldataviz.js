@@ -107,9 +107,10 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   var mouseover = function(d) {
     Tooltip
       .style("opacity", 1)
-    d3.select(this)
+      .style("stroke", "black")  
+    /*d3.select(this)
       .style("stroke", "black")
-      .style("opacity", 1)
+      .style("opacity", 1)*/
   }
   var mousemove = function(d) {
     Tooltip
@@ -122,9 +123,10 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   var mouseleave = function(d) {
     Tooltip
       .style("opacity", 0)
-    d3.select(this)
       .style("stroke", "none")
-      .style("opacity", 0.8)
+    /*d3.select(this)
+      .style("stroke", "none")
+      .style("opacity", 0.8)*/
   }
 
     // Initialize line with group a
@@ -421,7 +423,26 @@ const allGroup = ["valueA", "valueB", "valueC"]
     // Make the changes
         svg3.select(".line")   // change the line
             .attr("d", valueline(data))
-	    .transition().duration(750);
+	    .transition().duration(750)
+	svg3.selectAll("dot")
+     	    .data(data)
+   	    .enter().append("circle")
+     	    .attr("r", 5)
+     .attr("cx", function(d) { return x3(d.date); })
+     .attr("cy", function(d) { return y3(d.close); })
+     .on("mouseover", function(event,d) {
+       div3.transition()
+         .duration(200)
+         .style("opacity", .9);
+       div3.html(formatTime(d.date) + "<br/>" + d.close)
+         .style("left", (event.pageX) + "px")
+         .style("top", (event.pageY - 58) + "px");
+       })
+     .on("mouseout", function(d) {
+       div3.transition()
+         .duration(500)
+         .style("opacity", 0);
+       });  
         svg3.select(".x.axis") // change the x axis
             .transition().duration(750)
             .call(d3v6.axisBottom(x3));
