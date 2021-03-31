@@ -434,7 +434,7 @@ const allGroup = ["valueA", "valueB", "valueC"]
          .style("opacity", .9);
        div3.html(formatTime(d.date) + "<br/>" + d.close)
          .style("left", (event.pageX) + "px")
-         .style("top", (event.pageY - 58) + "px");
+         .style("top", (event.pageY - 88) + "px");
        })
      .on("mouseout", function(d) {
        div3.transition()
