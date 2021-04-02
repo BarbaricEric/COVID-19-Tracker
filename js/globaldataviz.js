@@ -115,8 +115,10 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   var mousemove = function(d) {
     Tooltip
       .html("<strong>The exact value of this point is:</strong> <span style='color:red'>" + d.value + "</span>" + "<br>" + d.time)  
-      .style("left", (d3.mouse(this)[0]+70) + "px")
-      .style("top", (d3.mouse(this)[1]) + "px")
+      .style("left", (d3.event.pageX) + "px")
+      .style("top", (d3.event.pageY - 28) + "px");
+      //.style("left", (d3.mouse(this)[0]+70) + "px")
+      //.style("top", (d3.mouse(this)[1]) + "px")
   }
   var mouseleave = function(d) {
     Tooltip
@@ -142,6 +144,19 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
         .attr("stroke", function(d){ return myColor("valueA") })
         .style("stroke-width", 4)
         .style("fill", "none")
+     .on("mouseover", function(d) {
+       Tooltip.transition()
+         .duration(200)
+         .style("opacity", .9);
+       Tooltip.html(d.date + "<br/>" + d.close)
+         .style("left", (d3.event.pageX) + "px")
+         .style("top", (d3.event.pageY - 28) + "px");
+       })
+     .on("mouseout", function(d) {
+       Tooltip.transition()
+         .duration(500)
+         .style("opacity", 0);
+       });    
 
     // A function that update the chart
     function update(selectedGroup) {
@@ -377,8 +392,8 @@ const allGroup = ["valueA", "valueB", "valueC"]
          .duration(200)
          .style("opacity", .9);
        div3.html(formatTime(d.date) + "<br/>" + d.close)
-         .style("left", (event.pageX) + "px")
-         .style("top", (event.pageY - 58) + "px");
+         .style("left", (d3v6.event.pageX) + "px")
+         .style("top", (d3v6.event.pageY - 58) + "px");
        })
      .on("mouseout", function(d) {
        div3.transition()
@@ -433,8 +448,8 @@ const allGroup = ["valueA", "valueB", "valueC"]
          .duration(200)
          .style("opacity", .9);
        div3.html(formatTime(d.date) + "<br/>" + d.close)
-         .style("left", (event.pageX) + "px")
-         .style("top", (event.pageY - 88) + "px");
+         .style("left", (d3v6.event.pageX) + "px")
+         .style("top", (d3v6.event.pageY - 88) + "px");
        })
      .on("mouseout", function(d) {
        div3.transition()
