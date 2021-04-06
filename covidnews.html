@@ -126,6 +126,7 @@
      <p class="price">Source: John Hopkins, Published on April 30, 2020</p>
      <a href="https://ncrc.jhsph.edu/research/an-analysis-of-sars-cov-2-viral-load-by-patient-age/" class="btn">Link to Article</a>
      <a href="https://virologie-ccm.charite.de/fileadmin/user_upload/microsites/m_cc05/virologie-ccm/dateien_upload/Weitere_Dateien/Charite_SARS-CoV-2_viral_load_2020-06-02.pdf" class="btn">Link to Preprint Article</a>
+     <div class="like_button_container" data-commentid="1"></div> 
     </div>
     <div class="news-box news-box-b">
      <img src="img/coronavirus-19-mobile.jpg" alt="COVID-19 News Image">
@@ -137,6 +138,7 @@
      <p class="price">Source: The Hill on August 17, 2020</p>
      <a href="javascript:void(0)" class="alert-btn"><i class="fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Interesting Read</a>
      <a href="https://thehill.com/policy/healthcare/512427-covid-19-now-no-3-cause-of-death-in-us" class="btn">Link to Article</a> 
+     <div class="like_button_container" data-commentid="2"></div>  
     </div>
     <div class="news-box news-box-b">
      <img src="img/coronavirus-19-mobile.jpg" alt="COVID-19 News Image">
@@ -147,6 +149,7 @@
      <h3>Jacobson v Massachusetts: It’s Not Your Great-Great-Grandfather’s Public Health Law</h3>
      <p class="price">Source: American Journal of Public Health on October 10, 2011 </p>
      <a href="https://dx.doi.org/10.2105%2FAJPH.2004.055160" class="btn">Link to Research Article</a> 
+     <div class="like_button_container" data-commentid="3"></div>  
     </div>
     <div class="news-box news-box-b">
      <img src="img/coronavirus-19-mobile.jpg" alt="COVID-19 News Image">
@@ -8340,5 +8343,12 @@
 <script defer src="js/swiperaction.js"></script>
 <script defer src="js/newsmain.js"></script>
 <script src="js/anime.min.js"></script>  
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+<!-- Load our React component. -->
+<script src="js/like_button.js"></script>    
 </body>
 </html>
