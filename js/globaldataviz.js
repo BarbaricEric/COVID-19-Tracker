@@ -392,8 +392,8 @@ const allGroup = ["valueA", "valueB", "valueC"]
          .duration(200)
          .style("opacity", .9);
        div3.html(formatTime(d.date) + "<br/>" + d.close)
-         .style("left", (d3v6.event.pageX) + "px")
-         .style("top", (d3v6.event.pageY - 58) + "px");
+         .style("left", (event.pageX) + "px")
+         .style("top", (event.pageY - 58) + "px");
        })
      .on("mouseout", function(d) {
        div3.transition()
@@ -448,8 +448,8 @@ const allGroup = ["valueA", "valueB", "valueC"]
          .duration(200)
          .style("opacity", .9);
        div3.html(formatTime(d.date) + "<br/>" + d.close)
-         .style("left", (d3v6.event.pageX) + "px")
-         .style("top", (d3v6.event.pageY - 88) + "px");
+         .style("left", (event.pageX) + "px")
+         .style("top", (event.pageY - 88) + "px");
        })
      .on("mouseout", function(d) {
        div3.transition()
