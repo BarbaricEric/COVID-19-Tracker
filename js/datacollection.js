@@ -45,8 +45,16 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });     
          
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-04-08&iso=USA')
-  .then(response => {
+   fetch('https://covid-api.com/api/reports?date=2021-04-08&iso=USA', {
+  method: 'GET',
+  mode: 'no-cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },   
+}).then(response => {
    return response.json();
   })
   .then(data => {
