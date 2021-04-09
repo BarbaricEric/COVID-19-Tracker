@@ -26,12 +26,12 @@
    usCaseRecent.textContent = data[442].date;*/
   });
 
-//US Deluvered Count from CDC
+//US Delivered Count from CDC
   d3v6.csv("./cdc_vaccination/vaccine_delivered.csv").then(function(data) {
-   console.log(data);  
-   /*const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
-   const usCaseDeath = document.querySelector(".us-newyorktimes-death");
-   const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
+   console.log(data); 
+   const distNum = document.querySelector(".distribute-num")
+   distNum.textContent = "<strong><span style='color:red'>" + addCommas(data[0].Moderna) + "</span></strong>" 
+   /*;
    usCaseConfirm.textContent = addCommas(data[442].cases);
    usCaseDeath.textContent = addCommas(data[442].deaths); 
    usCaseRecent.textContent = data[442].date;*/
