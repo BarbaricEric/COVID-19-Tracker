@@ -92,7 +92,7 @@ function addCommas(x) {
  });
 
 //US Count from covid19-api.org      
- fetch(globalapi2, {
+ fetch('https://api.covid19api.com/total/dayone/country/united-states', {
   method: 'GET',
   mode: 'cors', // no-cors, *cors, same-origin
   cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -114,6 +114,6 @@ function addCommas(x) {
    };
    const date = new Date();
    const datea = new Intl.DateTimeFormat('default', options).format(date)   
-   usCaseDeath.textContent = addCommas(data.Countries[181].TotalDeaths) + ' as of ' + datea;   
-   usCaseConfirm.textContent = addCommas(data.Countries[181].TotalConfirmed) + ' as of ' + datea;    
+   usCaseDeath.textContent = addCommas(data[(data.length - 1)].Deaths) + ' as of ' + datea;   
+   usCaseConfirm.textContent = addCommas(data[(data.length - 1)].Confirmed) + ' as of ' + datea;    
   });
