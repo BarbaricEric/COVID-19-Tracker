@@ -30,7 +30,7 @@
   d3v6.csv("./cdc_vaccination/vaccine_delivered.csv").then(function(data) {
    console.log(data); 
    const distNum = document.querySelector(".distribute-num")
-   distNum.textContent = '<strong><span style="color:red">' + addCommas(data[0]."Pfizer-BioNTech" + data[0].Moderna + data[0]."J&J/Janssen") + '</span></strong>' 
+   distNum.textContent = "<strong><span style='color:red'>" + addCommas(data[0].PfizerBioNTech + data[0].Moderna + data[0].Janssen) + "</span></strong>"
    /*;
    usCaseConfirm.textContent = addCommas(data[442].cases);
    usCaseDeath.textContent = addCommas(data[442].deaths); 
