@@ -19,7 +19,7 @@
   d3v6.csv("./cdc_vaccination/vaccine_administration.csv").then(function(data) {
    console.log(data);
    const adminNum = document.querySelector(".administer-num")
-   distNum.textContent = addCommas(data[0].PfizerBioNTech + data[0].Moderna + data[0].Janssen + data[0].NotIdentified) 
+   adminNum.textContent = addCommas(data[0].PfizerBioNTech + data[0].Moderna + data[0].Janssen + data[0].NotIdentified) 
    /*const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
