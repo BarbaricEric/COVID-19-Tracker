@@ -17,7 +17,9 @@
 
 //US Administration Count from CDC
   d3v6.csv("./cdc_vaccination/vaccine_administration.csv").then(function(data) {
-   console.log(data);  
+   console.log(data);
+   const adminNum = document.querySelector(".administer-num")
+   distNum.textContent = addCommas(data[0].PfizerBioNTech + data[0].Moderna + data[0].Janssen + data[0].NotIdentified) 
    /*const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
    const usCaseDeath = document.querySelector(".us-newyorktimes-death");
    const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
@@ -30,7 +32,7 @@
   d3v6.csv("./cdc_vaccination/vaccine_delivered.csv").then(function(data) {
    console.log(data); 
    const distNum = document.querySelector(".distribute-num")
-   distNum.textContent = "<strong><span style='color:red'>" + addCommas(data[0].PfizerBioNTech + data[0].Moderna + data[0].Janssen) + "</span></strong>"
+   distNum.textContent = addCommas(data[0].PfizerBioNTech + data[0].Moderna + data[0].Janssen)
    /*;
    usCaseConfirm.textContent = addCommas(data[442].cases);
    usCaseDeath.textContent = addCommas(data[442].deaths); 
