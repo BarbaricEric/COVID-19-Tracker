@@ -36,3 +36,11 @@
    usCaseDeath.textContent = addCommas(data[442].deaths); 
    usCaseRecent.textContent = data[442].date;*/
   });
+
+function addCommas(x) {
+    if (x == undefined || x == null) {
+      return x = "Error";
+    } else {
+      return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    }   
+}
