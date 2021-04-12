@@ -10,7 +10,7 @@ const caCaseConfirm = document.querySelector("#us-covidtrack-ca-confirm");
 
 //Define API
 const globalapi1 = 'https://corona-api.com/countries';
-const globalapi2 = 'https://api.covid19api.com/summary';
+const globalapi2 = 'https://api.covid19api.com/total/dayone/country/united-states';//'https://api.covid19api.com/summary';
 const localapi1 = 'https://api.covidtracking.com/v1/us/current.json';
 const localapi2 = 'https://corona-api.com/countries/US';
 
@@ -37,8 +37,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    };
    const date = new Date();
    const datea = new Intl.DateTimeFormat('default', options).format(date)   
-   usCaseDeath.textContent = addCommas(data.Countries[181].TotalDeaths) + ' as of ' + datea;   
-   usCaseConfirm.textContent = addCommas(data.Countries[181].TotalConfirmed) + ' as of ' + datea;   
+   usCaseDeath.textContent = addCommas(data.[data.length].Confirmed) + ' as of ' + datea;   
+   usCaseConfirm.textContent = addCommas(data.[data.length].Deaths) + ' as of ' + datea;   
    /*usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4); 
    usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4);
    data.last_update.toString().substring(0, 10).replace(/-{1,}/g, '/') => year/month/day*/;   
