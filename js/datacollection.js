@@ -37,8 +37,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    };
    const date = new Date();
    const datea = new Intl.DateTimeFormat('default', options).format(date)   
-   usCaseDeath.textContent = addCommas(data[(data.length - 1)].Confirmed) + ' as of ' + datea;   
-   usCaseConfirm.textContent = addCommas(data[(data.length - 1)].Deaths) + ' as of ' + datea;   
+   usCaseConfirm.textContent = addCommas(data[(data.length - 1)].Confirmed) + ' as of ' + datea;   
+   usCaseDeath.textContent = addCommas(data[(data.length - 1)].Deaths) + ' as of ' + datea;   
    /*usCaseDeath.textContent = data.deaths + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4); 
    usCaseConfirm.textContent = data.cases + ' as of ' + data.last_update.toString().substring(6,7) + '/' + data.last_update.toString().substring(8,10) + '/' + data.last_update.toString().substring(0,4);
    data.last_update.toString().substring(0, 10).replace(/-{1,}/g, '/') => year/month/day*/;   
