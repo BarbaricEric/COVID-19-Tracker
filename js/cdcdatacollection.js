@@ -19,6 +19,7 @@
   d3v6.csv("./cdc_vaccination/vaccine_administration.csv").then(function(data) {
    console.log(data);
    const adminNum = document.querySelector(".administer-num")
+   adminNum.style.cssText = "color: red; font-size:46px";
    adminNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) 
   });
 
@@ -26,6 +27,7 @@
   d3v6.csv("./cdc_vaccination/vaccine_delivered.csv").then(function(data) {
    console.log(data); 
    const distNum = document.querySelector(".distribute-num")
+   distNum.style.cssText = "color: red; font-size:46px";
    distNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen))
   });
 
