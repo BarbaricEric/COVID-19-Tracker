@@ -20,12 +20,6 @@
    console.log(data);
    const adminNum = document.querySelector(".administer-num")
    adminNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) 
-   /*const usCaseConfirm = document.querySelector(".us-newyorktimes-confirm");
-   const usCaseDeath = document.querySelector(".us-newyorktimes-death");
-   const usCaseRecent = document.querySelector(".us-newyorktimes-recent");
-   usCaseConfirm.textContent = addCommas(data[442].cases);
-   usCaseDeath.textContent = addCommas(data[442].deaths); 
-   usCaseRecent.textContent = data[442].date;*/
   });
 
 //US Delivered Count from CDC
@@ -33,11 +27,14 @@
    console.log(data); 
    const distNum = document.querySelector(".distribute-num")
    distNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen))
-   /*;
-   usCaseConfirm.textContent = addCommas(data[442].cases);
-   usCaseDeath.textContent = addCommas(data[442].deaths); 
-   usCaseRecent.textContent = data[442].date;*/
   });
+
+/*/US Fully Vaccinated Count from CDC
+  d3v6.csv("./cdc_vaccination/vaccined_fully.csv").then(function(data) {
+   console.log(data); 
+   const vacNum = document.querySelector(".vac-num")
+   vacNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified))
+  });*/
 
 function addCommas(x) {
     if (x == undefined || x == null) {
