@@ -289,6 +289,21 @@ img {
  box-shadow: var(--shadow);
 }
 
+.vac-boxes {
+ display: grid;
+ margin: 0px 30px;
+ grid-template-columns: repeat(3, 1fr);
+}
+
+.vacbox {
+ display: flex;
+ flex-direction: column;
+ background: var(--primary);
+ text-align: center;
+ padding: 1.5rem 2rem;
+ box-shadow: var(--shadow); 
+}
+
 /* Info */
 .info {
  /*background: var(--primary);*/
