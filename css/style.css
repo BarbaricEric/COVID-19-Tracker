@@ -277,11 +277,9 @@ img {
  grid-template-columns: repeat(2, 1fr);
 }
 
-.box:hover,
-tab-border {
+.box:hover {
  background: var(--dark);
  color: var(--light);
- /*cursor: pointer;*/
 } 
 
 .box {
@@ -290,6 +288,12 @@ tab-border {
  padding: 1.5rem 2rem;
  box-shadow: var(--shadow);
 }
+
+.tab-border {
+ background: var(--dark);
+ color: var(--light);
+ cursor: pointer;
+} 
 
 .vac-boxes {
  display: grid;
