@@ -290,15 +290,15 @@ img {
 }
 
 .tab-border {
- background: var(--dark);
+ background: var(--dark) !important;
  color: var(--light);
- cursor: pointer;
 } 
 
 .vac-boxes {
  display: grid;
  margin: 0px 30px;
  grid-template-columns: repeat(3, 1fr);
+ cursor: pointer;
 }
 
 .vacbox {
