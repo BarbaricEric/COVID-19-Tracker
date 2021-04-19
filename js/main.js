@@ -76,3 +76,30 @@ covidnews.addEventListener('click', ()=>{
 	    const url = 'https://barbariceric.github.io/COVID-19-Tracker/covidnews';
       const win = window.open(url, '_blank');
 })
+
+//CDC COVID Vaccination Progress
+const CDCtabItems = document.querySelectorAll('.tab-item');
+const CDCtabContentItems = document.querySelectorAll('.tab-content-item');
+
+// Select tab content item
+function selectItem(e) {
+ removeBorder();
+ removeShow();
+ //Add border to current tab
+ this.classList.add('tab-border');
+ //Grab content item from DOM
+ const CDCtabContentItem = document.querySelector(`#${this.id}-content`);
+ //Add show class
+ CDCtabContentItem.classList.add('show');
+}
+
+function removeBorder() {
+ CDCtabItems.forEach(item => item.classList.remove('tab-border'));
+}
+
+function removeShow() {
+ CDCtabContentItems.forEach(item => item.classList.remove('show'));
+}
+
+// Listen for tab click
+CDCtabItems.forEach(item => item.addEventListener('click', selectItem));
