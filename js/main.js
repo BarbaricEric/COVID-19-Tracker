@@ -78,8 +78,8 @@ covidnews.addEventListener('click', ()=>{
 })
 
 //CDC COVID Vaccination Progress
-const CDCtabItems = document.querySelectorAll('.tab-item');
-const CDCtabContentItems = document.querySelectorAll('.tab-content-item');
+const cdcTabItems = document.querySelectorAll('.tab-item');
+const cdcTabContentItems = document.querySelectorAll('.tab-content-item');
 
 // Select tab content item
 function selectItem(e) {
@@ -88,18 +88,18 @@ function selectItem(e) {
  //Add border to current tab
  this.classList.add('tab-border');
  //Grab content item from DOM
- const CDCtabContentItem = document.querySelector(`#${this.id}-content`);
+ const cdcTabContentItem = document.querySelector(`#${this.id}-content`);
  //Add show class
- CDCtabContentItem.classList.add('show');
+ cdcTabContentItem.classList.add('show');
 }
 
 function removeBorder() {
- CDCtabItems.forEach(item => item.classList.remove('tab-border'));
+ cdcTabItems.forEach(item => item.classList.remove('tab-border'));
 }
 
 function removeShow() {
- CDCtabContentItems.forEach(item => item.classList.remove('show'));
+ cdcTabContentItems.forEach(item => item.classList.remove('show'));
 }
 
 // Listen for tab click
-CDCtabItems.forEach(item => item.addEventListener('click', selectItem));
+cdcTabItems.forEach(item => item.addEventListener('click', selectItem));
