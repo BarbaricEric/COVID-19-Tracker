@@ -130,7 +130,7 @@
   
   const arcs = pie(data);
 
-  const svg = d3v6.select("#pfizer1")
+  const svg = d3v6.select("#moderna1")
   .append("svg")
     .attr("width", width)
     .attr("height", height)
