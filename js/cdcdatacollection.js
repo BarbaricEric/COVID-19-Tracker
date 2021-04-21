@@ -41,6 +41,70 @@
    vacNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
   });
 
+//Pie Chart US Delivered Count from CDC
+  d3v6.csv("./cdc_vaccination/vaccine_del.csv").then(function(data) {
+   console.log(data); 
+    
+  const color = d3v6.scaleOrdinal()
+    .domain(data.map(d => d.name))
+    .range(d3v6.quantize(t => d3v6.interpolateSpectral(t * 0.8 + 0.1), data.length).reverse())
+  
+  const margin = {top: 10, right: 100, bottom: 30, left: 30},
+    width = 660 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+  
+  const arc = d3v6.arc()
+    .innerRadius(0)
+    .outerRadius(Math.min(width, height) / 2 - 1)
+  
+  const arcLabel = {
+  const radius = Math.min(width, height) / 2 * 0.8;
+  return d3v6.arc().innerRadius(radius).outerRadius(radius);
+}
+
+  const pie = d3v6.pie()
+    .sort(null)
+    .value(d => d.value)
+  
+  const arcs = pie(data);
+
+  const svg = d3v6.select("#pfizer1")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+  svg.append("g")
+      .attr("stroke", "white")
+    .selectAll("path")
+    .data(arcs)
+    .join("path")
+      .attr("fill", d => color(d.data.name))
+      .attr("d", arc)
+    .append("title")
+      .text(d => `${d.data.name}: ${d.data.value.toLocaleString()}`);
+
+  svg.append("g")
+      .attr("font-family", "sans-serif")
+      .attr("font-size", 12)
+      .attr("text-anchor", "middle")
+    .selectAll("text")
+    .data(arcs)
+    .join("text")
+      .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
+      .call(text => text.append("tspan")
+          .attr("y", "-0.4em")
+          .attr("font-weight", "bold")
+          .text(d => d.data.name))
+      .call(text => text.filter(d => (d.endAngle - d.startAngle) > 0.25).append("tspan")
+          .attr("x", 0)
+          .attr("y", "0.7em")
+          .attr("fill-opacity", 0.7)
+          .text(d => d.data.value.toLocaleString()));
+  });
+
 function addCommas(x) {
     if (x == undefined || x == null) {
       return x = "Error";
