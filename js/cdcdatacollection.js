@@ -57,10 +57,9 @@
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2 - 1)
   
-  const arcLabel = {
-  const radius = Math.min(width, height) / 2 * 0.8;
-  return d3v6.arc().innerRadius(radius).outerRadius(radius);
-}
+  const radius = Math.min(width, height) / (2 * 0.8) 
+  
+  const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
   const pie = d3v6.pie()
     .sort(null)
