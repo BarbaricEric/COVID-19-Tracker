@@ -321,6 +321,12 @@ img {
  display: block !important;
 }
 
+#pfizer1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Info */
 .info {
  /*background: var(--primary);*/
