@@ -321,7 +321,10 @@ img {
  display: block !important;
 }
 
-#pfizer1 {
+#pfizer1,
+#pfizer2,
+#moderna1,
+#moderna2 {
     display: grid;
     align-items: center;
     justify-content: center;
