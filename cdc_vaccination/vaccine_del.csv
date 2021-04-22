@@ -1,5 +1,5 @@
-name,value
-PfizerBioNTech,142177425
-Moderna,118120300
-Janssen,17641150
-NotIdentified,0
+name,value,date
+PfizerBioNTech,142177425,2021-04-21
+Moderna,118120300,2021-04-21
+Janssen,17641150,2021-04-21
+NotIdentified,0,2021-04-21
