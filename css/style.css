@@ -324,7 +324,9 @@ img {
 #pfizer1,
 #pfizer2,
 #moderna1,
-#moderna2 {
+#moderna2,
+#jessen1,
+#jessen2 {
     display: grid;
     align-items: center;
     justify-content: center;
