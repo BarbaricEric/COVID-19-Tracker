@@ -57,7 +57,7 @@
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2 - 1)
   
-  const radius = Math.min(width, height) / (2 * 7.5) 
+  const radius = Math.min(width, height) / (2 * 0.8) 
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -73,7 +73,7 @@
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
+          "translate(" + (margin.left + 50) + "," + (margin.top + 50) + ")");
 
   svg.append("g")
       .attr("stroke", "white")
@@ -120,7 +120,7 @@
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2 - 1)
   
-  const radius = Math.min(width, height) / (2 * 4.8) 
+  const radius = Math.min(width, height) / (2 * 0.8) 
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
