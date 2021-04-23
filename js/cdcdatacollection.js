@@ -57,7 +57,7 @@
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2 - 1)
   
-  const radius = Math.min(width, height) / (2 * 0.8) 
+  const radius = Math.min(width, height) / (2 * 7.5) 
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -83,7 +83,7 @@
       .attr("fill", d => color(d.data.name))
       .attr("d", arc)
     .append("title")
-      .text(d => `${d.data.name}: ${d.data.value.toLocaleString()}`);
+      .text(d => `${d.data.name}: ${addCommas(d.data.value.toLocaleString())}`);
 
   svg.append("g")
       .attr("font-family", "sans-serif")
@@ -101,7 +101,7 @@
           .attr("x", 0)
           .attr("y", "0.7em")
           .attr("fill-opacity", 0.7)
-          .text(d => d.data.value.toLocaleString()));
+          .text(d => addCommas(d.data.value.toLocaleString())));
   });
 
 //Pie Chart US Administereded Count from CDC
@@ -120,7 +120,7 @@
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2 - 1)
   
-  const radius = Math.min(width, height) / (2 * 0.8) 
+  const radius = Math.min(width, height) / (2 * 4.8) 
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
