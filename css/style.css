@@ -83,7 +83,6 @@ select {
 #selectButton {
     margin: 0 0 0 125px;
     border: 2px solid #e64120;
-    background: transparent;
     line-height: 1;
     font-family: arial, sans-serif;
     border-radius: 4px;
@@ -98,6 +97,8 @@ select {
     overflow: hidden;
     padding-right: 30px;
     outline: none !important;
+    background-color: black;
+    padding: 5px 0px;
 }
 
 /*Button*/
