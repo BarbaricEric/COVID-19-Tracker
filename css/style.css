@@ -81,22 +81,20 @@ select {
 }
 
 #selectButton {
-    width: auto;
-    margin: 0 0 0 15px;
-    float: right;
+    margin: 0 0 0 125px;
     border: 2px solid #e64120;
     background: transparent;
     line-height: 1;
     font-family: arial, sans-serif;
     border-radius: 4px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    background: url(img/bg_form_select_filter_icon.png) no-repeat 100% 50%;
+    background: url(../img/bg_form_select_filter_icon.png) no-repeat 100% 50%;
     overflow: hidden;
     padding-right: 30px;
     outline: none !important;
