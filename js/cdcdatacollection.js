@@ -50,8 +50,8 @@
     .range(d3v6.quantize(t => d3v6.interpolateSpectral(t * 0.8 + 0.1), data.length).reverse())
   
   const margin = {top: 10, right: 100, bottom: 30, left: 30},
-    width = 660 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+    width = 650 - margin.left - margin.right,
+    height = 650 - margin.top - margin.bottom;
   
   const arc = d3v6.arc()
     .innerRadius(0)
@@ -73,7 +73,7 @@
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform",
-          "translate(" + (margin.left + 350) + "," + (margin.top + 350) + ")");
+          "translate(" + (margin.left + 300) + "," + (margin.top + 350) + ")");
 
   svg.append("g")
       .attr("stroke", "white")
