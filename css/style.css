@@ -80,7 +80,7 @@ select {
   display: none;
 }
 
-#selectButton {
+.selectButton {
     margin: 0 0 0 135px;
     border: 2px solid #000080 /*#e64120*/;
     line-height: 1;
