@@ -73,7 +73,7 @@
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform",
-          "translate(" + (margin.left + 250) + "," + (margin.top + 250) + ")");
+          "translate(" + (margin.left + 350) + "," + (margin.top + 350) + ")");
 
   svg.append("g")
       .attr("stroke", "white")
