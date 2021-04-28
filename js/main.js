@@ -77,6 +77,33 @@ covidnews.addEventListener('click', ()=>{
       const win = window.open(url, '_blank');
 })
 
+//Data Sources
+const dataTabItems = document.querySelectorAll('.datatab-item');
+const dataTabContentItems = document.querySelectorAll('.datatab-content-item');
+
+// Select tab content item
+function dataSelectItem(e) {
+ removeBorder();
+ removeShow();
+ //Add border to current tab
+ this.classList.add('tab-border');
+ //Grab content item from DOM
+ const dataTabContentItem = document.querySelector(`#${this.id}-content`);
+ //Add show class
+ dataTabContentItem.classList.add('show');
+}
+
+function removeBorder() {
+ dataTabItems.forEach(item => item.classList.remove('data-tab-border'));
+}
+
+function removeShow() {
+ dataTabContentItems.forEach(item => item.classList.remove('show'));
+}
+
+// Listen for Data Sources tab click
+dataTabItems.forEach(item => item.addEventListener('click', dataSelectItem));
+
 //CDC COVID Vaccination Progress
 const cdcTabItems = document.querySelectorAll('.tab-item');
 const cdcTabContentItems = document.querySelectorAll('.tab-content-item');
@@ -101,5 +128,5 @@ function removeShow() {
  cdcTabContentItems.forEach(item => item.classList.remove('show'));
 }
 
-// Listen for tab click
+// Listen for CDC vaccine tab click
 cdcTabItems.forEach(item => item.addEventListener('click', selectItem));
