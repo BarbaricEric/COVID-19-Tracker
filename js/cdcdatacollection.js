@@ -268,7 +268,7 @@ var svg = d3.select("#pfizer2")
 
 })
 
-//Pfizer Deliever Chart data
+//Moderna Administration Chart data
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
 
   // set the dimensions and margins of the second graph
@@ -277,7 +277,7 @@ var margin2 = {top: 10, right: 100, bottom: 30, left: 30},
     height2 = 600 - margin2.top - margin2.bottom;
 
 // append the svg object to the body of the page
-var svg2 = d3.select("#test2")
+var svg2 = d3.select("#moderna2")
   .append("svg")
     .attr("width", width2 + margin2.left + margin2.right)
     .attr("height", height2 + margin2.top + margin2.bottom)
@@ -392,9 +392,9 @@ var svg2 = d3.select("#test2")
   
   const arc = d3v6.arc()
     .innerRadius(0)
-    .outerRadius(Math.min(width, height) / 2 - 1)
+    .outerRadius(Math.min(width, height) / 3)
   
-  const radius = Math.min(width, height) / (2 * 0.8) 
+  const radius = Math.min(width, height) / 2 * 0.8
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -452,9 +452,9 @@ var svg2 = d3.select("#test2")
   
   const arc = d3v6.arc()
     .innerRadius(0)
-    .outerRadius(Math.min(width, height) / 2 - 1)
+    .outerRadius(Math.min(width, height) / 3)
   
-  const radius = Math.min(width, height) // (2 * 0.8) 
+  const radius = Math.min(width, height) / 2 * 0.8
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
