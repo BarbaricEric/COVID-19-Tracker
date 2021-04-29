@@ -83,8 +83,8 @@ const dataTabContentItems = document.querySelectorAll('.datatab-content-item');
 
 // Select tab content item
 function dataSelectItem(e) {
- removeBorder();
- removeShow();
+ dataRemoveBorder();
+ dataRemoveShow();
  //Add border to current tab
  this.classList.add('tab-border');
  //Grab content item from DOM
@@ -93,11 +93,11 @@ function dataSelectItem(e) {
  dataTabContentItem.classList.add('show');
 }
 
-function removeBorder() {
+function dataRemoveBorder() {
  dataTabItems.forEach(item => item.classList.remove('data-tab-border'));
 }
 
-function removeShow() {
+function dataRemoveShow() {
  dataTabContentItems.forEach(item => item.classList.remove('show'));
 }
 
