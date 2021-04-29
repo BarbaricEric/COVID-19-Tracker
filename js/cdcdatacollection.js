@@ -55,9 +55,9 @@
   
   const arc = d3v6.arc()
     .innerRadius(0)
-    .outerRadius(Math.min(width, height) / 2 - 1)
+    .outerRadius(Math.min(width, height) / 3)
   
-  const radius = Math.min(width, height) / (2 * 0.8) 
+  const radius = Math.min(width, height) / 2 * 0.8
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -165,7 +165,7 @@ var svg = d3.select("#pfizer2")
       .text("Pfizer and BioNTech Deliever Trend");
       
       // create a tooltip
-  var Tooltip = d3.select("#pfizer2")
+  /*var Tooltip = d3.select("#pfizer2")
     .append("div")
   //d3.tip()
   //.offset([-10, 0])	
@@ -184,7 +184,7 @@ var svg = d3.select("#pfizer2")
       .style("stroke", "black")  
     /*d3.select(this)
       .style("stroke", "black")
-      .style("opacity", 1)*/
+      .style("opacity", 1)*/ /*
   }
   var mousemove = function(d) {
     Tooltip
@@ -200,7 +200,7 @@ var svg = d3.select("#pfizer2")
       .style("stroke", "none")
     /*d3.select(this)
       .style("stroke", "none")
-      .style("opacity", 0.8)*/
+      .style("opacity", 0.8)
   }
 
     // Initialize line with group a
@@ -266,7 +266,7 @@ var svg = d3.select("#pfizer2")
         update(selectedOption)
     })
 
-})
+})*/
 
 //Moderna Administration Chart data
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
