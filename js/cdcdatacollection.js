@@ -201,7 +201,7 @@ var svg = d3.select("#pfizer2")
     /*d3.select(this)
       .style("stroke", "none")
       .style("opacity", 0.8)
-  }
+  }*/
 
     // Initialize line with group a
     var line = svg
@@ -266,7 +266,7 @@ var svg = d3.select("#pfizer2")
         update(selectedOption)
     })
 
-})*/
+})
 
 //Moderna Administration Chart data
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
