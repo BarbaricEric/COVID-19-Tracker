@@ -86,7 +86,7 @@ function dataSelectItem(e) {
  dataRemoveBorder();
  dataRemoveShow();
  //Add border to current tab
- this.classList.add('tab-border');
+ this.classList.add('data-tab-border');
  //Grab content item from DOM
  const dataTabContentItem = document.querySelector(`#${this.id}-content`);
  //Add show class
@@ -97,12 +97,13 @@ function dataRemoveBorder() {
  dataTabItems.forEach(item => item.classList.remove('data-tab-border'));
 }
 
+// Listen for Data Sources tab click
+dataTabItems.forEach(item => item.addEventListener('click', dataSelectItem));
+
 function dataRemoveShow() {
  dataTabContentItems.forEach(item => item.classList.remove('show'));
 }
 
-// Listen for Data Sources tab click
-dataTabItems.forEach(item => item.addEventListener('click', dataSelectItem));
 
 //CDC COVID Vaccination Progress
 const cdcTabItems = document.querySelectorAll('.tab-item');
