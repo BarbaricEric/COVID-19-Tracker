@@ -55,7 +55,7 @@
   
   const arc = d3v6.arc()
     .innerRadius(0)
-    .outerRadius(Math.min(width, height) / 3)
+    .outerRadius(Math.min(width, height) / 2.5)
   
   const radius = Math.min(width, height) / 2 * 0.8
   
@@ -184,8 +184,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
 
       // Create new data with the selection
       const dataFilter = 
-          //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
-          data.map(d => ({time: d.time, value: d[selectedGroup]}))
+          data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+          //data.map(d => ({time: d.time, value: d[selectedGroup]}))
 
       // Give these new data to update line
       line
@@ -292,8 +292,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
 
       // Create new data with the selection
       const dataFilter = 
-          //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
-          data.map(d => ({time: d.time, value: d[selectedGroup]}))
+          data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+          //data.map(d => ({time: d.time, value: d[selectedGroup]}))
 
       // Give these new data to update line
       line
@@ -335,7 +335,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   
   const arc = d3v6.arc()
     .innerRadius(0)
-    .outerRadius(Math.min(width, height) / 3)
+    .outerRadius(Math.min(width, height) / 2.5)
   
   const radius = Math.min(width, height) / 2 * 0.8
   
@@ -395,7 +395,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   
   const arc = d3v6.arc()
     .innerRadius(0)
-    .outerRadius(Math.min(width, height) / 3)
+    .outerRadius(Math.min(width, height) / 2.5)
   
   const radius = Math.min(width, height) / 2 * 0.8
   
