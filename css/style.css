@@ -290,6 +290,10 @@ img {
  grid-area: top-box-b;
 }
 
+.top-box-c {
+ grid-area: top-box-c;
+}
+
 /* Boxes */
 .boxes {
  display: grid;
@@ -316,6 +320,15 @@ img {
  background: var(--dark) !important;
  color: var(--light);
 } 
+
+.vac-container {
+ display: grid;
+ grid-gap: 20px;
+ margin: 0px 30px;
+ grid-template-areas:
+  "top-box-a"
+  "top-box-b top-box-c";
+}
 
 .vac-boxes {
  display: grid;
