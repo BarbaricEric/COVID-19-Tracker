@@ -105,18 +105,18 @@
   });
 
    // set the dimensions and margins of the first graph
-var margin = {top: 10, right: 100, bottom: 30, left: 30},
-    width = 660 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+var margin1 = {top: 10, right: 100, bottom: 30, left: 30},
+    width1 = 660 - margin1.left - margin1.right,
+    height1 = 600 - margin1.top - margin1.bottom;
 
   // append the svg object to the body of the page
 var svg = d3.select("#pfizer2")
   .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("width", width1 + margin1.left + margin1.right)
+    .attr("height", height1 + margin1.top + margin1.bottom)
   .append("g")
     .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
+          "translate(" + margin1.left + "," + margin1.top + ")");
 
 //Pfizer Deliever Chart data
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
@@ -141,23 +141,23 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     // Add X axis --> it is a date format
     const x = d3.scaleLinear()
       .domain([0,10])
-      .range([ 0, width ]);
+      .range([ 0, width1 ]);
     svg.append("g")
-      .attr("transform", "translate(0," + height + ")")
+      .attr("transform", "translate(0," + height1 + ")")
       .call(d3.axisBottom(x));
 
     // Add Y axis
     const y = d3.scaleLinear()
       .domain( [0,20])
-      .range([ height, 0 ]);
+      .range([ height1, 0 ]);
     svg.append("g")
       .call(d3.axisLeft(y));
       
     //Add Title
     const title = svg
       .append("text")
-      .attr("x", (width / 2))   
-      .attr("y", margin.top)
+      .attr("x", (width1 / 2))   
+      .attr("y", margin1.top)
       //.attr("y", 0 - (margin.top / 2))
       .attr("text-anchor", "middle")  
       .style("font-size", "30px") 
