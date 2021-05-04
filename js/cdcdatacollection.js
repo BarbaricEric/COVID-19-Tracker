@@ -57,7 +57,7 @@
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2.5)
   
-  const radius = Math.min(width, height) / 2 * 0.8
+  const radius = Math.min(width, height) / 2 * 1.8
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -184,8 +184,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
 
       // Create new data with the selection
       const dataFilter = 
-          data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
-          //data.map(d => ({time: d.time, value: d[selectedGroup]}))
+          //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+          data.map(d => ({time: d.time, value: d[selectedGroup]}))
 
       // Give these new data to update line
       line
@@ -224,7 +224,7 @@ var svg2 = d3.select("#moderna2")
     .attr("height", height2 + margin2.top + margin2.bottom)
   .append("g")
     .attr("transform",
-          "translate(" + margin2.left + "," + margin2.top + ")");
+          "translate(" + (margin2.left + 300) + "," + (margin2.top + 300) + ")");
 
 //Moderna Administration Chart data
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
@@ -292,8 +292,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
 
       // Create new data with the selection
       const dataFilter = 
-          data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
-          //data.map(d => ({time: d.time, value: d[selectedGroup]}))
+          //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+          data.map(d => ({time: d.time, value: d[selectedGroup]}))
 
       // Give these new data to update line
       line
@@ -337,7 +337,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2.5)
   
-  const radius = Math.min(width, height) / 2 * 0.8
+  const radius = Math.min(width, height) / 2 * 1.8
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -349,8 +349,11 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     
   const svg = d3v6.select("#moderna1")
   .append("svg")
-    .attr("width", width)
-    .attr("height", height)
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + (margin.left + 300) + "," + (margin.top + 350) + ")");
 
   svg.append("g")
       .attr("stroke", "white")
@@ -397,7 +400,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2.5)
   
-  const radius = Math.min(width, height) / 2 * 0.8
+  const radius = Math.min(width, height) / 2 * 1.8
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -409,8 +412,11 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
 
   const svg = d3v6.select("#jessen1")
   .append("svg")
-    .attr("width", width)
-    .attr("height", height)
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + (margin.left + 300) + "," + (margin.top + 350) + ")");
 
   svg.append("g")
       .attr("stroke", "white")
