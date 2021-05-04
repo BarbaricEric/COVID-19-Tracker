@@ -91,20 +91,20 @@
    <h3><strong><span style="color:green" class="vac-num">Loading...</strong></span></h3>
    <a class="news-btn" href="https://covid.cdc.gov/covid-data-tracker/#vaccinations">See More about COVID-19 Vaccination</a> 
 </div> 
- <section class="boxes">
+<!-- <section class="boxes">
   <div class="box top-box-b">
-   <!-- <i class="fas fa-route fa-4x"></i>
+    <i class="fas fa-route fa-4x"></i>
    <h2>Distributed Vaccines: Updated by CDC</h2>
    <h3><strong><span style="color:green" class="distribute-num">Loading...</strong></span></h3>
-   <a class="news-btn" href="https://covid.cdc.gov/covid-data-tracker/#vaccinations">See More about COVID-19 Vaccination</a> -->
+   <a class="news-btn" href="https://covid.cdc.gov/covid-data-tracker/#vaccinations">See More about COVID-19 Vaccination</a> 
   </div>
   <div class="box top-box-c">
    <!-- <i class="fas fa-syringe fa-4x"></i>
    <h2>Administerd Vaccines: Updated by CDC</h2>
    <h3><strong><span style="color:green" class="administer-num">Loading...</strong></span></h3> 
-   <a class="news-btn" href="https://covid.cdc.gov/covid-data-tracker/#vaccinations">See More about COVID-19 Vaccination</a> -->
+   <a class="news-btn" href="https://covid.cdc.gov/covid-data-tracker/#vaccinations">See More about COVID-19 Vaccination</a> 
   </div>
- </section>
+ </section> -->
 </section>      
     
 <!-- Box Section -->
@@ -155,7 +155,7 @@
     </div>
 </section> 
 
-<section class="tab-content info">
+<section class="tab-content wrapper-alt info">
   <div id="tab-1-content" class="tab-content-item show">
       <div id="pfizer1"></div>
     <div>
@@ -176,7 +176,7 @@
   </div> 
 </section>
 
-<section class="tab-content">
+<section class="tab-content wrapper-alt">
   <div id="tab-2-content" class="tab-content-item">
       <div id="moderna1"></div>
     <div>
@@ -197,7 +197,7 @@
   </div> 
 </section>
 
-<section class="tab-content">
+<section class="tab-content wrapper-alt">
   <div id="tab-3-content" class="tab-content-item">
       <div id="jessen1"></div>
     <div>
@@ -218,1993 +218,11 @@
   </div>
 </section>    
     
-<section class="tabs">
-  <div class="info-title">
-    <p>Data Sources</p>
-  </div> 
-  <div class="vac-boxes">
-    <div id="source-tab-1" class="vacbox datatab-item data-tab-border">
-      <p>John Hopkins University</p>
-    </div>
-    <div id="source-tab-2" class="vacbox datatab-item">
-      <p>New York Times</p>
-    </div>
-    <div id="source-tab-3" class="vacbox datatab-item">
-      <p>COVID Tracking Project</p>
-    </div>
-    </div>
-</section>     
-    
-<!-- Info Section -->
-<section class="tab-content info">
-  <div id="source-tab-1-content" class="datatab-content-item show">
-  <div class="Tabular-data">
-  <div class="info-table-title">
-   <h2>John Hopkins University</h2>
-   <p class="price">***Note: "NA" fields indicate unavailable data</p>
-   <a href="https://github.com/CSSEGISandData/COVID-19" class="btn">Data Source</a>
-  </div>
-  <div class="FilterRow">
-    <input id="searchBarJh" placeholder="Search By States" class="searchBar">
-    <!-- <select id="sourceSelJh" class="sourceSel">
-      <option value="John Hopkins University Data" selected="selected">John Hopkins University Data</option>
-      <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
-      <option value="New York Times Data">New York Times Data</option>
-     </select> -->
-   </div>
-  <div class="data-table-john-hopkins"> 
-   <table class="john-hopkins-table">
-    <thead>
-     <tr>
-      <th scope="col">States Name</th> 
-      <th scope="col">Total Cases</th>
-      <th scope="col">Total Deaths</th>
-      <th scope="col">Last Updated</th> 
-     </tr> 
-    </thead>
-    <tbody>
-     <tr>
-      <td scope="row">United States</td>
-      <td class="us-johnhopkins-confirm"></td>
-      <td class="us-johnhopkins-death"></td>
-      <td class="us-johnhopkins-recent"></td>
-     </tr>
-     <tr>
-      <td scope="row">Alabama</td>
-      <td class="us-johnhopkins-al-confirm"></td>
-      <td class="us-johnhopkins-al-death"></td>
-      <td class="us-johnhopkins-al-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Alaska</td>
-      <td class="us-johnhopkins-ak-confirm"></td>
-      <td class="us-johnhopkins-ak-death"></td>
-      <td class="us-johnhopkins-ak-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">American Samoa</td>
-      <td class="us-johnhopkins-as-confirm"></td>
-      <td class="us-johnhopkins-as-death"></td>
-      <td class="us-johnhopkins-as-recent"></td>       
-     </tr>
-      <td scope="row">Arizona</td>
-      <td class="us-johnhopkins-az-confirm"></td>
-      <td class="us-johnhopkins-az-death"></td>
-      <td class="us-johnhopkins-az-recent"></td>       
-     </tr>
-      <td scope="row">Arkansas</td>
-      <td class="us-johnhopkins-ar-confirm"></td>
-      <td class="us-johnhopkins-ar-death"></td>
-      <td class="us-johnhopkins-ar-recent"></td>       
-     </tr>
-      <td scope="row">California</td>
-      <td class="us-johnhopkins-ca-confirm"></td>
-      <td class="us-johnhopkins-ca-death"></td>
-      <td class="us-johnhopkins-ca-recent"></td>       
-     </tr>
-      <td scope="row">Colorado</td>
-      <td class="us-johnhopkins-co-confirm"></td>
-      <td class="us-johnhopkins-co-death"></td>
-      <td class="us-johnhopkins-co-recent"></td>       
-     </tr>
-      <td scope="row">Connecticut</td>
-      <td class="us-johnhopkins-ct-confirm"></td>
-      <td class="us-johnhopkins-ct-death"></td>
-      <td class="us-johnhopkins-ct-recent"></td>       
-     </tr>
-      <td scope="row">Delaware</td>
-      <td class="us-johnhopkins-de-confirm"></td>
-      <td class="us-johnhopkins-de-death"></td>
-      <td class="us-johnhopkins-de-recent"></td>       
-     </tr>
-      <td scope="row">District of Columbia</td>
-      <td class="us-johnhopkins-dc-confirm"></td>
-      <td class="us-johnhopkins-dc-death"></td>
-      <td class="us-johnhopkins-dc-recent"></td>       
-     </tr>
-      <td scope="row">Florida</td>
-      <td class="us-johnhopkins-fl-confirm"></td>
-      <td class="us-johnhopkins-fl-death"></td>
-      <td class="us-johnhopkins-fl-recent"></td>       
-     </tr>
-      <td scope="row">Georgia</td>
-      <td class="us-johnhopkins-ga-confirm"></td>
-      <td class="us-johnhopkins-ga-death"></td>
-      <td class="us-johnhopkins-ga-recent"></td>       
-     </tr>
-      <td scope="row">Guam</td>
-      <td class="us-johnhopkins-gu-confirm"></td>
-      <td class="us-johnhopkins-gu-death"></td>
-      <td class="us-johnhopkins-gu-recent"></td>       
-     </tr>
-      <td scope="row">Hawaii</td>
-      <td class="us-johnhopkins-hi-confirm"></td>
-      <td class="us-johnhopkins-hi-death"></td>
-      <td class="us-johnhopkins-hi-recent"></td>       
-     </tr>
-      <td scope="row">Idaho</td>
-      <td class="us-johnhopkins-id-confirm"></td>
-      <td class="us-johnhopkins-id-death"></td>
-      <td class="us-johnhopkins-id-recent"></td>       
-     </tr>
-      <td scope="row">Illinois</td>
-      <td class="us-johnhopkins-il-confirm"></td>
-      <td class="us-johnhopkins-il-death"></td>
-      <td class="us-johnhopkins-il-recent"></td>       
-     </tr>
-      <td scope="row">Indiana</td>
-      <td class="us-johnhopkins-in-confirm"></td>
-      <td class="us-johnhopkins-in-death"></td>
-      <td class="us-johnhopkins-in-recent"></td>       
-     </tr>
-      <td scope="row">Iowa</td>
-      <td class="us-johnhopkins-ia-confirm"></td>
-      <td class="us-johnhopkins-ia-death"></td>
-      <td class="us-johnhopkins-ia-recent"></td>       
-     </tr>
-      <td scope="row">Kansas</td>
-      <td class="us-johnhopkins-ks-confirm"></td>
-      <td class="us-johnhopkins-ks-death"></td>
-      <td class="us-johnhopkins-ks-recent"></td>       
-     </tr>
-      <td scope="row">Kentucky</td>
-      <td class="us-johnhopkins-ky-confirm"></td>
-      <td class="us-johnhopkins-ky-death"></td>
-      <td class="us-johnhopkins-ky-recent"></td>       
-     </tr>
-      <td scope="row">Louisiana</td>
-      <td class="us-johnhopkins-la-confirm"></td>
-      <td class="us-johnhopkins-la-death"></td>
-      <td class="us-johnhopkins-la-recent"></td>       
-     </tr>
-      <td scope="row">Maine</td>
-      <td class="us-johnhopkins-me-confirm"></td>
-      <td class="us-johnhopkins-me-death"></td>
-      <td class="us-johnhopkins-me-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Maryland</td>
-      <td class="us-johnhopkins-md-confirm"></td>
-      <td class="us-johnhopkins-md-death"></td>
-      <td class="us-johnhopkins-md-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Massachusetts</td>
-      <td class="us-johnhopkins-ma-confirm"></td>
-      <td class="us-johnhopkins-ma-death"></td>
-      <td class="us-johnhopkins-ma-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Michigan</td>
-      <td class="us-johnhopkins-mi-confirm"></td>
-      <td class="us-johnhopkins-mi-death"></td>
-      <td class="us-johnhopkins-mi-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Minnesota</td>
-      <td class="us-johnhopkins-mn-confirm"></td>
-      <td class="us-johnhopkins-mn-death"></td>
-      <td class="us-johnhopkins-mn-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Mississippi</td>
-      <td class="us-johnhopkins-ms-confirm"></td>
-      <td class="us-johnhopkins-ms-death"></td>
-      <td class="us-johnhopkins-ms-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Missouri</td>
-      <td class="us-johnhopkins-mo-confirm"></td>
-      <td class="us-johnhopkins-mo-death"></td>
-      <td class="us-johnhopkins-mo-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Montana</td>
-      <td class="us-johnhopkins-mt-confirm"></td>
-      <td class="us-johnhopkins-mt-death"></td>
-      <td class="us-johnhopkins-mt-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Nebraska</td>
-      <td class="us-johnhopkins-ne-confirm"></td>
-      <td class="us-johnhopkins-ne-death"></td>
-      <td class="us-johnhopkins-ne-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Neveda</td>
-      <td class="us-johnhopkins-nv-confirm"></td>
-      <td class="us-johnhopkins-nv-death"></td>
-      <td class="us-johnhopkins-nv-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">New Hampshire</td>
-      <td class="us-johnhopkins-nh-confirm"></td>
-      <td class="us-johnhopkins-nh-death"></td>
-      <td class="us-johnhopkins-nh-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">New Jersey</td>
-      <td class="us-johnhopkins-nj-confirm"></td>
-      <td class="us-johnhopkins-nj-death"></td>
-      <td class="us-johnhopkins-nj-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">New Mexico</td>
-      <td class="us-johnhopkins-nm-confirm"></td>
-      <td class="us-johnhopkins-nm-death"></td>
-      <td class="us-johnhopkins-nm-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">New York</td>
-      <td class="us-johnhopkins-ny-confirm"></td>
-      <td class="us-johnhopkins-ny-death"></td>
-      <td class="us-johnhopkins-ny-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">North Carolina</td>
-      <td class="us-johnhopkins-nc-confirm"></td>
-      <td class="us-johnhopkins-nc-death"></td>
-      <td class="us-johnhopkins-nc-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">North Dakota</td>
-      <td class="us-johnhopkins-nd-confirm"></td>
-      <td class="us-johnhopkins-nd-death"></td>
-      <td class="us-johnhopkins-nd-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Northern Mariana Island</td>
-      <td class="us-johnhopkins-mp-confirm"></td>
-      <td class="us-johnhopkins-mp-death"></td>
-      <td class="us-johnhopkins-mp-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Ohio</td>
-      <td class="us-johnhopkins-oh-confirm"></td>
-      <td class="us-johnhopkins-oh-death"></td>
-      <td class="us-johnhopkins-oh-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Oklahoma</td>
-      <td class="us-johnhopkins-ok-confirm"></td>
-      <td class="us-johnhopkins-ok-death"></td>
-      <td class="us-johnhopkins-ok-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Oregon</td>
-      <td class="us-johnhopkins-or-confirm"></td>
-      <td class="us-johnhopkins-or-death"></td>
-      <td class="us-johnhopkins-or-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Pennsylvania</td>
-      <td class="us-johnhopkins-pa-confirm"></td>
-      <td class="us-johnhopkins-pa-death"></td>
-      <td class="us-johnhopkins-pa-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Puerto Rico</td>
-      <td class="us-johnhopkins-pr-confirm"></td>
-      <td class="us-johnhopkins-pr-death"></td>
-      <td class="us-johnhopkins-pr-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Rhode Island</td>
-      <td class="us-johnhopkins-ri-confirm"></td>
-      <td class="us-johnhopkins-ri-death"></td>
-      <td class="us-johnhopkins-ri-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">South Carolina</td>
-      <td class="us-johnhopkins-sc-confirm"></td>
-      <td class="us-johnhopkins-sc-death"></td>
-      <td class="us-johnhopkins-sc-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">South Dakota</td>
-      <td class="us-johnhopkins-sd-confirm"></td>
-      <td class="us-johnhopkins-sd-death"></td>
-      <td class="us-johnhopkins-sd-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Tennessee</td>
-      <td class="us-johnhopkins-tn-confirm"></td>
-      <td class="us-johnhopkins-tn-death"></td>
-      <td class="us-johnhopkins-tn-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Texas</td>
-      <td class="us-johnhopkins-tx-confirm"></td>
-      <td class="us-johnhopkins-tx-death"></td>
-      <td class="us-johnhopkins-tx-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">US Virgin Island</td>
-      <td class="us-johnhopkins-vi-confirm"></td>
-      <td class="us-johnhopkins-vi-death"></td>
-      <td class="us-johnhopkins-vi-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Utah</td>
-      <td class="us-johnhopkins-ut-confirm"></td>
-      <td class="us-johnhopkins-ut-death"></td>
-      <td class="us-johnhopkins-ut-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Vermont</td>
-      <td class="us-johnhopkins-vt-confirm"></td>
-      <td class="us-johnhopkins-vt-death"></td>
-      <td class="us-johnhopkins-vt-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Virginia</td>
-      <td class="us-johnhopkins-va-confirm"></td>
-      <td class="us-johnhopkins-va-death"></td>
-      <td class="us-johnhopkins-va-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Washington</td>
-      <td class="us-johnhopkins-wa-confirm"></td>
-      <td class="us-johnhopkins-wa-death"></td>
-      <td class="us-johnhopkins-wa-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">West Virginia</td>
-      <td class="us-johnhopkins-wv-confirm"></td>
-      <td class="us-johnhopkins-wv-death"></td>
-      <td class="us-johnhopkins-wv-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Wisconsin</td>
-      <td class="us-johnhopkins-wi-confirm"></td>
-      <td class="us-johnhopkins-wi-death"></td>
-      <td class="us-johnhopkins-wi-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Wyoming</td>
-      <td class="us-johnhopkins-wy-confirm"></td>
-      <td class="us-johnhopkins-wy-death"></td>
-      <td class="us-johnhopkins-wy-recent"></td>       
-     </tr>      
-    </tbody>
-   </table>
-<div class="price">John Hopkins University Charts
- <div class="us-johnhopkins-chart">
-   <div class="us-johnhopkins-totaluschart"></div>
-    <div> 
-    <div class="us-johnhopkins-casestatechart"></div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <select id="">
-       <option id ="">California</option>
-       <option id ="">Texas</option>
-       <option id ="">Arizona</option>
-       <option id ="">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-   <div> 
-    <div class="us-johnhopkins-deathstatechart"></div>
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <!-- <button id="" class="autocompare">United States</button> -->
-    <select id="">
-       <option id ="">California</option>
-       <option id ="">Texas</option>
-       <option id ="">Arizona</option>
-       <option id ="">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
- </div> 
-</div>
-  </div>  
-  </div>
- </section>
-    
-<section class="tab-content info">
-  <div id="source-tab-2-content" class="datatab-content-item">
-      <div class="info-table-title">
-   <h2>New York Times</h2>
-   <p class="price">***Note: "NA" fields indicate unavailable data</p>
-   <a href="https://github.com/nytimes/covid-19-data" class="btn">Data Source</a>
-  </div>
-  <div class="FilterRow">
-    <input id="searchBarNy" placeholder="Search By States" class="searchBar">
-    <!-- <select id="sourceSelNy" class="sourceSel">
-      <option value="John Hopkins University Data" selected="selected">John Hopkins University Data</option>
-      <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
-      <option value="New York Times Data">New York Times Data</option>
-     </select> -->
-   </div>
-  <div class="data-table-new-york-times"> 
-   <table class="new-york-times-table">
-    <thead>
-     <tr>
-      <th scope="col">States Name</th> 
-      <th scope="col">Total Cases</th>
-      <th scope="col">Total Deaths</th>
-      <th scope="col">Last Updated</th> 
-     </tr>      
-    </thead>
-    <tbody>
-     <tr>
-      <td scope="row">United States</td>
-      <td class="us-newyorktimes-confirm"></td>
-      <td class="us-newyorktimes-death"></td>
-      <td class="us-newyorktimes-recent"></td>
-     </tr>
-     <tr>
-      <td scope="row">Alabama</td>
-      <td class="us-newyorktimes-al-confirm"></td>
-      <td class="us-newyorktimes-al-death"></td>
-      <td class="us-newyorktimes-al-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Alaska</td>
-      <td class="us-newyorktimes-ak-confirm"></td>
-      <td class="us-newyorktimes-ak-death"></td>
-      <td class="us-newyorktimes-ak-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">American Samoa</td>
-      <td class="us-newyorktimes-as-confirm"></td>
-      <td class="us-newyorktimes-as-death"></td>
-      <td class="us-newyorktimes-as-recent"></td>       
-     </tr>
-      <td scope="row">Arizona</td>
-      <td class="us-newyorktimes-az-confirm"></td>
-      <td class="us-newyorktimes-az-death"></td>
-      <td class="us-newyorktimes-az-recent"></td>       
-     </tr>
-      <td scope="row">Arkansas</td>
-      <td class="us-newyorktimes-ar-confirm"></td>
-      <td class="us-newyorktimes-ar-death"></td>
-      <td class="us-newyorktimes-ar-recent"></td>       
-     </tr>
-      <td scope="row">California</td>
-      <td class="us-newyorktimes-ca-confirm"></td>
-      <td class="us-newyorktimes-ca-death"></td>
-      <td class="us-newyorktimes-ca-recent"></td>       
-     </tr>
-      <td scope="row">Colorado</td>
-      <td class="us-newyorktimes-co-confirm"></td>
-      <td class="us-newyorktimes-co-death"></td>
-      <td class="us-newyorktimes-co-recent"></td>       
-     </tr>
-      <td scope="row">Connecticut</td>
-      <td class="us-newyorktimes-ct-confirm"></td>
-      <td class="us-newyorktimes-ct-death"></td>
-      <td class="us-newyorktimes-ct-recent"></td>       
-     </tr>
-      <td scope="row">Delaware</td>
-      <td class="us-newyorktimes-de-confirm"></td>
-      <td class="us-newyorktimes-de-death"></td>
-      <td class="us-newyorktimes-de-recent"></td>       
-     </tr>
-      <td scope="row">District of Columbia</td>
-      <td class="us-newyorktimes-dc-confirm"></td>
-      <td class="us-newyorktimes-dc-death"></td>
-      <td class="us-newyorktimes-dc-recent"></td>       
-     </tr>
-      <td scope="row">Florida</td>
-      <td class="us-newyorktimes-fl-confirm"></td>
-      <td class="us-newyorktimes-fl-death"></td>
-      <td class="us-newyorktimes-fl-recent"></td>       
-     </tr>
-      <td scope="row">Georgia</td>
-      <td class="us-newyorktimes-ga-confirm"></td>
-      <td class="us-newyorktimes-ga-death"></td>
-      <td class="us-newyorktimes-ga-recent"></td>       
-     </tr>
-      <td scope="row">Guam</td>
-      <td class="us-newyorktimes-gu-confirm"></td>
-      <td class="us-newyorktimes-gu-death"></td>
-      <td class="us-newyorktimes-gu-recent"></td>       
-     </tr>
-      <td scope="row">Hawaii</td>
-      <td class="us-newyorktimes-hi-confirm"></td>
-      <td class="us-newyorktimes-hi-death"></td>
-      <td class="us-newyorktimes-hi-recent"></td>       
-     </tr>
-      <td scope="row">Idaho</td>
-      <td class="us-newyorktimes-id-confirm"></td>
-      <td class="us-newyorktimes-id-death"></td>
-      <td class="us-newyorktimes-id-recent"></td>       
-     </tr>
-      <td scope="row">Illinois</td>
-      <td class="us-newyorktimes-il-confirm"></td>
-      <td class="us-newyorktimes-il-death"></td>
-      <td class="us-newyorktimes-il-recent"></td>       
-     </tr>
-      <td scope="row">Indiana</td>
-      <td class="us-newyorktimes-in-confirm"></td>
-      <td class="us-newyorktimes-in-death"></td>
-      <td class="us-newyorktimes-in-recent"></td>       
-     </tr>
-      <td scope="row">Iowa</td>
-      <td class="us-newyorktimes-ia-confirm"></td>
-      <td class="us-newyorktimes-ia-death"></td>
-      <td class="us-newyorktimes-ia-recent"></td>       
-     </tr>
-      <td scope="row">Kansas</td>
-      <td class="us-newyorktimes-ks-confirm"></td>
-      <td class="us-newyorktimes-ks-death"></td>
-      <td class="us-newyorktimes-ks-recent"></td>       
-     </tr>
-      <td scope="row">Kentucky</td>
-      <td class="us-newyorktimes-ky-confirm"></td>
-      <td class="us-newyorktimes-ky-death"></td>
-      <td class="us-newyorktimes-ky-recent"></td>       
-     </tr>
-      <td scope="row">Louisiana</td>
-      <td class="us-newyorktimes-la-confirm"></td>
-      <td class="us-newyorktimes-la-death"></td>
-      <td class="us-newyorktimes-la-recent"></td>       
-     </tr>
-      <td scope="row">Maine</td>
-      <td class="us-newyorktimes-me-confirm"></td>
-      <td class="us-newyorktimes-me-death"></td>
-      <td class="us-newyorktimes-me-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Maryland</td>
-      <td class="us-newyorktimes-md-confirm"></td>
-      <td class="us-newyorktimes-md-death"></td>
-      <td class="us-newyorktimes-md-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Massachusetts</td>
-      <td class="us-newyorktimes-ma-confirm"></td>
-      <td class="us-newyorktimes-ma-death"></td>
-      <td class="us-newyorktimes-ma-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Michigan</td>
-      <td class="us-newyorktimes-mi-confirm"></td>
-      <td class="us-newyorktimes-mi-death"></td>
-      <td class="us-newyorktimes-mi-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Minnesota</td>
-      <td class="us-newyorktimes-mn-confirm"></td>
-      <td class="us-newyorktimes-mn-death"></td>
-      <td class="us-newyorktimes-mn-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Mississippi</td>
-      <td class="us-newyorktimes-ms-confirm"></td>
-      <td class="us-newyorktimes-ms-death"></td>
-      <td class="us-newyorktimes-ms-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Missouri</td>
-      <td class="us-newyorktimes-mo-confirm"></td>
-      <td class="us-newyorktimes-mo-death"></td>
-      <td class="us-newyorktimes-mo-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Montana</td>
-      <td class="us-newyorktimes-mt-confirm"></td>
-      <td class="us-newyorktimes-mt-death"></td>
-      <td class="us-newyorktimes-mt-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Nebraska</td>
-      <td class="us-newyorktimes-ne-confirm"></td>
-      <td class="us-newyorktimes-ne-death"></td>
-      <td class="us-newyorktimes-ne-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Neveda</td>
-      <td class="us-newyorktimes-nv-confirm"></td>
-      <td class="us-newyorktimes-nv-death"></td>
-      <td class="us-newyorktimes-nv-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">New Hampshire</td>
-      <td class="us-newyorktimes-nh-confirm"></td>
-      <td class="us-newyorktimes-nh-death"></td>
-      <td class="us-newyorktimes-nh-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">New Jersey</td>
-      <td class="us-newyorktimes-nj-confirm"></td>
-      <td class="us-newyorktimes-nj-death"></td>
-      <td class="us-newyorktimes-nj-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">New Mexico</td>
-      <td class="us-newyorktimes-nm-confirm"></td>
-      <td class="us-newyorktimes-nm-death"></td>
-      <td class="us-newyorktimes-nm-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">New York</td>
-      <td class="us-newyorktimes-ny-confirm"></td>
-      <td class="us-newyorktimes-ny-death"></td>
-      <td class="us-newyorktimes-ny-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">North Carolina</td>
-      <td class="us-newyorktimes-nc-confirm"></td>
-      <td class="us-newyorktimes-nc-death"></td>
-      <td class="us-newyorktimes-nc-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">North Dakota</td>
-      <td class="us-newyorktimes-nd-confirm"></td>
-      <td class="us-newyorktimes-nd-death"></td>
-      <td class="us-newyorktimes-nd-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Northern Mariana Island</td>
-      <td class="us-newyorktimes-mp-confirm"></td>
-      <td class="us-newyorktimes-mp-death"></td>
-      <td class="us-newyorktimes-mp-recent"></td>       
-     </tr>
-     </tr>
-      <td scope="row">Ohio</td>
-      <td class="us-newyorktimes-oh-confirm"></td>
-      <td class="us-newyorktimes-oh-death"></td>
-      <td class="us-newyorktimes-oh-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Oklahoma</td>
-      <td class="us-newyorktimes-ok-confirm"></td>
-      <td class="us-newyorktimes-ok-death"></td>
-      <td class="us-newyorktimes-ok-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Oregon</td>
-      <td class="us-newyorktimes-or-confirm"></td>
-      <td class="us-newyorktimes-or-death"></td>
-      <td class="us-newyorktimes-or-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Pennsylvania</td>
-      <td class="us-newyorktimes-pa-confirm"></td>
-      <td class="us-newyorktimes-pa-death"></td>
-      <td class="us-newyorktimes-pa-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Puerto Rico</td>
-      <td class="us-newyorktimes-pr-confirm"></td>
-      <td class="us-newyorktimes-pr-death"></td>
-      <td class="us-newyorktimes-pr-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Rhode Island</td>
-      <td class="us-newyorktimes-ri-confirm"></td>
-      <td class="us-newyorktimes-ri-death"></td>
-      <td class="us-newyorktimes-ri-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">South Carolina</td>
-      <td class="us-newyorktimes-sc-confirm"></td>
-      <td class="us-newyorktimes-sc-death"></td>
-      <td class="us-newyorktimes-sc-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">South Dakota</td>
-      <td class="us-newyorktimes-sd-confirm"></td>
-      <td class="us-newyorktimes-sd-death"></td>
-      <td class="us-newyorktimes-sd-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Tennessee</td>
-      <td class="us-newyorktimes-tn-confirm"></td>
-      <td class="us-newyorktimes-tn-death"></td>
-      <td class="us-newyorktimes-tn-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Texas</td>
-      <td class="us-newyorktimes-tx-confirm"></td>
-      <td class="us-newyorktimes-tx-death"></td>
-      <td class="us-newyorktimes-tx-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">US Virgin Island</td>
-      <td class="us-newyorktimes-vi-confirm"></td>
-      <td class="us-newyorktimes-vi-death"></td>
-      <td class="us-newyorktimes-vi-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Utah</td>
-      <td class="us-newyorktimes-ut-confirm"></td>
-      <td class="us-newyorktimes-ut-death"></td>
-      <td class="us-newyorktimes-ut-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Vermont</td>
-      <td class="us-newyorktimes-vt-confirm"></td>
-      <td class="us-newyorktimes-vt-death"></td>
-      <td class="us-newyorktimes-vt-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Virginia</td>
-      <td class="us-newyorktimes-va-confirm"></td>
-      <td class="us-newyorktimes-va-death"></td>
-      <td class="us-newyorktimes-va-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Washington</td>
-      <td class="us-newyorktimes-wa-confirm"></td>
-      <td class="us-newyorktimes-wa-death"></td>
-      <td class="us-newyorktimes-wa-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">West Virginia</td>
-      <td class="us-newyorktimes-wv-confirm"></td>
-      <td class="us-newyorktimes-wv-death"></td>
-      <td class="us-newyorktimes-wv-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Wisconsin</td>
-      <td class="us-newyorktimes-wi-confirm"></td>
-      <td class="us-newyorktimes-wi-death"></td>
-      <td class="us-newyorktimes-wi-recent"></td>       
-     </tr>
-     <tr>
-      <td scope="row">Wyoming</td>
-      <td class="us-newyorktimes-wy-confirm"></td>
-      <td class="us-newyorktimes-wy-death"></td>
-      <td class="us-newyorktimes-wy-recent"></td>       
-     </tr>
-    </tbody>
-   </table>
-<div class="price">New York Times University Charts
- <div id="us-nytimes-chart"></div>
- <div id="us-nytimes-average-chart"></div>
- <div class="showcase__section" id="bubble">
-  <div class="spacer --small"></div>
-  <div id="bubbleplots">
-    <div class="bubbleplot" data-num="0">
-      <div class="plot" id="us-nytimes-state-chart"></div>
-      <div class="control-row">
-        State: <select class="countrydata">
-        </select>
-      </div>
-    </div>
-  </div>
-</div> 
-</div>
-  </div>
-  </div>
- </section>    
-    
-<section class="tab-content info">
-  <div id="source-tab-3-content" class="datatab-content-item">
-      <div class="info-table-title">
-   <h2>COVID Tracking Project <span class="covidtrackupdate">(COVID-19 Data after March 7,2021 is unavailable. Click for more information)</span></h2>
-   <p class="price">***Note: "NA" fields indicate unavailable data</p>
-   <a href="https://covidtracking.com/data" class="btn">Data Source</a>
-  </div>
-  <div class="FilterRow">
-    <input id="searchBarCovidTrack" placeholder="Search By States" class="searchBar">
-    <!-- <select id="sourceSelCovidTrack" class="sourceSel">
-      <option value="John Hopkins University Data" selected="selected">John Hopkins University Data</option>
-      <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
-      <option value="New York Times Data">New York Times Data</option>
-     </select> -->
-   </div>
-<div class="data-table-covid-track"> 
-  <table class="covid-track-table" id="datatable">
-    <thead>
-     <tr>
-      <th scope="col">States Name</th> 
-      <th scope="col">Total Cases</th>
-      <th scope="col">Total Deaths</th>
-      <th scope="col">Total Hospitalization</th>
-      <th scope="col">Current Hospitalization</th>
-      <th scope="col">Currently in ICU</th>
-      <th scope="col">Last Updated</th> 
-     </tr>      
-    </thead>
-    <tbody>
-     <tr>
-      <td scope="row">United States</td>
-      <td class="us-covidtrack-confirm"></td>
-      <td class="us-covidtrack-death"></td>
-      <td class="us-covidtrack-tothos"></td>
-      <td class="us-covidtrack-curhos"></td>
-      <td class="us-covidtrack-curicu"></td> 
-      <td class="us-covidtrack-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Alabama</td>
-      <td class="us-covidtrack-al-confirm"></td>
-      <td class="us-covidtrack-al-death"></td>
-      <td class="us-covidtrack-al-tothos"></td>
-      <td class="us-covidtrack-al-curhos"></td>
-      <td class="us-covidtrack-al-curicu"></td> 
-      <td class="us-covidtrack-al-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Alaska</td>
-      <td class="us-covidtrack-ak-confirm"></td>
-      <td class="us-covidtrack-ak-death"></td>
-      <td class="us-covidtrack-ak-tothos"></td>
-      <td class="us-covidtrack-ak-curhos"></td>
-      <td class="us-covidtrack-ak-curicu"></td> 
-      <td class="us-covidtrack-ak-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">American Samoa</td>
-      <td class="us-covidtrack-as-confirm"></td>
-      <td class="us-covidtrack-as-death"></td>
-      <td class="us-covidtrack-as-tothos"></td>
-      <td class="us-covidtrack-as-curhos"></td>
-      <td class="us-covidtrack-as-curicu"></td> 
-      <td class="us-covidtrack-as-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Arizona</td>
-      <td class="us-covidtrack-az-confirm"></td>
-      <td class="us-covidtrack-az-death"></td>
-      <td class="us-covidtrack-az-tothos"></td>
-      <td class="us-covidtrack-az-curhos"></td>
-      <td class="us-covidtrack-az-curicu"></td> 
-      <td class="us-covidtrack-az-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Arkansas</td>
-      <td class="us-covidtrack-ar-confirm"></td>
-      <td class="us-covidtrack-ar-death"></td>
-      <td class="us-covidtrack-ar-tothos"></td>
-      <td class="us-covidtrack-ar-curhos"></td>
-      <td class="us-covidtrack-ar-curicu"></td> 
-      <td class="us-covidtrack-ar-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">California</td>
-      <td id="us-covidtrack-ca-confirm"></td>
-      <td id="us-covidtrack-ca-death"></td>
-      <td class="us-covidtrack-ca-tothos"></td>
-      <td class="us-covidtrack-ca-curhos"></td>
-      <td class="us-covidtrack-ca-curicu"></td> 
-      <td class="us-covidtrack-ca-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Colorado</td>
-      <td class="us-covidtrack-co-confirm"></td>
-      <td class="us-covidtrack-co-death"></td>
-      <td class="us-covidtrack-co-tothos"></td>
-      <td class="us-covidtrack-co-curhos"></td>
-      <td class="us-covidtrack-co-curicu"></td> 
-      <td class="us-covidtrack-co-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Connecticut</td>
-      <td class="us-covidtrack-ct-confirm"></td>
-      <td class="us-covidtrack-ct-death"></td>
-      <td class="us-covidtrack-ct-tothos"></td>
-      <td class="us-covidtrack-ct-curhos"></td>
-      <td class="us-covidtrack-ct-curicu"></td> 
-      <td class="us-covidtrack-ct-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Delaware</td>
-      <td class="us-covidtrack-de-confirm"></td>
-      <td class="us-covidtrack-de-death"></td>
-      <td class="us-covidtrack-de-tothos"></td>
-      <td class="us-covidtrack-de-curhos"></td>
-      <td class="us-covidtrack-de-curicu"></td> 
-      <td class="us-covidtrack-de-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">District of Columbia</td>
-      <td class="us-covidtrack-dc-confirm"></td>
-      <td class="us-covidtrack-dc-death"></td>
-      <td class="us-covidtrack-dc-tothos"></td>
-      <td class="us-covidtrack-dc-curhos"></td>
-      <td class="us-covidtrack-dc-curicu"></td> 
-      <td class="us-covidtrack-dc-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Florida</td>
-      <td class="us-covidtrack-fl-confirm"></td>
-      <td class="us-covidtrack-fl-death"></td>
-      <td class="us-covidtrack-fl-tothos"></td>
-      <td class="us-covidtrack-fl-curhos"></td>
-      <td class="us-covidtrack-fl-curicu"></td> 
-      <td class="us-covidtrack-fl-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Georgia</td>
-      <td class="us-covidtrack-ga-confirm"></td>
-      <td class="us-covidtrack-ga-death"></td>
-      <td class="us-covidtrack-ga-tothos"></td>
-      <td class="us-covidtrack-ga-curhos"></td>
-      <td class="us-covidtrack-ga-curicu"></td> 
-      <td class="us-covidtrack-ga-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Guam</td>
-      <td class="us-covidtrack-gu-confirm"></td>
-      <td class="us-covidtrack-gu-death"></td>
-      <td class="us-covidtrack-gu-tothos"></td>
-      <td class="us-covidtrack-gu-curhos"></td>
-      <td class="us-covidtrack-gu-curicu"></td> 
-      <td class="us-covidtrack-gu-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Hawaii</td>
-      <td class="us-covidtrack-hi-confirm"></td>
-      <td class="us-covidtrack-hi-death"></td>
-      <td class="us-covidtrack-hi-tothos"></td>
-      <td class="us-covidtrack-hi-curhos"></td>
-      <td class="us-covidtrack-hi-curicu"></td> 
-      <td class="us-covidtrack-hi-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Idaho</td>
-      <td class="us-covidtrack-id-confirm"></td>
-      <td class="us-covidtrack-id-death"></td>
-      <td class="us-covidtrack-id-tothos"></td>
-      <td class="us-covidtrack-id-curhos"></td>
-      <td class="us-covidtrack-id-curicu"></td> 
-      <td class="us-covidtrack-id-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Illinois</td>
-      <td class="us-covidtrack-il-confirm"></td>
-      <td class="us-covidtrack-il-death"></td>
-      <td class="us-covidtrack-il-tothos"></td>
-      <td class="us-covidtrack-il-curhos"></td>
-      <td class="us-covidtrack-il-curicu"></td> 
-      <td class="us-covidtrack-il-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Indiana</td>
-      <td class="us-covidtrack-in-confirm"></td>
-      <td class="us-covidtrack-in-death"></td>
-      <td class="us-covidtrack-in-tothos"></td>
-      <td class="us-covidtrack-in-curhos"></td>
-      <td class="us-covidtrack-in-curicu"></td> 
-      <td class="us-covidtrack-in-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Iowa</td>
-      <td class="us-covidtrack-ia-confirm"></td>
-      <td class="us-covidtrack-ia-death"></td>
-      <td class="us-covidtrack-ia-tothos"></td>
-      <td class="us-covidtrack-ia-curhos"></td>
-      <td class="us-covidtrack-ia-curicu"></td> 
-      <td class="us-covidtrack-ia-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Kansas</td>
-      <td class="us-covidtrack-ks-confirm"></td>
-      <td class="us-covidtrack-ks-death"></td>
-      <td class="us-covidtrack-ks-tothos"></td>
-      <td class="us-covidtrack-ks-curhos"></td>
-      <td class="us-covidtrack-ks-curicu"></td> 
-      <td class="us-covidtrack-ks-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Kentucky</td>
-      <td class="us-covidtrack-ky-confirm"></td>
-      <td class="us-covidtrack-ky-death"></td>
-      <td class="us-covidtrack-ky-tothos"></td>
-      <td class="us-covidtrack-ky-curhos"></td>
-      <td class="us-covidtrack-ky-curicu"></td> 
-      <td class="us-covidtrack-ky-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Louisiana</td>
-      <td class="us-covidtrack-la-confirm"></td>
-      <td class="us-covidtrack-la-death"></td>
-      <td class="us-covidtrack-la-tothos"></td>
-      <td class="us-covidtrack-la-curhos"></td>
-      <td class="us-covidtrack-la-curicu"></td> 
-      <td class="us-covidtrack-la-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Maine</td>
-      <td class="us-covidtrack-me-confirm"></td>
-      <td class="us-covidtrack-me-death"></td>
-      <td class="us-covidtrack-me-tothos"></td>
-      <td class="us-covidtrack-me-curhos"></td>
-      <td class="us-covidtrack-me-curicu"></td> 
-      <td class="us-covidtrack-me-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Maryland</td>
-      <td class="us-covidtrack-md-confirm"></td>
-      <td class="us-covidtrack-md-death"></td>
-      <td class="us-covidtrack-md-tothos"></td>
-      <td class="us-covidtrack-md-curhos"></td>
-      <td class="us-covidtrack-md-curicu"></td> 
-      <td class="us-covidtrack-md-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Massachusetts</td>
-      <td class="us-covidtrack-ma-confirm"></td>
-      <td class="us-covidtrack-ma-death"></td>
-      <td class="us-covidtrack-ma-tothos"></td>
-      <td class="us-covidtrack-ma-curhos"></td>
-      <td class="us-covidtrack-ma-curicu"></td> 
-      <td class="us-covidtrack-ma-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Michigan</td>
-      <td class="us-covidtrack-mi-confirm"></td>
-      <td class="us-covidtrack-mi-death"></td>
-      <td class="us-covidtrack-mi-tothos"></td>
-      <td class="us-covidtrack-mi-curhos"></td>
-      <td class="us-covidtrack-mi-curicu"></td> 
-      <td class="us-covidtrack-mi-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Minnesota</td>
-      <td class="us-covidtrack-mn-confirm"></td>
-      <td class="us-covidtrack-mn-death"></td>
-      <td class="us-covidtrack-mn-tothos"></td>
-      <td class="us-covidtrack-mn-curhos"></td>
-      <td class="us-covidtrack-mn-curicu"></td> 
-      <td class="us-covidtrack-mn-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Mississippi</td>
-      <td class="us-covidtrack-ms-confirm"></td>
-      <td class="us-covidtrack-ms-death"></td>
-      <td class="us-covidtrack-ms-tothos"></td>
-      <td class="us-covidtrack-ms-curhos"></td>
-      <td class="us-covidtrack-ms-curicu"></td> 
-      <td class="us-covidtrack-ms-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Missouri</td>
-      <td class="us-covidtrack-mo-confirm"></td>
-      <td class="us-covidtrack-mo-death"></td>
-      <td class="us-covidtrack-mo-tothos"></td>
-      <td class="us-covidtrack-mo-curhos"></td>
-      <td class="us-covidtrack-mo-curicu"></td> 
-      <td class="us-covidtrack-mo-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Montana</td>
-      <td class="us-covidtrack-mt-confirm"></td>
-      <td class="us-covidtrack-mt-death"></td>
-      <td class="us-covidtrack-mt-tothos"></td>
-      <td class="us-covidtrack-mt-curhos"></td>
-      <td class="us-covidtrack-mt-curicu"></td> 
-      <td class="us-covidtrack-mt-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Nebraska</td>
-      <td class="us-covidtrack-ne-confirm"></td>
-      <td class="us-covidtrack-ne-death"></td>
-      <td class="us-covidtrack-ne-tothos"></td>
-      <td class="us-covidtrack-ne-curhos"></td>
-      <td class="us-covidtrack-ne-curicu"></td> 
-      <td class="us-covidtrack-ne-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Neveda</td>
-      <td class="us-covidtrack-nv-confirm"></td>
-      <td class="us-covidtrack-nv-death"></td>
-      <td class="us-covidtrack-nv-tothos"></td>
-      <td class="us-covidtrack-nv-curhos"></td>
-      <td class="us-covidtrack-nv-curicu"></td> 
-      <td class="us-covidtrack-nv-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">New Hampshire</td>
-      <td class="us-covidtrack-nh-confirm"></td>
-      <td class="us-covidtrack-nh-death"></td>
-      <td class="us-covidtrack-nh-tothos"></td>
-      <td class="us-covidtrack-nh-curhos"></td>
-      <td class="us-covidtrack-nh-curicu"></td> 
-      <td class="us-covidtrack-nh-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">New Jersey</td>
-      <td class="us-covidtrack-nj-confirm"></td>
-      <td class="us-covidtrack-nj-death"></td>
-      <td class="us-covidtrack-nj-tothos"></td>
-      <td class="us-covidtrack-nj-curhos"></td>
-      <td class="us-covidtrack-nj-curicu"></td> 
-      <td class="us-covidtrack-nj-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">New Mexico</td>
-      <td class="us-covidtrack-nm-confirm"></td>
-      <td class="us-covidtrack-nm-death"></td>
-      <td class="us-covidtrack-nm-tothos"></td>
-      <td class="us-covidtrack-nm-curhos"></td>
-      <td class="us-covidtrack-nm-curicu"></td> 
-      <td class="us-covidtrack-nm-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">New York</td>
-      <td class="us-covidtrack-ny-confirm"></td>
-      <td class="us-covidtrack-ny-death"></td>
-      <td class="us-covidtrack-ny-tothos"></td>
-      <td class="us-covidtrack-ny-curhos"></td>
-      <td class="us-covidtrack-ny-curicu"></td> 
-      <td class="us-covidtrack-ny-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">North Carolina</td>
-      <td class="us-covidtrack-nc-confirm"></td>
-      <td class="us-covidtrack-nc-death"></td>
-      <td class="us-covidtrack-nc-tothos"></td>
-      <td class="us-covidtrack-nc-curhos"></td>
-      <td class="us-covidtrack-nc-curicu"></td> 
-      <td class="us-covidtrack-nc-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">North Dakota</td>
-      <td class="us-covidtrack-nd-confirm"></td>
-      <td class="us-covidtrack-nd-death"></td>
-      <td class="us-covidtrack-nd-tothos"></td>
-      <td class="us-covidtrack-nd-curhos"></td>
-      <td class="us-covidtrack-nd-curicu"></td> 
-      <td class="us-covidtrack-nd-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Northern Mariana Island</td>
-      <td class="us-covidtrack-mp-confirm"></td>
-      <td class="us-covidtrack-mp-death"></td>
-      <td class="us-covidtrack-mp-tothos"></td>
-      <td class="us-covidtrack-mp-curhos"></td>
-      <td class="us-covidtrack-mp-curicu"></td> 
-      <td class="us-covidtrack-mp-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Ohio</td>
-      <td class="us-covidtrack-oh-confirm"></td>
-      <td class="us-covidtrack-oh-death"></td>
-      <td class="us-covidtrack-oh-tothos"></td>
-      <td class="us-covidtrack-oh-curhos"></td>
-      <td class="us-covidtrack-oh-curicu"></td> 
-      <td class="us-covidtrack-oh-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Oklahoma</td>
-      <td class="us-covidtrack-ok-confirm"></td>
-      <td class="us-covidtrack-ok-death"></td>
-      <td class="us-covidtrack-ok-tothos"></td>
-      <td class="us-covidtrack-ok-curhos"></td>
-      <td class="us-covidtrack-ok-curicu"></td> 
-      <td class="us-covidtrack-ok-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Oregon</td>
-      <td class="us-covidtrack-or-confirm"></td>
-      <td class="us-covidtrack-or-death"></td>
-      <td class="us-covidtrack-or-tothos"></td>
-      <td class="us-covidtrack-or-curhos"></td>
-      <td class="us-covidtrack-or-curicu"></td> 
-      <td class="us-covidtrack-or-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Pennsylvania</td>
-      <td class="us-covidtrack-pa-confirm"></td>
-      <td class="us-covidtrack-pa-death"></td>
-      <td class="us-covidtrack-pa-tothos"></td>
-      <td class="us-covidtrack-pa-curhos"></td>
-      <td class="us-covidtrack-pa-curicu"></td> 
-      <td class="us-covidtrack-pa-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Puerto Rico</td>
-      <td class="us-covidtrack-pr-confirm"></td>
-      <td class="us-covidtrack-pr-death"></td>
-      <td class="us-covidtrack-pr-tothos"></td>
-      <td class="us-covidtrack-pr-curhos"></td>
-      <td class="us-covidtrack-pr-curicu"></td> 
-      <td class="us-covidtrack-pr-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Rhode Island</td>
-      <td class="us-covidtrack-ri-confirm"></td>
-      <td class="us-covidtrack-ri-death"></td>
-      <td class="us-covidtrack-ri-tothos"></td>
-      <td class="us-covidtrack-ri-curhos"></td>
-      <td class="us-covidtrack-ri-curicu"></td> 
-      <td class="us-covidtrack-ri-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">South Carolina</td>
-      <td class="us-covidtrack-sc-confirm"></td>
-      <td class="us-covidtrack-sc-death"></td>
-      <td class="us-covidtrack-sc-tothos"></td>
-      <td class="us-covidtrack-sc-curhos"></td>
-      <td class="us-covidtrack-sc-curicu"></td> 
-      <td class="us-covidtrack-sc-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">South Dakota</td>
-      <td class="us-covidtrack-sd-confirm"></td>
-      <td class="us-covidtrack-sd-death"></td>
-      <td class="us-covidtrack-sd-tothos"></td>
-      <td class="us-covidtrack-sd-curhos"></td>
-      <td class="us-covidtrack-sd-curicu"></td> 
-      <td class="us-covidtrack-sd-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Tennessee</td>
-      <td class="us-covidtrack-tn-confirm"></td>
-      <td class="us-covidtrack-tn-death"></td>
-      <td class="us-covidtrack-tn-tothos"></td>
-      <td class="us-covidtrack-tn-curhos"></td>
-      <td class="us-covidtrack-tn-curicu"></td> 
-      <td class="us-covidtrack-tn-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Texas</td>
-       <td class="us-covidtrack-tx-confirm"></td>
-      <td class="us-covidtrack-tx-death"></td>
-      <td class="us-covidtrack-tx-tothos"></td>
-      <td class="us-covidtrack-tx-curhos"></td>
-      <td class="us-covidtrack-tx-curicu"></td> 
-      <td class="us-covidtrack-tx-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">US Virgin Islands</td>
-      <td class="us-covidtrack-vi-confirm"></td>
-      <td class="us-covidtrack-vi-death"></td>
-      <td class="us-covidtrack-vi-tothos"></td>
-      <td class="us-covidtrack-vi-curhos"></td>
-      <td class="us-covidtrack-vi-curicu"></td> 
-      <td class="us-covidtrack-vi-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Utah</td>
-      <td class="us-covidtrack-ut-confirm"></td>
-      <td class="us-covidtrack-ut-death"></td>
-      <td class="us-covidtrack-ut-tothos"></td>
-      <td class="us-covidtrack-ut-curhos"></td>
-      <td class="us-covidtrack-ut-curicu"></td> 
-      <td class="us-covidtrack-ut-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Vermont</td>
-      <td class="us-covidtrack-vt-confirm"></td>
-      <td class="us-covidtrack-vt-death"></td>
-      <td class="us-covidtrack-vt-tothos"></td>
-      <td class="us-covidtrack-vt-curhos"></td>
-      <td class="us-covidtrack-vt-curicu"></td> 
-      <td class="us-covidtrack-vt-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Virginia</td>
-      <td class="us-covidtrack-va-confirm"></td>
-      <td class="us-covidtrack-va-death"></td>
-      <td class="us-covidtrack-va-tothos"></td>
-      <td class="us-covidtrack-va-curhos"></td>
-      <td class="us-covidtrack-va-curicu"></td> 
-      <td class="us-covidtrack-va-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Washington</td>
-      <td class="us-covidtrack-wa-confirm"></td>
-      <td class="us-covidtrack-wa-death"></td>
-      <td class="us-covidtrack-wa-tothos"></td>
-      <td class="us-covidtrack-wa-curhos"></td>
-      <td class="us-covidtrack-wa-curicu"></td> 
-      <td class="us-covidtrack-wa-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">West Virginia</td>
-      <td class="us-covidtrack-wv-confirm"></td>
-      <td class="us-covidtrack-wv-death"></td>
-      <td class="us-covidtrack-wv-tothos"></td>
-      <td class="us-covidtrack-wv-curhos"></td>
-      <td class="us-covidtrack-wv-curicu"></td> 
-      <td class="us-covidtrack-wv-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Wisconsin</td>
-      <td class="us-covidtrack-wi-confirm"></td>
-      <td class="us-covidtrack-wi-death"></td>
-      <td class="us-covidtrack-wi-tothos"></td>
-      <td class="us-covidtrack-wi-curhos"></td>
-      <td class="us-covidtrack-wi-curicu"></td> 
-      <td class="us-covidtrack-wi-recent"></td> 
-     </tr>
-     <tr>
-      <td scope="row">Wyoming</td>
-      <td class="us-covidtrack-wy-confirm"></td>
-      <td class="us-covidtrack-wy-death"></td>
-      <td class="us-covidtrack-wy-tothos"></td>
-      <td class="us-covidtrack-wy-curhos"></td>
-      <td class="us-covidtrack-wy-curicu"></td> 
-      <td class="us-covidtrack-wy-recent"></td> 
-     </tr>
-    </tbody>
-   </table>
-  <div class="price">COVID Tracking Charts
-    <div id="us-covidtrack-newcases-chart"></div>
-    <div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <button id="button1" class="autocompare">United States</button> 
-    <select id="newCaseSelectButton">
-       <option id ="newcases4">California</option>
-       <option id ="newcases3">Texas</option>
-       <option id ="newcases2">Arizona</option>
-       <option id ="newcases1">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-    <div id="us-covidtrack-newdeaths-chart"></div>
-    <div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <button id="button2" class="autocompare">United States</button> 
-    <select id="newDeathSelectButton">
-       <option id ="newdeath4">California</option>
-       <option id ="newdeath3">Texas</option>
-       <option id ="newdeath2">Arizona</option>
-       <option id ="newdeath1">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-    <div id="us-covidtrack-curhos-chart"></div>
-    <div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <button id="button3" class="autocompare">United States</button> 
-    <select id="curHosSelectButton">
-       <option id ="curhos4">California</option>
-       <option id ="curhos3">Texas</option>
-       <option id ="curhos2">Arizona</option>
-       <option id ="curhos1">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-    <div id="us-covidtrack-curvent-chart"></div>
-    <div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <button id="button4" class="autocompare">United States</button> 
-    <select id="curVentSelectButton">
-       <option id ="curvent4">California</option>
-       <option id ="curvent3">Texas</option>
-       <option id ="curvent2">Arizona</option>
-       <option id ="curvent1">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-    <div id="us-covidtrack-curicu-chart"></div>
-    <div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <button id="button5" class="autocompare">United States</button> 
-    <select id="curIcuSelectButton">
-       <option id ="curicu4">California</option>
-       <option id ="curicu3">Texas</option>
-       <option id ="curicu2">Arizona</option>
-       <option id ="curicu1">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-    <div id="us-covidtrack-totalcases-chart"></div>
-    <div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <button id="button6" class="autocompare">United States</button> 
-    <select id="totCaseSelectButton">
-       <option id ="totcases4">California</option>
-       <option id ="totcases3">Texas</option>
-       <option id ="totcases2">Arizona</option>
-       <option id ="totcases1">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-    <div id="us-covidtrack-totaldeaths-chart"></div>
-    <div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <button id="button7" class="autocompare">United States</button> 
-    <select id="totDeathSelectButton">
-       <option id ="totdeath4">California</option>
-       <option id ="totdeath3">Texas</option>
-       <option id ="totdeath2">Arizona</option>
-       <option id ="totdeath1">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-    <div id="us-covidtrack-state-chart"></div>
-    <div>  
-    <form>
-    <fieldset>
-    <legend>State Options</legend>
-    <button id="button8" class="autocompare">United States</button> 
-    <select id="newCompSelectButton">
-       <option id ="totcomp4">California</option>
-       <option id ="totcomp3">Texas</option>
-       <option id ="totcomp2">Arizona</option>
-       <option id ="totcomp1">New York</option>
-    </select>  
-    </fieldset>
-    </form>
-    </div>
-  </div>
-  </div>
-<!--  <div class="data-table-covid-track"> 
-   <div class="covid-track-table">
-     <div class="covid-track-head-titles">
-      <div>States Name</div> 
-      <div>Total Cases</div>
-      <div>Total Deaths</div>
-      <div>Total Hospitalize</div>
-      <div>Current Hospitalize</div>
-      <div>Currently in ICU</div>
-      <div>Last Updated</div> 
-     </div> 
-     <div class="covid-track-head-titles">
-      <div>United States</div>
-      <div class="us-covidtrack-confirm"></div>
-      <div class="us-covidtrack-death"></div>
-      <div class="us-covidtrack-tothos"></div>
-      <div class="us-covidtrack-curhos"></div>
-      <div class="us-covidtrack-curicu"></div> 
-      <div class="us-covidtrack-recent"></div> 
-     </div>      
-     <div class="covid-track-head-titles">
-      <div>Alabama</div>
-      <div class="us-covidtrack-al-confirm"></div>
-      <div class="us-covidtrack-al-death"></div>
-      <div class="us-covidtrack-al-tothos"></div>
-      <div class="us-covidtrack-al-curhos"></div>
-      <div class="us-covidtrack-al-curicu"></div> 
-      <div class="us-covidtrack-al-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Alaska</div>
-      <div class="us-covidtrack-ak-confirm"></div>
-      <div class="us-covidtrack-ak-death"></div>
-      <div class="us-covidtrack-ak-tothos"></div>
-      <div class="us-covidtrack-ak-curhos"></div>
-      <div class="us-covidtrack-ak-curicu"></div> 
-      <div class="us-covidtrack-ak-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>American Samoa</div>
-      <div class="us-covidtrack-as-confirm"></div>
-      <div class="us-covidtrack-as-death"></div>
-      <div class="us-covidtrack-as-tothos"></div>
-      <div class="us-covidtrack-as-curhos"></div>
-      <div class="us-covidtrack-as-curicu"></div> 
-      <div class="us-covidtrack-as-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Arizona</div>
-      <div class="us-covidtrack-az-confirm"></div>
-      <div class="us-covidtrack-az-death"></div>
-      <div class="us-covidtrack-az-tothos"></div>
-      <div class="us-covidtrack-az-curhos"></div>
-      <div class="us-covidtrack-az-curicu"></div> 
-      <div class="us-covidtrack-az-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Arkansas</div>
-      <div class="us-covidtrack-ar-confirm"></div>
-      <div class="us-covidtrack-ar-death"></div>
-      <div class="us-covidtrack-ar-tothos"></div>
-      <div class="us-covidtrack-ar-curhos"></div>
-      <div class="us-covidtrack-ar-curicu"></div> 
-      <div class="us-covidtrack-ar-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>California</div>
-      <div id="us-covidtrack-ca-confirm"></div>
-      <div id="us-covidtrack-ca-death"></div>
-      <div class="us-covidtrack-ca-tothos"></div>
-      <div class="us-covidtrack-ca-curhos"></div>
-      <div class="us-covidtrack-ca-curicu"></div> 
-      <div class="us-covidtrack-ca-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Colorado</div>
-      <div class="us-covidtrack-co-confirm"></div>
-      <div class="us-covidtrack-co-death"></div>
-      <div class="us-covidtrack-co-tothos"></div>
-      <div class="us-covidtrack-co-curhos"></div>
-      <div class="us-covidtrack-co-curicu"></div> 
-      <div class="us-covidtrack-co-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Connecticut</div>
-      <div class="us-covidtrack-ct-confirm"></div>
-      <div class="us-covidtrack-ct-death"></div>
-      <div class="us-covidtrack-ct-tothos"></div>
-      <div class="us-covidtrack-ct-curhos"></div>
-      <div class="us-covidtrack-ct-curicu"></div> 
-      <div class="us-covidtrack-ct-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Deleware</div>
-      <div class="us-covidtrack-de-confirm"></div>
-      <div class="us-covidtrack-de-death"></div>
-      <div class="us-covidtrack-de-tothos"></div>
-      <div class="us-covidtrack-de-curhos"></div>
-      <div class="us-covidtrack-de-curicu"></div> 
-      <div class="us-covidtrack-de-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>District of Columbia</div>
-      <div class="us-covidtrack-dc-confirm"></div>
-      <div class="us-covidtrack-dc-death"></div>
-      <div class="us-covidtrack-dc-tothos"></div>
-      <div class="us-covidtrack-dc-curhos"></div>
-      <div class="us-covidtrack-dc-curicu"></div> 
-      <div class="us-covidtrack-dc-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Florida</div>
-      <div class="us-covidtrack-fl-confirm"></div>
-      <div class="us-covidtrack-fl-death"></div>
-      <div class="us-covidtrack-fl-tothos"></div>
-      <div class="us-covidtrack-fl-curhos"></div>
-      <div class="us-covidtrack-fl-curicu"></div> 
-      <div class="us-covidtrack-fl-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Georgia</div>
-      <div class="us-covidtrack-ga-confirm"></div>
-      <div class="us-covidtrack-ga-death"></div>
-      <div class="us-covidtrack-ga-tothos"></div>
-      <div class="us-covidtrack-ga-curhos"></div>
-      <div class="us-covidtrack-ga-curicu"></div> 
-      <div class="us-covidtrack-ga-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Guam</div>
-      <div class="us-covidtrack-gu-confirm"></div>
-      <div class="us-covidtrack-gu-death"></div>
-      <div class="us-covidtrack-gu-tothos"></div>
-      <div class="us-covidtrack-gu-curhos"></div>
-      <div class="us-covidtrack-gu-curicu"></div> 
-      <div class="us-covidtrack-gu-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Hawaii</div>
-      <div class="us-covidtrack-hi-confirm"></div>
-      <div class="us-covidtrack-hi-death"></div>
-      <div class="us-covidtrack-hi-tothos"></div>
-      <div class="us-covidtrack-hi-curhos"></div>
-      <div class="us-covidtrack-hi-curicu"></div> 
-      <div class="us-covidtrack-hi-recent"></div>        
-     </div>    
-     <div class="covid-track-head-titles">
-      <div>Idaho</div>
-      <div class="us-covidtrack-id-confirm"></div>
-      <div class="us-covidtrack-id-death"></div>
-      <div class="us-covidtrack-id-tothos"></div>
-      <div class="us-covidtrack-id-curhos"></div>
-      <div class="us-covidtrack-id-curicu"></div> 
-      <div class="us-covidtrack-id-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Illinois</div>
-      <div class="us-covidtrack-il-confirm"></div>
-      <div class="us-covidtrack-il-death"></div>
-      <div class="us-covidtrack-il-tothos"></div>
-      <div class="us-covidtrack-il-curhos"></div>
-      <div class="us-covidtrack-il-curicu"></div> 
-      <div class="us-covidtrack-il-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Indiana</div>
-      <div class="us-covidtrack-in-confirm"></div>
-      <div class="us-covidtrack-in-death"></div>
-      <div class="us-covidtrack-in-tothos"></div>
-      <div class="us-covidtrack-in-curhos"></div>
-      <div class="us-covidtrack-in-curicu"></div> 
-      <div class="us-covidtrack-in-recent"></div>        
-     </div>      
-     <div class="covid-track-head-titles">
-      <div>Iowa</div>
-      <div class="us-covidtrack-ia-confirm"></div>
-      <div class="us-covidtrack-ia-death"></div>
-      <div class="us-covidtrack-ia-tothos"></div>
-      <div class="us-covidtrack-ia-curhos"></div>
-      <div class="us-covidtrack-ia-curicu"></div> 
-      <div class="us-covidtrack-ia-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Kansas</div>
-      <div class="us-covidtrack-ks-confirm"></div>
-      <div class="us-covidtrack-ks-death"></div>
-      <div class="us-covidtrack-ks-tothos"></div>
-      <div class="us-covidtrack-ks-curhos"></div>
-      <div class="us-covidtrack-ks-curicu"></div> 
-      <div class="us-covidtrack-ks-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Kentucky</div>
-      <div class="us-covidtrack-ky-confirm"></div>
-      <div class="us-covidtrack-ky-death"></div>
-      <div class="us-covidtrack-ky-tothos"></div>
-      <div class="us-covidtrack-ky-curhos"></div>
-      <div class="us-covidtrack-ky-curicu"></div> 
-      <div class="us-covidtrack-ky-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Louisiana</div>
-      <div class="us-covidtrack-la-confirm"></div>
-      <div class="us-covidtrack-la-death"></div>
-      <div class="us-covidtrack-la-tothos"></div>
-      <div class="us-covidtrack-la-curhos"></div>
-      <div class="us-covidtrack-la-curicu"></div> 
-      <div class="us-covidtrack-la-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Maine</div>
-      <div class="us-covidtrack-me-confirm"></div>
-      <div class="us-covidtrack-me-death"></div>
-      <div class="us-covidtrack-me-tothos"></div>
-      <div class="us-covidtrack-me-curhos"></div>
-      <div class="us-covidtrack-me-curicu"></div> 
-      <div class="us-covidtrack-me-recent"></div>        
-     </div>      
-     <div class="covid-track-head-titles">
-      <div>Maryland</div>
-      <div class="us-covidtrack-md-confirm"></div>
-      <div class="us-covidtrack-md-death"></div>
-      <div class="us-covidtrack-md-tothos"></div>
-      <div class="us-covidtrack-md-curhos"></div>
-      <div class="us-covidtrack-md-curicu"></div> 
-      <div class="us-covidtrack-md-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Massachusetts</div>
-      <div class="us-covidtrack-ma-confirm"></div>
-      <div class="us-covidtrack-ma-death"></div>
-      <div class="us-covidtrack-ma-tothos"></div>
-      <div class="us-covidtrack-ma-curhos"></div>
-      <div class="us-covidtrack-ma-curicu"></div> 
-      <div class="us-covidtrack-ma-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Michigan</div>
-      <div class="us-covidtrack-mi-confirm"></div>
-      <div class="us-covidtrack-mi-death"></div>
-      <div class="us-covidtrack-mi-tothos"></div>
-      <div class="us-covidtrack-mi-curhos"></div>
-      <div class="us-covidtrack-mi-curicu"></div> 
-      <div class="us-covidtrack-mi-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Minnesota</div>
-      <div class="us-covidtrack-mn-confirm"></div>
-      <div class="us-covidtrack-mn-death"></div>
-      <div class="us-covidtrack-mn-tothos"></div>
-      <div class="us-covidtrack-mn-curhos"></div>
-      <div class="us-covidtrack-mn-curicu"></div> 
-      <div class="us-covidtrack-mn-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Mississippi</div>
-      <div class="us-covidtrack-ms-confirm"></div>
-      <div class="us-covidtrack-ms-death"></div>
-      <div class="us-covidtrack-ms-tothos"></div>
-      <div class="us-covidtrack-ms-curhos"></div>
-      <div class="us-covidtrack-ms-curicu"></div> 
-      <div class="us-covidtrack-ms-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Missouri</div>
-      <div class="us-covidtrack-mo-confirm"></div>
-      <div class="us-covidtrack-mo-death"></div>
-      <div class="us-covidtrack-mo-tothos"></div>
-      <div class="us-covidtrack-mo-curhos"></div>
-      <div class="us-covidtrack-mo-curicu"></div> 
-      <div class="us-covidtrack-mo-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Montana</div>
-      <div class="us-covidtrack-mt-confirm"></div>
-      <div class="us-covidtrack-mt-death"></div>
-      <div class="us-covidtrack-mt-tothos"></div>
-      <div class="us-covidtrack-mt-curhos"></div>
-      <div class="us-covidtrack-mt-curicu"></div> 
-      <div class="us-covidtrack-mt-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Nebraska</div>
-      <div class="us-covidtrack-ne-confirm"></div>
-      <div class="us-covidtrack-ne-death"></div>
-      <div class="us-covidtrack-ne-tothos"></div>
-      <div class="us-covidtrack-ne-curhos"></div>
-      <div class="us-covidtrack-ne-curicu"></div> 
-      <div class="us-covidtrack-ne-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Neveda</div>
-      <div class="us-covidtrack-nv-confirm"></div>
-      <div class="us-covidtrack-nv-death"></div>
-      <div class="us-covidtrack-nv-tothos"></div>
-      <div class="us-covidtrack-nv-curhos"></div>
-      <div class="us-covidtrack-nv-curicu"></div> 
-      <div class="us-covidtrack-nv-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>New Hampshire</div>
-      <div class="us-covidtrack-nh-confirm"></div>
-      <div class="us-covidtrack-nh-death"></div>
-      <div class="us-covidtrack-nh-tothos"></div>
-      <div class="us-covidtrack-nh-curhos"></div>
-      <div class="us-covidtrack-nh-curicu"></div> 
-      <div class="us-covidtrack-nh-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>New Jersey</div>
-      <div class="us-covidtrack-nj-confirm"></div>
-      <div class="us-covidtrack-nj-death"></div>
-      <div class="us-covidtrack-nj-tothos"></div>
-      <div class="us-covidtrack-nj-curhos"></div>
-      <div class="us-covidtrack-nj-curicu"></div> 
-      <div class="us-covidtrack-nj-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>New Mexico</div>
-      <div class="us-covidtrack-nm-confirm"></div>
-      <div class="us-covidtrack-nm-death"></div>
-      <div class="us-covidtrack-nm-tothos"></div>
-      <div class="us-covidtrack-nm-curhos"></div>
-      <div class="us-covidtrack-nm-curicu"></div> 
-      <div class="us-covidtrack-nm-recent"></div>        
-     </div>        
-     <div class="covid-track-head-titles">
-      <div>New York</div>
-      <div class="us-covidtrack-ny-confirm"></div>
-      <div class="us-covidtrack-ny-death"></div>
-      <div class="us-covidtrack-ny-tothos"></div>
-      <div class="us-covidtrack-ny-curhos"></div>
-      <div class="us-covidtrack-ny-curicu"></div> 
-      <div class="us-covidtrack-ny-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>North Carolina</div>
-      <div class="us-covidtrack-nc-confirm"></div>
-      <div class="us-covidtrack-nc-death"></div>
-      <div class="us-covidtrack-nc-tothos"></div>
-      <div class="us-covidtrack-nc-curhos"></div>
-      <div class="us-covidtrack-nc-curicu"></div> 
-      <div class="us-covidtrack-nc-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>North Dakota</div>
-      <div class="us-covidtrack-nd-confirm"></div>
-      <div class="us-covidtrack-nd-death"></div>
-      <div class="us-covidtrack-nd-tothos"></div>
-      <div class="us-covidtrack-nd-curhos"></div>
-      <div class="us-covidtrack-nd-curicu"></div> 
-      <div class="us-covidtrack-nd-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Northern Mariana Isalnd</div>
-      <div class="us-covidtrack-mp-confirm"></div>
-      <div class="us-covidtrack-mp-death"></div>
-      <div class="us-covidtrack-mp-tothos"></div>
-      <div class="us-covidtrack-mp-curhos"></div>
-      <div class="us-covidtrack-mp-curicu"></div> 
-      <div class="us-covidtrack-mp-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Ohio</div>
-      <div class="us-covidtrack-oh-confirm"></div>
-      <div class="us-covidtrack-oh-death"></div>
-      <div class="us-covidtrack-oh-tothos"></div>
-      <div class="us-covidtrack-oh-curhos"></div>
-      <div class="us-covidtrack-oh-curicu"></div> 
-      <div class="us-covidtrack-oh-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Oklahoma</div>
-      <div class="us-covidtrack-ok-confirm"></div>
-      <div class="us-covidtrack-ok-death"></div>
-      <div class="us-covidtrack-ok-tothos"></div>
-      <div class="us-covidtrack-ok-curhos"></div>
-      <div class="us-covidtrack-ok-curicu"></div> 
-      <div class="us-covidtrack-ok-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Oregon</div>
-      <div class="us-covidtrack-or-confirm"></div>
-      <div class="us-covidtrack-or-death"></div>
-      <div class="us-covidtrack-or-tothos"></div>
-      <div class="us-covidtrack-or-curhos"></div>
-      <div class="us-covidtrack-or-curicu"></div> 
-      <div class="us-covidtrack-or-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Pennsylvania</div>
-      <div class="us-covidtrack-pa-confirm"></div>
-      <div class="us-covidtrack-pa-death"></div>
-      <div class="us-covidtrack-pa-tothos"></div>
-      <div class="us-covidtrack-pa-curhos"></div>
-      <div class="us-covidtrack-pa-curicu"></div> 
-      <div class="us-covidtrack-pa-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Puerto Rico</div>
-      <div class="us-covidtrack-pr-confirm"></div>
-      <div class="us-covidtrack-pr-death"></div>
-      <div class="us-covidtrack-pr-tothos"></div>
-      <div class="us-covidtrack-pr-curhos"></div>
-      <div class="us-covidtrack-pr-curicu"></div> 
-      <div class="us-covidtrack-pr-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Rhode Island</div>
-      <div class="us-covidtrack-ri-confirm"></div>
-      <div class="us-covidtrack-ri-death"></div>
-      <div class="us-covidtrack-ri-tothos"></div>
-      <div class="us-covidtrack-ri-curhos"></div>
-      <div class="us-covidtrack-ri-curicu"></div> 
-      <div class="us-covidtrack-ri-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>South Carolina</div>
-      <div class="us-covidtrack-sc-confirm"></div>
-      <div class="us-covidtrack-sc-death"></div>
-      <div class="us-covidtrack-sc-tothos"></div>
-      <div class="us-covidtrack-sc-curhos"></div>
-      <div class="us-covidtrack-sc-curicu"></div> 
-      <div class="us-covidtrack-sc-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>South Dakota</div>
-      <div class="us-covidtrack-sd-confirm"></div>
-      <div class="us-covidtrack-sd-death"></div>
-      <div class="us-covidtrack-sd-tothos"></div>
-      <div class="us-covidtrack-sd-curhos"></div>
-      <div class="us-covidtrack-sd-curicu"></div> 
-      <div class="us-covidtrack-sd-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Tennessee</div>
-      <div class="us-covidtrack-tn-confirm"></div>
-      <div class="us-covidtrack-tn-death"></div>
-      <div class="us-covidtrack-tn-tothos"></div>
-      <div class="us-covidtrack-tn-curhos"></div>
-      <div class="us-covidtrack-tn-curicu"></div> 
-      <div class="us-covidtrack-tn-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Texas</div>
-      <div class="us-covidtrack-tx-confirm"></div>
-      <div class="us-covidtrack-tx-death"></div>
-      <div class="us-covidtrack-tx-tothos"></div>
-      <div class="us-covidtrack-tx-curhos"></div>
-      <div class="us-covidtrack-tx-curicu"></div> 
-      <div class="us-covidtrack-tx-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>US Virgin Island</div>
-      <div class="us-covidtrack-vi-confirm"></div>
-      <div class="us-covidtrack-vi-death"></div>
-      <div class="us-covidtrack-vi-tothos"></div>
-      <div class="us-covidtrack-vi-curhos"></div>
-      <div class="us-covidtrack-vi-curicu"></div> 
-      <div class="us-covidtrack-vi-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Utah</div>
-      <div class="us-covidtrack-ut-confirm"></div>
-      <div class="us-covidtrack-ut-death"></div>
-      <div class="us-covidtrack-ut-tothos"></div>
-      <div class="us-covidtrack-ut-curhos"></div>
-      <div class="us-covidtrack-ut-curicu"></div> 
-      <div class="us-covidtrack-ut-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Vermont</div>
-      <div class="us-covidtrack-vt-confirm"></div>
-      <div class="us-covidtrack-vt-death"></div>
-      <div class="us-covidtrack-vt-tothos"></div>
-      <div class="us-covidtrack-vt-curhos"></div>
-      <div class="us-covidtrack-vt-curicu"></div> 
-      <div class="us-covidtrack-vt-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Virginia</div>
-      <div class="us-covidtrack-va-confirm"></div>
-      <div class="us-covidtrack-va-death"></div>
-      <div class="us-covidtrack-va-tothos"></div>
-      <div class="us-covidtrack-va-curhos"></div>
-      <div class="us-covidtrack-va-curicu"></div> 
-      <div class="us-covidtrack-va-recent"></div>        
-     </div>        
-     <div class="covid-track-head-titles">
-      <div>Washington</div>
-      <div class="us-covidtrack-wa-confirm"></div>
-      <div class="us-covidtrack-wa-death"></div>
-      <div class="us-covidtrack-wa-tothos"></div>
-      <div class="us-covidtrack-wa-curhos"></div>
-      <div class="us-covidtrack-wa-curicu"></div> 
-      <div class="us-covidtrack-wa-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>West Virginia</div>
-      <div class="us-covidtrack-wv-confirm"></div>
-      <div class="us-covidtrack-wv-death"></div>
-      <div class="us-covidtrack-wv-tothos"></div>
-      <div class="us-covidtrack-wv-curhos"></div>
-      <div class="us-covidtrack-wv-curicu"></div> 
-      <div class="us-covidtrack-wv-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Wisconsin</div>
-      <div class="us-covidtrack-wi-confirm"></div>
-      <div class="us-covidtrack-wi-death"></div>
-      <div class="us-covidtrack-wi-tothos"></div>
-      <div class="us-covidtrack-wi-curhos"></div>
-      <div class="us-covidtrack-wi-curicu"></div> 
-      <div class="us-covidtrack-wi-recent"></div>        
-     </div>
-     <div class="covid-track-head-titles">
-      <div>Wyoming</div>
-      <div class="us-covidtrack-wy-confirm"></div>
-      <div class="us-covidtrack-wy-death"></div>
-      <div class="us-covidtrack-wy-tothos"></div>
-      <div class="us-covidtrack-wy-curhos"></div>
-      <div class="us-covidtrack-wy-curicu"></div> 
-      <div class="us-covidtrack-wy-recent"></div>        
-     </div>       
-   </div>  
-  </div> -->
-  </div>   
-  </div>
- </section>    
-     
-<section>
+<section class="info">
   <div class="info-title">
     <p>COVID-19 Infographics</p>
   </div> 
-  </section>     
-
-<!-- Portfolio Section -->
- <section class="portfolio">
-
-    <!-- Swiper -->
-  <div class="swiper-container swiper-infograph">
+    <div class="swiper-container swiper-infograph">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img data-src="img/Available Vaccines.jpg" alt="Available COVID19 Vaccine" class="swiper-lazy">
@@ -2240,18 +258,8 @@
     <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
   </div> 
-  <!-- 
-  <img src="https://source.unsplash.com/random/200x200" alt="Picture 1">
-  <img src="https://source.unsplash.com/random/201x200" alt="Picture 2">
-  <img src="https://source.unsplash.com/random/202x200" alt="Picture 3">
-  <img src="https://source.unsplash.com/random/203x200" alt="Picture 4">
-  <img src="https://source.unsplash.com/random/204x200" alt="Picture 5">
-  <img src="https://source.unsplash.com/random/205x200" alt="Picture 6"> --> 
- </section>
-<!--</div>
- Wrapper End --> 
-
-<!-- News Section -->  
+ </section> 
+    
 <section id="news info">
   <!-- Swiper -->
 <div class="swiper-container news-wrapper">
@@ -7182,6 +5190,2043 @@
     <div class="swiper-scrollbar"></div>
 </div>     
 </section>
+    
+    
+<section class="tabs">
+  <div class="info-title">
+    <p>Data Sources</p>
+  </div> 
+  <div class="vac-boxes">
+    <div id="source-tab-1" class="vacbox datatab-item data-tab-border">
+      <p>John Hopkins University</p>
+    </div>
+    <div id="source-tab-2" class="vacbox datatab-item">
+      <p>New York Times</p>
+    </div>
+    <div id="source-tab-3" class="vacbox datatab-item">
+      <p>COVID Tracking Project</p>
+    </div>
+    </div>
+</section>     
+    
+<!-- Info Section -->
+<section class="tab-content info">
+  <div id="source-tab-1-content" class="datatab-content-item show">
+  <div class="Tabular-data">
+  <div class="info-table-title">
+   <h2>John Hopkins University</h2>
+   <p class="price">***Note: "NA" fields indicate unavailable data</p>
+   <a href="https://github.com/CSSEGISandData/COVID-19" class="btn">Data Source</a>
+  </div>
+  <div class="FilterRow">
+    <input id="searchBarJh" placeholder="Search By States" class="searchBar">
+    <!-- <select id="sourceSelJh" class="sourceSel">
+      <option value="John Hopkins University Data" selected="selected">John Hopkins University Data</option>
+      <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
+      <option value="New York Times Data">New York Times Data</option>
+     </select> -->
+   </div>
+  <div class="data-table-john-hopkins"> 
+   <table class="john-hopkins-table">
+    <thead>
+     <tr>
+      <th scope="col">States Name</th> 
+      <th scope="col">Total Cases</th>
+      <th scope="col">Total Deaths</th>
+      <th scope="col">Last Updated</th> 
+     </tr> 
+    </thead>
+    <tbody>
+     <tr>
+      <td scope="row">United States</td>
+      <td class="us-johnhopkins-confirm"></td>
+      <td class="us-johnhopkins-death"></td>
+      <td class="us-johnhopkins-recent"></td>
+     </tr>
+     <tr>
+      <td scope="row">Alabama</td>
+      <td class="us-johnhopkins-al-confirm"></td>
+      <td class="us-johnhopkins-al-death"></td>
+      <td class="us-johnhopkins-al-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Alaska</td>
+      <td class="us-johnhopkins-ak-confirm"></td>
+      <td class="us-johnhopkins-ak-death"></td>
+      <td class="us-johnhopkins-ak-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">American Samoa</td>
+      <td class="us-johnhopkins-as-confirm"></td>
+      <td class="us-johnhopkins-as-death"></td>
+      <td class="us-johnhopkins-as-recent"></td>       
+     </tr>
+      <td scope="row">Arizona</td>
+      <td class="us-johnhopkins-az-confirm"></td>
+      <td class="us-johnhopkins-az-death"></td>
+      <td class="us-johnhopkins-az-recent"></td>       
+     </tr>
+      <td scope="row">Arkansas</td>
+      <td class="us-johnhopkins-ar-confirm"></td>
+      <td class="us-johnhopkins-ar-death"></td>
+      <td class="us-johnhopkins-ar-recent"></td>       
+     </tr>
+      <td scope="row">California</td>
+      <td class="us-johnhopkins-ca-confirm"></td>
+      <td class="us-johnhopkins-ca-death"></td>
+      <td class="us-johnhopkins-ca-recent"></td>       
+     </tr>
+      <td scope="row">Colorado</td>
+      <td class="us-johnhopkins-co-confirm"></td>
+      <td class="us-johnhopkins-co-death"></td>
+      <td class="us-johnhopkins-co-recent"></td>       
+     </tr>
+      <td scope="row">Connecticut</td>
+      <td class="us-johnhopkins-ct-confirm"></td>
+      <td class="us-johnhopkins-ct-death"></td>
+      <td class="us-johnhopkins-ct-recent"></td>       
+     </tr>
+      <td scope="row">Delaware</td>
+      <td class="us-johnhopkins-de-confirm"></td>
+      <td class="us-johnhopkins-de-death"></td>
+      <td class="us-johnhopkins-de-recent"></td>       
+     </tr>
+      <td scope="row">District of Columbia</td>
+      <td class="us-johnhopkins-dc-confirm"></td>
+      <td class="us-johnhopkins-dc-death"></td>
+      <td class="us-johnhopkins-dc-recent"></td>       
+     </tr>
+      <td scope="row">Florida</td>
+      <td class="us-johnhopkins-fl-confirm"></td>
+      <td class="us-johnhopkins-fl-death"></td>
+      <td class="us-johnhopkins-fl-recent"></td>       
+     </tr>
+      <td scope="row">Georgia</td>
+      <td class="us-johnhopkins-ga-confirm"></td>
+      <td class="us-johnhopkins-ga-death"></td>
+      <td class="us-johnhopkins-ga-recent"></td>       
+     </tr>
+      <td scope="row">Guam</td>
+      <td class="us-johnhopkins-gu-confirm"></td>
+      <td class="us-johnhopkins-gu-death"></td>
+      <td class="us-johnhopkins-gu-recent"></td>       
+     </tr>
+      <td scope="row">Hawaii</td>
+      <td class="us-johnhopkins-hi-confirm"></td>
+      <td class="us-johnhopkins-hi-death"></td>
+      <td class="us-johnhopkins-hi-recent"></td>       
+     </tr>
+      <td scope="row">Idaho</td>
+      <td class="us-johnhopkins-id-confirm"></td>
+      <td class="us-johnhopkins-id-death"></td>
+      <td class="us-johnhopkins-id-recent"></td>       
+     </tr>
+      <td scope="row">Illinois</td>
+      <td class="us-johnhopkins-il-confirm"></td>
+      <td class="us-johnhopkins-il-death"></td>
+      <td class="us-johnhopkins-il-recent"></td>       
+     </tr>
+      <td scope="row">Indiana</td>
+      <td class="us-johnhopkins-in-confirm"></td>
+      <td class="us-johnhopkins-in-death"></td>
+      <td class="us-johnhopkins-in-recent"></td>       
+     </tr>
+      <td scope="row">Iowa</td>
+      <td class="us-johnhopkins-ia-confirm"></td>
+      <td class="us-johnhopkins-ia-death"></td>
+      <td class="us-johnhopkins-ia-recent"></td>       
+     </tr>
+      <td scope="row">Kansas</td>
+      <td class="us-johnhopkins-ks-confirm"></td>
+      <td class="us-johnhopkins-ks-death"></td>
+      <td class="us-johnhopkins-ks-recent"></td>       
+     </tr>
+      <td scope="row">Kentucky</td>
+      <td class="us-johnhopkins-ky-confirm"></td>
+      <td class="us-johnhopkins-ky-death"></td>
+      <td class="us-johnhopkins-ky-recent"></td>       
+     </tr>
+      <td scope="row">Louisiana</td>
+      <td class="us-johnhopkins-la-confirm"></td>
+      <td class="us-johnhopkins-la-death"></td>
+      <td class="us-johnhopkins-la-recent"></td>       
+     </tr>
+      <td scope="row">Maine</td>
+      <td class="us-johnhopkins-me-confirm"></td>
+      <td class="us-johnhopkins-me-death"></td>
+      <td class="us-johnhopkins-me-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Maryland</td>
+      <td class="us-johnhopkins-md-confirm"></td>
+      <td class="us-johnhopkins-md-death"></td>
+      <td class="us-johnhopkins-md-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Massachusetts</td>
+      <td class="us-johnhopkins-ma-confirm"></td>
+      <td class="us-johnhopkins-ma-death"></td>
+      <td class="us-johnhopkins-ma-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Michigan</td>
+      <td class="us-johnhopkins-mi-confirm"></td>
+      <td class="us-johnhopkins-mi-death"></td>
+      <td class="us-johnhopkins-mi-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Minnesota</td>
+      <td class="us-johnhopkins-mn-confirm"></td>
+      <td class="us-johnhopkins-mn-death"></td>
+      <td class="us-johnhopkins-mn-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Mississippi</td>
+      <td class="us-johnhopkins-ms-confirm"></td>
+      <td class="us-johnhopkins-ms-death"></td>
+      <td class="us-johnhopkins-ms-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Missouri</td>
+      <td class="us-johnhopkins-mo-confirm"></td>
+      <td class="us-johnhopkins-mo-death"></td>
+      <td class="us-johnhopkins-mo-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Montana</td>
+      <td class="us-johnhopkins-mt-confirm"></td>
+      <td class="us-johnhopkins-mt-death"></td>
+      <td class="us-johnhopkins-mt-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Nebraska</td>
+      <td class="us-johnhopkins-ne-confirm"></td>
+      <td class="us-johnhopkins-ne-death"></td>
+      <td class="us-johnhopkins-ne-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Neveda</td>
+      <td class="us-johnhopkins-nv-confirm"></td>
+      <td class="us-johnhopkins-nv-death"></td>
+      <td class="us-johnhopkins-nv-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">New Hampshire</td>
+      <td class="us-johnhopkins-nh-confirm"></td>
+      <td class="us-johnhopkins-nh-death"></td>
+      <td class="us-johnhopkins-nh-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">New Jersey</td>
+      <td class="us-johnhopkins-nj-confirm"></td>
+      <td class="us-johnhopkins-nj-death"></td>
+      <td class="us-johnhopkins-nj-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">New Mexico</td>
+      <td class="us-johnhopkins-nm-confirm"></td>
+      <td class="us-johnhopkins-nm-death"></td>
+      <td class="us-johnhopkins-nm-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">New York</td>
+      <td class="us-johnhopkins-ny-confirm"></td>
+      <td class="us-johnhopkins-ny-death"></td>
+      <td class="us-johnhopkins-ny-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">North Carolina</td>
+      <td class="us-johnhopkins-nc-confirm"></td>
+      <td class="us-johnhopkins-nc-death"></td>
+      <td class="us-johnhopkins-nc-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">North Dakota</td>
+      <td class="us-johnhopkins-nd-confirm"></td>
+      <td class="us-johnhopkins-nd-death"></td>
+      <td class="us-johnhopkins-nd-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Northern Mariana Island</td>
+      <td class="us-johnhopkins-mp-confirm"></td>
+      <td class="us-johnhopkins-mp-death"></td>
+      <td class="us-johnhopkins-mp-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Ohio</td>
+      <td class="us-johnhopkins-oh-confirm"></td>
+      <td class="us-johnhopkins-oh-death"></td>
+      <td class="us-johnhopkins-oh-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Oklahoma</td>
+      <td class="us-johnhopkins-ok-confirm"></td>
+      <td class="us-johnhopkins-ok-death"></td>
+      <td class="us-johnhopkins-ok-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Oregon</td>
+      <td class="us-johnhopkins-or-confirm"></td>
+      <td class="us-johnhopkins-or-death"></td>
+      <td class="us-johnhopkins-or-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Pennsylvania</td>
+      <td class="us-johnhopkins-pa-confirm"></td>
+      <td class="us-johnhopkins-pa-death"></td>
+      <td class="us-johnhopkins-pa-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Puerto Rico</td>
+      <td class="us-johnhopkins-pr-confirm"></td>
+      <td class="us-johnhopkins-pr-death"></td>
+      <td class="us-johnhopkins-pr-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Rhode Island</td>
+      <td class="us-johnhopkins-ri-confirm"></td>
+      <td class="us-johnhopkins-ri-death"></td>
+      <td class="us-johnhopkins-ri-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">South Carolina</td>
+      <td class="us-johnhopkins-sc-confirm"></td>
+      <td class="us-johnhopkins-sc-death"></td>
+      <td class="us-johnhopkins-sc-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">South Dakota</td>
+      <td class="us-johnhopkins-sd-confirm"></td>
+      <td class="us-johnhopkins-sd-death"></td>
+      <td class="us-johnhopkins-sd-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Tennessee</td>
+      <td class="us-johnhopkins-tn-confirm"></td>
+      <td class="us-johnhopkins-tn-death"></td>
+      <td class="us-johnhopkins-tn-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Texas</td>
+      <td class="us-johnhopkins-tx-confirm"></td>
+      <td class="us-johnhopkins-tx-death"></td>
+      <td class="us-johnhopkins-tx-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">US Virgin Island</td>
+      <td class="us-johnhopkins-vi-confirm"></td>
+      <td class="us-johnhopkins-vi-death"></td>
+      <td class="us-johnhopkins-vi-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Utah</td>
+      <td class="us-johnhopkins-ut-confirm"></td>
+      <td class="us-johnhopkins-ut-death"></td>
+      <td class="us-johnhopkins-ut-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Vermont</td>
+      <td class="us-johnhopkins-vt-confirm"></td>
+      <td class="us-johnhopkins-vt-death"></td>
+      <td class="us-johnhopkins-vt-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Virginia</td>
+      <td class="us-johnhopkins-va-confirm"></td>
+      <td class="us-johnhopkins-va-death"></td>
+      <td class="us-johnhopkins-va-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Washington</td>
+      <td class="us-johnhopkins-wa-confirm"></td>
+      <td class="us-johnhopkins-wa-death"></td>
+      <td class="us-johnhopkins-wa-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">West Virginia</td>
+      <td class="us-johnhopkins-wv-confirm"></td>
+      <td class="us-johnhopkins-wv-death"></td>
+      <td class="us-johnhopkins-wv-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Wisconsin</td>
+      <td class="us-johnhopkins-wi-confirm"></td>
+      <td class="us-johnhopkins-wi-death"></td>
+      <td class="us-johnhopkins-wi-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Wyoming</td>
+      <td class="us-johnhopkins-wy-confirm"></td>
+      <td class="us-johnhopkins-wy-death"></td>
+      <td class="us-johnhopkins-wy-recent"></td>       
+     </tr>      
+    </tbody>
+   </table>
+<div class="price">John Hopkins University Charts
+ <div class="us-johnhopkins-chart">
+   <div class="us-johnhopkins-totaluschart"></div>
+    <div> 
+    <div class="us-johnhopkins-casestatechart"></div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <select id="">
+       <option id ="">California</option>
+       <option id ="">Texas</option>
+       <option id ="">Arizona</option>
+       <option id ="">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+   <div> 
+    <div class="us-johnhopkins-deathstatechart"></div>
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <!-- <button id="" class="autocompare">United States</button> -->
+    <select id="">
+       <option id ="">California</option>
+       <option id ="">Texas</option>
+       <option id ="">Arizona</option>
+       <option id ="">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+ </div> 
+</div>
+  </div>  
+  </div>
+ </section>
+    
+<section class="tab-content info">
+  <div id="source-tab-2-content" class="datatab-content-item">
+      <div class="info-table-title">
+   <h2>New York Times</h2>
+   <p class="price">***Note: "NA" fields indicate unavailable data</p>
+   <a href="https://github.com/nytimes/covid-19-data" class="btn">Data Source</a>
+  </div>
+  <div class="FilterRow">
+    <input id="searchBarNy" placeholder="Search By States" class="searchBar">
+    <!-- <select id="sourceSelNy" class="sourceSel">
+      <option value="John Hopkins University Data" selected="selected">John Hopkins University Data</option>
+      <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
+      <option value="New York Times Data">New York Times Data</option>
+     </select> -->
+   </div>
+  <div class="data-table-new-york-times"> 
+   <table class="new-york-times-table">
+    <thead>
+     <tr>
+      <th scope="col">States Name</th> 
+      <th scope="col">Total Cases</th>
+      <th scope="col">Total Deaths</th>
+      <th scope="col">Last Updated</th> 
+     </tr>      
+    </thead>
+    <tbody>
+     <tr>
+      <td scope="row">United States</td>
+      <td class="us-newyorktimes-confirm"></td>
+      <td class="us-newyorktimes-death"></td>
+      <td class="us-newyorktimes-recent"></td>
+     </tr>
+     <tr>
+      <td scope="row">Alabama</td>
+      <td class="us-newyorktimes-al-confirm"></td>
+      <td class="us-newyorktimes-al-death"></td>
+      <td class="us-newyorktimes-al-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Alaska</td>
+      <td class="us-newyorktimes-ak-confirm"></td>
+      <td class="us-newyorktimes-ak-death"></td>
+      <td class="us-newyorktimes-ak-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">American Samoa</td>
+      <td class="us-newyorktimes-as-confirm"></td>
+      <td class="us-newyorktimes-as-death"></td>
+      <td class="us-newyorktimes-as-recent"></td>       
+     </tr>
+      <td scope="row">Arizona</td>
+      <td class="us-newyorktimes-az-confirm"></td>
+      <td class="us-newyorktimes-az-death"></td>
+      <td class="us-newyorktimes-az-recent"></td>       
+     </tr>
+      <td scope="row">Arkansas</td>
+      <td class="us-newyorktimes-ar-confirm"></td>
+      <td class="us-newyorktimes-ar-death"></td>
+      <td class="us-newyorktimes-ar-recent"></td>       
+     </tr>
+      <td scope="row">California</td>
+      <td class="us-newyorktimes-ca-confirm"></td>
+      <td class="us-newyorktimes-ca-death"></td>
+      <td class="us-newyorktimes-ca-recent"></td>       
+     </tr>
+      <td scope="row">Colorado</td>
+      <td class="us-newyorktimes-co-confirm"></td>
+      <td class="us-newyorktimes-co-death"></td>
+      <td class="us-newyorktimes-co-recent"></td>       
+     </tr>
+      <td scope="row">Connecticut</td>
+      <td class="us-newyorktimes-ct-confirm"></td>
+      <td class="us-newyorktimes-ct-death"></td>
+      <td class="us-newyorktimes-ct-recent"></td>       
+     </tr>
+      <td scope="row">Delaware</td>
+      <td class="us-newyorktimes-de-confirm"></td>
+      <td class="us-newyorktimes-de-death"></td>
+      <td class="us-newyorktimes-de-recent"></td>       
+     </tr>
+      <td scope="row">District of Columbia</td>
+      <td class="us-newyorktimes-dc-confirm"></td>
+      <td class="us-newyorktimes-dc-death"></td>
+      <td class="us-newyorktimes-dc-recent"></td>       
+     </tr>
+      <td scope="row">Florida</td>
+      <td class="us-newyorktimes-fl-confirm"></td>
+      <td class="us-newyorktimes-fl-death"></td>
+      <td class="us-newyorktimes-fl-recent"></td>       
+     </tr>
+      <td scope="row">Georgia</td>
+      <td class="us-newyorktimes-ga-confirm"></td>
+      <td class="us-newyorktimes-ga-death"></td>
+      <td class="us-newyorktimes-ga-recent"></td>       
+     </tr>
+      <td scope="row">Guam</td>
+      <td class="us-newyorktimes-gu-confirm"></td>
+      <td class="us-newyorktimes-gu-death"></td>
+      <td class="us-newyorktimes-gu-recent"></td>       
+     </tr>
+      <td scope="row">Hawaii</td>
+      <td class="us-newyorktimes-hi-confirm"></td>
+      <td class="us-newyorktimes-hi-death"></td>
+      <td class="us-newyorktimes-hi-recent"></td>       
+     </tr>
+      <td scope="row">Idaho</td>
+      <td class="us-newyorktimes-id-confirm"></td>
+      <td class="us-newyorktimes-id-death"></td>
+      <td class="us-newyorktimes-id-recent"></td>       
+     </tr>
+      <td scope="row">Illinois</td>
+      <td class="us-newyorktimes-il-confirm"></td>
+      <td class="us-newyorktimes-il-death"></td>
+      <td class="us-newyorktimes-il-recent"></td>       
+     </tr>
+      <td scope="row">Indiana</td>
+      <td class="us-newyorktimes-in-confirm"></td>
+      <td class="us-newyorktimes-in-death"></td>
+      <td class="us-newyorktimes-in-recent"></td>       
+     </tr>
+      <td scope="row">Iowa</td>
+      <td class="us-newyorktimes-ia-confirm"></td>
+      <td class="us-newyorktimes-ia-death"></td>
+      <td class="us-newyorktimes-ia-recent"></td>       
+     </tr>
+      <td scope="row">Kansas</td>
+      <td class="us-newyorktimes-ks-confirm"></td>
+      <td class="us-newyorktimes-ks-death"></td>
+      <td class="us-newyorktimes-ks-recent"></td>       
+     </tr>
+      <td scope="row">Kentucky</td>
+      <td class="us-newyorktimes-ky-confirm"></td>
+      <td class="us-newyorktimes-ky-death"></td>
+      <td class="us-newyorktimes-ky-recent"></td>       
+     </tr>
+      <td scope="row">Louisiana</td>
+      <td class="us-newyorktimes-la-confirm"></td>
+      <td class="us-newyorktimes-la-death"></td>
+      <td class="us-newyorktimes-la-recent"></td>       
+     </tr>
+      <td scope="row">Maine</td>
+      <td class="us-newyorktimes-me-confirm"></td>
+      <td class="us-newyorktimes-me-death"></td>
+      <td class="us-newyorktimes-me-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Maryland</td>
+      <td class="us-newyorktimes-md-confirm"></td>
+      <td class="us-newyorktimes-md-death"></td>
+      <td class="us-newyorktimes-md-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Massachusetts</td>
+      <td class="us-newyorktimes-ma-confirm"></td>
+      <td class="us-newyorktimes-ma-death"></td>
+      <td class="us-newyorktimes-ma-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Michigan</td>
+      <td class="us-newyorktimes-mi-confirm"></td>
+      <td class="us-newyorktimes-mi-death"></td>
+      <td class="us-newyorktimes-mi-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Minnesota</td>
+      <td class="us-newyorktimes-mn-confirm"></td>
+      <td class="us-newyorktimes-mn-death"></td>
+      <td class="us-newyorktimes-mn-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Mississippi</td>
+      <td class="us-newyorktimes-ms-confirm"></td>
+      <td class="us-newyorktimes-ms-death"></td>
+      <td class="us-newyorktimes-ms-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Missouri</td>
+      <td class="us-newyorktimes-mo-confirm"></td>
+      <td class="us-newyorktimes-mo-death"></td>
+      <td class="us-newyorktimes-mo-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Montana</td>
+      <td class="us-newyorktimes-mt-confirm"></td>
+      <td class="us-newyorktimes-mt-death"></td>
+      <td class="us-newyorktimes-mt-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Nebraska</td>
+      <td class="us-newyorktimes-ne-confirm"></td>
+      <td class="us-newyorktimes-ne-death"></td>
+      <td class="us-newyorktimes-ne-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Neveda</td>
+      <td class="us-newyorktimes-nv-confirm"></td>
+      <td class="us-newyorktimes-nv-death"></td>
+      <td class="us-newyorktimes-nv-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">New Hampshire</td>
+      <td class="us-newyorktimes-nh-confirm"></td>
+      <td class="us-newyorktimes-nh-death"></td>
+      <td class="us-newyorktimes-nh-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">New Jersey</td>
+      <td class="us-newyorktimes-nj-confirm"></td>
+      <td class="us-newyorktimes-nj-death"></td>
+      <td class="us-newyorktimes-nj-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">New Mexico</td>
+      <td class="us-newyorktimes-nm-confirm"></td>
+      <td class="us-newyorktimes-nm-death"></td>
+      <td class="us-newyorktimes-nm-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">New York</td>
+      <td class="us-newyorktimes-ny-confirm"></td>
+      <td class="us-newyorktimes-ny-death"></td>
+      <td class="us-newyorktimes-ny-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">North Carolina</td>
+      <td class="us-newyorktimes-nc-confirm"></td>
+      <td class="us-newyorktimes-nc-death"></td>
+      <td class="us-newyorktimes-nc-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">North Dakota</td>
+      <td class="us-newyorktimes-nd-confirm"></td>
+      <td class="us-newyorktimes-nd-death"></td>
+      <td class="us-newyorktimes-nd-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Northern Mariana Island</td>
+      <td class="us-newyorktimes-mp-confirm"></td>
+      <td class="us-newyorktimes-mp-death"></td>
+      <td class="us-newyorktimes-mp-recent"></td>       
+     </tr>
+     </tr>
+      <td scope="row">Ohio</td>
+      <td class="us-newyorktimes-oh-confirm"></td>
+      <td class="us-newyorktimes-oh-death"></td>
+      <td class="us-newyorktimes-oh-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Oklahoma</td>
+      <td class="us-newyorktimes-ok-confirm"></td>
+      <td class="us-newyorktimes-ok-death"></td>
+      <td class="us-newyorktimes-ok-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Oregon</td>
+      <td class="us-newyorktimes-or-confirm"></td>
+      <td class="us-newyorktimes-or-death"></td>
+      <td class="us-newyorktimes-or-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Pennsylvania</td>
+      <td class="us-newyorktimes-pa-confirm"></td>
+      <td class="us-newyorktimes-pa-death"></td>
+      <td class="us-newyorktimes-pa-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Puerto Rico</td>
+      <td class="us-newyorktimes-pr-confirm"></td>
+      <td class="us-newyorktimes-pr-death"></td>
+      <td class="us-newyorktimes-pr-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Rhode Island</td>
+      <td class="us-newyorktimes-ri-confirm"></td>
+      <td class="us-newyorktimes-ri-death"></td>
+      <td class="us-newyorktimes-ri-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">South Carolina</td>
+      <td class="us-newyorktimes-sc-confirm"></td>
+      <td class="us-newyorktimes-sc-death"></td>
+      <td class="us-newyorktimes-sc-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">South Dakota</td>
+      <td class="us-newyorktimes-sd-confirm"></td>
+      <td class="us-newyorktimes-sd-death"></td>
+      <td class="us-newyorktimes-sd-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Tennessee</td>
+      <td class="us-newyorktimes-tn-confirm"></td>
+      <td class="us-newyorktimes-tn-death"></td>
+      <td class="us-newyorktimes-tn-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Texas</td>
+      <td class="us-newyorktimes-tx-confirm"></td>
+      <td class="us-newyorktimes-tx-death"></td>
+      <td class="us-newyorktimes-tx-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">US Virgin Island</td>
+      <td class="us-newyorktimes-vi-confirm"></td>
+      <td class="us-newyorktimes-vi-death"></td>
+      <td class="us-newyorktimes-vi-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Utah</td>
+      <td class="us-newyorktimes-ut-confirm"></td>
+      <td class="us-newyorktimes-ut-death"></td>
+      <td class="us-newyorktimes-ut-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Vermont</td>
+      <td class="us-newyorktimes-vt-confirm"></td>
+      <td class="us-newyorktimes-vt-death"></td>
+      <td class="us-newyorktimes-vt-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Virginia</td>
+      <td class="us-newyorktimes-va-confirm"></td>
+      <td class="us-newyorktimes-va-death"></td>
+      <td class="us-newyorktimes-va-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Washington</td>
+      <td class="us-newyorktimes-wa-confirm"></td>
+      <td class="us-newyorktimes-wa-death"></td>
+      <td class="us-newyorktimes-wa-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">West Virginia</td>
+      <td class="us-newyorktimes-wv-confirm"></td>
+      <td class="us-newyorktimes-wv-death"></td>
+      <td class="us-newyorktimes-wv-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Wisconsin</td>
+      <td class="us-newyorktimes-wi-confirm"></td>
+      <td class="us-newyorktimes-wi-death"></td>
+      <td class="us-newyorktimes-wi-recent"></td>       
+     </tr>
+     <tr>
+      <td scope="row">Wyoming</td>
+      <td class="us-newyorktimes-wy-confirm"></td>
+      <td class="us-newyorktimes-wy-death"></td>
+      <td class="us-newyorktimes-wy-recent"></td>       
+     </tr>
+    </tbody>
+   </table>
+<div class="price">New York Times University Charts
+ <div id="us-nytimes-chart"></div>
+ <div id="us-nytimes-average-chart"></div>
+ <div class="showcase__section" id="bubble">
+  <div class="spacer --small"></div>
+  <div id="bubbleplots">
+    <div class="bubbleplot" data-num="0">
+      <div class="plot" id="us-nytimes-state-chart"></div>
+      <div class="control-row">
+        State: <select class="countrydata">
+        </select>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+  </div>
+  </div>
+ </section>    
+    
+<section class="tab-content info">
+  <div id="source-tab-3-content" class="datatab-content-item">
+      <div class="info-table-title">
+   <h2>COVID Tracking Project <span class="covidtrackupdate">(COVID-19 Data after March 7,2021 is unavailable. Click for more information)</span></h2>
+   <p class="price">***Note: "NA" fields indicate unavailable data</p>
+   <a href="https://covidtracking.com/data" class="btn">Data Source</a>
+  </div>
+  <div class="FilterRow">
+    <input id="searchBarCovidTrack" placeholder="Search By States" class="searchBar">
+    <!-- <select id="sourceSelCovidTrack" class="sourceSel">
+      <option value="John Hopkins University Data" selected="selected">John Hopkins University Data</option>
+      <option value="COVID Tracking Project Data">COVID Tracking Project Data</option>
+      <option value="New York Times Data">New York Times Data</option>
+     </select> -->
+   </div>
+<div class="data-table-covid-track"> 
+  <table class="covid-track-table" id="datatable">
+    <thead>
+     <tr>
+      <th scope="col">States Name</th> 
+      <th scope="col">Total Cases</th>
+      <th scope="col">Total Deaths</th>
+      <th scope="col">Total Hospitalization</th>
+      <th scope="col">Current Hospitalization</th>
+      <th scope="col">Currently in ICU</th>
+      <th scope="col">Last Updated</th> 
+     </tr>      
+    </thead>
+    <tbody>
+     <tr>
+      <td scope="row">United States</td>
+      <td class="us-covidtrack-confirm"></td>
+      <td class="us-covidtrack-death"></td>
+      <td class="us-covidtrack-tothos"></td>
+      <td class="us-covidtrack-curhos"></td>
+      <td class="us-covidtrack-curicu"></td> 
+      <td class="us-covidtrack-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Alabama</td>
+      <td class="us-covidtrack-al-confirm"></td>
+      <td class="us-covidtrack-al-death"></td>
+      <td class="us-covidtrack-al-tothos"></td>
+      <td class="us-covidtrack-al-curhos"></td>
+      <td class="us-covidtrack-al-curicu"></td> 
+      <td class="us-covidtrack-al-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Alaska</td>
+      <td class="us-covidtrack-ak-confirm"></td>
+      <td class="us-covidtrack-ak-death"></td>
+      <td class="us-covidtrack-ak-tothos"></td>
+      <td class="us-covidtrack-ak-curhos"></td>
+      <td class="us-covidtrack-ak-curicu"></td> 
+      <td class="us-covidtrack-ak-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">American Samoa</td>
+      <td class="us-covidtrack-as-confirm"></td>
+      <td class="us-covidtrack-as-death"></td>
+      <td class="us-covidtrack-as-tothos"></td>
+      <td class="us-covidtrack-as-curhos"></td>
+      <td class="us-covidtrack-as-curicu"></td> 
+      <td class="us-covidtrack-as-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Arizona</td>
+      <td class="us-covidtrack-az-confirm"></td>
+      <td class="us-covidtrack-az-death"></td>
+      <td class="us-covidtrack-az-tothos"></td>
+      <td class="us-covidtrack-az-curhos"></td>
+      <td class="us-covidtrack-az-curicu"></td> 
+      <td class="us-covidtrack-az-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Arkansas</td>
+      <td class="us-covidtrack-ar-confirm"></td>
+      <td class="us-covidtrack-ar-death"></td>
+      <td class="us-covidtrack-ar-tothos"></td>
+      <td class="us-covidtrack-ar-curhos"></td>
+      <td class="us-covidtrack-ar-curicu"></td> 
+      <td class="us-covidtrack-ar-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">California</td>
+      <td id="us-covidtrack-ca-confirm"></td>
+      <td id="us-covidtrack-ca-death"></td>
+      <td class="us-covidtrack-ca-tothos"></td>
+      <td class="us-covidtrack-ca-curhos"></td>
+      <td class="us-covidtrack-ca-curicu"></td> 
+      <td class="us-covidtrack-ca-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Colorado</td>
+      <td class="us-covidtrack-co-confirm"></td>
+      <td class="us-covidtrack-co-death"></td>
+      <td class="us-covidtrack-co-tothos"></td>
+      <td class="us-covidtrack-co-curhos"></td>
+      <td class="us-covidtrack-co-curicu"></td> 
+      <td class="us-covidtrack-co-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Connecticut</td>
+      <td class="us-covidtrack-ct-confirm"></td>
+      <td class="us-covidtrack-ct-death"></td>
+      <td class="us-covidtrack-ct-tothos"></td>
+      <td class="us-covidtrack-ct-curhos"></td>
+      <td class="us-covidtrack-ct-curicu"></td> 
+      <td class="us-covidtrack-ct-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Delaware</td>
+      <td class="us-covidtrack-de-confirm"></td>
+      <td class="us-covidtrack-de-death"></td>
+      <td class="us-covidtrack-de-tothos"></td>
+      <td class="us-covidtrack-de-curhos"></td>
+      <td class="us-covidtrack-de-curicu"></td> 
+      <td class="us-covidtrack-de-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">District of Columbia</td>
+      <td class="us-covidtrack-dc-confirm"></td>
+      <td class="us-covidtrack-dc-death"></td>
+      <td class="us-covidtrack-dc-tothos"></td>
+      <td class="us-covidtrack-dc-curhos"></td>
+      <td class="us-covidtrack-dc-curicu"></td> 
+      <td class="us-covidtrack-dc-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Florida</td>
+      <td class="us-covidtrack-fl-confirm"></td>
+      <td class="us-covidtrack-fl-death"></td>
+      <td class="us-covidtrack-fl-tothos"></td>
+      <td class="us-covidtrack-fl-curhos"></td>
+      <td class="us-covidtrack-fl-curicu"></td> 
+      <td class="us-covidtrack-fl-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Georgia</td>
+      <td class="us-covidtrack-ga-confirm"></td>
+      <td class="us-covidtrack-ga-death"></td>
+      <td class="us-covidtrack-ga-tothos"></td>
+      <td class="us-covidtrack-ga-curhos"></td>
+      <td class="us-covidtrack-ga-curicu"></td> 
+      <td class="us-covidtrack-ga-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Guam</td>
+      <td class="us-covidtrack-gu-confirm"></td>
+      <td class="us-covidtrack-gu-death"></td>
+      <td class="us-covidtrack-gu-tothos"></td>
+      <td class="us-covidtrack-gu-curhos"></td>
+      <td class="us-covidtrack-gu-curicu"></td> 
+      <td class="us-covidtrack-gu-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Hawaii</td>
+      <td class="us-covidtrack-hi-confirm"></td>
+      <td class="us-covidtrack-hi-death"></td>
+      <td class="us-covidtrack-hi-tothos"></td>
+      <td class="us-covidtrack-hi-curhos"></td>
+      <td class="us-covidtrack-hi-curicu"></td> 
+      <td class="us-covidtrack-hi-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Idaho</td>
+      <td class="us-covidtrack-id-confirm"></td>
+      <td class="us-covidtrack-id-death"></td>
+      <td class="us-covidtrack-id-tothos"></td>
+      <td class="us-covidtrack-id-curhos"></td>
+      <td class="us-covidtrack-id-curicu"></td> 
+      <td class="us-covidtrack-id-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Illinois</td>
+      <td class="us-covidtrack-il-confirm"></td>
+      <td class="us-covidtrack-il-death"></td>
+      <td class="us-covidtrack-il-tothos"></td>
+      <td class="us-covidtrack-il-curhos"></td>
+      <td class="us-covidtrack-il-curicu"></td> 
+      <td class="us-covidtrack-il-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Indiana</td>
+      <td class="us-covidtrack-in-confirm"></td>
+      <td class="us-covidtrack-in-death"></td>
+      <td class="us-covidtrack-in-tothos"></td>
+      <td class="us-covidtrack-in-curhos"></td>
+      <td class="us-covidtrack-in-curicu"></td> 
+      <td class="us-covidtrack-in-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Iowa</td>
+      <td class="us-covidtrack-ia-confirm"></td>
+      <td class="us-covidtrack-ia-death"></td>
+      <td class="us-covidtrack-ia-tothos"></td>
+      <td class="us-covidtrack-ia-curhos"></td>
+      <td class="us-covidtrack-ia-curicu"></td> 
+      <td class="us-covidtrack-ia-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Kansas</td>
+      <td class="us-covidtrack-ks-confirm"></td>
+      <td class="us-covidtrack-ks-death"></td>
+      <td class="us-covidtrack-ks-tothos"></td>
+      <td class="us-covidtrack-ks-curhos"></td>
+      <td class="us-covidtrack-ks-curicu"></td> 
+      <td class="us-covidtrack-ks-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Kentucky</td>
+      <td class="us-covidtrack-ky-confirm"></td>
+      <td class="us-covidtrack-ky-death"></td>
+      <td class="us-covidtrack-ky-tothos"></td>
+      <td class="us-covidtrack-ky-curhos"></td>
+      <td class="us-covidtrack-ky-curicu"></td> 
+      <td class="us-covidtrack-ky-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Louisiana</td>
+      <td class="us-covidtrack-la-confirm"></td>
+      <td class="us-covidtrack-la-death"></td>
+      <td class="us-covidtrack-la-tothos"></td>
+      <td class="us-covidtrack-la-curhos"></td>
+      <td class="us-covidtrack-la-curicu"></td> 
+      <td class="us-covidtrack-la-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Maine</td>
+      <td class="us-covidtrack-me-confirm"></td>
+      <td class="us-covidtrack-me-death"></td>
+      <td class="us-covidtrack-me-tothos"></td>
+      <td class="us-covidtrack-me-curhos"></td>
+      <td class="us-covidtrack-me-curicu"></td> 
+      <td class="us-covidtrack-me-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Maryland</td>
+      <td class="us-covidtrack-md-confirm"></td>
+      <td class="us-covidtrack-md-death"></td>
+      <td class="us-covidtrack-md-tothos"></td>
+      <td class="us-covidtrack-md-curhos"></td>
+      <td class="us-covidtrack-md-curicu"></td> 
+      <td class="us-covidtrack-md-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Massachusetts</td>
+      <td class="us-covidtrack-ma-confirm"></td>
+      <td class="us-covidtrack-ma-death"></td>
+      <td class="us-covidtrack-ma-tothos"></td>
+      <td class="us-covidtrack-ma-curhos"></td>
+      <td class="us-covidtrack-ma-curicu"></td> 
+      <td class="us-covidtrack-ma-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Michigan</td>
+      <td class="us-covidtrack-mi-confirm"></td>
+      <td class="us-covidtrack-mi-death"></td>
+      <td class="us-covidtrack-mi-tothos"></td>
+      <td class="us-covidtrack-mi-curhos"></td>
+      <td class="us-covidtrack-mi-curicu"></td> 
+      <td class="us-covidtrack-mi-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Minnesota</td>
+      <td class="us-covidtrack-mn-confirm"></td>
+      <td class="us-covidtrack-mn-death"></td>
+      <td class="us-covidtrack-mn-tothos"></td>
+      <td class="us-covidtrack-mn-curhos"></td>
+      <td class="us-covidtrack-mn-curicu"></td> 
+      <td class="us-covidtrack-mn-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Mississippi</td>
+      <td class="us-covidtrack-ms-confirm"></td>
+      <td class="us-covidtrack-ms-death"></td>
+      <td class="us-covidtrack-ms-tothos"></td>
+      <td class="us-covidtrack-ms-curhos"></td>
+      <td class="us-covidtrack-ms-curicu"></td> 
+      <td class="us-covidtrack-ms-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Missouri</td>
+      <td class="us-covidtrack-mo-confirm"></td>
+      <td class="us-covidtrack-mo-death"></td>
+      <td class="us-covidtrack-mo-tothos"></td>
+      <td class="us-covidtrack-mo-curhos"></td>
+      <td class="us-covidtrack-mo-curicu"></td> 
+      <td class="us-covidtrack-mo-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Montana</td>
+      <td class="us-covidtrack-mt-confirm"></td>
+      <td class="us-covidtrack-mt-death"></td>
+      <td class="us-covidtrack-mt-tothos"></td>
+      <td class="us-covidtrack-mt-curhos"></td>
+      <td class="us-covidtrack-mt-curicu"></td> 
+      <td class="us-covidtrack-mt-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Nebraska</td>
+      <td class="us-covidtrack-ne-confirm"></td>
+      <td class="us-covidtrack-ne-death"></td>
+      <td class="us-covidtrack-ne-tothos"></td>
+      <td class="us-covidtrack-ne-curhos"></td>
+      <td class="us-covidtrack-ne-curicu"></td> 
+      <td class="us-covidtrack-ne-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Neveda</td>
+      <td class="us-covidtrack-nv-confirm"></td>
+      <td class="us-covidtrack-nv-death"></td>
+      <td class="us-covidtrack-nv-tothos"></td>
+      <td class="us-covidtrack-nv-curhos"></td>
+      <td class="us-covidtrack-nv-curicu"></td> 
+      <td class="us-covidtrack-nv-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">New Hampshire</td>
+      <td class="us-covidtrack-nh-confirm"></td>
+      <td class="us-covidtrack-nh-death"></td>
+      <td class="us-covidtrack-nh-tothos"></td>
+      <td class="us-covidtrack-nh-curhos"></td>
+      <td class="us-covidtrack-nh-curicu"></td> 
+      <td class="us-covidtrack-nh-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">New Jersey</td>
+      <td class="us-covidtrack-nj-confirm"></td>
+      <td class="us-covidtrack-nj-death"></td>
+      <td class="us-covidtrack-nj-tothos"></td>
+      <td class="us-covidtrack-nj-curhos"></td>
+      <td class="us-covidtrack-nj-curicu"></td> 
+      <td class="us-covidtrack-nj-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">New Mexico</td>
+      <td class="us-covidtrack-nm-confirm"></td>
+      <td class="us-covidtrack-nm-death"></td>
+      <td class="us-covidtrack-nm-tothos"></td>
+      <td class="us-covidtrack-nm-curhos"></td>
+      <td class="us-covidtrack-nm-curicu"></td> 
+      <td class="us-covidtrack-nm-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">New York</td>
+      <td class="us-covidtrack-ny-confirm"></td>
+      <td class="us-covidtrack-ny-death"></td>
+      <td class="us-covidtrack-ny-tothos"></td>
+      <td class="us-covidtrack-ny-curhos"></td>
+      <td class="us-covidtrack-ny-curicu"></td> 
+      <td class="us-covidtrack-ny-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">North Carolina</td>
+      <td class="us-covidtrack-nc-confirm"></td>
+      <td class="us-covidtrack-nc-death"></td>
+      <td class="us-covidtrack-nc-tothos"></td>
+      <td class="us-covidtrack-nc-curhos"></td>
+      <td class="us-covidtrack-nc-curicu"></td> 
+      <td class="us-covidtrack-nc-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">North Dakota</td>
+      <td class="us-covidtrack-nd-confirm"></td>
+      <td class="us-covidtrack-nd-death"></td>
+      <td class="us-covidtrack-nd-tothos"></td>
+      <td class="us-covidtrack-nd-curhos"></td>
+      <td class="us-covidtrack-nd-curicu"></td> 
+      <td class="us-covidtrack-nd-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Northern Mariana Island</td>
+      <td class="us-covidtrack-mp-confirm"></td>
+      <td class="us-covidtrack-mp-death"></td>
+      <td class="us-covidtrack-mp-tothos"></td>
+      <td class="us-covidtrack-mp-curhos"></td>
+      <td class="us-covidtrack-mp-curicu"></td> 
+      <td class="us-covidtrack-mp-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Ohio</td>
+      <td class="us-covidtrack-oh-confirm"></td>
+      <td class="us-covidtrack-oh-death"></td>
+      <td class="us-covidtrack-oh-tothos"></td>
+      <td class="us-covidtrack-oh-curhos"></td>
+      <td class="us-covidtrack-oh-curicu"></td> 
+      <td class="us-covidtrack-oh-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Oklahoma</td>
+      <td class="us-covidtrack-ok-confirm"></td>
+      <td class="us-covidtrack-ok-death"></td>
+      <td class="us-covidtrack-ok-tothos"></td>
+      <td class="us-covidtrack-ok-curhos"></td>
+      <td class="us-covidtrack-ok-curicu"></td> 
+      <td class="us-covidtrack-ok-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Oregon</td>
+      <td class="us-covidtrack-or-confirm"></td>
+      <td class="us-covidtrack-or-death"></td>
+      <td class="us-covidtrack-or-tothos"></td>
+      <td class="us-covidtrack-or-curhos"></td>
+      <td class="us-covidtrack-or-curicu"></td> 
+      <td class="us-covidtrack-or-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Pennsylvania</td>
+      <td class="us-covidtrack-pa-confirm"></td>
+      <td class="us-covidtrack-pa-death"></td>
+      <td class="us-covidtrack-pa-tothos"></td>
+      <td class="us-covidtrack-pa-curhos"></td>
+      <td class="us-covidtrack-pa-curicu"></td> 
+      <td class="us-covidtrack-pa-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Puerto Rico</td>
+      <td class="us-covidtrack-pr-confirm"></td>
+      <td class="us-covidtrack-pr-death"></td>
+      <td class="us-covidtrack-pr-tothos"></td>
+      <td class="us-covidtrack-pr-curhos"></td>
+      <td class="us-covidtrack-pr-curicu"></td> 
+      <td class="us-covidtrack-pr-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Rhode Island</td>
+      <td class="us-covidtrack-ri-confirm"></td>
+      <td class="us-covidtrack-ri-death"></td>
+      <td class="us-covidtrack-ri-tothos"></td>
+      <td class="us-covidtrack-ri-curhos"></td>
+      <td class="us-covidtrack-ri-curicu"></td> 
+      <td class="us-covidtrack-ri-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">South Carolina</td>
+      <td class="us-covidtrack-sc-confirm"></td>
+      <td class="us-covidtrack-sc-death"></td>
+      <td class="us-covidtrack-sc-tothos"></td>
+      <td class="us-covidtrack-sc-curhos"></td>
+      <td class="us-covidtrack-sc-curicu"></td> 
+      <td class="us-covidtrack-sc-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">South Dakota</td>
+      <td class="us-covidtrack-sd-confirm"></td>
+      <td class="us-covidtrack-sd-death"></td>
+      <td class="us-covidtrack-sd-tothos"></td>
+      <td class="us-covidtrack-sd-curhos"></td>
+      <td class="us-covidtrack-sd-curicu"></td> 
+      <td class="us-covidtrack-sd-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Tennessee</td>
+      <td class="us-covidtrack-tn-confirm"></td>
+      <td class="us-covidtrack-tn-death"></td>
+      <td class="us-covidtrack-tn-tothos"></td>
+      <td class="us-covidtrack-tn-curhos"></td>
+      <td class="us-covidtrack-tn-curicu"></td> 
+      <td class="us-covidtrack-tn-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Texas</td>
+       <td class="us-covidtrack-tx-confirm"></td>
+      <td class="us-covidtrack-tx-death"></td>
+      <td class="us-covidtrack-tx-tothos"></td>
+      <td class="us-covidtrack-tx-curhos"></td>
+      <td class="us-covidtrack-tx-curicu"></td> 
+      <td class="us-covidtrack-tx-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">US Virgin Islands</td>
+      <td class="us-covidtrack-vi-confirm"></td>
+      <td class="us-covidtrack-vi-death"></td>
+      <td class="us-covidtrack-vi-tothos"></td>
+      <td class="us-covidtrack-vi-curhos"></td>
+      <td class="us-covidtrack-vi-curicu"></td> 
+      <td class="us-covidtrack-vi-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Utah</td>
+      <td class="us-covidtrack-ut-confirm"></td>
+      <td class="us-covidtrack-ut-death"></td>
+      <td class="us-covidtrack-ut-tothos"></td>
+      <td class="us-covidtrack-ut-curhos"></td>
+      <td class="us-covidtrack-ut-curicu"></td> 
+      <td class="us-covidtrack-ut-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Vermont</td>
+      <td class="us-covidtrack-vt-confirm"></td>
+      <td class="us-covidtrack-vt-death"></td>
+      <td class="us-covidtrack-vt-tothos"></td>
+      <td class="us-covidtrack-vt-curhos"></td>
+      <td class="us-covidtrack-vt-curicu"></td> 
+      <td class="us-covidtrack-vt-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Virginia</td>
+      <td class="us-covidtrack-va-confirm"></td>
+      <td class="us-covidtrack-va-death"></td>
+      <td class="us-covidtrack-va-tothos"></td>
+      <td class="us-covidtrack-va-curhos"></td>
+      <td class="us-covidtrack-va-curicu"></td> 
+      <td class="us-covidtrack-va-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Washington</td>
+      <td class="us-covidtrack-wa-confirm"></td>
+      <td class="us-covidtrack-wa-death"></td>
+      <td class="us-covidtrack-wa-tothos"></td>
+      <td class="us-covidtrack-wa-curhos"></td>
+      <td class="us-covidtrack-wa-curicu"></td> 
+      <td class="us-covidtrack-wa-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">West Virginia</td>
+      <td class="us-covidtrack-wv-confirm"></td>
+      <td class="us-covidtrack-wv-death"></td>
+      <td class="us-covidtrack-wv-tothos"></td>
+      <td class="us-covidtrack-wv-curhos"></td>
+      <td class="us-covidtrack-wv-curicu"></td> 
+      <td class="us-covidtrack-wv-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Wisconsin</td>
+      <td class="us-covidtrack-wi-confirm"></td>
+      <td class="us-covidtrack-wi-death"></td>
+      <td class="us-covidtrack-wi-tothos"></td>
+      <td class="us-covidtrack-wi-curhos"></td>
+      <td class="us-covidtrack-wi-curicu"></td> 
+      <td class="us-covidtrack-wi-recent"></td> 
+     </tr>
+     <tr>
+      <td scope="row">Wyoming</td>
+      <td class="us-covidtrack-wy-confirm"></td>
+      <td class="us-covidtrack-wy-death"></td>
+      <td class="us-covidtrack-wy-tothos"></td>
+      <td class="us-covidtrack-wy-curhos"></td>
+      <td class="us-covidtrack-wy-curicu"></td> 
+      <td class="us-covidtrack-wy-recent"></td> 
+     </tr>
+    </tbody>
+   </table>
+  <div class="price">COVID Tracking Charts
+    <div id="us-covidtrack-newcases-chart"></div>
+    <div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <button id="button1" class="autocompare">United States</button> 
+    <select id="newCaseSelectButton">
+       <option id ="newcases4">California</option>
+       <option id ="newcases3">Texas</option>
+       <option id ="newcases2">Arizona</option>
+       <option id ="newcases1">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+    <div id="us-covidtrack-newdeaths-chart"></div>
+    <div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <button id="button2" class="autocompare">United States</button> 
+    <select id="newDeathSelectButton">
+       <option id ="newdeath4">California</option>
+       <option id ="newdeath3">Texas</option>
+       <option id ="newdeath2">Arizona</option>
+       <option id ="newdeath1">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+    <div id="us-covidtrack-curhos-chart"></div>
+    <div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <button id="button3" class="autocompare">United States</button> 
+    <select id="curHosSelectButton">
+       <option id ="curhos4">California</option>
+       <option id ="curhos3">Texas</option>
+       <option id ="curhos2">Arizona</option>
+       <option id ="curhos1">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+    <div id="us-covidtrack-curvent-chart"></div>
+    <div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <button id="button4" class="autocompare">United States</button> 
+    <select id="curVentSelectButton">
+       <option id ="curvent4">California</option>
+       <option id ="curvent3">Texas</option>
+       <option id ="curvent2">Arizona</option>
+       <option id ="curvent1">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+    <div id="us-covidtrack-curicu-chart"></div>
+    <div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <button id="button5" class="autocompare">United States</button> 
+    <select id="curIcuSelectButton">
+       <option id ="curicu4">California</option>
+       <option id ="curicu3">Texas</option>
+       <option id ="curicu2">Arizona</option>
+       <option id ="curicu1">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+    <div id="us-covidtrack-totalcases-chart"></div>
+    <div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <button id="button6" class="autocompare">United States</button> 
+    <select id="totCaseSelectButton">
+       <option id ="totcases4">California</option>
+       <option id ="totcases3">Texas</option>
+       <option id ="totcases2">Arizona</option>
+       <option id ="totcases1">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+    <div id="us-covidtrack-totaldeaths-chart"></div>
+    <div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <button id="button7" class="autocompare">United States</button> 
+    <select id="totDeathSelectButton">
+       <option id ="totdeath4">California</option>
+       <option id ="totdeath3">Texas</option>
+       <option id ="totdeath2">Arizona</option>
+       <option id ="totdeath1">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+    <div id="us-covidtrack-state-chart"></div>
+    <div>  
+    <form>
+    <fieldset>
+    <legend>State Options</legend>
+    <button id="button8" class="autocompare">United States</button> 
+    <select id="newCompSelectButton">
+       <option id ="totcomp4">California</option>
+       <option id ="totcomp3">Texas</option>
+       <option id ="totcomp2">Arizona</option>
+       <option id ="totcomp1">New York</option>
+    </select>  
+    </fieldset>
+    </form>
+    </div>
+  </div>
+  </div>
+<!--  <div class="data-table-covid-track"> 
+   <div class="covid-track-table">
+     <div class="covid-track-head-titles">
+      <div>States Name</div> 
+      <div>Total Cases</div>
+      <div>Total Deaths</div>
+      <div>Total Hospitalize</div>
+      <div>Current Hospitalize</div>
+      <div>Currently in ICU</div>
+      <div>Last Updated</div> 
+     </div> 
+     <div class="covid-track-head-titles">
+      <div>United States</div>
+      <div class="us-covidtrack-confirm"></div>
+      <div class="us-covidtrack-death"></div>
+      <div class="us-covidtrack-tothos"></div>
+      <div class="us-covidtrack-curhos"></div>
+      <div class="us-covidtrack-curicu"></div> 
+      <div class="us-covidtrack-recent"></div> 
+     </div>      
+     <div class="covid-track-head-titles">
+      <div>Alabama</div>
+      <div class="us-covidtrack-al-confirm"></div>
+      <div class="us-covidtrack-al-death"></div>
+      <div class="us-covidtrack-al-tothos"></div>
+      <div class="us-covidtrack-al-curhos"></div>
+      <div class="us-covidtrack-al-curicu"></div> 
+      <div class="us-covidtrack-al-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Alaska</div>
+      <div class="us-covidtrack-ak-confirm"></div>
+      <div class="us-covidtrack-ak-death"></div>
+      <div class="us-covidtrack-ak-tothos"></div>
+      <div class="us-covidtrack-ak-curhos"></div>
+      <div class="us-covidtrack-ak-curicu"></div> 
+      <div class="us-covidtrack-ak-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>American Samoa</div>
+      <div class="us-covidtrack-as-confirm"></div>
+      <div class="us-covidtrack-as-death"></div>
+      <div class="us-covidtrack-as-tothos"></div>
+      <div class="us-covidtrack-as-curhos"></div>
+      <div class="us-covidtrack-as-curicu"></div> 
+      <div class="us-covidtrack-as-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Arizona</div>
+      <div class="us-covidtrack-az-confirm"></div>
+      <div class="us-covidtrack-az-death"></div>
+      <div class="us-covidtrack-az-tothos"></div>
+      <div class="us-covidtrack-az-curhos"></div>
+      <div class="us-covidtrack-az-curicu"></div> 
+      <div class="us-covidtrack-az-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Arkansas</div>
+      <div class="us-covidtrack-ar-confirm"></div>
+      <div class="us-covidtrack-ar-death"></div>
+      <div class="us-covidtrack-ar-tothos"></div>
+      <div class="us-covidtrack-ar-curhos"></div>
+      <div class="us-covidtrack-ar-curicu"></div> 
+      <div class="us-covidtrack-ar-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>California</div>
+      <div id="us-covidtrack-ca-confirm"></div>
+      <div id="us-covidtrack-ca-death"></div>
+      <div class="us-covidtrack-ca-tothos"></div>
+      <div class="us-covidtrack-ca-curhos"></div>
+      <div class="us-covidtrack-ca-curicu"></div> 
+      <div class="us-covidtrack-ca-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Colorado</div>
+      <div class="us-covidtrack-co-confirm"></div>
+      <div class="us-covidtrack-co-death"></div>
+      <div class="us-covidtrack-co-tothos"></div>
+      <div class="us-covidtrack-co-curhos"></div>
+      <div class="us-covidtrack-co-curicu"></div> 
+      <div class="us-covidtrack-co-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Connecticut</div>
+      <div class="us-covidtrack-ct-confirm"></div>
+      <div class="us-covidtrack-ct-death"></div>
+      <div class="us-covidtrack-ct-tothos"></div>
+      <div class="us-covidtrack-ct-curhos"></div>
+      <div class="us-covidtrack-ct-curicu"></div> 
+      <div class="us-covidtrack-ct-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Deleware</div>
+      <div class="us-covidtrack-de-confirm"></div>
+      <div class="us-covidtrack-de-death"></div>
+      <div class="us-covidtrack-de-tothos"></div>
+      <div class="us-covidtrack-de-curhos"></div>
+      <div class="us-covidtrack-de-curicu"></div> 
+      <div class="us-covidtrack-de-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>District of Columbia</div>
+      <div class="us-covidtrack-dc-confirm"></div>
+      <div class="us-covidtrack-dc-death"></div>
+      <div class="us-covidtrack-dc-tothos"></div>
+      <div class="us-covidtrack-dc-curhos"></div>
+      <div class="us-covidtrack-dc-curicu"></div> 
+      <div class="us-covidtrack-dc-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Florida</div>
+      <div class="us-covidtrack-fl-confirm"></div>
+      <div class="us-covidtrack-fl-death"></div>
+      <div class="us-covidtrack-fl-tothos"></div>
+      <div class="us-covidtrack-fl-curhos"></div>
+      <div class="us-covidtrack-fl-curicu"></div> 
+      <div class="us-covidtrack-fl-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Georgia</div>
+      <div class="us-covidtrack-ga-confirm"></div>
+      <div class="us-covidtrack-ga-death"></div>
+      <div class="us-covidtrack-ga-tothos"></div>
+      <div class="us-covidtrack-ga-curhos"></div>
+      <div class="us-covidtrack-ga-curicu"></div> 
+      <div class="us-covidtrack-ga-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Guam</div>
+      <div class="us-covidtrack-gu-confirm"></div>
+      <div class="us-covidtrack-gu-death"></div>
+      <div class="us-covidtrack-gu-tothos"></div>
+      <div class="us-covidtrack-gu-curhos"></div>
+      <div class="us-covidtrack-gu-curicu"></div> 
+      <div class="us-covidtrack-gu-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Hawaii</div>
+      <div class="us-covidtrack-hi-confirm"></div>
+      <div class="us-covidtrack-hi-death"></div>
+      <div class="us-covidtrack-hi-tothos"></div>
+      <div class="us-covidtrack-hi-curhos"></div>
+      <div class="us-covidtrack-hi-curicu"></div> 
+      <div class="us-covidtrack-hi-recent"></div>        
+     </div>    
+     <div class="covid-track-head-titles">
+      <div>Idaho</div>
+      <div class="us-covidtrack-id-confirm"></div>
+      <div class="us-covidtrack-id-death"></div>
+      <div class="us-covidtrack-id-tothos"></div>
+      <div class="us-covidtrack-id-curhos"></div>
+      <div class="us-covidtrack-id-curicu"></div> 
+      <div class="us-covidtrack-id-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Illinois</div>
+      <div class="us-covidtrack-il-confirm"></div>
+      <div class="us-covidtrack-il-death"></div>
+      <div class="us-covidtrack-il-tothos"></div>
+      <div class="us-covidtrack-il-curhos"></div>
+      <div class="us-covidtrack-il-curicu"></div> 
+      <div class="us-covidtrack-il-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Indiana</div>
+      <div class="us-covidtrack-in-confirm"></div>
+      <div class="us-covidtrack-in-death"></div>
+      <div class="us-covidtrack-in-tothos"></div>
+      <div class="us-covidtrack-in-curhos"></div>
+      <div class="us-covidtrack-in-curicu"></div> 
+      <div class="us-covidtrack-in-recent"></div>        
+     </div>      
+     <div class="covid-track-head-titles">
+      <div>Iowa</div>
+      <div class="us-covidtrack-ia-confirm"></div>
+      <div class="us-covidtrack-ia-death"></div>
+      <div class="us-covidtrack-ia-tothos"></div>
+      <div class="us-covidtrack-ia-curhos"></div>
+      <div class="us-covidtrack-ia-curicu"></div> 
+      <div class="us-covidtrack-ia-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Kansas</div>
+      <div class="us-covidtrack-ks-confirm"></div>
+      <div class="us-covidtrack-ks-death"></div>
+      <div class="us-covidtrack-ks-tothos"></div>
+      <div class="us-covidtrack-ks-curhos"></div>
+      <div class="us-covidtrack-ks-curicu"></div> 
+      <div class="us-covidtrack-ks-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Kentucky</div>
+      <div class="us-covidtrack-ky-confirm"></div>
+      <div class="us-covidtrack-ky-death"></div>
+      <div class="us-covidtrack-ky-tothos"></div>
+      <div class="us-covidtrack-ky-curhos"></div>
+      <div class="us-covidtrack-ky-curicu"></div> 
+      <div class="us-covidtrack-ky-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Louisiana</div>
+      <div class="us-covidtrack-la-confirm"></div>
+      <div class="us-covidtrack-la-death"></div>
+      <div class="us-covidtrack-la-tothos"></div>
+      <div class="us-covidtrack-la-curhos"></div>
+      <div class="us-covidtrack-la-curicu"></div> 
+      <div class="us-covidtrack-la-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Maine</div>
+      <div class="us-covidtrack-me-confirm"></div>
+      <div class="us-covidtrack-me-death"></div>
+      <div class="us-covidtrack-me-tothos"></div>
+      <div class="us-covidtrack-me-curhos"></div>
+      <div class="us-covidtrack-me-curicu"></div> 
+      <div class="us-covidtrack-me-recent"></div>        
+     </div>      
+     <div class="covid-track-head-titles">
+      <div>Maryland</div>
+      <div class="us-covidtrack-md-confirm"></div>
+      <div class="us-covidtrack-md-death"></div>
+      <div class="us-covidtrack-md-tothos"></div>
+      <div class="us-covidtrack-md-curhos"></div>
+      <div class="us-covidtrack-md-curicu"></div> 
+      <div class="us-covidtrack-md-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Massachusetts</div>
+      <div class="us-covidtrack-ma-confirm"></div>
+      <div class="us-covidtrack-ma-death"></div>
+      <div class="us-covidtrack-ma-tothos"></div>
+      <div class="us-covidtrack-ma-curhos"></div>
+      <div class="us-covidtrack-ma-curicu"></div> 
+      <div class="us-covidtrack-ma-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Michigan</div>
+      <div class="us-covidtrack-mi-confirm"></div>
+      <div class="us-covidtrack-mi-death"></div>
+      <div class="us-covidtrack-mi-tothos"></div>
+      <div class="us-covidtrack-mi-curhos"></div>
+      <div class="us-covidtrack-mi-curicu"></div> 
+      <div class="us-covidtrack-mi-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Minnesota</div>
+      <div class="us-covidtrack-mn-confirm"></div>
+      <div class="us-covidtrack-mn-death"></div>
+      <div class="us-covidtrack-mn-tothos"></div>
+      <div class="us-covidtrack-mn-curhos"></div>
+      <div class="us-covidtrack-mn-curicu"></div> 
+      <div class="us-covidtrack-mn-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Mississippi</div>
+      <div class="us-covidtrack-ms-confirm"></div>
+      <div class="us-covidtrack-ms-death"></div>
+      <div class="us-covidtrack-ms-tothos"></div>
+      <div class="us-covidtrack-ms-curhos"></div>
+      <div class="us-covidtrack-ms-curicu"></div> 
+      <div class="us-covidtrack-ms-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Missouri</div>
+      <div class="us-covidtrack-mo-confirm"></div>
+      <div class="us-covidtrack-mo-death"></div>
+      <div class="us-covidtrack-mo-tothos"></div>
+      <div class="us-covidtrack-mo-curhos"></div>
+      <div class="us-covidtrack-mo-curicu"></div> 
+      <div class="us-covidtrack-mo-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Montana</div>
+      <div class="us-covidtrack-mt-confirm"></div>
+      <div class="us-covidtrack-mt-death"></div>
+      <div class="us-covidtrack-mt-tothos"></div>
+      <div class="us-covidtrack-mt-curhos"></div>
+      <div class="us-covidtrack-mt-curicu"></div> 
+      <div class="us-covidtrack-mt-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Nebraska</div>
+      <div class="us-covidtrack-ne-confirm"></div>
+      <div class="us-covidtrack-ne-death"></div>
+      <div class="us-covidtrack-ne-tothos"></div>
+      <div class="us-covidtrack-ne-curhos"></div>
+      <div class="us-covidtrack-ne-curicu"></div> 
+      <div class="us-covidtrack-ne-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Neveda</div>
+      <div class="us-covidtrack-nv-confirm"></div>
+      <div class="us-covidtrack-nv-death"></div>
+      <div class="us-covidtrack-nv-tothos"></div>
+      <div class="us-covidtrack-nv-curhos"></div>
+      <div class="us-covidtrack-nv-curicu"></div> 
+      <div class="us-covidtrack-nv-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>New Hampshire</div>
+      <div class="us-covidtrack-nh-confirm"></div>
+      <div class="us-covidtrack-nh-death"></div>
+      <div class="us-covidtrack-nh-tothos"></div>
+      <div class="us-covidtrack-nh-curhos"></div>
+      <div class="us-covidtrack-nh-curicu"></div> 
+      <div class="us-covidtrack-nh-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>New Jersey</div>
+      <div class="us-covidtrack-nj-confirm"></div>
+      <div class="us-covidtrack-nj-death"></div>
+      <div class="us-covidtrack-nj-tothos"></div>
+      <div class="us-covidtrack-nj-curhos"></div>
+      <div class="us-covidtrack-nj-curicu"></div> 
+      <div class="us-covidtrack-nj-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>New Mexico</div>
+      <div class="us-covidtrack-nm-confirm"></div>
+      <div class="us-covidtrack-nm-death"></div>
+      <div class="us-covidtrack-nm-tothos"></div>
+      <div class="us-covidtrack-nm-curhos"></div>
+      <div class="us-covidtrack-nm-curicu"></div> 
+      <div class="us-covidtrack-nm-recent"></div>        
+     </div>        
+     <div class="covid-track-head-titles">
+      <div>New York</div>
+      <div class="us-covidtrack-ny-confirm"></div>
+      <div class="us-covidtrack-ny-death"></div>
+      <div class="us-covidtrack-ny-tothos"></div>
+      <div class="us-covidtrack-ny-curhos"></div>
+      <div class="us-covidtrack-ny-curicu"></div> 
+      <div class="us-covidtrack-ny-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>North Carolina</div>
+      <div class="us-covidtrack-nc-confirm"></div>
+      <div class="us-covidtrack-nc-death"></div>
+      <div class="us-covidtrack-nc-tothos"></div>
+      <div class="us-covidtrack-nc-curhos"></div>
+      <div class="us-covidtrack-nc-curicu"></div> 
+      <div class="us-covidtrack-nc-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>North Dakota</div>
+      <div class="us-covidtrack-nd-confirm"></div>
+      <div class="us-covidtrack-nd-death"></div>
+      <div class="us-covidtrack-nd-tothos"></div>
+      <div class="us-covidtrack-nd-curhos"></div>
+      <div class="us-covidtrack-nd-curicu"></div> 
+      <div class="us-covidtrack-nd-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Northern Mariana Isalnd</div>
+      <div class="us-covidtrack-mp-confirm"></div>
+      <div class="us-covidtrack-mp-death"></div>
+      <div class="us-covidtrack-mp-tothos"></div>
+      <div class="us-covidtrack-mp-curhos"></div>
+      <div class="us-covidtrack-mp-curicu"></div> 
+      <div class="us-covidtrack-mp-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Ohio</div>
+      <div class="us-covidtrack-oh-confirm"></div>
+      <div class="us-covidtrack-oh-death"></div>
+      <div class="us-covidtrack-oh-tothos"></div>
+      <div class="us-covidtrack-oh-curhos"></div>
+      <div class="us-covidtrack-oh-curicu"></div> 
+      <div class="us-covidtrack-oh-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Oklahoma</div>
+      <div class="us-covidtrack-ok-confirm"></div>
+      <div class="us-covidtrack-ok-death"></div>
+      <div class="us-covidtrack-ok-tothos"></div>
+      <div class="us-covidtrack-ok-curhos"></div>
+      <div class="us-covidtrack-ok-curicu"></div> 
+      <div class="us-covidtrack-ok-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Oregon</div>
+      <div class="us-covidtrack-or-confirm"></div>
+      <div class="us-covidtrack-or-death"></div>
+      <div class="us-covidtrack-or-tothos"></div>
+      <div class="us-covidtrack-or-curhos"></div>
+      <div class="us-covidtrack-or-curicu"></div> 
+      <div class="us-covidtrack-or-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Pennsylvania</div>
+      <div class="us-covidtrack-pa-confirm"></div>
+      <div class="us-covidtrack-pa-death"></div>
+      <div class="us-covidtrack-pa-tothos"></div>
+      <div class="us-covidtrack-pa-curhos"></div>
+      <div class="us-covidtrack-pa-curicu"></div> 
+      <div class="us-covidtrack-pa-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Puerto Rico</div>
+      <div class="us-covidtrack-pr-confirm"></div>
+      <div class="us-covidtrack-pr-death"></div>
+      <div class="us-covidtrack-pr-tothos"></div>
+      <div class="us-covidtrack-pr-curhos"></div>
+      <div class="us-covidtrack-pr-curicu"></div> 
+      <div class="us-covidtrack-pr-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Rhode Island</div>
+      <div class="us-covidtrack-ri-confirm"></div>
+      <div class="us-covidtrack-ri-death"></div>
+      <div class="us-covidtrack-ri-tothos"></div>
+      <div class="us-covidtrack-ri-curhos"></div>
+      <div class="us-covidtrack-ri-curicu"></div> 
+      <div class="us-covidtrack-ri-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>South Carolina</div>
+      <div class="us-covidtrack-sc-confirm"></div>
+      <div class="us-covidtrack-sc-death"></div>
+      <div class="us-covidtrack-sc-tothos"></div>
+      <div class="us-covidtrack-sc-curhos"></div>
+      <div class="us-covidtrack-sc-curicu"></div> 
+      <div class="us-covidtrack-sc-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>South Dakota</div>
+      <div class="us-covidtrack-sd-confirm"></div>
+      <div class="us-covidtrack-sd-death"></div>
+      <div class="us-covidtrack-sd-tothos"></div>
+      <div class="us-covidtrack-sd-curhos"></div>
+      <div class="us-covidtrack-sd-curicu"></div> 
+      <div class="us-covidtrack-sd-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Tennessee</div>
+      <div class="us-covidtrack-tn-confirm"></div>
+      <div class="us-covidtrack-tn-death"></div>
+      <div class="us-covidtrack-tn-tothos"></div>
+      <div class="us-covidtrack-tn-curhos"></div>
+      <div class="us-covidtrack-tn-curicu"></div> 
+      <div class="us-covidtrack-tn-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Texas</div>
+      <div class="us-covidtrack-tx-confirm"></div>
+      <div class="us-covidtrack-tx-death"></div>
+      <div class="us-covidtrack-tx-tothos"></div>
+      <div class="us-covidtrack-tx-curhos"></div>
+      <div class="us-covidtrack-tx-curicu"></div> 
+      <div class="us-covidtrack-tx-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>US Virgin Island</div>
+      <div class="us-covidtrack-vi-confirm"></div>
+      <div class="us-covidtrack-vi-death"></div>
+      <div class="us-covidtrack-vi-tothos"></div>
+      <div class="us-covidtrack-vi-curhos"></div>
+      <div class="us-covidtrack-vi-curicu"></div> 
+      <div class="us-covidtrack-vi-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Utah</div>
+      <div class="us-covidtrack-ut-confirm"></div>
+      <div class="us-covidtrack-ut-death"></div>
+      <div class="us-covidtrack-ut-tothos"></div>
+      <div class="us-covidtrack-ut-curhos"></div>
+      <div class="us-covidtrack-ut-curicu"></div> 
+      <div class="us-covidtrack-ut-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Vermont</div>
+      <div class="us-covidtrack-vt-confirm"></div>
+      <div class="us-covidtrack-vt-death"></div>
+      <div class="us-covidtrack-vt-tothos"></div>
+      <div class="us-covidtrack-vt-curhos"></div>
+      <div class="us-covidtrack-vt-curicu"></div> 
+      <div class="us-covidtrack-vt-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Virginia</div>
+      <div class="us-covidtrack-va-confirm"></div>
+      <div class="us-covidtrack-va-death"></div>
+      <div class="us-covidtrack-va-tothos"></div>
+      <div class="us-covidtrack-va-curhos"></div>
+      <div class="us-covidtrack-va-curicu"></div> 
+      <div class="us-covidtrack-va-recent"></div>        
+     </div>        
+     <div class="covid-track-head-titles">
+      <div>Washington</div>
+      <div class="us-covidtrack-wa-confirm"></div>
+      <div class="us-covidtrack-wa-death"></div>
+      <div class="us-covidtrack-wa-tothos"></div>
+      <div class="us-covidtrack-wa-curhos"></div>
+      <div class="us-covidtrack-wa-curicu"></div> 
+      <div class="us-covidtrack-wa-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>West Virginia</div>
+      <div class="us-covidtrack-wv-confirm"></div>
+      <div class="us-covidtrack-wv-death"></div>
+      <div class="us-covidtrack-wv-tothos"></div>
+      <div class="us-covidtrack-wv-curhos"></div>
+      <div class="us-covidtrack-wv-curicu"></div> 
+      <div class="us-covidtrack-wv-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Wisconsin</div>
+      <div class="us-covidtrack-wi-confirm"></div>
+      <div class="us-covidtrack-wi-death"></div>
+      <div class="us-covidtrack-wi-tothos"></div>
+      <div class="us-covidtrack-wi-curhos"></div>
+      <div class="us-covidtrack-wi-curicu"></div> 
+      <div class="us-covidtrack-wi-recent"></div>        
+     </div>
+     <div class="covid-track-head-titles">
+      <div>Wyoming</div>
+      <div class="us-covidtrack-wy-confirm"></div>
+      <div class="us-covidtrack-wy-death"></div>
+      <div class="us-covidtrack-wy-tothos"></div>
+      <div class="us-covidtrack-wy-curhos"></div>
+      <div class="us-covidtrack-wy-curicu"></div> 
+      <div class="us-covidtrack-wy-recent"></div>        
+     </div>       
+   </div>  
+  </div> -->
+  </div>   
+  </div>
+ </section>    
+     
+<!-- <section>
+  <div class="info-title">
+    <p>COVID-19 Infographics</p>
+  </div> 
+  </section> -->    
+
+<!-- Portfolio Section -->
+ <!-- <section class="portfolio">
+
+    <!-- Swiper -->
+  <!-- <div class="swiper-container swiper-infograph">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img data-src="img/Available Vaccines.jpg" alt="Available COVID19 Vaccine" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="img/covid-19_vaccination_mandatory.jpeg" alt="Infograph of Opinions on Vaccination Mandate" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="img/acs-h.assetsadobe.jpg" alt="Infograph of Opinions on Vaccination Mandate" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+        <!-- <img data-src="img/CDC Poster_stop-the-spread-of-germs_English-page-001.jpg" alt="COVID Spreading Germs English Infographic" class="swiper-lazy">
+        <!-- Preloader image -->
+        <!-- <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="img/CDC Poster_stop-the-spread-of-germs_Spanish-page-001.jpg" alt="COVID Spreading Germs Spanish Infographic" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="img/CDC Poster_stop-the-spread-of-germs_Chinese-page-001.jpg" alt="COVID Spreading Germs Chinese Infographic" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- Navigation -->
+    <!-- <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div> -->
+  <!-- 
+  <img src="https://source.unsplash.com/random/200x200" alt="Picture 1">
+  <img src="https://source.unsplash.com/random/201x200" alt="Picture 2">
+  <img src="https://source.unsplash.com/random/202x200" alt="Picture 3">
+  <img src="https://source.unsplash.com/random/203x200" alt="Picture 4">
+  <img src="https://source.unsplash.com/random/204x200" alt="Picture 5">
+  <img src="https://source.unsplash.com/random/205x200" alt="Picture 6"> -->
+<!-- </section> -->
+<!--</div>
+ Wrapper End --> 
+
+<!-- News Section -->  
+
 
 <!-- Wrapper End -->  
                                             
