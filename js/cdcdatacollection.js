@@ -57,7 +57,7 @@
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2.5)
   
-  const radius = Math.min(width, height) / 2 * 1.8
+  const radius = Math.min(width, height) / 2 * 1.0
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -337,7 +337,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2.5)
   
-  const radius = Math.min(width, height) / 2 * 1.8
+  const radius = Math.min(width, height) / 2 * 1.0
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
@@ -400,7 +400,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     .innerRadius(0)
     .outerRadius(Math.min(width, height) / 2.5)
   
-  const radius = Math.min(width, height) / 2 * 1.8
+  const radius = Math.min(width, height) / 2 * 1.0
   
   const arcLabel = d3v6.arc().innerRadius(radius).outerRadius(radius)
 
