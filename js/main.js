@@ -1,14 +1,31 @@
 const browserSupport = document.querySelector('.banner-support');
+const footerSupport = document.querySelector('.footer');
 const covidtrackinfo = document.querySelector('.covidtrackupdate');
 const covidnews = document.querySelector('.covidnews');
 
 //Browser Support Banner
-window.requestAnimationFrame(step1);
+window.requestAnimationFrame(step1,step2);
 
 function step1() {
 	//setTimeout(() => {browserSupport.style.display = 'none';}, 12.0*1000);
 	anime({
   targets: browserSupport,
+    keyframes: [
+    {translateY: -200},
+    {translateY: 200}
+  ],
+  direction: 'alternate',
+  loop: false,
+  easing: 'spring(1, 80, 10, 0)', //'linear',
+  delay: 10000,
+  endDelay: 4000,		
+  duration: 8000  
+});
+}
+
+function step2() {
+	anime({
+  targets: footerSupport,
     keyframes: [
     {translateY: -200},
     {translateY: 200}
