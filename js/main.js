@@ -27,8 +27,8 @@ function step2() {
 	anime({
   targets: footerSupport,
     keyframes: [
-    {translateY: -200},
-    {translateY: 200}
+    {translateY: 200},
+    {translateY: -200}
   ],
   direction: 'alternate',
   loop: false,
