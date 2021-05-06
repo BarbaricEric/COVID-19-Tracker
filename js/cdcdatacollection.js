@@ -224,7 +224,7 @@ var svg2 = d3.select("#moderna2")
     .attr("height", height2 + margin2.top + margin2.bottom)
   .append("g")
     .attr("transform",
-          "translate(" + (margin2.left + 300) + "," + (margin2.top + 300) + ")");
+          "translate(" + margin2.left + "," + margin2.top + ")");
 
 //Moderna Administration Chart data
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
