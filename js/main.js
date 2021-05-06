@@ -3,8 +3,9 @@ const footerSupport = document.querySelector('.footer');
 const covidtrackinfo = document.querySelector('.covidtrackupdate');
 const covidnews = document.querySelector('.covidnews');
 
-//Browser Support Banner
-window.requestAnimationFrame(step1,step2);
+//Browser Banner Animation
+window.requestAnimationFrame(step1);
+window.requestAnimationFrame(step2);
 
 function step1() {
 	//setTimeout(() => {browserSupport.style.display = 'none';}, 12.0*1000);
