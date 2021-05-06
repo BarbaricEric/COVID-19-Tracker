@@ -93,18 +93,18 @@ fetch('https://api.covidtracking.com/v1/us/daily.json')
 
 //John Hopkins D3 Charts
 // set the dimensions and margins of the second graph
-var margin2 = {top: 10, right: 100, bottom: 30, left: 30},
-    width2 = 660 - margin2.left - margin2.right,
-    height2 = 600 - margin2.top - margin2.bottom;
+var margin6 = {top: 10, right: 100, bottom: 30, left: 30},
+    width6 = 660 - margin6.left - margin6.right,
+    height6 = 600 - margin6.top - margin6.bottom;
 
 // append the svg object to the body of the page
-var svg2 = d3.select("#test2")
+var svg6 = d3.select("#test2")
   .append("svg")
-    .attr("width", width2 + margin2.left + margin2.right)
-    .attr("height", height2 + margin2.top + margin2.bottom)
+    .attr("width", width6 + margin6.left + margin6.right)
+    .attr("height", height6 + margin6.top + margin6.bottom)
   .append("g")
     .attr("transform",
-          "translate(" + margin2.left + "," + margin2.top + ")");
+          "translate(" + margin6.left + "," + margin6.top + ")");
 
 //Read the data
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
@@ -129,30 +129,30 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     // Add X axis --> it is a date format
     const x = d3.scaleLinear()
       .domain([0,10])
-      .range([ 0, width2 ]);
-    svg2.append("g")
-      .attr("transform", "translate(0," + height2 + ")")
+      .range([ 0, width6 ]);
+    svg6.append("g")
+      .attr("transform", "translate(0," + height6 + ")")
       .call(d3.axisBottom(x));
 
     // Add Y axis
     const y = d3.scaleLinear()
       .domain( [0,20])
-      .range([ height2, 0 ]);
-    svg2.append("g")
+      .range([ height6, 0 ]);
+    svg6.append("g")
       .call(d3.axisLeft(y));
       
     //Add Title
-    const title = svg2
+    const title = svg6
       .append("text")
-      .attr("x", (width2 / 2))   
-      .attr("y", margin2.top)
+      .attr("x", (width6 / 2))   
+      .attr("y", margin6.top)
       //.attr("y", 0 - (margin.top / 2))
       .attr("text-anchor", "middle")  
       .style("font-size", "30px") 
       .text("D3 Test2");
       
     // Initialize line with group a
-    const line = svg2
+    const line = svg6
       .append('g')
       .append("path")
         .datum(data)
