@@ -45,7 +45,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });     
          
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-05-05&iso=USA', {
+   fetch('https://covid-api.com/api/reports?date=2021-05-06&iso=USA', {
   method: 'GET',
   mode: 'cors', // no-cors, *cors, same-origin
   cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -433,7 +433,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });
 
 //NY Count from New York Times
-  d3v6.csv("./nytimes_covid_19_data/nytimes_daily_reports/05-05-2021.csv").then(function(data) {
+  d3v6.csv("./nytimes_covid_19_data/nytimes_daily_reports/05-06-2021.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
@@ -774,8 +774,16 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });
 
 //AL Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/al/current.json')
-  .then(response => {
+   fetch('https://api.covidtracking.com/v1/states/al/current.json', {
+  method: 'GET',
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },   
+}).then(response => {
    return response.json();
   })
   .then(data => {
@@ -1949,8 +1957,16 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from COVID Tracking Project 
-   fetch(localapi1)
-  .then(response => {
+   fetch(localapi1, {
+  method: 'GET',
+  mode: 'cors', // no-cors, *cors, same-origin
+  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+  credentials: 'same-origin', // include, *same-origin, omit
+  headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },   
+}).then(response => {
    return response.json();
   })
   .then(data => {
