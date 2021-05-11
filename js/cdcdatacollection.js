@@ -21,7 +21,7 @@
    const adminNum = document.querySelector(".administer-num")
    const event = new Date(data[0].date)
    adminNum.style.cssText = "color: red; font-size:46px";
-   adminNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
+   adminNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,8))
   });
 
 //US Delivered Count from CDC
@@ -30,7 +30,7 @@
    const distNum = document.querySelector(".distribute-num")
    const event = new Date(data[0].date)
    distNum.style.cssText = "color: red; font-size:46px";
-   distNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
+   distNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen)) + ' as of ' + (event.toLocaleString('en-US').substring(0,8))
   });
 
 //US Fully Vaccinated Count from CDC
@@ -38,7 +38,7 @@
    const vacNum = document.querySelector(".vac-num")
    const event = new Date(data[0].date)
    vacNum.style.cssText = "color: red; font-size:46px";
-   vacNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
+   vacNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,8))
   });
 
 //Pie Chart US Delivered Count from CDC
