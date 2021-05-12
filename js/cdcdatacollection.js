@@ -448,13 +448,12 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
   });
 
 //Jessen Delivery Chart Data
-// set the dimensions and margins of the second graph
 const margin3 = {top: 10, right: 100, bottom: 30, left: 30},
     width3 = 660 - margin3.left - margin3.right,
     height3 = 600 - margin3.top - margin3.bottom;
 
 // append the svg object to the body of the page
-const svg2 = d3.select("#jessen2")
+const svg3 = d3.select("#jessen2")
   .append("svg")
     .attr("width", width3 + margin3.left + margin3.right)
     .attr("height", height3 + margin3.top + margin3.bottom)
@@ -462,9 +461,99 @@ const svg2 = d3.select("#jessen2")
     .attr("transform",
           "translate(" + margin3.left + "," + margin3.top + ")");
 
+//Read the data
+d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
 
+    // List of groups (here I have one group per column)
+    const allGroup = ["valueA", "valueB", "valueC"]
 
+    // add the options to the button
+    d3.select("#selectButton3")
+      .selectAll('myOptions')
+     	.data(allGroup)
+      .enter()
+    	.append('option')
+      .text(function (d) { return d; }) // text showed in the menu
+      .attr("value", function (d) { return d; }) // corresponding value returned by the button
 
+    // A color scale: one color for each group
+    const myColor = d3.scaleOrdinal()
+      .domain(allGroup)
+      .range(d3.schemeSet2);
+
+    // Add X axis --> it is a date format
+    const x = d3.scaleLinear()
+      .domain([0,10])
+      .range([ 0, width3 ]);
+    svg3.append("g")
+      .attr("transform", "translate(0," + height3 + ")")
+      .call(d3.axisBottom(x));
+
+    // Add Y axis
+    const y = d3.scaleLinear()
+      .domain( [0,20])
+      .range([ height3, 0 ]);
+    svg3.append("g")
+      .call(d3.axisLeft(y));
+      
+    //Add Title
+    const title = svg3
+      .append("text")
+      .attr("x", (width3 / 2))   
+      .attr("y", margin3.top)
+      //.attr("y", 0 - (margin.top / 2))
+      .attr("text-anchor", "middle")  
+      .style("font-size", "30px")  
+      .text("Johnson & Johnson Delivery Chart");
+      
+    // Initialize line with group a
+    const line = svg3
+      .append('g')
+      .append("path")
+        .datum(data)
+        .attr("d", d3.line()
+          //.x(function(d) { return x(+d.time) })
+          //.y(function(d) { return y(+d.valueA) })
+          .x(d => x(+d.time))
+          .y(d => y(+d.valueA))
+          .curve(d3.curveMonotoneX)    
+        )
+        .attr("stroke", function(d){ return myColor("valueA") })
+        .style("stroke-width", 4)
+        .style("fill", "none")
+
+    // A function that update the chart
+    function update(selectedGroup) {
+
+      // Create new data with the selection
+      const dataFilter = 
+          //data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+          data.map(d => ({time: d.time, value: d[selectedGroup]}))
+
+      // Give these new data to update line
+      line
+          .datum(dataFilter)
+          .transition()
+          .duration(1000)
+          .attr("d", d3.line()    
+            //.x(function(d) { return x(+d.time) })
+            //.y(function(d) { return y(+d.value) })
+            .x(d => x(+d.time))
+            .y(d => y(+d.value))
+            .curve(d3.curveMonotoneX)
+          )
+          .attr("stroke", function(d){ return myColor(selectedGroup) })
+    }
+
+    // When the button is changed, run the updateChart function
+    d3.select("#selectButton3").on("change", function(d) {
+        // recover the option that has been chosen
+        const selectedOption = d3.select(this).property("value")
+        // run the updateChart function with this selected option
+        update(selectedOption)
+    })
+
+})*/
 
 
 function addCommas(x) {
