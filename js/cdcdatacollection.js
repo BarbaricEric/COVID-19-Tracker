@@ -226,7 +226,7 @@ var svg2 = d3.select("#moderna2")
     .attr("transform",
           "translate(" + margin2.left + "," + margin2.top + ")");
 
-//Moderna Administration Chart data
+//Moderna Delivery Chart data
 d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectedscatter.csv", function(data) {
 
     // List of groups (here I have one group per column)
@@ -446,6 +446,26 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
           .attr("fill-opacity", 0.7)
           .text(d => addCommas(d.data.value.toLocaleString())));
   });
+
+//Jessen Delivery Chart Data
+// set the dimensions and margins of the second graph
+const margin3 = {top: 10, right: 100, bottom: 30, left: 30},
+    width3 = 660 - margin3.left - margin3.right,
+    height3 = 600 - margin3.top - margin3.bottom;
+
+// append the svg object to the body of the page
+const svg2 = d3.select("#jessen2")
+  .append("svg")
+    .attr("width", width3 + margin3.left + margin3.right)
+    .attr("height", height3 + margin3.top + margin3.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin3.left + "," + margin3.top + ")");
+
+
+
+
+
 
 function addCommas(x) {
     if (x == undefined || x == null) {
