@@ -45,7 +45,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });     
          
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-05-11&iso=USA', {
+   fetch('https://covid-api.com/api/reports?date=2021-05-12&iso=USA', {
   method: 'GET',
   mode: 'cors', // no-cors, *cors, same-origin
   cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -433,7 +433,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });
 
 //NY Count from New York Times
-  d3v6.csv("./nytimes_covid_19_data/nytimes_daily_reports/05-11-2021.csv").then(function(data) {
+  d3v6.csv("./nytimes_covid_19_data/nytimes_daily_reports/05-12-2021.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
@@ -773,21 +773,10 @@ const localapi2 = 'https://corona-api.com/countries/US';
    wyCaseRecent.textContent = data[54].date;    
   });
 
-//AL Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/al/current.json', {
-  method: 'GET',
-  mode: 'cors', // no-cors, *cors, same-origin
-  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-  credentials: 'same-origin', // include, *same-origin, omit
-  headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },   
-}).then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
+//Latest States Count from COVID Tracking Project
+  d3v6.json("./covidtrack_covid_19_data/covidtrackstates.json").then(function(data) {
+  console.log(data);
+//AL Count from COVID Tracking Project   
    const alCaseDeath = document.querySelector(".us-covidtrack-al-death");
    const alCaseConfirm = document.querySelector(".us-covidtrack-al-confirm");
    const alTotHos = document.querySelector(".us-covidtrack-al-tothos");
@@ -800,15 +789,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    alCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    alCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    alRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/
-   });
 
 //AK Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ak/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const akCaseDeath = document.querySelector(".us-covidtrack-ak-death");
    const akCaseConfirm = document.querySelector(".us-covidtrack-ak-confirm");
    const akTotHos = document.querySelector(".us-covidtrack-ak-tothos");
@@ -821,15 +803,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    akCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    akCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    akRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //AS Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/as/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const asCaseDeath = document.querySelector(".us-covidtrack-as-death");
    const asCaseConfirm = document.querySelector(".us-covidtrack-as-confirm");
    const asTotHos = document.querySelector(".us-covidtrack-as-tothos");
@@ -842,15 +817,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    asCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    asCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    asRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //AZ Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/az/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const azCaseDeath = document.querySelector(".us-covidtrack-az-death");
    const azCaseConfirm = document.querySelector(".us-covidtrack-az-confirm");
    const azTotHos = document.querySelector(".us-covidtrack-az-tothos");
@@ -863,15 +831,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    azCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    azCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    azRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/    
-   });
 
 //AR Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ar/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const arCaseDeath = document.querySelector(".us-covidtrack-ar-death");
    const arCaseConfirm = document.querySelector(".us-covidtrack-ar-confirm");
    const arTotHos = document.querySelector(".us-covidtrack-ar-tothos");
@@ -884,15 +845,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    arCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    arCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    arRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //CA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ca/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const caTotHos = document.querySelector(".us-covidtrack-ca-tothos");
    const caCurHos = document.querySelector(".us-covidtrack-ca-curhos");
    const caCurIcu = document.querySelector(".us-covidtrack-ca-curicu");
@@ -903,15 +857,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    caCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    caCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    caRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //CO Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/co/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const coCaseDeath = document.querySelector(".us-covidtrack-co-death");
    const coCaseConfirm = document.querySelector(".us-covidtrack-co-confirm");
    const coTotHos = document.querySelector(".us-covidtrack-co-tothos");
@@ -924,15 +871,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    coCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    coCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    coRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
-   });
 
 //CT Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ct/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const ctCaseDeath = document.querySelector(".us-covidtrack-ct-death");
    const ctCaseConfirm = document.querySelector(".us-covidtrack-ct-confirm");
    const ctTotHos = document.querySelector(".us-covidtrack-ct-tothos");
@@ -945,15 +885,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ctCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    ctCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    ctRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //DE Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/de/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const deCaseDeath = document.querySelector(".us-covidtrack-de-death");
    const deCaseConfirm = document.querySelector(".us-covidtrack-de-confirm");
    const deTotHos = document.querySelector(".us-covidtrack-de-tothos");
@@ -966,15 +899,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    deCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    deCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    deRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //DC Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/dc/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const dcCaseDeath = document.querySelector(".us-covidtrack-dc-death");
    const dcCaseConfirm = document.querySelector(".us-covidtrack-dc-confirm");
    const dcTotHos = document.querySelector(".us-covidtrack-dc-tothos");
@@ -987,15 +913,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    dcCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    dcCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    dcRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //FL Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/fl/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const flCaseDeath = document.querySelector(".us-covidtrack-fl-death");
    const flCaseConfirm = document.querySelector(".us-covidtrack-fl-confirm");
    const flTotHos = document.querySelector(".us-covidtrack-fl-tothos");
@@ -1008,15 +927,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    flCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    flCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    flRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //GA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ga/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const gaCaseDeath = document.querySelector(".us-covidtrack-ga-death");
    const gaCaseConfirm = document.querySelector(".us-covidtrack-ga-confirm");
    const gaTotHos = document.querySelector(".us-covidtrack-ga-tothos");
@@ -1029,15 +941,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    gaCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    gaCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    gaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
-   });
 
 //GU Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/gu/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const guCaseDeath = document.querySelector(".us-covidtrack-gu-death");
    const guCaseConfirm = document.querySelector(".us-covidtrack-gu-confirm");
    const guTotHos = document.querySelector(".us-covidtrack-gu-tothos");
@@ -1050,15 +955,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    guCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    guCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    guRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //HI Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/hi/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const hiCaseDeath = document.querySelector(".us-covidtrack-hi-death");
    const hiCaseConfirm = document.querySelector(".us-covidtrack-hi-confirm");
    const hiTotHos = document.querySelector(".us-covidtrack-hi-tothos");
@@ -1071,15 +969,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    hiCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    hiCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    hiRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //ID Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/id/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
    const idCaseConfirm = document.querySelector(".us-covidtrack-id-confirm");
    const idTotHos = document.querySelector(".us-covidtrack-id-tothos");
@@ -1092,15 +983,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    idCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    idCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    idRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //IL Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/il/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const ilCaseDeath = document.querySelector(".us-covidtrack-il-death");
    const ilCaseConfirm = document.querySelector(".us-covidtrack-il-confirm");
    const ilTotHos = document.querySelector(".us-covidtrack-il-tothos");
@@ -1113,15 +997,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ilCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    ilCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    ilRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/         
-   });
 
 //IN Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/in/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const inCaseDeath = document.querySelector(".us-covidtrack-in-death");
    const inCaseConfirm = document.querySelector(".us-covidtrack-in-confirm");
    const inTotHos = document.querySelector(".us-covidtrack-in-tothos");
@@ -1134,15 +1011,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    inCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    inCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    inRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/        
-   });
 
 //IA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ia/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const iaCaseDeath = document.querySelector(".us-covidtrack-ia-death");
    const iaCaseConfirm = document.querySelector(".us-covidtrack-ia-confirm");
    const iaTotHos = document.querySelector(".us-covidtrack-ia-tothos");
@@ -1155,15 +1025,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    iaCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    iaCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    iaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //KS Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ks/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const ksCaseDeath = document.querySelector(".us-covidtrack-ks-death");
    const ksCaseConfirm = document.querySelector(".us-covidtrack-ks-confirm");
    const ksTotHos = document.querySelector(".us-covidtrack-ks-tothos");
@@ -1176,15 +1039,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ksCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    ksCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    ksRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //KY Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ky/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const kyCaseDeath = document.querySelector(".us-covidtrack-ky-death");
    const kyCaseConfirm = document.querySelector(".us-covidtrack-ky-confirm");
    const kyTotHos = document.querySelector(".us-covidtrack-ky-tothos");
@@ -1197,15 +1053,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    kyCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    kyCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    kyRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //LA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/la/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const laCaseDeath = document.querySelector(".us-covidtrack-la-death");
    const laCaseConfirm = document.querySelector(".us-covidtrack-la-confirm");
    const laTotHos = document.querySelector(".us-covidtrack-la-tothos");
@@ -1218,15 +1067,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    laCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    laCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    laRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //ME Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/me/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const meCaseDeath = document.querySelector(".us-covidtrack-me-death");
    const meCaseConfirm = document.querySelector(".us-covidtrack-me-confirm");
    const meTotHos = document.querySelector(".us-covidtrack-me-tothos");
@@ -1239,16 +1081,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    meCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    meCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    meRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
-
 
 //MD Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/md/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const mdCaseDeath = document.querySelector(".us-covidtrack-md-death");
    const mdCaseConfirm = document.querySelector(".us-covidtrack-md-confirm");
    const mdTotHos = document.querySelector(".us-covidtrack-md-tothos");
@@ -1261,15 +1095,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    mdCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    mdCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    mdRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //MA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ma/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const maCaseDeath = document.querySelector(".us-covidtrack-ma-death");
    const maCaseConfirm = document.querySelector(".us-covidtrack-ma-confirm");
    const maTotHos = document.querySelector(".us-covidtrack-ma-tothos");
@@ -1282,15 +1109,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    maCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    maCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    maRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //MI Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/mi/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const miCaseDeath = document.querySelector(".us-covidtrack-mi-death");
    const miCaseConfirm = document.querySelector(".us-covidtrack-mi-confirm");
    const miTotHos = document.querySelector(".us-covidtrack-mi-tothos");
@@ -1303,15 +1123,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    miCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    miCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    miRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //MN Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/mn/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const mnCaseDeath = document.querySelector(".us-covidtrack-mn-death");
    const mnCaseConfirm = document.querySelector(".us-covidtrack-mn-confirm");
    const mnTotHos = document.querySelector(".us-covidtrack-mn-tothos");
@@ -1324,15 +1137,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    mnCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    mnCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    mnRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //MS Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ms/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const msCaseDeath = document.querySelector(".us-covidtrack-ms-death");
    const msCaseConfirm = document.querySelector(".us-covidtrack-ms-confirm");
    const msTotHos = document.querySelector(".us-covidtrack-ms-tothos");
@@ -1344,16 +1150,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
    msTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
    msCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    msCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   msRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
+   msRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //MO Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/mo/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const moCaseDeath = document.querySelector(".us-covidtrack-mo-death");
    const moCaseConfirm = document.querySelector(".us-covidtrack-mo-confirm");
    const moTotHos = document.querySelector(".us-covidtrack-mo-tothos");
@@ -1366,15 +1165,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    moCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    moCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    moRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //MT Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/mt/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const mtCaseDeath = document.querySelector(".us-covidtrack-mt-death");
    const mtCaseConfirm = document.querySelector(".us-covidtrack-mt-confirm");
    const mtTotHos = document.querySelector(".us-covidtrack-mt-tothos");
@@ -1387,15 +1179,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    mtCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    mtCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    mtRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //NE Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ne/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const neCaseDeath = document.querySelector(".us-covidtrack-ne-death");
    const neCaseConfirm = document.querySelector(".us-covidtrack-ne-confirm");
    const neTotHos = document.querySelector(".us-covidtrack-ne-tothos");
@@ -1408,15 +1193,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    neCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    neCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    neRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //NV Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/nv/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const nvCaseDeath = document.querySelector(".us-covidtrack-nv-death");
    const nvCaseConfirm = document.querySelector(".us-covidtrack-nv-confirm");
    const nvTotHos = document.querySelector(".us-covidtrack-nv-tothos");
@@ -1429,15 +1207,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nvCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    nvCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    nvRecent.textContent = new Date(addDateComma(data.date)).toString().substring(4,15); /*determineNull(data.dateModified.toString().substring(0, 10));*/       
-   });
 
 //NH Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/nh/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const nhCaseDeath = document.querySelector(".us-covidtrack-nh-death");
    const nhCaseConfirm = document.querySelector(".us-covidtrack-nh-confirm");
    const nhTotHos = document.querySelector(".us-covidtrack-nh-tothos");
@@ -1450,15 +1221,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nhCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    nhCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    nhRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //NJ Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/nj/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const njCaseDeath = document.querySelector(".us-covidtrack-nj-death");
    const njCaseConfirm = document.querySelector(".us-covidtrack-nj-confirm");
    const njTotHos = document.querySelector(".us-covidtrack-nj-tothos");
@@ -1471,15 +1235,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    njCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    njCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    njRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //NM Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/nm/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const nmCaseDeath = document.querySelector(".us-covidtrack-nm-death");
    const nmCaseConfirm = document.querySelector(".us-covidtrack-nm-confirm");
    const nmTotHos = document.querySelector(".us-covidtrack-nm-tothos");
@@ -1492,15 +1249,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nmCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    nmCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    nmRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //NY Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ny/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const nyCaseDeath = document.querySelector(".us-covidtrack-ny-death");
    const nyCaseConfirm = document.querySelector(".us-covidtrack-ny-confirm");
    const nyTotHos = document.querySelector(".us-covidtrack-ny-tothos");
@@ -1513,15 +1263,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    nyCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    nyCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    nyRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
-   });
 
 //NC Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/nc/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const ncCaseDeath = document.querySelector(".us-covidtrack-nc-death");
    const ncCaseConfirm = document.querySelector(".us-covidtrack-nc-confirm");
    const ncTotHos = document.querySelector(".us-covidtrack-nc-tothos");
@@ -1533,16 +1276,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ncTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
    ncCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    ncCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   ncRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
+   ncRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //ND Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/nd/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const ndCaseDeath = document.querySelector(".us-covidtrack-nd-death");
    const ndCaseConfirm = document.querySelector(".us-covidtrack-nd-confirm");
    const ndTotHos = document.querySelector(".us-covidtrack-nd-tothos");
@@ -1555,15 +1291,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ndCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    ndCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    ndRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //MP Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/mp/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const mpCaseDeath = document.querySelector(".us-covidtrack-mp-death");
    const mpCaseConfirm = document.querySelector(".us-covidtrack-mp-confirm");
    const mpTotHos = document.querySelector(".us-covidtrack-mp-tothos");
@@ -1575,16 +1304,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
    mpTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
    mpCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    mpCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   mpRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
+   mpRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //OH Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/oh/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const ohCaseDeath = document.querySelector(".us-covidtrack-oh-death");
    const ohCaseConfirm = document.querySelector(".us-covidtrack-oh-confirm");
    const ohTotHos = document.querySelector(".us-covidtrack-oh-tothos");
@@ -1596,16 +1318,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
    ohTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
    ohCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    ohCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   ohRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
+   ohRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/    
 
 //OK Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ok/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const okCaseDeath = document.querySelector(".us-covidtrack-ok-death");
    const okCaseConfirm = document.querySelector(".us-covidtrack-ok-confirm");
    const okTotHos = document.querySelector(".us-covidtrack-ok-tothos");
@@ -1618,15 +1333,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    okCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    okCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    okRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //OR Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/or/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const orCaseDeath = document.querySelector(".us-covidtrack-or-death");
    const orCaseConfirm = document.querySelector(".us-covidtrack-or-confirm");
    const orTotHos = document.querySelector(".us-covidtrack-or-tothos");
@@ -1639,15 +1347,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    orCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    orCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    orRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //PA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/pa/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const paCaseDeath = document.querySelector(".us-covidtrack-pa-death");
    const paCaseConfirm = document.querySelector(".us-covidtrack-pa-confirm");
    const paTotHos = document.querySelector(".us-covidtrack-pa-tothos");
@@ -1660,15 +1361,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    paCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    paCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    paRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //PR Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/pr/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const prCaseDeath = document.querySelector(".us-covidtrack-pr-death");
    const prCaseConfirm = document.querySelector(".us-covidtrack-pr-confirm");
    const prTotHos = document.querySelector(".us-covidtrack-pr-tothos");
@@ -1681,15 +1375,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    prCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    prCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    prRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //RI Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ri/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const riCaseDeath = document.querySelector(".us-covidtrack-ri-death");
    const riCaseConfirm = document.querySelector(".us-covidtrack-ri-confirm");
    const riTotHos = document.querySelector(".us-covidtrack-ri-tothos");
@@ -1702,15 +1389,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    riCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    riCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    riRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //SC Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/sc/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const scCaseDeath = document.querySelector(".us-covidtrack-sc-death");
    const scCaseConfirm = document.querySelector(".us-covidtrack-sc-confirm");
    const scTotHos = document.querySelector(".us-covidtrack-sc-tothos");
@@ -1723,15 +1403,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    scCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    scCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    scRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //SD Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/sd/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const sdCaseDeath = document.querySelector(".us-covidtrack-sd-death");
    const sdCaseConfirm = document.querySelector(".us-covidtrack-sd-confirm");
    const sdTotHos = document.querySelector(".us-covidtrack-sd-tothos");
@@ -1744,15 +1417,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    sdCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    sdCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    sdRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //TN Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/tn/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const tnCaseDeath = document.querySelector(".us-covidtrack-tn-death");
    const tnCaseConfirm = document.querySelector(".us-covidtrack-tn-confirm");
    const tnTotHos = document.querySelector(".us-covidtrack-tn-tothos");
@@ -1765,15 +1431,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    tnCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    tnCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    tnRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //TX Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/tx/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const txCaseDeath = document.querySelector(".us-covidtrack-tx-death");
    const txCaseConfirm = document.querySelector(".us-covidtrack-tx-confirm");
    const txTotHos = document.querySelector(".us-covidtrack-tx-tothos");
@@ -1786,15 +1445,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    txCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    txCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    txRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //VI Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/vi/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const viCaseDeath = document.querySelector(".us-covidtrack-vi-death");
    const viCaseConfirm = document.querySelector(".us-covidtrack-vi-confirm");
    const viTotHos = document.querySelector(".us-covidtrack-vi-tothos");
@@ -1807,15 +1459,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    viCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    viCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    viRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //UT Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/ut/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const utCaseDeath = document.querySelector(".us-covidtrack-ut-death");
    const utCaseConfirm = document.querySelector(".us-covidtrack-ut-confirm");
    const utTotHos = document.querySelector(".us-covidtrack-ut-tothos");
@@ -1828,15 +1473,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    utCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    utCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    utRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //VT Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/vt/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const vtCaseDeath = document.querySelector(".us-covidtrack-vt-death");
    const vtCaseConfirm = document.querySelector(".us-covidtrack-vt-confirm");
    const vtTotHos = document.querySelector(".us-covidtrack-vt-tothos");
@@ -1849,15 +1487,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    vtCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    vtCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    vtRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
-   });
 
 //VA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/va/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const vaCaseDeath = document.querySelector(".us-covidtrack-va-death");
    const vaCaseConfirm = document.querySelector(".us-covidtrack-va-confirm");
    const vaTotHos = document.querySelector(".us-covidtrack-va-tothos");
@@ -1870,15 +1501,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    vaCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    vaCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    vaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //WA Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/wa/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const waCaseDeath = document.querySelector(".us-covidtrack-wa-death");
    const waCaseConfirm = document.querySelector(".us-covidtrack-wa-confirm");
    const waTotHos = document.querySelector(".us-covidtrack-wa-tothos");
@@ -1891,15 +1515,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    waCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    waCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    waRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //WV Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/wv/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const wvCaseDeath = document.querySelector(".us-covidtrack-wv-death");
    const wvCaseConfirm = document.querySelector(".us-covidtrack-wv-confirm");
    const wvTotHos = document.querySelector(".us-covidtrack-wv-tothos");
@@ -1912,15 +1529,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    wvCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    wvCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
    wvRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
 
 //WI Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/wi/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const wiCaseDeath = document.querySelector(".us-covidtrack-wi-death");
    const wiCaseConfirm = document.querySelector(".us-covidtrack-wi-confirm");
    const wiTotHos = document.querySelector(".us-covidtrack-wi-tothos");
@@ -1932,16 +1542,9 @@ const localapi2 = 'https://corona-api.com/countries/US';
    wiTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
    wiCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
    wiCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   wiRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
-   });
+   wiRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
 
 //WY Count from COVID Tracking Project
-   fetch('https://api.covidtracking.com/v1/states/wy/current.json')
-  .then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
    const wyCaseDeath = document.querySelector(".us-covidtrack-wy-death");
    const wyCaseConfirm = document.querySelector(".us-covidtrack-wy-confirm");
    const wyTotHos = document.querySelector(".us-covidtrack-wy-tothos");
@@ -1957,20 +1560,8 @@ const localapi2 = 'https://corona-api.com/countries/US';
    });
 
 //US Count from COVID Tracking Project 
-   fetch(localapi1, {
-  method: 'GET',
-  mode: 'cors', // no-cors, *cors, same-origin
-  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-  credentials: 'same-origin', // include, *same-origin, omit
-  headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },   
-}).then(response => {
-   return response.json();
-  })
-  .then(data => {
-   console.log(data);
+  d3v6.json("./covidtrack_covid_19_data/covidtrackus.json").then(function(data) {
+  console.log(data);
    const usCaseDeathCTP = document.querySelector(".us-covidtrack-death");
    const usCaseConfirmCTP = document.querySelector(".us-covidtrack-confirm");
    const usTotHos = document.querySelector(".us-covidtrack-tothos");
