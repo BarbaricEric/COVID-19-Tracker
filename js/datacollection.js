@@ -45,7 +45,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });     
          
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-05-17&iso=USA', {
+   fetch('https://covid-api.com/api/reports?date=2021-05-18&iso=USA', {
   method: 'GET',
   mode: 'cors', // no-cors, *cors, same-origin
   cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -433,7 +433,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });
 
 //NY Count from New York Times
-  d3v6.csv("./nytimes_covid_19_data/nytimes_daily_reports/05-17-2021.csv").then(function(data) {
+  d3v6.csv("./nytimes_covid_19_data/nytimes_daily_reports/05-18-2021.csv").then(function(data) {
    console.log(data);
    const alCaseConfirm = document.querySelector(".us-newyorktimes-al-confirm");
    const alCaseDeath = document.querySelector(".us-newyorktimes-al-death");
@@ -783,12 +783,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const alCurHos = document.querySelector(".us-covidtrack-al-curhos");
    const alCurIcu = document.querySelector(".us-covidtrack-al-curicu");
    const alRecent = document.querySelector(".us-covidtrack-al-recent");   
-   alCaseDeath.textContent = addCommas(data.death);
-   alCaseConfirm.textContent = addCommas(data.positive);
-   alTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   alCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   alCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   alRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/
+   alCaseDeath.textContent = addCommas(data[1].death);
+   alCaseConfirm.textContent = addCommas(data[1].positive);
+   alTotHos.textContent = addCommas(determineNull(data[1].hospitalizedCumulative));
+   alCurHos.textContent = addCommas(determineNull(data[1].hospitalizedCurrently));
+   alCurIcu.textContent = addCommas(determineNull(data[1].inIcuCurrently));
+   alRecent.textContent = new Date(data[1].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/
 
 //AK Count from COVID Tracking Project
    const akCaseDeath = document.querySelector(".us-covidtrack-ak-death");
@@ -797,12 +797,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const akCurHos = document.querySelector(".us-covidtrack-ak-curhos");
    const akCurIcu = document.querySelector(".us-covidtrack-ak-curicu");
    const akRecent = document.querySelector(".us-covidtrack-ak-recent");       
-   akCaseDeath.textContent = addCommas(data.death);
-   akCaseConfirm.textContent = addCommas(data.positive);
-   akTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   akCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   akCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   akRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   akCaseDeath.textContent = addCommas(data[0].death);
+   akCaseConfirm.textContent = addCommas(data[0].positive);
+   akTotHos.textContent = addCommas(determineNull(data[0].hospitalizedCumulative));
+   akCurHos.textContent = addCommas(determineNull(data[0].hospitalizedCurrently));
+   akCurIcu.textContent = addCommas(determineNull(data[0].inIcuCurrently));
+   akRecent.textContent = new Date(data[0].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //AS Count from COVID Tracking Project
    const asCaseDeath = document.querySelector(".us-covidtrack-as-death");
@@ -811,12 +811,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const asCurHos = document.querySelector(".us-covidtrack-as-curhos");
    const asCurIcu = document.querySelector(".us-covidtrack-as-curicu");
    const asRecent = document.querySelector(".us-covidtrack-as-recent");       
-   asCaseDeath.textContent = addCommas(data.death);
-   asCaseConfirm.textContent = addCommas(data.positive);
-   asTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   asCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   asCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   asRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   asCaseDeath.textContent = addCommas(data[3].death);
+   asCaseConfirm.textContent = addCommas(data[3].positive);
+   asTotHos.textContent = addCommas(determineNull(data[3].hospitalizedCumulative));
+   asCurHos.textContent = addCommas(determineNull(data[3].hospitalizedCurrently));
+   asCurIcu.textContent = addCommas(determineNull(data[3].inIcuCurrently));
+   asRecent.textContent = new Date(data[3].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //AZ Count from COVID Tracking Project
    const azCaseDeath = document.querySelector(".us-covidtrack-az-death");
@@ -825,12 +825,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const azCurHos = document.querySelector(".us-covidtrack-az-curhos");
    const azCurIcu = document.querySelector(".us-covidtrack-az-curicu");
    const azRecent = document.querySelector(".us-covidtrack-az-recent");      
-   azCaseDeath.textContent = addCommas(data.death);
-   azCaseConfirm.textContent = addCommas(data.positive);
-   azTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   azCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   azCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   azRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/    
+   azCaseDeath.textContent = addCommas(data[4].death);
+   azCaseConfirm.textContent = addCommas(data[4].positive);
+   azTotHos.textContent = addCommas(determineNull(data[4].hospitalizedCumulative));
+   azCurHos.textContent = addCommas(determineNull(data[4].hospitalizedCurrently));
+   azCurIcu.textContent = addCommas(determineNull(data[4].inIcuCurrently));
+   azRecent.textContent = new Date(data[4].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/    
 
 //AR Count from COVID Tracking Project
    const arCaseDeath = document.querySelector(".us-covidtrack-ar-death");
@@ -839,24 +839,24 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const arCurHos = document.querySelector(".us-covidtrack-ar-curhos");
    const arCurIcu = document.querySelector(".us-covidtrack-ar-curicu");
    const arRecent = document.querySelector(".us-covidtrack-ar-recent");      
-   arCaseDeath.textContent = addCommas(data.death);
-   arCaseConfirm.textContent = addCommas(data.positive);
-   arTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   arCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   arCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   arRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   arCaseDeath.textContent = addCommas(data[2].death);
+   arCaseConfirm.textContent = addCommas(data[2].positive);
+   arTotHos.textContent = addCommas(determineNull(data[2].hospitalizedCumulative));
+   arCurHos.textContent = addCommas(determineNull(data[2].hospitalizedCurrently));
+   arCurIcu.textContent = addCommas(determineNull(data[2].inIcuCurrently));
+   arRecent.textContent = new Date(data[2].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //CA Count from COVID Tracking Project
    const caTotHos = document.querySelector(".us-covidtrack-ca-tothos");
    const caCurHos = document.querySelector(".us-covidtrack-ca-curhos");
    const caCurIcu = document.querySelector(".us-covidtrack-ca-curicu");
    const caRecent = document.querySelector(".us-covidtrack-ca-recent");       
-   caCaseDeath.textContent = addCommas(data.death);
-   caCaseConfirm.textContent = addCommas(data.positive);
-   caTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   caCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   caCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   caRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   caCaseDeath.textContent = addCommas(data[5].death);
+   caCaseConfirm.textContent = addCommas(data[5].positive);
+   caTotHos.textContent = addCommas(determineNull(data[5].hospitalizedCumulative));
+   caCurHos.textContent = addCommas(determineNull(data[5].hospitalizedCurrently));
+   caCurIcu.textContent = addCommas(determineNull(data[5].inIcuCurrently));
+   caRecent.textContent = new Date(data[5].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //CO Count from COVID Tracking Project
    const coCaseDeath = document.querySelector(".us-covidtrack-co-death");
@@ -865,12 +865,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const coCurHos = document.querySelector(".us-covidtrack-co-curhos");
    const coCurIcu = document.querySelector(".us-covidtrack-co-curicu");
    const coRecent = document.querySelector(".us-covidtrack-co-recent");      
-   coCaseDeath.textContent = addCommas(data.death);
-   coCaseConfirm.textContent = addCommas(data.positive);
-   coTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   coCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   coCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   coRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
+   coCaseDeath.textContent = addCommas(data[6].death);
+   coCaseConfirm.textContent = addCommas(data[6].positive);
+   coTotHos.textContent = addCommas(determineNull(data[6].hospitalizedCumulative));
+   coCurHos.textContent = addCommas(determineNull(data[6].hospitalizedCurrently));
+   coCurIcu.textContent = addCommas(determineNull(data[6].inIcuCurrently));
+   coRecent.textContent = new Date(data[6].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
 
 //CT Count from COVID Tracking Project
    const ctCaseDeath = document.querySelector(".us-covidtrack-ct-death");
@@ -879,12 +879,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const ctCurHos = document.querySelector(".us-covidtrack-ct-curhos");
    const ctCurIcu = document.querySelector(".us-covidtrack-ct-curicu");
    const ctRecent = document.querySelector(".us-covidtrack-ct-recent");      
-   ctCaseDeath.textContent = addCommas(data.death);
-   ctCaseConfirm.textContent = addCommas(data.positive);
-   ctTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   ctCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   ctCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   ctRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   ctCaseDeath.textContent = addCommas(data[7].death);
+   ctCaseConfirm.textContent = addCommas(data[7].positive);
+   ctTotHos.textContent = addCommas(determineNull(data[7].hospitalizedCumulative));
+   ctCurHos.textContent = addCommas(determineNull(data[7].hospitalizedCurrently));
+   ctCurIcu.textContent = addCommas(determineNull(data[7].inIcuCurrently));
+   ctRecent.textContent = new Date(data[7].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //DE Count from COVID Tracking Project
    const deCaseDeath = document.querySelector(".us-covidtrack-de-death");
@@ -893,12 +893,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const deCurHos = document.querySelector(".us-covidtrack-de-curhos");
    const deCurIcu = document.querySelector(".us-covidtrack-de-curicu");
    const deRecent = document.querySelector(".us-covidtrack-de-recent");      
-   deCaseDeath.textContent = addCommas(data.death);
-   deCaseConfirm.textContent = addCommas(data.positive);
-   deTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   deCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   deCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   deRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   deCaseDeath.textContent = addCommas(data[9].death);
+   deCaseConfirm.textContent = addCommas(data[9].positive);
+   deTotHos.textContent = addCommas(determineNull(data[9].hospitalizedCumulative));
+   deCurHos.textContent = addCommas(determineNull(data[9].hospitalizedCurrently));
+   deCurIcu.textContent = addCommas(determineNull(data[9].inIcuCurrently));
+   deRecent.textContent = new Date(data[9].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //DC Count from COVID Tracking Project
    const dcCaseDeath = document.querySelector(".us-covidtrack-dc-death");
@@ -907,12 +907,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const dcCurHos = document.querySelector(".us-covidtrack-dc-curhos");
    const dcCurIcu = document.querySelector(".us-covidtrack-dc-curicu");
    const dcRecent = document.querySelector(".us-covidtrack-dc-recent");      
-   dcCaseDeath.textContent = addCommas(data.death);
-   dcCaseConfirm.textContent = addCommas(data.positive);
-   dcTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   dcCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   dcCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   dcRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   dcCaseDeath.textContent = addCommas(data[8].death);
+   dcCaseConfirm.textContent = addCommas(data[8].positive);
+   dcTotHos.textContent = addCommas(determineNull(data[8].hospitalizedCumulative));
+   dcCurHos.textContent = addCommas(determineNull(data[8].hospitalizedCurrently));
+   dcCurIcu.textContent = addCommas(determineNull(data[8].inIcuCurrently));
+   dcRecent.textContent = new Date(data[8].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //FL Count from COVID Tracking Project
    const flCaseDeath = document.querySelector(".us-covidtrack-fl-death");
@@ -921,12 +921,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const flCurHos = document.querySelector(".us-covidtrack-fl-curhos");
    const flCurIcu = document.querySelector(".us-covidtrack-fl-curicu");
    const flRecent = document.querySelector(".us-covidtrack-fl-recent");      
-   flCaseDeath.textContent = addCommas(data.death);
-   flCaseConfirm.textContent = addCommas(data.positive);
-   flTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   flCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   flCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   flRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   flCaseDeath.textContent = addCommas(data[10].death);
+   flCaseConfirm.textContent = addCommas(data[10].positive);
+   flTotHos.textContent = addCommas(determineNull(data[10].hospitalizedCumulative));
+   flCurHos.textContent = addCommas(determineNull(data[10].hospitalizedCurrently));
+   flCurIcu.textContent = addCommas(determineNull(data[10].inIcuCurrently));
+   flRecent.textContent = new Date(data[10].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //GA Count from COVID Tracking Project
    const gaCaseDeath = document.querySelector(".us-covidtrack-ga-death");
@@ -935,12 +935,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const gaCurHos = document.querySelector(".us-covidtrack-ga-curhos");
    const gaCurIcu = document.querySelector(".us-covidtrack-ga-curicu");
    const gaRecent = document.querySelector(".us-covidtrack-ga-recent");      
-   gaCaseDeath.textContent = addCommas(data.death);
-   gaCaseConfirm.textContent = addCommas(data.positive);
-   gaTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   gaCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   gaCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   gaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
+   gaCaseDeath.textContent = addCommas(data[11].death);
+   gaCaseConfirm.textContent = addCommas(data[11].positive);
+   gaTotHos.textContent = addCommas(determineNull(data[11].hospitalizedCumulative));
+   gaCurHos.textContent = addCommas(determineNull(data[11].hospitalizedCurrently));
+   gaCurIcu.textContent = addCommas(determineNull(data[11].inIcuCurrently));
+   gaRecent.textContent = new Date(data[11].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
 
 //GU Count from COVID Tracking Project
    const guCaseDeath = document.querySelector(".us-covidtrack-gu-death");
@@ -949,12 +949,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const guCurHos = document.querySelector(".us-covidtrack-gu-curhos");
    const guCurIcu = document.querySelector(".us-covidtrack-gu-curicu");
    const guRecent = document.querySelector(".us-covidtrack-gu-recent");      
-   guCaseDeath.textContent = addCommas(data.death);
-   guCaseConfirm.textContent = addCommas(data.positive);
-   guTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   guCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   guCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   guRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   guCaseDeath.textContent = addCommas(data[12].death);
+   guCaseConfirm.textContent = addCommas(data[12].positive);
+   guTotHos.textContent = addCommas(determineNull(data[12].hospitalizedCumulative));
+   guCurHos.textContent = addCommas(determineNull(data[12].hospitalizedCurrently));
+   guCurIcu.textContent = addCommas(determineNull(data[12].inIcuCurrently));
+   guRecent.textContent = new Date(data[12].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //HI Count from COVID Tracking Project
    const hiCaseDeath = document.querySelector(".us-covidtrack-hi-death");
@@ -963,12 +963,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const hiCurHos = document.querySelector(".us-covidtrack-hi-curhos");
    const hiCurIcu = document.querySelector(".us-covidtrack-hi-curicu");
    const hiRecent = document.querySelector(".us-covidtrack-hi-recent");      
-   hiCaseDeath.textContent = addCommas(data.death);
-   hiCaseConfirm.textContent = addCommas(data.positive);
-   hiTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   hiCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   hiCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   hiRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   hiCaseDeath.textContent = addCommas(data[13].death);
+   hiCaseConfirm.textContent = addCommas(data[13].positive);
+   hiTotHos.textContent = addCommas(determineNull(data[13].hospitalizedCumulative));
+   hiCurHos.textContent = addCommas(determineNull(data[13].hospitalizedCurrently));
+   hiCurIcu.textContent = addCommas(determineNull(data[13].inIcuCurrently));
+   hiRecent.textContent = new Date(data[13].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //ID Count from COVID Tracking Project
    const idCaseDeath = document.querySelector(".us-covidtrack-id-death");
@@ -977,12 +977,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const idCurHos = document.querySelector(".us-covidtrack-id-curhos");
    const idCurIcu = document.querySelector(".us-covidtrack-id-curicu");
    const idRecent = document.querySelector(".us-covidtrack-id-recent");       
-   idCaseDeath.textContent = addCommas(data.death);
-   idCaseConfirm.textContent = addCommas(data.positive);
-   idTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   idCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   idCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   idRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   idCaseDeath.textContent = addCommas(data[15].death);
+   idCaseConfirm.textContent = addCommas(data[15].positive);
+   idTotHos.textContent = addCommas(determineNull(data[15].hospitalizedCumulative));
+   idCurHos.textContent = addCommas(determineNull(data[15].hospitalizedCurrently));
+   idCurIcu.textContent = addCommas(determineNull(data[15].inIcuCurrently));
+   idRecent.textContent = new Date(data[15].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //IL Count from COVID Tracking Project
    const ilCaseDeath = document.querySelector(".us-covidtrack-il-death");
@@ -991,12 +991,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const ilCurHos = document.querySelector(".us-covidtrack-il-curhos");
    const ilCurIcu = document.querySelector(".us-covidtrack-il-curicu");
    const ilRecent = document.querySelector(".us-covidtrack-il-recent");       
-   ilCaseDeath.textContent = addCommas(data.death);
-   ilCaseConfirm.textContent = addCommas(data.positive);
-   ilTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   ilCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   ilCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   ilRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/         
+   ilCaseDeath.textContent = addCommas(data[16].death);
+   ilCaseConfirm.textContent = addCommas(data[16].positive);
+   ilTotHos.textContent = addCommas(determineNull(data[16].hospitalizedCumulative));
+   ilCurHos.textContent = addCommas(determineNull(data[16].hospitalizedCurrently));
+   ilCurIcu.textContent = addCommas(determineNull(data[16].inIcuCurrently));
+   ilRecent.textContent = new Date(data[16].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/         
 
 //IN Count from COVID Tracking Project
    const inCaseDeath = document.querySelector(".us-covidtrack-in-death");
@@ -1005,12 +1005,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const inCurHos = document.querySelector(".us-covidtrack-in-curhos");
    const inCurIcu = document.querySelector(".us-covidtrack-in-curicu");
    const inRecent = document.querySelector(".us-covidtrack-in-recent");       
-   inCaseDeath.textContent = addCommas(data.death);
-   inCaseConfirm.textContent = addCommas(data.positive);
-   inTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   inCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   inCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   inRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/        
+   inCaseDeath.textContent = addCommas(data[17].death);
+   inCaseConfirm.textContent = addCommas(data[17].positive);
+   inTotHos.textContent = addCommas(determineNull(data[17].hospitalizedCumulative));
+   inCurHos.textContent = addCommas(determineNull(data[17].hospitalizedCurrently));
+   inCurIcu.textContent = addCommas(determineNull(data[17].inIcuCurrently));
+   inRecent.textContent = new Date(data[17].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/        
 
 //IA Count from COVID Tracking Project
    const iaCaseDeath = document.querySelector(".us-covidtrack-ia-death");
@@ -1019,12 +1019,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const iaCurHos = document.querySelector(".us-covidtrack-ia-curhos");
    const iaCurIcu = document.querySelector(".us-covidtrack-ia-curicu");
    const iaRecent = document.querySelector(".us-covidtrack-ia-recent");       
-   iaCaseDeath.textContent = addCommas(data.death);
-   iaCaseConfirm.textContent = addCommas(data.positive);
-   iaTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   iaCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   iaCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   iaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   iaCaseDeath.textContent = addCommas(data[14].death);
+   iaCaseConfirm.textContent = addCommas(data[14].positive);
+   iaTotHos.textContent = addCommas(determineNull(data[14].hospitalizedCumulative));
+   iaCurHos.textContent = addCommas(determineNull(data[14].hospitalizedCurrently));
+   iaCurIcu.textContent = addCommas(determineNull(data[14].inIcuCurrently));
+   iaRecent.textContent = new Date(data[14].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //KS Count from COVID Tracking Project
    const ksCaseDeath = document.querySelector(".us-covidtrack-ks-death");
@@ -1033,12 +1033,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const ksCurHos = document.querySelector(".us-covidtrack-ks-curhos");
    const ksCurIcu = document.querySelector(".us-covidtrack-ks-curicu");
    const ksRecent = document.querySelector(".us-covidtrack-ks-recent");       
-   ksCaseDeath.textContent = addCommas(data.death);
-   ksCaseConfirm.textContent = addCommas(data.positive);
-   ksTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   ksCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   ksCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   ksRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   ksCaseDeath.textContent = addCommas(data[18].death);
+   ksCaseConfirm.textContent = addCommas(data[18].positive);
+   ksTotHos.textContent = addCommas(determineNull(data[18].hospitalizedCumulative));
+   ksCurHos.textContent = addCommas(determineNull(data[18].hospitalizedCurrently));
+   ksCurIcu.textContent = addCommas(determineNull(data[18].inIcuCurrently));
+   ksRecent.textContent = new Date(data[18].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //KY Count from COVID Tracking Project
    const kyCaseDeath = document.querySelector(".us-covidtrack-ky-death");
@@ -1047,12 +1047,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const kyCurHos = document.querySelector(".us-covidtrack-ky-curhos");
    const kyCurIcu = document.querySelector(".us-covidtrack-ky-curicu");
    const kyRecent = document.querySelector(".us-covidtrack-ky-recent");       
-   kyCaseDeath.textContent = addCommas(data.death);
-   kyCaseConfirm.textContent = addCommas(data.positive);
-   kyTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   kyCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   kyCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   kyRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   kyCaseDeath.textContent = addCommas(data[19].death);
+   kyCaseConfirm.textContent = addCommas(data[19].positive);
+   kyTotHos.textContent = addCommas(determineNull(data[19].hospitalizedCumulative));
+   kyCurHos.textContent = addCommas(determineNull(data[19].hospitalizedCurrently));
+   kyCurIcu.textContent = addCommas(determineNull(data[19].inIcuCurrently));
+   kyRecent.textContent = new Date(data[19].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //LA Count from COVID Tracking Project
    const laCaseDeath = document.querySelector(".us-covidtrack-la-death");
@@ -1061,12 +1061,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const laCurHos = document.querySelector(".us-covidtrack-la-curhos");
    const laCurIcu = document.querySelector(".us-covidtrack-la-curicu");
    const laRecent = document.querySelector(".us-covidtrack-la-recent");       
-   laCaseDeath.textContent = addCommas(data.death);
-   laCaseConfirm.textContent = addCommas(data.positive);
-   laTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   laCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   laCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   laRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   laCaseDeath.textContent = addCommas(data[20].death);
+   laCaseConfirm.textContent = addCommas(data[20].positive);
+   laTotHos.textContent = addCommas(determineNull(data[20].hospitalizedCumulative));
+   laCurHos.textContent = addCommas(determineNull(data[20].hospitalizedCurrently));
+   laCurIcu.textContent = addCommas(determineNull(data[20].inIcuCurrently));
+   laRecent.textContent = new Date(data[20].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //ME Count from COVID Tracking Project
    const meCaseDeath = document.querySelector(".us-covidtrack-me-death");
@@ -1075,12 +1075,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const meCurHos = document.querySelector(".us-covidtrack-me-curhos");
    const meCurIcu = document.querySelector(".us-covidtrack-me-curicu");
    const meRecent = document.querySelector(".us-covidtrack-me-recent");      
-   meCaseDeath.textContent = addCommas(data.death);
-   meCaseConfirm.textContent = addCommas(data.positive);
-   meTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   meCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   meCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   meRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   meCaseDeath.textContent = addCommas(data[23].death);
+   meCaseConfirm.textContent = addCommas(data[23].positive);
+   meTotHos.textContent = addCommas(determineNull(data[23].hospitalizedCumulative));
+   meCurHos.textContent = addCommas(determineNull(data[23].hospitalizedCurrently));
+   meCurIcu.textContent = addCommas(determineNull(data[23].inIcuCurrently));
+   meRecent.textContent = new Date(data[23].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //MD Count from COVID Tracking Project
    const mdCaseDeath = document.querySelector(".us-covidtrack-md-death");
@@ -1089,12 +1089,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const mdCurHos = document.querySelector(".us-covidtrack-md-curhos");
    const mdCurIcu = document.querySelector(".us-covidtrack-md-curicu");
    const mdRecent = document.querySelector(".us-covidtrack-md-recent");      
-   mdCaseDeath.textContent = addCommas(data.death);
-   mdCaseConfirm.textContent = addCommas(data.positive);
-   mdTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   mdCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   mdCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   mdRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   mdCaseDeath.textContent = addCommas(data[22].death);
+   mdCaseConfirm.textContent = addCommas(data[22].positive);
+   mdTotHos.textContent = addCommas(determineNull(data[22].hospitalizedCumulative));
+   mdCurHos.textContent = addCommas(determineNull(data[22].hospitalizedCurrently));
+   mdCurIcu.textContent = addCommas(determineNull(data[22].inIcuCurrently));
+   mdRecent.textContent = new Date(data[22].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //MA Count from COVID Tracking Project
    const maCaseDeath = document.querySelector(".us-covidtrack-ma-death");
@@ -1103,12 +1103,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const maCurHos = document.querySelector(".us-covidtrack-ma-curhos");
    const maCurIcu = document.querySelector(".us-covidtrack-ma-curicu");
    const maRecent = document.querySelector(".us-covidtrack-ma-recent");      
-   maCaseDeath.textContent = addCommas(data.death);
-   maCaseConfirm.textContent = addCommas(data.positive);
-   maTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   maCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   maCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   maRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   maCaseDeath.textContent = addCommas(data[21].death);
+   maCaseConfirm.textContent = addCommas(data[21].positive);
+   maTotHos.textContent = addCommas(determineNull(data[21].hospitalizedCumulative));
+   maCurHos.textContent = addCommas(determineNull(data[21].hospitalizedCurrently));
+   maCurIcu.textContent = addCommas(determineNull(data[21].inIcuCurrently));
+   maRecent.textContent = new Date(data[21].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //MI Count from COVID Tracking Project
    const miCaseDeath = document.querySelector(".us-covidtrack-mi-death");
@@ -1117,12 +1117,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const miCurHos = document.querySelector(".us-covidtrack-mi-curhos");
    const miCurIcu = document.querySelector(".us-covidtrack-mi-curicu");
    const miRecent = document.querySelector(".us-covidtrack-mi-recent");      
-   miCaseDeath.textContent = addCommas(data.death);
-   miCaseConfirm.textContent = addCommas(data.positive);
-   miTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   miCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   miCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   miRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   miCaseDeath.textContent = addCommas(data[24].death);
+   miCaseConfirm.textContent = addCommas(data[24].positive);
+   miTotHos.textContent = addCommas(determineNull(data[24].hospitalizedCumulative));
+   miCurHos.textContent = addCommas(determineNull(data[24].hospitalizedCurrently));
+   miCurIcu.textContent = addCommas(determineNull(data[24].inIcuCurrently));
+   miRecent.textContent = new Date(data[24].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //MN Count from COVID Tracking Project
    const mnCaseDeath = document.querySelector(".us-covidtrack-mn-death");
@@ -1131,12 +1131,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const mnCurHos = document.querySelector(".us-covidtrack-mn-curhos");
    const mnCurIcu = document.querySelector(".us-covidtrack-mn-curicu");
    const mnRecent = document.querySelector(".us-covidtrack-mn-recent");      
-   mnCaseDeath.textContent = addCommas(data.death);
-   mnCaseConfirm.textContent = addCommas(data.positive);
-   mnTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   mnCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   mnCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   mnRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   mnCaseDeath.textContent = addCommas(data[25].death);
+   mnCaseConfirm.textContent = addCommas(data[25].positive);
+   mnTotHos.textContent = addCommas(determineNull(data[25].hospitalizedCumulative));
+   mnCurHos.textContent = addCommas(determineNull(data[25].hospitalizedCurrently));
+   mnCurIcu.textContent = addCommas(determineNull(data[25].inIcuCurrently));
+   mnRecent.textContent = new Date(data[25].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //MS Count from COVID Tracking Project
    const msCaseDeath = document.querySelector(".us-covidtrack-ms-death");
@@ -1145,12 +1145,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const msCurHos = document.querySelector(".us-covidtrack-ms-curhos");
    const msCurIcu = document.querySelector(".us-covidtrack-ms-curicu");
    const msRecent = document.querySelector(".us-covidtrack-ms-recent");      
-   msCaseDeath.textContent = addCommas(data.death);
-   msCaseConfirm.textContent = addCommas(data.positive);
-   msTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   msCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   msCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   msRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   msCaseDeath.textContent = addCommas(data[28].death);
+   msCaseConfirm.textContent = addCommas(data[28].positive);
+   msTotHos.textContent = addCommas(determineNull(data[28].hospitalizedCumulative));
+   msCurHos.textContent = addCommas(determineNull(data[28].hospitalizedCurrently));
+   msCurIcu.textContent = addCommas(determineNull(data[28].inIcuCurrently));
+   msRecent.textContent = new Date(data[28].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //MO Count from COVID Tracking Project
    const moCaseDeath = document.querySelector(".us-covidtrack-mo-death");
@@ -1159,12 +1159,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const moCurHos = document.querySelector(".us-covidtrack-mo-curhos");
    const moCurIcu = document.querySelector(".us-covidtrack-mo-curicu");
    const moRecent = document.querySelector(".us-covidtrack-mo-recent");      
-   moCaseDeath.textContent = addCommas(data.death);
-   moCaseConfirm.textContent = addCommas(data.positive);
-   moTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   moCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   moCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   moRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   moCaseDeath.textContent = addCommas(data[26].death);
+   moCaseConfirm.textContent = addCommas(data[26].positive);
+   moTotHos.textContent = addCommas(determineNull(data[26].hospitalizedCumulative));
+   moCurHos.textContent = addCommas(determineNull(data[26].hospitalizedCurrently));
+   moCurIcu.textContent = addCommas(determineNull(data[26].inIcuCurrently));
+   moRecent.textContent = new Date(data[26].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //MT Count from COVID Tracking Project
    const mtCaseDeath = document.querySelector(".us-covidtrack-mt-death");
@@ -1173,12 +1173,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const mtCurHos = document.querySelector(".us-covidtrack-mt-curhos");
    const mtCurIcu = document.querySelector(".us-covidtrack-mt-curicu");
    const mtRecent = document.querySelector(".us-covidtrack-mt-recent");      
-   mtCaseDeath.textContent = addCommas(data.death);
-   mtCaseConfirm.textContent = addCommas(data.positive);
-   mtTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   mtCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   mtCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   mtRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   mtCaseDeath.textContent = addCommas(data[29].death);
+   mtCaseConfirm.textContent = addCommas(data[29].positive);
+   mtTotHos.textContent = addCommas(determineNull(data[29].hospitalizedCumulative));
+   mtCurHos.textContent = addCommas(determineNull(data[29].hospitalizedCurrently));
+   mtCurIcu.textContent = addCommas(determineNull(data[29].inIcuCurrently));
+   mtRecent.textContent = new Date(data[29].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //NE Count from COVID Tracking Project
    const neCaseDeath = document.querySelector(".us-covidtrack-ne-death");
@@ -1187,12 +1187,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const neCurHos = document.querySelector(".us-covidtrack-ne-curhos");
    const neCurIcu = document.querySelector(".us-covidtrack-ne-curicu");
    const neRecent = document.querySelector(".us-covidtrack-ne-recent");      
-   neCaseDeath.textContent = addCommas(data.death);
-   neCaseConfirm.textContent = addCommas(data.positive);
-   neTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   neCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   neCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   neRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   neCaseDeath.textContent = addCommas(data[32].death);
+   neCaseConfirm.textContent = addCommas(data[32].positive);
+   neTotHos.textContent = addCommas(determineNull(data[32].hospitalizedCumulative));
+   neCurHos.textContent = addCommas(determineNull(data[32].hospitalizedCurrently));
+   neCurIcu.textContent = addCommas(determineNull(data[32].inIcuCurrently));
+   neRecent.textContent = new Date(data[32].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //NV Count from COVID Tracking Project
    const nvCaseDeath = document.querySelector(".us-covidtrack-nv-death");
@@ -1201,12 +1201,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const nvCurHos = document.querySelector(".us-covidtrack-nv-curhos");
    const nvCurIcu = document.querySelector(".us-covidtrack-nv-curicu");
    const nvRecent = document.querySelector(".us-covidtrack-nv-recent");      
-   nvCaseDeath.textContent = addCommas(data.death);
-   nvCaseConfirm.textContent = addCommas(data.positive);
-   nvTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   nvCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   nvCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   nvRecent.textContent = new Date(addDateComma(data.date)).toString().substring(4,15); /*determineNull(data.dateModified.toString().substring(0, 10));*/       
+   nvCaseDeath.textContent = addCommas(data[36].death);
+   nvCaseConfirm.textContent = addCommas(data[36].positive);
+   nvTotHos.textContent = addCommas(determineNull(data[36].hospitalizedCumulative));
+   nvCurHos.textContent = addCommas(determineNull(data[36].hospitalizedCurrently));
+   nvCurIcu.textContent = addCommas(determineNull(data[36].inIcuCurrently));
+   nvRecent.textContent = new Date(addDateComma(data[36].date)).toString().substring(4,15); /*determineNull(data.dateModified.toString().substring(0, 10));*/       
 
 //NH Count from COVID Tracking Project
    const nhCaseDeath = document.querySelector(".us-covidtrack-nh-death");
@@ -1215,12 +1215,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const nhCurHos = document.querySelector(".us-covidtrack-nh-curhos");
    const nhCurIcu = document.querySelector(".us-covidtrack-nh-curicu");
    const nhRecent = document.querySelector(".us-covidtrack-nh-recent");      
-   nhCaseDeath.textContent = addCommas(data.death);
-   nhCaseConfirm.textContent = addCommas(data.positive);
-   nhTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   nhCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   nhCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   nhRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   nhCaseDeath.textContent = addCommas(data[33].death);
+   nhCaseConfirm.textContent = addCommas(data[33].positive);
+   nhTotHos.textContent = addCommas(determineNull(data[33].hospitalizedCumulative));
+   nhCurHos.textContent = addCommas(determineNull(data[33].hospitalizedCurrently));
+   nhCurIcu.textContent = addCommas(determineNull(data[33].inIcuCurrently));
+   nhRecent.textContent = new Date(data[33].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //NJ Count from COVID Tracking Project
    const njCaseDeath = document.querySelector(".us-covidtrack-nj-death");
@@ -1229,12 +1229,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const njCurHos = document.querySelector(".us-covidtrack-nj-curhos");
    const njCurIcu = document.querySelector(".us-covidtrack-nj-curicu");
    const njRecent = document.querySelector(".us-covidtrack-nj-recent");      
-   njCaseDeath.textContent = addCommas(data.death);
-   njCaseConfirm.textContent = addCommas(data.positive);
-   njTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   njCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   njCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   njRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   njCaseDeath.textContent = addCommas(data[34].death);
+   njCaseConfirm.textContent = addCommas(data[34].positive);
+   njTotHos.textContent = addCommas(determineNull(data[34].hospitalizedCumulative));
+   njCurHos.textContent = addCommas(determineNull(data[34].hospitalizedCurrently));
+   njCurIcu.textContent = addCommas(determineNull(data[34].inIcuCurrently));
+   njRecent.textContent = new Date(data[34].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //NM Count from COVID Tracking Project
    const nmCaseDeath = document.querySelector(".us-covidtrack-nm-death");
@@ -1243,12 +1243,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const nmCurHos = document.querySelector(".us-covidtrack-nm-curhos");
    const nmCurIcu = document.querySelector(".us-covidtrack-nm-curicu");
    const nmRecent = document.querySelector(".us-covidtrack-nm-recent");      
-   nmCaseDeath.textContent = addCommas(data.death);
-   nmCaseConfirm.textContent = addCommas(data.positive);
-   nmTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   nmCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   nmCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   nmRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   nmCaseDeath.textContent = addCommas(data[35].death);
+   nmCaseConfirm.textContent = addCommas(data[35].positive);
+   nmTotHos.textContent = addCommas(determineNull(data[35].hospitalizedCumulative));
+   nmCurHos.textContent = addCommas(determineNull(data[35].hospitalizedCurrently));
+   nmCurIcu.textContent = addCommas(determineNull(data[35].inIcuCurrently));
+   nmRecent.textContent = new Date(data[35].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //NY Count from COVID Tracking Project
    const nyCaseDeath = document.querySelector(".us-covidtrack-ny-death");
@@ -1257,12 +1257,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const nyCurHos = document.querySelector(".us-covidtrack-ny-curhos");
    const nyCurIcu = document.querySelector(".us-covidtrack-ny-curicu");
    const nyRecent = document.querySelector(".us-covidtrack-ny-recent");       
-   nyCaseDeath.textContent = addCommas(data.death);
-   nyCaseConfirm.textContent = addCommas(data.positive);
-   nyTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   nyCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   nyCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   nyRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
+   nyCaseDeath.textContent = addCommas(data[37].death);
+   nyCaseConfirm.textContent = addCommas(data[37].positive);
+   nyTotHos.textContent = addCommas(determineNull(data[37].hospitalizedCumulative));
+   nyCurHos.textContent = addCommas(determineNull(data[37].hospitalizedCurrently));
+   nyCurIcu.textContent = addCommas(determineNull(data[37].inIcuCurrently));
+   nyRecent.textContent = new Date(data[37].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
 
 //NC Count from COVID Tracking Project
    const ncCaseDeath = document.querySelector(".us-covidtrack-nc-death");
@@ -1271,12 +1271,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const ncCurHos = document.querySelector(".us-covidtrack-nc-curhos");
    const ncCurIcu = document.querySelector(".us-covidtrack-nc-curicu");
    const ncRecent = document.querySelector(".us-covidtrack-nc-recent");      
-   ncCaseDeath.textContent = addCommas(data.death);
-   ncCaseConfirm.textContent = addCommas(data.positive);
-   ncTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   ncCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   ncCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   ncRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   ncCaseDeath.textContent = addCommas(data[30].death);
+   ncCaseConfirm.textContent = addCommas(data[30].positive);
+   ncTotHos.textContent = addCommas(determineNull(data[30].hospitalizedCumulative));
+   ncCurHos.textContent = addCommas(determineNull(data[30].hospitalizedCurrently));
+   ncCurIcu.textContent = addCommas(determineNull(data[30].inIcuCurrently));
+   ncRecent.textContent = new Date(data[30].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //ND Count from COVID Tracking Project
    const ndCaseDeath = document.querySelector(".us-covidtrack-nd-death");
@@ -1285,12 +1285,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const ndCurHos = document.querySelector(".us-covidtrack-nd-curhos");
    const ndCurIcu = document.querySelector(".us-covidtrack-nd-curicu");
    const ndRecent = document.querySelector(".us-covidtrack-nd-recent");      
-   ndCaseDeath.textContent = addCommas(data.death);
-   ndCaseConfirm.textContent = addCommas(data.positive);
-   ndTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   ndCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   ndCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   ndRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   ndCaseDeath.textContent = addCommas(data[31].death);
+   ndCaseConfirm.textContent = addCommas(data[31].positive);
+   ndTotHos.textContent = addCommas(determineNull(data[31].hospitalizedCumulative));
+   ndCurHos.textContent = addCommas(determineNull(data[31].hospitalizedCurrently));
+   ndCurIcu.textContent = addCommas(determineNull(data[31].inIcuCurrently));
+   ndRecent.textContent = new Date(data[31].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //MP Count from COVID Tracking Project
    const mpCaseDeath = document.querySelector(".us-covidtrack-mp-death");
@@ -1299,12 +1299,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const mpCurHos = document.querySelector(".us-covidtrack-mp-curhos");
    const mpCurIcu = document.querySelector(".us-covidtrack-mp-curicu");
    const mpRecent = document.querySelector(".us-covidtrack-mp-recent");      
-   mpCaseDeath.textContent = addCommas(data.death);
-   mpCaseConfirm.textContent = addCommas(data.positive);
-   mpTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   mpCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   mpCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   mpRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   mpCaseDeath.textContent = addCommas(data[27].death);
+   mpCaseConfirm.textContent = addCommas(data[27].positive);
+   mpTotHos.textContent = addCommas(determineNull(data[27].hospitalizedCumulative));
+   mpCurHos.textContent = addCommas(determineNull(data[27].hospitalizedCurrently));
+   mpCurIcu.textContent = addCommas(determineNull(data[27].inIcuCurrently));
+   mpRecent.textContent = new Date(data[27].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //OH Count from COVID Tracking Project
    const ohCaseDeath = document.querySelector(".us-covidtrack-oh-death");
@@ -1313,12 +1313,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const ohCurHos = document.querySelector(".us-covidtrack-oh-curhos");
    const ohCurIcu = document.querySelector(".us-covidtrack-oh-curicu");
    const ohRecent = document.querySelector(".us-covidtrack-oh-recent");      
-   ohCaseDeath.textContent = addCommas(data.death);
-   ohCaseConfirm.textContent = addCommas(data.positive);
-   ohTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   ohCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   ohCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   ohRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/    
+   ohCaseDeath.textContent = addCommas(data[38].death);
+   ohCaseConfirm.textContent = addCommas(data[38].positive);
+   ohTotHos.textContent = addCommas(determineNull(data[38].hospitalizedCumulative));
+   ohCurHos.textContent = addCommas(determineNull(data[38].hospitalizedCurrently));
+   ohCurIcu.textContent = addCommas(determineNull(data[38].inIcuCurrently));
+   ohRecent.textContent = new Date(data[38].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/    
 
 //OK Count from COVID Tracking Project
    const okCaseDeath = document.querySelector(".us-covidtrack-ok-death");
@@ -1327,12 +1327,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const okCurHos = document.querySelector(".us-covidtrack-ok-curhos");
    const okCurIcu = document.querySelector(".us-covidtrack-ok-curicu");
    const okRecent = document.querySelector(".us-covidtrack-ok-recent");      
-   okCaseDeath.textContent = addCommas(data.death);
-   okCaseConfirm.textContent = addCommas(data.positive);
-   okTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   okCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   okCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   okRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   okCaseDeath.textContent = addCommas(data[39].death);
+   okCaseConfirm.textContent = addCommas(data[39].positive);
+   okTotHos.textContent = addCommas(determineNull(data[39].hospitalizedCumulative));
+   okCurHos.textContent = addCommas(determineNull(data[39].hospitalizedCurrently));
+   okCurIcu.textContent = addCommas(determineNull(data[39].inIcuCurrently));
+   okRecent.textContent = new Date(data[39].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //OR Count from COVID Tracking Project
    const orCaseDeath = document.querySelector(".us-covidtrack-or-death");
@@ -1341,12 +1341,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const orCurHos = document.querySelector(".us-covidtrack-or-curhos");
    const orCurIcu = document.querySelector(".us-covidtrack-or-curicu");
    const orRecent = document.querySelector(".us-covidtrack-or-recent");      
-   orCaseDeath.textContent = addCommas(data.death);
-   orCaseConfirm.textContent = addCommas(data.positive);
-   orTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   orCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   orCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   orRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   orCaseDeath.textContent = addCommas(data[40].death);
+   orCaseConfirm.textContent = addCommas(data[40].positive);
+   orTotHos.textContent = addCommas(determineNull(data[40].hospitalizedCumulative));
+   orCurHos.textContent = addCommas(determineNull(data[40].hospitalizedCurrently));
+   orCurIcu.textContent = addCommas(determineNull(data[40].inIcuCurrently));
+   orRecent.textContent = new Date(data[40].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //PA Count from COVID Tracking Project
    const paCaseDeath = document.querySelector(".us-covidtrack-pa-death");
@@ -1355,12 +1355,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const paCurHos = document.querySelector(".us-covidtrack-pa-curhos");
    const paCurIcu = document.querySelector(".us-covidtrack-pa-curicu");
    const paRecent = document.querySelector(".us-covidtrack-pa-recent");      
-   paCaseDeath.textContent = addCommas(data.death);
-   paCaseConfirm.textContent = addCommas(data.positive);
-   paTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   paCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   paCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   paRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   paCaseDeath.textContent = addCommas(data[41].death);
+   paCaseConfirm.textContent = addCommas(data[41].positive);
+   paTotHos.textContent = addCommas(determineNull(data[41].hospitalizedCumulative));
+   paCurHos.textContent = addCommas(determineNull(data[41].hospitalizedCurrently));
+   paCurIcu.textContent = addCommas(determineNull(data[41].inIcuCurrently));
+   paRecent.textContent = new Date(data[41].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //PR Count from COVID Tracking Project
    const prCaseDeath = document.querySelector(".us-covidtrack-pr-death");
@@ -1369,12 +1369,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const prCurHos = document.querySelector(".us-covidtrack-pr-curhos");
    const prCurIcu = document.querySelector(".us-covidtrack-pr-curicu");
    const prRecent = document.querySelector(".us-covidtrack-pr-recent");      
-   prCaseDeath.textContent = addCommas(data.death);
-   prCaseConfirm.textContent = addCommas(data.positive);
-   prTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   prCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   prCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   prRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   prCaseDeath.textContent = addCommas(data[42].death);
+   prCaseConfirm.textContent = addCommas(data[42].positive);
+   prTotHos.textContent = addCommas(determineNull(data[42].hospitalizedCumulative));
+   prCurHos.textContent = addCommas(determineNull(data[42].hospitalizedCurrently));
+   prCurIcu.textContent = addCommas(determineNull(data[42].inIcuCurrently));
+   prRecent.textContent = new Date(data[42].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //RI Count from COVID Tracking Project
    const riCaseDeath = document.querySelector(".us-covidtrack-ri-death");
@@ -1383,12 +1383,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const riCurHos = document.querySelector(".us-covidtrack-ri-curhos");
    const riCurIcu = document.querySelector(".us-covidtrack-ri-curicu");
    const riRecent = document.querySelector(".us-covidtrack-ri-recent");      
-   riCaseDeath.textContent = addCommas(data.death);
-   riCaseConfirm.textContent = addCommas(data.positive);
-   riTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   riCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   riCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   riRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   riCaseDeath.textContent = addCommas(data[43].death);
+   riCaseConfirm.textContent = addCommas(data[43].positive);
+   riTotHos.textContent = addCommas(determineNull(data[43].hospitalizedCumulative));
+   riCurHos.textContent = addCommas(determineNull(data[43].hospitalizedCurrently));
+   riCurIcu.textContent = addCommas(determineNull(data[43].inIcuCurrently));
+   riRecent.textContent = new Date(data[43].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //SC Count from COVID Tracking Project
    const scCaseDeath = document.querySelector(".us-covidtrack-sc-death");
@@ -1397,12 +1397,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const scCurHos = document.querySelector(".us-covidtrack-sc-curhos");
    const scCurIcu = document.querySelector(".us-covidtrack-sc-curicu");
    const scRecent = document.querySelector(".us-covidtrack-sc-recent");      
-   scCaseDeath.textContent = addCommas(data.death);
-   scCaseConfirm.textContent = addCommas(data.positive);
-   scTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   scCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   scCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   scRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   scCaseDeath.textContent = addCommas(data[44].death);
+   scCaseConfirm.textContent = addCommas(data[44].positive);
+   scTotHos.textContent = addCommas(determineNull(data[44].hospitalizedCumulative));
+   scCurHos.textContent = addCommas(determineNull(data[44].hospitalizedCurrently));
+   scCurIcu.textContent = addCommas(determineNull(data[44].inIcuCurrently));
+   scRecent.textContent = new Date(data[44].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //SD Count from COVID Tracking Project
    const sdCaseDeath = document.querySelector(".us-covidtrack-sd-death");
@@ -1411,12 +1411,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const sdCurHos = document.querySelector(".us-covidtrack-sd-curhos");
    const sdCurIcu = document.querySelector(".us-covidtrack-sd-curicu");
    const sdRecent = document.querySelector(".us-covidtrack-sd-recent");      
-   sdCaseDeath.textContent = addCommas(data.death);
-   sdCaseConfirm.textContent = addCommas(data.positive);
-   sdTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   sdCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   sdCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   sdRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   sdCaseDeath.textContent = addCommas(data[45].death);
+   sdCaseConfirm.textContent = addCommas(data[45].positive);
+   sdTotHos.textContent = addCommas(determineNull(data[45].hospitalizedCumulative));
+   sdCurHos.textContent = addCommas(determineNull(data[45].hospitalizedCurrently));
+   sdCurIcu.textContent = addCommas(determineNull(data[45].inIcuCurrently));
+   sdRecent.textContent = new Date(data[45].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //TN Count from COVID Tracking Project
    const tnCaseDeath = document.querySelector(".us-covidtrack-tn-death");
@@ -1425,12 +1425,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const tnCurHos = document.querySelector(".us-covidtrack-tn-curhos");
    const tnCurIcu = document.querySelector(".us-covidtrack-tn-curicu");
    const tnRecent = document.querySelector(".us-covidtrack-tn-recent");      
-   tnCaseDeath.textContent = addCommas(data.death);
-   tnCaseConfirm.textContent = addCommas(data.positive);
-   tnTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   tnCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   tnCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   tnRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   tnCaseDeath.textContent = addCommas(data[46].death);
+   tnCaseConfirm.textContent = addCommas(data[46].positive);
+   tnTotHos.textContent = addCommas(determineNull(data[46].hospitalizedCumulative));
+   tnCurHos.textContent = addCommas(determineNull(data[46].hospitalizedCurrently));
+   tnCurIcu.textContent = addCommas(determineNull(data[46].inIcuCurrently));
+   tnRecent.textContent = new Date(data[46].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //TX Count from COVID Tracking Project
    const txCaseDeath = document.querySelector(".us-covidtrack-tx-death");
@@ -1439,12 +1439,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const txCurHos = document.querySelector(".us-covidtrack-tx-curhos");
    const txCurIcu = document.querySelector(".us-covidtrack-tx-curicu");
    const txRecent = document.querySelector(".us-covidtrack-tx-recent");       
-   txCaseDeath.textContent = addCommas(data.death);
-   txCaseConfirm.textContent = addCommas(data.positive);
-   txTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   txCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   txCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   txRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   txCaseDeath.textContent = addCommas(data[47].death);
+   txCaseConfirm.textContent = addCommas(data[47].positive);
+   txTotHos.textContent = addCommas(determineNull(data[47].hospitalizedCumulative));
+   txCurHos.textContent = addCommas(determineNull(data[47].hospitalizedCurrently));
+   txCurIcu.textContent = addCommas(determineNull(data[47].inIcuCurrently));
+   txRecent.textContent = new Date(data[47].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //VI Count from COVID Tracking Project
    const viCaseDeath = document.querySelector(".us-covidtrack-vi-death");
@@ -1453,12 +1453,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const viCurHos = document.querySelector(".us-covidtrack-vi-curhos");
    const viCurIcu = document.querySelector(".us-covidtrack-vi-curicu");
    const viRecent = document.querySelector(".us-covidtrack-vi-recent");      
-   viCaseDeath.textContent = addCommas(data.death);
-   viCaseConfirm.textContent = addCommas(data.positive);
-   viTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   viCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   viCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   viRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   viCaseDeath.textContent = addCommas(data[50].death);
+   viCaseConfirm.textContent = addCommas(data[50].positive);
+   viTotHos.textContent = addCommas(determineNull(data[50].hospitalizedCumulative));
+   viCurHos.textContent = addCommas(determineNull(data[50].hospitalizedCurrently));
+   viCurIcu.textContent = addCommas(determineNull(data[50].inIcuCurrently));
+   viRecent.textContent = new Date(data[50].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //UT Count from COVID Tracking Project
    const utCaseDeath = document.querySelector(".us-covidtrack-ut-death");
@@ -1467,12 +1467,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const utCurHos = document.querySelector(".us-covidtrack-ut-curhos");
    const utCurIcu = document.querySelector(".us-covidtrack-ut-curicu");
    const utRecent = document.querySelector(".us-covidtrack-ut-recent");      
-   utCaseDeath.textContent = addCommas(data.death);
-   utCaseConfirm.textContent = addCommas(data.positive);
-   utTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   utCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   utCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   utRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   utCaseDeath.textContent = addCommas(data[48].death);
+   utCaseConfirm.textContent = addCommas(data[48].positive);
+   utTotHos.textContent = addCommas(determineNull(data[48].hospitalizedCumulative));
+   utCurHos.textContent = addCommas(determineNull(data[48].hospitalizedCurrently));
+   utCurIcu.textContent = addCommas(determineNull(data[48].inIcuCurrently));
+   utRecent.textContent = new Date(data[48].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //VT Count from COVID Tracking Project
    const vtCaseDeath = document.querySelector(".us-covidtrack-vt-death");
@@ -1481,12 +1481,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const vtCurHos = document.querySelector(".us-covidtrack-vt-curhos");
    const vtCurIcu = document.querySelector(".us-covidtrack-vt-curicu");
    const vtRecent = document.querySelector(".us-covidtrack-vt-recent");      
-   vtCaseDeath.textContent = addCommas(data.death);
-   vtCaseConfirm.textContent = addCommas(data.positive);
-   vtTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   vtCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   vtCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   vtRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
+   vtCaseDeath.textContent = addCommas(data[51].death);
+   vtCaseConfirm.textContent = addCommas(data[51].positive);
+   vtTotHos.textContent = addCommas(determineNull(data[51].hospitalizedCumulative));
+   vtCurHos.textContent = addCommas(determineNull(data[51].hospitalizedCurrently));
+   vtCurIcu.textContent = addCommas(determineNull(data[51].inIcuCurrently));
+   vtRecent.textContent = new Date(data[51].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/       
 
 //VA Count from COVID Tracking Project
    const vaCaseDeath = document.querySelector(".us-covidtrack-va-death");
@@ -1495,12 +1495,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const vaCurHos = document.querySelector(".us-covidtrack-va-curhos");
    const vaCurIcu = document.querySelector(".us-covidtrack-va-curicu");
    const vaRecent = document.querySelector(".us-covidtrack-va-recent");      
-   vaCaseDeath.textContent = addCommas(data.death);
-   vaCaseConfirm.textContent = addCommas(data.positive);
-   vaTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   vaCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   vaCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   vaRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   vaCaseDeath.textContent = addCommas(data[49].death);
+   vaCaseConfirm.textContent = addCommas(data[49].positive);
+   vaTotHos.textContent = addCommas(determineNull(data[49].hospitalizedCumulative));
+   vaCurHos.textContent = addCommas(determineNull(data[49].hospitalizedCurrently));
+   vaCurIcu.textContent = addCommas(determineNull(data[49].inIcuCurrently));
+   vaRecent.textContent = new Date(data[49].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //WA Count from COVID Tracking Project
    const waCaseDeath = document.querySelector(".us-covidtrack-wa-death");
@@ -1509,12 +1509,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const waCurHos = document.querySelector(".us-covidtrack-wa-curhos");
    const waCurIcu = document.querySelector(".us-covidtrack-wa-curicu");
    const waRecent = document.querySelector(".us-covidtrack-wa-recent");       
-   waCaseDeath.textContent = addCommas(data.death);
-   waCaseConfirm.textContent = addCommas(data.positive);
-   waTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   waCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   waCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   waRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   waCaseDeath.textContent = addCommas(data[52].death);
+   waCaseConfirm.textContent = addCommas(data[52].positive);
+   waTotHos.textContent = addCommas(determineNull(data[52].hospitalizedCumulative));
+   waCurHos.textContent = addCommas(determineNull(data[52].hospitalizedCurrently));
+   waCurIcu.textContent = addCommas(determineNull(data[52].inIcuCurrently));
+   waRecent.textContent = new Date(data[52].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //WV Count from COVID Tracking Project
    const wvCaseDeath = document.querySelector(".us-covidtrack-wv-death");
@@ -1523,12 +1523,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const wvCurHos = document.querySelector(".us-covidtrack-wv-curhos");
    const wvCurIcu = document.querySelector(".us-covidtrack-wv-curicu");
    const wvRecent = document.querySelector(".us-covidtrack-wv-recent");       
-   wvCaseDeath.textContent = addCommas(data.death);
-   wvCaseConfirm.textContent = addCommas(data.positive);
-   wvTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   wvCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   wvCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   wvRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
+   wvCaseDeath.textContent = addCommas(data[54].death);
+   wvCaseConfirm.textContent = addCommas(data[54].positive);
+   wvTotHos.textContent = addCommas(determineNull(data[54].hospitalizedCumulative));
+   wvCurHos.textContent = addCommas(determineNull(data[54].hospitalizedCurrently));
+   wvCurIcu.textContent = addCommas(determineNull(data[54].inIcuCurrently));
+   wvRecent.textContent = new Date(data[54].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/      
 
 //WI Count from COVID Tracking Project
    const wiCaseDeath = document.querySelector(".us-covidtrack-wi-death");
@@ -1537,12 +1537,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const wiCurHos = document.querySelector(".us-covidtrack-wi-curhos");
    const wiCurIcu = document.querySelector(".us-covidtrack-wi-curicu");
    const wiRecent = document.querySelector(".us-covidtrack-wi-recent");       
-   wiCaseDeath.textContent = addCommas(data.death);
-   wiCaseConfirm.textContent = addCommas(data.positive);
-   wiTotHos.textContent = addCommas(determineNull(data.hospitalizedCumulative));
-   wiCurHos.textContent = addCommas(determineNull(data.hospitalizedCurrently));
-   wiCurIcu.textContent = addCommas(determineNull(data.inIcuCurrently));
-   wiRecent.textContent = new Date(data.dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
+   wiCaseDeath.textContent = addCommas(data[53].death);
+   wiCaseConfirm.textContent = addCommas(data[53].positive);
+   wiTotHos.textContent = addCommas(determineNull(data[53].hospitalizedCumulative));
+   wiCurHos.textContent = addCommas(determineNull(data[53].hospitalizedCurrently));
+   wiCurIcu.textContent = addCommas(determineNull(data[53].inIcuCurrently));
+   wiRecent.textContent = new Date(data[53].dateModified).toString().substring(4,15); /*data.dateModified.toString().substring(0, 10);*/     
 
 //WY Count from COVID Tracking Project
    const wyCaseDeath = document.querySelector(".us-covidtrack-wy-death");
@@ -1551,12 +1551,12 @@ const localapi2 = 'https://corona-api.com/countries/US';
    const wyCurHos = document.querySelector(".us-covidtrack-wy-curhos");
    const wyCurIcu = document.querySelector(".us-covidtrack-wy-curicu");
    const wyRecent = document.querySelector(".us-covidtrack-wy-recent");      
-   wyCaseDeath.textContent = addCommas(data.death);
-   wyCaseConfirm.textContent = addCommas(data.positive);
-   wyTotHos.textContent = determineNull(addCommas(data.hospitalizedCumulative));
-   wyCurHos.textContent = determineNull(addCommas(data.hospitalizedCurrently));
-   wyCurIcu.textContent = determineNull(addCommas(data.inIcuCurrently));
-   wyRecent.textContent = new Date(data.dateModified).toString().substring(4,15);       
+   wyCaseDeath.textContent = addCommas(data[55].death);
+   wyCaseConfirm.textContent = addCommas(data[55].positive);
+   wyTotHos.textContent = determineNull(addCommas(data[55].hospitalizedCumulative));
+   wyCurHos.textContent = determineNull(addCommas(data[55].hospitalizedCurrently));
+   wyCurIcu.textContent = determineNull(addCommas(data[55].inIcuCurrently));
+   wyRecent.textContent = new Date(data[55].dateModified).toString().substring(4,15);       
    });
 
 //US Count from COVID Tracking Project 
@@ -1577,7 +1577,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
    usRecent.textContent = updateDate.substring(0, 10);
    });
 
-//US Total Count from COVID Tracking Project 
+/*US Total Count from COVID Tracking Project 
    fetch('https://api.covidtracking.com/v1/us/daily.json')
   .then(response => {
    return response.json();
@@ -1586,14 +1586,14 @@ const localapi2 = 'https://corona-api.com/countries/US';
    console.log(data);   
    });
 
-//US States Total Count from COVID Tracking Project 
+US States Total Count from COVID Tracking Project 
    fetch('https://api.covidtracking.com/v1/states/daily.json')
   .then(response => {
    return response.json();
   })
   .then(data => {
    console.log(data);   
-   }); 
+   }); */
 
 //Global Functions
 function getArrayFields(input, field) {
