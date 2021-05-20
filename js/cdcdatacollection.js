@@ -330,8 +330,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
     .range(d3v6.quantize(t => d3v6.interpolateSpectral(t * 0.8 + 0.1), data.length).reverse())
   
   const margin = {top: 10, right: 100, bottom: 30, left: 30},
-    width = 600 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+    width = 680 - margin.left - margin.right,
+    height = 680 - margin.top - margin.bottom;
   
   const arc = d3v6.arc()
     .innerRadius(0)
