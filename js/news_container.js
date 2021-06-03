@@ -44,6 +44,6 @@ class App extends React.Component {
 
 ReactDOM.render(
   e(App, null), 
-  e(Hello, {toWhat: "Test"}
+  e(Hello, {toWhat: "Test"}),
   document.getElementById('article-main-june2021')
 );
