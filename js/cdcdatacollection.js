@@ -1,8 +1,9 @@
 (async function() {
   let urlList = [
-    "https://data.cdc.gov/resource/saz5-9hgg.json",
-    "https://data.cdc.gov/resource/b7pe-5nws.json",
-    "https://data.cdc.gov/resource/w9zu-fywh.json"
+    "https://data.cdc.gov/resource/saz5-9hgg.json",//pfizer
+    "https://data.cdc.gov/resource/b7pe-5nws.json",//moderna
+    "https://data.cdc.gov/resource/w9zu-fywh.json",//jj
+    "https://data.cdc.gov/resource/km4m-vcsb.json"//demographic
   ];
 
   const promiseList = urlList.map((url) => {
