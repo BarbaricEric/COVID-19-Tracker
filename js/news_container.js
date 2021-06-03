@@ -23,8 +23,8 @@ class NewsList extends React.Component {
 }
 
 ReactDOM.render(
-  e(NewsList, {newsType: "Media News"}, {newsTitle: "Moderna Announces Initiation of Rolling Submission of Biologics License Application (BLA) with U.S. FDA for the Moderna COVID-19 Vaccine"}, {newsSource: "Moderna"}, {newsDate: "June 1, 2021"}, {newsLink: "https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-initiation-rolling-submission-biologics"}, {newlinkTitle: "Link to Article"},
-  e(NewsList, {newsType: "1"}, {newsTitle: "2"}, {newsSource: "3"}, {newsDate: "4"}, {newsLink: "https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-initiation-rolling-submission-biologics"}, {newlinkTitle: "7"},
+  e(NewsList, {newsType: "Media News"}, {newsTitle: "Moderna Announces Initiation of Rolling Submission of Biologics License Application (BLA) with U.S. FDA for the Moderna COVID-19 Vaccine"}, {newsSource: "Moderna"}, {newsDate: "June 1, 2021"}, {newsLink: "https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-initiation-rolling-submission-biologics"}, {newlinkTitle: "Link to Article"}),
+  e(NewsList, {newsType: "1"}, {newsTitle: "2"}, {newsSource: "3"}, {newsDate: "4"}, {newsLink: "https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-initiation-rolling-submission-biologics"}, {newlinkTitle: "7"}),
   document.getElementById('article-main-june2021')
 );
 
