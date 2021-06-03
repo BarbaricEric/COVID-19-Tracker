@@ -9,7 +9,7 @@ class Hello extends React.Component {
   }
 }
 
-class NewsList extends React.Component {
+/*class NewsList extends React.Component {
   render() {
     return e("div", {class: "article-container"},
     e("div", {class: "news-box news-box-a"},
@@ -28,4 +28,22 @@ ReactDOM.render(
   document.getElementById('article-main-june2021')
 );
 
-/* https://reactjs.org/docs/react-without-jsx.html */
+ https://reactjs.org/docs/react-without-jsx.html */
+
+function Welcome(props) {
+  return e("h1", null, "Hello, ", props.name);
+}
+
+class App extends React.Component {
+ render() {
+    return e("div", null, e(Welcome, {name: "Sara"}),
+         e(Welcome, {name: "Cahal"}),
+         e(Welcome, {name: "Edite"})); 
+ }
+}
+
+ReactDOM.render(
+  e(App, null), 
+  e(Hello, {toWhat: "Test"}
+  document.getElementById('article-main-june2021')
+);
