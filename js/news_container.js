@@ -42,9 +42,28 @@ class App extends React.Component {
  }
 }
 
+function NewsList(props) {
+    return e("div", {class: "article-container"},
+    e("div", {class: "news-box news-box-a"},
+    e("i", {class: "fas fa-exclamation-circle fa-2x"}, props.newsType),
+    e("h3", null, props.newsTitle), 
+    e("p", {class: "price"}, "Source: ", props.newsSource, ", Published on ", props.newsDate), 
+    e("a", {href: "{props.newsLink}", class: "btn"}, props.newlinkTitle)),
+    e("div", {class: "news-box news-box-b"},
+    e("img", {src: "img/coronavirus-19-mobile.jpg",alt: "COVID-19 News Image"})));
+}
+
+class NewsApp extends React.Component {
+ render() {
+    return e("div", null, e(NewsList, {newsType: "Media News"}, {newsTitle: "India to provide free vaccines to all in major policy shift"}, {newsSource: "AP News"}, {newsDate: "June 7, 2021"}, {newsLink: "https://apnews.com/article/india-lifestyle-coronavirus-pandemic-business-health-914d95c368553f08f0d4d307d797a078"}, {newlinkTitle: "Link to Article"}),
+         e(NewsList, {newsType: "Media News"}, {newsTitle: "Dr. Gottlieb: Fully vaccinated people should feel safe this summer but fall booster may be needed"}, {newsSource: "CNBC"}, {newsDate: "June 7,201"}, {newsLink: "https://www.cnbc.com/2021/06/07/dr-scott-gottlieb-says-covid-booster-shot-may-still-be-needed-in-fall.html"}, {newlinkTitle: "Link to Article"}),
+         e(NewsList, {newsType: "Media News"}, {newsTitle: "A victim of its own success: how Taiwan failed to plan for a major Covid outbreak"}, {newsSource: "Guardian"}, {newsDate: "June 7, 2021"}, {newsLink: "https://www.theguardian.com/world/2021/jun/07/a-victim-of-its-own-success-how-taiwan-failed-to-plan-for-a-major-covid-outbreak"}, {newlinkTitle: "Link to Article"})); 
+ }
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
-  e(App, null), 
+  e(NewsApp, null), 
   //e(Hello, {toWhat: "Test"}),
   document.querySelector('#article-main-june2021')
   );
