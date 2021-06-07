@@ -45,10 +45,10 @@ class App extends React.Component {
 function NewsList(props) {
     return e("div", {class: "article-container"},
     e("div", {class: "news-box news-box-a"},
-    e("i", {class: "fas fa-exclamation-circle fa-2x"}, this.props.newsType),
-    e("h3", null, this.props.newsTitle), 
-    e("p", {class: "price"}, "Source: ", this.props.newsSource, ", Published on ", this.props.newsDate), 
-    e("a", {href: "{this.props.newsLink}", class: "btn"}, this.props.newlinkTitle)),
+    e("i", {class: "fas fa-exclamation-circle fa-2x"}, props.newsType),
+    e("h3", null, props.newsTitle), 
+    e("p", {class: "price"}, "Source: ", props.newsSource, ", Published on ", props.newsDate), 
+    e("a", {href: "props.newsLink", class: "btn"}, props.newlinkTitle)),
     e("div", {class: "news-box news-box-b"},
     e("img", {src: "img/coronavirus-19-mobile.jpg",alt: "COVID-19 News Image"})));
 }
@@ -62,13 +62,16 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News"}, {newsTitle: "Major Chinese city battles Delta Covid variant first detected in India with lockdowns, mass testing"}, {newsSource: "CNBC"}, {newsDate: "June 7,201"}, {newsLink: "https://www.cnbc.com/2021/06/07/china-guangzhou-delta-covid-variant.html"}, {newlinkTitle: "Link to Article"}),
          e(NewsList, {newsType: "Media News"}, {newsTitle: "Spat at, abused, attacked: healthcare staff face rising violence during Covid"}, {newsSource: "Guardian"}, {newsDate: "June 7,201"}, {newsLink: "https://www.theguardian.com/global-development/2021/jun/07/spat-at-abused-attacked-healthcare-staff-face-rising-violence-during-covid"}, {newlinkTitle: "Link to Article"}),
          e(NewsList, {newsType: "Media News"}, {newsTitle: "Dr. Gottlieb: Fully vaccinated people should feel safe this summer but fall booster may be needed"}, {newsSource: "CNBC"}, {newsDate: "June 7,201"}, {newsLink: "https://www.cnbc.com/2021/06/07/dr-scott-gottlieb-says-covid-booster-shot-may-still-be-needed-in-fall.html"}, {newlinkTitle: "Link to Article"}),
-         e(NewsList, {newsType: "Media News"}, {newsTitle: "A victim of its own success: how Taiwan failed to plan for a major Covid outbreak"}, {newsSource: "Guardian"}, {newsDate: "June 7, 2021"}, {newsLink: "https://www.theguardian.com/world/2021/jun/07/a-victim-of-its-own-success-how-taiwan-failed-to-plan-for-a-major-covid-outbreak"}, {newlinkTitle: "Link to Article"})); 
+         e(NewsList, {newsType: "Media News"}, {newsTitle: "A victim of its own success: how Taiwan failed to plan for a major Covid outbreak"}, {newsSource: "Guardian"}, {newsDate: "June 7, 2021"}, {newsLink: "https://www.theguardian.com/world/2021/jun/07/a-victim-of-its-own-success-how-taiwan-failed-to-plan-for-a-major-covid-outbreak"}, {newlinkTitle: "Link to Article"}),
+         e(NewsList, {newsType: "Non Media News"}, {newsTitle: "Nanobodies from camelid mice and llamas neutralize SARS-CoV-2 variants"}, {newsSource: "Nature"}, {newsDate: "June 7,201"}, {newsLink: "https://doi.org/10.1038/s41586-021-03676-z"}, {newlinkTitle: "Link to Study Article"}),
+         e(NewsList, {newsType: "Non Media News"}, {newsTitle: "SARS-CoV-2 RNAemia and proteomic trajectories inform prognostication in COVID-19 patients admitted to intensive care"}, {newsSource: "Nature"}, {newsDate: "June 7, 2021"}, {newsLink: "https://doi.org/10.1038/s41467-021-23494-1"}, {newlinkTitle: "Link to Study Article"})             
+   ); 
  }
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
-  e(NewsApp, null), 
+  e(NewsApp), 
   //e(Hello, {toWhat: "Test"}),
   document.querySelector('#article-main-june2021')
   );
