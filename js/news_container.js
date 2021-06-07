@@ -45,7 +45,7 @@ class App extends React.Component {
 document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
   e(App, null), 
-  e(Hello, {toWhat: "Test"}),
+  //e(Hello, {toWhat: "Test"}),
   document.querySelector('#article-main-june2021')
   );
 });
