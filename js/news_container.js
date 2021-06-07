@@ -46,6 +46,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
   e(App, null), 
   e(Hello, {toWhat: "Test"}),
-  document.getElementById('article-main-june2021')
+  document.querySelector('#article-main-june2021')
   );
 });
