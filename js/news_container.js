@@ -9,6 +9,18 @@ class Hello extends React.Component {
   }
 }
 
+class Hello extends React.Component {
+  render() {
+    return e("div", {class: "efd"}, "Hello ", this.props.toWhat), 
+    e("div", null, "Hello ", this.props.toName);
+  }
+}
+
+ReactDOM.render(
+  e(Hello, {toWhat: "World", toName: "Ted"}), 
+  document.getElementById('root')
+);
+
 /*class NewsList extends React.Component {
   render() {
     return e("div", {class: "article-container"},
