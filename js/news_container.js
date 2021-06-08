@@ -61,7 +61,7 @@ class NewsList extends React.Component {
     e("i", {class: "fas fa-exclamation-circle fa-2x"}, this.props.newsType),
     e("h3", null, this.props.newsTitle), 
     e("p", {class: "price"}, "Source: ", this.props.newsSource, ", Published on ", this.props.newsDate), 
-    e("a", {href: `${this.props.email}`, class="btn"}, "Link to Article"),  
+    e("a", {href: `${this.props.email}`, class: "btn"}, "Link to Article")),  
     e("div", {class: "news-box news-box-b"}, 
     e("img", {src: "img/coronavirus-19-mobile.jpg",alt: "COVID-19 News Image"
     })));
