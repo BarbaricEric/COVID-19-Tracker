@@ -18,6 +18,38 @@ class Hello extends React.Component {
 
 class NewsList extends React.Component {
   render() {
+    React.createElement("div", {
+      class: "article-container"
+    }, e("div", {
+      class: "news-box news-box-a"
+    }, e("i", {
+      class: "fas fa-exclamation-circle fa-2x"
+    }, "Media News"), 
+    e("h3", null), 
+    /e("p", {
+      class: "price"
+    }, "Source: , Published on , 2021"),
+    /e("a", {
+      href: "",
+      class: "btn"
+    }, "Link to Article")),
+    e("div", {
+      class: "news-box news-box-b"
+    }, 
+    e("img", {
+      src: "img/coronavirus-19-mobile.jpg",
+      alt: "COVID-19 News Image"
+    })));
+  }
+
+}
+
+React.createElement(Link, {
+  to: "/Path"
+}, " Contact us ");
+
+class NewsList extends React.Component {
+  render() {
     return e("div", {class: "article-container"},
     e("div", {class: "news-box news-box-a"},
     e("i", {class: "fas fa-exclamation-circle fa-2x"}, this.props.newsType),
