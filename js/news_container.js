@@ -42,7 +42,9 @@ class App extends React.Component {
  }
 }
 
-function NewsList(props) {
+//function NewsList(props) {
+class NewsList extends React.Component {
+  render() {
     return e("div", {class: "article-container"},
     e("div", {class: "news-box news-box-a"},
     e("i", {class: "fas fa-exclamation-circle fa-2x"}, props.newsType),
@@ -52,6 +54,7 @@ function NewsList(props) {
     e("div", {class: "news-box news-box-b"},
     e("img", {src: "img/coronavirus-19-mobile.jpg",alt: "COVID-19 News Image"})));
 }
+}  
 
 class NewsApp extends React.Component {
  render() {
