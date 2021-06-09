@@ -2,7 +2,7 @@
 
 const e = React.createElement;
 
-class Hello extends React.Component {
+/*class Hello extends React.Component {
   render() {
     return e("div", null,
     e("div", {class: "efd"}, "Hello ", this.props.toWhat),
@@ -13,12 +13,12 @@ class Hello extends React.Component {
 }
 
 ReactDOM.render( 
-  e(Hello, {toWhat: "World", toName: "Ted", email: "www.youtube.com"}),
+  e(Hello, {toWhat: "World", toName: "Ted", email: "http://youtube.com"}),
   document.querySelector('#article-main-june2021')
 );
 
 
-/*React.createElement(Link, {
+React.createElement(Link, {
   to: "/Path"
 }, " Contact us ");
 
@@ -62,7 +62,7 @@ class NewsList extends React.Component {
     e("i", {class: "fas fa-exclamation-circle fa-2x"}, this.props.newsType),
     e("h3", null, this.props.newsTitle), 
     e("p", {class: "price"}, "Source: ", this.props.newsSource, ", Published on ", this.props.newsDate), 
-    e("a", {href: `${this.props.email}`, class: "btn"}, "Link to Article")),  
+    e("a", {href: `${this.props.newsLink}`, class: "btn"}, "Link to Article")),  
     e("div", {class: "news-box news-box-b"}, 
     e("img", {src: "img/coronavirus-19-mobile.jpg",alt: "COVID-19 News Image"
     })));
@@ -105,10 +105,10 @@ class NewsApp extends React.Component {
  }
 }
 
-/*document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
   e(NewsApp), 
-  //e(Hello, {toWhat: "Test"}),
+  e(Welcome, {name: "Person"}),
   document.querySelector('#article-main-june2021')
   );
-});*/
+});
