@@ -4,10 +4,10 @@ const e = React.createElement;
 
 class Hello extends React.Component {
   render() {
-    return e("div", {class: "efd"}, "Hello ", this.props.toWhat),
+        return e("div", {class: "efd"}, "Hello ", this.props.toWhat),
     e("a", {href: `${this.props.email}`}, "email"), 
     e("a", {href: 'http://google.com'}, "Google"), 
-    e("div", null, "Hello ", this.props.toName);
+    e("div", null, "Hello ", this.props.toName));
   }
 }
 
