@@ -23,7 +23,7 @@ class HelloList extends React.Component {
 
 ReactDOM.render( 
   //e(Hello, {toWhat: "World", toName: "Ted", email: "http://www.youtube.com"}),
- e(HelloList)            
+  e(HelloList),            
   document.querySelector('#article-main-june2021')
 );
 
