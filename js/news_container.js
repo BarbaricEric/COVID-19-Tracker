@@ -2,7 +2,7 @@
 
 const e = React.createElement;
 
-/*class Hello extends React.Component {
+class Hello extends React.Component {
   render() {
     return e("div", null,
     e("div", {class: "efd"}, "Hello ", this.props.toWhat),
@@ -13,12 +13,13 @@ const e = React.createElement;
 }
 
 ReactDOM.render( 
-  e(Hello, {toWhat: "World", toName: "Ted", email: "http://youtube.com"}),
+  e(Hello, {toWhat: "World", toName: "Ted", email: "http://www.youtube.com"}),
+  e(Hello, {toWhat: "World", toName: "Kyle", email: "http://www.google.com"}),
   document.querySelector('#article-main-june2021')
 );
 
 
-React.createElement(Link, {
+/*React.createElement(Link, {
   to: "/Path"
 }, " Contact us ");
 
@@ -69,7 +70,7 @@ class NewsList extends React.Component {
   }
 }
 
-class NewsApp extends React.Component {
+/*class NewsApp extends React.Component {
  render() {
     return e("div", null,
          e(NewsList, {newsType: "Non Media News"}, {newsTitle: "In-hospital use of statins is associated with a reduced risk of mortality in coronavirus-2019 (COVID-19): systematic review and meta-analysis"}, {newsSource: "Springer"}, {newsDate: "February 20, 2021"}, {newsLink: "https://doi.org/10.1007/s43440-021-00233-3"}, {newlinkTitle: "Link to Article"}),
@@ -137,4 +138,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //e(Welcome, {name: "Person"}),
   document.querySelector('#article-main-june2021')
   );
-});
+});*/
