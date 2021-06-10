@@ -6,14 +6,24 @@ class Hello extends React.Component {
   render() {
     return e("div", null,
     e("div", {class: "efd"}, "Hello ", this.props.toWhat),
-    e("a", {href: `${this.props.email}`}, "email"), 
+    e("a", {target_blank: true, href: `${this.props.email}`}, "email"), 
     e("a", {href: 'http://google.com'}, "Google"), 
     e("div", null, "Hello ", this.props.toName));
   }
 }
 
+class HelloList extends React.Component {
+  render() {
+    return e("div", null,
+    e(Hello, {toWhat: "World", toName: "Ted", email: "http://www.youtube.com"}),
+    e(Hello, {toWhat: "The", toName: "Ktle", email: "http://www.github.com"})
+    )
+  }
+}
+
 ReactDOM.render( 
-  e(Hello, {toWhat: "World", toName: "Ted", email: "http://www.youtube.com"}),
+  //e(Hello, {toWhat: "World", toName: "Ted", email: "http://www.youtube.com"}),
+ e(HelloList)            
   document.querySelector('#article-main-june2021')
 );
 
