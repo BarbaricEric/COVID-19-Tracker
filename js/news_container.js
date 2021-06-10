@@ -14,7 +14,6 @@ class Hello extends React.Component {
 
 ReactDOM.render( 
   e(Hello, {toWhat: "World", toName: "Ted", email: "http://www.youtube.com"}),
-  e(Hello, {toWhat: "World", toName: "Kyle", email: "http://www.google.com"}),
   document.querySelector('#article-main-june2021')
 );
 
