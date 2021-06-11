@@ -80,6 +80,24 @@ class NewsList extends React.Component {
   }
 }
 
+class MarchNewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Factors associated with myocardial SARS-CoV-2 infection, myocarditis, and cardiac inflammation in patients with COVID-19", newsSource: "Nature", newsDate: "March 17, 2021", newsLink: "https://doi.org/10.1038/s41379-021-00790-1"}),      
+         ); 
+ }
+}  
+
+class MayNewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Boredom proneness, political orientation and adherence to social-distancing in the pandemic", newsSource: "Springer", newsDate: "May 25, 2021", newsLink: "https://doi.org/10.1007/s11031-021-09888-0"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "The Covid-19 Lab Leak Theory Is a Tale of Weaponized Uncertainty", newsSource: "Wired", newsDate: "May 28, 2021", newsLink: "https://www.wired.com/story/covid-19-lab-leak-theory-weaponized-uncertainty/"})      
+         ); 
+ }
+}  
+
+
 class NewsApp extends React.Component {
  render() {
     return e("div", null,
@@ -142,6 +160,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Covid vaccine incentives: Australian doctors now allowed to offer cash, prizes and alternative medicines", newsSource: "Guardian", newsDate: "June 9, 2021"}, {newsLink: "https://www.theguardian.com/australia-news/2021/jun/09/covid-vaccine-incentives-australian-doctors-now-allowed-to-offer-cash-prizes-and-alternative-medicines"}),
          e(NewsList, {newsType: "Media News", newsTitle: "No ‘Freedom Day’? UK could delay lifting of all Covid restrictions due to Delta variant", newsSource: "CNBC", newsDate: "June 9, 2021", newsLink: "https://www.cnbc.com/2021/06/09/uk-could-delay-june-21-lifting-of-covid-measures-due-to-delta-variant.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Despite Ample Shots and Incentives, Vaccine Rates Lag Far Behind in the South", newsSource: "NY Times", newsDate: "June 9, 2021", newsLink: "https://www.nytimes.com/2021/06/09/us/virus-vaccine-south.html"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Covid could become seasonal epidemic by winter, says German expert", newsSource: "Guardian", newsDate: "June 9, 2021", newsLink: "https://www.theguardian.com/world/2021/jun/09/covid-could-become-seasonal-epidemic-by-winter-says-german-expert"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Passengers on Mediterranean cruise test positive for covid-19", newsSource: "Washington Post", newsDate: "June 9, 2021", newsLink: "https://www.washingtonpost.com/travel/2021/06/09/msc-cruise-covid-passenger-italy/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Regulators back down from new California workplace mask rules", newsSource: "Mercury News", newsDate: "June 9, 2021", newsLink: "https://www.mercurynews.com/2021/06/09/regulators-back-down-from-new-california-workplace-mask-rules/"}),   
          e(NewsList, {newsType: "Media News", newsTitle: "CDC finds deaths from heart disease and diabetes climbed amid Covid in U.S.", newsSource: "NBC News", newsDate: "June 9, 2021", newsLink: "https://www.nbcnews.com/health/health-news/cdc-finds-deaths-heart-disease-diabetes-climbed-amid-covid-u-n1270260"}),
@@ -150,6 +169,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Social, economic, and environmental factors influencing the basic reproduction number of COVID-19 across countries", newsSource: "PLOS", newsDate: "June 9, 2021", newsLink: "https://doi.org/10.1371/journal.pone.0252373"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Covid distancing may have weakened children’s immune system, experts say", newsSource: "Guardian", newsDate: "June 9, 2021", newsLink: "https://www.theguardian.com/society/2021/jun/09/covid-distancing-may-have-weakened-childrens-immune-system-experts-say"}),
          e(NewsList, {newsType: "Media News", newsTitle: "The Olympics Are Really Happening. For Athletes, That Means A Huge Number Of Rules", newsSource: "NPR", newsDate: "June 9, 2021", newsLink: "https://www.npr.org/2021/06/09/1004765190/the-olympics-are-really-happening-for-athletes-that-means-a-huge-number-of-rules"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Biden administration tells federal agencies they should not require employees to be vaccinated to work on-site", newsSource: "Washington Post", newsDate: "June 9, 2021", newsLink: "https://www.washingtonpost.com/politics/biden-administraton-federal-workers-vaccines/2021/06/09/19dea94c-c947-11eb-afd0-9726f7ec0ba6_story.html"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Biden administration to buy 500 million Pfizer coronavirus vaccine doses to donate to the world", newsSource: "Washington Post", newsDate: "June 9, 2021", newsLink: "https://www.washingtonpost.com/politics/biden-vaccine-donate/2021/06/09/c2744674-c934-11eb-93fa-9053a95eb9f2_story.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Danes ditch masks, allow more Euro 2020 fans in lockdown deal", newsSource: "Euro News", newsDate: "June 10, 2021", newsLink: "https://www.euronews.com/2021/06/10/us-health-coronavirus-denmark"}),
          e(NewsList, {newsType: "Media News", newsTitle: "G7 leaders will call for fresh WHO inquiry into Covid origins, leaked communique suggests", newsSource: "Guardian", newsDate: "June 10, 2021", newsLink: "https://www.theguardian.com/world/2021/jun/10/g7-communique-leak-covid-origins-inquiry-vaccines-forced-labour"}),
@@ -157,8 +177,25 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "German panel gives limited approval for COVID-19 shot for adolescents", newsSource: "Reuters", newsDate: "June 10, 2021", newsLink: "https://www.reuters.com/article/health-coronavirus-germany-biontech/german-panel-gives-limited-approval-for-covid-19-shot-for-adolescents-idUSL5N2NK1OI"}),
          e(NewsList, {newsType: "Media News", newsTitle: "CDC says heart inflammation was higher than expected in 16- to 24-year-olds after second Covid vaccine shot, but still rare", newsSource: "CNBC", newsDate: "June 10, 2021", newsLink: "https://www.cnbc.com/2021/06/10/covid-vaccine-cdc-says-heart-inflammation-cases-in-16-to-24-year-olds-higher-than-expected-after-second-shot.html"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Moderna Files for Emergency Use Authorization for its COVID-19 Vaccine in Adolescents in the United States", newsSource: "Moderna", newsDate: "June 10, 2021", newsLink: "https://investors.modernatx.com/news-releases/news-release-details/moderna-files-emergency-use-authorization-its-covid-19-vaccine"}),  
-         e(NewsList, {newsType: "Non Media News", newsTitle: "BNT162b2-elicited neutralization of B.1.617 and other SARS-CoV-2 variants", newsSource: "Nature", newsDate: "June 10, 2021", newsLink: "https://doi.org/10.1038/s41586-021-03693-y"}),  
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Community-level evidence for SARS-CoV-2 vaccine protection of unvaccinated individuals", newsSource: "Nature", newsDate: "June 10, 2021", newsLink: "https://doi.org/10.1038/s41591-021-01407-5"})
+         e(NewsList, {newsType: "Non Media News", newsTitle: "BNT162b2-elicited neutralization of B.1.617 and other SARS-CoV-2 variants", newsSource: "Nature", newsDate: "June 10, 2021", newsLink: "https://doi.org/10.1038/s41586-021-03693-y"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "Drop in childhood vaccinations during pandemic may raise risk of other outbreaks when schools reopen, CDC says", newsSource: "Washington Post", newsDate: "June 10, 2021", newsLink: "https://www.washingtonpost.com/health/2021/06/10/childhood-vaccination-falloff-increased-risk-disease-outbreaks/"}), 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Incidence of Multisystem Inflammatory Syndrome in Children Among US Persons Infected With SARS-CoV-2", newsSource: "Jama Network", newsDate: "June 10, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.16420"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "FDA advisers debate standards on a coronavirus vaccine for young children", newsSource: "Washington Post", newsDate: "June 10, 2021", newsLink: "https://www.washingtonpost.com/health/2021/06/10/covid-vaccines-for-children/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "As more kids go down the ‘deep, dark tunnel’ of long Covid, doctors still can’t predict who is at risk", newsSource: "Stat News", newsDate: "June 10, 2021", newsLink: "https://www.statnews.com/2021/06/10/as-more-kids-get-long-covid-doctors-still-cant-predict-who-is-at-risk/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Tinnitus, hearing loss not uncommon in COVID-19 patients", newsSource: "UPI", newsDate: "June 10, 2021", newsLink: "https://www.upi.com/Health_News/2021/06/10/coronavirus-hearing-loss-research/7501623345172/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "FDA accuses company of distributing unapproved Covid test and using falsified data", newsSource: "Stat News", newsDate: "June 10, 2021", newsLink: "https://www.statnews.com/2021/06/10/fda-accuses-company-of-distributing-unapproved-covid-test-using-falsified-data/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "The COVID-19 virus can cause diabetes, new studies find", newsSource: "ABC News", newsDate: "June 10, 2021", newsLink: "https://abcnews.go.com/Health/covid-19-virus-diabetes-studies-find/story?id=78168634"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "US extends expiration dates for J&J COVID vaccine by 6 weeks", newsSource: "AP News", newsDate: "June 10, 2021", newsLink: "https://apnews.com/article/joe-biden-coronavirus-vaccine-science-coronavirus-pandemic-business-6d04574617b35c56e7ca2c711cc5585f"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "EU foregoes 100 million J&J vaccines, considers donating other doses", newsSource: "Reuters", newsDate: "June 10, 2021", newsLink: "https://www.reuters.com/world/europe/eu-foregoes-100-million-jj-vaccines-considers-donating-other-doses-sources-2021-06-10/"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "US Department of Labor's OSHA issues emergency temporary standard to protect health care workers from the coronavirus", newsSource: "U.S. Department of Labor", newsDate: "June 10, 2021", newsLink: "https://www.osha.gov/news/newsreleases/national/06102021"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Bitcoin conference attendees report testing positive for Covid after returning from Miami", newsSource: "CNBC", newsDate: "June 10, 2021", newsLink: "https://www.cnbc.com/2021/06/10/bitcoin-2021-attendees-report-covid-cases-after-returning-from-miami.html"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Anatomy of Japan’s joyless Olympics: A hyper-cautious bureaucracy and slow vaccine rollout", newsSource: "Washington Post", newsDate: "June 10, 2021", newsLink: "https://www.washingtonpost.com/world/asia_pacific/japan-olympics-pandemic-vaccines/2021/06/10/97bdbbda-c84f-11eb-8708-64991f2acf28_story.html"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Community-level evidence for SARS-CoV-2 vaccine protection of unvaccinated individuals", newsSource: "Nature", newsDate: "June 10, 2021", newsLink: "https://doi.org/10.1038/s41591-021-01407-5"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 Vaccine Janssen: authorities in EU take steps to safeguard vaccine quality", newsSource: "European Medicine Agency (EMA)", newsDate: "June 11, 2021", newsLink: "https://www.ema.europa.eu/en/news/covid-19-vaccine-janssen-authorities-eu-take-steps-safeguard-vaccine-quality"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "CDC plans emergency meeting on rare heart inflammation following COVID-19 vaccines", newsSource: "CBS News", newsDate: "June 11, 2021", newsLink: "https://www.cbsnews.com/news/covid-19-vaccine-cdc-meeting-myocarditis-heart-inflammation/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Rural Communities Fall Farther Behind In COVID-19 Vaccination Rates", newsSource: "NPR", newsDate: "June 11, 2021", newsLink: "https://www.npr.org/sections/health-shots/2021/06/11/1005367753/rural-communities-fall-farther-behind-in-covid-19-vaccination-rates"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "J&J doses to be released, but many will be tossed", newsSource: "AP News", newsDate: "June 11, 2021", newsLink: "https://apnews.com/article/government-and-politics-coronavirus-pandemic-business-health-d67646ba072e5eb4e574005174d1c184"}),    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Comparison of Symptoms and RNA Levels in Children and Adults With SARS-CoV-2 Infection in the Community Setting", newsSource: "Jama Network", newsDate: "June 11, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamapediatrics.2021.2025"})    
    ); 
  }
 }
