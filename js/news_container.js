@@ -32,26 +32,9 @@ React.createElement(Link, {
   to: "/Path"
 }, " Contact us ");
 
-class NewsList extends React.Component {
-  render() {
-    return e("div", {class: "article-container"},
-    e("div", {class: "news-box news-box-a"},
-    e("i", {class: "fas fa-exclamation-circle fa-2x"}, this.props.newsType),
-    e("h3", null, this.props.newsTitle), 
-    e("p", {class: "price"}, "Source: ", this.props.newsSource, ", Published on ", this.props.newsDate), 
-    e("a", {href: "{this.props.newsLink}", class: "btn"}, this.props.newlinkTitle)),
-    e("div", {class: "news-box news-box-b"},
-    e("img", {src: "img/coronavirus-19-mobile.jpg",alt: "COVID-19 News Image"})));
-  }
-}
+https://www.frontiersin.org/articles/10.3389/fimmu.2021.700782/abstract
 
-ReactDOM.render(
-  e(NewsList, {newsType: "Media News"}, {newsTitle: "Moderna Announces Initiation of Rolling Submission of Biologics License Application (BLA) with U.S. FDA for the Moderna COVID-19 Vaccine"}, {newsSource: "Moderna"}, {newsDate: "June 1, 2021"}, {newsLink: "https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-initiation-rolling-submission-biologics"}, {newlinkTitle: "Link to Article"}),
-  e(NewsList, {newsType: "1"}, {newsTitle: "2"}, {newsSource: "3"}, {newsDate: "4"}, {newsLink: "https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-initiation-rolling-submission-biologics"}, {newlinkTitle: "7"}),
-  document.getElementById('article-main-june2021')
-);
-
- https://reactjs.org/docs/react-without-jsx.html */
+https://reactjs.org/docs/react-without-jsx.html */
 
 function Welcome(props) {
   return e("h1", null, "Hello, ", props.name);
@@ -83,7 +66,7 @@ class NewsList extends React.Component {
 class MarchNewsApp extends React.Component {
  render() {
       return e("div", null, 
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Factors associated with myocardial SARS-CoV-2 infection, myocarditis, and cardiac inflammation in patients with COVID-19", newsSource: "Nature", newsDate: "March 17, 2021", newsLink: "https://doi.org/10.1038/s41379-021-00790-1"}),      
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Factors associated with myocardial SARS-CoV-2 infection, myocarditis, and cardiac inflammation in patients with COVID-19", newsSource: "Nature", newsDate: "March 17, 2021", newsLink: "https://doi.org/10.1038/s41379-021-00790-1"})      
          ); 
  }
 }  
@@ -91,6 +74,7 @@ class MarchNewsApp extends React.Component {
 class MayNewsApp extends React.Component {
  render() {
       return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 simulations go exascale to predict dramatic spike opening and cryptic pockets across the proteome", newsSource: "Nature", newsDate: "May 24, 2021", newsLink: "https://doi.org/10.1038/s41557-021-00707-0"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Boredom proneness, political orientation and adherence to social-distancing in the pandemic", newsSource: "Springer", newsDate: "May 25, 2021", newsLink: "https://doi.org/10.1007/s11031-021-09888-0"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "The Covid-19 Lab Leak Theory Is a Tale of Weaponized Uncertainty", newsSource: "Wired", newsDate: "May 28, 2021", newsLink: "https://www.wired.com/story/covid-19-lab-leak-theory-weaponized-uncertainty/"})      
          ); 
@@ -149,6 +133,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "How COVID-19 Can Lead to Diabetes"}, {newsSource: "NIH Director Blog", newsDate: "June 8, 2021", newsLink: "https://directorsblog.nih.gov/2021/06/08/how-covid-19-can-lead-to-diabetes/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "For those who lost loved ones to covid, there is no return to normal", newsSource: "Washington Post", newsDate: "June 8, 2021", newsLink: "https://www.washingtonpost.com/local/social-issues/covid-widows-reopening/2021/06/07/7a55f9e6-c3bc-11eb-8c18-fd53a628b992_story.html"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "China is vaccinating a staggering 20 million people a day", newsSource: "Nature", newsDate: "June 9, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01545-3"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Network medicine links SARS-CoV-2/COVID-19 infection to brain microvascular injury and neuroinflammation in dementia-like cognitive impairment", newsSource: "BioMedCentral", newsDate: "June 9, 2021", newsLink: "https://doi.org/10.1186/s13195-021-00850-3"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "The four most urgent questions about long COVID", newsSource: "Nature", newsDate: "June 9, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01511-z"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Deep spatial profiling of human COVID-19 brains reveals neuroinflammation with distinct microanatomical microglia-T cell interactions", newsSource: "Cell", newsDate: "June 9, 2021", newsLink: "https://doi.org/10.1016/j.immuni.2021.06.002"}),  
          e(NewsList, {newsType: "Non Media News", newsTitle: "Identification of novel bat coronaviruses sheds light on the evolutionary origins of SARS-CoV-2 and related viruses", newsSource: "Cell", newsDate: "June 9, 2021", newsLink: "https://doi.org/10.1016/j.cell.2021.06.008"}),
