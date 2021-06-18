@@ -282,3 +282,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector('#article-main-june2021')
   );
 });
+
+document.querySelector('#pfizer-update').innerHTML = "Last Updated: 6/17/2021";
+document.querySelector('#moderna-update').innerHTML = "Last Updated: 6/17/2021";
+document.querySelector('#jessen-update').innerHTML = "Last Updated: 6/17/2021";
