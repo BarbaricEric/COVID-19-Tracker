@@ -17,6 +17,14 @@ class NewsList extends React.Component {
   }
 }
 
+class December2020NewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "How kids’ immune systems can evade COVID", newsSource: "Nature", newsDate: "December 10, 2020", newsLink: "https://doi.org/10.1038/d41586-020-03496-7"})     
+         ); 
+ }
+} 
+
 class MayNewsApp extends React.Component {
  render() {
       return e("div", null, 
@@ -30,7 +38,7 @@ class MayNewsApp extends React.Component {
 
 document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
-  e(MatNewsApp), 
+  e(MayNewsApp), 
   //e(Welcome, {name: "Person"}),
   document.querySelector('.article-container-May2021')
   );
