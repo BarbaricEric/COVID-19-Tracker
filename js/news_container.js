@@ -66,7 +66,8 @@ class NewsList extends React.Component {
 class MarchNewsApp extends React.Component {
  render() {
       return e("div", null, 
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Factors associated with myocardial SARS-CoV-2 infection, myocarditis, and cardiac inflammation in patients with COVID-19", newsSource: "Nature", newsDate: "March 17, 2021", newsLink: "https://doi.org/10.1038/s41379-021-00790-1"})      
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Factors associated with myocardial SARS-CoV-2 infection, myocarditis, and cardiac inflammation in patients with COVID-19", newsSource: "Nature", newsDate: "March 17, 2021", newsLink: "https://doi.org/10.1038/s41379-021-00790-1"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Essentials in saline pharmacology for nasal or respiratory hygiene in times of COVID-19", newsSource: "Springer", newsDate: "March 27, 2021", newsLink: "https://doi.org/10.1007/s00228-021-03102-3"})      
          ); 
  }
 }  
@@ -286,6 +287,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Giant Buddhist goddess in Japan gets face mask to pray for end of COVID-19", newsSource: "Reuters", newsDate: "June 17, 2020", newsLink: "https://www.reuters.com/world/asia-pacific/giant-buddhist-goddess-japan-gets-face-mask-pray-end-covid-19-2021-06-16/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Antiviral effect of high-dose ivermectin in adults with COVID-19: A proof-of-concept randomized trial", newsSource: "Lancet", newsDate: "June 17, 2020", newsLink: "https://doi.org/10.1016/j.eclinm.2021.100959"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Ivermectin for Prevention and Treatment of COVID-19 Infection", newsSource: "American Journal of Therapeutics", newsDate: "June 17, 2020", newsLink: "https://doi.org/10.1097/mjt.0000000000001402"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "In vitro and in vivo functions of SARS-CoV-2 infection-enhancing and neutralizing antibodies", newsSource: "Cell", newsDate: "June 18, 2020", newsLink: "https://doi.org/10.1016/j.cell.2021.06.021"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Telmisartan for treatment of Covid-19 patients: An open multicenter randomized clinical trial", newsSource: "Lancet", newsDate: "June 18, 2020", newsLink: "https://doi.org/10.1016/j.eclinm.2021.100962"}),
          e(NewsList, {newsType: "Media News", newsTitle: "It’s going to be weird’: Download festival opens with no social distancing", newsSource: "Guardian", newsDate: "June 18, 2020", newsLink: "https://www.theguardian.com/music/2021/jun/18/its-going-to-be-weird-download-festival-opens-with-no-social-distancing-covid-pilot-event"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "High Hopes for Johnson & Johnson’s Covid Vaccine Have Fizzled in the U.S.", newsSource: "NY Times", newsDate: "June 18, 2020", newsLink: "https://www.nytimes.com/2021/06/18/us/politics/johnson-johnson-covid-vaccine.html?action=click&module=Spotlight&pgtype=Homepage"}), 
@@ -313,7 +315,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Australia’s vaccine rollout ‘constrained’ by Pfizer supply shortages until August", newsSource: "Guardian", newsDate: "June 21, 2020", newsLink: "https://www.theguardian.com/australia-news/2021/jun/21/australias-vaccine-rollout-constrained-by-pfizer-supply-shortages-until-august"}),
          e(NewsList, {newsType: "Media News", newsTitle: "What is 'gain-of-function' and why does it matter in the search for SARS-CoV-2's origins?", newsSource: "PHYS ORG", newsDate: "June 21, 2020", newsLink: "https://phys.org/news/2021-06-gain-of-function-sars-cov-.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "India’s vaccinations hit record with free COVID shots", newsSource: "Reuters", newsDate: "June 21, 2020", newsLink: "https://www.reuters.com/world/india/india-reports-53256-new-covid-19-cases-2021-06-21/"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "Assessing the Association Between Social Gatherings and COVID-19 Risk Using Birthdays", newsSource: "Jama Network", newsDate: "June 21, 2020", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamainternmed.2021.2915"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "Assessing the Association Between Social Gatherings and COVID-19 Risk Using Birthdays", newsSource: "Jama Network", newsDate: "June 21, 2020", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamainternmed.2021.2915"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "The impact of super-spreader cities, highways, and intensive care availability in the early stages of the COVID-19 epidemic in Brazil", newsSource: "Nature", newsDate: "June 21, 2020", newsLink: "https://doi.org/10.1038/s41598-021-92263-3"})    
    ); 
  }
 }
