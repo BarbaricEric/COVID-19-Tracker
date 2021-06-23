@@ -263,7 +263,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Dynamic innate immune response determines susceptibility to SARS-CoV-2 infection and early replication kinetics", newsSource: "Journal of Experimental Medicine", newsDate: "June 15, 2020", newsLink: "https://doi.org/10.1084/jem.20210583"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Distorted, Bizarre Food Smells Haunt Covid Survivors", newsSource: "NY Times", newsDate: "June 15, 2020", newsLink: "https://www.nytimes.com/2021/06/15/health/covid-smells-food.html"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Public acceptance of COVID-19 vaccines: cross-national evidence on levels and individual-level predictors using observational data", newsSource: "National Library of Medicine", newsDate: "June 15, 2020", newsLink: "https://pubmed.ncbi.nlm.nih.gov/34130963/"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "A cohort autopsy study defines COVID-19 systemic pathogenesis", newsSource: "Nature", newsDate: "June 16, 2020", newsLink: "https://doi.org/10.1038/s41422-021-00523-8"}),    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "A cohort autopsy study defines COVID-19 systemic pathogenesis", newsSource: "Nature", newsDate: "June 16, 2020", newsLink: "https://doi.org/10.1038/s41422-021-00523-8"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "The Challenge of Covid-19 Vaccines for the Immunosuppressed", newsSource: "Wired", newsDate: "June 16, 2020", newsLink: "https://www.wired.com/story/the-challenge-of-covid-19-vaccines-for-the-immunosuppressed/"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "CureVac Provides Update on Phase 2b/3 Trial of First-Generation COVID-19 Vaccine Candidate, CVnCoV", newsSource: "CureVac", newsDate: "June 16, 2020", newsLink: "https://www.curevac.com/en/2021/06/16/curevac-provides-update-on-phase-2b-3-trial-of-first-generation-covid-19-vaccine-candidate-cvncov/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "RECOVERY trial finds Regeneron’s monoclonal antibody combination reduces deaths for hospitalised COVID-19 patients who have not mounted their own immune response", newsSource: "Recovery", newsDate: "June 16, 2020", newsLink: "https://www.recoverytrial.net/news/recovery-trial-finds-regeneron2019s-monoclonal-antibody-combination-reduces-deaths-for-hospitalised-covid-19-patients-who-have-not-mounted-their-own-immune-response-1"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "EU says J&J to miss vaccine supply target in second quarter", newsSource: "Reuters", newsDate: "June 16, 2020", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/eu-says-jj-miss-vaccine-supply-target-second-quarter-2021-06-16/"}), 
@@ -334,7 +335,17 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Covid boosters in the fall? As calls grow for third shots, here’s what you need to know", newsSource: "CNBC", newsDate: "June 22, 2020", newsLink: "https://www.cnbc.com/2021/06/22/covid-booster-shots-coronavirus-variants-see-calls-for-third-shots.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Cuba says Abdala vaccine 92.28% effective against coronavirus", newsSource: "Reuters", newsDate: "June 22, 2020", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/cuba-says-abdala-vaccine-9228-effective-against-coronavirus-2021-06-21/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Correcting pandemic data analysis through environmental fluid dynamics", newsSource: "Physics of Fluids", newsDate: "June 22, 2020", newsLink: "https://doi.org/10.1063/5.0055299"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Two additional manufacturing sites for BioNTech/Pfizer’s COVID-19 vaccine", newsSource: "European Commission", newsDate: "June 22, 2020", newsLink: "https://www.ema.europa.eu/en/news/two-additional-manufacturing-sites-biontechpfizers-covid-19-vaccine"})
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Two additional manufacturing sites for BioNTech/Pfizer’s COVID-19 vaccine", newsSource: "European Commission", newsDate: "June 22, 2020", newsLink: "https://www.ema.europa.eu/en/news/two-additional-manufacturing-sites-biontechpfizers-covid-19-vaccine"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Fauci declares delta variant ‘greatest threat’ to the nation’s efforts to eliminate Covid", newsSource: "CNBC", newsDate: "June 22, 2020", newsLink: "https://www.cnbc.com/2021/06/22/fauci-declares-delta-variant-greatest-threat-to-the-nations-efforts-to-eliminate-covid.html"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Biden urges shots for young adults as variant concern grows", newsSource: "AP News", newsDate: "June 22, 2020", newsLink: "https://apnews.com/article/joe-biden-coronavirus-pandemic-health-government-and-politics-014b5b3d0bab3b6bc81aeabc898533e0"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "More than 150 Houston Methodist employees resign or are fired over COVID vaccine mandate", newsSource: "Houston Chronicle", newsDate: "June 22, 2020", newsLink: "https://www.houstonchronicle.com/news/houston-texas/health/article/More-than-150-Houston-Methodist-employees-resign-16266440.php"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 vaccine side effects: The positives about feeling bad", newsSource: "Science Magazine", newsDate: "June 22, 2020", newsLink: "https://doi.org/10.1126/sciimmunol.abj9256"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "Back to not-so-normal: Psychologists eye pandemic stress as U.S. reopens", newsSource: "NBC News", newsDate: "June 22, 2020", newsLink: "https://www.nbcnews.com/science/science-news/back-not-normal-psychologists-eye-pandemic-stress-us-reopens-rcna1204"}), 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Delta coronavirus variant: scientists brace for impact", newsSource: "Nature", newsDate: "June 22, 2020", newsLink: "https://doi.org/10.1038/d41586-021-01696-3"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "Almost 900 Secret Service employees were infected with COVID", newsSource: "AP News", newsDate: "June 22, 2020", newsLink: "https://apnews.com/article/donald-trump-business-health-coronavirus-pandemic-government-and-politics-22208672ed5c0bb126c00e0f6e91a7d1"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "NIH study suggests COVID-19 prevalence far exceeded early pandemic cases", newsSource: "National Institute of Health", newsDate: "June 22, 2020", newsLink: "https://www.nih.gov/news-events/news-releases/nih-study-suggests-covid-19-prevalence-far-exceeded-early-pandemic-cases"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "NHS alarm over rise in number of UK Covid patients on ventilators", newsSource: "Guardian", newsDate: "June 23, 2020", newsLink: "https://www.theguardian.com/world/2021/jun/23/nhs-alarm-rise-number-uk-covid-patients-ventilators"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "CDC safety group says there’s a likely link between rare heart inflammation in young people after Covid shot", newsSource: "CNBC", newsDate: "June 23, 2020", newsLink: "https://www.cnbc.com/2021/06/23/cdc-reports-more-than-1200-cases-of-rare-heart-inflammation-after-covid-vaccine-shots.html"})    
    ); 
  }
 }
@@ -348,8 +359,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 6/20/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 6/22/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 6/20/2021";
+    modernaUpdate.innerHTML = "Last Updated: 6/22/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 6/20/2021";
+    jessenUpdate.innerHTML = "Last Updated: 6/22/2021";
