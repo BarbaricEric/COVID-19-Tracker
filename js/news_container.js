@@ -63,11 +63,20 @@ class NewsList extends React.Component {
   }
 }
 
+class FebruaryNewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Media News", newsTitle: "Proxalutamide Significantly Accelerates Viral Clearance and Reduces Time to Clinical Remission in Patients with Mild to Moderate COVID-19: Results from a Randomized, Double-Blinded, Placebo-Controlled Trial", newsSource: "US National Library of Medicine", newsDate: "February 22, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7899267/"})      
+         ); 
+ }
+} 
+
 class MarchNewsApp extends React.Component {
  render() {
       return e("div", null, 
          e(NewsList, {newsType: "Non Media News", newsTitle: "Factors associated with myocardial SARS-CoV-2 infection, myocarditis, and cardiac inflammation in patients with COVID-19", newsSource: "Nature", newsDate: "March 17, 2021", newsLink: "https://doi.org/10.1038/s41379-021-00790-1"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Why Is All COVID-19 News Bad News?", newsSource: "IDEAS", newsDate: "March, 2021", newsLink: "https://ideas.repec.org/p/nbr/nberwo/28110.html"}), 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Symptoms of Anxiety or Depressive Disorder and Use of Mental Health Care Among Adults During the COVID-19 Pandemic — United States, August 2020–February 2021", newsSource: "CDC", newsDate: "March 26, 2021", newsLink: "http://dx.doi.org/10.15585/mmwr.mm7013e2"}),      
          e(NewsList, {newsType: "Non Media News", newsTitle: "Essentials in saline pharmacology for nasal or respiratory hygiene in times of COVID-19", newsSource: "Springer", newsDate: "March 27, 2021", newsLink: "https://doi.org/10.1007/s00228-021-03102-3"})      
          ); 
  }
@@ -293,6 +302,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "The U.S. Has a Higher Rate of Vaccine Opposition Than Any Country Tracked Besides Russia", newsSource: "Morning Consult", newsDate: "June 17, 2020", newsLink: "https://morningconsult.com/global-vaccine-tracking/"}),   
          e(NewsList, {newsType: "Non Media News", newsTitle: "Antiviral effect of high-dose ivermectin in adults with COVID-19: A proof-of-concept randomized trial", newsSource: "Lancet", newsDate: "June 17, 2020", newsLink: "https://doi.org/10.1016/j.eclinm.2021.100959"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Ivermectin for Prevention and Treatment of COVID-19 Infection", newsSource: "American Journal of Therapeutics", newsDate: "June 17, 2020", newsLink: "https://doi.org/10.1097/mjt.0000000000001402"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Ultrapotent miniproteins targeting the SARS-CoV-2 receptor-binding domain protect against infection and disease", newsSource: "Cell", newsDate: "June 18, 2020", newsLink: "https://doi.org/10.1016/j.chom.2021.06.008"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "In vitro and in vivo functions of SARS-CoV-2 infection-enhancing and neutralizing antibodies", newsSource: "Cell", newsDate: "June 18, 2020", newsLink: "https://doi.org/10.1016/j.cell.2021.06.021"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Telmisartan for treatment of Covid-19 patients: An open multicenter randomized clinical trial", newsSource: "Lancet", newsDate: "June 18, 2020", newsLink: "https://doi.org/10.1016/j.eclinm.2021.100962"}),
          e(NewsList, {newsType: "Media News", newsTitle: "It’s going to be weird’: Download festival opens with no social distancing", newsSource: "Guardian", newsDate: "June 18, 2020", newsLink: "https://www.theguardian.com/music/2021/jun/18/its-going-to-be-weird-download-festival-opens-with-no-social-distancing-covid-pilot-event"}),    
@@ -325,6 +335,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Covid Rebounds in U.S. South, With Many Shunning Vaccines", newsSource: "Bloomberg", newsDate: "June 21, 2020", newsLink: "https://www.bloomberg.com/news/articles/2021-06-21/covid-rebounds-in-u-s-south-where-many-have-shunned-vaccines"}),
          e(NewsList, {newsType: "Media News", newsTitle: "WHO says delta is the fastest and fittest Covid variant and will ‘pick off’ most vulnerable", newsSource: "CNBC", newsDate: "June 21, 2020", newsLink: "https://www.cnbc.com/2021/06/21/covid-delta-who-says-variant-is-the-fastest-and-fittest-and-will-pick-off-most-vulnerable-.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "A mix-and-match approach to COVID-19 vaccines could provide logistical and immunological benefits", newsSource: "PBS", newsDate: "June 21, 2020", newsLink: "https://www.pbs.org/newshour/health/a-mix-and-match-approach-to-covid-19-vaccines-could-provide-logistical-and-immunological-benefits"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Dysregulation of brain and choroid plexus cell types in severe COVID-19", newsSource: "Nature", newsDate: "June 21, 2020", newsLink: "https://doi.org/10.1038/s41586-021-03710-0"}),
          e(NewsList, {newsType: "Media News", newsTitle: "California weighs extending eviction protections past June", newsSource: "AP News", newsDate: "June 21, 2020", newsLink: "https://apnews.com/article/california-health-coronavirus-pandemic-business-government-and-politics-4a9a08ffb93e80e90bae9e649378bfbc"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Assessing the Association Between Social Gatherings and COVID-19 Risk Using Birthdays", newsSource: "Jama Network", newsDate: "June 21, 2020", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamainternmed.2021.2915"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 Vaccination Coverage Among Adults — United States, December 14, 2020–May 22, 2021", newsSource: "CDC", newsDate: "June 21, 2020", newsLink: "http://dx.doi.org/10.15585/mmwr.mm7025e1"}),
@@ -341,11 +352,17 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "More than 150 Houston Methodist employees resign or are fired over COVID vaccine mandate", newsSource: "Houston Chronicle", newsDate: "June 22, 2020", newsLink: "https://www.houstonchronicle.com/news/houston-texas/health/article/More-than-150-Houston-Methodist-employees-resign-16266440.php"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 vaccine side effects: The positives about feeling bad", newsSource: "Science Magazine", newsDate: "June 22, 2020", newsLink: "https://doi.org/10.1126/sciimmunol.abj9256"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "Back to not-so-normal: Psychologists eye pandemic stress as U.S. reopens", newsSource: "NBC News", newsDate: "June 22, 2020", newsLink: "https://www.nbcnews.com/science/science-news/back-not-normal-psychologists-eye-pandemic-stress-us-reopens-rcna1204"}), 
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Delta coronavirus variant: scientists brace for impact", newsSource: "Nature", newsDate: "June 22, 2020", newsLink: "https://doi.org/10.1038/d41586-021-01696-3"}), 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Mortality and critical care unit admission associated with the SARS-CoV-2 lineage B.1.1.7 in England: an observational cohort study", newsSource: "Lancet", newsDate: "June 22, 2020", newsLink: "https://doi.org/10.1016/S1473-3099(21)00318-2"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Delta coronavirus variant: scientists brace for impact", newsSource: "Nature", newsDate: "June 22, 2020", newsLink: "https://doi.org/10.1038/d41586-021-01696-3"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Risk of hospitalisation associated with infection with SARS-CoV-2 lineage B.1.1.7 in Denmark: an observational cohort study", newsSource: "Lancet", newsDate: "June 22, 2020", newsLink: "https://doi.org/10.1016/S1473-3099(21)00290-5"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Almost 900 Secret Service employees were infected with COVID", newsSource: "AP News", newsDate: "June 22, 2020", newsLink: "https://apnews.com/article/donald-trump-business-health-coronavirus-pandemic-government-and-politics-22208672ed5c0bb126c00e0f6e91a7d1"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "NIH study suggests COVID-19 prevalence far exceeded early pandemic cases", newsSource: "National Institute of Health", newsDate: "June 22, 2020", newsLink: "https://www.nih.gov/news-events/news-releases/nih-study-suggests-covid-19-prevalence-far-exceeded-early-pandemic-cases"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "NHS alarm over rise in number of UK Covid patients on ventilators", newsSource: "Guardian", newsDate: "June 23, 2020", newsLink: "https://www.theguardian.com/world/2021/jun/23/nhs-alarm-rise-number-uk-covid-patients-ventilators"}), 
-         e(NewsList, {newsType: "Media News", newsTitle: "CDC safety group says there’s a likely link between rare heart inflammation in young people after Covid shot", newsSource: "CNBC", newsDate: "June 23, 2020", newsLink: "https://www.cnbc.com/2021/06/23/cdc-reports-more-than-1200-cases-of-rare-heart-inflammation-after-covid-vaccine-shots.html"})    
+         e(NewsList, {newsType: "Media News", newsTitle: "CDC safety group says there’s a likely link between rare heart inflammation in young people after Covid shot", newsSource: "CNBC", newsDate: "June 23, 2020", newsLink: "https://www.cnbc.com/2021/06/23/cdc-reports-more-than-1200-cases-of-rare-heart-inflammation-after-covid-vaccine-shots.html"}),
+         
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Long COVID in a prospective cohort of home-isolated patients", newsSource: "Nature", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.1038/s41591-021-01433-3"}),    
+             
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Long COVID or Post-acute Sequelae of COVID-19 (PASC): An Overview of Biological Factors That May Contribute to Persistent Symptoms", newsSource: "Frontier", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.3389/fmicb.2021.698169"})
    ); 
  }
 }
