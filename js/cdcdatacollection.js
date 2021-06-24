@@ -6,7 +6,8 @@
     "https://data.cdc.gov/resource/km4m-vcsb.json",//demographic
     "https://data.cdc.gov/resource/hk9y-quqm.json",//Conditions Contributing to COVID-19 Deaths, by State and Age
     "https://data.cdc.gov/resource/nr4s-juj3.json",//Provisional COVID-19 Deaths: Focus on Ages 0-18 Years
-    "https://data.cdc.gov/resource/9mfq-cb36.json"//United States COVID-19 Cases and Deaths by State over Time
+    "https://data.cdc.gov/resource/9mfq-cb36.json",//United States COVID-19 Cases and Deaths by State over Time
+    "https://data.cdc.gov/resource/unsk-b7fc.json"//Overall US COVID-19 Vaccine deliveries and administration data at national and jurisdiction level
   ];
 
   const promiseList = urlList.map((url) => {
