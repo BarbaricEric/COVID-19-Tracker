@@ -359,10 +359,22 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "NIH study suggests COVID-19 prevalence far exceeded early pandemic cases", newsSource: "National Institute of Health", newsDate: "June 22, 2020", newsLink: "https://www.nih.gov/news-events/news-releases/nih-study-suggests-covid-19-prevalence-far-exceeded-early-pandemic-cases"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "NHS alarm over rise in number of UK Covid patients on ventilators", newsSource: "Guardian", newsDate: "June 23, 2020", newsLink: "https://www.theguardian.com/world/2021/jun/23/nhs-alarm-rise-number-uk-covid-patients-ventilators"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "CDC safety group says there’s a likely link between rare heart inflammation in young people after Covid shot", newsSource: "CNBC", newsDate: "June 23, 2020", newsLink: "https://www.cnbc.com/2021/06/23/cdc-reports-more-than-1200-cases-of-rare-heart-inflammation-after-covid-vaccine-shots.html"}),
-         
+         e(NewsList, {newsType: "Media News", newsTitle: "Chinese Covid-19 Gene Data That Could Have Aided Pandemic Research Removed From NIH Database", newsSource: "Wall Street Journal", newsDate: "June 23, 2020", newsLink: "https://www.wsj.com/amp/articles/covid-19-gene-data-that-could-have-aided-research-on-early-epidemic-removed-from-database-11624472105"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "WHO voices concerns over Sputnik V Covid vaccine plant", newsSource: "Guardian", newsDate: "June 23, 2020", newsLink: "https://www.theguardian.com/society/2021/jun/23/who-voices-concerns-over-sputnik-v-covid-vaccine-plant"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "U.S. life expectancy decreased by an 'alarming' amount during pandemic", newsSource: "NBC News", newsDate: "June 23, 2020", newsLink: "https://www.nbcnews.com/health/health-news/u-s-life-expectancy-decreased-alarming-amount-during-pandemic-n1272206"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Delta variant triggers dangerous new phase in the pandemic", newsSource: "Science Magazine", newsDate: "June 23, 2020", newsLink: "https://www.sciencemag.org/news/2021/06/delta-variant-triggers-dangerous-new-phase-pandemic"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "FDA to add warning about rare heart inflammation to Pfizer and Moderna vaccines", newsSource: "Guardian", newsDate: "June 23, 2020", newsLink: "https://www.theguardian.com/society/2021/jun/23/fda-warning-heart-inflammation-pfizer-moderna-vaccines"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "No evidence yet to suggest Covid vaccine booster is needed, CDC group says", newsSource: "NBC News", newsDate: "June 23, 2020", newsLink: "https://www.nbcnews.com/health/health-news/no-evidence-yet-suggest-covid-vaccine-booster-needed-cdc-group-n1272197"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "‘Better in arms than in fridges’: nurses at Victorian vaccine hubs report Pfizer wastage", newsSource: "Guardian", newsDate: "June 23, 2020", newsLink: "https://www.theguardian.com/australia-news/2021/jun/24/better-in-arms-than-in-fridges-nurses-at-victorian-vaccine-hubs-report-pfizer-wastage"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Association of Mask Mandates and COVID-19 Case Rates, Hospitalizations, and Deaths in Kansas", newsSource: "Jama Network", newsDate: "June 23, 2020", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.14514"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Highly contagious Delta variant could cause next COVID-19 wave: This virus will still find you", newsSource: "CBS News", newsDate: "June 23, 2020", newsLink: "https://www.cbsnews.com/news/delta-variant-covid-19-contaigous-next-wave/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Long COVID in a prospective cohort of home-isolated patients", newsSource: "Nature", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.1038/s41591-021-01433-3"}),    
-             
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Long COVID or Post-acute Sequelae of COVID-19 (PASC): An Overview of Biological Factors That May Contribute to Persistent Symptoms", newsSource: "Frontier", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.3389/fmicb.2021.698169"})
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Long COVID or Post-acute Sequelae of COVID-19 (PASC): An Overview of Biological Factors That May Contribute to Persistent Symptoms", newsSource: "Frontier", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.3389/fmicb.2021.698169"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Over 2 million adults in England may have had long COVID - Imperial REACT", newsSource: "Imperial College London", newsDate: "June 24, 2020", newsLink: "https://www.imperial.ac.uk/news/224853/over-million-adults-england-have-long/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "FDA greenlights its first saliva-based COVID-19 antibody test", newsSource: "Fierce Biotech", newsDate: "June 24, 2020", newsLink: "https://www.fiercebiotech.com/medtech/fda-greenlights-its-first-saliva-based-covid-19-antibody-test"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "The Reasons Why The South's Vaccination Rate Lags Behind Other Regions", newsSource: "NPR", newsDate: "June 24, 2020", newsLink: "https://www.npr.org/2021/06/24/1009751000/the-reasons-why-the-souths-vaccination-rate-lags-behind-other-regions"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Falling short: Why the White House will miss its vax target", newsSource: "AP News", newsDate: "June 24, 2020", newsLink: "https://apnews.com/article/why-the-biden-white-house-will-miss-covid-vaccination-target-e3985c9958b579a44a168cb6e0649349"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Covid is already deadlier this year than all of 2020. So why do many in U.S. think the problem’s over?", newsSource: "CNBC", newsDate: "June 24, 2020", newsLink: "https://www.cnbc.com/2021/06/24/covid-is-deadlier-this-year-than-all-of-2020-why-do-americans-think-its-over.html"})
    ); 
  }
 }
@@ -376,8 +388,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 6/22/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 6/23/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 6/22/2021";
+    modernaUpdate.innerHTML = "Last Updated: 6/23/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 6/22/2021";
+    jessenUpdate.innerHTML = "Last Updated: 6/23/2021";
