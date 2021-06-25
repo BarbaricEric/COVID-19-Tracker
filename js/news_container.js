@@ -372,14 +372,24 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Association of Mask Mandates and COVID-19 Case Rates, Hospitalizations, and Deaths in Kansas", newsSource: "Jama Network", newsDate: "June 23, 2020", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.14514"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Highly contagious Delta variant could cause next COVID-19 wave: This virus will still find you", newsSource: "CBS News", newsDate: "June 23, 2020", newsLink: "https://www.cbsnews.com/news/delta-variant-covid-19-contaigous-next-wave/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Long COVID in a prospective cohort of home-isolated patients", newsSource: "Nature", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.1038/s41591-021-01433-3"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 Variants and Vaccines", newsSource: "New England Journal of Medicine", newsDate: "June 23, 2020", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMsr2105280"}),     
+         e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 Variants and Vaccines", newsSource: "New England Journal of Medicine", newsDate: "June 23, 2020", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMsr2105280"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Incidence of Cutaneous Reactions After Messenger RNA COVID-19 Vaccines", newsSource: "Jama Network", newsDate: "June 23, 2020", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamadermatol.2021.2114"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Effect of Vaccination on Household Transmission of SARS-CoV-2 in England", newsSource: "New England Journal of Medicine", newsDate: "June 23, 2020", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMc2107717"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Long COVID or Post-acute Sequelae of COVID-19 (PASC): An Overview of Biological Factors That May Contribute to Persistent Symptoms", newsSource: "Frontier", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.3389/fmicb.2021.698169"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Over 2 million adults in England may have had long COVID - Imperial REACT", newsSource: "Imperial College London", newsDate: "June 24, 2020", newsLink: "https://www.imperial.ac.uk/news/224853/over-million-adults-england-have-long/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "FDA greenlights its first saliva-based COVID-19 antibody test", newsSource: "Fierce Biotech", newsDate: "June 24, 2020", newsLink: "https://www.fiercebiotech.com/medtech/fda-greenlights-its-first-saliva-based-covid-19-antibody-test"}),
          e(NewsList, {newsType: "Media News", newsTitle: "The Reasons Why The South's Vaccination Rate Lags Behind Other Regions", newsSource: "NPR", newsDate: "June 24, 2020", newsLink: "https://www.npr.org/2021/06/24/1009751000/the-reasons-why-the-souths-vaccination-rate-lags-behind-other-regions"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Falling short: Why the White House will miss its vax target", newsSource: "AP News", newsDate: "June 24, 2020", newsLink: "https://apnews.com/article/why-the-biden-white-house-will-miss-covid-vaccination-target-e3985c9958b579a44a168cb6e0649349"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Covid is already deadlier this year than all of 2020. So why do many in U.S. think the problem’s over?", newsSource: "CNBC", newsDate: "June 24, 2020", newsLink: "https://www.cnbc.com/2021/06/24/covid-is-deadlier-this-year-than-all-of-2020-why-do-americans-think-its-over.html"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Vitamin D supplementation and clinical outcomes in COVID-19: a systematic review and meta-analysis", newsSource: "Springer", newsDate: "June 24, 2020", newsLink: "https://doi.org/10.1007/s40618-021-01614-4"})    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Vitamin D supplementation and clinical outcomes in COVID-19: a systematic review and meta-analysis", newsSource: "Springer", newsDate: "June 24, 2020", newsLink: "https://doi.org/10.1007/s40618-021-01614-4"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Coronavirus (COVID-19) Update: FDA Authorizes Drug for Treatment of COVID-19", newsSource: "US Food and Drug Administration", newsDate: "June 24, 2020", newsLink: "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "Pfizer says COVID vaccine is highly effective against Delta variant", newsSource: "Reuters", newsDate: "June 24, 2020", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/pfizer-says-covid-vaccine-highly-effective-against-delta-variant-2021-06-24/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "CDC extends national COVID-19 eviction ban for one more month", newsSource: "UPI", newsDate: "June 24, 2020", newsLink: "https://www.upi.com/Top_News/US/2021/06/24/cdc-joe-biden-eviction-moratorium/2531624552800/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "New COVID-19 Outbreaks Are Driving Some Places Back Under Lockdown And Behind Masks", newsSource: "NPR", newsDate: "June 25, 2020", newsLink: "https://www.npr.org/2021/06/25/1010151575/new-covid-19-outbreaks-are-driving-some-places-back-under-lockdown-and-behind-ma"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Not taking it: Remote West Texas COVID-19 vaccine hesitancy plain to see", newsSource: "Reuters", newsDate: "June 25, 2020", newsLink: "https://www.reuters.com/world/us/not-taking-it-remote-west-texas-covid-19-vaccine-hesitancy-plain-see-2021-06-25/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "The UK’s Covid vaccine program and delta surge means it’s now a test case for the world", newsSource: "CNBC", newsDate: "June 25, 2020", newsLink: "https://www.cnbc.com/2021/06/25/uk-closely-watched-with-its-vaccine-program-and-surge-in-cases.html"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Russia mandates vaccinations for some as virus cases surge", newsSource: "AP News", newsDate: "June 25, 2020", newsLink: "https://apnews.com/article/europe-russia-health-coronavirus-pandemic-business-42d0c14f0545371e16a360b677cb4c38"}),        
+         e(NewsList, {newsType: "Non Media News", newsTitle: "mRNA vaccination boosts cross-variant neutralizing antibodies elicited by SARS-CoV-2 infection", newsSource: "Science Magazine", newsDate: "June 25, 2020", newsLink: "https://doi.org/10.1126/science.abg9175"}),
    ); 
  }
 }
@@ -387,14 +397,14 @@ class NewsApp extends React.Component {
 document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
   e(NewsApp), 
-  //e(Welcome, {name: "Person"}),
+  //e(Welcome, {name: "Person"}), e(NewsList, {newsType: "Non Media News", newsTitle: "", newsSource: "", newsDate: "June , 2020", newsLink: ""}),
   document.querySelector('#article-main-june2021')
   );
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 6/23/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 6/24/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 6/23/2021";
+    modernaUpdate.innerHTML = "Last Updated: 6/24/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 6/23/2021";
+    jessenUpdate.innerHTML = "Last Updated: 6/24/2021";
