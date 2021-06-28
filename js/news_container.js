@@ -63,10 +63,18 @@ class NewsList extends React.Component {
   }
 }
 
+class November2020NewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Antibody Responses to SARS-CoV-2: Let’s Stick to Known Knowns", newsSource: "US National Library of Medicine", newsDate: "November 20, 2020", newsLink: "https://doi.org/10.4049/jimmunol.2000839"})      
+         ); 
+ }
+} 
+
 class FebruaryNewsApp extends React.Component {
  render() {
       return e("div", null, 
-         e(NewsList, {newsType: "Media News", newsTitle: "Proxalutamide Significantly Accelerates Viral Clearance and Reduces Time to Clinical Remission in Patients with Mild to Moderate COVID-19: Results from a Randomized, Double-Blinded, Placebo-Controlled Trial", newsSource: "US National Library of Medicine", newsDate: "February 22, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7899267/"})      
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Proxalutamide Significantly Accelerates Viral Clearance and Reduces Time to Clinical Remission in Patients with Mild to Moderate COVID-19: Results from a Randomized, Double-Blinded, Placebo-Controlled Trial", newsSource: "US National Library of Medicine", newsDate: "February 22, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7899267/"})      
          ); 
  }
 } 
@@ -119,7 +127,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Surface Proteins of SARS-CoV-2 Drive Airway Epithelial Cells to Induce IFN-Dependent Inflammation", newsSource: "Journal of Immunology", newsDate: "June 2, 2021", newsLink: "https://doi.org/10.4049/jimmunol.2001407 "}), 
          e(NewsList, {newsType: "Non Media News", newsTitle: "Proteomic Analysis Identifies Prolonged Disturbances in Pathways Related to Cholesterol Metabolism and Myocardium Function in the COVID-19 Recovery Stage", newsSource: "ACS Publications", newsDate: "June 3, 2021", newsLink: "https://doi.org/10.1021/acs.jproteome.1c00054"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 proteins and anti-COVID-19 drugs induce lytic reactivation of an oncogenic virus", newsSource: "Nature", newsDate: "June 3, 2021", newsLink: "https://doi.org/10.1038/s42003-021-02220-z"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Six months of COVID vaccines: what 1.7 billion doses have taught scientists", newsSource: "Nature", newsDate: "June 4, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01505-x"}),    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Six months of COVID vaccines: what 1.7 billion doses have taught scientists", newsSource: "Nature", newsDate: "June 4, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01505-x"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 elicits robust adaptive immune responses regardless of disease severity", newsSource: "Lancet", newsDate: "June 4, 2020", newsLink: "https://doi.org/10.1016/j.ebiom.2021.103410"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Therapeutic versus prophylactic anticoagulation for patients admitted to hospital with COVID-19 and elevated D-dimer concentration (ACTION): an open-label, multicentre, randomised, controlled trial", newsSource: "Lancet", newsDate: "June 4, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)01203-4"}), 
          e(NewsList, {newsType: "Non Media News", newsTitle: "Open science saves lives: lessons from the COVID-19 pandemic", newsSource: "BioMedCentral", newsDate: "June 5, 2021", newsLink: "https://doi.org/10.1186/s12874-021-01304-y"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "The ‘two societies’: 97% of new COVID cases are among people who haven’t gotten the shots ", newsSource: "Seattle Times", newsDate: "June 5, 2021", newsLink: "https://www.seattletimes.com/seattle-news/health/the-two-societies-97-of-new-covid-cases-are-among-people-who-havent-gotten-the-shots/"}),
@@ -412,6 +421,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "As COVID-19 rules ease, common colds rebound across U.S.", newsSource: "UPI", newsDate: "June 26, 2020", newsLink: "https://www.upi.com/Health_News/2021/06/26/coronavirus-rules-ease-common-cold-returns/9421624654807/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Australia’s surplus AstraZeneca Covid vaccines will be donated to neighbouring countries", newsSource: "Guardian", newsDate: "June 26, 2020", newsLink: "https://www.theguardian.com/business/2021/jun/27/australias-surplus-astrazeneca-covid-vaccines-will-be-donated-to-neighbouring-countries"}),
          e(NewsList, {newsType: "Media News", newsTitle: "U.K. health minister resigns after breaking Covid rules by kissing aide", newsSource: "NBC News", newsDate: "June 26, 2020", newsLink: "https://www.nbcnews.com/news/world/u-k-health-minister-resigns-after-breaking-covid-rules-kissing-n1272451"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "First COVID-19 variant vaccine AZD2816 Phase II/III trial participants vaccinated", newsSource: "AstraZeneca", newsDate: "June 27, 2020", newsLink: "https://www.astrazeneca.com/media-centre/press-releases/2021/first-covid-19-variant-vaccine-azd2816-phase-ii-iii-trial-participants-vaccinated.html"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Russia registered the first Covid vaccine. Now it's struggling to vaccinate its population.", newsSource: "NBC News", newsDate: "June 27, 2020", newsLink: "https://www.nbcnews.com/news/world/russia-registered-first-covid-vaccine-now-it-s-struggling-vaccinate-n1272092"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Delta Covid variant may be edging race against vaccines", newsSource: "Guardian", newsDate: "June 27, 2020", newsLink: "https://www.theguardian.com/world/2021/jun/27/delta-covid-variant-may-be-edging-race-against-vaccines"}),
          e(NewsList, {newsType: "Media News", newsTitle: "As variant rises, vaccine plan targets ‘movable middle’", newsSource: "AP News", newsDate: "June 27, 2020", newsLink: "https://apnews.com/article/joe-biden-coronavirus-pandemic-health-government-and-politics-0ff389cdb6ac2e81e70ab9f486ba2b32"}),
@@ -422,7 +432,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Why Young Adults Are Among the Biggest Barriers to Mass Immunity", newsSource: "NY Times", newsDate: "June 28, 2020", newsLink: "https://www.nytimes.com/2021/06/28/us/covid-vaccine-young-adults.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Vaccines work against Covid — but not enough people are getting the shots, U.S. doctor says", newsSource: "CNBC", newsDate: "June 28, 2020", newsLink: "https://www.cnbc.com/2021/06/28/covid-vaccines-work-but-more-people-need-to-get-the-shots-us-doctor.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Dr. Scott Gottlieb says daily new Covid cases in the U.S. won’t ever go to zero", newsSource: "CNBC", newsDate: "June 28, 2020", newsLink: "https://www.cnbc.com/2021/06/28/dr-scott-gottlieb-daily-new-us-covid-cases-will-not-ever-go-to-zero.html"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Wearable materials with embedded synthetic biology sensors for biomolecule detection", newsSource: "Nature", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1038/s41587-021-00950-3"})    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Wearable materials with embedded synthetic biology sensors for biomolecule detection", newsSource: "Nature", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1038/s41587-021-00950-3"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 mRNA vaccines induce persistent human germinal centre responses", newsSource: "Nature", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1038/s41586-021-03738-2"})    
    ); 
  }
 }
@@ -436,8 +447,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 6/24/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 6/27/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 6/24/2021";
+    modernaUpdate.innerHTML = "Last Updated: 6/27/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 6/24/2021";
+    jessenUpdate.innerHTML = "Last Updated: 6/27/2021";
+
+//Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
