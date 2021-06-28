@@ -48,7 +48,9 @@
 
 //Pie Chart US Delivered Count from CDC
   d3v6.csv("./cdc_vaccination/vaccine_del.csv").then(function(data) {
-   console.log(data); 
+   console.log(data);
+    
+  const vacDel = parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen)   
     
   const color = d3v6.scaleOrdinal()
     .domain(data.map(d => d.name))
@@ -88,7 +90,7 @@
       .attr("fill", d => color(d.data.name))
       .attr("d", arc)
     .append("title")
-      .text(d => `${d.data.name}: ${addCommas(d.data.value.toLocaleString())}`);
+      .text(d => `${d.data.name}: ${addCommas(d.data.value.toLocaleString())} ${(d.data.value / vacDel) * 100}`);
 
   svg.append("g")
       .attr("font-family", "sans-serif")
