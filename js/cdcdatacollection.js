@@ -50,7 +50,7 @@
   d3v6.csv("./cdc_vaccination/vaccine_del.csv").then(function(data) {
    console.log(data);
     
-  const vacDel = parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen)   
+  const vacDel = parseInt(data[0].PfizerBioNTech + data[0].Moderna + data[0].Janssen)   
     
   const color = d3v6.scaleOrdinal()
     .domain(data.map(d => d.name))
