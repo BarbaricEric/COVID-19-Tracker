@@ -71,7 +71,7 @@ class November2020NewsApp extends React.Component {
  }
 } 
 
-class FebruaryNewsApp extends React.Component {
+class February2021NewsApp extends React.Component {
  render() {
       return e("div", null, 
          e(NewsList, {newsType: "Non Media News", newsTitle: "Proxalutamide Significantly Accelerates Viral Clearance and Reduces Time to Clinical Remission in Patients with Mild to Moderate COVID-19: Results from a Randomized, Double-Blinded, Placebo-Controlled Trial", newsSource: "US National Library of Medicine", newsDate: "February 22, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7899267/"})      
@@ -79,7 +79,7 @@ class FebruaryNewsApp extends React.Component {
  }
 } 
 
-class MarchNewsApp extends React.Component {
+class March2021NewsApp extends React.Component {
  render() {
       return e("div", null, 
          e(NewsList, {newsType: "Non Media News", newsTitle: "Factors associated with myocardial SARS-CoV-2 infection, myocarditis, and cardiac inflammation in patients with COVID-19", newsSource: "Nature", newsDate: "March 17, 2021", newsLink: "https://doi.org/10.1038/s41379-021-00790-1"}),
@@ -90,12 +90,13 @@ class MarchNewsApp extends React.Component {
  }
 }  
 
-class MayNewsApp extends React.Component {
+class May2021NewsApp extends React.Component {
  render() {
       return e("div", null, 
          e(NewsList, {newsType: "Non Media News", newsTitle: "Discovery of Novel Coronaviruses in Rodents", newsSource: "US National Library of Medicine", newsDate: "May 11, 2020", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7980831/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Global Incidence of Neurological Manifestations Among Patients Hospitalized With COVID-19—A Report for the GCS-NeuroCOVID Consortium and the ENERGY Consortium", newsSource: "Jama Network", newsDate: "May 11, 2020", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.12131"}),      
-         e(NewsList, {newsType: "Non Media News", newsTitle: "How COVID broke the evidence pipeline", newsSource: "Nature", newsDate: "May 12, 2020", newsLink: "https://doi.org/10.1038/d41586-021-01246-x"}),      
+         e(NewsList, {newsType: "Non Media News", newsTitle: "How COVID broke the evidence pipeline", newsSource: "Nature", newsDate: "May 12, 2020", newsLink: "https://doi.org/10.1038/d41586-021-01246-x"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Modeling the impact of racial and ethnic disparities on COVID-19 epidemic dynamics", newsSource: "eLife", newsDate: "May 18, 2020", newsLink: "https://doi.org/10.7554/eLife.66601"}),      
          e(NewsList, {newsType: "Non Media News", newsTitle: "A diamidobenzimidazole STING agonist protects against SARS-CoV-2 infection", newsSource: "Science Magazine", newsDate: "May 18, 2020", newsLink: "https://doi.org/10.1126/sciimmunol.abi9002"}),      
          e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 simulations go exascale to predict dramatic spike opening and cryptic pockets across the proteome", newsSource: "Nature", newsDate: "May 24, 2021", newsLink: "https://doi.org/10.1038/s41557-021-00707-0"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Positive Epstein–Barr virus detection in coronavirus disease 2019 (COVID-19) patients", newsSource: "Nature", newsDate: "May 25, 2020", newsLink: "https://doi.org/10.1038/s41598-021-90351-y"}),      
@@ -105,7 +106,7 @@ class MayNewsApp extends React.Component {
  }
 }  
 
-class JulyNewsApp extends React.Component {
+class July2021NewsApp extends React.Component {
  render() {
       return e("div", null, 
          e(NewsList, {newsType: "Media News", newsTitle: "Artificial Proteins Never Seen in the Natural World Are Becoming New COVID Vaccines and Medicines", newsSource: "Scientific American", newsDate: "July 1, 2021", newsLink: "https://www.scientificamerican.com/article/artificial-proteins-never-seen-in-the-natural-world-are-becoming-new-covid-vaccines-and-medicines/"})      
@@ -439,7 +440,9 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Dr. Scott Gottlieb says daily new Covid cases in the U.S. won’t ever go to zero", newsSource: "CNBC", newsDate: "June 28, 2020", newsLink: "https://www.cnbc.com/2021/06/28/dr-scott-gottlieb-daily-new-us-covid-cases-will-not-ever-go-to-zero.html"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Wearable materials with embedded synthetic biology sensors for biomolecule detection", newsSource: "Nature", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1038/s41587-021-00950-3"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 mRNA vaccines induce persistent human germinal centre responses", newsSource: "Nature", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1038/s41586-021-03738-2"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "AZD1222-induced neutralising antibody activity against SARS-CoV-2 Delta VOC", newsSource: "Lancet", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1016/S0140-6736(21)01462-8"}),    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "AZD1222-induced neutralising antibody activity against SARS-CoV-2 Delta VOC", newsSource: "Lancet", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1016/S0140-6736(21)01462-8"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Combined Metabolic Activators Accelerates Recovery in Mild-to-Moderate COVID-19", newsSource: "Wiley Online Library", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1002/advs.202101222"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Distinctive features of SARS-CoV-2-specific T cells predict recovery from severe COVID-19", newsSource: "Cell", newsDate: "June 28, 2020", newsLink: "https://doi.org/10.1016/j.celrep.2021.109414"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 vaccines have prevented 7.2 million infections and 27,000 deaths", newsSource: "Government UK", newsDate: "June 28, 2020", newsLink: "https://www.gov.uk/government/news/covid-19-vaccines-have-prevented-7-2-million-infections-and-27-000-deaths"}),  
          e(NewsList, {newsType: "Media News", newsTitle: "Protecting The Immuno-Compromised Against COVID Could Be Key To Ending The Pandemic", newsSource: "NPR", newsDate: "June 28, 2020", newsLink: "https://www.npr.org/sections/goatsandsoda/2021/06/28/1011043650/the-key-to-ending-the-pandemic-may-be-protecting-immunocompromised-people"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Cambridge hospital’s mask upgrade appears to eliminate Covid risk to staff", newsSource: "Guardian", newsDate: "June 29, 2020", newsLink: "https://www.theguardian.com/world/2021/jun/29/cambridge-hospitals-mask-upgrade-appears-to-eliminate-covid-19-risk-to-staff"}),
