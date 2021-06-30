@@ -90,7 +90,7 @@
       .attr("fill", d => color(d.data.name))
       .attr("d", arc)
     .append("title")
-      .text(d => `${d.data.name}: ${addCommas(d.data.value.toLocaleString())} ${addCommas((d.data.value / vacDel) * 100)}`);
+      .text(d => `${d.data.name}: ${addCommas(d.data.value.toLocaleString())} ${Math.floor(d.data.value / vacDel) * 100}`);
 
   svg.append("g")
       .attr("font-family", "sans-serif")
