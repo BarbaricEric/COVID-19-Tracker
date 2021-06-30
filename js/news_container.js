@@ -400,6 +400,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Long COVID or Post-acute Sequelae of COVID-19 (PASC): An Overview of Biological Factors That May Contribute to Persistent Symptoms", newsSource: "Frontier", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.3389/fmicb.2021.698169"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Primary, Recall, and Decay Kinetics of SARS-CoV-2 Vaccine Antibody Responses", newsSource: "ACS Publications", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.1021/acsnano.1c03972"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Immunodominant T-cell epitopes from the SARS-CoV-2 spike antigen reveal robust pre-existing T-cell immunity in unexposed individuals", newsSource: "Nature", newsDate: "June 23, 2020", newsLink: "https://doi.org/10.1038/s41598-021-92521-4"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Aphasia seven days after second dose of an mRNA-based SARS-CoV-2 vaccine", newsSource: "Science Direct", newsDate: "June 24, 2020", newsLink: "https://doi.org/10.1016/j.hest.2021.06.001"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "‘Your body just stops’: long Covid sufferers face new ordeals as sick pay runs out ", newsSource: "Guardian", newsDate: "June 24, 2020", newsLink: "https://www.theguardian.com/world/2021/jun/24/your-body-just-stops-long-covid-sufferers-face-new-ordeals-as-sick-pay-runs-out"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Over 2 million adults in England may have had long COVID - Imperial REACT", newsSource: "Imperial College London", newsDate: "June 24, 2020", newsLink: "https://www.imperial.ac.uk/news/224853/over-million-adults-england-have-long/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "FDA greenlights its first saliva-based COVID-19 antibody test", newsSource: "Fierce Biotech", newsDate: "June 24, 2020", newsLink: "https://www.fiercebiotech.com/medtech/fda-greenlights-its-first-saliva-based-covid-19-antibody-test"}),
@@ -462,7 +463,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Australia’s top medical body refuses to endorse PM’s announcement that under-40s can get AstraZeneca", newsSource: "Guardian", newsDate: "June 29, 2020", newsLink: "https://www.theguardian.com/australia-news/2021/jun/29/australia-astrazeneca-covid-vaccine-top-medical-body-ama-rejects-prime-minister-scott-morrison-announcement-under-40s-can-get-az-vaccination"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Business leaders arriving in England granted exemption from Covid quarantine", newsSource: "Guardian", newsDate: "June 29, 2020", newsLink: "https://www.theguardian.com/world/2021/jun/29/business-leaders-arriving-in-england-granted-exemption-from-covid-quarantine"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Warren Buffett says the pandemic has had an ‘extremely uneven’ impact and is not yet over", newsSource: "CNBC", newsDate: "June 29, 2020", newsLink: "https://www.cnbc.com/2021/06/29/warren-buffett-says-the-pandemic-has-had-an-extremely-uneven-impact-and-is-not-yet-over.html"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "Mental health toll from isolation affecting kids on reentry", newsSource: "ABC News", newsDate: "June 29, 2020", newsLink: "https://abcnews.go.com/Health/wireStory/suicidal-crises-mental-fatigue-kids-grapple-reentry-78555867"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "Mental health toll from isolation affecting kids on reentry", newsSource: "ABC News", newsDate: "June 29, 2020", newsLink: "https://abcnews.go.com/Health/wireStory/suicidal-crises-mental-fatigue-kids-grapple-reentry-78555867"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Altimmune Announces Update on AdCOVID™ Phase 1 Clinical Trial", newsSource: "Altimmune", newsDate: "June 29, 2020", newsLink: "https://ir.altimmune.com/news-releases/news-release-details/altimmune-announces-update-adcovidtm-phase-1-clinical-trial"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Moderna Provides a Clinical Update on the Neutralizing Activity of its COVID-19 Vaccine on Emerging Variants Including the Delta Variant First Identified in India", newsSource: "Moderna", newsDate: "June 29, 2020", newsLink: "https://investors.modernatx.com/news-releases/news-release-details/moderna-provides-clinical-update-neutralizing-activity-its-covid/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Europe wants to stop the Covid delta variant. But experts say it may already be too late", newsSource: "CNBC", newsDate: "June 30, 2020", newsLink: "https://www.cnbc.com/2021/06/30/the-delta-variant-is-spreading-in-europe-and-cant-be-stopped.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "NSW reveals Sydney student nurse worked for five days while infectious as Alice Springs enters Covid lockdown", newsSource: "Guardian", newsDate: "June 30, 2020", newsLink: "https://www.theguardian.com/world/2021/jun/30/alice-springs-joins-parts-of-nsw-queensland-and-perth-in-lockdown-after-covid-case-visited-airport"}),
@@ -483,10 +485,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 6/28/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 6/29/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 6/28/2021";
+    modernaUpdate.innerHTML = "Last Updated: 6/29/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 6/28/2021";
+    jessenUpdate.innerHTML = "Last Updated: 6/29/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
