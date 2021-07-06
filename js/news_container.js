@@ -63,6 +63,14 @@ class NewsList extends React.Component {
   }
 }
 
+class October2020NewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "A Comparative Analysis of Statistical Methods to Estimate the Reproduction Number in Emerging Epidemics, With Implications for the Current Coronavirus Disease 2019 (COVID-19) Pandemic", newsSource: "Oxford Academics", newsDate: "October 20, 2020", newsLink: "https://doi.org/10.1093/cid/ciaa1599"})      
+         ); 
+ }
+}
+
 class November2020NewsApp extends React.Component {
  render() {
       return e("div", null, 
@@ -74,6 +82,7 @@ class November2020NewsApp extends React.Component {
 class February2021NewsApp extends React.Component {
  render() {
       return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Dissecting lipid metabolism alterations in SARS-CoV-2", newsSource: "US National Library of Medicine", newsDate: "February 10, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7869689/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "First Month of COVID-19 Vaccine Safety Monitoring — United States, December 14, 2020–January 13, 2021", newsSource: "CDC", newsDate: "February 19, 2021", newsLink: "http://dx.doi.org/10.15585/mmwr.mm7008e3"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Proxalutamide Significantly Accelerates Viral Clearance and Reduces Time to Clinical Remission in Patients with Mild to Moderate COVID-19: Results from a Randomized, Double-Blinded, Placebo-Controlled Trial", newsSource: "US National Library of Medicine", newsDate: "February 22, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7899267/"})      
          ); 
@@ -492,6 +501,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Novavax Publishes Results of United Kingdom Phase 3 Clinical Trial in New England Journal of Medicine, Demonstrating High Levels of Efficacy of COVID-19 Vaccine", newsSource: "Novavax", newsDate: "June 30, 2021", newsLink: "https://ir.novavax.com/2021-06-30-Novavax-Publishes-Results-of-United-Kingdom-Phase-3-Clinical-Trial-in-New-England-Journal-of-Medicine,-Demonstrating-High-Levels-of-Efficacy-of-COVID-19-Vaccine"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Safety and Efficacy of NVX-CoV2373 Covid-19 Vaccine", newsSource: "New England Journal of Medicine", newsDate: "June 30, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMoa2107659"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Confronting Our Next National Health Disaster — Long-Haul Covid", newsSource: "New England Journal of Medicine", newsDate: "June 30, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMp2109285"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Ultrapotent antibodies against diverse and highly transmissible SARS-CoV-2 variants", newsSource: "Science Magazine", newsDate: "July 1, 2020", newsLink: "https://doi.org/10.1126/science.abh1766"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Who Gets Left Behind as We Return to Normal?", newsSource: "News Republic", newsDate: "July 1, 2021", newsLink: "https://newrepublic.com/article/162872/long-covid-disabled-pandemic-return-normal"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Euro soccer tournament under fire for helping spread COVID-19", newsSource: "Reuters", newsDate: "July 1, 2021", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/euro-soccer-tournament-under-fire-helping-spread-covid-19-2021-07-01/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Positive New Data for Johnson & Johnson Single-Shot COVID-19 Vaccine on Activity Against Delta Variant and Long-lasting Durability of Response", newsSource: "Johnson and Johnson", newsDate: "July 1, 2021", newsLink: "https://www.jnj.com/positive-new-data-for-johnson-johnson-single-shot-covid-19-vaccine-on-activity-against-delta-variant-and-long-lasting-durability-of-response"}),
@@ -527,7 +537,9 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Japan to ship millions more COVID-19 vaccines to Taiwan, Asian neighbours this week", newsSource: "Reuters", newsDate: "July 6, 2020", newsLink: "https://www.reuters.com/world/asia-pacific/japan-says-ship-13-mln-more-astrazeneca-covid-19-vaccines-taiwan-2021-07-06/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Germany to ease Covid travel restrictions on UK travellers from Wednesday", newsSource: "Guardian", newsDate: "July 6, 2020", newsLink: "https://www.theguardian.com/world/2021/jul/06/germany-and-uk-to-ease-covid-travel-restrictions-from-wednesday"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Destroyer and teacher: Managing the masses during the 1918-1919 influenza pandemic", newsSource: "US National Libray of Medicine", newsDate: "July 6, 2020", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/20568568/"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "2021 Trafficking in Persons Report", newsSource: "U.S. Department of State", newsDate: "July 6, 2020", newsLink: "https://www.state.gov/reports/2021-trafficking-in-persons-report/"})    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "2021 Trafficking in Persons Report", newsSource: "U.S. Department of State", newsDate: "July 6, 2020", newsLink: "https://www.state.gov/reports/2021-trafficking-in-persons-report/"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Prevalence of Symptoms More Than Seven Months After Diagnosis of Symptomatic COVID-19 in an Outpatient Setting", newsSource: "ACP Journals", newsDate: "July 6, 2020", newsLink: "https://doi.org/10.7326/M21-0878"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "A selective sweep in the Spike gene has driven SARS-CoV-2 human adaptation", newsSource: "Cell", newsDate: "July 6, 2020", newsLink: "https://doi.org/10.1016/j.cell.2021.07.007"})    
    ); 
  }
 }
