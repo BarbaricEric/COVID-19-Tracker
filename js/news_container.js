@@ -553,7 +553,10 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 neutralizing antibodies: Longevity, breadth, and evasion by emerging viral variants", newsSource: "PLOS", newsDate: "July 6, 2021", newsLink: "https://doi.org/10.1371/journal.pmed.1003656"}),     
          e(NewsList, {newsType: "Media News", newsTitle: "Their neighbors called covid-19 a hoax. Can these ICU nurses forgive them?", newsSource: "Washington Post", newsDate: "July 6, 2021", newsLink: "https://www.washingtonpost.com/dc-md-va/2021/07/06/appalachian-covid-deniers-nurses-virginia/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Biden Calls for Door-to-Door Vaccine Push; Experts Say More Is Needed", newsSource: "NY Times", newsDate: "July 6, 2021", newsLink: "https://www.nytimes.com/2021/07/06/us/politics/biden-vaccines.html?"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Mounting evidence suggests Sputnik COVID vaccine is safe and effective", newsSource: "Nature", newsDate: "July 6, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01813-2"}),  
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Mounting evidence suggests Sputnik COVID vaccine is safe and effective", newsSource: "Nature", newsDate: "July 6, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01813-2"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Assessment of Prolonged Physiological and Behavioral Changes Associated With COVID-19 Infection", newsSource: "Jama Network", newsDate: "July 7, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.15959"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "From Wuhan to Paris to Milan, the search for ‘patient zero’", newsSource: "Washington Post", newsDate: "July 7, 2021", newsLink: "https://www.washingtonpost.com/world/asia_pacific/covid-pandemic-origin-wuhan-lab/2021/07/07/41fbbf9e-d560-11eb-b39f-05a2d776b1f4_story.html"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "COVID and the brain: researchers zero in on how damage occurs", newsSource: "Nature", newsDate: "July 7, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01693-6"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Coronavirus (COVID-19) Infection Survey, antibody and vaccination data, UK: 7 July 2021", newsSource: "Office of National Statistics", newsDate: "July 7, 2021", newsLink: "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronaviruscovid19infectionsurveyantibodyandvaccinationdatafortheuk/7july2021"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Effectiveness of an Inactivated SARS-CoV-2 Vaccine in Chile", newsSource: "New England Journal of Medicine", newsDate: "July 7, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMoa2107715"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Mass infection is not an option: we must do more to protect our young", newsSource: "Lancet", newsDate: "July 7, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)01589-0"}),
@@ -569,7 +572,18 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Oxford drugs firm gains $1.5m Gates grant for Covid-19 therapy", newsSource: "Guardian", newsDate: "July 8, 2021", newsLink: "https://www.theguardian.com/business/2021/jul/08/oxford-drugs-firm-gains-15m-gates-grant-for-covid-19-therapy"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "U.S. heading for ‘dangerous fall’ with surge in delta Covid cases and return of indoor mask mandates", newsSource: "CNBC", newsDate: "July 8, 2021", newsLink: "https://www.cnbc.com/2021/07/08/us-heading-for-dangerous-fall-with-surge-in-delta-covid-cases-and-return-of-indoor-mask-mandates.html"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Will COVID become a disease of the young?", newsSource: "Nature", newsDate: "July 8, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01862-7"}),
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Reduced sensitivity of SARS-CoV-2 variant Delta to antibody neutralization", newsSource: "Nature", newsDate: "July 8, 2021", newsLink: "https://doi.org/10.1038/s41586-021-03777-9"})    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Reduced sensitivity of SARS-CoV-2 variant Delta to antibody neutralization", newsSource: "Nature", newsDate: "July 8, 2021", newsLink: "https://doi.org/10.1038/s41586-021-03777-9"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Asymptomatic and Symptomatic COVID-19 Infections Among Health Care Personnel Before and After Vaccination", newsSource: "Jama Network", newsDate: "July 8, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.15980"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "The quest to find genes that drive severe COVID", newsSource: "Nature", newsDate: "July 8, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01827-w"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Fully vaccinated people don't need Covid boosters, U.S. health agencies say", newsSource: "NBC News", newsDate: "July 8, 2021", newsLink: "https://www.nbcnews.com/health/health-news/fully-vaccinated-people-don-t-need-covid-boosters-u-s-n1273435"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "In Children, Risk of Covid-19 Death or Serious Illness Remains Extremely Low, New Studies Find", newsSource: "Wall Street Journal", newsDate: "July 8, 2021", newsLink: "https://www.wsj.com/articles/in-children-risk-of-covid-19-death-or-serious-illness-remain-extremely-low-new-studies-find-11625785260"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Unvaccinated hospitalized patients say they regret not getting the shot", newsSource: "NBC News", newsDate: "July 8, 2021", newsLink: "https://www.nbcnews.com/health/health-news/unvaccinated-hospitalized-patients-say-they-regret-not-getting-shot-n1273342"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "New Zealand children falling ill in high numbers due to Covid ‘immunity debt’", newsSource: "Guardian", newsDate: "July 8, 2021", newsLink: "https://www.theguardian.com/world/2021/jul/08/new-zealand-children-falling-ill-in-high-numbers-due-to-covid-immunity-debt"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "U.S. vaccination campaign prevented up to 279,000 COVID-19 deaths", newsSource: "Yale News", newsDate: "July 8, 2021", newsLink: "https://news.yale.edu/2021/07/08/us-vaccination-campaign-prevented-279000-covid-19-deaths"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Efficacy and safety of an inactivated whole-virion SARS-CoV-2 vaccine (CoronaVac): interim results of a double-blind, randomised, placebo-controlled, phase 3 trial in Turkey", newsSource: "Lancet", newsDate: "July 8, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)01429-X"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Pfizer and BioNTech Provide Update on Booster Program in Light of the Delta-Variant", newsSource: "Pfizer and BioNTech", newsDate: "July 8, 2021", newsLink: "https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-provide-update-booster-program-light-delta"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Federal government to roll out vaccine ad campaign, but dose numbers remain opaque", newsSource: "Guardian", newsDate: "July 9, 2021", newsLink: "https://www.theguardian.com/australia-news/2021/jul/09/covid-vaccination-to-be-mandatory-for-australias-aged-care-workers-scott-morrison-says"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "CDC says students vaccinated against the coronavirus can go maskless in fall", newsSource: "Washington Post", newsDate: "July 9, 2021", newsLink: "https://www.washingtonpost.com/local/education/cdc-guidelines-school-masks-k12/2021/07/09/6769a890-df56-11eb-9f54-7eee10b5fcd2_story.html"})    
    ); 
  }
 }
@@ -577,16 +591,16 @@ class NewsApp extends React.Component {
 document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
   e(NewsApp), 
-  //e(Welcome, {name: "Person"}), e(NewsList, {newsType: "Non Media News", newsTitle: "", newsSource: "", newsDate: "June , 2021", newsLink: ""}),
+  //e(Welcome, {name: "Person"}), e(NewsList, {newsType: "Non Media News", newsTitle: "", newsSource: "", newsDate: "July , 2021", newsLink: ""}),
   document.querySelector('#article-main-june2021')
   );
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 7/4/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 7/7/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 7/4/2021";
+    modernaUpdate.innerHTML = "Last Updated: 7/7/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 7/4/2021";
+    jessenUpdate.innerHTML = "Last Updated: 7/7/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
