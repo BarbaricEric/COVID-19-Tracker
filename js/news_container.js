@@ -527,6 +527,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Efficacy of Portable Air Cleaners and Masking for Reducing Indoor Exposure to Simulated Exhaled SARS-CoV-2 Aerosols — United States, 2021", newsSource: "CDC", newsDate: "July 2, 2021", newsLink: "http://dx.doi.org/10.15585/mmwr.mm7027e1"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Some Vaccinated People Are Dying of Covid-19. Here’s Why Scientists Aren’t Surprised.", newsSource: "Wall Street Journal", newsDate: "July 2, 2021", newsLink: "https://www.wsj.com/articles/some-vaccinated-people-are-dying-of-covid-19-heres-why-scientists-arent-surprised-11625227200"}),
          e(NewsList, {newsType: "Media News", newsTitle: "15 million people in the U.S. have missed their second dose of the coronavirus vaccine, CDC says", newsSource: "Washington Post", newsDate: "July 2, 2021", newsLink: "https://www.washingtonpost.com/health/2021/07/02/missed-second-dose-covid19-vaccine/"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Transparent communication about negative features of COVID-19 vaccines decreases acceptance but increases trust", newsSource: "PNAS", newsDate: "July 2, 2021", newsLink: "https://doi.org/10.1073/pnas.2024597118"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Prepare for mandatory COVID vaccines in September, Army tells commands", newsSource: "Army Times", newsDate: "July 2, 2021", newsLink: "https://www.armytimes.com/news/pentagon-congress/2021/07/01/prepare-for-mandatory-covid-vaccines-in-september-army-tells-commands/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Dr. Scott Gottlieb says Fourth of July weekend gatherings present a low Covid risk for most Americans", newsSource: "CNBC", newsDate: "July 2, 2021", newsLink: "https://www.cnbc.com/2021/07/02/covid-risk-low-for-most-americans-to-gather-over-fourth-of-july-weekend-gottlieb-says.html"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Mobility restrictions were associated with reductions in COVID-19 incidence early in the pandemic: evidence from a real-time evaluation in 34 countries", newsSource: "Nature", newsDate: "July 2, 2021", newsLink: "https://doi.org/10.1038/s41598-021-92766-z"}),
@@ -613,7 +614,14 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Virus variants threaten global recovery, G20 warns", newsSource: "Reuters", newsDate: "July 11, 2021", newsLink: "https://www.reuters.com/business/finance/g20-signs-off-tax-crackdown-warns-virus-variants-2021-07-10/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Ugandan minister blames west for Covid vaccine shortage", newsSource: "Guardian", newsDate: "July 11, 2021", newsLink: "https://www.theguardian.com/world/2021/jul/11/ugandan-minister-blames-west-for-countrys-covid-vaccine-shortage"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Fauci Criticizes Partisan Gap for Holding Back Vaccinations", newsSource: "Bloomberg", newsDate: "July 11, 2021", newsLink: "https://www.bloomberg.com/news/articles/2021-07-11/fauci-criticizes-partisan-gap-for-holding-back-covid-vaccination"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "The Power of Local Celebrities in the Fight against Vaccine Hesitancy", newsSource: "Scientific American", newsDate: "July 11, 2021", newsLink: "https://www.scientificamerican.com/article/the-power-of-local-celebrities-in-the-fight-against-vaccine-hesitancy/"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "The Power of Local Celebrities in the Fight against Vaccine Hesitancy", newsSource: "Scientific American", newsDate: "July 11, 2021", newsLink: "https://www.scientificamerican.com/article/the-power-of-local-celebrities-in-the-fight-against-vaccine-hesitancy/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "England to lift last virus restrictions on July 19", newsSource: "AP News", newsDate: "July 12, 2021", newsLink: "https://apnews.com/article/europe-business-health-government-and-politics-coronavirus-pandemic-3776cfdb1c180720b9ea000a2c65618b"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "Lack of COVID awareness at Euro final 'devastating'", newsSource: "Reuters", newsDate: "July 12, 2021", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/lack-covid-awareness-euro-final-devastating-who-2021-07-12/"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "Rare case shows it’s possible to have two Covid variants at the same time, experts say", newsSource: "CNBC", newsDate: "July 12, 2021", newsLink: "https://www.cnbc.com/2021/07/12/belgian-woman-infected-with-two-covid-variants-at-the-same-time.html"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "New Coronavirus Variants Seen as Too Contagious for Hotel Quarantines", newsSource: "Wall Street Journal", newsDate: "July 12, 2021", newsLink: "https://www.wsj.com/articles/new-variants-seen-as-too-contagious-for-hotel-quarantines-11626095999"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "Pfizer, BioNTech to meet with feds over emergency OK for COVID-19 booster shot", newsSource: "UPI", newsDate: "July 12, 2021", newsLink: "https://www.upi.com/Top_News/US/2021/07/12/pfizer-covid-19-vaccine-booster-shot/2341626093321/"}), 
+         e(NewsList, {newsType: "Media News", newsTitle: "Experts warn full Covid-19 vaccine approval is no quick fix for hesitancy", newsSource: "STAT News", newsDate: "July 12, 2021", newsLink: "https://www.statnews.com/2021/07/12/experts-warn-full-covid-19-vaccine-approval-is-no-quick-fix-for-hesitancy/"}),    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "10 Million Doses of mRNA-based COVID-19 Vaccine to be supplied to Taiwan Region", newsSource: "Pfizer and BioNTech", newsDate: "July 12, 2021", newsLink: "https://investors.biontech.de/news-releases/news-release-details/10-million-doses-mrna-based-covid-19-vaccine-be-supplied-taiwan"})    
    ); 
  }
 }
@@ -627,10 +635,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 7/7/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 7/11/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 7/7/2021";
+    modernaUpdate.innerHTML = "Last Updated: 7/11/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 7/7/2021";
+    jessenUpdate.innerHTML = "Last Updated: 7/11/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
