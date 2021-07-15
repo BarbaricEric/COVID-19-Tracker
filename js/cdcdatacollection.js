@@ -35,7 +35,7 @@
    const distNum = document.querySelector(".distribute-num")
    const event = new Date(data[0].date)
    distNum.style.cssText = "color: red; font-size:46px";
-   distNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
+   distNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
   });
 
 //US Fully Vaccinated Count from CDC
