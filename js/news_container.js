@@ -63,6 +63,15 @@ class NewsList extends React.Component {
   }
 }
 
+
+class September2020NewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Chest Computed Tomography Findings in Asymptomatic Patients with COVID-19", newsSource: "US National Library of Medicine", newsDate: "September 7, 2020", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7573893/"})      
+         ); 
+ }
+}
+
 class October2020NewsApp extends React.Component {
  render() {
       return e("div", null, 
@@ -80,6 +89,14 @@ class November2020NewsApp extends React.Component {
          ); 
  }
 } 
+
+class January2021NewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Maculopapular skin eruptions associated with Covid-19: A systematic review", newsSource: "Wiley Online Library", newsDate: "September 22, 2021", newsLink: "https://doi.org/10.1111/dth.14788"})      
+         ); 
+ }
+}
 
 class February2021NewsApp extends React.Component {
  render() {
@@ -562,6 +579,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Their neighbors called covid-19 a hoax. Can these ICU nurses forgive them?", newsSource: "Washington Post", newsDate: "July 6, 2021", newsLink: "https://www.washingtonpost.com/dc-md-va/2021/07/06/appalachian-covid-deniers-nurses-virginia/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Biden Calls for Door-to-Door Vaccine Push; Experts Say More Is Needed", newsSource: "NY Times", newsDate: "July 6, 2021", newsLink: "https://www.nytimes.com/2021/07/06/us/politics/biden-vaccines.html?"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Mounting evidence suggests Sputnik COVID vaccine is safe and effective", newsSource: "Nature", newsDate: "July 6, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01813-2"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "BNT162b2 vaccine breakthrough: clinical characteristics of 152 fully-vaccinated hospitalized COVID-19 patients in Israel", newsSource: "Lancet", newsDate: "July 6, 2021", newsLink: "https://doi.org/10.1016/j.cmi.2021.06.036"}),    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Decreased infectivity following BNT162b2 vaccination: A prospective cohort study in Israel", newsSource: "Lancet", newsDate: "July 7, 2021", newsLink: "https://doi.org/10.1016/j.lanepe.2021.100150"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Assessment of Prolonged Physiological and Behavioral Changes Associated With COVID-19 Infection", newsSource: "Jama Network", newsDate: "July 7, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.15959"}),
          e(NewsList, {newsType: "Media News", newsTitle: "From Wuhan to Paris to Milan, the search for ‘patient zero’", newsSource: "Washington Post", newsDate: "July 7, 2021", newsLink: "https://www.washingtonpost.com/world/asia_pacific/covid-pandemic-origin-wuhan-lab/2021/07/07/41fbbf9e-d560-11eb-b39f-05a2d776b1f4_story.html"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "COVID and the brain: researchers zero in on how damage occurs", newsSource: "Nature", newsDate: "July 7, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01693-6"}),    
@@ -666,11 +685,15 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "DOJ: Naturopathic physician sold fake COVID-19 vaccine cards", newsSource: "AP News", newsDate: "July 14, 2021", newsLink: "https://apnews.com/article/health-government-and-politics-coronavirus-pandemic-coronavirus-vaccine-b204c0717e99ffbe03cebb2d4a01ff55"}),
          e(NewsList, {newsType: "Media News", newsTitle: "In Athens, thousands rally against COVID-19 vaccinations", newsSource: "Reuters", newsDate: "July 14, 2021", newsLink: "https://www.reuters.com/world/europe/athens-thousands-rally-against-covid-19-vaccinations-2021-07-14/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Spain’s top court rules pandemic lockdown unconstitutional", newsSource: "AP News", newsDate: "July 14, 2021", newsLink: "https://apnews.com/article/europe-business-health-government-and-politics-courts-a0a36ebadb24600e122e2f1fb035011c"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Neurological manifestations of SARS-CoV-2 infection in hospitalised children and adolescents in the UK: a prospective national cohort study", newsSource: "Lancet", newsDate: "July 14, 2021", newsLink: "https://doi.org/10.1016/S2352-4642(21)00193-0"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Durable Humoral and Cellular Immune Responses 8 Months after Ad26.COV2.S Vaccination", newsSource: "New England Journal of Medicine", newsDate: "July 14, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMc2108829"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Severe COVID-19 Is Characterized by an Impaired Type I Interferon Response and Elevated Levels of Arginase Producing Granulocytic Myeloid Derived Suppressor Cells", newsSource: "Frontiers", newsDate: "July 14, 2021", newsLink: "https://doi.org/10.3389/fimmu.2021.695972"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "The WHO's Chief Says It Was Premature To Rule Out A Lab Leak As The Pandemic's Origin", newsSource: "NPR", newsDate: "July 15, 2021", newsLink: "https://www.npr.org/2021/07/15/1016436749/who-chief-wuhan-lab-covid-19-origin-premature-tedros"}),
          e(NewsList, {newsType: "Media News", newsTitle: "UK doctors call for flu testing as Covid threatens to coincide with influenza epidemic", newsSource: "CNBC", newsDate: "July 15, 2021", newsLink: "https://www.cnbc.com/2021/07/15/uk-drs-call-for-flu-testing-ahead-of-covid-third-wave.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Sydney hospitals stretched to ‘the brink’ as Covid crisis sidelines medical staff", newsSource: "Guardian", newsDate: "July 15, 2021", newsLink: "https://www.theguardian.com/australia-news/2021/jul/15/sydney-hospitals-stretched-to-the-brink-as-covid-crisis-sidelines-medical-staff"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "The U.S. Surgeon General Is Calling COVID-19 Misinformation An 'Urgent Threat'", newsSource: "NPR", newsDate: "July 15, 2021", newsLink: "https://www.npr.org/sections/health-shots/2021/07/15/1016013826/the-u-s-surgeon-general-is-calling-covid-19-misinformation-an-urgent-threat"}), 
-         e(NewsList, {newsType: "Media News", newsTitle: "Australian government scales back supply projections for AstraZeneca Covid-19 vaccine", newsSource: "Guardian", newsDate: "July 15, 2021", newsLink: "https://www.theguardian.com/society/2021/jul/15/australian-government-scales-back-supply-projections-for-astrazeneca-covid-19-vaccine?CMP=Share_iOSApp_Other"})    
+         e(NewsList, {newsType: "Media News", newsTitle: "Australian government scales back supply projections for AstraZeneca Covid-19 vaccine", newsSource: "Guardian", newsDate: "July 15, 2021", newsLink: "https://www.theguardian.com/society/2021/jul/15/australian-government-scales-back-supply-projections-for-astrazeneca-covid-19-vaccine"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Characterizing long COVID in an international cohort: 7 months of symptoms and their impact", newsSource: "Lancet", newsDate: "July 15, 2021", newsLink: "https://doi.org/10.1016/j.eclinm.2021.101019"}),    
    ); 
  }
 }
