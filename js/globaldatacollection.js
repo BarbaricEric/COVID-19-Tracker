@@ -368,9 +368,17 @@ async function getCountryCountFromCovidApi() {
    dkcaseConfirm.textContent = addCommaDecimal(data.Countries[46].TotalConfirmed);
    dkcaseDeath.textContent = addCommaDecimal(data.Countries[46].TotalDeaths);
    dkcurDate.textContent = new Date(data.Countries[46].Date).toString().substring(0,15);
+   const country191 = document.querySelector('.country191');
+   const CaseConfirm191 = document.querySelector('.CaseConfirm191');
+   const CaseDeath191 = document.querySelector('.CaseDeath191');
+   const Date191 = document.querySelector('.Date191');
+   country191.textContent = 'data.Countries[191].Country'
+   CaseConfirm191.textContent = 'addCommaDecimal(data.Countries[191].TotalConfirmed)' + '(' + 'addCommaDecimal(data.Countries[191].NewConfirmed)' +')'
+   CaseDeath191.textContent = 'addCommaDecimal(data.Countries[191].TotalDeaths)' + '(' + 'addCommaDecimal(data.Countries[191].NewDeaths)' +')'
+   Date191.textContent = new Date(data.Countries[191].Date).toString().substring(0,15)    
   });
 
-   const awCaseConfirm = document.querySelector('.awCaseConfirm');
+   /*const awCaseConfirm = document.querySelector('.awCaseConfirm');
    const awCaseDeath = document.querySelector('.awCaseDeath');
    const awDate = document.querySelector('.awDate');
    awCaseConfirm.textContent = 'NA'
@@ -1970,7 +1978,7 @@ await fetch('https://covid19-api.org/api/status/zw').then(response => response.j
    caseDeath.textContent = addComma(data.deaths);
    curDate.textContent = new Date(data.last_update).toString().substring(0,15); 
   });
-}
+}*/
 
 getCountryCountFromCovidApi();
 
