@@ -102,6 +102,7 @@ class January2021NewsApp extends React.Component {
 class February2021NewsApp extends React.Component {
  render() {
       return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Aerosol emission of adolescents voices during speaking, singing and shouting", newsSource: "PLOS", newsDate: "February 10, 2021", newsLink: "https://doi.org/10.1371/journal.pone.0246819"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Dissecting lipid metabolism alterations in SARS-CoV-2", newsSource: "US National Library of Medicine", newsDate: "February 10, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7869689/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "First Month of COVID-19 Vaccine Safety Monitoring — United States, December 14, 2020–January 13, 2021", newsSource: "CDC", newsDate: "February 19, 2021", newsLink: "http://dx.doi.org/10.15585/mmwr.mm7008e3"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Proxalutamide Significantly Accelerates Viral Clearance and Reduces Time to Clinical Remission in Patients with Mild to Moderate COVID-19: Results from a Randomized, Double-Blinded, Placebo-Controlled Trial", newsSource: "US National Library of Medicine", newsDate: "February 22, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7899267/"})      
@@ -750,6 +751,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Notice of Retraction. Walach H, et al. Experimental Assessment of Carbon Dioxide Content in Inhaled Air With or Without Face Masks in Healthy Children: A Randomized Clinical Trial. JAMA Pediatr. Published online June 30, 2021.", newsSource: "Jama Network", newsDate: "July 16, 2021", newsLink: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2782288"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Characterisation of in-hospital complications associated with COVID-19 using the ISARIC WHO Clinical Characterisation Protocol UK: a prospective, multicentre cohort study", newsSource: "Lancet", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)00799-6"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Platelet activation in critically ill COVID-19 patients", newsSource: "Springer", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.1186/s13613-021-00899-1"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Antibody Response to SARS-CoV-2 is Associated with Long-term Clinical Outcome in Patients with COVID-19: a Longitudinal Study", newsSource: "Springer", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.1007/s10875-021-01083-7"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Desensitization to Fear-Inducing COVID-19 Health News on Twitter: Observational Study", newsSource: "JMIR Publications", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.2196/26876"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Unvaccinated could be breeding ground for Covid variants, US officials fear", newsSource: "Guardian", newsDate: "July 17, 2021", newsLink: "https://www.theguardian.com/world/2021/jul/17/unvaccinated-coronavirus-covid-variants-us"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "WHO chief sharpens call for China to further help probe into origin of pandemic", newsSource: "Science Magazine", newsDate: "July 17, 2021", newsLink: "https://www.sciencemag.org/news/2021/07/who-chief-sharpens-call-china-further-help-probe-origin-pandemic"}),
@@ -779,13 +781,16 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Covid vaccine certificates to be compulsory for crowded venues in England", newsSource: "Guardian", newsDate: "July 19, 2021", newsLink: "https://www.theguardian.com/world/2021/jul/19/covid-certificates-to-be-compulsory-for-crowded-venues-in-england"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Statistics show the stark risks of not getting vaccinated against COVID-19", newsSource: "ABC News", newsDate: "July 19, 2021", newsLink: "https://abcnews.go.com/Health/statistics-show-risks-vaccinated-covid-19/story?id=78845627"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Going further than CDC, pediatricians group recommends masks in schools even for the vaccinated", newsSource: "Washington Post", newsDate: "July 19, 2021", newsLink: "https://www.washingtonpost.com/health/2021/07/19/aap-mask-schools-vaccination/"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Gut Microbiota Diversity and C-Reactive Protein Are Predictors of Disease Severity in COVID-19 Patients", newsSource: "Frontiers", newsDate: "July 19, 2021", newsLink: "https://doi.org/10.3389/fmicb.2021.705020"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Nearly 120,000 children in US have lost a primary caregiver to COVID-19: Internal CDC data", newsSource: "ABC News", newsDate: "July 20, 2021", newsLink: "https://abcnews.go.com/Health/120000-children-us-lost-primary-caregiver-covid-19/story?id=78931426"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "WHO chief says all must play part to beat Covid in Olympics message", newsSource: "NBC News", newsDate: "July 20, 2021", newsLink: "https://www.nbcnews.com/news/world/who-chief-says-all-must-play-part-beat-covid-olympics-n1274452"}),     
          e(NewsList, {newsType: "Media News", newsTitle: "Vaccine mandates more likely once FDA grants full approvals, health experts say", newsSource: "NBC News", newsDate: "July 20, 2021", newsLink: "https://www.nbcnews.com/politics/white-house/vaccine-mandates-more-likely-once-fda-grants-full-approvals-health-n1274288"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Three New Estimates of India’s All-Cause Excess Mortality during the COVID-19 Pandemic", newsSource: "Center for Global Development", newsDate: "July 20, 2021", newsLink: "https://www.cgdev.org/publication/three-new-estimates-indias-all-cause-excess-mortality-during-covid-19-pandemic"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "'If anybody is lying here, senator, it is you,’ Fauci tells Sen. Paul in heated exchange at Senate hearing", newsSource: "CNBC", newsDate: "July 20, 2021", newsLink: "https://www.cnbc.com/2021/07/20/if-anybody-is-lying-here-senator-it-is-you-fauci-tells-sen-paul-in-heated-exchange-at-senate-hearing.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "States are sitting on millions of surplus Covid-19 vaccine doses as expiration dates approach", newsSource: "STAT News", newsDate: "July 20, 2021", newsLink: "https://www.statnews.com/2021/07/20/states-are-sitting-on-millions-of-surplus-covid-19-vaccine-doses-as-expiration-dates-approach/"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "India’s pandemic death toll could be in the millions", newsSource: "AP News", newsDate: "July 20, 2021", newsLink: "https://apnews.com/article/business-science-health-india-pandemics-334c326d86efa73a0631bf7cb6e3f92e"})    
+         e(NewsList, {newsType: "Media News", newsTitle: "India’s pandemic death toll could be in the millions", newsSource: "AP News", newsDate: "July 20, 2021", newsLink: "https://apnews.com/article/business-science-health-india-pandemics-334c326d86efa73a0631bf7cb6e3f92e"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 Vaccine Effectiveness in a High-Risk National Population in a Real-World Setting", newsSource: "ACP Journals", newsDate: "July 20, 2021", newsLink: "https://doi.org/10.7326/M21-1577"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Evolutionary Tracking of SARS-CoV-2 Genetic Variants Highlights an Intricate Balance of Stabilizing and Destabilizing Mutations", newsSource: "ASM Journals", newsDate: "July 20, 2021", newsLink: "https://doi.org/10.1128/mBio.01188-21"})    
    ); 
  }
 }
@@ -799,10 +804,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 7/15/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 7/19/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 7/15/2021";
+    modernaUpdate.innerHTML = "Last Updated: 7/19/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 7/15/2021";
+    jessenUpdate.innerHTML = "Last Updated: 7/19/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
