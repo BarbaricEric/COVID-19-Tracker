@@ -755,6 +755,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Notice of Retraction. Walach H, et al. Experimental Assessment of Carbon Dioxide Content in Inhaled Air With or Without Face Masks in Healthy Children: A Randomized Clinical Trial. JAMA Pediatr. Published online June 30, 2021.", newsSource: "Jama Network", newsDate: "July 16, 2021", newsLink: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/2782288"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Characterisation of in-hospital complications associated with COVID-19 using the ISARIC WHO Clinical Characterisation Protocol UK: a prospective, multicentre cohort study", newsSource: "Lancet", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)00799-6"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Platelet activation in critically ill COVID-19 patients", newsSource: "Springer", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.1186/s13613-021-00899-1"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "A multi-center phase II randomized clinical trial of losartan on symptomatic outpatients with COVID-19", newsSource: "Lancet", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.1016/j.eclinm.2021.100957"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Antibody Response to SARS-CoV-2 is Associated with Long-term Clinical Outcome in Patients with COVID-19: a Longitudinal Study", newsSource: "Springer", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.1007/s10875-021-01083-7"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Desensitization to Fear-Inducing COVID-19 Health News on Twitter: Observational Study", newsSource: "JMIR Publications", newsDate: "July 17, 2021", newsLink: "https://doi.org/10.2196/26876"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Unvaccinated could be breeding ground for Covid variants, US officials fear", newsSource: "Guardian", newsDate: "July 17, 2021", newsLink: "https://www.theguardian.com/world/2021/jul/17/unvaccinated-coronavirus-covid-variants-us"}),
@@ -802,7 +803,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Pfizer and BioNTech Announce Collaboration with Biovac to Manufacture and Distribute COVID-19 Vaccine Doses within Africa", newsSource: "Pfizer and BioNTech", newsDate: "July 21, 2021", newsLink: "https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-announce-collaboration-biovac-manufacture"}),
          e(NewsList, {newsType: "Media News", newsTitle: "WHO chief warns that the world is going into the ‘early stages of another wave’", newsSource: "CNBC", newsDate: "July 21, 2021", newsLink: "https://www.cnbc.com/2021/07/21/tokyo-olympics-who-director-general-addresses-ioc.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "WHO leader says virus risk inevitable at Tokyo Olympics", newsSource: "AP News", newsDate: "July 21, 2021", newsLink: "https://apnews.com/article/2020-tokyo-olympics-sports-health-tokyo-coronavirus-pandemic-3f14dab963daec8932f120bcdc9c3742"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "Growing number of Republicans urge vaccinations amid delta surge", newsSource: "Washington Post", newsDate: "July 21, 2021", newsLink: "https://www.washingtonpost.com/politics/growing-number-of-republicans-urge-vaccinations-amid-delta-surge/2021/07/20/52a06e9c-e999-11eb-8950-d73b3e93ff7f_story.html"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "Growing number of Republicans urge vaccinations amid delta surge", newsSource: "Washington Post", newsDate: "July 21, 2021", newsLink: "https://www.washingtonpost.com/politics/growing-number-of-republicans-urge-vaccinations-amid-delta-surge/2021/07/20/52a06e9c-e999-11eb-8950-d73b3e93ff7f_story.html"})   
    ); 
  }
 }
@@ -816,10 +817,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 7/19/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 7/20/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 7/19/2021";
+    modernaUpdate.innerHTML = "Last Updated: 7/20/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 7/19/2021";
+    jessenUpdate.innerHTML = "Last Updated: 7/20/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
