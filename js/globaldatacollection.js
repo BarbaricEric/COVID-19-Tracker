@@ -368,6 +368,14 @@ async function getCountryCountFromCovidApi() {
    dkcaseConfirm.textContent = addCommaDecimal(data.Countries[46].TotalConfirmed);
    dkcaseDeath.textContent = addCommaDecimal(data.Countries[46].TotalDeaths);
    dkcurDate.textContent = new Date(data.Countries[46].Date).toString().substring(0,15);
+   const country190 = document.querySelector('.country190');
+   const caseConfirm190 = document.querySelector('.CaseConfirm190');
+   const caseDeath190 = document.querySelector('.CaseDeath190');
+   const date190 = document.querySelector('.Date190');
+   country190.textContent = data.Countries[190].Country
+   caseConfirm190.textContent = addCommaDecimal(data.Countries[190].TotalConfirmed) + ' (' + addCommaDecimal(data.Countries[190].NewConfirmed) +')'
+   caseDeath190.textContent = addCommaDecimal(data.Countries[190].TotalDeaths) + ' (' + addCommaDecimal(data.Countries[190].NewDeaths) +')'
+   date190.textContent = new Date(data.Countries[190].Date).toString().substring(0,15) 
    const country191 = document.querySelector('.country191');
    const caseConfirm191 = document.querySelector('.CaseConfirm191');
    const caseDeath191 = document.querySelector('.CaseDeath191');
