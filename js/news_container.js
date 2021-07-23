@@ -91,10 +91,19 @@ class November2020NewsApp extends React.Component {
  }
 } 
 
-class January2021NewsApp extends React.Component {
+class December2020NewsApp extends React.Component {
  render() {
       return e("div", null, 
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Maculopapular skin eruptions associated with Covid-19: A systematic review", newsSource: "Wiley Online Library", newsDate: "September 22, 2021", newsLink: "https://doi.org/10.1111/dth.14788"})      
+         e(NewsList, {newsType: "Non Media News", newsTitle: "How does social distancing during COVID-19 affect negative moods and memory?", newsSource: "Taylor Francis Online", newsDate: "December 15, 2020", newsLink: "https://doi.org/10.1080/09658211.2020.1857774"})      
+         ); 
+ }
+}
+
+class January2021NewsApp extends React.Component {
+ render() {
+      return e("div", null,
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Association between physical activity and subjective memory decline triggered by the COVID-19 pandemic: Findings from the PAMPA cohort", newsSource: "US National Library of Medicine", newsDate: "January 2, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7833596/"}),      
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Maculopapular skin eruptions associated with Covid-19: A systematic review", newsSource: "Wiley Online Library", newsDate: "January 22, 2021", newsLink: "https://doi.org/10.1111/dth.14788"})      
          ); 
  }
 }
@@ -869,3 +878,5 @@ const jessenUpdate = document.querySelector('.jessen-update')
     jessenUpdate.innerHTML = "Last Updated: 7/20/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
+
+//https://doi.org/10.1016/S0140-6736(17)31363-6
