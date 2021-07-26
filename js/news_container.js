@@ -142,7 +142,8 @@ class March2021NewsApp extends React.Component {
 class April2021NewsApp extends React.Component {
  render() {
       return e("div", null, 
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Stealth Fluorescence Labeling for Live Microscopy Imaging of mRNA Delivery", newsSource: "ACS Publications", newsDate: "April 2, 2021", newsLink: "https://doi.org/10.1021/jacs.1c00014"})      
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Stealth Fluorescence Labeling for Live Microscopy Imaging of mRNA Delivery", newsSource: "ACS Publications", newsDate: "April 2, 2021", newsLink: "https://doi.org/10.1021/jacs.1c00014"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Anti-intellectualism and the mass public’s response to the COVID-19 pandemic", newsSource: "Nature", newsDate: "April 28, 2021", newsLink: "https://doi.org/10.1038/s41562-021-01112-w"}),      
          ); 
  }
 } 
@@ -810,7 +811,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Statistics show the stark risks of not getting vaccinated against COVID-19", newsSource: "ABC News", newsDate: "July 19, 2021", newsLink: "https://abcnews.go.com/Health/statistics-show-risks-vaccinated-covid-19/story?id=78845627"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Going further than CDC, pediatricians group recommends masks in schools even for the vaccinated", newsSource: "Washington Post", newsDate: "July 19, 2021", newsLink: "https://www.washingtonpost.com/health/2021/07/19/aap-mask-schools-vaccination/"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Gut Microbiota Diversity and C-Reactive Protein Are Predictors of Disease Severity in COVID-19 Patients", newsSource: "Frontiers", newsDate: "July 19, 2021", newsLink: "https://doi.org/10.3389/fmicb.2021.705020"}), 
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Correlations between olfactory psychophysical scores and SARS-CoV-2 viral load in COVID-19 patients", newsSource: "Wiley Online Library", newsDate: "July 19, 2021", newsLink: "https://doi.org/10.1002/lary.29777"}),     
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Correlations between olfactory psychophysical scores and SARS-CoV-2 viral load in COVID-19 patients", newsSource: "Wiley Online Library", newsDate: "July 19, 2021", newsLink: "https://doi.org/10.1002/lary.29777"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "EMA starts rolling review of COVID-19 vaccine Vidprevtyn", newsSource: "European Medicines Agency", newsDate: "July 20, 2021", newsLink: "https://www.ema.europa.eu/en/news/ema-starts-rolling-review-covid-19-vaccine-vidprevtyn"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "JCVI statement on COVID-19 vaccination of children and young people aged 12 to 17 years: 15 July 2021", newsSource: "Government UK", newsDate: "July 19, 2021", newsLink: "https://www.gov.uk/government/publications/covid-19-vaccination-of-children-and-young-people-aged-12-to-17-years-jcvi-statement/jvci-statement-on-covid-19-vaccination-of-children-and-young-people-aged-12-to-17-years-15-july-2021"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Nearly 120,000 children in US have lost a primary caregiver to COVID-19: Internal CDC data", newsSource: "ABC News", newsDate: "July 20, 2021", newsLink: "https://abcnews.go.com/Health/120000-children-us-lost-primary-caregiver-covid-19/story?id=78931426"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "WHO chief says all must play part to beat Covid in Olympics message", newsSource: "NBC News", newsDate: "July 20, 2021", newsLink: "https://www.nbcnews.com/news/world/who-chief-says-all-must-play-part-beat-covid-olympics-n1274452"}),     
@@ -883,10 +885,19 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "A Dutch Rower Competed At The Olympics, Then Tested Positive For Coronavirus", newsSource: "NPR", newsDate: "July 24, 2021", newsLink: "https://www.npr.org/sections/tokyo-olympics-live-updates/2021/07/24/1020101546/dutch-rower-netherlands-tokyo-olympics-coronavirus-finn-florijn"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Under-30s reluctant to take Covid vaccine cite fertility and side-effect concerns", newsSource: "Guardian", newsDate: "July 24, 2021", newsLink: "https://www.theguardian.com/society/2021/jul/24/under-30s-reluctant-to-take-covid-vaccine-cite-fertility-and-side-effect-concerns"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Greater belief in science predicts mask-wearing behavior during COVID-19", newsSource: "Science Direct", newsDate: "July, 2021", newsLink: "https://www.sciencedirect.com/science/article/abs/pii/S0191886921001446"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Disney executives won’t attend CinemaCon in-person as delta Covid variant rages in Las Vegas", newsSource: "CNBC", newsDate: "July 24, 2021", newsLink: "https://www.cnbc.com/2021/07/24/disney-wont-attend-cinemacon-in-person-as-delta-variant-rages-in-las-vegas.html"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Covid-19 Vaccine Scams Hit India as Country Struggles With Immunizations", newsSource: "Wall Street Journal", newsDate: "July 24, 2021", newsLink: "https://www.wsj.com/articles/covid-19-vaccine-scams-hit-india-as-country-struggles-with-immunizations-11627126201"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Clinical Outcomes for Patients With Anosmia 1 Year After COVID-19 Diagnosis", newsSource: "Jama Network", newsDate: "July 24, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.15352"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Why some experts recommend upgrading to N95 masks to help fight the delta variant", newsSource: "Washington Post", newsDate: "July 24, 2021", newsLink: "https://www.washingtonpost.com/lifestyle/wellness/n95-mask-delta-variant-kn95/2021/07/23/ee849e6c-eafe-11eb-97a0-a09d10181e36_story.html"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "‘Seriously ill’ young people in current Covid admissions, expert warns", newsSource: "Guardian", newsDate: "July 25, 2021", newsLink: "https://www.theguardian.com/world/2021/jul/25/seriously-ill-young-people-in-current-covid-admissions-expert-warns"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "Some Americans could need COVID-19 vaccine booster", newsSource: "Reuters", newsDate: "July 25, 2021", newsLink: "https://www.reuters.com/world/us/some-americans-likely-need-covid-19-vaccine-booster-fauci-2021-07-25/"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "Some Americans could need COVID-19 vaccine booster", newsSource: "Reuters", newsDate: "July 25, 2021", newsLink: "https://www.reuters.com/world/us/some-americans-likely-need-covid-19-vaccine-booster-fauci-2021-07-25/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Fauci Floats Tightening Mask Rules Even as Olympics Ease Them", newsSource: "NBC New York", newsDate: "July 25, 2021", newsLink: "https://www.nbcnewyork.com/news/coronavirus/fauci-cdc-actively-considering-changing-mask-guidance-as-covid-cases-soar/3173665/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Sparked by pandemic fallout, homeschooling surges across US", newsSource: "AP News", newsDate: "July 25, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-homeschooling-2f0ac73aa4b9fbfc5f2179103f1a14c4"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "An Alabama mother who lost her son to covid says not getting the vaccine is her biggest regret", newsSource: "Washington Post", newsDate: "July 25, 2021", newsLink: "https://www.washingtonpost.com/health/2021/07/26/covid-vaccine-regrets/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Doctors, nurses and medical groups call for mandatory coronavirus vaccinations for health workers", newsSource: "Washington Post", newsDate: "July 26, 2021", newsLink: "https://www.washingtonpost.com/health/2021/07/26/mandatory-vaccinations-urged-health-workers/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Former Surgeon General Jerome Adams says pandemic is spiraling out of control again because of unvaccinated Americans", newsSource: "CBS News", newsDate: "July 26, 2021", newsLink: "https://www.cbsnews.com/news/covid-pandemic-vaccines-jerome-adams/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "‘I advise everyone to get it’: Covid patients tell of regrets over refusing jab", newsSource: "Guardian", newsDate: "July 26, 2021", newsLink: "https://www.theguardian.com/world/2021/jul/26/covid-patients-tell-of-regrets-over-refusing-jab-vaccine-intensive-care"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19, Inter-household Contact and Mental Well-Being Among Older Adults in the US and the UK", newsSource: "Frontiers", newsDate: "July 26, 2021", newsLink: "https://doi.org/10.3389/fsoc.2021.714626"})    
    ); 
  }
 }
@@ -900,11 +911,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 7/20/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 7/25/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 7/20/2021";
+    modernaUpdate.innerHTML = "Last Updated: 7/25/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 7/20/2021";
+    jessenUpdate.innerHTML = "Last Updated: 7/25/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
 
