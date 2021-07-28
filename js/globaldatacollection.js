@@ -220,16 +220,4 @@ function addCommaDecimal(x) {
     }   
 }
 
-   const determineNull = input => input == undefined ? input = "NA" : input;
-
-function addCountry(x) {
- return 
-   const countryx = document.querySelector('.countryx');
-   const caseConfirmx = document.querySelector('.CaseConfirmx');
-   const caseDeathx = document.querySelector('.CaseDeathx');
-   const datex = document.querySelector('.Datex');
-   countryx.textContent = data.Countries[x].Country
-   caseConfirmx.textContent = addCommaDecimal(data.Countries[x].TotalConfirmed) + ' (' + addCommaDecimal(data.Countries[x].NewConfirmed) +')'
-   caseDeathx.textContent = addCommaDecimal(data.Countries[x].TotalDeaths) + ' (' + addCommaDecimal(data.Countries[x].NewDeaths) +')'
-   datex.textContent = new Date(data.Countries[x].Date).toString().substring(0,15)    
-}
+const determineNull = input => input == undefined ? input = "NA" : input;
