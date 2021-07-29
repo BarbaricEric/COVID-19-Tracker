@@ -63,6 +63,14 @@ class NewsList extends React.Component {
   }
 }
 
+class June2020NewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Non-neuronal expression of SARS-CoV-2 entry genes in the olfactory system suggests mechanisms underlying COVID-19-associated anosmia", newsSource: "Science Magazine", newsDate: "June 18, 2020", newsLink: "https://doi.org/10.1126/sciadv.abc5801"})
+         ); 
+ }
+}
+
 class August2020NewsApp extends React.Component {
  render() {
       return e("div", null, 
