@@ -957,6 +957,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "No evidence of human genome integration of SARS-CoV-2 found by long-read DNA sequencing", newsSource: "Science Direct", newsDate: "July 28, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S221112472100961X"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "An outbreak caused by the SARS-CoV-2 Delta variant (B.1.617.2) in a secondary care hospital in Finland, May 2021", newsSource: "Eurosurveillance", newsDate: "July 28, 2021", newsLink: "https://doi.org/10.2807/1560-7917.ES.2021.26.30.2100636"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Presumed SARS-CoV-2 Viral Particles in the Human Retina of Patients With COVID-19", newsSource: "Jama Network", newsDate: "July 29, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamaophthalmol.2021.2795"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "The Dam Is Breaking on Vaccine Mandates", newsSource: "Wired", newsDate: "July 29, 2021", newsLink: "https://www.wired.com/story/the-dam-is-breaking-on-vaccine-mandates/"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 pseudovirus infectivity and expression of viral entry-related factors ACE2, TMPRSS2, Kim-1 and NRP-1 in human cells from respiratory, urinary, digestive, reproductive and immune systems", newsSource: "Wiley Online Library", newsDate: "July 29, 2021", newsLink: "https://doi.org/10.1002/jmv.27244"}),
          e(NewsList, {newsType: "Media News", newsTitle: "COVID-19 rates a worry as 1 million head for Iowa State Fair", newsSource: "ABC News", newsDate: "July 29, 2021", newsLink: "https://abcnews.go.com/Entertainment/wireStory/covid-19-rates-worry-million-head-iowa-state-79126119"}),
          e(NewsList, {newsType: "Media News", newsTitle: "The CDC needs to make clear: The problem is the unvaccinated", newsSource: "Washington Post", newsDate: "July 29, 2021", newsLink: "https://www.washingtonpost.com/opinions/2021/07/29/leana-wen-cdc-mask-guidance-unvaccinated-problem/"}),
@@ -1010,7 +1011,12 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "How to report misinformation online", newsSource: "WHO", newsDate: "202 - 2021", newsLink: "https://www.who.int/campaigns/connecting-the-world-to-combat-coronavirus/how-to-report-misinformation-online"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Fauci says he expects no new U.S. lockdowns despite surging Delta cases", newsSource: "Reuters", newsDate: "August 1, 2021", newsLink: "https://www.reuters.com/world/us/fauci-predicts-us-will-not-return-lockdowns-despite-delta-variant-risks-2021-08-01/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "FDA Under Pressure to Grant Full Approval to Covid-19 Vaccines", newsSource: "Wall Street Journal", newsDate: "August 1, 2021", newsLink: "https://www.wsj.com/amp/articles/fda-under-pressure-to-grant-full-approval-to-covid-19-vaccines-11627810202"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "French police clash with anti-vaccine demonstrators amid tensions over ‘health pass’ plans", newsSource: "Washington Post", newsDate: "August 1, 2021", newsLink: "https://www.washingtonpost.com/world/2021/07/31/coronavirus-protests-france-vaccine/"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "French police clash with anti-vaccine demonstrators amid tensions over ‘health pass’ plans", newsSource: "Washington Post", newsDate: "August 1, 2021", newsLink: "https://www.washingtonpost.com/world/2021/07/31/coronavirus-protests-france-vaccine/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Pfizer and Moderna raise prices for COVID-19 vaccines in EU", newsSource: "Reuters", newsDate: "August 1, 2021", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/pfizer-moderna-raises-prices-its-covid-19-vaccines-eu-ft-2021-08-01/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Fauci warns 'things are going to get worse' with COVID", newsSource: "ABC News", newsDate: "August 1, 2021", newsLink: "https://abcnews.go.com/Politics/fauci-warns-things-worse-covid/story?id=79192069"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Anti-mask protesters swarmed a St. Louis County council meeting. Then, an attendee tested positive for coronavirus.", newsSource: "Washington Post", newsDate: "August 1, 2021", newsLink: "https://www.washingtonpost.com/nation/2021/08/02/st-louis-mask-covid-positive/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Students Need To Be In Classrooms, With Masks, This Fall, Education Secretary Says", newsSource: "NPR", newsDate: "August 2, 2021", newsLink: "https://www.npr.org/2021/08/02/1022429844/schools-masks-students-in-person-education-secretary-cardona"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "For many, the belated realization that Covid will be ‘a long war’ sparks anger and denial", newsSource: "STAT News", newsDate: "August 2, 2021", newsLink: "https://www.statnews.com/2021/08/02/belated-realization-that-covid-will-be-a-long-war-sparks-anger-denial/"}),    
    ); 
  }
 }
@@ -1018,17 +1024,17 @@ class NewsApp extends React.Component {
 document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
   e(NewsApp), 
-  //e(Welcome, {name: "Person"}), e(NewsList, {newsType: "Non Media News", newsTitle: "", newsSource: "", newsDate: "July , 2021", newsLink: ""}),
+  //e(Welcome, {name: "Person"}), e(NewsList, {newsType: "Non Media News", newsTitle: "", newsSource: "", newsDate: "August , 2021", newsLink: ""}),
   document.querySelector('#article-main-june2021')
   );
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 7/29/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 8/1/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 7/29/2021";
+    modernaUpdate.innerHTML = "Last Updated: 8/1/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 7/29/2021";
+    jessenUpdate.innerHTML = "Last Updated: 8/1/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
 
