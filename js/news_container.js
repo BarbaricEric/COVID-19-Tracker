@@ -192,6 +192,13 @@ class July2021NewsApp extends React.Component {
  }
 }  
 
+class October2021NewsApp extends React.Component {
+ render() {
+      return e("div", null, 
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Melatonin interferes with COVID-19 at several distinct ROS-related steps", newsSource: "Science Direct", newsDate: "October, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S0162013421001938"})      
+         ); 
+ }
+}
 
 class NewsApp extends React.Component {
  render() {
@@ -987,6 +994,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Immune correlates of protection by mRNA-1273 vaccine against SARS-CoV-2 in nonhuman primates", newsSource: "Science Magazine", newsDate: "July 29, 2021", newsLink: "https://doi.org/10.1126/science.abj0299"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Analysis of the specificity of a COVID-19 antigen test in the Slovak mass testing program", newsSource: "PLOS", newsDate: "July 29, 2021", newsLink: "https://doi.org/10.1371/journal.pone.0255267"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Heterologous prime–boost vaccination with ChAdOx1 nCoV-19 and BNT162b2", newsSource: "Lancet", newsDate: "July 29, 2021", newsLink: "https://doi.org/10.1016/S1473-3099(21)00420-5"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Risk of acute myocardial infarction and ischaemic stroke following COVID-19 in Sweden: a self-controlled case series and matched cohort study", newsSource: "Lancet", newsDate: "July 29, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)00896-5"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Post-viral effects of COVID-19 in the olfactory system and their implications", newsSource: "Lancet", newsDate: "July 30, 2021", newsLink: "https://doi.org/10.1016/S1474-4422(21)00182-4"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Mandating COVID-19 Vaccination for Health Care Workers", newsSource: "ACP Journals", newsDate: "July 30, 2021", newsLink: "https://doi.org/10.7326/M21-3150"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Rates of SARS-CoV-2 transmission and vaccination impact the fate of vaccine-resistant strains", newsSource: "Nature", newsDate: "July 30, 2021", newsLink: "https://doi.org/10.1038/s41598-021-95025-3"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Arkansas' Governor Pleads With Residents To Get The COVID-19 Vaccine", newsSource: "NPR", newsDate: "July 30, 2021", newsLink: "https://www.npr.org/2021/07/30/1022642085/arkansas-governor-pleads-with-residents-to-get-the-covid-19-vaccine"}),
