@@ -971,6 +971,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "No evidence of human genome integration of SARS-CoV-2 found by long-read DNA sequencing", newsSource: "Science Direct", newsDate: "July 28, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S221112472100961X"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "An outbreak caused by the SARS-CoV-2 Delta variant (B.1.617.2) in a secondary care hospital in Finland, May 2021", newsSource: "Eurosurveillance", newsDate: "July 28, 2021", newsLink: "https://doi.org/10.2807/1560-7917.ES.2021.26.30.2100636"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Presumed SARS-CoV-2 Viral Particles in the Human Retina of Patients With COVID-19", newsSource: "Jama Network", newsDate: "July 29, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamaophthalmol.2021.2795"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Self-reported Memory Problems 8 Months After COVID-19 Infection", newsSource: "Jama Network", newsDate: "July 29, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.18717"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "The Dam Is Breaking on Vaccine Mandates", newsSource: "Wired", newsDate: "July 29, 2021", newsLink: "https://www.wired.com/story/the-dam-is-breaking-on-vaccine-mandates/"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 pseudovirus infectivity and expression of viral entry-related factors ACE2, TMPRSS2, Kim-1 and NRP-1 in human cells from respiratory, urinary, digestive, reproductive and immune systems", newsSource: "Wiley Online Library", newsDate: "July 29, 2021", newsLink: "https://doi.org/10.1002/jmv.27244"}),
          e(NewsList, {newsType: "Media News", newsTitle: "COVID-19 rates a worry as 1 million head for Iowa State Fair", newsSource: "ABC News", newsDate: "July 29, 2021", newsLink: "https://abcnews.go.com/Entertainment/wireStory/covid-19-rates-worry-million-head-iowa-state-79126119"}),
@@ -1048,6 +1049,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Accelerated COVID-19 vaccine development: milestones, lessons, and prospects", newsSource: "Cell", newsDate: "August 2, 2021", newsLink: "https://doi.org/10.1016/j.immuni.2021.07.017"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "No evidence of SARS-CoV-2 reverse transcription and integration as the origin of chimeric transcripts in patient tissues", newsSource: "PNAS", newsDate: "August 2021", newsLink: "https://doi.org/10.1073/pnas.2109066118"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Behavioral Nudges Increase COVID-19 Vaccinations", newsSource: "Nature", newsDate: "August 2, 2021", newsLink: "https://doi.org/10.1038/s41586-021-03843-2"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Chronic SARS-CoV-2, a Cause of Post-acute COVID-19 Sequelae (Long-COVID)?", newsSource: "Frontiers", newsDate: "August 2, 2021", newsLink: "https://doi.org/10.3389/fmicb.2021.724654"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Myocarditis Following COVID-19 Vaccination", newsSource: "RSNA", newsDate: "August 3, 2021", newsLink: "https://doi.org/10.1148/radiol.2021211766"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Potent neutralizing nanobodies resist convergent circulating variants of SARS-CoV-2 by targeting diverse and conserved epitopes", newsSource: "Nature", newsDate: "August 3, 2021", newsLink: "https://doi.org/10.1038/s41467-021-24963-3"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Evaluation of Three anti-SARS-CoV-2 Serologic Immunoassays for Post-Vaccine Response", newsSource: "Oxford Academics", newsDate: "August 3, 2021", newsLink: "https://doi.org/10.1093/jalm/jfab087"}),
@@ -1075,7 +1077,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Myocarditis and Pericarditis After Vaccination for COVID-19", newsSource: "Jama Network", newsDate: "August 4, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jama.2021.13443"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Subcutaneous REGEN-COV Antibody Combination to Prevent Covid-19", newsSource: "New England Journal of Medicine", newsDate: "August 4, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMoa2109682"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Coronavirus infections three times lower in double vaccinated people - REACT", newsSource: "Imperial College London", newsDate: "August 4, 2021", newsLink: "https://www.imperial.ac.uk/news/227713/coronavirus-infections-three-times-lower-double/"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "Most Unvaccinated Adults Don’t Believe the Vaccines are Very Effective and See the Vaccines as a Greater Health Risk than COVID-19 Itself", newsSource: "KFF", newsDate: "August 4, 2021", newsLink: "https://www.kff.org/coronavirus-covid-19/press-release/most-unvaccinated-adults-dont-believe-the-vaccines-are-very-effective-and-see-the-vaccines-as-a-greater-health-risk-than-covid-19-itself/"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "Most Unvaccinated Adults Don’t Believe the Vaccines are Very Effective and See the Vaccines as a Greater Health Risk than COVID-19 Itself", newsSource: "KFF", newsDate: "August 4, 2021", newsLink: "https://www.kff.org/coronavirus-covid-19/press-release/most-unvaccinated-adults-dont-believe-the-vaccines-are-very-effective-and-see-the-vaccines-as-a-greater-health-risk-than-covid-19-itself/"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Coronavirus (COVID-19) latest insights: Antibodies ", newsSource: "Government UK Office of National Statistic", newsDate: "August 4, 2021", newsLink: "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/articles/coronaviruscovid19latestinsights/antibodies"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 Variants in Patients with Immunosuppression", newsSource: "New England Journal of Medicine", newsDate: "August 5, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMsb2104756"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Delta variant will lead to increase in breakthrough Covid infections among vaccinated, Moderna says", newsSource: "CNBC", newsDate: "August 5, 2021", newsLink: "https://www.cnbc.com/2021/08/05/covid-delta-will-lead-to-increase-in-breakthrough-infections-moderna-says.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Mattel's Barbie Turns Women Of Science, Including COVID Vaccine Developer, Into Dolls", newsSource: "NPR", newsDate: "August 5, 2021", newsLink: "https://www.npr.org/2021/08/05/1024888880/mattels-barbie-turns-women-of-science-including-a-covid-vaccine-developer-into-d"}),
@@ -1099,7 +1102,8 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "DeSantis sticks to hands-off covid approach as Florida hospitalizations hit record high", newsSource: "Washington Post", newsDate: "August 6, 2021", newsLink: "https://www.washingtonpost.com/health/2021/08/06/desantis-florida-coronavirus-surge/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Cash for Vax: Maine town offers $200 to get fully vaccinated", newsSource: "AP News", newsDate: "August 6, 2021", newsLink: "https://apnews.com/article/joe-biden-health-maine-coronavirus-pandemic-f77d3f271999953623e20baa5e8efa14"}),
          e(NewsList, {newsType: "Media News", newsTitle: "U.S. nurses' COVID-19 grief pours out online: 'I just don't want to watch anyone else die'", newsSource: "Reuters", newsDate: "August 6, 2021", newsLink: "https://www.reuters.com/world/us/us-nurses-covid-19-grief-pours-out-online-i-just-dont-want-watch-anyone-else-die-2021-08-06/"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "California to mandate COVID-19 vaccines for health workers", newsSource: "AP News", newsDate: "August 6, 2021", newsLink: "https://apnews.com/article/business-health-california-coronavirus-pandemic-cf83723c62ef658c9f5837beb9f85910"}),             
+         e(NewsList, {newsType: "Media News", newsTitle: "California to mandate COVID-19 vaccines for health workers", newsSource: "AP News", newsDate: "August 6, 2021", newsLink: "https://apnews.com/article/business-health-california-coronavirus-pandemic-cf83723c62ef658c9f5837beb9f85910"}),
+          e(NewsList, {newsType: "Non Media News", newsTitle: "Seven-month kinetics of SARS-CoV-2 antibodies and role of pre-existing antibodies to human coronaviruses", newsSource: "Nature", newsDate: "August 6, 2021", newsLink: "https://doi.org/10.1038/s41467-021-24979-9"}),    
    ); 
  }
 }
@@ -1113,11 +1117,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 8/1/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 8/5/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 8/1/2021";
+    modernaUpdate.innerHTML = "Last Updated: 8/5/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 8/1/2021";
+    jessenUpdate.innerHTML = "Last Updated: 8/5/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
 
