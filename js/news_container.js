@@ -1160,6 +1160,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "More than 50 long-term effects of COVID-19: a systematic review and meta-analysis", newsSource: "Nature", newsDate: "August 9, 2021", newsLink: "https://doi.org/10.1038/s41598-021-95565-8"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Lessons about COVID-19 vaccine hesitancy among minority ethnic people in the UK", newsSource: "Lancet", newsDate: "August 9, 2021", newsLink: "https://doi.org/10.1016/S1473-3099(21)00404-7"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Fake COVID-19 vaccination cards worry college officials", newsSource: "AP News", newsDate: "August 9, 2021", newsLink: "https://apnews.com/article/coronavirus-education-fake-vaccination-cards-8c4ca2b4d54434c2fc022b34087df8cb"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Remember Beta? New data reveal variant’s deadly powers", newsSource: "Nature", newsDate: "August 9, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02177-3"}), 
          e(NewsList, {newsType: "Media News", newsTitle: "‘Worrying’ numbers of pregnant women in intensive care with Covid", newsSource: "Guardian", newsDate: "August 9, 2021", newsLink: "https://www.theguardian.com/world/2021/aug/09/worrying-numbers-of-pregnant-women-in-intensive-care-with-covid"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Two doses of the SARS-CoV-2 BNT162b2 vaccine enhances antibody responses to variants in individuals with prior SARS-CoV-2 infection", newsSource: "Science Magazine", newsDate: "August 10, 2021", newsLink: "https://doi.org/10.1126/scitranslmed.abj0847"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Ravaged by delta outbreak, Southeast Asia shifts away from China's vaccines", newsSource: "Washington Post", newsDate: "August 10, 2021", newsLink: "https://www.washingtonpost.com/world/asia_pacific/covid-vaccines-delta-china-asia/2021/08/10/24d0df60-f664-11eb-a636-18cac59a98dc_story.html"}),
@@ -1178,7 +1179,19 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "Association of Myocarditis With BNT162b2 Messenger RNA COVID-19 Vaccine in a Case Series of Children", newsSource: "Jama Network", newsDate: "August 10, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamacardio.2021.3471"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Fresh U.K. Covid-19 Data Boosts Hopes That Delta Variant Can Be Held in Check", newsSource: "Wall Street Journal", newsDate: "August 11, 2021", newsLink: "https://www.wsj.com/amp/articles/fresh-u-k-covid-19-data-boosts-hopes-that-delta-variant-can-be-held-in-check-11628674201"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "Florida hospitals are overrun as state fights one of the worst Covid outbreaks in the U.S.", newsSource: "CNBC", newsDate: "August 11, 2021", newsLink: "https://www.cnbc.com/2021/08/11/florida-hospitals-are-overrun-as-state-fights-one-of-the-worst-covid-outbreaks-in-the-us-.html"}),    
-         e(NewsList, {newsType: "Media News", newsTitle: "EU looking into new possible side-effects of mRNA COVID-19 shots", newsSource: "Reuters", newsDate: "August 11, 2021", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/eu-drugs-regulator-looking-new-possible-side-effects-mrna-vaccines-2021-08-11/"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "EU looking into new possible side-effects of mRNA COVID-19 shots", newsSource: "Reuters", newsDate: "August 11, 2021", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/eu-drugs-regulator-looking-new-possible-side-effects-mrna-vaccines-2021-08-11/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "New vaccinations have nearly doubled from last month, according to CDC data", newsSource: "CBS News", newsDate: "August 11, 2021", newsLink: "https://www.cbsnews.com/news/covid-vaccine-rate-doubles-cdc-data/"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Vaccinating During Pregnancy Has Become Even More Urgent As ICU Beds Fill Up", newsSource: "NPR", newsDate: "August 11, 2021", newsLink: "https://www.npr.org/sections/health-shots/2021/08/11/1026555595/pregnant-cdc-urges-covid-vaccination-icus-fill-unvaccinated-delta"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Overwhelmed by COVID-19: A day inside a Louisiana hospital", newsSource: "AP News", newsDate: "August 11, 2021", newsLink: "https://apnews.com/article/business-health-louisiana-coronavirus-pandemic-cac35f19d97b89111097d02d87a7ba5c"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "'We will find you': Tennessee parents protest school mask mandate; people in masks heckled", newsSource: "NBC News", newsDate: "August 11, 2021", newsLink: "https://www.nbcnews.com/news/us-news/we-will-find-you-tennessee-parents-protest-school-mask-mandate-n1276601"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Australian conspiracy theorists and anti-lockdown groups share fake Covid check-in apps", newsSource: "Guardian", newsDate: "August 11, 2021", newsLink: "https://www.theguardian.com/australia-news/2021/aug/12/australian-conspiracy-theorists-and-anti-lockdown-groups-share-fake-covid-check-in-apps"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "The rebellion is spreading: After local Texas officials defy his ban on mask mandates, Gov. Greg Abbott begins to clamp down", newsSource: "Texas Tribune", newsDate: "August 11, 2021", newsLink: "https://www.texastribune.org/2021/08/11/texas-mask-mandates-covid-19-greg-abbott/"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "What will it be like when COVID-19 becomes endemic?", newsSource: "Harvard School of Public Health", newsDate: "August 11, 2021", newsLink: "https://www.hsph.harvard.edu/news/features/what-will-it-be-like-when-covid-19-becomes-endemic/"}),    
+         e(NewsList, {newsType: "Media News", newsTitle: "San Francisco to become first major U.S. city to mandate full vaccination for many indoor activities", newsSource: "SF Chronicle", newsDate: "August 12, 2021", newsLink: "https://www.sfchronicle.com/bayarea/article/San-Francisco-to-become-second-U-S-city-to-16382500.php"}),
+         e(NewsList, {newsType: "Media News", newsTitle: "Americans are sneaking extra coronavirus shots as officials weigh who should get them", newsSource: "Washington Post", newsDate: "August 12, 2021", newsLink: "https://www.washingtonpost.com/health/2021/08/12/covid-booster-vaccine-shots/"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Effectiveness of Covid-19 Vaccines against the B.1.617.2 (Delta) Variant", newsSource: "New England Journal of Medicine", newsDate: "August 12, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMoa2108891"}),
+         
+            
    ); 
  }
 }
@@ -1192,11 +1205,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 8/8/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 8/11/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 8/8/2021";
+    modernaUpdate.innerHTML = "Last Updated: 8/11/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 8/8/2021";
+    jessenUpdate.innerHTML = "Last Updated: 8/11/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
 
