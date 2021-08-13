@@ -119,7 +119,8 @@ class December2020NewsApp extends React.Component {
 class January2021NewsApp extends React.Component {
  render() {
       return e("div", null,
-         e(NewsList, {newsType: "Non Media News", newsTitle: "Association between physical activity and subjective memory decline triggered by the COVID-19 pandemic: Findings from the PAMPA cohort", newsSource: "US National Library of Medicine", newsDate: "January 2, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7833596/"}),      
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Association between physical activity and subjective memory decline triggered by the COVID-19 pandemic: Findings from the PAMPA cohort", newsSource: "US National Library of Medicine", newsDate: "January 2, 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7833596/"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Duration and key determinants of infectious virus shedding in hospitalized patients with coronavirus disease-2019 (COVID-19)", newsSource: "Nature", newsDate: "January 11, 2021", newsLink: "https://doi.org/10.1038/s41467-020-20568-4"}),      
          e(NewsList, {newsType: "Non Media News", newsTitle: "Maculopapular skin eruptions associated with Covid-19: A systematic review", newsSource: "Wiley Online Library", newsDate: "January 22, 2021", newsLink: "https://doi.org/10.1111/dth.14788"})      
          ); 
  }
@@ -1058,6 +1059,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Non Media News", newsTitle: "No evidence of SARS-CoV-2 reverse transcription and integration as the origin of chimeric transcripts in patient tissues", newsSource: "PNAS", newsDate: "August 2021", newsLink: "https://doi.org/10.1073/pnas.2109066118"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Behavioral Nudges Increase COVID-19 Vaccinations", newsSource: "Nature", newsDate: "August 2, 2021", newsLink: "https://doi.org/10.1038/s41586-021-03843-2"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Chronic SARS-CoV-2, a Cause of Post-acute COVID-19 Sequelae (Long-COVID)?", newsSource: "Frontiers", newsDate: "August 2, 2021", newsLink: "https://doi.org/10.3389/fmicb.2021.724654"}),    
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Poliovirus Vaccination Induces a Humoral Immune Response That Cross Reacts With SARS-CoV-2", newsSource: "Frontiers", newsDate: "August 3, 2021", newsLink: "https://doi.org/10.3389/fmed.2021.710010"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Myocarditis Following COVID-19 Vaccination", newsSource: "RSNA", newsDate: "August 3, 2021", newsLink: "https://doi.org/10.1148/radiol.2021211766"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Potent neutralizing nanobodies resist convergent circulating variants of SARS-CoV-2 by targeting diverse and conserved epitopes", newsSource: "Nature", newsDate: "August 3, 2021", newsLink: "https://doi.org/10.1038/s41467-021-24963-3"}),    
          e(NewsList, {newsType: "Non Media News", newsTitle: "Evaluation of Three anti-SARS-CoV-2 Serologic Immunoassays for Post-Vaccine Response", newsSource: "Oxford Academics", newsDate: "August 3, 2021", newsLink: "https://doi.org/10.1093/jalm/jfab087"}),
@@ -1188,6 +1190,7 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "EU looking into new possible side-effects of mRNA COVID-19 shots", newsSource: "Reuters", newsDate: "August 11, 2021", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/eu-drugs-regulator-looking-new-possible-side-effects-mrna-vaccines-2021-08-11/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "New vaccinations have nearly doubled from last month, according to CDC data", newsSource: "CBS News", newsDate: "August 11, 2021", newsLink: "https://www.cbsnews.com/news/covid-vaccine-rate-doubles-cdc-data/"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Vaccinating During Pregnancy Has Become Even More Urgent As ICU Beds Fill Up", newsSource: "NPR", newsDate: "August 11, 2021", newsLink: "https://www.npr.org/sections/health-shots/2021/08/11/1026555595/pregnant-cdc-urges-covid-vaccination-icus-fill-unvaccinated-delta"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Aseptic meningitis after vaccination of the BNT162b2 mRNA COVID-19 vaccine", newsSource: "Springer", newsDate: "August 11, 2021", newsLink: "https://doi.org/10.1007/s10072-021-05543-1"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Overwhelmed by COVID-19: A day inside a Louisiana hospital", newsSource: "AP News", newsDate: "August 11, 2021", newsLink: "https://apnews.com/article/business-health-louisiana-coronavirus-pandemic-cac35f19d97b89111097d02d87a7ba5c"}),
          e(NewsList, {newsType: "Media News", newsTitle: "'We will find you': Tennessee parents protest school mask mandate; people in masks heckled", newsSource: "NBC News", newsDate: "August 11, 2021", newsLink: "https://www.nbcnews.com/news/us-news/we-will-find-you-tennessee-parents-protest-school-mask-mandate-n1276601"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Australian conspiracy theorists and anti-lockdown groups share fake Covid check-in apps", newsSource: "Guardian", newsDate: "August 11, 2021", newsLink: "https://www.theguardian.com/australia-news/2021/aug/12/australian-conspiracy-theorists-and-anti-lockdown-groups-share-fake-covid-check-in-apps"}),
@@ -1203,8 +1206,10 @@ class NewsApp extends React.Component {
          e(NewsList, {newsType: "Media News", newsTitle: "Increasing COVID-19 Vaccination Rates in Florida and Texas Could Have Saved 4,700 Lives Through July", newsSource: "The Commonwealth Fund", newsDate: "August 12, 2021", newsLink: "https://www.commonwealthfund.org/blog/2021/increasing-covid-19-vaccination-rates-florida-and-texas-could-have-saved-4700-lives"}),
          e(NewsList, {newsType: "Non Media News", newsTitle: "Coronavirus (COVID-19) Update: FDA Authorizes Additional Vaccine Dose for Certain Immunocompromised Individuals", newsSource: "US Food and Drug Administration", newsDate: "August 12, 2021", newsLink: "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-additional-vaccine-dose-certain-immunocompromised"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Mayo Clinic: COVID Breakthrough Risk May Be Much Lower With Moderna Than Pfizer", newsSource: "CNBC", newsDate: "August 12, 2021", newsLink: "https://www.cnbc.com/2021/08/12/mayo-clinic-covid-breakthrough-risk-may-be-much-lower-with-moderna-vaccine-than-pfizer.html"}),
-         e(NewsList, {newsType: "Media News", newsTitle: "", newsSource: "", newsDate: "August , 2021", newsLink: ""}),
-         e(NewsList, {newsType: "Media News", newsTitle: "", newsSource: "", newsDate: "August , 2021", newsLink: ""}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "How do vaccinated people spread Delta? What the science says", newsSource: "Nature", newsDate: "August 12, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02187-1"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Safety, reactogenicity, and immunogenicity of homologous and heterologous prime-boost immunisation with ChAdOx1 nCoV-19 and BNT162b2: a prospective cohort study", newsSource: "Lancet", newsDate: "August 12, 2021", newsLink: "https://doi.org/10.1016/S2213-2600(21)00357-X"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Hospital-acquired SARS-CoV-2 infection in the UK's first COVID-19 pandemic wave", newsSource: "Lancet", newsDate: "August 12, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)01786-4"}),
+         e(NewsList, {newsType: "Non Media News", newsTitle: "Durability of mRNA-1273 vaccine–induced antibodies against SARS-CoV-2 variants", newsSource: "Science Magazine", newsDate: "August 12, 2021", newsLink: "https://doi.org/10.1126/science.abj4176"}),    
          e(NewsList, {newsType: "Media News", newsTitle: "‘Breaking society apart’: Unvaccinated people are angry as they face more Covid restrictions", newsSource: "CNBC", newsDate: "August 13, 2021", newsLink: "https://www.cnbc.com/2021/08/13/unvaccinated-people-face-more-covid-restrictions-in-future.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "Texas deploys 2,500 out-of-state medical workers to fight Covid as younger patients crowd hospitals", newsSource: "CNBC", newsDate: "August 13, 2021", newsLink: "https://www.cnbc.com/2021/08/13/texas-covid-abbott-deploys-2500-out-of-state-medical-workers-as-younger-patients-crowd-hospitals.html"}),
          e(NewsList, {newsType: "Media News", newsTitle: "440 students in Palm Beach County forced to quarantine because of COVID two days after school starts", newsSource: "CBS News", newsDate: "August 13, 2021", newsLink: "https://www.cbsnews.com/news/440-students-palm-beach-county-quarantine-covid/"}),    
@@ -1223,11 +1228,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 8/11/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 8/12/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 8/11/2021";
+    modernaUpdate.innerHTML = "Last Updated: 8/12/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 8/11/2021";
+    jessenUpdate.innerHTML = "Last Updated: 8/12/2021";
 
 //Safety and Immunogenicity Report from the Com-COV Study – a Single-Blind Randomised Non-Inferiority Trial Comparing Heterologous And Homologous Prime-Boost Schedules with An Adenoviral Vectored and mRNA COVID-19 Vaccine
 
