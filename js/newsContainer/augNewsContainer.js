@@ -8,7 +8,7 @@ class NewsList extends React.Component {
     e("div", {class: "news-box news-box-a"},
     e("i", {class: "fas fa-exclamation-circle fa-2x"}, this.props.newsType),
     e("h3", null, this.props.newsTitle), 
-    e("p", {class: "price"}, "Source: ", this.props.newsSource, ", Published on ", this.props.newsDate), 
+    e("p", {class: "price"}, "Source: ", this.props.newsSource, ", Accessed on ", this.props.newsDate), 
     e("a", {target: "_blank", href: `${this.props.newsLink}`, class: "btn"}, "Link to Article")),  
     e("div", {class: "news-box news-box-b"}, 
     e("img", {src: "img/coronavirus-19-mobile.jpg",alt: "COVID-19 News Image"
@@ -45,6 +45,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "The number of kids hospitalized
 e(NewsList, {newsType: "Media News", newsTitle: "New Covid variants ‘would set us back a year’, experts warn UK government", newsSource: "Guardian", newsDate: "August 14, 2021", newsLink: "https://www.theguardian.com/world/2021/aug/15/new-covid-variants-will-set-us-back-a-year-experts-warn-uk-government"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Fired Tennessee vaccinations director planning to leave state with her family", newsSource: "NBC News", newsDate: "August 14, 2021", newsLink: "https://www.nbcnews.com/news/us-news/fired-tennessee-vaccinations-director-planning-leave-state-n1276832"}),
 e(NewsList, {newsType: "Media News", newsTitle: "‘I feel defeated’: Mask and vaccine mandates cause new divides as officials try to head off virus surge", newsSource: "Washington Post", newsDate: "August 15, 2021", newsLink: "https://www.washingtonpost.com/health/2021/08/14/mask-vaccination-mandates/"}),
+e(NewsList, {newsType: "Media News", newsTitle: "The Delta Variant Is Already Leaving Its Mark on Business", newsSource: "Wall Street Journal", newsDate: "August 15, 2021", newsLink: "https://www.wsj.com/articles/-delta-variant--business-economy-11629049694"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Virus claims more young victims as deaths climb yet again", newsSource: "AP News", newsDate: "August 15, 2021", newsLink: "https://apnews.com/article/health-coronavirus-pandemic-5e56dc3f817e3eaca1f48511c3be8549"}), 
 e(NewsList, {newsType: "Media News", newsTitle: "US could see 200,000 Covid cases a day again: ‘Unvaccinated are sitting ducks’", newsSource: "Guardian", newsDate: "August 15, 2021", newsLink: "https://www.theguardian.com/us-news/2021/aug/15/us-covid-delta-cases-unvaccinated-sitting-ducks"}), 
 e(NewsList, {newsType: "Media News", newsTitle: "The Texas Covid crisis worsens – why is the governor resisting masks?", newsSource: "Guardian", newsDate: "August 15, 2021", newsLink: "https://www.theguardian.com/us-news/2021/aug/15/texas-covid-coronavirus-crisis-austin-greg-abbott"}), 
@@ -52,7 +53,10 @@ e(NewsList, {newsType: "Media News", newsTitle: "Kentucky school district cancel
 e(NewsList, {newsType: "Media News", newsTitle: "Forget Beating Covid-19. Europe Is Preparing to Live With It.", newsSource: "Wall Street Journal", newsDate: "August 16, 2021", newsLink: "https://www.wsj.com/articles/forget-beating-covid-19-europe-is-preparing-to-live-with-it-11629118024"}), 
 e(NewsList, {newsType: "Media News", newsTitle: "Overwhelmed Philippines hospitals hit by staff resignations", newsSource: "Reuters", newsDate: "August 16, 2021", newsLink: "https://www.reuters.com/world/asia-pacific/overwhelmed-philippines-hospitals-hit-by-staff-resignations-2021-08-16/"}), 
 e(NewsList, {newsType: "Media News", newsTitle: "Nearly a third of U.S. workers under 40 considered changing careers during the pandemic", newsSource: "Washington Post", newsDate: "August 16, 2021", newsLink: "https://www.washingtonpost.com/business/2021/08/16/us-workers-want-career-change/"}),  
-e(NewsList, {newsType: "Media News", newsTitle: "Vaccine effectiveness against SARS-CoV-2 transmission and infections among household and other close contacts of confirmed cases, the Netherlands, February to May 2021 ", newsSource: "Eurosurveillance", newsDate: "August 2021", newsLink: "https://doi.org/10.2807/1560-7917.ES.2021.26.31.2100640"}),                
+e(NewsList, {newsType: "Media News", newsTitle: "Vaccine effectiveness against SARS-CoV-2 transmission and infections among household and other close contacts of confirmed cases, the Netherlands, February to May 2021 ", newsSource: "Eurosurveillance", newsDate: "August 2021", newsLink: "https://doi.org/10.2807/1560-7917.ES.2021.26.31.2100640"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Association of Age and Pediatric Household Transmission of SARS-CoV-2 Infection", newsSource: "Jama Network", newsDate: "August 16, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamapediatrics.2021.2770"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 variant prediction and antiviral drug design are enabled by RBD in vitro evolution", newsSource: "Nature", newsDate: "August 16, 2021", newsLink: "https://doi.org/10.1038/s41564-021-00954-4"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Evolutionary analysis of the Delta and Delta Plus variants of the SARS-CoV-2 viruses", newsSource: "Science Direct", newsDate: "August 16, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S0896841121001232"}),               
          ); 
  }
 }
