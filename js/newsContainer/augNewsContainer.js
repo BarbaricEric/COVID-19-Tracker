@@ -20,6 +20,8 @@ class NewsList extends React.Component {
 class August2021NewsApp extends React.Component {
  render() {
       return e("div", null, 
+e(NewsList, {newsType: "Non Media News", newsTitle: "Immune cell residency in the nasal mucosa may partially explain respiratory disease severity across the age range", newsSource: "Nature", newsDate: "August 5, 2021", newsLink: "https://doi.org/10.1038/s41598-021-95532-3"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Poor nasal immunity can lead to severe COVID-19", newsSource: "Nature", newsDate: "August 10, 2021", newsLink: "https://doi.org/10.1038/s41577-021-00610-2"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Persistent Endotheliopathy in the Pathogenesis of Long COVID Syndrome", newsSource: "Wiley Online Library", newsDate: "August 10, 2021", newsLink: "https://doi.org/10.1111/jth.15490"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Oxford/AstraZeneca vaccine: rare blood clot syndrome has high mortality rate", newsSource: "Guardian", newsDate: "August 11, 2021", newsLink: "https://www.theguardian.com/world/2021/aug/11/oxfordastrazeneca-vaccine-rare-blood-clot-syndrome-has-high-mortality-rate"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Distinct Lipid Metabolic Dysregulation in Asymptomatic COVID-19", newsSource: "Cell", newsDate: "August 11, 2021", newsLink: "https://doi.org/10.1016/j.isci.2021.102974"}),
@@ -64,7 +66,11 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "A grim warning from Israel:
 e(NewsList, {newsType: "Non Media News", newsTitle: "Association of Age and Pediatric Household Transmission of SARS-CoV-2 Infection", newsSource: "Jama Network", newsDate: "August 16, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamapediatrics.2021.2770"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 variant prediction and antiviral drug design are enabled by RBD in vitro evolution", newsSource: "Nature", newsDate: "August 16, 2021", newsLink: "https://doi.org/10.1038/s41564-021-00954-4"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Evolutionary analysis of the Delta and Delta Plus variants of the SARS-CoV-2 viruses", newsSource: "Science Direct", newsDate: "August 16, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S0896841121001232"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Intimate Partner Aggression During the COVID-19 Pandemic: Associations With Stress and Heavy Drinking", newsSource: "American Psychological Association", newsDate: "August 16, 2021", newsLink: "https://doi.org/10.1037/vio0000395"               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Intimate Partner Aggression During the COVID-19 Pandemic: Associations With Stress and Heavy Drinking", newsSource: "American Psychological Association", newsDate: "August 16, 2021", newsLink: "https://doi.org/10.1037/vio0000395"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Association of Vaccine Type and Prior SARS-CoV-2 Infection With Symptoms and Antibody Measurements Following Vaccination Among Health Care Workers", newsSource: "Jama Network", newsDate: "August 16, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamainternmed.2021.4580"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Bell's palsy following vaccination with mRNA (BNT162b2) and inactivated (CoronaVac) SARS-CoV-2 vaccines: a case series and nested case-control study", newsSource: "Lancet", newsDate: "August 16, 2021", newsLink: "https://doi.org/10.1016/S1473-3099(21)00451-5"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Vaccine nationalism and the dynamics and control of SARS-CoV-2", newsSource: "Science Magazine", newsDate: "August 17, 2021", newsLink: "https://doi.org/10.1126/science.abj7364"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Redox imbalance links COVID-19 and myalgic encephalomyelitis/chronic fatigue syndrome", newsSource: "PNAS", newsDate: "August 17, 2021", newsLink: "https://doi.org/10.1073/pnas.2024358118"}),
          ); 
  }
 }
