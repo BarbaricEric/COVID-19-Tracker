@@ -1,7 +1,5 @@
 'use strict';
 
-const e = React.createElement;
-
 class NewsList extends React.Component {
   render() {
     return e("div", {class: "article-container"},
