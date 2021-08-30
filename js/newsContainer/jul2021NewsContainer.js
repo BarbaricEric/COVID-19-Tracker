@@ -14,6 +14,7 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "Postacute Sequelae of COVID
 e(NewsList, {newsType: "Non Media News", newsTitle: "COVID vaccines to reach poorest countries in 2023 — despite recent pledges", newsSource: "Nature", newsDate: "July 27, 2021", newsLink: "https://doi.org/10.1038/d41586-021-01762-w"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Age-Related Differences in the Expression of Most Relevant Mediators of SARS-CoV-2 Infection in Human Respiratory and Gastrointestinal Tract", newsSource: "Frontiers", newsDate: "July 28, 2021", newsLink: "https://doi.org/10.3389/fped.2021.697390"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Cross-reactive antibodies against human coronaviruses and the animal coronavirome suggest diagnostics for future zoonotic spillovers", newsSource: "Science Magazine", newsDate: "July 29, 2021", newsLink: "https://doi.org/10.1126/sciimmunol.abe9950"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Drug-induced phospholipidosis confounds drug repurposing for SARS-CoV-2", newsSource: "Science Magazine", newsDate: "July 30, 2021", newsLink: "https://doi.org/10.1126/science.abi4708"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "The association of COVID-19 infection in pregnancy with preterm birth: A retrospective cohort study in California", newsSource: "Science Direct", newsDate: "July 30, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S2667193X21000193"}),               
          ); 
  }
