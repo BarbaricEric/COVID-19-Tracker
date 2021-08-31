@@ -8,7 +8,8 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "First report of a de novo i
 e(NewsList, {newsType: "Non Media News", newsTitle: "Polθ reverse transcribes RNA and promotes RNA-templated DNA repair", newsSource: "Science Magazine", newsDate: "June 11, 2021", newsLink: "https://doi.org/10.1126/sciadv.abf1771"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Manipulation of the unfolded protein response: A pharmacological strategy against coronavirus infection", newsSource: "PLOS", newsDate: "June 17, 2021", newsLink: "https://doi.org/10.1371/journal.ppat.1009644"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Association between COVID-19 outcomes and mask mandates, adherence, and attitudes", newsSource: "PLOS", newsDate: "June 23, 2021", newsLink: "https://doi.org/10.1371/journal.pone.0252315"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Myocarditis Following Immunization With mRNA COVID-19 Vaccines in Members of the US Military", newsSource: "Jama Network", newsDate: "June 29, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamacardio.2021.2833"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Myocarditis Following Immunization With mRNA COVID-19 Vaccines in Members of the US Military", newsSource: "Jama Network", newsDate: "June 29, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamacardio.2021.2833"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Predictors of Nonseroconversion after SARS-CoV-2 Infection", newsSource: "CDC", newsDate: "June 30, 2021", newsLink: "https://doi.org/10.3201/eid2709.211042"}),               
          ); 
  }
 }
