@@ -253,6 +253,11 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "National Advocates Urge the
 e(NewsList, {newsType: "Non Media News", newsTitle: "Comparison of SARS-CoV-2 Antibody Response Following Vaccination With BNT162b2 and mRNA-1273", newsSource: "Jama Network", newsDate: "August 30, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jama.2021.15125"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Fatal systemic capillary leak syndrome after SARS-COV-2 vaccination in patient with multiple myeloma", newsSource: "CDC", newsDate: "August 30, 2021", newsLink: "https://doi.org/10.3201/eid2711.211723"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Types of myocardial injury and mid-term outcomes in patients with COVID-19", newsSource: "Oxford Academics", newsDate: "August 30, 2021", newsLink: "https://doi.org/10.1093/ehjqcco/qcab053"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Filtration Performance of Layering Masks and Face Coverings and the Reusability of Cotton Masks after Repeated Washing and Drying", newsSource: "Aerosol and Air Quality Research", newsDate: "August 30, 2021", newsLink: "https://doi.org/10.4209/aaqr.210117"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Eviction Moratoria Expiration and COVID-19 Infection Risk Across Strata of Health and Socioeconomic Status in the United States", newsSource: "Jama Network", newsDate: "August 30, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.29041"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "One-Year Outcomes of Critical Care Patients Post–COVID-19 Multisystem Inflammatory Syndrome in Children", newsSource: "Jama Network", newsDate: "August 30, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamapediatrics.2021.2993"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Lectins enhance SARS-CoV-2 infection and influence neutralizing antibodies", newsSource: "Nature", newsDate: "August 31, 2021", newsLink: "https://doi.org/10.1038/s41586-021-03925-1"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Sterically confined rearrangements of SARS-CoV-2 Spike protein control cell invasion", newsSource: "eLife", newsDate: "August 31, 2021", newsLink: "https://doi.org/10.7554/eLife.70362"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Effect of Immunosuppression on the Immunogenicity of mRNA Vaccines to SARS-CoV-2", newsSource: "ACP Journals", newsDate: "August 31, 2021", newsLink: "https://doi.org/10.7326/M21-1757"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Microbial signatures in the lower airways of mechanically ventilated COVID-19 patients associated with poor clinical outcome", newsSource: "Nature", newsDate: "August 31, 2021", newsLink: "https://doi.org/10.1038/s41564-021-00961-5"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Mormon vaccine push ratchets up, dividing faith’s members", newsSource: "AP News", newsDate: "August 31, 2021", newsLink: "https://apnews.com/article/lifestyle-health-religion-coronavirus-pandemic-f42772097cf7557086f12b549e03b18a"}),
@@ -277,3 +282,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector('#article-main-aug2021')
   );
 });
+
+//COVID-19 vaccines dampen genomic diversity of SARS-CoV-2: Unvaccinated patients exhibit more antigenic mutational variance
