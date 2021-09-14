@@ -4,7 +4,8 @@ class August2021NewsApp extends React.Component {
  render() {
       return e("div", null,
 e(NewsList, {newsType: "Non Media News", newsTitle: "Case report: acute myocarditis following the second dose of mRNA-1273 SARS-CoV-2 vaccine", newsSource: "Oxford Academics", newsDate: "August 4, 2021", newsLink: "https://doi.org/10.1093/ehjcr/ytab319"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Immunity to SARS-CoV-2 induced by infection or vaccination", newsSource: "Wiley Online Library", newsDate: "August 5, 2021", newsLink: "https://doi.org/10.1111/joim.13372"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Immunity to SARS-CoV-2 induced by infection or vaccination", newsSource: "Wiley Online Library", newsDate: "August 5, 2021", newsLink: "https://doi.org/10.1111/joim.13372"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Absorbed plant MIR2911 in honeysuckle decoction inhibits SARS-CoV-2 replication and accelerates the negative conversion of infected patients", newsSource: "Nature", newsDate: "August 5, 2021", newsLink: "https://doi.org/10.1038/s41421-020-00197-3"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Immune cell residency in the nasal mucosa may partially explain respiratory disease severity across the age range", newsSource: "Nature", newsDate: "August 5, 2021", newsLink: "https://doi.org/10.1038/s41598-021-95532-3"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Gender Differences in Fear and Risk Perception During the COVID-19 Pandemic", newsSource: "Frontiers", newsDate: "August 5, 2021", newsLink: "https://doi.org/10.3389/fpsyg.2021.689467"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "An AAV-based, room-temperature-stable, single-dose COVID-19 vaccine provides durable immunogenicity and protection in non-human primates", newsSource: "Cell", newsDate: "August 6, 2021", newsLink: "https://doi.org/10.1016/j.chom.2021.08.002"}),               
