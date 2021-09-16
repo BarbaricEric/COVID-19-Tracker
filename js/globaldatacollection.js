@@ -1023,9 +1023,9 @@ async function getCountryCountFromCovidApi() {
    const caseDeath119 = document.querySelector('.CaseDeath119');
    const date119 = document.querySelector('.Date119');
    country119.textContent = data.Countries[119].Country
-   caseConfirm109.textContent = addCommaDecimal(data.Countries[119].TotalConfirmed) + ' (' + addCommaDecimal(data.Countries[119].NewConfirmed) +')'
-   caseDeath109.textContent = addCommaDecimal(data.Countries[119].TotalDeaths) + ' (' + addCommaDecimal(data.Countries[119].NewDeaths) +')'
-   date109.textContent = new Date(data.Countries[119].Date).toString().substring(0,15)    
+   caseConfirm119.textContent = addCommaDecimal(data.Countries[119].TotalConfirmed) + ' (' + addCommaDecimal(data.Countries[119].NewConfirmed) +')'
+   caseDeath119.textContent = addCommaDecimal(data.Countries[119].TotalDeaths) + ' (' + addCommaDecimal(data.Countries[119].NewDeaths) +')'
+   date119.textContent = new Date(data.Countries[119].Date).toString().substring(0,15)    
       const country120 = document.querySelector('.country120');
    const caseConfirm120 = document.querySelector('.CaseConfirm120');
    const caseDeath120 = document.querySelector('.CaseDeath120');
@@ -1399,7 +1399,7 @@ async function getCountryCountFromCovidApi() {
    const caseDeath166 = document.querySelector('.CaseDeath166');
    const date166 = document.querySelector('.Date166');
    country166.textContent = data.Countries[166].Country
-   caseConfirm136.textContent = addCommaDecimal(data.Countries[166].TotalConfirmed) + ' (' + addCommaDecimal(data.Countries[166].NewConfirmed) +')'
+   caseConfirm166.textContent = addCommaDecimal(data.Countries[166].TotalConfirmed) + ' (' + addCommaDecimal(data.Countries[166].NewConfirmed) +')'
    caseDeath166.textContent = addCommaDecimal(data.Countries[166].TotalDeaths) + ' (' + addCommaDecimal(data.Countries[166].NewDeaths) +')'
    date166.textContent = new Date(data.Countries[166].Date).toString().substring(0,15)  
       const country167 = document.querySelector('.country167');
