@@ -45,7 +45,7 @@ const localapi2 = 'https://corona-api.com/countries/US';
   });     
          
 //US Count from covid-api.com      
-   fetch('https://covid-api.com/api/reports?date=2021-09-15&iso=USA', {
+   fetch('https://covid-api.com/api/reports?date=2021-09-16&iso=USA', {
   method: 'GET',
   mode: 'cors', // no-cors, *cors, same-origin
   cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
