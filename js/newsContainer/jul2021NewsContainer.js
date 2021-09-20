@@ -3,6 +3,7 @@
 class July2021NewsApp extends React.Component {
  render() {
       return e("div", null,
+e(NewsList, {newsType: "Non Media News", newsTitle: "Making trials part of good clinical care: lessons from the RECOVERY trial", newsSource: "U.S. National Library of Medicine", newsDate: "July 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8285150/"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Public Preferences for Social Distancing Policy Measures to Mitigate the Spread of COVID-19 in Missouri", newsSource: "Jama Network", newsDate: "July 8, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.16113"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 false dichotomies and a comprehensive review of the evidence regarding public health, COVID-19 symptomatology, SARS-CoV-2 transmission, mask wearing, and reinfection", newsSource: "BMC", newsDate: "July 9, 2021", newsLink: "https://doi.org/10.1186/s12879-021-06357-4"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Estimating the early impact of vaccination against COVID-19 on deaths among elderly people in Brazil: Analyses of routinely-collected data on vaccine coverage and mortality", newsSource: "Lancet", newsDate: "July 15, 2021", newsLink: "https://doi.org/10.1016/j.eclinm.2021.101036"}),
