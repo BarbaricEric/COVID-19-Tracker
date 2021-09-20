@@ -299,7 +299,8 @@ e(NewsList, {newsType: "Media News", newsTitle: "‘I felt this huge relief’: 
 e(NewsList, {newsType: "Media News", newsTitle: "Key data on U.S. J&J, Moderna COVID-19 boosters weeks away, Fauci says", newsSource: "Reuters", newsDate: "September 19, 2021", newsLink: "https://www.reuters.com/world/us/key-data-us-jj-moderna-covid-19-boosters-weeks-away-fauci-says-2021-09-19/"}),
 e(NewsList, {newsType: "Media News", newsTitle: "COVID creates shortages of an array of U.S. medical supplies", newsSource: "Reuters", newsDate: "September 20, 2021", newsLink: "https://www.reuters.com/world/the-great-reboot/covid-creates-shortages-an-array-us-medical-supplies-2021-09-20/"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Pfizer Covid-19 vaccine generates robust antibody response in children, without serious safety issues, company says", newsSource: "STAT News", newsDate: "September 20, 2021", newsLink: "https://www.statnews.com/2021/09/20/pfizer-covid-19-vaccine-children/"}),
-e(NewsList, {newsType: "Media News", newsTitle: "States bracing for confusion about coronavirus booster rollout", newsSource: "Washington Post", newsDate: "September 20, 2021", newsLink: "https://www.washingtonpost.com/health/2021/09/20/booster-shot-confusion/"}),               
+e(NewsList, {newsType: "Media News", newsTitle: "States bracing for confusion about coronavirus booster rollout", newsSource: "Washington Post", newsDate: "September 20, 2021", newsLink: "https://www.washingtonpost.com/health/2021/09/20/booster-shot-confusion/"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Pfizer and BioNTech Announce Positive Topline Results From Pivotal Trial of COVID-19 Vaccine in Children 5 to 11 Years", newsSource: "Pfizer and BioNTech", newsDate: "September 20, 2021", newsLink: "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-announce-positive-topline-results"}),               
          ); 
  }
 }
