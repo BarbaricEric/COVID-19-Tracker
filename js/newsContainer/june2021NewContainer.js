@@ -2,7 +2,8 @@
 
 class June2021NewsApp extends React.Component {
  render() {
-      return e("div", null, 
+      return e("div", null,
+e(NewsList, {newsType: "Non Media News", newsTitle: "Neutralising antibody activity against SARS-CoV-2 VOCs B.1.617.2 and B.1.351 by BNT162b2 vaccination", newsSource: "Lancet", newsDate: "June 3, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)01290-3"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Socioeconomic disparities and COVID-19 vaccination acceptance: a nationwide ecologic study", newsSource: "Science Direct", newsDate: "June 7, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S1198743X21002779"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "First report of a de novo iTTP episode associated with an mRNA-based anti-COVID-19 vaccination", newsSource: "Wiley Online Library", newsDate: "June 8, 2021", newsLink: "https://doi.org/10.1111/jth.15418"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 envelope protein causes acute respiratory distress syndrome (ARDS)-like pathological damages and constitutes an antiviral target", newsSource: "Nature", newsDate: "June 10, 2021", newsLink: "https://doi.org/10.1038/s41422-021-00519-4"}),               
