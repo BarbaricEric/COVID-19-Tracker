@@ -46,6 +46,20 @@
    vacNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
   });
 
+//US Booster Vaccine Count from CDC
+  d3v6.csv("./cdc_vaccination/vaccine_booster.csv").then(function(data) { 
+   const pfizerBoostNum = document.querySelector(".pzfizer-boost-num")
+   const modernaBoostNum = document.querySelector(".moderna-boost-num")
+   const jensenBoostNum = document.querySelector(".jensen-boost-num")
+   const event = new Date(data[0].date)
+   pfizerBoostNum.style.cssText = "color: gold; font-size:46px";
+   pfizerBoostNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))    
+   modernaBoostNum.style.cssText = "color: gold; font-size:46px";
+   modernaBoostNum.textContent = addCommas(parseInt(data[0].Moderna) + ' as of ' + (event.toLocaleString('en-US').substring(0,9)) 
+   jensenBoostNum.style.cssText = "color: gold; font-size:46px";
+   jensenBoostNum.textContent = addCommas(parseInt(data[0].Janssen) + ' as of ' + (event.toLocaleString('en-US').substring(0,9)) 
+  });
+
 //Pie Chart US Delivered Count from CDC
   d3v6.csv("./cdc_vaccination/vaccine_del.csv").then(function(data) {
    console.log(data);
