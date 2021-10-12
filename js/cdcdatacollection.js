@@ -52,11 +52,11 @@
    const modernaBoostNum = document.querySelector(".moderna-boost-num")
    const jensenBoostNum = document.querySelector(".jensen-boost-num")
    const event = new Date(data[0].date)
-   pfizerBoostNum.style.cssText = "color: gold; font-size:26px";
+   pfizerBoostNum.style.cssText = "color: #4169e1; font-size:26px";
    pfizerBoostNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech)) + ' as of ' + event.toLocaleString('en-US').substring(0,9)    
-   modernaBoostNum.style.cssText = "color: gold; font-size:26px";
+   modernaBoostNum.style.cssText = "color: #4169e1; font-size:26px";
    modernaBoostNum.textContent = addCommas(parseInt(data[0].Moderna)) + ' as of ' + event.toLocaleString('en-US').substring(0,9) 
-   jensenBoostNum.style.cssText = "color: gold; font-size:26px";
+   jensenBoostNum.style.cssText = "color: #4169e1; font-size:26px";
    jensenBoostNum.textContent = addCommas(parseInt(data[0].Janssen)) + ' as of ' + event.toLocaleString('en-US').substring(0,9) 
   });
 
