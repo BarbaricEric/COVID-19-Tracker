@@ -1,5 +1,22 @@
 'use strict';
 
+const e = React.createElement;
+
+class NewsList extends React.Component {
+  render() {
+    return e("div", {class: "article-container"},
+    e("div", {class: "news-box news-box-a"},
+    e("i", {class: "fas fa-exclamation-circle fa-2x"}, this.props.newsType),
+    e("h3", null, this.props.newsTitle), 
+    e("p", {class: "price"}, "Source: ", this.props.newsSource, ", Published on ", this.props.newsDate), 
+    e("a", {target: "_blank", href: `${this.props.newsLink}`, class: "btn"}, "Link to Article")),  
+    e("div", {class: "news-box news-box-b"}, 
+    e("img", {src: "img/coronavirus-19-mobile.jpg",alt: "COVID-19 News Image"
+    }))
+    );
+  }
+}
+
 class October2021NewsApp extends React.Component {
  render() {
       return e("div", null,
@@ -17,6 +34,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "Vaccinated people are less like
 e(NewsList, {newsType: "Media News", newsTitle: "Many are searching for vaccine mandate loopholes. These are the people trying to stop them.", newsSource: "Washington Post", newsDate: "October 2, 2021", newsLink: "https://www.washingtonpost.com/lifestyle/2021/10/02/vaccine-mandate-office-loophole/"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Unvaccinated care workers should get another job, says Javid", newsSource: "Guardian", newsDate: "October 2, 2021", newsLink: "https://www.theguardian.com/politics/2021/oct/02/covid-unvaccinated-care-workers-should-get-another-job-says-javid"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Alabama to use Covid rescue funds to build prisons", newsSource: "NBC News", newsDate: "October 2, 2021", newsLink: "https://www.nbcnews.com/news/us-news/alabama-use-covid-rescue-funds-build-prisons-n1280624"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Characterization of SARS-CoV-2 and common cold coronavirus-specific T cell responses in MIS-C and Kawasaki disease children", newsSource: "Wiley Online Library", newsDate: "October 2, 2021", newsLink: "https://doi.org/10.1002/eji.202149556"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Effect of Convalescent Plasma on Organ Support–Free Days in Critically Ill Patients With COVID-19", newsSource: "Jama Network", newsDate: "October 4, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jama.2021.18178"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Effectiveness of mRNA BNT162b2 COVID-19 vaccine up to 6 months in a large integrated health system in the USA: a retrospective cohort study", newsSource: "Lancet", newsDate: "October 4, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)02183-8"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Acute Myocarditis Following COVID-19 mRNA Vaccination in Adults Aged 18 Years or Older", newsSource: "Jama Network", newsDate: "October 4, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamainternmed.2021.5511"}),
@@ -34,6 +52,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "Australia won’t welcome forei
 e(NewsList, {newsType: "Non Media News", newsTitle: "Moderna COVID-19 vaccine generates long-lasting immune memory", newsSource: "National Institutes of Health", newsDate: "October 5, 2021", newsLink: "https://www.nih.gov/news-events/nih-research-matters/moderna-covid-19-vaccine-generates-long-lasting-immune-memory"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "An affinity-enhanced, broadly neutralizing heavy chain-only antibody protects against SARS-CoV-2 infection in animal models", newsSource: "Science", newsDate: "October 5, 2021", newsLink: "https://doi.org/10.1126/scitranslmed.abi7826"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "COVID vaccines cut the risk of transmitting Delta — but not for long", newsSource: "Nature", newsDate: "October 5, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02689-y"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Low anti-SARS-CoV-2 S antibody levels predict increased mortality and dissemination of viral components in the blood of critical COVID-19 patients", newsSource: "Wiley Online Library", newsDate: "October 5, 2021", newsLink: "https://doi.org/10.1111/joim.13386"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "I took the Covid vaccine while pregnant – let’s not pretend it’s an easy decision", newsSource: "Guardian", newsDate: "October 5, 2021", newsLink: "https://www.theguardian.com/lifeandstyle/2021/oct/05/pregnant-women-not-taking-vaccine"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "High-dimensional profiling reveals phenotypic heterogeneity and disease-specific alterations of granulocytes in COVID-19", newsSource: "PNAS", newsDate: "October 5, 2021", newsLink: "https://doi.org/10.1073/pnas.2109123118"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Coverage and Estimated Effectiveness of mRNA COVID-19 Vaccines Among US Veterans", newsSource: "Jama Network", newsDate: "October 6, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.28391"}),
@@ -59,6 +78,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "Faced with losing their jobs, e
 e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 infection generates tissue-localized immunological memory in humans", newsSource: "Science", newsDate: "October 7, 2021", newsLink: "https://doi.org/10.1126/sciimmunol.abl9105"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Physical, cognitive, and mental health impacts of COVID-19 after hospitalisation (PHOSP-COVID): a UK multicentre, prospective cohort study", newsSource: "Lancet", newsDate: "October 7, 2021", newsLink: "https://doi.org/10.1016/S2213-2600(21)00383-0"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 RNA in the Cerebrospinal Fluid of a Patient with Long COVID", newsSource: "Sage Journals", newsDate: "October 7, 2021", newsLink: "https://doi.org/10.1177%2F20499361211048572"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Iceland Joins Nordic Peers in Halting Moderna Covid Vaccinations", newsSource: "Bloomberg", newsDate: "October 8, 2021", newsLink: "https://www.bloomberg.com/news/articles/2021-10-08/iceland-joins-nordic-peers-in-halting-moderna-covid-vaccinations"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Myocardial microthrombi after COVID-19 mRNA vaccination", newsSource: "Oxford Academics", newsDate: "October 8, 2021", newsLink: "https://doi.org/10.1093/eurheartj/ehab727"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Heart-inflammation risk from Pfizer COVID vaccine is very low", newsSource: "Nature", newsDate: "October 8, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02740-y"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Global prevalence and burden of depressive and anxiety disorders in 204 countries and territories in 2020 due to the COVID-19 pandemic", newsSource: "Lancet", newsDate: "October 8, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)02143-7"}),
@@ -72,14 +92,23 @@ e(NewsList, {newsType: "Media News", newsTitle: "New Zealand makes COVID-19 vacc
 e(NewsList, {newsType: "Media News", newsTitle: "Canada's overworked healthcare sector braces for staff shortages as vaccine mandates loom", newsSource: "Reuters", newsDate: "October 10, 2021", newsLink: "https://www.reuters.com/business/healthcare-pharmaceuticals/canadas-overworked-healthcare-sector-brace-staff-shortages-vaccine-mandates-loom-2021-10-10/"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Getting flu with Covid doubles risk of death, says UK health chief", newsSource: "Guardian", newsDate: "October 10, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/10/getting-flu-with-covid-makes-you-twice-as-likely-to-die-says-uk-health-chief"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Fauci: US must not ‘prematurely declare victory’ over Covid", newsSource: "Guardian", newsDate: "October 10, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/10/fauci-covid-halloween-prematurely-declare-victory"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Does the presence of symptoms affect pregnancy outcomes in third trimester in women with SARS-CoV-2", newsSource: "Taylor and Francis", newsDate: "October 10, 2021", newsLink: "https://doi.org/10.1080/14767058.2021.1956895"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Association Between Risk of COVID-19 Infection in Nonimmune Individuals and COVID-19 Immunity in Their Family Members", newsSource: "Jama Network", newsDate: "October 11, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamainternmed.2021.5814"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "In search for covid origins, Hubei caves and wildlife farms draw new scrutiny", newsSource: "Washington Post", newsDate: "October 11, 2021", newsLink: "https://www.washingtonpost.com/world/asia_pacific/china-covid-bats-caves-hubei/2021/10/10/082eb8b6-1c32-11ec-bea8-308ea134594f_story.html"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Experts warn of possible twindemic of COVID-19 and flu this winter", newsSource: "CBS News", newsDate: "October 11, 2021", newsLink: "https://www.cbsnews.com/news/covid-19-flu-season-winter-twindemic/"}),
 e(NewsList, {newsType: "Media News", newsTitle: "U.S. moves closer to clearing Moderna and J&J Covid booster shots this week", newsSource: "CNBC", newsDate: "October 11, 2021", newsLink: "https://www.cnbc.com/2021/10/11/us-moves-closer-to-clearing-moderna-and-jj-covid-booster-shots-this-week.html"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Merck and Ridgeback Announce Submission of Emergency Use Authorization Application to the U.S. FDA for Molnupiravir, an Investigational Oral Antiviral Medicine, for the Treatment of Mild-to-Moderate COVID-19 in At Risk Adults", newsSource: "Merck and Ridgeback", newsDate: "October 11, 2021", newsLink: "https://www.merck.com/news/merck-and-ridgeback-announce-submission-of-emergency-use-authorization-application-to-the-u-s-fda-for-molnupiravir-an-investigational-oral-antiviral-medicine-for-the-treatment-of-mild-to-moderate-c/"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "AZD7442 reduced risk of developing severe COVID-19 or death in TACKLE Phase III outpatient treatment trial", newsSource: "AstraZeneca", newsDate: "October 11, 2021", newsLink: "https://www.astrazeneca.com/media-centre/press-releases/2021/azd7442-phiii-trial-positive-in-covid-outpatients.html"}),               
-e(NewsList, {newsType: "Non Media News", newsTitle: "Impact of circulating SARS-CoV-2 variants on mRNA vaccine-induced immunity", newsSource: "Nature", newsDate: "October 11, 2021", newsLink: "https://doi.org/10.1038/s41586-021-04085-y"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Impact of circulating SARS-CoV-2 variants on mRNA vaccine-induced immunity", newsSource: "Nature", newsDate: "October 11, 2021", newsLink: "https://doi.org/10.1038/s41586-021-04085-y"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "A novel class of TMPRSS2 inhibitors potently block SARS-CoV-2 and MERS-CoV viral entry and protect human epithelial lung cells", newsSource: "PNAS", newsDate: "October 11, 2021", newsLink: "https://doi.org/10.1073/pnas.2108728118"}),               
+e(NewsList, {newsType: "Media News", newsTitle: "Covid pandemic has pushed poor countries to record debt levels – World Bank", newsSource: "Guardian", newsDate: "October 11, 2021", newsLink: "https://www.theguardian.com/business/2021/oct/11/covid-pandemic-has-pushed-poor-countries-to-record-debt-levels-world-bank"}),
+e(NewsList, {newsType: "Media News", newsTitle: "FDA staff doesn’t take stance on Moderna Covid booster shots, says two doses are enough to protect against severe disease", newsSource: "CNBC", newsDate: "October 12, 2021", newsLink: "https://www.cnbc.com/2021/10/12/moderna-covid-booster-fda-staff-doesnt-take-stance-says-two-doses-protect-against-severe-disease.html"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Italy's toughest-in-the-world COVID-19 vaccine mandate sparks violent protests", newsSource: "CBS News", newsDate: "October 12, 2021", newsLink: "https://www.cbsnews.com/news/covid-19-vaccine-mandate-italy-violent-protests/"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "EMA ends rolling review of CVnCoV COVID-19 vaccine following withdrawal by CureVac AG", newsSource: "European Medicines Agency", newsDate: "October 12, 2021", newsLink: "https://www.ema.europa.eu/en/news/ema-ends-rolling-review-cvncov-covid-19-vaccine-following-withdrawal-curevac-ag"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Analysis of SARS-CoV-2 infection dynamic in vivo using reporter-expressing viruses", newsSource: "PNAS", newsDate: "October 12, 2021", newsLink: "https://doi.org/10.1073/pnas.2111593118"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Computational prediction of the effect of amino acid changes on the binding affinity between SARS-CoV-2 spike RBD and human ACE2", newsSource: "PNAS", newsDate: "October 19, 2021", newsLink: "https://doi.org/10.1073/pnas.2106480118"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Effect of co-flow on fluid dynamics of a cough jet with implications in spread of COVID-19", newsSource: "Physics of Fluid", newsDate: "October 12, 2021", newsLink: "https://doi.org/10.1063/5.0064104"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Mask effectiveness for preventing secondary cases of COVID-19, Johnson County, Iowa, USA", newsSource: "CDC", newsDate: "October 12, 2021", newsLink: "https://doi.org/10.3201/eid2801.211591"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Computational prediction of the effect of amino acid changes on the binding affinity between SARS-CoV-2 spike RBD and human ACE2", newsSource: "PNAS", newsDate: "October 19, 2021", newsLink: "https://doi.org/10.1073/pnas.2106480118"}),  
          ); 
  }
 }
