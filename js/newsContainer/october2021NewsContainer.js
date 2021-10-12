@@ -91,3 +91,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector('#article-main-october2021')
   );
 });
+
+const pfizerUpdate = document.querySelector('.pfizer-update')
+    pfizerUpdate.innerHTML = "Last Updated: 10/11/2021";
+const modernaUpdate = document.querySelector('.moderna-update')
+    modernaUpdate.innerHTML = "Last Updated: 10/11/2021";
+const jessenUpdate = document.querySelector('.jessen-update')
+    jessenUpdate.innerHTML = "Last Updated: 10/11/2021";
