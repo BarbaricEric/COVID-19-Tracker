@@ -107,7 +107,16 @@ e(NewsList, {newsType: "Media News", newsTitle: "Italy's toughest-in-the-world C
 e(NewsList, {newsType: "Non Media News", newsTitle: "EMA ends rolling review of CVnCoV COVID-19 vaccine following withdrawal by CureVac AG", newsSource: "European Medicines Agency", newsDate: "October 12, 2021", newsLink: "https://www.ema.europa.eu/en/news/ema-ends-rolling-review-cvncov-covid-19-vaccine-following-withdrawal-curevac-ag"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Analysis of SARS-CoV-2 infection dynamic in vivo using reporter-expressing viruses", newsSource: "PNAS", newsDate: "October 12, 2021", newsLink: "https://doi.org/10.1073/pnas.2111593118"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Effect of co-flow on fluid dynamics of a cough jet with implications in spread of COVID-19", newsSource: "Physics of Fluid", newsDate: "October 12, 2021", newsLink: "https://doi.org/10.1063/5.0064104"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Mask effectiveness for preventing secondary cases of COVID-19, Johnson County, Iowa, USA", newsSource: "CDC", newsDate: "October 12, 2021", newsLink: "https://doi.org/10.3201/eid2801.211591"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Mask effectiveness for preventing secondary cases of COVID-19, Johnson County, Iowa, USA", newsSource: "CDC", newsDate: "October 12, 2021", newsLink: "https://doi.org/10.3201/eid2801.211591"}),
+e(NewsList, {newsType: "Media News", newsTitle: "A Wisconsin brewery is helping parents sue school districts that don't require masks", newsSource: "NPR", newsDate: "October 12, 2021", newsLink: "https://www.npr.org/2021/10/12/1045260064/covid-19-wisconsin-lawsuits-schools-parents-masks-brewery"}),
+e(NewsList, {newsType: "Media News", newsTitle: "WHO backs extra jab for Chinese-made vaccines, despite resistance to coronavirus boosters over supply strain", newsSource: "Washington Post", newsDate: "October 12, 2021", newsLink: "https://www.washingtonpost.com/world/2021/10/12/sinovac-sinopharm-third-dose/"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Hundreds of Police Officers Have Died From Covid. Vaccines Remain a Hard Sell.", newsSource: "NY Times", newsDate: "October 12, 2021", newsLink: "https://www.nytimes.com/2021/10/12/us/police-covid-vaccines.html"}), 
+e(NewsList, {newsType: "Non Media News", newsTitle: "COVID lesson: trust the public with hard truths", newsSource: "Nature", newsDate: "October 12, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02758-2"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Drop in U.S. birth rates amid Covid-19 could have lasting economic impact", newsSource: "CNBC", newsDate: "October 12, 2021", newsLink: "https://www.cnbc.com/2021/10/12/heres-what-lower-us-birth-rates-could-mean-for-social-security.html"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Heavy Users of Conservative Media More Willing to Take Ivermectin for Covid-19", newsSource: "Annenburg Public Policy Center", newsDate: "October 13, 2021", newsLink: "https://www.annenbergpublicpolicycenter.org/heavy-users-of-conservative-media-more-willing-to-take-ivermectin-for-covid-19/"}), 
+e(NewsList, {newsType: "Media News", newsTitle: "FDA scientists strike favorable tone on J&J Covid booster shots ahead of vote this week", newsSource: "CNBC", newsDate: "October 13, 2021", newsLink: "https://www.cnbc.com/2021/10/13/jj-covid-booster-shot-fda-scientists-strike-favorable-tone-ahead-of-vote-this-week.html"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Vaccine hesitant New Yorkers consider leaving the city as mandates take effect", newsSource: "Guardian", newsDate: "October 13, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/13/new-york-city-vaccine-mandates-bronx-hesitant"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Back from the brink: how Japan became a surprise Covid success story", newsSource: "Guardian", newsDate: "October 13, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/13/back-from-the-brink-how-japan-became-a-surprise-covid-success-story"}),                
 e(NewsList, {newsType: "Non Media News", newsTitle: "Computational prediction of the effect of amino acid changes on the binding affinity between SARS-CoV-2 spike RBD and human ACE2", newsSource: "PNAS", newsDate: "October 19, 2021", newsLink: "https://doi.org/10.1073/pnas.2106480118"}),  
          ); 
  }
@@ -122,8 +131,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/11/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/12/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/11/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/12/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/11/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/12/2021";
