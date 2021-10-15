@@ -6,7 +6,8 @@ class March2021NewsApp extends React.Component {
 e(NewsList, {newsType: "Non Media News", newsTitle: "Association Between ABO and Rh Blood Groups and SARS-CoV-2 Infection or Severe COVID-19 Illness", newsSource: "ACP Journals", newsDate: "March 2021", newsLink: "https://doi.org/10.7326/M20-4511"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Highly functional virus-specific cellular immune response in asymptomatic SARS-CoV-2 infection", newsSource: "Journal of Experimental Medicine", newsDate: "March 1, 2021", newsLink: "https://doi.org/10.1084/jem.20202617"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Experimental SARS-CoV-2 Infection of Bank Voles", newsSource: "CDC", newsDate: "March 11, 2021", newsLink: "https://doi.org/10.3201/eid2704.204945"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Life expectancy in adulthood is falling for those without a BA degree, but as educational gaps have widened, racial gaps have narrowed", newsSource: "PNAS", newsDate: "March 16, 2021", newsLink: "https://doi.org/10.1073/pnas.2024777118"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Life expectancy in adulthood is falling for those without a BA degree, but as educational gaps have widened, racial gaps have narrowed", newsSource: "PNAS", newsDate: "March 16, 2021", newsLink: "https://doi.org/10.1073/pnas.2024777118"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "CD8+ T-Cell Responses in COVID-19 Convalescent Individuals Target Conserved Epitopes From Multiple Prominent SARS-CoV-2 Circulating Variants", newsSource: "Oxford Academics", newsDate: "March 30, 2021", newsLink: "https://doi.org/10.1093/ofid/ofab143"}),               
               ); 
  }
 }
