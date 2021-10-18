@@ -169,7 +169,9 @@ e(NewsList, {newsType: "Media News", newsTitle: "Vaccine mandates stoked fears o
 e(NewsList, {newsType: "Media News", newsTitle: "England to open walk-in Covid clinics for children aged 12-15 within weeks", newsSource: "Guardian", newsDate: "October 17, 2021", newsLink: "https://www.theguardian.com/politics/2021/oct/17/england-to-open-walk-in-covid-clinics-for-children-aged-12-15-within-weeks"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Fauci says unvaccinated create danger of fifth COVID-19 wave", newsSource: "Hill", newsDate: "October 17, 2021", newsLink: "https://thehill.com/policy/healthcare/577092-fauci-says-unvaccinated-create-danger-of-fifth-covid-19-wave"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Pregnant women at risk from NHS workers’ mixed messages over safety of jab", newsSource: "Guardian", newsDate: "October 17, 2021", newsLink: "https://www.theguardian.com/society/2021/oct/17/pregnant-women-at-risk-from-health-professionals-mixed-messages-over-safety-of-jab"}),
-e(NewsList, {newsType: "Media News", newsTitle: "In Russia, experts are challenging official pandemic figures as too low. They refuse to be silenced.", newsSource: "Washington Post", newsDate: "October 17, 2021", newsLink: "https://www.washingtonpost.com/world/europe/russia-covid-count-fake-statistics/2021/10/16/b9d47058-277f-11ec-8739-5cb6aba30a30_story.html"}),                 
+e(NewsList, {newsType: "Media News", newsTitle: "In Russia, experts are challenging official pandemic figures as too low. They refuse to be silenced.", newsSource: "Washington Post", newsDate: "October 17, 2021", newsLink: "https://www.washingtonpost.com/world/europe/russia-covid-count-fake-statistics/2021/10/16/b9d47058-277f-11ec-8739-5cb6aba30a30_story.html"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Police departments face a shortage as unions enable officers to refuse vaccines", newsSource: "Guardian", newsDate: "October 18, 2021", newsLink: "https://www.theguardian.com/society/2021/oct/17/police-shortage-vaccine-mandate-unions-seattle-chicago"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Valneva Reports Positive Phase 3 Results for Inactivated, Adjuvanted COVID-19 Vaccine Candidate VLA2001", newsSource: "Valneva", newsDate: "October 18, 2021", newsLink: "https://valneva.com/press-release/valneva-reports-positive-phase-3-results-for-inactivated-adjuvanted-covid-19-vaccine-candidate-vla2001/"}),               
          ); 
  }
 }
@@ -183,8 +185,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/14/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/16/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/14/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/16/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/14/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/16/2021";
