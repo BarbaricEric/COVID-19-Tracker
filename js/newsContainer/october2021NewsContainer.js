@@ -187,7 +187,12 @@ e(NewsList, {newsType: "Media News", newsTitle: "What to know about the covid-19
 e(NewsList, {newsType: "Non Media News", newsTitle: "Colchicine in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial", newsSource: "Lancet", newsDate: "October 18, 2021", newsLink: "https://doi.org/10.1016/S2213-2600(21)00435-5"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Atea’s antiviral pill fails to clear Covid-19, forcing a re-think", newsSource: "STAT News", newsDate: "October 19, 2021", newsLink: "https://www.statnews.com/2021/10/19/ateas-antiviral-pill-fails-to-clear-covid-19-forcing-a-re-think/"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Religious exemptions threaten to undermine US Covid vaccine mandates", newsSource: "Guardian", newsDate: "October 19, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/19/religious-exemptions-us-covid-vaccine-mandates-california"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Asymptomatic SARS-CoV-2 Vaccine Breakthrough Infections in Health Care Workers Identified Through Routine Universal Surveillance Testing", newsSource: "ACP Journals", newsDate: "October 19, 2021", newsLink: "https://doi.org/10.7326/M21-3486"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Asymptomatic SARS-CoV-2 Vaccine Breakthrough Infections in Health Care Workers Identified Through Routine Universal Surveillance Testing", newsSource: "ACP Journals", newsDate: "October 19, 2021", newsLink: "https://doi.org/10.7326/M21-3486"}),
+e(NewsList, {newsType: "Media News", newsTitle: "COVID-19 and pregnancy: Women regret not getting the vaccine", newsSource: "AP News", newsDate: "October 19, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-science-alabama-birmingham-columbus-84187dc69eda09189401d409c84b4974"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Pediatricians and psychiatrists declare a national emergency in youth mental health.", newsSource: "NY Times", newsDate: "October 19, 2021", newsLink: "https://www.nytimes.com/2021/10/19/world/covid-pandemic-children-mental-health.html"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Effectiveness of Pfizer-BioNTech mRNA Vaccination Against COVID-19 Hospitalization Among Persons Aged 12–18 Years — United States, June–September 2021", newsSource: "CDC", newsDate: "October 19, 2021", newsLink: "http://dx.doi.org/10.15585/mmwr.mm7042e1"}),               
+e(NewsList, {newsType: "Media News", newsTitle: "New York City Issues Covid-19 Vaccine Mandate for All Public Employees", newsSource: "Wall Street Journal", newsDate: "October 20, 2021", newsLink: "https://www.wsj.com/articles/new-york-city-to-require-covid-19-vaccinations-for-all-public-employees-11634724001"}),
+e(NewsList, {newsType: "Media News", newsTitle: "In-N-Out Burger clashes with San Francisco over vaccine mandate: ‘We refuse to become the vaccination police’", newsSource: "Washington Post", newsDate: "October 20, 2021", newsLink: "https://www.washingtonpost.com/nation/2021/10/20/in-n-out-burger-san-francisco-vaccine-mandate/"}),                
          ); 
  }
 }
@@ -201,8 +206,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/18/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/19/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/18/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/19/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/18/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/19/2021";
