@@ -25,7 +25,7 @@
    console.log(data);
    const adminNum = document.querySelector(".administer-num")
    const event = new Date(data[0].date)
-   adminNum.style.cssText = "color: red; font-size:46px";
+   adminNum.style.cssText = "color: red; font-size:40px";
    adminNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
   });
 
@@ -34,7 +34,7 @@
    console.log(data); 
    const distNum = document.querySelector(".distribute-num")
    const event = new Date(data[0].date)
-   distNum.style.cssText = "color: red; font-size:46px";
+   distNum.style.cssText = "color: red; font-size:40px";
    distNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
   });
 
@@ -42,7 +42,7 @@
   d3v6.csv("./cdc_vaccination/vaccined_fully.csv").then(function(data) { 
    const vacNum = document.querySelector(".vac-num")
    const event = new Date(data[0].date)
-   vacNum.style.cssText = "color: red; font-size:46px";
+   vacNum.style.cssText = "color: red; font-size:40px";
    vacNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech) + parseInt(data[0].Moderna) + parseInt(data[0].Janssen) + parseInt(data[0].NotIdentified)) + ' as of ' + (event.toLocaleString('en-US').substring(0,9))
   });
 
@@ -52,11 +52,11 @@
    const modernaBoostNum = document.querySelector(".moderna-boost-num")
    const jensenBoostNum = document.querySelector(".jensen-boost-num")
    const event = new Date(data[0].date)
-   pfizerBoostNum.style.cssText = "color: #4169e1; font-size:26px";
+   pfizerBoostNum.style.cssText = "color: #4169e1; font-size:22px";
    pfizerBoostNum.textContent = addCommas(parseInt(data[0].PfizerBioNTech)) + ' as of ' + event.toLocaleString('en-US').substring(0,9)    
-   modernaBoostNum.style.cssText = "color: #4169e1; font-size:26px";
+   modernaBoostNum.style.cssText = "color: #4169e1; font-size:22px";
    modernaBoostNum.textContent = addCommas(parseInt(data[0].Moderna)) + ' as of ' + event.toLocaleString('en-US').substring(0,9) 
-   jensenBoostNum.style.cssText = "color: #4169e1; font-size:26px";
+   jensenBoostNum.style.cssText = "color: #4169e1; font-size:22px";
    jensenBoostNum.textContent = addCommas(parseInt(data[0].Janssen)) + ' as of ' + event.toLocaleString('en-US').substring(0,9) 
   });
 
