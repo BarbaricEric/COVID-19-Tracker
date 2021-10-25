@@ -179,6 +179,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "US throws out millions of doses
 e(NewsList, {newsType: "Media News", newsTitle: "Vaccine mandates stoked fears of labor shortages. But hospitals say they’re working.", newsSource: "Washington Post", newsDate: "October 16, 2021", newsLink: "https://www.washingtonpost.com/health/2021/10/16/hospital-covid-vaccine-mandate/"}),
 e(NewsList, {newsType: "Media News", newsTitle: "England to open walk-in Covid clinics for children aged 12-15 within weeks", newsSource: "Guardian", newsDate: "October 17, 2021", newsLink: "https://www.theguardian.com/politics/2021/oct/17/england-to-open-walk-in-covid-clinics-for-children-aged-12-15-within-weeks"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Fauci says unvaccinated create danger of fifth COVID-19 wave", newsSource: "Hill", newsDate: "October 17, 2021", newsLink: "https://thehill.com/policy/healthcare/577092-fauci-says-unvaccinated-create-danger-of-fifth-covid-19-wave"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Doctor who advocated Covid-19 therapy including ivermectin applied for patent on same unproven treatment", newsSource: "Guardian", newsDate: "October 17, 2021", newsLink: "https://www.theguardian.com/australia-news/2021/oct/18/doctor-who-advocated-covid-19-therapy-including-ivermectin-applied-for-patent-on-same-unproven-treatment"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Effectiveness of heterologous ChAdOx1 nCoV-19 and mRNA prime-boost vaccination against symptomatic Covid-19 infection in Sweden: A nationwide cohort study", newsSource: "Lancet", newsDate: "October 17, 2021", newsLink: "https://doi.org/10.1016/j.lanepe.2021.100249"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Pregnant women at risk from NHS workers’ mixed messages over safety of jab", newsSource: "Guardian", newsDate: "October 17, 2021", newsLink: "https://www.theguardian.com/society/2021/oct/17/pregnant-women-at-risk-from-health-professionals-mixed-messages-over-safety-of-jab"}),
 e(NewsList, {newsType: "Media News", newsTitle: "In Russia, experts are challenging official pandemic figures as too low. They refuse to be silenced.", newsSource: "Washington Post", newsDate: "October 17, 2021", newsLink: "https://www.washingtonpost.com/world/europe/russia-covid-count-fake-statistics/2021/10/16/b9d47058-277f-11ec-8739-5cb6aba30a30_story.html"}),
@@ -220,7 +221,8 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "Covid-19 Vaccination during
 e(NewsList, {newsType: "Non Media News", newsTitle: "BNT162b2 and ChAdOx1 nCoV-19 Vaccine Effectiveness against Death from the Delta Variant", newsSource: "New England Journal of Medicine", newsDate: "October 20, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMc2113864"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Toxic Effects from Ivermectin Use Associated with Prevention and Treatment of Covid-19", newsSource: "New England Journal of Medicine", newsDate: "October 20, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMc2114907"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "The SARS-CoV-2 main protease Mpro causes microvascular brain pathology by cleaving NEMO in brain endothelial cells", newsSource: "Nature", newsDate: "October , 2021", newsLink: "https://doi.org/10.1038/s41593-021-00926-1"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Does infection with or vaccination against SARS-CoV-2 lead to lasting immunity?", newsSource: "Lancet", newsDate: "October 21, 2021", newsLink: "https://doi.org/10.1016/S2213-2600(21)00407-0"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Does infection with or vaccination against SARS-CoV-2 lead to lasting immunity?", newsSource: "Lancet", newsDate: "October 21, 2021", newsLink: "https://doi.org/10.1016/S2213-2600(21)00407-0"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Bat Research Group Failed to Submit Virus Studies Promptly, N.I.H. Says", newsSource: "NY Times", newsDate: "October 21, 2021", newsLink: "https://www.nytimes.com/2021/10/21/science/bats-covid-lab-leak-nih.html"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Gun violence incidence during the COVID-19 pandemic is higher than before the pandemic in the United States", newsSource: "Nature", newsDate: "October 21, 2021", newsLink: "https://doi.org/10.1038/s41598-021-98813-z"}), 
 e(NewsList, {newsType: "Media News", newsTitle: "The delta variant has a mutation that’s worrying experts: Here’s what we know so far", newsSource: "CNBC", newsDate: "October 21, 2021", newsLink: "https://www.cnbc.com/2021/10/21/the-delta-variant-has-a-mutation-what-we-know-so-far.html"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Group that spread false Covid claims doubled Facebook interactions in six months", newsSource: "Guardian", newsDate: "October 21, 2021", newsLink: "https://www.theguardian.com/technology/2021/oct/21/group-that-spread-false-covid-claims-doubled-facebook-interactions-in-six-months"}), 
@@ -246,9 +248,15 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 Vaccination and No
 e(NewsList, {newsType: "Media News", newsTitle: "Despite higher COVID risk, most pregnant Americans remain unvaccinated", newsSource: "NPR", newsDate: "October 23, 2021", newsLink: "https://www.npr.org/2021/10/23/1048427792/despite-higher-covid-risk-most-pregnant-americans-remain-unvaccinated"}),
 e(NewsList, {newsType: "Media News", newsTitle: "A 12-Year-Old Girl Sparks Debate on Covid-19 Vaccines for Kids in Mexico", newsSource: "Wall Street Journal", newsDate: "October 23, 2021", newsLink: "https://www.wsj.com/articles/a-12-year-old-girl-sparks-debate-on-covid-19-vaccines-for-kids-in-mexico-11634990403"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Austrian chancellor threatens lockdown for unvaccinated", newsSource: "AP News", newsDate: "October 23, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-europe-health-austria-5bd2969df1d3f5e07f766ba8227a43c6"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Covid vaccine boosters are now available. Here’s who’s eligible for Pfizer, Moderna and J&J’s shots ", newsSource: "CNBC", newsDate: "October 23, 2021", newsLink: "https://www.cnbc.com/2021/10/23/covid-vaccine-boosters-are-now-available-heres-whos-eligible-for-pfizer-moderna-and-jjs-shots-.html"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "China Expects New Covid Outbreak to Worsen in Coming Days", newsSource: "Bloomberg", newsDate: "October 24, 2021", newsLink: "https://www.bloomberg.com/news/articles/2021-10-24/china-expects-new-covid-outbreak-to-widen-in-coming-days"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Thousands of workers across the U.S. would rather lose their jobs than be vaccinated", newsSource: "NPR", newsDate: "October 24, 2021", newsLink: "https://www.npr.org/2021/10/24/1047947268/covid-vaccine-workers-quitting-getting-fired-mandates"}),
-e(NewsList, {newsType: "Media News", newsTitle: "Darker skies and colder weather provide perfect conditions for Covid-19 to thrive", newsSource: "Guardian", newsDate: "October 24, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/24/darker-skies-and-colder-weather-provide-perfect-conditions-for-covid-19-to-thrive"}),               
+e(NewsList, {newsType: "Media News", newsTitle: "Darker skies and colder weather provide perfect conditions for Covid-19 to thrive", newsSource: "Guardian", newsDate: "October 24, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/24/darker-skies-and-colder-weather-provide-perfect-conditions-for-covid-19-to-thrive"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Fauci predicts Covid shots for kids five to 11 will be available by early November", newsSource: "Guardian", newsDate: "October 24, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/24/fauci-covid-vaccines-children-5-11"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Business groups ask White House to delay Biden Covid vaccine mandate until after the holidays", newsSource: "CNBC", newsDate: "October 25, 2021", newsLink: "https://www.cnbc.com/2021/10/25/businesses-ask-white-house-to-delay-biden-covid-vaccine-mandate-until-after-holidays.html"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Worst of US pandemic likely behind us but we can’t drop our guard, experts say", newsSource: "Guardian", newsDate: "October 25, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/25/us-covid-coronavirus-pandemic-experts"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Fox News’s Neil Cavuto ‘begs’ viewers to ‘stop the politics’ and get Covid vaccine", newsSource: "Guardian", newsDate: "October 25, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/25/fox-news-neil-cavuto-coronavirus-covid-vaccine"}),
+e(NewsList, {newsType: "Media News", newsTitle: "As some police fight vaccine rules, DeSantis says Florida will pay them $5,000 to relocate: ‘We’ll treat you better’", newsSource: "Washington Post", newsDate: "October 25, 2021", newsLink: "https://www.washingtonpost.com/nation/2021/10/25/desantis-offers-5k-bonus-outofstate-unvaccinated-officers/"}),               
          ); 
  }
 }
@@ -256,14 +264,14 @@ e(NewsList, {newsType: "Media News", newsTitle: "Darker skies and colder weather
 document.addEventListener("DOMContentLoaded", function(event) {
   ReactDOM.render(
   e(October2021NewsApp), 
-  //e(Welcome, {name: "Person"}), e(NewsList, {newsType: "Non Media News", newsTitle: "", newsSource: "", newsDate: "October , 2021", newsLink: ""}),
+  //e(Welcome, {name: "Person"}), e(NewsList, {newsType: "Media News", newsTitle: "", newsSource: "", newsDate: "October , 2021", newsLink: ""}),
   document.querySelector('#article-main-october2021')
   );
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/21/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/24/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/21/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/24/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/21/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/24/2021";
