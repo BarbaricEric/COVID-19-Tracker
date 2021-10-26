@@ -3,6 +3,7 @@
 class September2021NewsApp extends React.Component {
  render() {
       return e("div", null,
+e(NewsList, {newsType: "Media News", newsTitle: "China’s mRNA Covid Shot-Maker Expects Efficacy Data by Year End", newsSource: "Bloomberg", newsDate: "September 1, 2021", newsLink: "https://www.bloomberg.com/news/articles/2021-09-02/china-s-own-mrna-covid-shot-expects-efficacy-data-by-year-end"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2-IgG response is different in COVID-19 outpatients and asymptomatic contact persons", newsSource: "Science Direct", newsDate: "September 2020", newsLink: "https://www.sciencedirect.com/science/article/pii/S1386653220302845"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Acute exercise increases immune responses to SARS CoV-2 in a previously infected man", newsSource: "Science Direct", newsDate: "September 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S2666354621001460"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Mild SARS-CoV-2 Illness Is Not Associated with Reinfections and Provides Persistent Spike, Nucleocapsid, and Virus-Neutralizing Antibodies", newsSource: "ASM Journals", newsDate: "September 1, 2021", newsLink: "https://doi.org/10.1128/Spectrum.00087-21"}),               
