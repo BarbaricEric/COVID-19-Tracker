@@ -256,11 +256,18 @@ e(NewsList, {newsType: "Media News", newsTitle: "China Expects New Covid Outbrea
 e(NewsList, {newsType: "Media News", newsTitle: "Thousands of workers across the U.S. would rather lose their jobs than be vaccinated", newsSource: "NPR", newsDate: "October 24, 2021", newsLink: "https://www.npr.org/2021/10/24/1047947268/covid-vaccine-workers-quitting-getting-fired-mandates"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Darker skies and colder weather provide perfect conditions for Covid-19 to thrive", newsSource: "Guardian", newsDate: "October 24, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/24/darker-skies-and-colder-weather-provide-perfect-conditions-for-covid-19-to-thrive"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Fauci predicts Covid shots for kids five to 11 will be available by early November", newsSource: "Guardian", newsDate: "October 24, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/24/fauci-covid-vaccines-children-5-11"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Africa tries to end vaccine inequity by replicating its own", newsSource: "AP News", newsDate: "October 24, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-technology-business-cape-town-health-48046e5255cc3e4fa27455fc12ab5e52"}),
+e(NewsList, {newsType: "Media News", newsTitle: "China Locks Down Thousands in North to Contain Growing Outbreak", newsSource: "Bloomberg", newsDate: "October 24, 2021", newsLink: "https://www.bloomberg.com/news/articles/2021-10-25/china-locks-down-thousands-in-north-as-delta-outbreak-spreads"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Rising number of anti-vaxxers ‘willing to take direct action against schools’", newsSource: "Guardian", newsDate: "October 25, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/25/keir-starmer-schools-protected-anti-vaccine-protests-labour-exclusion-orders-priti-patel"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Business groups ask White House to delay Biden Covid vaccine mandate until after the holidays", newsSource: "CNBC", newsDate: "October 25, 2021", newsLink: "https://www.cnbc.com/2021/10/25/businesses-ask-white-house-to-delay-biden-covid-vaccine-mandate-until-after-holidays.html"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Worst of US pandemic likely behind us but we can’t drop our guard, experts say", newsSource: "Guardian", newsDate: "October 25, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/25/us-covid-coronavirus-pandemic-experts"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Fox News’s Neil Cavuto ‘begs’ viewers to ‘stop the politics’ and get Covid vaccine", newsSource: "Guardian", newsDate: "October 25, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/25/fox-news-neil-cavuto-coronavirus-covid-vaccine"}),
 e(NewsList, {newsType: "Media News", newsTitle: "As some police fight vaccine rules, DeSantis says Florida will pay them $5,000 to relocate: ‘We’ll treat you better’", newsSource: "Washington Post", newsDate: "October 25, 2021", newsLink: "https://www.washingtonpost.com/nation/2021/10/25/desantis-offers-5k-bonus-outofstate-unvaccinated-officers/"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Neurological complications after first dose of COVID-19 vaccines and SARS-CoV-2 infection", newsSource: "Nature", newsDate: "October 25, 2021", newsLink: "https://doi.org/10.1038/s41591-021-01556-7"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Neurological complications after first dose of COVID-19 vaccines and SARS-CoV-2 infection", newsSource: "Nature", newsDate: "October 25, 2021", newsLink: "https://doi.org/10.1038/s41591-021-01556-7"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Alabama Gov. Kay Ivey issues order against vaccine mandates", newsSource: "UPI", newsDate: "October 25, 2021", newsLink: "https://www.upi.com/Top_News/US/2021/10/25/alabama-Kay-Ivey-order-vaccine-mandates/5061635204851/"}),
+e(NewsList, {newsType: "Media News", newsTitle: "US details new international COVID-19 travel requirements", newsSource: "AP News", newsDate: "October 26, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-lifestyle-business-air-travel-travel-e327b9d85a6dc81f07e226b937fe7097"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Tracking the FDA advisory panel meeting on Covid-19 vaccines for kids", newsSource: "STAT News", newsDate: "October 26, 2021", newsLink: "https://www.statnews.com/2021/10/26/pfizer-covid19-vaccine-kids-vrbpac-fda/"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Facebook froze as anti-vaccine comments swarmed users", newsSource: "AP News", newsDate: "October 26, 2021", newsLink: "https://apnews.com/article/the-facebook-papers-covid-vaccine-misinformation-c8bbc569be7cc2ca583dadb4236a0613"}),              
          ); 
  }
 }
@@ -274,8 +281,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/24/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/25/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/24/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/25/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/24/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/25/2021";
