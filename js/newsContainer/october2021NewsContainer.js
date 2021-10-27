@@ -154,6 +154,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "Data shows more children are ge
 e(NewsList, {newsType: "Media News", newsTitle: "How the hunt for this deadly virus shaped the search for coronavirus’s origins", newsSource: "Washington Post", newsDate: "October 14, 2021", newsLink: "https://www.washingtonpost.com/health/2021/10/14/how-viruses-jump-from-animals-to-humans/"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Genomic characterization and epidemiology of an emerging SARS-CoV-2 variant in Delhi, India", newsSource: "Science", newsDate: "October 14, 2021", newsLink: "https://doi.org/10.1126/science.abj9932"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Guillain-Barré syndrome associated with COVID-19 vaccination", newsSource: "CDC", newsDate: "October 14, 2021", newsLink: "https://doi.org/10.3201/eid2712.211634"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Covid-19 Breakthrough Infections in Vaccinated Health Care Workers", newsSource: "New England Journal of Medicine", newsDate: "October 14, 2021", newsLink: "https://www.nejm.org/doi/10.1056/NEJMoa2109072"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Brain MRI in SARS-CoV-2 pneumonia patients with newly developed neurological manifestations suggestive of brain involvement", newsSource: "Nature", newsDate: "October 14, 2021", newsLink: "https://doi.org/10.1038/s41598-021-00064-5"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Universal risk phenotype of US counties for flu-like transmission to improve county-specific COVID-19 incidence forecasts", newsSource: "PLOS", newsDate: "October 14, 2021", newsLink: "https://doi.org/10.1371/journal.pcbi.1009363"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "The impact of the COVID-19 response on the provision of other public health services in the U.S.: A cross sectional study", newsSource: "PLOS", newsDate: "October 14, 2021", newsLink: "https://doi.org/10.1371/journal.pone.0255844"}),               
@@ -268,11 +269,21 @@ e(NewsList, {newsType: "Media News", newsTitle: "Alabama Gov. Kay Ivey issues or
 e(NewsList, {newsType: "Non Media News", newsTitle: "Cryptic transmission of SARS-CoV-2 and the first COVID-19 wave", newsSource: "Nature", newsDate: "October 25, 2021", newsLink: "https://doi.org/10.1038/s41586-021-04130-w"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Anti–SARS-CoV-2 and Autoantibody Profiles in the Cerebrospinal Fluid of 3 Teenaged Patients With COVID-19 and Subacute Neuropsychiatric Symptoms", newsSource: "Jama Network", newsDate: "October 25, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamaneurol.2021.3821"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Transmission of severe acute respiratory syndrome coronavirus 2 in households with children, southwest Germany, May–August 2020", newsSource: "CDC", newsDate: "October 25, 2021", newsLink: "https://doi.org/10.3201/eid2712.210978"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "The spike protein of SARS-CoV-2 variant A.30 is heavily mutated and evades vaccine-induced antibodies with high efficiency", newsSource: "Nature", newsDate: "October 25, 2021", newsLink: "https://doi.org/10.1038/s41423-021-00779-5"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Pfizer Says Lower-Dose Vaccine for Small Kids Could Also Work for Big Kids", newsSource: "Bloomberg", newsDate: "October 26, 2021", newsLink: "https://www.bloomberg.com/news/articles/2021-10-26/pfizer-says-lower-vaccine-dose-could-also-work-for-older-kids"}),
+e(NewsList, {newsType: "Media News", newsTitle: "FDA panel recommends Pfizer’s low-dose Covid vaccine for kids ages 5 to 11", newsSource: "CNBC", newsDate: "October 26, 2021", newsLink: "https://www.cnbc.com/2021/10/26/fda-panel-recommends-pfizers-low-dose-covid-vaccine-for-kids-ages-5-to-11.html"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Identification of driver genes for critical forms of COVID-19 in a deeply phenotyped young patient cohort", newsSource: "Science", newsDate: "October 26, 2021", newsLink: "https://doi.org/10.1126/scitranslmed.abj7521"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Membrane fusion and immune evasion by the spike protein of SARS-CoV-2 Delta variant", newsSource: "Science", newsDate: "October 26, 2021", newsLink: "https://doi.org/10.1126/science.abl9463"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "US details new international COVID-19 travel requirements", newsSource: "AP News", newsDate: "October 26, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-lifestyle-business-air-travel-travel-e327b9d85a6dc81f07e226b937fe7097"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Tracking the FDA advisory panel meeting on Covid-19 vaccines for kids", newsSource: "STAT News", newsDate: "October 26, 2021", newsLink: "https://www.statnews.com/2021/10/26/pfizer-covid19-vaccine-kids-vrbpac-fda/"}),
-e(NewsList, {newsType: "Media News", newsTitle: "Facebook froze as anti-vaccine comments swarmed users", newsSource: "AP News", newsDate: "October 26, 2021", newsLink: "https://apnews.com/article/the-facebook-papers-covid-vaccine-misinformation-c8bbc569be7cc2ca583dadb4236a0613"}),              
+e(NewsList, {newsType: "Media News", newsTitle: "Facebook froze as anti-vaccine comments swarmed users", newsSource: "AP News", newsDate: "October 26, 2021", newsLink: "https://apnews.com/article/the-facebook-papers-covid-vaccine-misinformation-c8bbc569be7cc2ca583dadb4236a0613"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Pregnant women are being turned away from UK Covid vaccine clinics, experts warn", newsSource: "Guardian", newsDate: "October 26, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/26/pregnant-women-are-being-turned-away-from-covid-vaccine-clinics-experts-warn"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Covid-19 vaccination rates for kids echo regional disparities, worrying doctors", newsSource: "NBC News", newsDate: "October 26, 2021", newsLink: "https://www.nbcnews.com/science/science-news/covid-19-vaccine-rates-kids-slow-worrying-doctors-rcna3804"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Australian business groups lament ‘nightmare’ of states’ differing Covid vaccine mandates", newsSource: "Guardian", newsDate: "October 26, 2021", newsLink: "https://www.theguardian.com/australia-news/2021/oct/27/australian-business-groups-lament-nightmare-of-states-differing-covid-vaccine-mandates"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Federal judge rejects Southwest Airlines pilots’ request to block vaccine mandate", newsSource: "CNBC", newsDate: "October 26, 2021", newsLink: "https://www.cnbc.com/2021/10/26/federal-judge-rejects-southwest-airlines-pilots-request-to-block-vaccine-mandate.html"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Merck agrees to let other drug makers make its COVID pill", newsSource: "AP News", newsDate: "October 27, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-technology-business-public-health-health-ddde9854faee530d6c4bc435f3e6da74"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Wearing face coverings protected wearers from COVID-19 infection – large scale study", newsSource: "University of Oxford", newsDate: "October 27, 2021", newsLink: "https://www.ox.ac.uk/news/2021-10-27-wearing-face-coverings-protected-wearers-covid-19-infection-large-scale-study"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Novavax Files for Authorization of its COVID-19 Vaccine in the United Kingdom", newsSource: "Novavax", newsDate: "October 27, 2021", newsLink: "https://ir.novavax.com/2021-10-27-Novavax-Files-for-Authorization-of-its-COVID-19-Vaccine-in-the-United-Kingdom"}),               
          ); 
  }
 }
@@ -286,8 +297,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/25/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/26/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/25/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/26/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/25/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/26/2021";
