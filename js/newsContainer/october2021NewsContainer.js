@@ -67,6 +67,7 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "Waning of BNT162b2 Vaccine 
 e(NewsList, {newsType: "Non Media News", newsTitle: "The legacy of maternal SARS-CoV-2 infection on the immunology of the neonate", newsSource: "Nature", newsDate: "October 6, 2021", newsLink: "https://doi.org/10.1038/s41590-021-01049-2"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Anti-SARS-CoV-2 receptor binding domain antibody evolution after mRNA vaccination", newsSource: "Nature", newsDate: "October 7, 2021", newsLink: "https://doi.org/10.1038/s41586-021-04060-7"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Why easing COVID restrictions could prompt a fierce flu rebound", newsSource: "Nature", newsDate: "October 7, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02558-8"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Development of a rapid plasma decontamination system for decontamination and reuse of filtering facepiece respirators", newsSource: "AIP", newsDate: "October 7, 2021", newsLink: "https://doi.org/10.1063/5.0067730"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "A genetic link between risk for Alzheimer's disease and severe COVID-19 outcomes via the OAS1 gene", newsSource: "Oxford Academics", newsDate: "October 7, 2021", newsLink: "https://doi.org/10.1093/brain/awab337"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Association of Receipt of the Ad26.COV2.S COVID-19 Vaccine With Presumptive Guillain-Barré Syndrome, February-July 2021", newsSource: "Jama Network", newsDate: "October 7, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jama.2021.16496"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Monetary incentives increase COVID-19 vaccinations", newsSource: "Science", newsDate: "October 7, 2021", newsLink: "https://doi.org/10.1126/science.abm0475"}),
@@ -285,7 +286,18 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "Coronavirus disease contact
 e(NewsList, {newsType: "Media News", newsTitle: "Some immunocompromised Americans can get four doses of COVID-19 vaccine", newsSource: "CBS News", newsDate: "October 27, 2021", newsLink: "https://www.cbsnews.com/news/covid-19-vaccine-fourth-dose-booster-immunocompromised/"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Merck agrees to let other drug makers make its COVID pill", newsSource: "AP News", newsDate: "October 27, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-technology-business-public-health-health-ddde9854faee530d6c4bc435f3e6da74"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Wearing face coverings protected wearers from COVID-19 infection – large scale study", newsSource: "University of Oxford", newsDate: "October 27, 2021", newsLink: "https://www.ox.ac.uk/news/2021-10-27-wearing-face-coverings-protected-wearers-covid-19-infection-large-scale-study"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Novavax Files for Authorization of its COVID-19 Vaccine in the United Kingdom", newsSource: "Novavax", newsDate: "October 27, 2021", newsLink: "https://ir.novavax.com/2021-10-27-Novavax-Files-for-Authorization-of-its-COVID-19-Vaccine-in-the-United-Kingdom"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Novavax Files for Authorization of its COVID-19 Vaccine in the United Kingdom", newsSource: "Novavax", newsDate: "October 27, 2021", newsLink: "https://ir.novavax.com/2021-10-27-Novavax-Files-for-Authorization-of-its-COVID-19-Vaccine-in-the-United-Kingdom"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "What COVID vaccines for young kids could mean for the pandemic", newsSource: "Nature", newsDate: "October 27, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02947-z"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Fox anchor Neil Cavuto urged viewers to get vaccinated. Then came the death threats", newsSource: "NPR", newsDate: "October 27, 2021", newsLink: "https://www.npr.org/2021/10/27/1049664531/fox-anchor-neil-cavuto-covid-19-vaccine-death-threats"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Adverse Effects after BNT162b2 Vaccine and SARS-CoV-2 Infection, According to Age and Sex", newsSource: "New England Journal of Medicine", newsDate: "October 27, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMc2115045"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Early Treatment for Covid-19 with SARS-CoV-2 Neutralizing Antibody Sotrovimab", newsSource: "New England Journal of Medicine", newsDate: "October 27, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMoa2107934"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Second In-N-Out burger restaurant in California shut for ignoring Covid rules", newsSource: "Guardian", newsDate: "October 27, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/27/in-n-out-burger-restaurant-shot-california-ignoring-covid-rules"}),
+e(NewsList, {newsType: "Media News", newsTitle: "How ‘mix and match’ COVID-19 booster shots work, according to an infectious disease expert", newsSource: "PBS", newsDate: "October 27, 2021", newsLink: "https://www.pbs.org/newshour/health/how-mix-and-match-covid-19-booster-shots-work-according-to-an-infectious-disease-expert"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Inside the life of a COVID long-hauler who fought like an animal to make it out of the hospital after 299 days", newsSource: "CBS News", newsDate: "October 27, 2021", newsLink: "https://www.cbsnews.com/news/covid-long-hauler-alex-castro-299-days-hospital/"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Waning Immunity after the BNT162b2 Vaccine in Israel", newsSource: "New England Journal of Medicine", newsDate: "October 27, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMoa2114228"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Vaccine reluctance in Eastern Europe brings high COVID cost", newsSource: "AP News", newsDate: "October , 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-health-religion-europe-eastern-europe-2c9668cdc75b37ed140345405fcc3f54"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Some 5% of unvaccinated adults quit their jobs over Covid vaccine mandates, survey shows", newsSource: "CNBC", newsDate: "October , 2021", newsLink: "https://www.cnbc.com/2021/10/28/covid-vaccine-some-5percent-of-unvaccinated-adults-have-quit-their-jobs-over-a-mandate-survey-shows.html"}),               
+e(NewsList, {newsType: "Media News", newsTitle: "Judge denies NYPD union's bid to halt COVID vaccine mandate", newsSource: "CBS News", newsDate: "October 28, 2021", newsLink: "https://www.cbsnews.com/news/covid-vaccine-mandate-nypd-union-denied/"}),               
          ); 
  }
 }
@@ -299,8 +311,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/26/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/27/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/26/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/27/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/26/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/27/2021";
