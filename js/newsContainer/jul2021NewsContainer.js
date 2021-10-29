@@ -2,8 +2,7 @@
 
 class July2021NewsApp extends React.Component {
  render() {
-      return e("div", null,
-e(NewsList, {newsType: "Non Media News", newsTitle: "", newsSource: "", newsDate: "July , 2021", newsLink: ""}),               
+      return e("div", null,              
 e(NewsList, {newsType: "Non Media News", newsTitle: "Making trials part of good clinical care: lessons from the RECOVERY trial", newsSource: "U.S. National Library of Medicine", newsDate: "July 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8285150/"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Public Preferences for Social Distancing Policy Measures to Mitigate the Spread of COVID-19 in Missouri", newsSource: "Jama Network", newsDate: "July 8, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.16113"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 false dichotomies and a comprehensive review of the evidence regarding public health, COVID-19 symptomatology, SARS-CoV-2 transmission, mask wearing, and reinfection", newsSource: "BMC", newsDate: "July 9, 2021", newsLink: "https://doi.org/10.1186/s12879-021-06357-4"}),               
@@ -14,7 +13,8 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "Mask use in community setti
 e(NewsList, {newsType: "Non Media News", newsTitle: "Development of safe and highly protective live-attenuated SARS-CoV-2 vaccine candidates by genome recoding", newsSource: "Cell", newsDate: "July 19, 2021", newsLink: "https://doi.org/10.1016/j.celrep.2021.109493"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Global minimum estimates of children affected by COVID-19-associated orphanhood and deaths of caregivers: a modelling study", newsSource: "Lancet", newsDate: "July 20, 2021", newsLink: "https://doi.org/10.1016/S0140-6736(21)01253-8"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Experimental investigation of indoor aerosol dispersion and accumulation in the context of COVID-19: Effects of masks and ventilation", newsSource: "Physics of Fluids", newsDate: "July 21, 2021", newsLink: "https://doi.org/10.1063/5.0057100"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "A single dose of replication-competent VSV-vectored vaccine expressing SARS-CoV-2 S1 protects against virus replication in a hamster model of severe COVID-19", newsSource: "Nature", newsDate: "July 21, 2021", newsLink: "https://doi.org/10.1038/s41541-021-00352-1"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "A single dose of replication-competent VSV-vectored vaccine expressing SARS-CoV-2 S1 protects against virus replication in a hamster model of severe COVID-19", newsSource: "Nature", newsDate: "July 21, 2021", newsLink: "https://doi.org/10.1038/s41541-021-00352-1"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Cognitive deficits in people who have recovered from COVID-19", newsSource: "Lancet", newsDate: "July 22, 2021", newsLink: "https://doi.org/10.1016/j.eclinm.2021.101044"}),                
 e(NewsList, {newsType: "Non Media News", newsTitle: "Housing, sanitation and living conditions affecting SARS-CoV-2 prevention interventions in 54 African countries", newsSource: "Cambridge University Press", newsDate: "July 23, 2021", newsLink: "https://doi.org/10.1017/S0950268821001734"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Single-cell RNA sequencing reveals ex vivo signatures of SARS-CoV-2-reactive T cells through ‘reverse phenotyping’", newsSource: "Nature", newsDate: "July 26, 2021", newsLink: "https://doi.org/10.1038/s41467-021-24730-4"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Postacute Sequelae of COVID-19 Pneumonia: 6-month Chest CT Follow-up", newsSource: "RSNA", newsDate: "July 27, 2021", newsLink: "https://doi.org/10.1148/radiol.2021210834"}),
