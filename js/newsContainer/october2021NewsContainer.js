@@ -291,6 +291,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "Merck agrees to let other drug 
 e(NewsList, {newsType: "Non Media News", newsTitle: "Wearing face coverings protected wearers from COVID-19 infection – large scale study", newsSource: "University of Oxford", newsDate: "October 27, 2021", newsLink: "https://www.ox.ac.uk/news/2021-10-27-wearing-face-coverings-protected-wearers-covid-19-infection-large-scale-study"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Novavax Files for Authorization of its COVID-19 Vaccine in the United Kingdom", newsSource: "Novavax", newsDate: "October 27, 2021", newsLink: "https://ir.novavax.com/2021-10-27-Novavax-Files-for-Authorization-of-its-COVID-19-Vaccine-in-the-United-Kingdom"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "What COVID vaccines for young kids could mean for the pandemic", newsSource: "Nature", newsDate: "October 27, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02947-z"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Cigarette sales went up last year for the first time in 20 years", newsSource: "NPR", newsDate: "October 27, 2021", newsLink: "https://www.npr.org/sections/coronavirus-live-updates/2021/10/27/1049638567/cigarette-sales-increase-smoking-pandemic"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Fox anchor Neil Cavuto urged viewers to get vaccinated. Then came the death threats", newsSource: "NPR", newsDate: "October 27, 2021", newsLink: "https://www.npr.org/2021/10/27/1049664531/fox-anchor-neil-cavuto-covid-19-vaccine-death-threats"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Adverse Effects after BNT162b2 Vaccine and SARS-CoV-2 Infection, According to Age and Sex", newsSource: "New England Journal of Medicine", newsDate: "October 27, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMc2115045"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Early Treatment for Covid-19 with SARS-CoV-2 Neutralizing Antibody Sotrovimab", newsSource: "New England Journal of Medicine", newsDate: "October 27, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMoa2107934"}),
@@ -300,7 +301,10 @@ e(NewsList, {newsType: "Media News", newsTitle: "Inside the life of a COVID long
 e(NewsList, {newsType: "Non Media News", newsTitle: "Waning Immunity after the BNT162b2 Vaccine in Israel", newsSource: "New England Journal of Medicine", newsDate: "October 27, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMoa2114228"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Vaccine reluctance in Eastern Europe brings high COVID cost", newsSource: "AP News", newsDate: "October , 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-health-religion-europe-eastern-europe-2c9668cdc75b37ed140345405fcc3f54"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Some 5% of unvaccinated adults quit their jobs over Covid vaccine mandates, survey shows", newsSource: "CNBC", newsDate: "October , 2021", newsLink: "https://www.cnbc.com/2021/10/28/covid-vaccine-some-5percent-of-unvaccinated-adults-have-quit-their-jobs-over-a-mandate-survey-shows.html"}),               
-e(NewsList, {newsType: "Media News", newsTitle: "Judge denies NYPD union's bid to halt COVID vaccine mandate", newsSource: "CBS News", newsDate: "October 28, 2021", newsLink: "https://www.cbsnews.com/news/covid-vaccine-mandate-nypd-union-denied/"}),               
+e(NewsList, {newsType: "Media News", newsTitle: "Judge denies NYPD union's bid to halt COVID vaccine mandate", newsSource: "CBS News", newsDate: "October 28, 2021", newsLink: "https://www.cbsnews.com/news/covid-vaccine-mandate-nypd-union-denied/"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Some parents were eager to get the coronavirus vaccine. Now they are wavering on vaccinating their kids.", newsSource: "Washington Post", newsDate: "October 28, 2021", newsLink: "https://www.washingtonpost.com/health/2021/10/28/covid-parents-worry-vaccine-children/"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Delta mutation is no reason to panic — but Covid vaccination remains crucial, scientists say", newsSource: "CNBC", newsDate: "October 29, 2021", newsLink: "https://www.cnbc.com/2021/10/29/covid-delta-mutation-is-no-reason-to-panic-scientists-say.html"}),
+e(NewsList, {newsType: "Media News", newsTitle: "In China, 300 coronavirus cases means public shaming, marooned travelers and a nationwide dragnet", newsSource: "Washington Post", newsDate: "October 29, 2021", newsLink: "https://www.washingtonpost.com/world/asia_pacific/china-covid-zero-train/2021/10/29/fbfcc6ae-386b-11ec-9662-399cfa75efee_story.html"}),               
          ); 
  }
 }
@@ -314,8 +318,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/27/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/28/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/27/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/28/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/27/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/28/2021";
