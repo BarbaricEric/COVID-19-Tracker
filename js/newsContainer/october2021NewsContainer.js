@@ -244,7 +244,8 @@ e(NewsList, {newsType: "Media News", newsTitle: "Japan and South Korea never did
 e(NewsList, {newsType: "Non Media News", newsTitle: "Immunogenicity and efficacy of heterologous ChadOx1/BNT162b2 vaccination", newsSource: "Nature", newsDate: "October 21, 2021", newsLink: "https://doi.org/10.1038/s41586-021-04120-y"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Pfizer and BioNTech Announce Phase 3 Trial Data Showing High Efficacy of a Booster Dose of Their COVID-19 Vaccine", newsSource: "Pfizer and BioNTech", newsDate: "October 21, 2021", newsLink: "https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-announce-phase-3-trial-data-showing-high"}),
 e(NewsList, {newsType: "Media News", newsTitle: "US public health in crisis as Covid prompts curbs on officials’ powers", newsSource: "Guardian", newsDate: "October 22, 2021", newsLink: "https://www.theguardian.com/us-news/2021/oct/22/us-public-health-crisis-covid-curbs-on-powers"}),
-e(NewsList, {newsType: "Non Media News", newsTitle: "Cardiac Fibrosis Is a Risk Factor for Severe COVID-19", newsSource: "Frontiers", newsDate: "October 22, 2021", newsLink: "https://doi.org/10.3389/fimmu.2021.740260"}),               
+e(NewsList, {newsType: "Non Media News", newsTitle: "Cardiac Fibrosis Is a Risk Factor for Severe COVID-19", newsSource: "Frontiers", newsDate: "October 22, 2021", newsLink: "https://doi.org/10.3389/fimmu.2021.740260"}), 
+e(NewsList, {newsType: "Non Media News", newsTitle: "Safe traveling in public transport amid COVID-19", newsSource: "Science", newsDate: "October 22, 2021", newsLink: "https://doi.org/10.1126/sciadv.abg3691"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "‘The UK really is in trouble’: Doctors warn of a dire Covid crisis as officials reject restrictions", newsSource: "CNBC", newsDate: "October 22, 2021", newsLink: "https://www.cnbc.com/2021/10/22/uk-covid-doctors-warn-of-crisis-as-officials-reject-restrictions.html"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Assessment of Cognitive Function in Patients After COVID-19 Infection", newsSource: "Jama Network", newsDate: "October 22, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.30645"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Prison workers top list of those not complying with mandate", newsSource: "AP News", newsDate: "October 22, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-health-prisons-connecticut-ned-lamont-12825921c573bd8435579eca63862a9f"}),
@@ -292,6 +293,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "Merck agrees to let other drug 
 e(NewsList, {newsType: "Non Media News", newsTitle: "Wearing face coverings protected wearers from COVID-19 infection – large scale study", newsSource: "University of Oxford", newsDate: "October 27, 2021", newsLink: "https://www.ox.ac.uk/news/2021-10-27-wearing-face-coverings-protected-wearers-covid-19-infection-large-scale-study"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Novavax Files for Authorization of its COVID-19 Vaccine in the United Kingdom", newsSource: "Novavax", newsDate: "October 27, 2021", newsLink: "https://ir.novavax.com/2021-10-27-Novavax-Files-for-Authorization-of-its-COVID-19-Vaccine-in-the-United-Kingdom"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "What COVID vaccines for young kids could mean for the pandemic", newsSource: "Nature", newsDate: "October 27, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02947-z"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Psychological Responses of Hospital-Based Nurses Working During the COVID-19 Pandemic in the United States: A Cross-sectional Study", newsSource: "Science Direct", newsDate: "October 27, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S0897189721001245"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Cigarette sales went up last year for the first time in 20 years", newsSource: "NPR", newsDate: "October 27, 2021", newsLink: "https://www.npr.org/sections/coronavirus-live-updates/2021/10/27/1049638567/cigarette-sales-increase-smoking-pandemic"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Fox anchor Neil Cavuto urged viewers to get vaccinated. Then came the death threats", newsSource: "NPR", newsDate: "October 27, 2021", newsLink: "https://www.npr.org/2021/10/27/1049664531/fox-anchor-neil-cavuto-covid-19-vaccine-death-threats"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Adverse Effects after BNT162b2 Vaccine and SARS-CoV-2 Infection, According to Age and Sex", newsSource: "New England Journal of Medicine", newsDate: "October 27, 2021", newsLink: "https://www.nejm.org/doi/full/10.1056/NEJMc2115045"}),
@@ -307,7 +309,8 @@ e(NewsList, {newsType: "Media News", newsTitle: "Some parents were eager to get 
 e(NewsList, {newsType: "Non Media News", newsTitle: "Implications of Delayed Reopening in Controlling the COVID-19 Surge in Southern and West-Central USA", newsSource: "Science Partner Journal", newsDate: "October 28, 2021", newsLink: "https://doi.org/10.34133/2021/9798302"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Community transmission and viral load kinetics of the SARS-CoV-2 delta (B.1.617.2) variant in vaccinated and unvaccinated individuals in the UK: a prospective, longitudinal, cohort study", newsSource: "Lancet", newsDate: "October 29, 2021", newsLink: "https://doi.org/10.1016/S1473-3099(21)00648-4"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "Delta mutation is no reason to panic — but Covid vaccination remains crucial, scientists say", newsSource: "CNBC", newsDate: "October 29, 2021", newsLink: "https://www.cnbc.com/2021/10/29/covid-delta-mutation-is-no-reason-to-panic-scientists-say.html"}),
-e(NewsList, {newsType: "Media News", newsTitle: "In China, 300 coronavirus cases means public shaming, marooned travelers and a nationwide dragnet", newsSource: "Washington Post", newsDate: "October 29, 2021", newsLink: "https://www.washingtonpost.com/world/asia_pacific/china-covid-zero-train/2021/10/29/fbfcc6ae-386b-11ec-9662-399cfa75efee_story.html"}),               
+e(NewsList, {newsType: "Media News", newsTitle: "In China, 300 coronavirus cases means public shaming, marooned travelers and a nationwide dragnet", newsSource: "Washington Post", newsDate: "October 29, 2021", newsLink: "https://www.washingtonpost.com/world/asia_pacific/china-covid-zero-train/2021/10/29/fbfcc6ae-386b-11ec-9662-399cfa75efee_story.html"}),
+e(NewsList, {newsType: "Media News", newsTitle: "Moroccans protest vaccine pass required for work, travel", newsSource: "AP News", newsDate: "October 31, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-lifestyle-travel-air-travel-north-africa-9a116e046ab9c0455d6e19c31e454b3c"}),               
          ); 
  }
 }
@@ -321,8 +324,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/28/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 10/31/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/28/2021";
+    modernaUpdate.innerHTML = "Last Updated: 10/31/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/28/2021";
+    jessenUpdate.innerHTML = "Last Updated: 10/31/2021";
