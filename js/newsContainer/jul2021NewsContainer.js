@@ -26,6 +26,7 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "Intranasal vaccines for SAR
 e(NewsList, {newsType: "Non Media News", newsTitle: "Drug-induced phospholipidosis confounds drug repurposing for SARS-CoV-2", newsSource: "Science Magazine", newsDate: "July 30, 2021", newsLink: "https://doi.org/10.1126/science.abi4708"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "A cluster of the new SARS-CoV-2 B.1.621 lineage in Italy and sensitivity of the viral isolate to the BNT162b2 vaccine", newsSource: "Wiley Online Library", newsDate: "July 30, 2021", newsLink: "https://doi.org/10.1002/jmv.27247"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "The association of COVID-19 infection in pregnancy with preterm birth: A retrospective cohort study in California", newsSource: "Science Direct", newsDate: "July 30, 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S2667193X21000193"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Correlative multi-scale cryo-imaging unveils SARS-CoV-2 assembly and egress", newsSource: "Nature", newsDate: "July 30, 2021", newsLink: "https://doi.org/10.1038/s41467-021-24887-y"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Outbreak of SARS-CoV-2 Infections, Including COVID-19 Vaccine Breakthrough Infections, Associated with Large Public Gatherings — Barnstable County, Massachusetts, July 2021", newsSource: "CDC", newsDate: "July 30, 2021", newsLink: "http://dx.doi.org/10.15585/mmwr.mm7031e2"}),               
          ); 
  }
