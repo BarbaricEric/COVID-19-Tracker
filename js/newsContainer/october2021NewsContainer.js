@@ -339,7 +339,8 @@ e(NewsList, {newsType: "Media News", newsTitle: "‘People are starting to wane�
 e(NewsList, {newsType: "Media News", newsTitle: "Pro-vaccine Fox News host receives support from CNN anchor over death threats", newsSource: "Guardian", newsDate: "October 30, 2021", newsLink: "https://www.theguardian.com/media/2021/oct/30/jake-tapper-neil-cavuto-fox-news-covid-vaccine"}),
 e(NewsList, {newsType: "Media News", newsTitle: "New Zealand's lockdowns have been a disaster for some. As they lift, another threat looms.", newsSource: "NBC News", newsDate: "October 31, 2021", newsLink: "https://www.nbcnews.com/news/world/covid-19-new-zealand-changes-coronavirus-policy-indigenous-groups-maor-rcna4119"}),
 e(NewsList, {newsType: "Media News", newsTitle: "China rejects US intelligence report on Covid origins as ‘political and false’", newsSource: "Guardian", newsDate: "October 31, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/31/china-rejects-us-intelligence-report-on-covid-origins-as-political-and-false"}),               
-e(NewsList, {newsType: "Media News", newsTitle: "Moroccans protest vaccine pass required for work, travel", newsSource: "AP News", newsDate: "October 31, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-lifestyle-travel-air-travel-north-africa-9a116e046ab9c0455d6e19c31e454b3c"}),               
+e(NewsList, {newsType: "Media News", newsTitle: "Moroccans protest vaccine pass required for work, travel", newsSource: "AP News", newsDate: "October 31, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-lifestyle-travel-air-travel-north-africa-9a116e046ab9c0455d6e19c31e454b3c"}),
+e(NewsList, {newsType: "Media News", newsTitle: "How does a pandemic start winding down? You are looking at it.", newsSource: "Washington Post", newsDate: "October 31, 2021", newsLink: "https://www.washingtonpost.com/health/2021/10/31/when-does-the-pandemic-end/"}),               
          ); 
  }
 }
@@ -353,8 +354,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 10/31/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 11/1/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 10/31/2021";
+    modernaUpdate.innerHTML = "Last Updated: 11/1/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 10/31/2021";
+    jessenUpdate.innerHTML = "Last Updated: 11/1/2021";
