@@ -86,6 +86,7 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 RNA in the Cereb
 e(NewsList, {newsType: "Media News", newsTitle: "Iceland Joins Nordic Peers in Halting Moderna Covid Vaccinations", newsSource: "Bloomberg", newsDate: "October 8, 2021", newsLink: "https://www.bloomberg.com/news/articles/2021-10-08/iceland-joins-nordic-peers-in-halting-moderna-covid-vaccinations"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Myocardial microthrombi after COVID-19 mRNA vaccination", newsSource: "Oxford Academics", newsDate: "October 8, 2021", newsLink: "https://doi.org/10.1093/eurheartj/ehab727"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Heart-inflammation risk from Pfizer COVID vaccine is very low", newsSource: "Nature", newsDate: "October 8, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02740-y"}),
+e(NewsList, {newsType: "Media News", newsTitle: "‘Naively ambitious’: How COVAX failed on its promise to vaccinate the world", newsSource: "STAT News", newsDate: "October 8, 2021", newsLink: "https://www.statnews.com/2021/10/08/how-covax-failed-on-its-promise-to-vaccinate-the-world/"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Incidence Rates, Household Infection Risk, and Clinical Characteristics of SARS-CoV-2 Infection Among Children and Adults in Utah and New York City, New York", newsSource: "Jama Network", newsDate: "October 8, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamapediatrics.2021.4217"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Cross-protective immunity following coronavirus vaccination and coronavirus infection", newsSource: "Journal of Clinical Investigation", newsDate: "October 8, 2021", newsLink: "https://doi.org/10.1172/JCI151969"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "The relationship between COVID-related parenting stress, nonresponsive feeding behaviors, and parent mental health", newsSource: "Springer", newsDate: "October 8, 2021", newsLink: "https://doi.org/10.1007/s12144-021-02333-y"}),               
@@ -341,6 +342,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "In China, 300 coronavirus cases
 e(NewsList, {newsType: "Media News", newsTitle: "Singapore abandons the 'zero COVID' strategy", newsSource: "NPR", newsDate: "October 30, 2021", newsLink: "https://www.npr.org/2021/10/30/1050850666/singapore-abandons-the-zero-covid-strategy"}),
 e(NewsList, {newsType: "Media News", newsTitle: "19 states sue Biden administration over COVID vaccine rule", newsSource: "AP News", newsDate: "October 30, 2021", newsLink: "https://apnews.com/article/coronavirus-pandemic-joe-biden-health-lawsuits-missouri-99fb3b040661c71ddde1ded37a2f5b87"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Supreme Court declines to block Maine vaccine mandate", newsSource: "AP News", newsDate: "October 30, 2021", newsLink: "https://apnews.com/article/us-supreme-court-health-maine-6f246ae1c1dd501e40ceb470f0cc2366"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "UK donates 20 million more Oxford-AstraZeneca vaccines to countries in need", newsSource: "Government UK", newsDate: "October 30, 2021", newsLink: "https://www.gov.uk/government/news/uk-donates-20-million-more-oxford-astrazeneca-vaccines-to-countries-in-need"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "‘People are starting to wane’: China’s zero-Covid policy takes toll", newsSource: "Guardian", newsDate: "October 30, 2021", newsLink: "https://www.theguardian.com/world/2021/oct/30/people-are-starting-to-wane-china-zero-covid-policy-takes-toll"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Pro-vaccine Fox News host receives support from CNN anchor over death threats", newsSource: "Guardian", newsDate: "October 30, 2021", newsLink: "https://www.theguardian.com/media/2021/oct/30/jake-tapper-neil-cavuto-fox-news-covid-vaccine"}),
 e(NewsList, {newsType: "Media News", newsTitle: "New Zealand's lockdowns have been a disaster for some. As they lift, another threat looms.", newsSource: "NBC News", newsDate: "October 31, 2021", newsLink: "https://www.nbcnews.com/news/world/covid-19-new-zealand-changes-coronavirus-policy-indigenous-groups-maor-rcna4119"}),
@@ -360,8 +362,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 11/1/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 11/2/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 11/1/2021";
+    modernaUpdate.innerHTML = "Last Updated: 11/2/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 11/1/2021";
+    jessenUpdate.innerHTML = "Last Updated: 11/2/2021";
