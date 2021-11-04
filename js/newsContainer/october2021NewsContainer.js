@@ -306,6 +306,7 @@ e(NewsList, {newsType: "Media News", newsTitle: "Merck agrees to let other drug 
 e(NewsList, {newsType: "Non Media News", newsTitle: "Wearing face coverings protected wearers from COVID-19 infection – large scale study", newsSource: "University of Oxford", newsDate: "October 27, 2021", newsLink: "https://www.ox.ac.uk/news/2021-10-27-wearing-face-coverings-protected-wearers-covid-19-infection-large-scale-study"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Novavax Files for Authorization of its COVID-19 Vaccine in the United Kingdom", newsSource: "Novavax", newsDate: "October 27, 2021", newsLink: "https://ir.novavax.com/2021-10-27-Novavax-Files-for-Authorization-of-its-COVID-19-Vaccine-in-the-United-Kingdom"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "What COVID vaccines for young kids could mean for the pandemic", newsSource: "Nature", newsDate: "October 27, 2021", newsLink: "https://doi.org/10.1038/d41586-021-02947-z"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Poor ventilation worsens short-range airborne transmission of respiratory infection", newsSource: "Wiley Online Library", newsDate: "October 27, 2021", newsLink: "https://doi.org/10.1111/ina.12946"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Smoking Status and Factors associated with COVID-19 In-hospital Mortality among U.S. Veterans", newsSource: "Oxford Academic", newsDate: "October 27, 2021", newsLink: "https://doi.org/10.1093/ntr/ntab223"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Cardiac MRI Findings of Myocarditis After COVID-19 mRNA Vaccination in Adolescents", newsSource: "American Journal of Roentgenology", newsDate: "October 27, 2021", newsLink: "https://www.ajronline.org/doi/abs/10.2214/AJR.21.26853"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Stroke Among Patients Hospitalized With COVID-19: Results From the American Heart Association COVID-19 Cardiovascular Disease Registry", newsSource: "AHA Journals", newsDate: "October 27, 2021", newsLink: "https://doi.org/10.1161/STROKEAHA.121.035270"}),               
@@ -364,8 +365,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 11/2/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 11/3/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 11/2/2021";
+    modernaUpdate.innerHTML = "Last Updated: 11/3/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 11/2/2021";
+    jessenUpdate.innerHTML = "Last Updated: 11/3/2021";
