@@ -173,6 +173,7 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "COVID super-immunity: one o
 e(NewsList, {newsType: "Media News", newsTitle: "College students struggle with mental health as pandemic drags on", newsSource: "Washington Post", newsDate: "October 14, 2021", newsLink: "https://www.washingtonpost.com/education/2021/10/14/college-suicide-mental-health-unc/"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Lung epithelial and endothelial damage, loss of tissue repair, inhibition of fibrinolysis, and cellular senescence in fatal COVID-19", newsSource: "Science", newsDate: "October 14, 2021", newsLink: "https://doi.org/10.1126/scitranslmed.abj7790"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Immunogenicity of standard and extended dosing intervals of BNT162b2 mRNA vaccine", newsSource: "Cell", newsDate: "October 15, 2021", newsLink: "https://doi.org/10.1016/j.cell.2021.10.011"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "A class II MHC-targeted vaccine elicits immunity against SARS-CoV-2 and its variants", newsSource: "PNAS", newsDate: "October 15, 2021", newsLink: "https://doi.org/10.1073/pnas.2116147118"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "COVID contradiction: they wear masks, but won’t get vaccinated", newsSource: "Northeastern", newsDate: "October 15, 2021", newsLink: "https://news.northeastern.edu/2021/10/15/unvaccinated-population-wearing-masks/"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Circulating Exosomes with COVID Spike Protein Are Induced by BNT162b2 (Pfizer–BioNTech) Vaccination prior to Development of Antibodies: A Novel Mechanism for Immune Activation by mRNA Vaccines", newsSource: "The American Association of Immunologists", newsDate: "October 15, 2021", newsLink: "https://doi.org/10.4049/jimmunol.2100637"}),               
 e(NewsList, {newsType: "Media News", newsTitle: "CDC releases official guidance for upcoming holiday celebrations", newsSource: "NBC News", newsDate: "October 15, 2021", newsLink: "https://www.nbcnews.com/news/us-news/cdc-releases-official-guidance-upcoming-holiday-celebrations-n1281653"}),
@@ -369,8 +370,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 const pfizerUpdate = document.querySelector('.pfizer-update')
-    pfizerUpdate.innerHTML = "Last Updated: 11/3/2021";
+    pfizerUpdate.innerHTML = "Last Updated: 11/7/2021";
 const modernaUpdate = document.querySelector('.moderna-update')
-    modernaUpdate.innerHTML = "Last Updated: 11/3/2021";
+    modernaUpdate.innerHTML = "Last Updated: 11/7/2021";
 const jessenUpdate = document.querySelector('.jessen-update')
-    jessenUpdate.innerHTML = "Last Updated: 11/3/2021";
+    jessenUpdate.innerHTML = "Last Updated: 11/7/2021";
