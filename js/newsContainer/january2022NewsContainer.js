@@ -3,7 +3,7 @@
 class January2022NewsApp extends React.Component {
  render() {
       return e("div", null,
-
+e(NewsList, {newsType: "Non Media News", newsTitle: "Maternal Outcomes After Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Infection in Vaccinated Compared With Unvaccinated Pregnant Patients", newsSource: "Obstetrics and Gynecology", newsDate: "January 2022", newsLink: "https://journals.lww.com/greenjournal/fulltext/2022/01000/maternal_outcomes_after_severe_acute_respiratory.14.aspx"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Nation wide assessment of energy costs and policies to limit airborne infection risks in U.S. schools", newsSource: "Science Direct", newsDate: "January 2022", newsLink: "https://www.sciencedirect.com/science/article/pii/S2352710221013917"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Predictors of smell recovery in a nationwide prospective cohort of patients with COVID-19", newsSource: "Science Direct", newsDate: "January - February 2022", newsLink: "https://www.sciencedirect.com/science/article/pii/S0196070921003409"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Bans on hospital visitors necessary ‘last resort’ in coming weeks, NHS chief says", newsSource: "Guardian", newsDate: "January 1, 2022", newsLink: "https://www.theguardian.com/world/2022/jan/01/hospitals-may-have-to-reintroduce-visitor-bans-health-chief-says"}),
