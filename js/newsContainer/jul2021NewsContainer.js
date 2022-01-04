@@ -2,7 +2,9 @@
 
 class July2021NewsApp extends React.Component {
  render() {
-      return e("div", null,              
+      return e("div", null,
+e(NewsList, {newsType: "Non Media News", newsTitle: "Sustained prothrombotic changes in convalescent patients with COVID-19", newsSource: "Lancet", newsDate: "July 2021", newsLink: "https://doi.org/10.1016/S2352-3026(21)00146-0"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "Increase of SARS-CoV-2 RNA load in faecal samples prompts for rethinking of SARS-CoV-2 biology and COVID-19 epidemiology", newsSource: "U.S. National Library of Medicine", newsDate: "July 2021", newsLink: "https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC8283343/"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Making trials part of good clinical care: lessons from the RECOVERY trial", newsSource: "U.S. National Library of Medicine", newsDate: "July 2021", newsLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8285150/"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Public Preferences for Social Distancing Policy Measures to Mitigate the Spread of COVID-19 in Missouri", newsSource: "Jama Network", newsDate: "July 8, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.16113"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 false dichotomies and a comprehensive review of the evidence regarding public health, COVID-19 symptomatology, SARS-CoV-2 transmission, mask wearing, and reinfection", newsSource: "BMC", newsDate: "July 9, 2021", newsLink: "https://doi.org/10.1186/s12879-021-06357-4"}),               
