@@ -3,6 +3,7 @@
 class December2021NewsApp extends React.Component {
  render() {
       return e("div", null,
+e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 deregulates the vascular and immune functions of brain pericytes via Spike protein", newsSource: "Science Direct", newsDate: "December 2021", newsLink: "https://www.sciencedirect.com/science/article/pii/S0969996121003107"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Implication of coughing dynamics on safe social distancing in an indoor environment—A numerical perspective", newsSource: "Science Direct", newsDate: "December 2021", newsLink: "https://www.sciencedirect.com/science/article/abs/pii/S036013232100679X"}),
 e(NewsList, {newsType: "Media News", newsTitle: "Greece imposes monthly fines of 100 euros on the over-60s who refuse a Covid vaccine", newsSource: "CNBC", newsDate: "December 1, 2021", newsLink: "https://www.cnbc.com/2021/12/01/greece-compulsory-covid-vaccination-for-those-aged-60-and-above.html"}),
 e(NewsList, {newsType: "Media News", newsTitle: "WHO says omicron has been found in 23 countries across the world", newsSource: "CNBC", newsDate: "December 1, 2021", newsLink: "https://www.cnbc.com/2021/12/01/who-says-omicron-has-been-found-in-23-countries-across-the-world.html"}),
