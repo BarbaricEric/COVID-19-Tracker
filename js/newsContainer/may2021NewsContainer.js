@@ -3,6 +3,8 @@
 class May2021NewsApp extends React.Component {
  render() {
       return e("div", null,
+e(NewsList, {newsType: "Non Media News", newsTitle: "Researchers Tie Severe Immunosuppression to Chronic COVID-19 and Virus Variants", newsSource: "Jama Network", newsDate: "May 5, 2021", newsLink: "https://jamanetwork.com/journals/jama/fullarticle/2779850"}),
+e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 Endothelial Dysfunction Can Cause Erectile Dysfunction: Histopathological, Immunohistochemical, and Ultrastructural Study of the Human Penis", newsSource: "World Journal of Men's Health", newsDate: "May 7, 2021", newsLink: "https://doi.org/10.5534/wjmh.210055"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "COVID-19 testing turns to T cells", newsSource: "Nature", newsDate: "May 12, 2021", newsLink: "https://doi.org/10.1038/s41587-021-00920-9"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Shared B cell memory to coronaviruses and other pathogens varies in human age groups and tissues", newsSource: "Science Magazine", newsDate: "May 14, 2021", newsLink: "https://doi.org/10.1126/science.abf6648"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Assessment of Feasibility of Face Covering in School-Aged Children With Autism Spectrum Disorders and Attention-Deficit/Hyperactivity Disorder", newsSource: "Jama Network", newsDate: "May 17, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2021.10281"}),
