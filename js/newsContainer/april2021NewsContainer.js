@@ -10,6 +10,7 @@ e(NewsList, {newsType: "Non Media News", newsTitle: "FDA Revokes Emergency Use A
 e(NewsList, {newsType: "Non Media News", newsTitle: "Humoral immune response to COVID-19 mRNA vaccine in patients with multiple sclerosis treated with high-efficacy disease-modifying therapies", newsSource: "Journal Sage", newsDate: "April 22, 2021", newsLink: "https://doi.org/10.1177/17562864211012835"}),
 e(NewsList, {newsType: "Non Media News", newsTitle: "Maternal and Neonatal Morbidity and Mortality Among Pregnant Women With and Without COVID-19 Infection", newsSource: "Jama Network", newsDate: "April 22, 2021", newsLink: "http://jamanetwork.com/article.aspx?doi=10.1001/jamapediatrics.2021.1050"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "Multiscale statistical physics of the pan-viral interactome unravels the systemic nature of SARS-CoV-2 infections", newsSource: "Nature", newsDate: "April 23, 2021", newsLink: "https://doi.org/10.1038/s42005-021-00582-8"}),
+e(NewsList, {newsType: "Media News", newsTitle: "People Are Reporting Unusual Periods After Receiving COVID-19 Vaccines — Here’s What We Know", newsSource: "NPR", newsDate: "April 23, 2021", newsLink: "https://www.npr.org/templates/story/story.php?storyId=989933407"}),               
 e(NewsList, {newsType: "Non Media News", newsTitle: "SARS-CoV-2 Induces Lymphocytopenia by Promoting Inflammation and Decimates Secondary Lymphoid Organs", newsSource: "Frontiers", newsDate: "April 28, 2021", newsLink: "https://doi.org/10.3389/fimmu.2021.661052"}),               
          ); 
  }
